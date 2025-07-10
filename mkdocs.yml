@@ -3,7 +3,22 @@ site_url: https://martinezpenya.es/ModelosIA/
 #repo_url: https://github.com/martinezpenya/AWSAcademyPrimerosPasos
 #edit_uri: edit/main/docs
 
-#nav:
+nav:
+  - Información previa: index.md
+  - UD01 Caracterización de sistemas y utilización de modelos de Inteligencia Artificial:
+    - Contenidoc UD01: UD01/UD01_ES.md
+    - Taller 1: UD01/UD01_T01_IDE_ES.md
+    - Taller 2: UD01/UD01_T02_GitHubVsCode_ES.md
+  - UD02 Inteligencia Artificial Simbólica:
+    - Contenido UD02: UD02/UD02_ES.md
+  - UD03 Procesamiento del Lenguaje Natural:
+    - Contenido UD03: UD03/UD03_ES.md
+  - UD04 Análisis de sistemas robotizados:
+    - Contenido UD04: UD04/UD04_ES.md
+  - UD05 Aplicación de principios legales y éticos de la Inteligencia Artificial:
+    - Contenido UD05: UD05/UD05_ES.md
+  - Fuentes de información: fuentes.md
+
 #  - 'Introduccion': index.md
 #  - '1 ¿Qué es AWSAcademy?': 01_Que_es_AWSAcademy.md
 #  - '2 Primeros pasos en AWSAcademy': 02_Primeros_pasos_en_AWSAcademy.md
@@ -131,6 +146,11 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - pymdownx.arithmatex
+extra_javascript:
+  - js/mathjax-config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg-full.js
 extra:
   search:
     language: es
