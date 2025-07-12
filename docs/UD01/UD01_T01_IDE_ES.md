@@ -1,17 +1,4 @@
-﻿---
-title: Taller 01: Instalación y uso de entornos de desarrollo
-language: ES
-author: David Martínez Peña [www.martinezpenya.es]
-subject: Programación
-keywords: [PRG, 2024, Programacion, Java]
-IES: IES Eduardo Primo Marqués (Carlet) [www.ieseduardoprimo.es]
-header: ${title} - ${subject} (ver. ${today}) 
-footer:${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
-typora-root-url:${filename}/../
-typora-copy-images-to:${filename}/../assets
----
-[toc]
-# Java
+﻿# Taller UD01_01: Preparar entorno para Java
 
 Cada software y cada entorno de desarrollo tiene unas características y funcionalidades específicas. Esto también se verá reflejado en la instalación y configuración del software. Dependiendo de la plataforma, entorno o sistema operativo en el que se vaya a instalar el software, se utilizará un paquete de instalación u otro, y habrá que tener en cuenta unas opciones u otras en su configuración.
 A continuación se muestra cómo instalar una herramienta de desarrollo de software integrada, como Eclipse. Pero también podrás observar los procedimientos para instalar otras herramientas necesarias o recomendadas para trabajar con el lenguaje de programación JAVA, como Tomcat o la Máquina Virtual de Java.
@@ -60,14 +47,14 @@ El archivo es diferente según el sistema operativo donde se tenga que instalar.
 En los dos primeros casos, simplemente hay que seguir el procedimiento de instalación habitual del sistema operativo con el que estamos trabajando.
 En este último caso, sin embargo, hay que descomprimir el archivo y copiarlo en la carpeta donde se desea instalar. Normalmente, todos los usuarios tendrán permisos de lectura y ejecución en esta carpeta.
 
-> ### A partir de la versión 11 de JDK, Oracle distribuye el software con una licencia significativamente más restrictiva que las versiones anteriores. En particular, solo se puede utilizar para "desarrollar, probar, crear prototipos y demostrar sus aplicaciones". Cualquier uso "para fines comerciales, de producción o empresariales internos" distinto del mencionado anteriormente queda explícitamente excluido.
+> A partir de la versión 11 de JDK, Oracle distribuye el software con una licencia significativamente más restrictiva que las versiones anteriores. En particular, solo se puede utilizar para "desarrollar, probar, crear prototipos y demostrar sus aplicaciones". Cualquier uso "para fines comerciales, de producción o empresariales internos" distinto del mencionado anteriormente queda explícitamente excluido.
 >
 > Si lo necesitas para alguno de estos usos no permitidos en la nueva licencia, además de las versiones anteriores del JDK, existen versiones de referencia de estas versiones licenciadas "GNU General Public License version 2, with the Classpath Exception", que permiten la mayoría de los usos habituales. Estas versiones están enlazadas a la misma página de descarga y también a la dirección jdk.java.net.
 
 Una alternativa es utilizar https://adoptium.net/ antes conocido como adoptOpenJDK, que ahora se ha integrado en la fundación Eclipse. Desde allí podemos descargar los binarios de la versión openJDK para nuestra plataforma sin restricciones. [Noticia completa] (https://es.wikipedia.org/wiki/OpenJDK).
 
 
-> #### En GNU/Linux podemos utilizar los comandos:
+> En GNU/Linux podemos utilizar los comandos:
 
 >
 > - `sudo apt install default-jdk` para instalar el jdk predeterminado.
@@ -88,13 +75,13 @@ Una vez descargado e instalado el JDK, debes configurar algunas variables de ent
 Otra variable que tiene en cuenta el JDK es la variable `CLASSPATH`, que apunta a las carpetas donde se encuentran las librerías de la aplicación que se quiere ejecutar con el comando java. Es preferible, no obstante, indicar la ubicación de estas carpetas con la opción `-cp` del mismo comando java, ya que cada aplicación puede tener diferentes librerías y las variables de entorno afectan a todo el sistema.
 Establecer la variable `PATH` es esencial para que el sistema operativo encuentre los comandos JDK y pueda ejecutarlos.
 
-# IntelliJ
+## IntelliJ
 
 **IntelliJ IDEA** es un entorno de desarrollo integrado (IDE) escrito en Java para desarrollar software informático escrito en Java, Kotlin, Groovy y otros lenguajes basados ​​en JVM. Está desarrollado por JetBrains (antes conocido como IntelliJ) y está disponible como una edición comunitaria con licencia Apache 2 y en una edición comercial propietaria. Ambas se pueden utilizar para el desarrollo comercial.
 
 Nuestra institución dispone de licencias para nuestros alumnos mientras tengáis correo electrónico @ieseduardoprimo.es.
 
-## Instalación
+### Instalación
 
 Descargue desde https://www.jetbrains.com/idea/ la versión de la herramienta toolbox correspondiente a su sistema operativo.
 
@@ -110,17 +97,17 @@ Y en la opción Administrar licencias debes seguir estas instrucciones: https://
 
 La dirección del servidor es: https://iesepm.fls.jetbrains.com/
 
-## Ajustes
+### Ajustes
 
 Documentos para configurar su IDE: https://www.jetbrains.com/help/idea/configuring-project-and-ide-settings.html
 
-## Módulos
+### Módulos
 
 Puedes agregar complementos siguiendo estas instrucciones:
 
 https://www.jetbrains.com/help/idea/managing-plugins.html
 
-## Uso básico ("¡Hola mundo!")
+### Uso básico ("¡Hola mundo!")
 
 Los documentos te ayudan con tu primer programa en Java: https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html
 
@@ -130,9 +117,9 @@ Mucha más información:
 - Si estuvieras en NetBeans: https://www.jetbrains.com/help/idea/netbeans.html
 - Si quieres aprender por tu cuenta: https://www.jetbrains.com/help/idea/product-educational-tools.html
 
-# Por qué debería elegir IntelliJ en lugar de VsCode para la codificación en Java
+## Por qué debería elegir IntelliJ en lugar de VsCode para la codificación en Java
 
-## **IDEA INTELIGENTE:**
+### **IDEA IntelliJ:**
 
 **Ventajas:**
 
@@ -160,7 +147,7 @@ Mucha más información:
 
 2. **Curva de aprendizaje:** Dado que ofrece una amplia gama de funciones, los principiantes pueden tardar un tiempo en familiarizarse con todas las herramientas disponibles.
 
-## **Código de Visual Studio (VSCode):**
+### **Visual Studio Code (VSCode):**
 
 **Ventajas:**
 
@@ -184,7 +171,7 @@ Mucha más información:
 
 4. **Configuración manual del proyecto:** La configuración de proyectos Java puede requerir más pasos y configuración manual en comparación con IntelliJ IDEA.
 
-# Tarea
+## Tarea
 
 Debes entregar un documento `*.pdf` explicando:
 
@@ -195,15 +182,4 @@ Una captura de pantalla en la que se vea el resultado del comando:
   ```
 
 Y también capturas de pantalla donde se pueda ver que editas el fichero fuente (`HolaMundo.java`), lo compilas y lo ejecutas dentro del IDE IntelliJ (explica los pasos que has seguido)
-
-# Fuentes de información
-
-- [Wikipedia](https://es.wikipedia.org)
-- [Code&Coke (Fernando Valdeón)](http://entornos.codeandcoke.com/doku.php?id=start)
-- Apuntes IES El Grao (Mª Isabel Barquilla?)
-- [Apuntes IOC (Marcel García)](https://ioc.xtec.cat/materials/FP/Recursos/fp_dam_m05_/web/fp_dam_m05_htmlindex/index.html)
-- [Apuntes José Luis Comesaña](https://www.sitiolibre.com/)
-- [Apuntes IES Luis Vélez de Guevara 17-18 (José Antonio Muñoz Jiménez)](http://jamj2000.github.io/slides/2017/09/05/entornosdesarrollo/)
-- https://www.jetbrains.com
-- ChatGPT
 
