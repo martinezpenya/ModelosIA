@@ -383,7 +383,7 @@ Utilizaremos funciones triangulares para representar las variables de entrada y 
   * **Media**: $[0, 10]$
   * **Alta**: $[5, 10]$
 
-<img src="assets/plot_tipping_problem_newapi_2.png" alt="ajuste correcto" style="zoom:50%;" />
+![ajuste correcto](assets/plot_tipping_problem_newapi_2.png){width=400px}
 
 * **Calidad de la comida**:
   * **Bajo**: $[0, 5]$
