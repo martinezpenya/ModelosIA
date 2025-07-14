@@ -1,19 +1,8 @@
----
-title: Taller 02: Como usar el VSCode integrado en GitHub
-language: ES
-author: David Martínez Peña [www.martinezpenya.es]
-subject: Programación
-keywords: [PRG, 2024, Programacion, Java]
-IES: IES Eduardo Primo Marqués (Carlet) [www.ieseduardoprimo.es]
-header: ${title} - ${subject} (ver. ${today}) 
-footer:${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
-typora-root-url:${filename}/../
-typora-copy-images-to:${filenam_manual_supervivenciae}/../assets
----
-[toc]
-# `VsCode` integrado en `GitHub`
+# Taller UD01_02: `VsCode` integrado en `GitHub`
 
-## Localizar repositorio.
+## Instrucciones
+
+### Localizar repositorio.
 
 Primero localizamos el repositorio con el que queremos colaborar (Por favor, busca uno del año actual, la imagen es solo un ejemplo):
 
@@ -31,7 +20,7 @@ Primero localizamos el repositorio con el que queremos colaborar (Por favor, bus
 
 
 
-## Abrir `VSCode` integrado.
+### Abrir `VSCode` integrado.
 
 Github cuenta con un editor online muy potente basado en `VSCode`.
 
@@ -45,13 +34,13 @@ Para abrir el editor solo debemos pulsar la tecla "." (punto) de nuestro teclado
 
 Visualizaremos la estructura de carpetas y archivos en un editor `VSCode` integrado en el navegador Web.
 
-## Modificar un archivo.
+### Modificar un archivo.
 
 Una vez detectada la errata dentro del código [markdown](https://markdown.es/) que es muy fácil de interpretar (a poco que le dediquéis unos minutos) podemos modificar el archivo en cuestión, y a su lado aparecerá una **M** porqué el archivo está modificado.
 
 <img src="assets/vscode_06_vscode2.png" alt="Screenshot_20220106_172048" style="zoom:50%;" />
 
-## Git integrado
+### Git integrado
 
 VSCode lleva integrado un gestor de GIT, el tercer icono de la barra lateral: ![Screenshot_20220106_172635](assets/vscode_07_git.png)
 
@@ -84,7 +73,7 @@ Ahora nos pregunta si ya que hemos creado un fork, queremos cambiar el repositor
 Ahora ya podemos salir del editor VSCode pulsando sobre el botón de las tres lineas horizontales y elegir la opción "Go to Repository":
 <img src="assets/vscode_07_git8.png" alt="Volver al repositorio" style="zoom:80%;" />
 
-## Pull request
+### Pull request
 
 Una vez volvemos a nuestro repositorio (nuestro fork), detectará que hay cambios respecto al repositorio original y nos propone que realicemos un pull request (una petición al usuario propietario del repositorio original para que incluya nuestra modificación).
 
@@ -98,7 +87,7 @@ Debemos asegurarnos de que la modificación se puede agregar al repositorio orig
 
 Ahora debemos pulsar el botón [Create pull request].
 
-# Tarea
+## Tarea
 
-Sigue los pasos de este taller guiado para sugerir una modificación de cualquiera de los archivos de los repositorios del profesor [martinezpenya](https://github.com/martinezpenya) (Preferiblemente del curso 24-25). Adjunta a la tarea de AULES un `.pdf` con la **captura** de pantalla similar a esta donde se vé que has solicitado el **pull request** y que estás esperando a que se integre en el repositorio original. Además, **explica** que significan cada uno de los **5 apartados** señalados en la captura:
+Sigue los pasos de este taller guiado para sugerir una modificación de cualquiera de los archivos de los repositorios del profesor [martinezpenya](https://github.com/martinezpenya) (Preferiblemente del curso actual). Adjunta a la tarea de AULES un `.pdf` con la **captura** de pantalla similar a esta donde se vé que has solicitado el **pull request** y que estás esperando a que se integre en el repositorio original. Además, **explica** que significan cada uno de los **5 apartados** señalados en la captura:
 ![Screenshot_20220106_180847](assets/vscode_10_pullrequest3.png)

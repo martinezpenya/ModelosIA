@@ -1,5 +1,3 @@
-# Caracterización de sistemas y utilización de modelos de Inteligencia Artificial
-
 ## Fundamentos de los Sistemas Inteligentes
 
 ### Definición de Inteligencia Artificial (IA)
@@ -827,7 +825,7 @@ https://bostondynamics.com/videos/
 
 El reconocimiento de objetos implica identificar y localizar objetos específicos en imágenes o videos. Algunos ejemplos incluyen reconocimiento de vehículos en carreteras, detección de peatones en sistemas de asistencia al conductor y clasificación de objetos en aplicaciones de etiquetado automático.
 
-<img src="/assets/Tomatos.png" alt="https://www.youtube.com/watch?v=c-JduOfLEpc" style="zoom:67%;" />
+<img src="assets/Tomatos.png" alt="https://www.youtube.com/watch?v=c-JduOfLEpc" style="zoom:67%;" />
 
 En la industria agroalimentaria, la capacidad de visión inteligente es de vital importancia, porque constituye una parte decisiva de cara a que se obtenga un buen producto o una buena cosecha. En algunos casos, el robot sabe distinguir, mejor que el humano, si una fruta está en su momento óptimo de cosecha.
 
@@ -859,7 +857,7 @@ Uno de los grandes e inesperados avances de la computación de la década pasada
 
   La herramienta funcionó bajo versión de beta cerrada hasta que el 13 de julio de 2022 el laboratorio anunció el comienzo de una beta abierta. El equipo de Midjourney está dirigido por David Holz, cofundador de Leap Motion. Midjourney emplea un modelo de negocio *freemium*, con un nivel gratuito limitado y niveles de pago que ofrecen un acceso más rápido, mayor capacidad y funciones adicionales. Los usuarios pueden crear obras de arte con Midjourney dando órdenes a un bot alojado en Discord, ya sea enviando mensajes directos o invitando a dicho bot a un servidor de terceros.
 
-  <img src="/assets/MidJourney.png" alt="image-20230806122132540" style="zoom:50%;" />
+  <img src="assets/MidJourney.png" alt="image-20230806122132540" style="zoom:50%;" />
 
 ### Procesamiento del Lenguaje Natural (PLN)
 
@@ -963,7 +961,7 @@ La integración de la IA en la robótica ha llevado a la creación de robots cad
 
 Los sistemas robóticos actuales cubren una gran cantidad de campos de aplicación del entorno. En todos ellos, la inteligencia artificial mejora su desempeño y permite acometer nuevas tareas. Entre ellos, destacan muchos robots cuya principal herramienta basada en inteligencia artificial es el módulo de visión artificial, como es el caso de Davinci, el robot cirujano, o agro-bot, el robot que recoge fresas en su punto óptimo de madurez.
 
-![Robot Da Vinci : les prouesses de la chirurgie robotique - YouTube Robot Da Vinci : les prouesses de la chirurgie robotique -YouTube](/assets/DavinciSurgery.jpeg)
+![Robot Da Vinci : les prouesses de la chirurgie robotique - YouTube Robot Da Vinci : les prouesses de la chirurgie robotique -YouTube](assets/DavinciSurgery.jpeg)
 
 La inteligencia artificial tiene un impacto especialmente relevante en el sistema de control del robot. 
 
