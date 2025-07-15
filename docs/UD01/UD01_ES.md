@@ -1,3 +1,5 @@
+<p><iframe width="100%" height="315" src="https://www.youtube.com/embed/7XUKVj328z0?si=wxiYqDJr4XPt_YO-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe></p>
+
 ## Fundamentos de los Sistemas Inteligentes
 
 ### Definición de Inteligencia Artificial (IA)

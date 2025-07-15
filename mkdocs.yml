@@ -17,13 +17,25 @@ nav:
       - P01 Robocode: UD01/UD01_P01_RobocodeTankRoyale_ES.md
       - P02 Entregable: UD01/UD01_P02_Practica_ES.md
   - UD02:
-    - Inteligencia Artificial Simbólica: UD02/UD02_ES.md
+    - Sistemas Expertos: UD02/UD02_ES.md
+    - Diapositivas: UD02/UD02_Diapositivas.md
+    - Actividades Guiadas: UD02/UD02_ActividadesGuiadas.md
+    - Actividades Entregables: UD02/UD02_ActividadesEntregables.md
   - UD03:
     - Procesamiento del Lenguaje Natural: UD03/UD03_ES.md
+    - Diapositivas: UD03/UD03_Diapositivas.md
+    - Actividades Guiadas: UD03/UD03_ActividadesGuiadas.md
+    - Actividades Entregables: UD03/UD03_ActividadesEntregables.md
   - UD04:
     - Análisis de sistemas robotizados: UD04/UD04_ES.md
+    #- Diapositivas: UD04/UD04_Diapositivas.md
+    - Actividades Guiadas: UD04/UD04_ActividadesGuiadas.md
+    - Actividades Entregables: UD04/UD04_ActividadesEntregables.md
   - UD05:
     - Aplicación de principios legales y éticos de la IA: UD05/UD05_ES.md
+    #- Diapositivas: UD05/UD05_Diapositivas.md
+    - Actividades Guiadas: UD05/UD05_ActividadesGuiadas.md
+    - Actividades Entregables: UD05/UD05_ActividadesEntregables.md
   - Sobre mi: sobremi.md
   - Fuentes de información: fuentes.md
 
@@ -201,9 +213,9 @@ plugins:
         cover_subtitle: IES Eduardo Primo Marques (Carlet)
         #custom_template_path: templates
         #
-        #toc_title: TOC TITLE TEXT
+        toc_title: Indice de contenidos
         #heading_shift: false
-        toc_level: 2
+        toc_level: 3
         ordered_chapter_level: 2
         #excludes_children:
         #    - 'release-notes/:upgrading'

@@ -1,6 +1,6 @@
-﻿## Sistemas Basados en Reglas
+﻿<p><iframe src="https://www.youtube.com/embed/cqWKSraG-bk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" width="100%" height="315" frameborder="0"></iframe></p>
 
-### Inteligencia Artificial Simbólica
+## Inteligencia Artificial Simbólica
 
 * **IA simbólica** o **IA basada en conocimiento**:
   * Extraemos conocimiento de expertos y lo representamos de una forma que las máquinas puedan entender.
@@ -10,7 +10,7 @@
     * Aprender nuevas cosas.
     * Mejorar el conocimiento existente.
 
-#### Representación del conocimiento
+### Representación del conocimiento
 
 * Conocimiento $vs$ datos $vs$ información:
   * **Datos**: Hechos o valores.
@@ -19,7 +19,7 @@
 
 > El conocimiento es un conjunto de información estructurada e interrelacionada que permite a un agente realizar tareas.
 
-#### Jerarquía del conocimiento
+### Jerarquía del conocimiento
 
 <img src="assets/DIKW_Pyramid.png" alt="ajuste perfecto" style="zoom: 67%;" />
 
@@ -38,7 +38,7 @@
 * **Sabiduría** (**W**isdom): Representa el meta-conocimiento: conocimiento sobre cómo y cuándo aplicar el conocimiento.
   * Ejemplo: _"Si la persona tiene fiebre, entonces debe tomar paracetamol"_
 
-#### Representación del conocimiento
+### Representación del conocimiento
 
 * Es la forma en la que representamos el conocimiento para que las máquinas puedan entenderlo.
 * Es uno de los problemas fundamentales de la inteligencia artificial.
@@ -58,7 +58,7 @@
     * Las llamamos **redes semánticas**.
   * Hay diferentes tipos: Pares de atributos y valores, representaciones jerárquicas, representaciones procedurales, lógica, etc.
 
-#### Pares de atributos y valores o tripletes objeto-atributo-valor
+### Pares de atributos y valores o tripletes objeto-atributo-valor
 
 * Aprovechamos que un grafo se puede representar como una lista de nodos y aristas para representar el conocimiento.
 * El conocimiento se representa como una lista de pares de atributos y valores.
@@ -66,7 +66,7 @@
   * _"La paloma es un animal, la paloma es un pájaro, la paloma tiene dos patas, etc."_
   * _"El coche es un vehículo, el coche tiene cuatro ruedas, el coche tiene un motor, etc."_
 
-#### Representaciones jerárquicas
+### Representaciones jerárquicas
 
 * El conocimiento se representa como un árbol.
 * Los nodos del árbol representan conceptos.
@@ -75,7 +75,7 @@
   * Animales $\rightarrow$ Vertebrados $\rightarrow$ Pájaros $\rightarrow$ Palomas $\rightarrow$ Paloma común
   * Objetos $\rightarrow$ Vehículos $\rightarrow$ Coches $\rightarrow$ Coche de gasolina
 
-#### Representaciones procedurales
+### Representaciones procedurales
 
 * El conocimiento se representa como un conjunto de acciones que se pueden realizar cuando se dan ciertas condiciones.
 * Llamamos **reglas de producción** a las **declaraciones** que nos permiten obtener conclusiones a partir de ciertas premisas.
@@ -83,7 +83,7 @@
   * **IF** (la temperatura es superior a 37ºC) **THEN** (la persona tiene fiebre)
   * **IF** (la persona tiene fiebre) **THEN** (la persona debe tomar paracetamol)
 
-#### Lógica
+### Lógica
 
 * La lógica es un sistema formal que nos permite representar el conocimiento y razonar sobre él.
 * La propuso Aristóteles hace más de 2000 años como herramienta para la **deducción**.
@@ -95,7 +95,7 @@
   * $p \land q$: "La persona tiene fiebre y la persona debe tomar paracetamol"
 
 
-### Sistemas Expertos
+## Sistemas Expertos
 
 Los sistemas expertos son una aplicación de la inteligencia artificial que hacen uso de conocimientos especializados previamente adquiridos por el ser humano. Los sistemas expertos comenzaron su desarrollo en la década de 1970 y fueron muy populares tanto en esa década como en los años 80 del siglo pasado.
 
@@ -105,7 +105,7 @@ Se considera que los primeros sistemas de inteligencia artificial que fueron cap
 
 Un sistema experto se puede definir como un software que es capaz de simular el proceso de decisión que tomaría un experto humano en cierto campo. Por tanto, los sistemas expertos se diseñan de manera que puedan tomar de forma automática decisiones como si fueran expertos. Además, cabe señalar que todo sistema experto debe ser capaz de explicar la decisión que ha tomado y también ha de ser capaz de aprender cuando se le facilita nueva información.
 
-#### Estructuras elementales de los sistemas expertos
+### Estructuras elementales de los sistemas expertos
 
 La arquitectura más común de los sistemas expertos es la del sistema basado en reglas. Este tipo de sistemas emplea expresiones del tipo:
 
@@ -139,7 +139,7 @@ flowchart TB
 	BD <--> M
 ```
 
-#####  Interfaz de usuario y de comunicación externa
+####  Interfaz de usuario y de comunicación externa
 
 Es el medio o vía para las consultas. Debe facilitar una comunicación lo más natural para el usuario, ser sencilla de aprender a utilizar y alertar de posibles datos erróneos de entrada. Los resultados deben ser claros y comprensibles para el usuario. Para conseguir esto, lo habitual ha sido contar con herramientas de desarrollo de interfaces gráficas, e implementar un módulo de comunicaciones y otro de explicaciones.
 
@@ -155,7 +155,7 @@ Además, las conclusiones alcanzadas por el sistema serán mostradas al usuario 
 
 Dentro de la interfaz se ha de tener en cuenta la parte dedicada a la comunicación externa, dado que resulta altamente probable que el sistema tenga que hacer uso de datos externos al mismo.
 
-##### Base de datos de conocimiento
+#### Base de datos de conocimiento
 
 Contiene el conocimiento y la experiencia de los expertos en un campo determinado, estructurado y codificado, preparado para entregar dicho conocimiento cuando sea requerido por el sistema. Ha sido generado a partir de las referencias dadas por los expertos en dicho campo.
 
@@ -203,7 +203,7 @@ A la hora de implementar un sistema experto, resulta conveniente tener en cuenta
 - Además, también hay otra clase que es la propia de cada experto, que no está completamente basada en hechos objetivos y que no se encuentra en los libros de texto. Este conocimiento se denomina conocimiento heurístico y su implementación en sistemas expertos resulta muy adecuada. Si se alimenta a un sistema experto con conocimientos de tipo heurístico, se puede conseguir que, por ejemplo, personal destinado a la realización de una tarea y con escasa experiencia en la misma tome decisiones similares a las que elegiría un experto.
 - La representación del conocimiento en un sistema experto por reglas del tipo SI ... ENTONCES contribuye a hacer más sencilla su explicación pues son fácilmente entendibles tanto por los programadores del sistema como por sus usuarios. Nótese también que la base de datos de conocimiento contiene la información que empleará el motor de inferencia.
 
-##### Base de hechos o datos
+#### Base de hechos o datos
 
 Es la memoria de trabajo propiamente dicha. Consiste en una memoria temporal auxiliar que almacena variables de inicio, valores de variables intermedias y las variables de salida de la consulta.
 
@@ -211,7 +211,7 @@ En esta unidad, queda registrado todo el histórico de estados del sistema en la
 
 Durante una consulta, el usuario introduce la información que se tiene del problema actual en la base de hechos y el sistema sincroniza ésta con el conocimiento que hay disponible al respecto en la base de conocimiento, de forma que se puedan deducir nuevos hechos. Para esto es necesario que las base de datos sean de tipo relacional.
 
-##### Motor o mecanismo de inferencia
+#### Motor o mecanismo de inferencia
 
 Es la unidad lógica que aplica las reglas sobre la base de conocimientos a partir de las consultas, extrayendo conclusiones. Utiliza un método fijo de solución de problemas configurado imitando el proceso humano de los expertos para resolver ese tipo de problemas.
 
@@ -219,19 +219,19 @@ El motor de inferencias es el elemento del sistema experto encargado de realizar
 
 El motor de inferencia determina las acciones que tendrán lugar, el orden en el que lo harán y la interacción entre las distintas partes del sistema. También selecciona las reglas a aplicar y determina cómo y cuándo se van a aplicar las reglas programadas. Finalmente, también se encarga de la interacción con el usuario.
 
-##### Sistema para la explicación de las decisiones tomadas
+#### Sistema para la explicación de las decisiones tomadas
 
 Una vez que el motor de inferencias ha llegado una decisión, resulta de gran importancia que el sistema sea capaz de explicárselo de forma conveniente al usuario. Una manera de hacerlo es mostrando las reglas de inferencia que el sistema empleó en su proceso de razonamiento. Sin embargo, este método podría ser, en función de la aplicación de que se trate, sumamente tedioso.
 
 Por tanto, todo sistema experto debe disponer de algún tipo de subsistema que permita presentar una explicación de las decisiones tomadas de manera que resulte comprensible para el usuario.
 
-##### Sistema para la adquisición de nuevo conocimiento
+#### Sistema para la adquisición de nuevo conocimiento
 
 Es la parte del sistema que facilita la estructuración, implementación y actualización del conocimiento en las bases de datos. La clave es que sea una herramienta que se pueda utilizar sin tener un perfil especialmente técnico y sin tener que programar, aunque sí que debe permitir el acceso a través de código.
 
 Se entiende por sistema de adquisición de nuevo conocimiento una interfaz que permita que un experto en el campo sea capaz de introducir nueva información en el sistema. Dada la naturaleza de los sistemas expertos, es necesario que, una vez puesto en operación, resulte posible seguir añadiendo nueva información a medida que sea necesario y, para ello, es imprescindible disponer de algún sistema que permita la adquisición de este conocimiento.
 
-#### Dinámica de un sistema experto.
+### Dinámica de un sistema experto.
 
 El objetivo de los sistemas basados en el conocimiento es hacer que la información crítica requerida para que el sistema funcione sea explícita en lugar de implícita. En un programa informático tradicional, la lógica está incrustada en un código que, por lo general, solo puede ser revisado por un especialista informático. Con un sistema experto, el objetivo era especificar las reglas en un formato que fuera intuitivo y fácil de entender, revisar e incluso editar por expertos en el dominio en lugar de expertos en TI. Los beneficios de esta representación del conocimiento explícita fueron el desarrollo rápido y la facilidad de mantenimiento.
 
@@ -241,7 +241,7 @@ Lo que diferencia a este tipo de sistemas de un sistema tradicional de recuperac
 
 Veamos ahora los tipos de sistemas expertos que se desarrollaron y cómo resolvieron las tareas clave que permitieron su funcionamiento.
 
-##### Mecanismos de razonamiento.
+#### Mecanismos de razonamiento.
 
 Los principales mecanismos o modos de razonamiento son:
 
@@ -264,7 +264,7 @@ Para obtener conclusiones, utilizaremos los diferentes tipos de reglas y estrate
 >
 > [<img src="assets/Encadenamiento.png" alt="Encadenamiento hacia adelnate y hacia atras" style="zoom:50%;" />](https://prezi.com/fvw2aokvct7r/encadenamiento-hacia-adelante-y-hacia-atras/)
 
-### Sistemas híbridos Reglas/Datos
+## Sistemas híbridos Reglas/Datos
 
 * Dos enfoques:
   * Deducción de reglas a partir de datos.
@@ -274,7 +274,7 @@ Para obtener conclusiones, utilizaremos los diferentes tipos de reglas y estrate
 
 <img src="assets/1 wkeYZMEmA1W-lAbUTLzPrw.webp" alt="ajuste correcto 85%" style="zoom: 67%;" />
 
-#### Librerías
+### Librerías
 
 * [Human-Learn](https://koaning.github.io/human-learn/index.html):
   * Permite definir y dibujar reglas que se pueden mejorar con el aprendizaje automático.
@@ -285,11 +285,11 @@ Para obtener conclusiones, utilizaremos los diferentes tipos de reglas y estrate
   * Permite definir reglas para la extracción de información para textos.
   * Útil en casos donde no se dispone de suficientes datos etiquetados o por casos específicos.
 
-### Sistemas de razonamiento impreciso
+## Sistemas de razonamiento impreciso
 
 <img src="assets/1280px-Fuzzy_logic_temperature_en.svg.png" alt="1280px-Fuzzy_logic_temperature_es.svg.png" style="zoom: 33%;" />
 
-#### Definición
+### Definición
 
 * **Lògica difusa** o **lògica borrosa**:
   * Extensión de la lógica proposicional para trabajar con la incertidumbre.
@@ -301,7 +301,7 @@ Para obtener conclusiones, utilizaremos los diferentes tipos de reglas y estrate
   * Muy apropiados para **sistemas de control**
   * Nos permiten tener una **buena** solución, si no la **mejor**.
 
-#### Lógica difusa
+### Lógica difusa
 
 * La lógica proposicional es **binaria**.
   * Un enunciado es **cierto** o **falso**.
@@ -322,7 +322,7 @@ Para obtener conclusiones, utilizaremos los diferentes tipos de reglas y estrate
   * El poder trabajar con estos conceptos facilita la creación de dispositivos como secadores o termostatos.
     * _"Si la temperatura es fría, entonces enciende la calefacción"_
 
-#### Conceptos básicos
+### Conceptos básicos
 
 * **Variable lingüística**: Variable que puede tomar valores lingüísticos.
   * Ejemplos: $Temperatura$
@@ -339,7 +339,7 @@ Para obtener conclusiones, utilizaremos los diferentes tipos de reglas y estrate
   * Sistema basado en reglas que utiliza la lógica difusa.
   * Ejemplo: Sistema de control de temperatura de una casa.
 
-#### Funcionamiento de los sistemas de razonamiento impreciso
+### Funcionamiento de los sistemas de razonamiento impreciso
 
 * _Fuzzyficación_:
   * Conversión de los datos de entrada precisos a valores difusos.
@@ -364,7 +364,7 @@ Para obtener conclusiones, utilizaremos los diferentes tipos de reglas y estrate
     * Combina las conclusiones de las reglas para deducir la conclusión final.
     * Se suele utilizar la función de **centro de gravedad** o **máximo**.
 
-#### Funciones de pertenencia
+### Funciones de pertenencia
 
 <img src="assets/membership_fuctions-1732749975918-1.png" style="zoom:125%;" />
 
@@ -372,9 +372,9 @@ Para obtener conclusiones, utilizaremos los diferentes tipos de reglas y estrate
 * Las sinusoidales son útiles para representar **periodos**.
 * Las sigmoidales son útiles para representar **probabilidades**.
 
-#### Ejemplo: Propinas
+### Ejemplo: Propinas
 
-##### Variables d'entrada
+#### Variables d'entrada
 
 Utilizaremos funciones triangulares para representar las variables de entrada y salida
 
@@ -390,7 +390,7 @@ Utilizaremos funciones triangulares para representar las variables de entrada y 
   * **Medio**: $[0, 10]$
   * **Todos**: $[5, 10]$
 
-##### Variables de salida
+#### Variables de salida
 
 * **Soborno**:
   * **Bajo**: $[0, 13]$
@@ -399,7 +399,7 @@ Utilizaremos funciones triangulares para representar las variables de entrada y 
 
 <img src="assets/plot_tipping_problem_newapi_3.png" alt="ajuste correcto" style="zoom:50%;" />
 
-##### Reglas
+#### Reglas
 
 * **IF** (Calidad del servicio es **baja** o Comida es **bajo**) **THEN** (Propina es **baja**)
 * **IF** (Calidad del servicio es **media**) **THEN** (Propina es **media**)
@@ -407,7 +407,7 @@ Utilizaremos funciones triangulares para representar las variables de entrada y 
 
 <img src="assets/plot_tipping_problem_newapi_4.png" alt="ajuste correcto" style="zoom:50%;" />
 
-##### Inferencia
+#### Inferencia
 
 * Calidad del servicio: **9.8**
 * Calidad de la comida: **6.5**

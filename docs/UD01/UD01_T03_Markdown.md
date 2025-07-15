@@ -1,19 +1,4 @@
----
-title: Taller 03: Markdown - Manual de supervivencia 
-language: ES
-author: David Martínez Peña [www.martinezpenya.es]
-subject: Programación
-keywords: [PRG, 2024, Programacion, Java]
-IES: IES Eduardo Primo Marqués (Carlet) [www.ieseduardoprimo.es]
-header: ${title} - ${subject} (ver. ${today}) 
-footer:${currentFileName}.pdf - ${author} - ${IES} - ${pageNo}/${pageCount}
-typora-root-url:${filename}/../
-typora-copy-images-to:${filename}/../assets
----
-
-
-
-# Introducción a Markdown
+## Introducción a Markdown
 
 <img src="assets/markdown_logo.png" style="zoom:25%;" />
 
