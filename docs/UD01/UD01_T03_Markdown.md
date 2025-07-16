@@ -32,7 +32,7 @@ Gracias a la simplicidad de su sintaxis podrás utilizarlo siempre que necesites
 
 - Ideal para escribir un libro, pues permite la exportación fácil en ePub, PDF...
 
-  > ##### Si en el futuro Microsoft Word desapareciese perderías acceso a todo el contenido que has creado durante años utilizando dicho procesador. Así que lo más inteligente para evitar eso es **generar tu contenido de la manera más sencilla posible**: utilizando texto plano.
+  > Si en el futuro Microsoft Word desapareciese perderías acceso a todo el contenido que has creado durante años utilizando dicho procesador. Así que lo más inteligente para evitar eso es **generar tu contenido de la manera más sencilla posible**: utilizando texto plano.
 
 ### Desventajas
 
