@@ -257,7 +257,7 @@ Para insertar una imagen se debe poner un código con dos partes:
 
 Un ejemplo:
 
-​	**\[logo markdown](/assets/mardown_logo.png)**
+​	**\[logo markdown](assets/mardown_logo.png)**
 
 La visualización de la imagen anterior:
 
