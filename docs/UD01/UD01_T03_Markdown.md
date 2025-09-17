@@ -343,22 +343,13 @@ cond(no)->op
 
 Visualización:
 
-```flow
-st=>start: Usuario
-op=>operation: Operacion de usuario
-cond=>condition: Sí o No?
-e=>end: Acceso
-
-st->op->cond
-cond(yes)->e
-cond(no)->op
-```
+![](assets/flow.png)
 
 > Intenta realizar un diagrama para "programar" un almuerzo. En él, deberás dar los ***buenos días***, indicar que ***es hora del descanso***, y preguntar si ***alguién quiere almorzar***. Si no hay nadie que quiera almorzar contigo, debes **ir a otro grupo de amigos** y volver a indicar que *es hora del descanso.* Si alguien sí quiere almorzar **escribe en la pizarra que os vais a almorzar** y **sal al patio**.
 
 ## Crear secuencias
 
-/media/DADES/OneDriveGVA/DOCENCIA/24-25/media/DADES/OneDriveGVA/DOCENCIA/24-25En la secuenciación podemos observar que es bastante parecido a la creación de diagramas; pero la primera línea (crear un bloque de código) no serà ~~**flow**~~ sino **sequence**.
+En la secuenciación podemos observar que es bastante parecido a la creación de diagramas; pero la primera línea (crear un bloque de código) no serà ~~**flow**~~ sino **sequence**.
 
 ````
 ```sequence
@@ -371,12 +362,7 @@ Ana->>Mundo: Estoy bien gracias!
 
 Visualización:
 
-```sequence
-Ana->Mundo: Hola Mundo 
-Note right of Mundo: Mundo está pensando\nla respuesta
-Mundo-->Ana: Cómo estás? 
-Ana->>Mundo: Estoy bien gracias!
-```
+![sequence](assets/sequence.png)
 
 ## Crear índice
 

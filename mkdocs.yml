@@ -14,7 +14,7 @@ nav:
       - P02 Entregable: UD01/UD01_P02_Practica_ES.md
     - Talleres:
       - T01 Java: UD01/UD01_T01_IDE_ES.md
-      - T02 VsCode en GitHub: UD01/UD01_T02_GitHubVsCode_ES.md
+      - T02 GitHub: UD01/UD01_T02_GitHub.md
       - T03 Markdown: UD01/UD01_T03_Markdown.md
   - UD02:
     - Sistemas Expertos: UD02/UD02_ES.md
