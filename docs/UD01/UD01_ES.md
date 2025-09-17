@@ -1,5 +1,5 @@
 # Caracterización de sistemas y utilización de modelos de Inteligencia Artificial
-<p><iframe width="100%" height="315" src="https://www.youtube.com/embed/7XUKVj328z0?si=wxiYqDJr4XPt_YO-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe></p>
+![type:video](assets/UD01_IA_El_Siguiente_Capitulo.mp4)
 
 ## Fundamentos de los Sistemas Inteligentes
 
