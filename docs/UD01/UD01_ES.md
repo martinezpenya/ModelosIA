@@ -94,7 +94,7 @@ La consagración definitiva de la Inteligencia Artificial llegó a finales de lo
 
 - El sistema **Watson**, también de **IBM**, logró ganar en **2011** el popular concurso televisivo **Jeopardy!** frente a los dos máximos campeones de este programa.
 
-  <img src="assets/watsonJeopardy.jpeg" alt="https://i0.wp.com/d262ilb51hltx0.cloudfront.net/max/1600/1*Bt_XnH6AZbTlS1R0tkPVAA.jpeg?resize=1920%2C1080&ssl=1"  />
+  <img src="assets/watsonJeopardy.jpeg" alt="https://i0.wp.com/d262ilb51hltx0.cloudfront.net/max/1600/1*Bt_XnH6AZbTlS1R0tkPVAA.jpeg?resize=1920%2C1080&ssl=1" style="zoom: 50%;" />
 
   IBM continuó investigando en el campo de la Inteligencia Artificial (a la vez que sus ordenadores aumentaban su capacidad de cómputo) y, con lo aprendido con Deep Blue y otros desarrollos, creó Watson, una computadora que logró en 2011 ganar en Jeopardy!, uno de los concursos de conocimiento más famosos en Estados Unidos.
 
@@ -102,9 +102,11 @@ La consagración definitiva de la Inteligencia Artificial llegó a finales de lo
 
 - La empresa **DeepMind** publicó "el vídeo de los 500 millones de dólares". En dicho vídeo mostraba cómo la red neuronal que había desarrollado aprende a jugar al **Arkanoid** de manera autónoma. Google acabó comprando esta empresa en **2014** por **500 millones** de dólares (de ahí el nombre del vídeo).
 
-   ![image-20230801123145090](assets/DeepMind500.png)
+   [![Video de los 500 millones de dolares](https://img.youtube.com/vi/V1eYniJ0Rnk/0.jpg)](https://www.youtube.com/watch?v=V1eYniJ0Rnk)
 
-   https://www.youtube.com/watch?v=V1eYniJ0Rnk
+   <p>
+   <iframe width="100%" height="315" src="https://www.youtube.com/embed/V1eYniJ0Rnk?si=3l-63zYkRfa7x4SQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   </p>
 
    DeepMind, una compañía inglesa creada en 2010, publicó a los pocos años de su creación el que se denominó "El vídeo de los 500 millones de dólares". En dicho vídeo (que puedes ver más arriba) mostraba cómo su Inteligencia Artificial había aprendido a jugar gracias a la técnica de entrenamiento autónomo (Machine Learning) por refuerzo al "Arkanoid" (un juego arcade del S.XX).
 
@@ -116,9 +118,9 @@ La consagración definitiva de la Inteligencia Artificial llegó a finales de lo
 
 - **Google** liberó **Tensor Flow**, su librería para Machine Learning, en **2015**, permitiendo que cualquier persona pudiera acceder a sus servidores y crear su propio equipo con capacidad de autoprogramación y de aprender de forma autónoma.
 
-   ![image-20230801133721414](assets/TensorFlow.png)
+   [![TensorFlow](https://img.youtube.com/vi/oZikw5k_2FM/0.jpg)](https://www.youtube.com/watch?v=oZikw5k_2FM)
 
-   https://www.youtube.com/watch?v=oZikw5k_2FM
+   <p><iframe width="100%" height="315" src="https://www.youtube.com/embed/oZikw5k_2FM?si=KBaNxGW7CK6lk-lc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
 
    En noviembre de 2015 Google liberó TensorFlow, el programa de Inteligencia Artificial que había desarrollado mejorando un sistema de aprendizaje automático anterior conocido como DistBelief.
 
@@ -129,6 +131,8 @@ La consagración definitiva de la Inteligencia Artificial llegó a finales de lo
 - La IA de **AlphaGo** de **Google** sorprendió a todos proponiendo en una partida de Go una jugada que nunca hubiera hecho un experto jugador humano... que en pocos movimientos más le dió la victoria.
 
    ![image-20230801133950780](assets/alphago.png)
+   [![AlphaGo](https://img.youtube.com/vi/8tq1C8spV_g/0.jpg)](https://www.youtube.com/watch?v=8tq1C8spV_g)
+   
 
    Trailer: https://www.youtube.com/watch?v=8tq1C8spV_g
 
