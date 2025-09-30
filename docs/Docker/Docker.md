@@ -142,14 +142,14 @@ Utilizaremos una de las imágenes de: [https://hub.docker.com/_/debian/tags](htt
 ```bash
 # Obtenemos la imagen, en el apartado aterior la hemos ejecutado directamente con "run", esto
 # la obtiene implícitamente. En este caso la vamos a descargar.
-docker pull debian:10-slim
+$ docker pull debian:13-slim
 
 # --name
 # -h hostname que tendrá el contenedor
 # -e codificación de caracteres
 # -it modo interactivo
 # /bin/bash -l  la shell que se ejecutará
-docker run --name debian-mini -h equipo1 -e LANG=C.UTF-8 -it debian:10-slim /bin/bash -l
+$ docker run --name debian-mini -h equipo1 -e LANG=C.UTF-8 -it debian:13-slim /bin/bash -l
 
 --- Estamos dentro del contenedor ---
 # Una vez dentro del contenedor podemos actualizarlo e instalar los paquetes que creamos necesarios
@@ -165,12 +165,12 @@ echo "hola" > prueba.txt
 exit (o control + d)
 
 --- Ahora volvemos a la consola de nuestro equipo ---
-docker ps
+$ docker ps
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 
-docker ps -a
+$ docker ps -a
 CONTAINER ID   IMAGE            COMMAND          CREATED          STATUS                      PORTS     NAMES
-97d8dc048093   debian:10-slim   "/bin/bash -l"   2 minutes ago    Exited (0) 24 seconds ago             debian-mini
+8c6b29c818ee   debian:13-slim   "/bin/bash -l"   44 seconds ago   Exited (0) 11 seconds ago             debian-mini
 ```
 
 ### Imágenes
@@ -526,14 +526,45 @@ El `DockerFile` nos permitirá definir las funciones básicas del contenedor.
 
 Todo `Dockerfile` debe terminar en un comando `CMD` o en un `ENTRYPOINT`, pero en este caso, no lo utilizamos, ya que lanzaremos un comando directamente desde la receta de DockerCompose. Es decir, este `Dockerfile` se utiliza solamente para construir el contenedor y configurarlo. No es auto-ejecutable.
 
-#### `FROM`
+**Construir la imagen desde el Dockerfile**
+
+```bash
+$ docker build -t nombre-de-tu-imagen .
+```
+
+**Ejemplo:**
+
+```bash
+$ docker build -t mi-aplicacion:1.0 .
+```
+
+**Parámetros importantes:**
+
+- `-t` : Etiqueta (tag) para tu imagen
+- `.` : Ruta donde está el Dockerfile (usualmente el directorio actual)
+
+Crear y ejecutar el contenedor
+
+```bash
+$ docker run -d --name nombre-contenedor nombre-de-tu-imagen
+```
+
+**Ejemplo:**
+
+```bash
+$ docker run -d --name mi-contenedor mi-aplicacion:1.0
+```
+
+## Opciones
+
+`FROM`
 
 Imagen del sistema operativo donde va a correr el contenedor.
 
-!!! tip 
+!!! tip "Consejo"
     Las versiones “Alpine linux” ocupan muy poco espacio.
 
-#### `RUN`
+`RUN`
 
 El comando **`RUN`** se ejecuta cuando se está construyendo una imagen personalizada para realizar una acción, creando una capa nueva. Este comando tiene el siguiente formato:
 
@@ -551,9 +582,7 @@ Ejemplo en windows:
 RUN [“Powershell”, “Get-Services”, “*”]
 ```
 
-
-
-#### `COPY`
+`COPY`
 
 Sirve para copiar archivos desde nuestra máquina al contenedor. Podemos pasar un documento de texto de la máquina anfitrión al conenedor de python-ubuntu.
 
@@ -566,7 +595,7 @@ COPY prueba.txt /
 
 ***Volvemos a construir la imagen y accedemos a ella para buscar el archivo.***
 
-#### `ENV`
+`ENV`
 
 Podemos crear una variable y enviarla a nuestro contenedor, en mi caso por ejemplo voy a definir una variable llamada contenido que va a ir dirigida a un bloc de notas que está dentro del contenedor:
 
@@ -589,7 +618,7 @@ ENV NUEVO_PATH /etc
 RUN echo $NUEVO_PATH > /prueba.txt
 ```
 
-#### `WORKDIR`
+`WORKDIR`
 
 Nos situamos en un directorio determinado, nos puede ayudar en la copia de ficheros.
 
@@ -599,11 +628,11 @@ WORKDIR /home
 COPY prueba.txt .  # Lo copia en /home
 ```
 
-#### `EXPOSE`
+`EXPOSE`
 
 Permite exponer los puertos que queramos
 
-#### `LABEL`
+`LABEL`
 
 Creamos etiquetas, por ejemplo:
 
@@ -614,7 +643,7 @@ LABEL autor=JosepGarcia
 .....
 ```
 
-#### `USER`
+`USER`
 
 Sirve para establecer el usuario, debe existir. (Por defecto se utiliza root).
 
@@ -628,7 +657,7 @@ WORKDIR /home/josepgarcia
 RUN echo $(whoami) > /tmp/usuarioahora.txt
 ```
 
-#### `CMD`
+`CMD`
 
 Ejecuta comandos una vez se ha inicializado el conenedor (RUN se utiliza para crear la imagen de un contenedor).
 
@@ -638,7 +667,7 @@ Ejecuta comandos una vez se ha inicializado el conenedor (RUN se utiliza para cr
 CMD top
 ```
 
-#### `IGNORE`
+`IGNORE`
 
 Sirve para ignorar aquello que tengamos en nuestro directorio actual.
 
@@ -669,6 +698,101 @@ Dockerfile
 
 https://www.baeldung.com/ops/docker-save-container-state
 
+## Docker Desktop
+
+### ¿Qué es Docker Desktop?
+
+![logo docker desktop blue](assets/logo-docker-desktop-blue.svg)
+
+Es la aplicación oficial de Docker que te da una **interfaz gráfica (GUI)** para manejar contenedores, además de la línea de comandos.
+
+### ¿Para qué sirve?
+
+- **Gestión visual**: Ver contenedores, imágenes y volúmenes de forma gráfica
+- **Configuración fácil**: Ajustar recursos (CPU, RAM) con sliders
+- **Monitorización**: Ver en tiempo tiempo real qué está pasando
+
+![docker desktop GUI](assets/dockerDesktop.png)
+
+### Compatibilidad por Sistema Operativo
+
+🪟 **Windows**
+
+- **Windows 10/11** 64-bit (versiones Home, Pro, Enterprise, Education)
+- **Requisitos importantes**:
+  - Habilitar **WSL 2** (Windows Subsystem for Linux)
+  - Virtualización activada en BIOS/UEFI
+  - **Windows Home** necesita WSL 2, **Pro/Enterprise** puede usar Hyper-V
+
+🍎 **macOS**
+
+- **macOS 12 Monterey** o superior
+- **Tipos de chip**:
+  - **Apple Silicon** (M1, M2, M3, etc.)
+  - **Intel** con procesador de 2010 o más nuevo
+- Necesita **macOS actualizado**
+
+🐧 **Linux** (versión nativa)
+
+- **Distribuciones compatibles**:
+  - Ubuntu 20.04 LTS o superior
+  - Debian 11 o superior
+  - Fedora 36 o superior
+  - Arch Linux (y derivados)
+- **Requisitos**: kernel 5.10+, systemd, 64-bit
+
+### **Guía Rápida de Instalación**
+
+**Windows:**
+
+1. Descarga desde [docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop/)
+2. Ejecuta el instalador `.exe`
+3. Sigue el asistente (marca "Use WSL 2" si tienes Windows Home)
+4. Reinicia cuando termine
+5. ¡Listo! Docker se inicia automáticamente
+
+**macOS:**
+
+1. Descarga desde la web oficial
+2. Arrastra Docker.app a la carpeta Applications
+3. Ejecuta desde Launchpad
+4. Autoriza con contraseña del sistema
+5. Espera a que configure todo (puede tardar unos minutos)
+
+**Linux (Ubuntu/Debian ejemplo):**
+
+  ```bash
+  # Opción 1: Descargar .deb oficial
+  wget https://desktop.docker.com/linux/main/amd64/docker-desktop-4.25.0-amd64.deb
+  
+  # Opción 2: Instalar
+  sudo apt install ./docker-desktop-*.deb
+  
+  # Iniciar
+  systemctl --user start docker-desktop
+  ```
+
+### Ventajas docker desktop (GUI) vs Línea de Comandos (CLI)
+
+✅ **Ventajas de Docker Desktop:**
+
+- **Más fácil para empezar** - Ideal para principiantes
+- **Todo integrado** - No necesitas instalar nada más
+- **Debugging visual** - Ves los logs y estados de un vistazo
+- **Gestión de recursos** - Controlas CPU/RAM fácilmente
+
+❌ **Desventajas:**
+
+- **Más pesado** - Consume más recursos de tu PC
+- **Menos flexible** - Algunas opciones avanzadas solo por comandos
+- **Dependes de la GUI** - Si se cierra la app, pierdes la interfaz
+
+🎯 **Conclusión:**
+
+- **Empezad con Docker Desktop** para aprender sin frustraciones
+- **Aprended también los comandos básicos** para ser más versátiles
+- Usad **ambos**: la GUI para lo cotidiano y la terminal para lo avanzado
+
 ## Casos de uso
 
 ### Compatibilidad de código entre diferentes versiones de un lenguaje
@@ -678,7 +802,7 @@ mkdir /tmp/php
 cd /tmp/php
 ```
 
-Crear el siguiente archivo (test.php)
+Crear el siguiente archivo (`test.php`)
 
 ```php
 <?php
@@ -695,15 +819,71 @@ echo "El $datos[0] es $datos[1] y la $datos[2] lo hace especial.\n";
 A continuación vamos a crear dos contenedores que sirva este código usando imágenes distintas , para cada versión de PHP y usando puertos distintos para acceder a cada versión de la aplicación:
 
 ```bash
+$ docker run -d -p 8081:80 --name php56 -v /tmp/php:/var/www/html:ro php:5.6-apache
+Unable to find image 'php:5.6-apache' locally
+5.6-apache: Pulling from library/php
+5e6ec7f28fb7: Pull complete 
+cf165947b5b7: Pull complete 
+7bd37682846d: Pull complete 
+99daf8e838e1: Pull complete 
+ae320713efba: Pull complete 
+ebcb99c48d8c: Pull complete 
+9867e71b4ab6: Pull complete 
+936eb418164a: Pull complete 
+bc298e7adaf7: Pull complete 
+ccd61b587bcd: Pull complete 
+b2d4b347f67c: Pull complete 
+56e9dde34152: Pull complete 
+9ad99b17eb78: Pull complete 
+Digest: sha256:0a40fd273961b99d8afe69a61a68c73c04bc0caa9de384d3b2dd9e7986eec86d
+Status: Downloaded newer image for php:5.6-apache
+10c4c965e067c93cf0ff261ddbf358e323226ed3d54df3b5f4e69c64615194fd
 
-docker run -d -p 8081:80 --name php56 -v /tmp/php:/var/www/html:ro php:5.6-apache
-## Accedemos al contenedor: docker exec -it eb326ffd1b66 /bin/bash
-## Ejecutamos test.php
+#Buscamos el id del contenedor que acabamos de crear
+$ docker ps
+CONTAINER ID   IMAGE            COMMAND                  CREATED          STATUS          PORTS                                   NAMES
+10c4c965e067   php:5.6-apache   "docker-php-entrypoi…"   18 seconds ago   Up 17 seconds   0.0.0.0:8081->80/tcp, :::8081->80/tcp   php56
 
-**docker run -d -p 8082:80 --name php74 -v /tmp/php:/var/www/html:ro php:7.4-apache**
-## Ejecutamos test.php desde web
-## http://localhost:8082/test.php
+#Accedermos a su consola con el id que hemos encontrado
+$ docker exec -it 10c4c965e067 /bin/bash
+
+#Ejecutamos test.php y vemos que funciona perfectamente
+root@10c4c965e067:/var/www/html# php test.php
+El café es marrón y la cafeína lo hace especial.
+
+#Salimos del contenedor
+root@10c4c965e067:/var/www/html# exit
 ```
+
+Ahora lo intentaremos con una versión más reciente de php, la 7.4:
+
+```bash
+$ docker run -d -p 8082:80 --name php74 -v /tmp/php:/var/www/html:ro php:7.4-apache
+Unable to find image 'php:7.4-apache' locally
+7.4-apache: Pulling from library/php
+a603fa5e3b41: Pull complete 
+c428f1a49423: Pull complete 
+156740b07ef8: Pull complete 
+fb5a4c8af82f: Pull complete 
+25f85b498fd5: Pull complete 
+9b233e420ac7: Pull complete 
+fe42347c4ecf: Pull complete 
+d14eb2ed1e17: Pull complete 
+66d98f73acb6: Pull complete 
+d2c43c5efbc8: Pull complete 
+ab590b48ea47: Pull complete 
+80692ae2d067: Pull complete 
+05e465aaa99a: Pull complete 
+Digest: sha256:c9d7e608f73832673479770d66aacc8100011ec751d1905ff63fae3fe2e0ca6d
+Status: Downloaded newer image for php:7.4-apache
+de1a3c9f72a4003022a0dfa9e1cdd7d2733ae52d21046e342370131abc50a112
+
+#Ahora ejecutaremos test.php de otro modo, directamente accediendo al servidor web que hemos levantado en el puerto 8082 accediendo a la url http://localhost:8082/test.php
+```
+
+El resultado desde el navegador debería ser similar a:
+
+![php 7.4](assets/php74.png)
 
 ### Crear una imagen de un repositorio de github
 
@@ -711,12 +891,15 @@ Ejemplo repositorio:
 
 [https://github.com/k4m4/kickthemout](https://github.com/k4m4/kickthemout)
 
-```bash
+Creamos el `Dockerfile`:
+
+```dockerfile
 FROM ubuntu:focal
 
 RUN apt update -y && apt upgrade -y && apt install python3 -y
 RUN apt install -y git
 RUN apt install -y python3-pip
+RUN apt install -y nmap
 RUN git clone https://github.com/k4m4/kickthemout.git
 
 WORKDIR /kickthemout
@@ -726,42 +909,167 @@ RUN pip3 install -r requirements.txt
 CMD python3 kickthemout.py
 ```
 
-### Aplicación de python dentro de un contenedor
+Si ahora creamos nuestra imagen a partir del Dockerfile:
+
+```bash
+$ docker build -t kick:1.0 .
+[+] Building 111.2s (11/11) FINISHED                                                          docker:desktop-linux
+ => [internal] load build definition from Dockerfile                                                          0.1s
+ => => transferring dockerfile: 316B                                                                          0.0s
+ => [internal] load metadata for docker.io/library/ubuntu:focal                                               2.0s
+ => [internal] load .dockerignore                                                                             0.0s
+ => => transferring context: 2B                                                                               0.0s
+ => [1/7] FROM docker.io/library/ubuntu:focal@sha256:8feb4d8ca5354def3d8fce243717141ce31e2c428701f6682bd2faf  2.0s
+ => => resolve docker.io/library/ubuntu:focal@sha256:8feb4d8ca5354def3d8fce243717141ce31e2c428701f6682bd2faf  0.0s
+ => => sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476 27.51MB / 27.51MB              1.2s
+ => => extracting sha256:13b7e930469f6d3575a320709035c6acf6f5485a76abcf03d1b92a64c09c2476                     0.7s
+ => [2/7] RUN apt update -y && apt upgrade -y && apt install python3 -y                                      30.5s
+ => [3/7] RUN apt install -y git                                                                             28.7s 
+ => [4/7] RUN apt install -y python3-pip                                                                     33.2s 
+ => [5/7] RUN git clone https://github.com/k4m4/kickthemout.git                                               1.0s 
+ => [6/7] WORKDIR /kickthemout                                                                                0.1s 
+ => [7/7] RUN pip3 install -r requirements.txt                                                                3.2s 
+ => exporting to image                                                                                       10.0s 
+ => => exporting layers                                                                                       6.8s 
+ => => exporting manifest sha256:771f59312051c037aaff14313c8b0edf1e4783c1b35b62015216ef06cd7b4270             0.0s 
+ => => exporting config sha256:8a78e3ef64feef584340963a82a193bc3949433f74fa5863cf3e874c6cd95025               0.0s 
+ => => exporting attestation manifest sha256:98f1e53e84cf3c2fa9f69b4dd88d852ca0524e060a268f82ed3dadc386bd655  0.1s 
+ => => exporting manifest list sha256:36321bf83b1c51a1200aa0742bd671f14d999633640535cfb2c72ad530c25c48        0.0s 
+ => => naming to docker.io/library/kick:1.0                                                                   0.0s
+ => => unpacking to docker.io/library/kick:1.0                                                                2.9s
+
+ 1 warning found (use docker --debug to expand):
+ - JSONArgsRecommended: JSON arguments recommended for CMD to prevent unintended behavior related to OS signals (line 12)
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/ck1d95jji381mhtqspu1azv13
+```
+
+A continuación podremos crear un nuevo contenedor usando esa imagen:
+
+```bash
+$ docker run -it --name mi-kick kick:1.0
+
+ERROR: Gateway IP could not be obtained. Please enter IP manually.
+
+kickthemout> Enter Gateway IP (e.g. 192.168.1.1): 
+```
+
+Vemos que el script no encuentra la puerta de enlace, pero la imagen y el contenedor creados funcionan correctamente.
+
+### Dockerizar nuestro jupyter con carpeta para notebooks
+
+Otra forma de levantar un contenedor con docker-compose es utilizar un Dockerfile para generar la imagen (en lugar de usar una de DockerHub)
+
+Necesitamos una carpeta con la siguiente estructura:
+
+```bash
+.
+├── docker-compose.yml
+├── Dockerfile
+└── notebooks
+    └── rockpaperscissors.ipynb
+```
+
+El fichero `Dockerfile` tiene el siguiente contenido:
+
+```dockerfile
+FROM python:3.6 #versión de python compatible con experta
+RUN pip3 install experta #libreria de python para sistemas expertos
+RUN pip3 install notebook #libreria para usar notebooks en python
+WORKDIR /home/MIA2526 #creamos la carpeta de trabajo
+CMD jupyter notebook --allow-root --ip=0.0.0.0 --port=8888 --no-browser #ejecutamos el jupyter notebook en el puerto 8888
+```
+
+Ahora, para el `docker-compose.yml` tendremos:
+
+```docker-compose
+services:
+  experta:
+    container_name: experta #bautizamos a nuestro contenedor
+    build: . #con esta linea le indicamos que busque el Dockerfile, en lugar de buscar una imágen en un repositorio
+    ports:
+      - "8888:8888" #publicamos el puerto para que sea accesible desde fuera
+    volumes:
+      - ./notebooks:/home/MIA2526 #aquí asignamos la carpeta local notebooks con la carpeta de trabajo del contenedor
+```
+
+Y por último necesitamos el notebook para hacer pruebas, en nuestro caso es un juego de piedra, papel o tijeras:
+
+[rockpaperscissors.ipynb](assets/rockpaperscissors.ipynb) este fichero debemos guardarlo en la carpeta `notebooks`
+
+Ahora con toda la estructura lista y desde la raiz de la carpeta (donde estan el docker-compose.yml y el Dockerfile) ejecutamos:
+
+```bash
+$ docker-compose up
+[+] Running 1/1
+ ✔ Container experta  Recreated                                                                               0.1s 
+Attaching to experta
+experta  | [I 16:30:08.568 NotebookApp] Writing notebook server cookie secret to /root/.local/share/jupyter/runtime/notebook_cookie_secret
+experta  | [I 16:30:08.784 NotebookApp] Serving notebooks from local directory: /home/MIA2324
+experta  | [I 16:30:08.784 NotebookApp] Jupyter Notebook 6.4.10 is running at:
+experta  | [I 16:30:08.784 NotebookApp] http://e0ec65ac1d84:8888/?token=825b1ba76502787821bc045496e3429bca02ba09720a835b
+experta  | [I 16:30:08.784 NotebookApp]  or http://127.0.0.1:8888/?token=825b1ba76502787821bc045496e3429bca02ba09720a835b
+experta  | [I 16:30:08.784 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+experta  | [C 16:30:08.787 NotebookApp] 
+experta  |     
+experta  |     To access the notebook, open this file in a browser:
+experta  |         file:///root/.local/share/jupyter/runtime/nbserver-7-open.html
+experta  |     Or copy and paste one of these URLs:
+experta  |         http://e0ec65ac1d84:8888/?token=825b1ba76502787821bc045496e3429bca02ba09720a835b
+experta  |      or http://127.0.0.1:8888/?token=825b1ba76502787821bc045496e3429bca02ba09720a835b
+```
+
+Ahora podemos hacer click directamente sobre el enlace a http://127.0.0.1:8888/?token=bebf660273e8e168c7fec90978ed56fb50db6b08d915cb14 donde veremos nuestro jupyter notebook:
+
+![jupyter notebook](assets/jupyter.png)
+
+Si hacemos click sobre el notebook `rockpaperscissors.ipynb` podremos ver:
+
+![rockpaperscissors.ipynb](assets/jupyter2.png)
+
+Después de pulsar varias veces (para ir ejecutando todas las celdas) podremos ver como evoluciona nuestro juego:
+
+![ROCK-PAPER-SCISSORS GAME](assets/jupyter3.png)
+
+Para detener el contenedor que hemos lanzado con `docker-compose`, solo hemos de pulsar ++ctrl+c++
 
 ### Crear una imagen personalizada
 
 [https://jolthgs.wordpress.com/2019/09/25/create-a-debian-container-in-docker-for-development/](https://jolthgs.wordpress.com/2019/09/25/create-a-debian-container-in-docker-for-development/)
 
-Para crear una imagen personalizada utilizaremos el contenedor que habíamos creado en el punto 1, con una debian actualizada y con un fichero de texto prueba.txt
+Para crear una imagen personalizada utilizaremos el contenedor que habíamos creado en el [primer ejemplo](#crear-contenedor-interactivo-y-con-nombre), con una debian actualizada y con un fichero de texto `prueba.txt`
 
 ```bash
 # Iniciamos el contenedor
-docker start debian-mini
+$ docker start debian-mini
 
-docker ps
-CONTAINER ID   IMAGE            COMMAND          CREATED          STATUS         PORTS     NAMES
-97d8dc048093   debian:10-slim   "/bin/bash -l"   10 minutes ago   Up 2 seconds             debian-mini
+$ docker ps
+CONTAINER ID   IMAGE            COMMAND          CREATED              STATUS         PORTS     NAMES
+8c6b29c818ee   debian:13-slim   "/bin/bash -l"   About a minute ago   Up 6 seconds             debian-mini
 
 # Entramos en el contenedor iniciado
-docker exec -it debian-mini bash
+$ docker exec -it debian-mini bash
 
-# Instalamos paquetes
-apt install netris sl ninvaders
+# Instalamos el paquete
+apt install bsdgames
 
-# ¿Dónde están?
-find / -name ninvaders
+# Ver todos los juegos incluidos
+dpkg -L bsdgames | grep /usr/games
 
-ls /usr/games
+# Ejecutamos el tetris (por ejemplo)
+/usr/games/tetris-bsd
+# Salimos del juego con la q
 
-# Salimos
+# Salimos del contenedor
 control + d
 
 # Nuestra imagen
-docker image ls
-REPOSITORY                             TAG       IMAGE ID       CREATED        SIZE
-debian                                 10-slim   6016bddc4bad   9 days ago     63.5MB
-
+$ docker image ls
+REPOSITORY   TAG       IMAGE ID       CREATED        SIZE
+debian       13-slim   1caf1c703c8f   42 hours ago   117MB
 ```
+
+![tetris-bsd](assets/tetris-bsd.png)
 
 ## Copias de seguridad
 
@@ -786,8 +1094,6 @@ Hay que tener en cuenta, antes de nada, que no es posible restaurar el contenedo
 ```bash
 docker import fichero-backup.tar nombre-nueva-imagen
 ```
-
-
 
 ### **Copias de imágenes**
 
@@ -860,12 +1166,20 @@ docker load -i fichero.tar
 
 ### **Ejercicio1**
 
-Modificar Dockerfile para que el usuario creado anteriormente pueda ejectuar sudo.
+Instala docker desktop en tu PC. Guarda una captura de pantalla que demuestre que funciona en tu PC.
 
-### Python
+### Ejercicio2
 
-Crea 2 contenedores, uno con python 3.11 y otro con python 3.9
+Asegurate de que puedes reproducir todos los casos de uso vistos [más arriba](#casos-de-uso). Guarda varias capturas de pantalla donde se pueda ver que han funcionado los diferentes casos.
 
-```bash
-docker run -d --name python3.11 -v /tmp/php:/app python:3.11
-```
+### Ejercicio 3
+
+Crea 2 contenedores, uno con python 3.11 y otro con python 3.9. Explica los pasos que has seguido para conseguirlo y muestra pantalla con los contenedores funcionando.
+
+### Ejercicio 4
+
+Elige alguna de las imágenes propuestas en los Contenedores de ejemplo (o cualquiera a tu elección de DockerHub), escribe un `docker-compose.yml` y muestralo con capturas y en funcionamiento en la memoria en PDF.
+
+## Tarea entregable
+
+Recopila todas las capturas y explicaciones de los 4 ejercicios en una memoria en pdf que justifique todo el trabajo realizado.
