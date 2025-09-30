@@ -26,15 +26,16 @@
 
 ## 🎯 Resultados de Aprendizaje (RA)
 
-|         | **Descripción**                                              | **Unidades** | **Nota mínima** |   **Peso** |
-| ------- | ------------------------------------------------------------ | -----------: | --------------: | ---------: |
-| **RA1** | 🔍 Caracteriza sistemas de Inteligencia Artificial relacionándolos con la mejora de la eficiencia operativa de las organizaciones y empresas. |            1 |           **5** | **10,00%** |
-| **RA2** | ⚙️ Utiliza modelos de sistemas de Inteligencia Artificial implementando sistemas de resolución de problemas. |            1 |           **5** | **10,00%** |
-| **RA3** | 💬 Relaciona el procesamiento de lenguaje natural con sus aplicaciones determinando su potencial e identificando sus limitaciones. |            3 |           **5** | **20,00%** |
-| **RA4** | 🤖 Analiza sistemas robotizados, evaluando opciones de diseño e implementación. |            4 |           **5** | **20,00%** |
-| **RA5** | 🧠 Aplica sistemas expertos evaluando la influencia de los controladores inteligentes en el comportamiento del sistema. |            2 |           **5** | **20,00%** |
-| **RA6** | ⚖️ Aplica principios legales y éticos al desarrollo de la Inteligencia Artificial integrándolos como parte del proceso. |            5 |           **5** | **20,00%** |
-|         |                                                              |              |                 |    100,00% |
+|         | **Descripción**                                              | **Unidades** | **Nota mínima** |    **Peso** |
+| ------- | ------------------------------------------------------------ | -----------: | --------------: | ----------: |
+| **RA1** | 🔍 Caracteriza sistemas de Inteligencia Artificial relacionándolos con la mejora de la eficiencia operativa de las organizaciones y empresas. |            1 |           **5** |  **10,00%** |
+| **RA2** | ⚙️ Utiliza modelos de sistemas de Inteligencia Artificial implementando sistemas de resolución de problemas. |            1 |           **5** |  **10,00%** |
+| **RA3** | 💬 Relaciona el procesamiento de lenguaje natural con sus aplicaciones determinando su potencial e identificando sus limitaciones. |            3 |           **5** |  **15,00%** |
+| **RA4** | 🤖 Analiza sistemas robotizados, evaluando opciones de diseño e implementación. |            4 |           **5** |  **15,00%** |
+| **RA5** | 🧠 Aplica sistemas expertos evaluando la influencia de los controladores inteligentes en el comportamiento del sistema. |            2 |           **5** |  **15,00%** |
+| **RA6** | ⚖️ Aplica principios legales y éticos al desarrollo de la Inteligencia Artificial integrándolos como parte del proceso. |            5 |           **5** |  **15,00%** |
+| RA7     | Proyecto intermodular                                        |              |           **5** |  **20,00%** |
+|         |                                                              |              |                 | **100,00%** |
 
 ## 📜 Legislación vigente
 

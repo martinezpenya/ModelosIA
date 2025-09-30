@@ -445,7 +445,7 @@ Sin embargo, en otros entornos, o para casos concretos, igual queremos que un co
 
 Para eso usaremos el parámetro `restart`. En el caso de la base de datos de nuestro ejemplo, la configuración quedaría como:
 
-```bash hl_lines="4"
+```dockerfile hl_lines="4"
 services:
     db:
         image: mariadb:10.3.9
