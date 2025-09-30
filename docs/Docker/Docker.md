@@ -7,6 +7,7 @@
 - [¿Qué es docker? Imagen vs contenedor](https://www.youtube.com/watch?v=FAJ1o3hb35s) 
   
     [![¿Qué es docker? Imagen vs contenedor](https://img.youtube.com/vi/FAJ1o3hb35s/0.jpg)](https://youtu.be/BbA5dpS4CcI?si=FAJ1o3hb35s)
+    
     <p><iframe width="560" height="315" src="https://www.youtube.com/embed/FAJ1o3hb35s?si=byaWLqYMVSlPFpIx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
     
 - [Curso de docker](https://youtu.be/4Dko5W96WHg?si=Ri9RgyfLWxbs0DY9&t=86)
@@ -20,9 +21,9 @@
     <p><iframe width="560" height="315" src="https://www.youtube.com/embed/A8oXDTDhZWU?si=oPFtXsMsEeUI-T9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
     
 ### Arquitectura
-![Arquitectura1](<assets/docker.png>)
-![Arquitectura2](<assets/docker1.png>)
-![Arquitectura3](<assets/docker2.png>)
+![Arquitectura1](<assets/docker.png>){width="500"}
+![Arquitectura2](<assets/docker1.png>){width="500"}
+![Arquitectura3](<assets/docker2.png>){width="500"}
 
 ### Instalación en Ubuntu
 
@@ -201,7 +202,7 @@ hello-world                             latest        ee301c921b8a   9 months ag
 
 Desde la página web de docker hub, podemos ver diferentes versiones de la misma imagen en la pestaña “TAGS”
 
-![Tags](<assets/docker6.jpg>)
+![Tags](<assets/docker6.jpg>){width="500"}
 
 Podemos descargar una imagen específica y ejecutarla:
 
@@ -351,7 +352,7 @@ Con Compose puedes crear diferentes contenedores y al mismo tiempo, en cada cont
 - *“**ports**”*: mapeamos los puertos locales, por ejemplo 4000 (webserver jekyll) y 35729 (livereload) al servidor host. Esto permite que accediendo a Localhost:4000 podamos probar el sitio generador por Jekyll
 - *“**volumes**”*: lo que hacemos es mapear el directorio local se mapee directamente con el /directoriox, lugar donde hemos creado la aplicación. De este modo, cualquier cambio en el directorio local en el host, se hará de inmediato en el contenedor.
 
-![comandos docker](<assets/docker7.jpg>)
+![comandos docker](<assets/docker7.jpg>){width="400"}
 
 Ejemplo, creación contenedor con wordpress:
 
@@ -520,7 +521,7 @@ Para construir una imagen, se crea un `Dockerfile` con las instrucciones que e
 - Indica cómo y con qué construir la imagen.
 - Podemos utilizar la imagen en tantos contenedores como queramos.
 
-![Crear imagenes propias](<assets/docker8.jpg>)
+![Crear imagenes propias](<assets/docker8.jpg>){width="400"}
 
 El `DockerFile` nos permitirá definir las funciones básicas del contenedor.
 
@@ -702,7 +703,7 @@ https://www.baeldung.com/ops/docker-save-container-state
 
 ### ¿Qué es Docker Desktop?
 
-![logo docker desktop blue](assets/logo-docker-desktop-blue.svg)
+![logo docker desktop blue](assets/logo-docker-desktop-blue.svg){width="300"}
 
 Es la aplicación oficial de Docker que te da una **interfaz gráfica (GUI)** para manejar contenedores, además de la línea de comandos.
 
@@ -712,7 +713,7 @@ Es la aplicación oficial de Docker que te da una **interfaz gráfica (GUI)** pa
 - **Configuración fácil**: Ajustar recursos (CPU, RAM) con sliders
 - **Monitorización**: Ver en tiempo tiempo real qué está pasando
 
-![docker desktop GUI](assets/dockerDesktop.png)
+![docker desktop GUI](assets/dockerDesktop.png){width="500"}
 
 ### Compatibilidad por Sistema Operativo
 
@@ -1021,15 +1022,15 @@ experta  |      or http://127.0.0.1:8888/?token=825b1ba76502787821bc045496e3429b
 
 Ahora podemos hacer click directamente sobre el enlace a http://127.0.0.1:8888/?token=bebf660273e8e168c7fec90978ed56fb50db6b08d915cb14 donde veremos nuestro jupyter notebook:
 
-![jupyter notebook](assets/jupyter.png)
+![jupyter notebook](assets/jupyter.png){width="500"}
 
 Si hacemos click sobre el notebook `rockpaperscissors.ipynb` podremos ver:
 
-![rockpaperscissors.ipynb](assets/jupyter2.png)
+![rockpaperscissors.ipynb](assets/jupyter2.png){width="500"}
 
 Después de pulsar varias veces (para ir ejecutando todas las celdas) podremos ver como evoluciona nuestro juego:
 
-![ROCK-PAPER-SCISSORS GAME](assets/jupyter3.png)
+![ROCK-PAPER-SCISSORS GAME](assets/jupyter3.png){width="400"}
 
 Para detener el contenedor que hemos lanzado con `docker-compose`, solo hemos de pulsar ++ctrl+c++
 
@@ -1069,7 +1070,7 @@ REPOSITORY   TAG       IMAGE ID       CREATED        SIZE
 debian       13-slim   1caf1c703c8f   42 hours ago   117MB
 ```
 
-![tetris-bsd](assets/tetris-bsd.png)
+![tetris-bsd](assets/tetris-bsd.png){width="500"}
 
 ## Copias de seguridad
 
@@ -1170,7 +1171,7 @@ Instala docker desktop en tu PC. Guarda una captura de pantalla que demuestre qu
 
 ### Ejercicio2
 
-Asegurate de que puedes reproducir todos los casos de uso vistos [más arriba](#casos-de-uso). Guarda varias capturas de pantalla donde se pueda ver que han funcionado los diferentes casos.
+Asegúrate de que puedes reproducir todos los casos de uso vistos [más arriba](#casos-de-uso). Guarda varias capturas de pantalla donde se pueda ver que han funcionado los diferentes casos.
 
 ### Ejercicio 3
 
@@ -1178,8 +1179,8 @@ Crea 2 contenedores, uno con python 3.11 y otro con python 3.9. Explica los paso
 
 ### Ejercicio 4
 
-Elige alguna de las imágenes propuestas en los Contenedores de ejemplo (o cualquiera a tu elección de DockerHub), escribe un `docker-compose.yml` y muestralo con capturas y en funcionamiento en la memoria en PDF.
+Elige alguna de las imágenes propuestas en los [Contenedores de ejemplo](#contenedores-ejemplo) (o cualquiera a tu elección de [DockerHub](https://hub.docker.com/)), escribe un `docker-compose.yml` y muéstralo con capturas y en funcionamiento en la memoria en PDF.
 
 ## Tarea entregable
 
-Recopila todas las capturas y explicaciones de los 4 ejercicios en una memoria en pdf que justifique todo el trabajo realizado.
+Recopila todas las capturas y explicaciones de los 4 ejercicios en una memoria en PDF que justifique todo el trabajo realizado.
