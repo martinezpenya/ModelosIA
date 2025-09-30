@@ -21,8 +21,8 @@
     <p><iframe width="560" height="315" src="https://www.youtube.com/embed/A8oXDTDhZWU?si=oPFtXsMsEeUI-T9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
     
 ### Arquitectura
-![Arquitectura1](<assets/docker.png>){width="500"}
-![Arquitectura2](<assets/docker1.png>){width="500"}
+![Arquitectura1](<assets/docker.png>){width="700"}
+![Arquitectura2](<assets/docker1.png>){width="700"}
 ![Arquitectura3](<assets/docker2.png>){width="500"}
 
 ### Instalación en Ubuntu
@@ -202,7 +202,7 @@ hello-world                             latest        ee301c921b8a   9 months ag
 
 Desde la página web de docker hub, podemos ver diferentes versiones de la misma imagen en la pestaña “TAGS”
 
-![Tags](<assets/docker6.jpg>){width="500"}
+![Tags](<assets/docker6.jpg>){width="700"}
 
 Podemos descargar una imagen específica y ejecutarla:
 
@@ -352,7 +352,7 @@ Con Compose puedes crear diferentes contenedores y al mismo tiempo, en cada cont
 - *“**ports**”*: mapeamos los puertos locales, por ejemplo 4000 (webserver jekyll) y 35729 (livereload) al servidor host. Esto permite que accediendo a Localhost:4000 podamos probar el sitio generador por Jekyll
 - *“**volumes**”*: lo que hacemos es mapear el directorio local se mapee directamente con el /directoriox, lugar donde hemos creado la aplicación. De este modo, cualquier cambio en el directorio local en el host, se hará de inmediato en el contenedor.
 
-![comandos docker](<assets/docker7.jpg>){width="400"}
+![comandos docker](<assets/docker7.jpg>){width="500"}
 
 Ejemplo, creación contenedor con wordpress:
 
@@ -521,7 +521,7 @@ Para construir una imagen, se crea un `Dockerfile` con las instrucciones que e
 - Indica cómo y con qué construir la imagen.
 - Podemos utilizar la imagen en tantos contenedores como queramos.
 
-![Crear imagenes propias](<assets/docker8.jpg>){width="400"}
+![Crear imagenes propias](<assets/docker8.jpg>){width="500"}
 
 El `DockerFile` nos permitirá definir las funciones básicas del contenedor.
 
@@ -713,7 +713,7 @@ Es la aplicación oficial de Docker que te da una **interfaz gráfica (GUI)** pa
 - **Configuración fácil**: Ajustar recursos (CPU, RAM) con sliders
 - **Monitorización**: Ver en tiempo tiempo real qué está pasando
 
-![docker desktop GUI](assets/dockerDesktop.png){width="500"}
+![docker desktop GUI](assets/dockerDesktop.png){width="700"}
 
 ### Compatibilidad por Sistema Operativo
 
@@ -1022,15 +1022,15 @@ experta  |      or http://127.0.0.1:8888/?token=825b1ba76502787821bc045496e3429b
 
 Ahora podemos hacer click directamente sobre el enlace a http://127.0.0.1:8888/?token=bebf660273e8e168c7fec90978ed56fb50db6b08d915cb14 donde veremos nuestro jupyter notebook:
 
-![jupyter notebook](assets/jupyter.png){width="500"}
+![jupyter notebook](assets/jupyter.png){width="700"}
 
 Si hacemos click sobre el notebook `rockpaperscissors.ipynb` podremos ver:
 
-![rockpaperscissors.ipynb](assets/jupyter2.png){width="500"}
+![rockpaperscissors.ipynb](assets/jupyter2.png){width="700"}
 
 Después de pulsar varias veces (para ir ejecutando todas las celdas) podremos ver como evoluciona nuestro juego:
 
-![ROCK-PAPER-SCISSORS GAME](assets/jupyter3.png){width="400"}
+![ROCK-PAPER-SCISSORS GAME](assets/jupyter3.png){width="500"}
 
 Para detener el contenedor que hemos lanzado con `docker-compose`, solo hemos de pulsar ++ctrl+c++
 
@@ -1070,7 +1070,7 @@ REPOSITORY   TAG       IMAGE ID       CREATED        SIZE
 debian       13-slim   1caf1c703c8f   42 hours ago   117MB
 ```
 
-![tetris-bsd](assets/tetris-bsd.png){width="500"}
+![tetris-bsd](assets/tetris-bsd.png){width="700"}
 
 ## Copias de seguridad
 
