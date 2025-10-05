@@ -25,6 +25,8 @@
 ![Arquitectura2](<assets/docker1.png>){width="700"}
 ![Arquitectura3](<assets/docker2.png>){width="500"}
 
+## Instalación
+
 ### Instalación en Ubuntu
 
 [https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-es](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-es)
@@ -68,6 +70,101 @@ su - ${USER}
 # Confirmamos los grupos de nuestro usuario
 id -nG
 ```
+
+### Docker Desktop
+
+#### ¿Qué es Docker Desktop?
+
+![logo docker desktop blue](assets/logo-docker-desktop-blue.svg){width="300"}
+
+Es la aplicación oficial de Docker que te da una **interfaz gráfica (GUI)** para manejar contenedores, además de la línea de comandos.
+
+#### ¿Para qué sirve?
+
+- **Gestión visual**: Ver contenedores, imágenes y volúmenes de forma gráfica
+- **Configuración fácil**: Ajustar recursos (CPU, RAM) con sliders
+- **Monitorización**: Ver en tiempo tiempo real qué está pasando
+
+![docker desktop GUI](assets/dockerDesktop.png){width="700"}
+
+#### Compatibilidad por Sistema Operativo
+
+🪟 **Windows**
+
+- **Windows 10/11** 64-bit (versiones Home, Pro, Enterprise, Education)
+- **Requisitos importantes**:
+  - Habilitar **WSL 2** (Windows Subsystem for Linux)
+  - Virtualización activada en BIOS/UEFI
+  - **Windows Home** necesita WSL 2, **Pro/Enterprise** puede usar Hyper-V
+
+🍎 **macOS**
+
+- **macOS 12 Monterey** o superior
+- **Tipos de chip**:
+  - **Apple Silicon** (M1, M2, M3, etc.)
+  - **Intel** con procesador de 2010 o más nuevo
+- Necesita **macOS actualizado**
+
+🐧 **Linux** (versión nativa)
+
+- **Distribuciones compatibles**:
+  - Ubuntu 20.04 LTS o superior
+  - Debian 11 o superior
+  - Fedora 36 o superior
+  - Arch Linux (y derivados)
+- **Requisitos**: kernel 5.10+, systemd, 64-bit
+
+#### **Guía Rápida de Instalación**
+
+**Windows:**
+
+1. Descarga desde [docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop/)
+2. Ejecuta el instalador `.exe`
+3. Sigue el asistente (marca "Use WSL 2" si tienes Windows Home)
+4. Reinicia cuando termine
+5. ¡Listo! Docker se inicia automáticamente
+
+**macOS:**
+
+1. Descarga desde la web oficial
+2. Arrastra Docker.app a la carpeta Applications
+3. Ejecuta desde Launchpad
+4. Autoriza con contraseña del sistema
+5. Espera a que configure todo (puede tardar unos minutos)
+
+**Linux (Ubuntu/Debian ejemplo):**
+
+  ```bash
+# Opción 1: Descargar .deb oficial
+wget https://desktop.docker.com/linux/main/amd64/docker-desktop-4.25.0-amd64.deb
+
+# Opción 2: Instalar
+sudo apt install ./docker-desktop-*.deb
+
+# Iniciar
+systemctl --user start docker-desktop
+  ```
+
+#### Ventajas docker desktop (GUI) vs Línea de Comandos (CLI)
+
+✅ **Ventajas de Docker Desktop:**
+
+- **Más fácil para empezar** - Ideal para principiantes
+- **Todo integrado** - No necesitas instalar nada más
+- **Debugging visual** - Ves los logs y estados de un vistazo
+- **Gestión de recursos** - Controlas CPU/RAM fácilmente
+
+❌ **Desventajas:**
+
+- **Más pesado** - Consume más recursos de tu PC
+- **Menos flexible** - Algunas opciones avanzadas solo por comandos
+- **Dependes de la GUI** - Si se cierra la app, pierdes la interfaz
+
+🎯 **Conclusión:**
+
+- **Empezad con Docker Desktop** para aprender sin frustraciones
+- **Aprended también los comandos básicos** para ser más versátiles
+- Usad **ambos**: la GUI para lo cotidiano y la terminal para lo avanzado
 
 ## Uso
 
@@ -698,101 +795,6 @@ Dockerfile
 ### Guardar estado de los contenedores
 
 https://www.baeldung.com/ops/docker-save-container-state
-
-## Docker Desktop
-
-### ¿Qué es Docker Desktop?
-
-![logo docker desktop blue](assets/logo-docker-desktop-blue.svg){width="300"}
-
-Es la aplicación oficial de Docker que te da una **interfaz gráfica (GUI)** para manejar contenedores, además de la línea de comandos.
-
-### ¿Para qué sirve?
-
-- **Gestión visual**: Ver contenedores, imágenes y volúmenes de forma gráfica
-- **Configuración fácil**: Ajustar recursos (CPU, RAM) con sliders
-- **Monitorización**: Ver en tiempo tiempo real qué está pasando
-
-![docker desktop GUI](assets/dockerDesktop.png){width="700"}
-
-### Compatibilidad por Sistema Operativo
-
-🪟 **Windows**
-
-- **Windows 10/11** 64-bit (versiones Home, Pro, Enterprise, Education)
-- **Requisitos importantes**:
-  - Habilitar **WSL 2** (Windows Subsystem for Linux)
-  - Virtualización activada en BIOS/UEFI
-  - **Windows Home** necesita WSL 2, **Pro/Enterprise** puede usar Hyper-V
-
-🍎 **macOS**
-
-- **macOS 12 Monterey** o superior
-- **Tipos de chip**:
-  - **Apple Silicon** (M1, M2, M3, etc.)
-  - **Intel** con procesador de 2010 o más nuevo
-- Necesita **macOS actualizado**
-
-🐧 **Linux** (versión nativa)
-
-- **Distribuciones compatibles**:
-  - Ubuntu 20.04 LTS o superior
-  - Debian 11 o superior
-  - Fedora 36 o superior
-  - Arch Linux (y derivados)
-- **Requisitos**: kernel 5.10+, systemd, 64-bit
-
-### **Guía Rápida de Instalación**
-
-**Windows:**
-
-1. Descarga desde [docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop/)
-2. Ejecuta el instalador `.exe`
-3. Sigue el asistente (marca "Use WSL 2" si tienes Windows Home)
-4. Reinicia cuando termine
-5. ¡Listo! Docker se inicia automáticamente
-
-**macOS:**
-
-1. Descarga desde la web oficial
-2. Arrastra Docker.app a la carpeta Applications
-3. Ejecuta desde Launchpad
-4. Autoriza con contraseña del sistema
-5. Espera a que configure todo (puede tardar unos minutos)
-
-**Linux (Ubuntu/Debian ejemplo):**
-
-  ```bash
-  # Opción 1: Descargar .deb oficial
-  wget https://desktop.docker.com/linux/main/amd64/docker-desktop-4.25.0-amd64.deb
-  
-  # Opción 2: Instalar
-  sudo apt install ./docker-desktop-*.deb
-  
-  # Iniciar
-  systemctl --user start docker-desktop
-  ```
-
-### Ventajas docker desktop (GUI) vs Línea de Comandos (CLI)
-
-✅ **Ventajas de Docker Desktop:**
-
-- **Más fácil para empezar** - Ideal para principiantes
-- **Todo integrado** - No necesitas instalar nada más
-- **Debugging visual** - Ves los logs y estados de un vistazo
-- **Gestión de recursos** - Controlas CPU/RAM fácilmente
-
-❌ **Desventajas:**
-
-- **Más pesado** - Consume más recursos de tu PC
-- **Menos flexible** - Algunas opciones avanzadas solo por comandos
-- **Dependes de la GUI** - Si se cierra la app, pierdes la interfaz
-
-🎯 **Conclusión:**
-
-- **Empezad con Docker Desktop** para aprender sin frustraciones
-- **Aprended también los comandos básicos** para ser más versátiles
-- Usad **ambos**: la GUI para lo cotidiano y la terminal para lo avanzado
 
 ## Casos de uso
 
