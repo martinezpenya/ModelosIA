@@ -1,28 +1,31 @@
-#  Introducción a docker
+# Introducción a docker
 
 ## Generalidades
 
 ### Imprescindibles
 
-- [¿Qué es docker? Imagen vs contenedor](https://www.youtube.com/watch?v=FAJ1o3hb35s) 
+- [¿Qué es docker? Imagen vs contenedor](https://www.youtube.com/watch?v=FAJ1o3hb35s)  
   
     [![¿Qué es docker? Imagen vs contenedor](https://img.youtube.com/vi/FAJ1o3hb35s/0.jpg)](https://youtu.be/BbA5dpS4CcI?si=FAJ1o3hb35s)
-    
+
     <p><iframe width="560" height="315" src="https://www.youtube.com/embed/FAJ1o3hb35s?si=byaWLqYMVSlPFpIx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
-    
+
 - [Curso de docker](https://youtu.be/4Dko5W96WHg?si=Ri9RgyfLWxbs0DY9&t=86)
   
     [![Curso de docker](https://img.youtube.com/vi/4Dko5W96WHg/0.jpg)](https://youtu.be/4Dko5W96WHg)
     <p><iframe width="560" height="315" src="https://www.youtube.com/embed/4Dko5W96WHg?si=TJyuhtQHMZg7GIt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
-    
+
 - [Creación de imágenes](https://www.youtube.com/watch?v=A8oXDTDhZWU)
   
     [![Creación de imágenes](https://img.youtube.com/vi/A8oXDTDhZWU/0.jpg)](https://youtu.be/A8oXDTDhZWU)
     <p><iframe width="560" height="315" src="https://www.youtube.com/embed/A8oXDTDhZWU?si=oPFtXsMsEeUI-T9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
-    
+
 ### Arquitectura
-![Arquitectura1](<assets/docker.png>){width="700"}
-![Arquitectura2](<assets/docker1.png>){width="700"}
+
+![Arquitectura1](<assets/docker.png>){width="900"}
+
+![Arquitectura2](<assets/docker1.png>){width="900"}
+
 ![Arquitectura3](<assets/docker2.png>){width="500"}
 
 ## Instalación
@@ -134,16 +137,16 @@ Es la aplicación oficial de Docker que te da una **interfaz gráfica (GUI)** pa
 
 **Linux (Ubuntu/Debian ejemplo):**
 
-  ```bash
-# Opción 1: Descargar .deb oficial
+```bash
+# Paso 1: Descargar .deb oficial
 wget https://desktop.docker.com/linux/main/amd64/docker-desktop-4.25.0-amd64.deb
 
-# Opción 2: Instalar
+# Paso 2: Instalar
 sudo apt install ./docker-desktop-*.deb
 
-# Iniciar
+# Paso 3: Iniciar
 systemctl --user start docker-desktop
-  ```
+```
 
 #### Ventajas docker desktop (GUI) vs Línea de Comandos (CLI)
 
@@ -229,7 +232,7 @@ Hello World
 docker inspect debian
 ```
 
-### Crear contenedor interactivo y con nombre.
+### Crear contenedor interactivo y con nombre
 
 [https://jolthgs.wordpress.com/2019/09/25/create-a-debian-container-in-docker-for-development/](https://jolthgs.wordpress.com/2019/09/25/create-a-debian-container-in-docker-for-development/)
 
@@ -276,7 +279,7 @@ CONTAINER ID   IMAGE            COMMAND          CREATED          STATUS        
 Es un instalador donde podemos incorporar nuestra aplicación. Es el punto de inicio para crear contenedores.
 Hay imágenes oficiales de por ejemplo Ubuntu, Apache, etc, que fueron creadas por sus creadores oficiales.
 
-Página oficial para imágenes: [https://hub.docker.com](https://hub.docker.com) 
+Página oficial para imágenes: [https://hub.docker.com](https://hub.docker.com)
 
 Vamos a utilizar la siguiente imagen para pruebas:
 
@@ -476,12 +479,12 @@ services:
             - MYSQL_USER=manager
             - MYSQL_PASSWORD=secret
             ## Equivalente a
-			## docker run -d --name wordpress-db \
-       		## --mount source=wordpress-db,target=/var/lib/mysql \
-        	## -e MYSQL_ROOT_PASSWORD=secret \
-        	## -e MYSQL_DATABASE=wordpress \
-        	## -e MYSQL_USER=manager \
-        	## -e MYSQL_PASSWORD=secret mariadb:10.3.9
+            ## docker run -d --name wordpress-db \
+            ## --mount source=wordpress-db,target=/var/lib/mysql \
+            ## -e MYSQL_ROOT_PASSWORD=secret \
+            ## -e MYSQL_DATABASE=wordpress \
+            ## -e MYSQL_USER=manager \
+            ## -e MYSQL_PASSWORD=secret mariadb:10.3.9
 
     web:
         image: wordpress:4.9.8
@@ -497,13 +500,13 @@ services:
             - 8080:80
             ## Equivalente a
             ## docker run -d --name wordpress \
-		    ## --link wordpress-db:mysql \
-		    ## --mount type=bind,source="$(pwd)"/target,target=/var/www/html \
-		    ## -e WORDPRESS_DB_USER=manager \
-		    ## -e WORDPRESS_DB_PASSWORD=secret \
-		    ## -p 8080:80 \
-		    ## wordpress:4.9.8
-
+            ## --link wordpress-db:mysql \
+            ## --mount type=bind,source="$(pwd)"/target,target=/var/www/html \
+            ## -e WORDPRESS_DB_USER=manager \
+            ## -e WORDPRESS_DB_PASSWORD=secret \
+            ## -p 8080:80 \
+            ## wordpress:4.9.8
+ 
 volumes:
     data: # creción de volumen, compose añade un prefijo por lo que se llamará worpdress_data
 ```
@@ -627,13 +630,13 @@ Todo `Dockerfile` debe terminar en un comando `CMD` o en un `ENTRYPOINT`, pero e
 **Construir la imagen desde el Dockerfile**
 
 ```bash
-$ docker build -t nombre-de-tu-imagen .
+docker build -t nombre-de-tu-imagen .
 ```
 
 **Ejemplo:**
 
 ```bash
-$ docker build -t mi-aplicacion:1.0 .
+docker build -t mi-aplicacion:1.0 .
 ```
 
 **Parámetros importantes:**
@@ -644,13 +647,13 @@ $ docker build -t mi-aplicacion:1.0 .
 Crear y ejecutar el contenedor
 
 ```bash
-$ docker run -d --name nombre-contenedor nombre-de-tu-imagen
+docker run -d --name nombre-contenedor nombre-de-tu-imagen
 ```
 
 **Ejemplo:**
 
 ```bash
-$ docker run -d --name mi-contenedor mi-aplicacion:1.0
+docker run -d --name mi-contenedor mi-aplicacion:1.0
 ```
 
 ## Opciones
@@ -682,7 +685,7 @@ RUN [“Powershell”, “Get-Services”, “*”]
 
 `COPY`
 
-Sirve para copiar archivos desde nuestra máquina al contenedor. Podemos pasar un documento de texto de la máquina anfitrión al conenedor de python-ubuntu.
+Sirve para copiar archivos desde nuestra máquina al contenedor. Podemos pasar un documento de texto de la máquina anfitrión al contenedor de python-ubuntu.
 
 ```dockerfile
 FROM ....
@@ -794,7 +797,7 @@ Dockerfile
 
 ### Guardar estado de los contenedores
 
-https://www.baeldung.com/ops/docker-save-container-state
+<https://www.baeldung.com/ops/docker-save-container-state>
 
 ## Casos de uso
 
@@ -1022,7 +1025,7 @@ experta  |         http://e0ec65ac1d84:8888/?token=825b1ba76502787821bc045496e34
 experta  |      or http://127.0.0.1:8888/?token=825b1ba76502787821bc045496e3429bca02ba09720a835b
 ```
 
-Ahora podemos hacer click directamente sobre el enlace a http://127.0.0.1:8888/?token=bebf660273e8e168c7fec90978ed56fb50db6b08d915cb14 donde veremos nuestro jupyter notebook:
+Ahora podemos hacer click directamente sobre el enlace a <http://127.0.0.1:8888/?token=bebf660273e8e168c7fec90978ed56fb50db6b08d915cb14> donde veremos nuestro jupyter notebook:
 
 ![jupyter notebook](assets/jupyter.png){width="700"}
 
