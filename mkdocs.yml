@@ -70,7 +70,7 @@ theme:
       failure: fontawesome/solid/bomb
       danger: fontawesome/solid/skull
       bug: fontawesome/solid/robot
-      example: fontawesome/brands/java
+      example: fontawesome/solid/hexagon-nodes
       quote: fontawesome/solid/quote-left
   favicon: assets/favicon.ico
 #  features:
@@ -117,8 +117,8 @@ markdown_extensions:
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+#      emoji_index: !!python/name:material.extensions.emoji.twemoji
+#      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       linenums: true
       #anchor_linenums: true
@@ -137,7 +137,7 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+#          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed
   - pymdownx.tasklist:
       custom_checkbox: true
