@@ -820,6 +820,7 @@ $info = array('cafeína','marrón', 'café');
 // Enumerar todas las variables
 list($datos[], $datos[], $datos[]) = $info;
 echo "El $datos[0] es $datos[1] y la $datos[2] lo hace especial.\n";
+?>
 ```
 
 A continuación vamos a crear dos contenedores que sirva este código usando imágenes distintas , para cada versión de PHP y usando puertos distintos para acceder a cada versión de la aplicación:
