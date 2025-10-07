@@ -1,4 +1,5 @@
 # Caracterización de sistemas y utilización de modelos de Inteligencia Artificial
+
 ![type:video](assets/UD01_IA_El_Siguiente_Capitulo.mp4)
 
 ## Fundamentos de los Sistemas Inteligentes
@@ -9,7 +10,8 @@ La Inteligencia Artificial es un campo de la informática y la ciencia de la com
 
 Una primera definición bastante común que podemos encontrar para la Inteligencia Artificial es:
 
-> **"Habilidad para aprender y resolver problemas, llevada a cabo por una máquina o software"**
+!!! info "Definición"
+    **"Habilidad para aprender y resolver problemas, llevada a cabo por una máquina o software"**
 
 En general, la mayoría de los expertos coinciden en que es la simulación de procesos de inteligencia humana por parte de máquinas, especialmente sistemas informáticos. Estos procesos incluyen:
 
@@ -19,7 +21,8 @@ En general, la mayoría de los expertos coinciden en que es la simulación de pr
 
 Una definición más concreta y consensuada podría ser:
 
-> **"La inteligencia artificial es la inteligencia llevada a cabo por máquinas. En ciencias de la computación, una máquina «inteligente» ideal es un agente flexible que percibe su entorno y lleva a cabo acciones que maximicen sus posibilidades de éxito en algún objetivo o tarea".**
+!!! info "Definición"
+    **"La inteligencia artificial es la inteligencia llevada a cabo por máquinas. En ciencias de la computación, una máquina «inteligente» ideal es un agente flexible que percibe su entorno y lleva a cabo acciones que maximicen sus posibilidades de éxito en algún objetivo o tarea".**
 
 En realidad, cada generación de hardware y software ha asignado este término a las arquitecturas y técnicas de vanguardia en ese momento. Es por esto que la propia definición puede ir cambiando y evolucionando a medida que se van alcanzando metas más ambiciosas. Podríamos decir que cada nueva oleada de avance tecnológico en este ámbito pasa a conformar una nueva definición de inteligencia artificial, o, al menos, añade un matiz propio a ésta.
 
@@ -27,9 +30,9 @@ La realidad actual es que la IA despierta tanta fascinación como desconfianza. 
 
 ¿Qué es realmente posible con la tecnología actual y qué sigue perteneciendo al campo de la ciencia ficción? Una habilidad que debe tener cualquier profesional del campo de la IA es, precisamente, ser capaz de explicar de forma sencilla las verdaderas amenazas que esta tecnología puede representar, y saber transmitir una imagen de responsabilidad al respecto.
 
-> Los ordenadores (y con ellos la inteligencia artificial) no son ni buenos ni malos. Hacen lo que los humanos programamos que hagan.
->
-> La inteligencia y, sobre todo, la intencionalidad que pueda tener un programa o aplicación la proporciona el humano (o equipo de humanos) que lo definen y desarrollan.
+!!! tip "Recuerda"
+    Los ordenadores (y con ellos la inteligencia artificial) no son ni buenos ni malos. Hacen lo que los humanos programamos que hagan.
+    La inteligencia y, sobre todo, la intencionalidad que pueda tener un programa o aplicación la proporciona el humano (o equipo de humanos) que lo definen y desarrollan.
 
 ### Historia de la IA
 
@@ -43,15 +46,15 @@ En 1950, en el trabajo "Computing Machinery and Intelligence", Alan Turing defin
 
 ```mermaid
 flowchart LR
-   C[Interrogador]
-    A[A: Hombre]
-    B[B: Mujer]
-    D[FIN]
-    C-- Hace una pregunta --> A
-    A-- Responde --> C
-    C-- Hace una pregunta --> B
-    B-- Responde --> C
-    C-- Decide si A/B es humano --> D
+  C[Interrogador]
+  A[A: Hombre]
+  B[B: Mujer]
+  D[FIN]
+  C-- Hace una pregunta --> A
+  A-- Responde --> C
+  C-- Hace una pregunta --> B
+  B-- Responde --> C
+  C-- Decide si A/B es humano --> D
 ```
 
 Este test puede servir, como señala Turing, no solo para probar una destreza verbal superficial, sino también el conocimiento de fondo y la capacidad de razonamiento subyacente, ya que los interrogadores pueden hacer cualquier pregunta o plantear cualquier desafío verbal que elijan. Con respecto a este test, Turing predijo famosamente que "*dentro de unos cincuenta años [para el año 2000] será posible programar computadoras... para hacer que jueguen el juego de imitación tan bien que un interrogador promedio tendrá no más del 70 por ciento de probabilidad de hacer la identificación correcta después de cinco minutos de interrogación*" (Turing 1950); una predicción que ha fallado notoriamente. En el año 2000, las máquinas en la competición del Premio Loebner jugaron tan mal el juego que el interrogador promedio tuvo un 100 por ciento de probabilidad de hacer la identificación correcta después de cinco minutos de interrogación (ver Moor 2001).
@@ -86,11 +89,12 @@ La consagración definitiva de la Inteligencia Artificial llegó a finales de lo
 
   En realidad, siendo fieles al concepto de Inteligencia Artificial, esta máquina no se puede considerar exactamente como tal, pues "solo" era capaz de calcular a gran velocidad millones de posiciones posibles por segundo, pero le faltaba "intuición". Es decir, contaba con una tremenda base de datos (posibles jugadas, movimientos, etc), pero sus programadores no fueron jugadores de ajedrez expertos, por lo que la máquina no siempre elegía la jugada óptima.
 
-  > *¿Sabes cuántas jugadas posibles hay en el ajedrez? Son cerca de 10^120^ (diez elevado a ciento veinte... 100000000000000000000... así hasta 120 ceros).* 
-  > 
-  > *Para hacerte una idea más real de la tremenda capacidad de cálculo de Deep Blue, se estima que la cantidad de átomos que existen en el Universo es de entre 10^80^ y 10^82^.*
-  > 
-  > *El ajedrez es un juego complejo... ¿no crees?*
+!!! info "Curiosidad"
+    ¿Sabes cuántas jugadas posibles hay en el ajedrez? Son cerca de 10^120^ (diez elevado a ciento veinte... 100000000000000000000... así hasta 120 ceros)
+
+    Para hacerte una idea más real de la tremenda capacidad de cálculo de Deep Blue, se estima que la cantidad de átomos que existen en el Universo es de entre 10^80^ y 10^82^
+
+    El ajedrez es un juego complejo... ¿no crees?
 
 - El sistema **Watson**, también de **IBM**, logró ganar en **2011** el popular concurso televisivo **Jeopardy!** frente a los dos máximos campeones de este programa.
 
@@ -132,7 +136,6 @@ La consagración definitiva de la Inteligencia Artificial llegó a finales de lo
 
    ![image-20230801133950780](assets/alphago.png)
    [![AlphaGo](https://img.youtube.com/vi/8tq1C8spV_g/0.jpg)](https://www.youtube.com/watch?v=8tq1C8spV_g)
-   
 
    Trailer: https://www.youtube.com/watch?v=8tq1C8spV_g
 
@@ -152,7 +155,8 @@ La consagración definitiva de la Inteligencia Artificial llegó a finales de lo
 
    En esencia las redes GAN se componen de una red generadora (que crea la imagen, texto o diseño) y una red discriminadora (que determina si el resultado de la red generadora es aceptable o no). Ambas redes "compiten" entre ellas (la primera para "engañar a la segunda, y la segunda para detectar fallos en lo generado por la primera). El sistema se retroalimenta y perfecciona con cada iteración.
 
-   > En esta web se muestra, cada vez que actualizas la página, la imagen de un rostro humano generado por IA: https://thispersondoesnotexist.com/. En algunos casos se notan cosas raras (en las pupilas, orejas, o fondos), pero en general suelen salir rostros que bien podrían corresponder con personas reales ¡Pero en realidad esas personas no existen!
+!!! info "Curiosidad"
+    En esta web se muestra, cada vez que actualizas la página, la imagen de un rostro humano generado por IA: <https://thispersondoesnotexist.com/>. En algunos casos se notan cosas raras (en las pupilas, orejas, o fondos), pero en general suelen salir rostros que bien podrían corresponder con personas reales ¡Pero en realidad esas personas no existen!
 
 - Desarrollo de **GPT3** por **OpenAI** a través de técnicas de Deep Learning.
 
@@ -168,13 +172,14 @@ La consagración definitiva de la Inteligencia Artificial llegó a finales de lo
 
 **Desafíos Actuales y Futuros:** Aunque la IA ha logrado avances impresionantes, todavía enfrenta desafíos significativos. Uno de ellos es la interpretabilidad y explicabilidad de los modelos de IA, especialmente en aplicaciones críticas donde las decisiones pueden tener un impacto importante en las vidas humanas. Otro desafío es el sesgo en los datos y la falta de diversidad, lo que puede llevar a resultados injustos o discriminatorios. A medida que la IA continúa avanzando, es esencial abordar estos desafíos y asegurar que su desarrollo y aplicación se realicen de manera ética y responsable.
 
-> **¿La Inteligencia Artificial es buena o mala?** 
->
-> Piensa en diferentes momentos históricos en los que la humanidad ha desarrollado alguna tecnología: El dominio del fuego, la rueda, el hormigón, la pólvora, la imprenta, la radio, Internet...
->
-> La tecnología en sí misma no es ni buena ni mala. Son las personas que la conocen y controlan quienes pueden hacer un uso beneficioso o dañino de ellas.
->
-> ¿Te suena la frase "Un gran poder exige una gran responsabilidad"? La IA nos da un poder tan grande (o mayor) que el Spiderman... Hemos de ser responsables al utilizarla.
+!!! info "Curiosidad"
+    **¿La Inteligencia Artificial es buena o mala?** 
+
+    Piensa en diferentes momentos históricos en los que la humanidad ha desarrollado alguna tecnología: El dominio del fuego, la rueda, el hormigón, la pólvora, la imprenta, la radio, Internet...
+
+    La tecnología en sí misma no es ni buena ni mala. Son las personas que la conocen y controlan quienes pueden hacer un uso beneficioso o dañino de ellas.
+
+    ¿Te suena la frase "Un gran poder exige una gran responsabilidad"? La IA nos da un poder tan grande (o mayor) que el Spiderman... Hemos de ser responsables al utilizarla.
 
 ### El futuro de la IA
 
@@ -227,21 +232,24 @@ Aunque muchos de los argumentos filosóficos y científicos en contra de la inte
 7. **Emociones y empatía:** La comprensión y expresión emocional, así como la empatía, son aspectos desafiantes de la inteligencia humana que no se han logrado de manera completa en la IA.
 8. **Interacción social humana:** La comprensión del lenguaje natural, la interacción social y la percepción de matices emocionales en el contexto de la comunicación humana son desafíos actuales para la IA.
 
-> Es importante tener en cuenta estas limitaciones y reconocer que la IA actual está lejos de igualar la inteligencia humana en todos sus aspectos. Sin embargo, esto no implica que no haya avances significativos en el campo de la IA, ni que no se puedan superar algunas de estas limitaciones en el futuro. 
+!!! warning "Importante"
+    Es importante tener en cuenta estas limitaciones y reconocer que la IA actual está lejos de igualar la inteligencia humana en todos sus aspectos. Sin embargo, esto no implica que no haya avances significativos en el campo de la IA, ni que no se puedan superar algunas de estas limitaciones en el futuro.
 
 ### Principios de Sistemas Inteligentes
 
 Así pues, puede entenderse por sistema informático el conjunto de cosas (hardware y software) y al conjunto de reglas (procedimientos) que de manera conjunta se emplean para el fin último de adquirir, almacenar, procesar y representar la información de manera automatizada.
 
-> El **hardware** incluye computadoras o cualquier tipo de dispositivo electrónico, principalmente constituido alrededor de semiconductores como memoria, procesadores, sistemas de almacenamiento externo, etc.
->
-> El **software** incluye al sistema operativo, firmware y aplicaciones. También se puede considerar parte del sistema a quien hace uso del hardware: los programadores y los usuarios.
+!!! info "Definición"
+    El **hardware** incluye computadoras o cualquier tipo de dispositivo electrónico, principalmente constituido alrededor de semiconductores como memoria, procesadores, sistemas de almacenamiento externo, etc.
+
+    El **software** incluye al sistema operativo, firmware y aplicaciones. También se puede considerar parte del sistema a quien hace uso del hardware: los programadores y los usuarios.
 
 La potencia y eficacia de un sistema de la información radica en la correcta correlación de una gran cantidad de datos ingresados mediante procesos específicos para cada campo o tarea, con el objetivo de producir información para la posterior toma de decisiones. Un sistema informático se destaca por su diseño, facilidad de uso, flexibilidad, mantenimiento automático de los registros, apoyo en la toma de decisiones críticas y la conservación del anonimato en informaciones irrelevantes. 
 
 Por todo ello, si la inteligencia artificial es un subconjunto de la informática (en el sentido de computación o ciencia de las tecnologías de la información), un sistema de inteligencia artificial ha de ser por extensión un subconjunto dentro de los sistemas informáticos.
 
-> **Se denominará, por tanto, sistema inteligente a un programa o conjunto de programas de computación que reúne características y comportamientos asimilables al de la inteligencia humana o animal.**
+!!! info "Definición"
+    **Se denominará, por tanto, sistema inteligente a un programa o conjunto de programas de computación que reúne características y comportamientos asimilables al de la inteligencia humana o animal.**
 
 Para que un sistema informático pueda ser considerado un sistema inteligente, habrá de tener las características que se enumeran a continuación:
 
@@ -259,14 +267,15 @@ Para que un sistema informático pueda ser considerado un sistema inteligente, h
 
 7. El aprendizaje es la capacidad más importante y exclusiva de un sistema inteligente. **El sistema aprende nuevos conceptos a partir de la información recibida de los sentidos, las reglas conocidas y la experiencia**. El aprendizaje también es la capacidad de detectar relaciones (patrones) entre la «situación» y la parte «situación futura» de una regla de actuación.
 
-
-  > Los primeros sistemas inteligentes, como los sistemas de expertos, no cumplen todas estas características por lo que reciben el nombre de sistemas de inteligencia incompletos.
+!!! info "Definición"
+    Los primeros sistemas inteligentes, como los sistemas de expertos, no cumplen todas estas características por lo que reciben el nombre de sistemas de inteligencia incompletos.
 
 La inteligencia artificial (IA) es un área de cambio social, que transforma rápidamente los hábitos y costumbres de las sociedades, y por ello ha de prestarse mucha atención a sus posibilidades, y marcar una serie de límites éticos. Los principios fundamentales o empleos éticos de la IA son los siguientes:
 
 1. **La IA debe estar libre de prejuicios**, tanto en el caso inferencia como en el entrenamiento. Entrenar datos de manera equivocada puede generar discriminantes negativas que alejan la toma de decisiones de la realidad. Además, en conjunto, toda IA debe programarse de manera que no se usen conjuntos sesgados, y evitar discriminaciones algorítmicas por medio de métricas imparciales avaladas por expertos humanos. Aunque parece algo lejano, se introducen continuamente sesgos en el aprendizaje de las IA, muchas veces de manera involuntaria e inadvertida.
 
-   > Sistemas de ayuda médica entrenados en varones blancos de entre 30 y 50 años de edad podrán dar resultados buenos sobre el grupo para el que se ha desarrollado, pero pueden actuar no tan correctamente en otras categorías.
+    !!! example "Ejemplo"
+        Sistemas de ayuda médica entrenados en varones blancos de entre 30 y 50 años de edad podrán dar resultados buenos sobre el grupo para el que se ha desarrollado, pero pueden actuar no tan correctamente en otras categorías.
 
 2. **Ayudar a ayudar**. Se debe de identificar de forma clara la responsabilidad de las decisiones tomadas por los sistemas autónomos. Los usuarios de las IA, especialmente en caso de grandes corporaciones y gobiernos, han de aprender a estimar y evaluar las consecuencias positivas y negativas de la implantación de sistemas de inteligencia artificial, en la sociedad en su conjunto, dado el gran poder de cambio que generan.
 
@@ -274,7 +283,8 @@ La inteligencia artificial (IA) es un área de cambio social, que transforma rá
 
 4. **Seguridad, privacidad y confiabilidad**. Dado que las IA hacen uso de gran cantidad de datos, se ha de velar por la transparencia y la privacidad en el uso de los mismos.
 
-   > Un asistente virtual ha de garantizar que las conversaciones escuchadas no se filtrarán ni difundirán a terceros.
+    !!! warning "Importante"
+        Un asistente virtual ha de garantizar que las conversaciones escuchadas no se filtrarán ni difundirán a terceros.
 
 5. **Bien común**. Ningún sistema de IA debería ser desplegado si al hacerlo se atenta contra el bien común.
 
@@ -287,26 +297,30 @@ Los agentes inteligentes son entidades capaces de percibir su entorno a través 
 3. **Función del Agente (f)**: La función del agente representa el comportamiento del agente en función de las percepciones que recibe. Toma como entrada el estado actual del entorno y devuelve una acción que el agente debe ejecutar. Esta función puede ser simple o compleja, dependiendo de la complejidad de la tarea que el agente debe realizar.
 4. **Arquitectura (A)**: La arquitectura del agente se refiere a cómo se organiza el agente en términos de sus componentes y cómo interactúan entre sí. Puede haber diferentes arquitecturas según la complejidad de la tarea y los requisitos de rendimiento.
 
-> **Agente Inteligente:**
->
-> Un ejemplo sencillo de un agente inteligente es un sistema de navegación GPS en un automóvil. En este caso:
->
-> - **Sensores (S)**: El sistema de navegación utiliza sensores GPS para recibir información sobre la ubicación actual del automóvil y sensores de velocidad para conocer su velocidad y dirección.
-> - **Actuadores (A)**: Los actuadores son los mecanismos que permiten al sistema de navegación proporcionar instrucciones al conductor para alcanzar el destino deseado, como la pantalla de navegación o las indicaciones de voz.
-> - **Función del Agente (f)**: La función del agente en este caso podría ser bastante simple: recibir la ubicación actual y el destino deseado, calcular la ruta más rápida y segura y guiar al conductor a lo largo del camino.
-> - **Arquitectura (A)**: La arquitectura del sistema de navegación podría ser una combinación de algoritmos de planificación de rutas, sistemas de reconocimiento de voz para recibir comandos del conductor y sistemas de visualización para mostrar las indicaciones.
->
-> A continuación, un diagrama para ilustrar la interacción de un agente inteligente con su entorno:
->
-> ```mermaid
-> flowchart LR
->     S((Sensores)) --> f((Función</br>del Agente))
->     f --> A((Actuadores))
->     A --> E((Entorno))
->     E --> S
-> ```
->
-> En el diagrama, los sensores recopilan información del entorno, que se utiliza como entrada para la función del agente. La función del agente procesa la información y toma una decisión sobre qué acción ejecutar. Luego, los actuadores implementan la acción en el entorno, lo que puede cambiar su estado. El ciclo se repite continuamente, permitiendo al agente inteligente interactuar y adaptarse a su entorno para lograr sus objetivos.
+!!! example "Ejemplo:"
+    **Agente Inteligente:**
+
+    Un ejemplo sencillo de un agente inteligente es un sistema de navegación GPS en un automóvil. En este caso:
+
+    - **Sensores (S)**: El sistema de navegación utiliza sensores GPS para recibir información sobre la ubicación actual del automóvil y sensores de velocidad para conocer su velocidad y dirección.
+  
+    - **Actuadores (A)**: Los actuadores son los mecanismos que permiten al sistema de navegación proporcionar instrucciones al conductor para alcanzar el destino deseado, como la pantalla de navegación o las indicaciones de voz.
+
+    - **Función del Agente (f)**: La función del agente en este caso podría ser bastante simple: recibir la ubicación actual y el destino deseado, calcular la ruta más rápida y segura y guiar al conductor a lo largo del camino.
+
+    - **Arquitectura (A)**: La arquitectura del sistema de navegación podría ser una combinación de algoritmos de planificación de rutas, sistemas de reconocimiento de voz para recibir comandos del conductor y sistemas de visualización para mostrar las indicaciones.
+
+    A continuación, un diagrama para ilustrar la interacción de un agente inteligente con su entorno:
+
+    ```mermaid
+    flowchart LR
+        S((Sensores)) --> f((Función</br>del Agente))
+        f --> A((Actuadores))
+        A --> E((Entorno))
+        E --> S
+    ```
+
+    En el diagrama, los sensores recopilan información del entorno, que se utiliza como entrada para la función del agente. La función del agente procesa la información y toma una decisión sobre qué acción ejecutar. Luego, los actuadores implementan la acción en el entorno, lo que puede cambiar su estado. El ciclo se repite continuamente, permitiendo al agente inteligente interactuar y adaptarse a su entorno para lograr sus objetivos.
 
 ## Tipos de Inteligencia Artificial. Escuelas y clasificaciones
 
@@ -332,7 +346,8 @@ Como veremos en la explicación más detallada de cada una de estas dos posibles
 
 #### Inteligencia Artificial Débil (o estrecha)
 
-> **IA Débil** también conocida como **IA estrecha**, se define como la inteligencia artificial racional que se centra típicamente en una tarea estrecha. Es decir orientada a resolver problemas muy concretos, en un entorno perfectamente acotado. 
+!!! info "Definición"
+    **IA Débil** también conocida como **IA estrecha**, se define como la inteligencia artificial racional que se centra típicamente en una tarea estrecha. Es decir orientada a resolver problemas muy concretos, en un entorno perfectamente acotado.
 
 Por tanto consideramos que este tipo de Inteligencia Artificial débil es limitada, pues no es capaz de adaptarse o asumir cambios respecto a lo que se le ha programado. 
 
@@ -342,12 +357,12 @@ De hecho, uno de los principales entretenimientos más habituales cuando nos pon
 
 Desde el punto de vista de esta clasificación (por tarea a resolver), **las características** de la Inteligencia Artificial débil son:
 
-- **Ya existen en la vida real**: Como hemos comentado, los asistentes virtuales, programas como Watson o Alpha Go que vimos en la unidad anterior. 
+- **Ya existen en la vida real**: Como hemos comentado, los asistentes virtuales, programas como Watson o Alpha Go que vimos en la unidad anterior.
 - Se orientan a **resolver problemas muy concretos**: El programa que "sabe" jugar al Go, no sabe hacer otra cosa. Ni tiene posibilidades de aprender a jugar a otra cosa, por muy similar que sea.
 - Son **reactivas**: No tienen iniciativa, es necesario que se desencadene la acción que tienen programada para que se inicie su rutina. En el ejemplo del asistente virtual, tiene programado responder cuando le preguntas, y por tanto nunca tomará la iniciativa de ofrecerte nada sin que tú lo actives previamente.
 - **No son flexibles**: Colapsan si se encuentran en un caso no previsto en su programación.
 - Quedan **limitadas por lo que programa un humano**: Es el humano quien programa lo que "tiene que pensar" la máquina. Si el humano no programa deja sin considerar ciertas opciones o posibles situaciones, la IA nunca será capaz de suplirlo o aprenderlo sobre la marcha por sí misma.
-- Se **programan con pocas redes neuronales**: Hablaremos más adelante sobre las redes neuronales. Por el momento es suficiente entender que el nivel de computación compleja que requieren este tipo de Inteligencias Artificiales es menor que otros casos. 
+- Se **programan con pocas redes neuronales**: Hablaremos más adelante sobre las redes neuronales. Por el momento es suficiente entender que el nivel de computación compleja que requieren este tipo de Inteligencias Artificiales es menor que otros casos.
 - **No razonan, solo computan**: No tienen en cuenta ningún factor moral, contextual, circunstancial, emocional... que a un humano le haría reaccionar de manera diferente. 
 - La máquina está programada para alcanzar tal objetivo o funcionar de tal manera, y así lo hará sin "entender" lo que está haciendo. Por tanto: **no tiene conciencia**.
 - **Aprenden a base de ejemplos**: Necesita conocer muchos ejemplos de lo que tiene que hacer (la base de datos), con todas las variantes posibles. Por ejemplo, en la máquina que juega al Go, se la "entrenó" con 50 millones de partidas de dicho juego.
@@ -357,7 +372,8 @@ Según se mire la Inteligencia Artificial débil podría llegar a ser peligrosa.
 
 #### Inteligencia Artificial Fuerte
 
-> La **Inteligencia Artificial fuerte (IAF)** o general o (IAG), desde el punto de vista de la tarea a resolver, sería aquella que iguala o excede la inteligencia humana promedio. Sería capaz de realizar con éxito cualquier tarea intelectual del ser humano, teniendo en cuenta todos los factores y matices que pueden intervenir cuando una persona toma decisiones en cada momento mientras realiza una tarea.
+!!! info "Definición"
+    La **Inteligencia Artificial fuerte (IAF)** o general o (IAG), desde el punto de vista de la tarea a resolver, sería aquella que iguala o excede la inteligencia humana promedio. Sería capaz de realizar con éxito cualquier tarea intelectual del ser humano, teniendo en cuenta todos los factores y matices que pueden intervenir cuando una persona toma decisiones en cada momento mientras realiza una tarea.
 
 En comparación con la Inteligencia Artificial débil, las características de la fuerte son:
 
@@ -368,7 +384,7 @@ En comparación con la Inteligencia Artificial débil, las características de l
 - **Usarán muchas redes neuronales**: Y además podrán entrar en conflicto entre ellas en algunas ocasiones. Esto quiere decir que necesitarán una capacidad de almacenaje de información y cómputo que aún hoy no hemos llegado a alcanzar.
 - **Imitarán el comportamiento humano**: Serán capaces de razonar, y por tanto, de alcanzar algún tipo de consciencia.
 - **Aprenderán como las personas**: Podrán recordar datos, observar nuevas situaciones y encontrar relaciones entre diferentes acciones. Esto quiere decir que si saben jugar al ajedrez y "observan" el juego de las damas, podrán aprender a jugar a las damas basándose en lo que saben sobre jugar al ajedrez.
-- **Serán capaces de aprender nuevas tareas**: Modificarán la tarea o cómo realizan la tarea para adaptarse a las circunstancias. 
+- **Serán capaces de aprender nuevas tareas**: Modificarán la tarea o cómo realizan la tarea para adaptarse a las circunstancias.
 - **Serán capaces de adaptarse a nuevos escenarios**: Podrán adaptarse a cambios y nuevas situaciones para seguir cumpliendo su objetivo.
 
 Este tipo de IA es la que sería capaz de analizar cualquier situación y deducir el conjunto de acciones más adecuado para dicha situación y contexto. Lo mismo sabría conducir un coche, que resolver una ecuación matemática o mantener una conversación sobre un tema concreto.
@@ -377,7 +393,7 @@ Aunque aún no existe este tipo de IA, todas las empresas e instituciones dedica
 
 Sin duda uno de los ámbitos más ambiciosos de aplicar esta IAF (los asistentes virtuales humanoides) necesitan contar también con otras ramas científicas como son la robótica y mecatrónica.
 
-### Escuelas de Pensamiento.
+### Escuelas de Pensamiento
 
 En el ámbito de la Inteligencia Artificial más moderna podemos encontrar dos escuelas de pensamiento:
 
@@ -559,7 +575,8 @@ A continuación veremos una taxonomía de técnicas que se usan en IA, algunas s
 
 La Inteligencia Artificial, inicialmente, tuvo un desarrollo más teórico que práctico. Los planteamientos originarios de esta Inteligencia Artificial clásica se definieron para un tipo de trabajo informático que ignoraba en buena medida cómo se ha desarrollado en los últimos decenios y que actualmente está establecido como convencional.
 
-> Recuerda que estamos hablando de los años 60 del Siglo XX, y que en esa época apenas existían ordenadores experimentales, con una memoria y capacidad de cómputo que ahora consideraríamos ridículos. Cualquier Smartwatch o controlador de aspiradora inteligente tiene más memoria y velocidad de cálculo que los ordenadores que se utilizaron o se previó que se podrían utilizar para desarrollar Inteligencia Artificial entonces.
+!!! tip "Curiosidad"
+    Recuerda que estamos hablando de los años 60 del Siglo XX, y que en esa época apenas existían ordenadores experimentales, con una memoria y capacidad de cómputo que ahora consideraríamos ridículos. Cualquier Smartwatch o controlador de aspiradora inteligente tiene más memoria y velocidad de cálculo que los ordenadores que se utilizaron o se previó que se podrían utilizar para desarrollar Inteligencia Artificial entonces.
 
 Otro aspecto importante a tener en cuenta sobre lo que se entendía por Inteligencia Artificial en esos primeros años es que se preveía que en un plazo de tiempo razonable iba a ser posible que las máquinas "pensaran" como los humanos. Es decir, que los mecanismos de la Inteligencia Artificial imitarían la manera de aprender y reaccionar (actuar) del cerebro humano.
 
@@ -572,11 +589,13 @@ Por tanto, para entender bien qué es la Inteligencia Artificial Clásica, debem
 
 La Inteligencia Artificial Clásica necesitaba que en el proceso de aprendizaje de dicha IA participaran "expertos" en la tarea que se pretendía que la máquina realizara por sí misma.
 
-> Si se quería que una máquina aprendiera a jugar al ajedrez, en el proceso de aprendizaje era necesario contar con expertos jugadores de ajedrez. De esa necesidad de contar con "expertos" se acabó extendiendo el término "**Sistema Experto**" para designar a los primeros programas de IA que se desarrollaron.
+!!! example "Ejemplo:"
+    Si se quería que una máquina aprendiera a jugar al ajedrez, en el proceso de aprendizaje era necesario contar con expertos jugadores de ajedrez. De esa necesidad de contar con "expertos" se acabó extendiendo el término "**Sistema Experto**" para designar a los primeros programas de IA que se desarrollaron.
 
 Siendo más concretos, la definición de Sistema Experto es:
 
-> **Un sistema experto es un programa informático que se ha desarrollado a partir de nuestro conocimiento sobre una cuestión, y que consigue que el ordenador muestre un comportamiento equivalente al que tendría un experto humano sobre el mismo tema** 
+!!! info "Definición"
+    **Un sistema experto es un programa informático que se ha desarrollado a partir de nuestro conocimiento sobre una cuestión, y que consigue que el ordenador muestre un comportamiento equivalente al que tendría un experto humano sobre el mismo tema** 
 
 En esencia se seguía un proceso con cuatro fases:
 
@@ -589,14 +608,19 @@ La Inteligencia Artificial Clásica quería "informatizar" modelos de conocimien
 
 Pero esta manera de programar Inteligencia Artificial tiene bastantes limitaciones. **Sólo es asequible cuando el conocimiento o "inteligencia"** que se quiere informatizar **se basa en una relación de causalidad: Causa-Efecto**.
 
-> En el caso del **juego del ajedrez**:
->
-> 1. Se busca a una o varias personas expertas jugadoras de ajedrez, que conozcan en profundidad el juego, sepan cuáles son las jugadas más características, etc.
-> 2. Con la ayuda de estos expertos jugadores, los científicos definen todos los aspectos del juego de ajedrez, desde cómo es el tablero, las fichas, los movimientos, la jerarquía o relación de importancia entre las fichas, las posibles reacciones a los movimientos del contrario.
-> 3. Los informáticos toman todas esas reglas y las traducen a lenguaje de programación.
-> 4. Se comprueba que el ordenador sea capaz de jugar al ajedrez, sin equivocarse, y priorizando los movimientos que antes le permitan obtener la victoria. Si algo sale mal o se detectan fallos, hay que volver a revisar todo el proceso y mejorarlo (redefinir la forma de algunas normas, o la programación, etc). 
->
-> Cada posible movimiento del contrario permite que la Inteligencia Artificial reaccione de diferentes maneras (moviendo tal o cual ficha). A su vez, este movimiento de la Inteligencia Artificial permite otras diferentes maneras de reaccionar por parte del contrario... Son lo que hemos mencionado más arriba: relaciones de causalidad. Cada acción tiene una serie de posibles reacciones (y la IA debe elegir una de ellas), que a su vez tienen otra serie de reacciones posibles (el contrario debe elegir una) y así sucesivamente. Gracias a la memoria de la computadora y la capacidad de cómputo es capaz de ver todas las posibles situaciones a 10, 20, 30... movimientos; e ir escogiendo los movimientos que con mayor probabilidad le puedan llevar a la victoria.
+!!! example "Ejemplo:"
+
+    En el caso del **juego del ajedrez**:
+
+    1. Se busca a una o varias personas expertas jugadoras de ajedrez, que conozcan en profundidad el juego, sepan cuáles son las jugadas más características, etc.
+
+    2. Con la ayuda de estos expertos jugadores, los científicos definen todos los aspectos del juego de ajedrez, desde cómo es el tablero, las fichas, los movimientos, la jerarquía o relación de importancia entre las fichas, las posibles reacciones a los movimientos del contrario.
+
+    3. Los informáticos toman todas esas reglas y las traducen a lenguaje de programación.
+
+    4. Se comprueba que el ordenador sea capaz de jugar al ajedrez, sin equivocarse, y priorizando los movimientos que antes le permitan obtener la victoria. Si algo sale mal o se detectan fallos, hay que volver a revisar todo el proceso y mejorarlo (redefinir la forma de algunas normas, o la programación, etc). 
+
+    Cada posible movimiento del contrario permite que la Inteligencia Artificial reaccione de diferentes maneras (moviendo tal o cual ficha). A su vez, este movimiento de la Inteligencia Artificial permite otras diferentes maneras de reaccionar por parte del contrario... Son lo que hemos mencionado más arriba: relaciones de causalidad. Cada acción tiene una serie de posibles reacciones (y la IA debe elegir una de ellas), que a su vez tienen otra serie de reacciones posibles (el contrario debe elegir una) y así sucesivamente. Gracias a la memoria de la computadora y la capacidad de cómputo es capaz de ver todas las posibles situaciones a 10, 20, 30... movimientos; e ir escogiendo los movimientos que con mayor probabilidad le puedan llevar a la victoria.
 
 Cuando el conocimiento o "inteligencia" que se quiere informatizar se basa en una correlación (relaciones proporcionales entre todas las variables que intervienen) es prácticamente imposible definir y traducir a lenguaje informático todas esas reglas y relaciones. Para estos casos necesitamos otra manera de abordar la Inteligencia Artificial... que es la que se ha desarrollado posteriormente y veremos en los siguientes apartados.
 
@@ -604,7 +628,8 @@ Cuando el conocimiento o "inteligencia" que se quiere informatizar se basa en un
 
 El **Aprendizaje Automático (Machine Learning)** es una rama clave de la Inteligencia Artificial que permite a las máquinas aprender y mejorar su rendimiento en tareas específicas a través de la experiencia. En lugar de ser programadas explícitamente para realizar una tarea, las máquinas utilizan datos para aprender patrones y tomar decisiones informadas. El Aprendizaje Automático se ha convertido en una herramienta poderosa en una variedad de aplicaciones, desde reconocimiento de voz y visión por computadora hasta recomendaciones de productos y diagnósticos médicos.
 
-> Es importante entender que el Aprendizaje Automático es una rama de la IA, aunque en la actualidad ha adquirido mucha importancia y se utiliza en prácticamente todos los proyectos de IA. De manera que hoy cuando hablamos de Inteligencia Artificial en realidad estamos hablando de esta rama concreta (**el todo por la parte**).
+!!! warning "Importante"
+    Es importante entender que el Aprendizaje Automático es una rama de la IA, aunque en la actualidad ha adquirido mucha importancia y se utiliza en prácticamente todos los proyectos de IA. De manera que hoy cuando hablamos de Inteligencia Artificial en realidad estamos hablando de esta rama concreta (**el todo por la parte**).
 
 El Machine Learning o Aprendizaje Autónomo (Automático) a su vez ha evolucionado en estos pocos años que lleva desarrollándose: Inicialmente se focalizaba en lograr que la máquina aprendiera basándose en datos, a través de estudiar el reconocimiento de patrones (casos similares entre el total de elementos del data set o base de datos). Actualmente se centra más bien en "resolver" problemas prácticos que en "aprender", aunque evidentemente "aprende" (pero el aprendizaje como tal ya no es el foco, sino el resultado obtenido). Al reconocimiento de patrones que ya se usaba desde el principio añade ahora lo que conocemos como el razonamiento probabilístico, la estadística y la recuperación de datos.
 
@@ -612,27 +637,33 @@ El Machine Learning o Aprendizaje Autónomo (Automático) a su vez ha evoluciona
 
 Arthur Samuel (que trabajó para IBM) en 1959 describía el Aprendizaje Automático como:
 
-> **El campo del estudio que da a las computadoras la capacidad de aprender sin ser programadas explícitamente**
+!!! info "Definición"
+    **El campo del estudio que da a las computadoras la capacidad de aprender sin ser programadas explícitamente**
 
 Esta es una definición antigua e informal respecto a lo que hoy en día entendemos por Machine Learning.
 
 Tom Mitchell (profesor en la Universidad de Carnegie Mellon) ha ofrecido una definición más moderna:
 
-> **Se dice que un programa de computadora aprende de la experiencia E con respecto a alguna clase de tareas T y medida de rendimiento P, si su desempeño en las tareas en T medido por P mejora con la experiencia E**
+!!! info "Definición"
+    **Se dice que un programa de computadora aprende de la experiencia E con respecto a alguna clase de tareas T y medida de rendimiento P, si su desempeño en las tareas en T medido por P mejora con la experiencia E**
 
-> **Jugar a las damas.**
->
-> - E es la experiencia de jugar muchas partidas de damas.
-> - T es la tarea de jugar a las damas.
-> - P es la probabilidad de que el programa gane la partida actual.
->
-> A medida que la máquina "observa" el desarrollo de cada partida gana experiencia. Gracias a esta experiencia acaba siendo capaz de realizar la tarea (jugar a las damas) por sí misma. Y además va comprobando el rendimiento obtenido en cada partida (si gana o no gana, en cuántos movimientos, etc), por lo que va perfeccionando su capacidad de jugar de manera eficaz.
+!!! example "Ejemplo"
+    **Jugar a las damas.**
+
+    - E es la experiencia de jugar muchas partidas de damas.
+
+    - T es la tarea de jugar a las damas.
+
+    - P es la probabilidad de que el programa gane la partida actual.
+
+    A medida que la máquina "observa" el desarrollo de cada partida gana experiencia. Gracias a esta experiencia acaba siendo capaz de realizar la tarea (jugar a las damas) por sí misma. Y además va comprobando el rendimiento obtenido en cada partida (si gana o no gana, en cuántos movimientos, etc), por lo que va perfeccionando su capacidad de jugar de manera eficaz.
 
 El Aprendizaje Automático consiste en un programa informático que analiza y aprende de los datos que le proporcionamos para decidir qué hacer con ellos y proporcionar respuestas. Genera reglas para, con eso que ha "aprendido", acelerar procesos, reconocer patrones, segmentar grupos (personas, hábitos, etc). Lo fundamental es que el "cómo aprende" es automático; nosotros sólo le tenemos que dar datos o ejemplos de partida.
 
 La definición de Aprendizaje Automático más aproximada a lo que entendemos actualmente sería:
 
-> **El Aprendizaje Automático (Machine Learning) es un proceso de adquisición de conocimiento de manera automática mediante la utilización de ejemplos (experiencia) de entrenamiento**.
+!!! info "Definición"
+    **El Aprendizaje Automático (Machine Learning) es un proceso de adquisición de conocimiento de manera automática mediante la utilización de ejemplos (experiencia) de entrenamiento**.
 
 #### Tipos de Aprendizaje Automático
 
@@ -640,7 +671,7 @@ La definición de Aprendizaje Automático más aproximada a lo que entendemos ac
 
 La característica fundamental del Aprendizaje Automático Supervisado es que dicho aprendizaje se realiza **a partir de datos que ya han sido etiquetados previamente**. 
 
-¿Qué queremos decir con datos etiquetados? Pues que al programa que va a "aprender" le proporcionamos los datos indicando sus características (bien las de entrada, bien las de salida). Por ejemplo, si queremos que un programa de IA sea capaz de distinguir en qué fotos aparece un perro, al proporcionarle fotos para el aprendizaje (datos de entrada) ya le decimos en cuáles aparecen gatos, en cuáles perros y en cuáles patos... Podemos decir que "supervisamos" el aprendizaje dándole pistas al programa de Inteligencia Artificial. 
+¿Qué queremos decir con datos etiquetados? Pues que al programa que va a "aprender" le proporcionamos los datos indicando sus características (bien las de entrada, bien las de salida). Por ejemplo, si queremos que un programa de IA sea capaz de distinguir en qué fotos aparece un perro, al proporcionarle fotos para el aprendizaje (datos de entrada) ya le decimos en cuáles aparecen gatos, en cuáles perros y en cuáles patos... Podemos decir que "supervisamos" el aprendizaje dándole pistas al programa de Inteligencia Artificial.
 
 En realidad el término correcto que debemos emplear es el de instancias: que son cada uno de los elementos que forman el conjunto de datos (en el ejemplo, cada foto), se componen de una serie de campos de características o atributos (en el ejemplo, aparecer gato, aparecer perro, aparecer pato...) y un campo objetivo (en el ejemplo, aparecer perro), que es el que se encuentra etiquetado en los datos de entrenamiento. El objetivo de este tipo de aprendizaje es extraer un conjunto de reglas que permitan predecir el campo objetivo para nuevos casos de estudio.
 
@@ -662,13 +693,15 @@ Como hemos dicho, el objetivo es que la IA encuentre relaciones de tres tipos:
 
 Existe también el Aprendizaje por Refuerzo, en el que **el objetivo es aprender cómo mapear situaciones o acciones para maximizar una cierta recompensa**. Se trata de programar agentes mediante premio y castigo sin necesidad de especificar cómo realizar la tarea.
 
-Uno de los casos más conocidos de refuerzo automático es el cuando en la empresa Deep Mind lograron "enseñar" a jugar al Arkanoid (¿Te acuerdas? lo vimos en el punto [Historia de la IA](#Historia de la IA). Lo hicieron con este modelo de Aprendizaje. La IA solo conocía los parámetros básicos de movimiento, y los "premios" (puntos por romper bloques, puntos por tardar lo menos posible en terminar la partida) y "castigos" (finalizar la partida sin puntos si se perdía la pelota por el extremo inferior de la pantalla.
+Uno de los casos más conocidos de refuerzo automático es el cuando en la empresa Deep Mind lograron "enseñar" a jugar al Arkanoid ¿Te acuerdas? lo vimos en el punto [Historia de la IA](#Historia de la IA). Lo hicieron con este modelo de Aprendizaje. La IA solo conocía los parámetros básicos de movimiento, y los "premios" (puntos por romper bloques, puntos por tardar lo menos posible en terminar la partida) y "castigos" (finalizar la partida sin puntos si se perdía la pelota por el extremo inferior de la pantalla).
 
 En este tipo de problemas lo más importante es definir y programar las condiciones que deben cumplirse (las reglas del juego, qué se puede hacer y cómo interactúan unos elementos con otros). Por ejemplo, en el siguiente vídeo, podemos ver cómo una serie de personajes digitales han "aprendido" a caminar, correr y sortear obstáculos. Se ve claramente que los programadores han sido precisos para que "los brazos" se mantengan articulados al cuerpo, igual que las "patas". Pero no parece que hayan especificado mucho sobre la gravedad o sobre "el cansancio" que supone correr con los brazos hacia arriba.
 
-![DeepMind learn to walk](assets/DeepMindWalk.png)
+[![DeepMind learn to walk](https://img.youtube.com/vi/gn4nRCC9TwQ/0.jpg)](https://www.youtube.com/watch?v=gn4nRCC9TwQ)
 
-https://www.youtube.com/watch?v=gn4nRCC9TwQ
+<p>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/gn4nRCC9TwQ?si=hpoheZyM8unCAwKT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</p>
 
 ### Redes Neuronales Artificiales (SAA y PIA)
 
@@ -676,7 +709,8 @@ https://www.youtube.com/watch?v=gn4nRCC9TwQ
 
 Las redes neuronales artificiales están inspiradas en la estructura y funcionamiento del cerebro humano. 
 
-> **Consisten en una colección de nodos interconectados (neuronas artificiales) organizados en capas que transmiten señales entre ellas. Cada neurona recibe entradas ponderadas, las procesa mediante una función de activación y produce una salida que se envía a otras neuronas.**
+!!! info "Definición"
+    **Consisten en una colección de nodos interconectados (neuronas artificiales) organizados en capas que transmiten señales entre ellas. Cada neurona recibe entradas ponderadas, las procesa mediante una función de activación y produce una salida que se envía a otras neuronas.**
 
 El proceso de aprendizaje en las redes neuronales se basa en ajustar los pesos de las conexiones entre las neuronas para que el modelo pueda realizar predicciones precisas y generalizadas en nuevos datos.
 
@@ -697,7 +731,8 @@ Las arquitecturas comunes de redes neuronales incluyen:
 
 #### Principios Básicos y Funcionamiento
 
-> **Los algoritmos genéticos son una clase de algoritmos de computación evolutiva inspirados en el proceso de selección natural. Utilizan principios biológicos como la reproducción, mutación y selección para buscar soluciones óptimas en problemas de optimización y búsqueda heurística.**
+!!! info "Definición"
+    **Los algoritmos genéticos son una clase de algoritmos de computación evolutiva inspirados en el proceso de selección natural. Utilizan principios biológicos como la reproducción, mutación y selección para buscar soluciones óptimas en problemas de optimización y búsqueda heurística.**
 
 En un algoritmo genético, se crea una población inicial de soluciones candidatas, y luego se evalúa su aptitud en función de una función objetivo. Las soluciones con mayor aptitud tienen una mayor probabilidad de ser seleccionadas para reproducirse y producir descendencia mediante operaciones de cruza y mutación. Este proceso se repite a lo largo de generaciones, buscando converger hacia una solución óptima.
 
@@ -738,11 +773,12 @@ Los nuevos desarrollos de reconocimiento de imagen y visión artificial no han t
 
 El lanzamiento de **ImageNet**, abierto y gratuito, por parte de **Fei Fei Li**, que ya ha alcanzado más de 14 millones de imágenes, supuso un gran impulso al desarrollo de nuevas aplicaciones de visión artificial.
 
-> Tú mismo puedes descargarte un dataset reducido (¡aunque es de 166 GB!) para probar en [Kaggle](https://www.kaggle.com/).
+!!! tip "Curiosidad"
+    Tú mismo puedes descargarte un dataset reducido (¡aunque es de 166 GB!) para probar en [Kaggle](https://www.kaggle.com/).
 
 Cada vez más y mejores datasets de imágenes etiquetadas, y un mayor conocimiento y dominio de redes convolucionales, han revolucionado el campo de la visión computacional, que ha pasado de ser una cuestión de más resolución o renderizados 3D, a una cuestión más cognitiva. Se ha conseguido crear modelos que realmente entienden qué están viendo.
 
-La visión artificial automatiza la extracción, el análisis, la clasificación y la comprensión de la información útil a partir de los datos de las imágenes. Los datos de la imagen adoptan muchas formas, como las siguientes: 
+La visión artificial automatiza la extracción, el análisis, la clasificación y la comprensión de la información útil a partir de los datos de las imágenes. Los datos de la imagen adoptan muchas formas, como las siguientes:
 
 - Imágenes individuales
 - Secuencias de video
@@ -751,26 +787,26 @@ La visión artificial automatiza la extracción, el análisis, la clasificación
 
 #### Aplicaciones de Visión por Computadora
 
-**Vigilancia**
+Vigilancia
 
-La utilización de cámaras para sistemas de vigilancia y seguridad, se ha extendido de forma generalizada en nuestra sociedad actual. Pero, en algunos casos, estas cámaras tienen el plus de formar parte de un sistema de inteligencia artificial. 
+La utilización de cámaras para sistemas de vigilancia y seguridad, se ha extendido de forma generalizada en nuestra sociedad actual. Pero, en algunos casos, estas cámaras tienen el plus de formar parte de un sistema de inteligencia artificial.
 
 Esta aplicación de los sistemas de reconocimiento de imagen son bastante controvertidos, pues plantean muchas dudas éticas respecto a la libertad fundamental de las personas. Es una herramienta muy útil y potente, y puede servir para beneficiar al ser humano tanto como para perjudicarlo. Lo bueno es que la comunidad en torno a la inteligencia artificial va descubriendo e ideando formas sencillas de evitar o combatir usos deshonestos de este tipo de herramientas.
 
 En la mayoría de los casos, el software hace cálculos agregados de lo que "ve" y devuelve valores de ciertos indicadores, en vez de la imagen o fragmento de grabación con los datos personales. Solo en países donde hay regímenes autoritarios se mantienen prácticas que atentan contra los derechos de los ciudadanos.
 
-Entre las aplicaciones concretas de este tipo de sistemas, a parte de las obvias por parte de la policía o sistemas de seguridad de organizaciones, están: 
+Entre las aplicaciones concretas de este tipo de sistemas, a parte de las obvias por parte de la policía o sistemas de seguridad de organizaciones, están:
 
 - Vigilancia y control del tráfico en las ciudades.
 - Cuidado de personas mayores.
 - Detección de infracciones de reglas sanitarias en la industria (especialmente en la industria alimentaria).
-- Monitorización del uso de infraestructuras críticas o adscritas a normas de utilización. 
+- Monitorización del uso de infraestructuras críticas o adscritas a normas de utilización.
 - Monitorización de funcionamiento y estados en líneas de producción. 
 - Esto son solo algunos ejemplos, pero cualquier proceso o sistema en el cual se puedan detectar anomalías a través de la imagen, sería un buen candidato para aplicar este tipo de solución.
 
 Incluso la inteligencia artificial puede ayudar a hacer más respetuosas con la privacidad ciertas aplicaciones y herramientas que ya se estaban utilizando, como el caso del software [Cherry Home de la empresa AvantGuard](https://www.agmonitoring.com/blog/industry-news/new-ai-camera-technology-protects-users-privacy).
 
-**Reconocimiento Facial**
+Reconocimiento Facial
 
 Un analizador facial es un software que identifica o confirma la identidad de una persona a partir del rostro. Funciona mediante la identificación y medición de los rasgos faciales en una imagen. El reconocimiento facial puede identificar rostros humanos en imágenes o videos, determinar si el rostro que aparece en dos imágenes pertenece a la misma persona o buscar un rostro entre una gran colección de imágenes existentes. Los sistemas de seguridad biométricos utilizan el reconocimiento facial para identificar de forma exclusiva a las personas durante la incorporación o el inicio de sesión de los usuarios, así como para reforzar la actividad de autenticación de estos. Los dispositivos móviles y personales también utilizan con frecuencia la tecnología de los analizadores faciales para proteger los dispositivos.
 
@@ -789,14 +825,18 @@ El sistema convierte los datos de reconocimiento facial en una cadena de número
 
 El reconocimiento facial puede identificar a una persona al comparar los rostros de dos o más imágenes y evaluar la probabilidad de que coincidan. Por ejemplo, puede verificar que el rostro mostrado en una autofoto tomada con la cámara de un móvil coincide con el rostro de una imagen de un documento de identidad emitido por el gobierno, como un permiso de conducir o un pasaporte, así como verificar que el rostro que aparece en la autofoto no coincide con un rostro de un conjunto de rostros capturados previamente.
 
-> **Aplicación de Visión por Computadora:**
->
-> Un ejemplo práctico de aplicación de visión por computadora es el reconocimiento facial utilizado en aplicaciones de seguridad y desbloqueo de dispositivos. En este caso:
->
-> - **Entrada**: La entrada es una imagen o un video que contiene rostros humanos. 
-> - **Procesamiento de Imagen**: El sistema de visión por computadora procesa la imagen para detectar y extraer características clave del rostro, como ojos, nariz, boca, etc.
-> - **Aprendizaje Automático**: Las características del rostro se utilizan como entrada para un modelo de aprendizaje automático previamente entrenado. El modelo clasifica las características y compara con una base de datos de rostros previamente almacenados.
-> - **Salida**: Como resultado, el sistema identifica o verifica la identidad del individuo y permite el acceso o desbloqueo según los resultados.
+!!! example "Ejemplo"
+    **Aplicación de Visión por Computadora:**
+
+    Un ejemplo práctico de aplicación de visión por computadora es el reconocimiento facial utilizado en aplicaciones de seguridad y desbloqueo de dispositivos. En este caso:
+
+    - **Entrada**: La entrada es una imagen o un video que contiene rostros humanos. 
+
+    - **Procesamiento de Imagen**: El sistema de visión por computadora procesa la imagen para detectar y extraer características clave del rostro, como ojos, nariz, boca, etc.
+
+    - **Aprendizaje Automático**: Las características del rostro se utilizan como entrada para un modelo de aprendizaje automático previamente entrenado. El modelo clasifica las características y compara con una base de datos de rostros previamente almacenados.
+
+    - **Salida**: Como resultado, el sistema identifica o verifica la identidad del individuo y permite el acceso o desbloqueo según los resultados.
 
 **Conducción autónoma.**
 
@@ -808,7 +848,8 @@ La cuestión crítica en estos sistemas, es el reconocimiento de señales de tr�
 
 Captar cómo son las líneas de la carretera para ir girando lo que corresponda, también requiere ir captando esas variaciones de trayectoria suficientemente rápido, pues en carretera es muy común ir a velocidades altas. De hecho, hay sistemas que, a partir de cierta velocidad, no permiten usar la función de conducción autónoma.
 
-> Si quieres conocer mejor la clasificación de niveles de conducción autónoma y cómo se relaciona el ámbito de la visión artificial con ellos, te recomendamos leer el artículo "[Autonomous Vehicles Are Driving Computer Vision Into the Future](https://plainsight.ai/blog/autonomous-vehicles-computer-vision/)".
+!!! tip "Curiosidad"
+    Si quieres conocer mejor la clasificación de niveles de conducción autónoma y cómo se relaciona el ámbito de la visión artificial con ellos, te recomendamos leer el artículo "[Autonomous Vehicles Are Driving Computer Vision Into the Future](https://plainsight.ai/blog/autonomous-vehicles-computer-vision/)".
 
 **Sistema auxiliar en robots.**
 
@@ -836,7 +877,11 @@ El reconocimiento de objetos implica identificar y localizar objetos específico
 
 En la industria agroalimentaria, la capacidad de visión inteligente es de vital importancia, porque constituye una parte decisiva de cara a que se obtenga un buen producto o una buena cosecha. En algunos casos, el robot sabe distinguir, mejor que el humano, si una fruta está en su momento óptimo de cosecha.
 
-https://www.youtube.com/watch?v=c-JduOfLEpc
+[![Recolección de tomates](https://img.youtube.com/vi/c-JduOfLEpc/0.jpg)](https://www.youtube.com/watch?v=c-JduOfLEpc)
+
+<p>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/c-JduOfLEpc?si=WgIPZ4_lBfjioBWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</p>
 
 **Detección y diagnóstico**
 
@@ -852,7 +897,7 @@ Investigadores de IBM publicaron una investigación en torno a un nuevo modelo d
 
 **Procesos creativos**
 
-Uno de los grandes e inesperados avances de la computación de la década pasada, ha sido el de los modelos generativos: las redes [GAN](https://en.wikipedia.org/wiki/Generative_adversarial_network) para el campo de la imagen y los modelos de generación de texto basados en Transformers. 
+Uno de los grandes e inesperados avances de la computación de la década pasada, ha sido el de los modelos generativos: las redes [GAN](https://en.wikipedia.org/wiki/Generative_adversarial_network) para el campo de la imagen y los modelos de generación de texto basados en Transformers.
 
 - **Deep Dream**: En 2015 apareció DeepDream, un modelo de generación de imágenes creado por Google. El software Deep Dream fue desarrollado para el imageNet large scale visual recognition challenge (ILSVRC). Este era un desafío reto, propuesto a diferentes equipos de investigación, que consistió en crear un sistema de reconocimiento de objetos y su localización dentro de una misma imagen, aparte de su detección inmediata. En este Desafío se adjudicó a Google el primer premio en el año 2014, logrado gracias al uso del entrenamiento de redes neuronales. En junio de 2015 Google publicó la investigación, y tras esto hizo su código fuente abierto utilizado para generar las imágenes en un IPython notebook. Con esto se permitió que las imágenes de la red neuronal pudiesen ser creadas por cualquiera. Actualmente, se puede utilizar la aplicación de manera online en la web [DeepDreamGenerator](https://deepdreamgenerator.com/). Básicamente, el algoritmo procesa la imagen dada identificando sus elementos, para utilizar una transferencia de estilos respetando la identidad esencial de la imagen original.
 
@@ -862,15 +907,15 @@ Uno de los grandes e inesperados avances de la computación de la década pasada
 
 - **MidJourney**: **Midjourney** es un laboratorio independiente de investigación y el nombre de un programa de inteligencia artificial con el cual sus usuarios pueden crear imágenes a partir de descripciones textuales, similar a Dall-e de OpenAI y al Stable Diffusion de código abierto.
 
-  La herramienta funcionó bajo versión de beta cerrada hasta que el 13 de julio de 2022 el laboratorio anunció el comienzo de una beta abierta. El equipo de Midjourney está dirigido por David Holz, cofundador de Leap Motion. Midjourney emplea un modelo de negocio *freemium*, con un nivel gratuito limitado y niveles de pago que ofrecen un acceso más rápido, mayor capacidad y funciones adicionales. Los usuarios pueden crear obras de arte con Midjourney dando órdenes a un bot alojado en Discord, ya sea enviando mensajes directos o invitando a dicho bot a un servidor de terceros.
+    La herramienta funcionó bajo versión de beta cerrada hasta que el 13 de julio de 2022 el laboratorio anunció el comienzo de una beta abierta. El equipo de Midjourney está dirigido por David Holz, cofundador de Leap Motion. Midjourney emplea un modelo de negocio *freemium*, con un nivel gratuito limitado y niveles de pago que ofrecen un acceso más rápido, mayor capacidad y funciones adicionales. Los usuarios pueden crear obras de arte con Midjourney dando órdenes a un bot alojado en Discord, ya sea enviando mensajes directos o invitando a dicho bot a un servidor de terceros.
 
-  <img src="assets/MidJourney.png" alt="image-20230806122132540" style="zoom:50%;" />
+    <img src="assets/MidJourney.png" alt="image-20230806122132540" style="zoom:50%;" />
 
 ### Procesamiento del Lenguaje Natural (PLN)
 
 El Procesamiento del Lenguaje Natural (PLN) es una rama de la Inteligencia Artificial que se enfoca en permitir a las máquinas entender y procesar el lenguaje humano en forma escrita o hablada. El PLN permite que las computadoras analicen, comprendan y generen texto de manera similar a como lo hacen los seres humanos. Esta tecnología ha sido fundamental en el desarrollo de asistentes virtuales, traducción automática, análisis de sentimientos y muchas otras aplicaciones útiles en el ámbito empresarial y cotidiano.
 
-Tratar computacionalmente una lengua implica un proceso de modelización matemática. Los ordenadores solo entienden de bytes y dígitos y los informáticos codifican los programas empleando lenguajes de programación como C, Python o Java. 
+Tratar computacionalmente una lengua implica un proceso de modelización matemática. Los ordenadores solo entienden de bytes y dígitos y los informáticos codifican los programas empleando lenguajes de programación como C, Python o Java.
 
 Los lingüistas computacionales se encargan de la tarea de "preparar" el modelo lingüístico para que los ingenieros informáticos lo implementen en un código eficiente y funcional.
 
@@ -884,29 +929,29 @@ Los lingüistas computacionales se encargan de la tarea de "preparar" el modelo 
 Un análisis morfológico, sintáctico, semántico o pragmático se aplicará dependiendo del objetivo de la aplicación. Por ejemplo, un conversor de texto a voz no necesita el análisis semántico o pragmático. Pero un sistema conversacional requiere información muy detallada del contexto y del dominio temático.
 
 ```mermaid
-graph LR
-	Z[Inicio] --> A
+  graph LR
+	  Z[Inicio] --> A
     A[Análisis</br>Fonetico] -- Transcripción --> B[Análisis</br>Sintáctico]
     B -- Gramática --> C[Análisis</br>Semántico]
     C -- Significado --> D[Análisis</br>Contextual]
     D -- Significado en</br>el contexto --> Fin
 ```
 
-> No te recuerda a algo?
->
-> ```mermaid
-> graph LR
-> A[Programa</br>Fuente] -- Fase de</br>Análisis</br>Léxico --> B[Tokens]
-> B -- Fase de</br>Análisis</br>Sintáctico --> C[Árbol de</br>Sintaxis</br>Abstracta]
-> C -- Fase de</br>Análisis</br>Semántico --> D[Árbol de</br>Sintaxis con</br>Anotaciones</br>Semánticas]
-> D -- Fase de</br>Generación</br>de Código</br>Intermedio --> E[Código</br>Intermedio]
-> E -- Fase de</br>Optimización</br>de Código --> F[Código</br>Intermedio</br>Optimizado]
-> F -- Fase de</br>Generación de</br>Código Objeto --> G[Código</br>Objeto]
-> G -- Fase de</br>Enlazado --> H[Programa</br>Ejecutable]
-> 
-> ```
->
-> Estas son las fases de un Compilador
+!!! tip "Curiosidad"
+    No te recuerda a algo?
+
+    ```mermaid
+      graph LR
+        A[Programa</br>Fuente] -- Fase de</br>Análisis</br>Léxico --> B[Tokens]
+        B -- Fase de</br>Análisis</br>Sintáctico --> C[Árbol de</br>Sintaxis</br>Abstracta]
+        C -- Fase de</br>Análisis</br>Semántico --> D[Árbol de</br>Sintaxis con</br>Anotaciones</br>Semánticas]
+        D -- Fase de</br>Generación</br>de Código</br>Intermedio --> E[Código</br>Intermedio]
+        E -- Fase de</br>Optimización</br>de Código --> F[Código</br>Intermedio</br>Optimizado]
+        F -- Fase de</br>Generación de</br>Código Objeto --> G[Código</br>Objeto]
+        G -- Fase de</br>Enlazado --> H[Programa</br>Ejecutable]
+    ```
+
+    Estas son las fases de un Compilador
 
 #### Aplicaciones de Procesamiento del Lenguaje Natural
 
@@ -939,18 +984,22 @@ Las aplicaciones de PLN sirven para extraer información valiosa de los datos si
 
 El campo del procesamiento del lenguaje natural es considerado uno de los grandes retos de la inteligencia artificial ya que es una de las tareas más complicadas y desafiantes: ¿cómo comprender realmente el significado de un texto? ¿cómo intuir neologismos, ironías, chistes o poesía?
 
-> **Análisis de Sentimientos**
->
-> El PLN es utilizado para analizar el contenido de opiniones, comentarios y reseñas de usuarios en línea y determinar si expresan sentimientos positivos, negativos o neutrales. Esto es útil para medir la satisfacción del cliente, realizar estudios de mercado y realizar análisis de reputación de marca.
->
-> **Ejemplo de Aplicación de Procesamiento del Lenguaje Natural: Análisis de Sentimientos**
->
-> Un ejemplo práctico de aplicación de Procesamiento del Lenguaje Natural es el análisis de sentimientos en comentarios de productos en línea. En este caso:
->
-> - **Entrada**: La entrada es un conjunto de comentarios escritos por usuarios sobre un producto específico.
-> - **Procesamiento de Lenguaje Natural**: El PLN procesa el texto para tokenizarlo (dividirlo en palabras), eliminar palabras irrelevantes (stopwords) y realizar lematización o extracción de raíces para reducir las palabras a su forma base.
-> - **Análisis de Sentimientos**: Se utilizan técnicas de análisis de sentimientos para asignar un valor de sentimiento (positivo, negativo o neutral) a cada comentario en función de las palabras y frases utilizadas.
-> - **Salida**: Como resultado, se obtiene un resumen del sentimiento general de los usuarios hacia el producto, lo que permite a las empresas identificar puntos fuertes y áreas de mejora, así como tomar decisiones basadas en la retroalimentación del cliente.
+!!! example "Ejemplos"
+    **Análisis de Sentimientos**
+
+    El PLN es utilizado para analizar el contenido de opiniones, comentarios y reseñas de usuarios en línea y determinar si expresan sentimientos positivos, negativos o neutrales. Esto es útil para medir la satisfacción del cliente, realizar estudios de mercado y realizar análisis de reputación de marca.
+
+    **Ejemplo de Aplicación de Procesamiento del Lenguaje Natural: Análisis de Sentimientos**
+
+    Un ejemplo práctico de aplicación de Procesamiento del Lenguaje Natural es el análisis de sentimientos en comentarios de productos en línea. En este caso:
+
+    - **Entrada**: La entrada es un conjunto de comentarios escritos por usuarios sobre un producto específico.
+
+    - **Procesamiento de Lenguaje Natural**: El PLN procesa el texto para tokenizarlo (dividirlo en palabras), eliminar palabras irrelevantes (stopwords) y realizar lematización o extracción de raíces para reducir las palabras a su forma base.
+
+    - **Análisis de Sentimientos**: Se utilizan técnicas de análisis de sentimientos para asignar un valor de sentimiento (positivo, negativo o neutral) a cada comentario en función de las palabras y frases utilizadas.
+ 
+    - **Salida**: Como resultado, se obtiene un resumen del sentimiento general de los usuarios hacia el producto, lo que permite a las empresas identificar puntos fuertes y áreas de mejora, así como tomar decisiones basadas en la retroalimentación del cliente.
 
 ### Analítica avanzada
 
@@ -968,9 +1017,11 @@ La integración de la IA en la robótica ha llevado a la creación de robots cad
 
 Los sistemas robóticos actuales cubren una gran cantidad de campos de aplicación del entorno. En todos ellos, la inteligencia artificial mejora su desempeño y permite acometer nuevas tareas. Entre ellos, destacan muchos robots cuya principal herramienta basada en inteligencia artificial es el módulo de visión artificial, como es el caso de Davinci, el robot cirujano, o agro-bot, el robot que recoge fresas en su punto óptimo de madurez.
 
-![Robot Da Vinci : les prouesses de la chirurgie robotique - YouTube Robot Da Vinci : les prouesses de la chirurgie robotique -YouTube](assets/DavinciSurgery.jpeg)
+[![Robot Da Vinci](https://img.youtube.com/vi/4yTPcDWopBo/0.jpg)](https://www.youtube.com/watch?v=4yTPcDWopBo)
 
-La inteligencia artificial tiene un impacto especialmente relevante en el sistema de control del robot. 
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/4yTPcDWopBo?si=NYu_P3zl6gdeqc_K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+La inteligencia artificial tiene un impacto especialmente relevante en el sistema de control del robot.
 
 #### Aplicaciones de la IA en la robótica
 
@@ -1014,13 +1065,14 @@ Los robots autónomos son máquinas que pueden operar de manera independiente en
 
 La ciencia de datos es una de las disciplinas en las que la inteligencia artificial ha generado un mayor impacto, permitiendo detectar patrones y relaciones mediante métodos no supervisados, y llevar a cabo agrupaciones y heurísticos. Todo ello será visto con detalle en el módulo SAA, donde se encontrarán los algoritmos y aplicaciones más conocidos. En este campo se engloban también los heurísticos y los detectores de anomalías para planes de mantenimiento industrial.
 
-> **Minería de datos o Data mining**
->
-> No es raro ver cómo se usan indiferentemente los conceptos minería de datos y machine learning. Son conceptos "primos hermanos", pero no son lo mismo. 
->
-> La principal diferencia radica en el objetivo que tiene cada una de las disciplinas. Mientras que la minería de datos descubre patrones anteriormente desconocidos, el Machine Learning se usa para reproducir patrones conocidos y hacer predicciones basadas en los patrones.
->
-> En pocas palabras se podría decir que la minería de datos tiene una función exploratoria mientras que el machine learning se focaliza en la predicción.
+!!! example "Ejemplo"
+    **Minería de datos o Data mining**
+
+    No es raro ver cómo se usan indiferentemente los conceptos minería de datos y machine learning. Son conceptos "primos hermanos", pero no son lo mismo. 
+
+    La principal diferencia radica en el objetivo que tiene cada una de las disciplinas. Mientras que la minería de datos descubre patrones anteriormente desconocidos, el Machine Learning se usa para reproducir patrones conocidos y hacer predicciones basadas en los patrones.
+
+    En pocas palabras se podría decir que la minería de datos tiene una función exploratoria mientras que el machine learning se focaliza en la predicción.
 
 ### Ciberseguridad
 
@@ -1048,7 +1100,8 @@ Ejemplos de soluciones reales en ciberseguridad basadas en IA incluyen:
 
 ### Interfaces de Voz
 
-> Las interfaces de voz son una forma de interacción con sistemas de Inteligencia Artificial que permiten a los usuarios comunicarse mediante comandos de voz en lugar de texto o clics. 
+!!! tip "Definición"
+    Las interfaces de voz son una forma de interacción con sistemas de Inteligencia Artificial que permiten a los usuarios comunicarse mediante comandos de voz en lugar de texto o clics.
 
 Estas interfaces han experimentado un crecimiento significativo en popularidad gracias a avances en el procesamiento del lenguaje natural y la tecnología de reconocimiento de voz. A continuación, se desarrollarán algunas aplicaciones y ejemplos de interfaces de voz.
 
@@ -1076,7 +1129,8 @@ Las interfaces de voz también juegan un papel crucial en la accesibilidad tecno
 
 ### Interfaces Cerebro-Computadora (BCI)
 
-> **Las Interfaces Cerebro-Computadora (Brain-Computer Interface BCI) son tecnologías avanzadas que permiten la comunicación directa entre el cerebro humano y dispositivos tecnológicos.** **A través del registro y análisis de señales cerebrales, estas interfaces posibilitan que las personas controlen dispositivos y sistemas mediante su actividad cerebral.** 
+!!! info "Definición"
+    **Las Interfaces Cerebro-Computadora (Brain-Computer Interface BCI) son tecnologías avanzadas que permiten la comunicación directa entre el cerebro humano y dispositivos tecnológicos.** **A través del registro y análisis de señales cerebrales, estas interfaces posibilitan que las personas controlen dispositivos y sistemas mediante su actividad cerebral.** 
 
 Algunas aplicaciones destacadas son:
 
@@ -1094,7 +1148,8 @@ Las BCI también se aplican en el campo de los juegos y el entretenimiento. Al u
 
 ### Realidad Aumentada y Virtual
 
-> **La Realidad Aumentada (AR) y la Realidad Virtual (VR) son tecnologías que mezclan el mundo digital con el mundo real o generan entornos completamente simulados para el usuario. Estas tecnologías ofrecen nuevas formas de interactuar con la IA y el mundo digital, proporcionando experiencias inmersivas y enriquecedoras.** 
+!!! info "Definición"
+    **La Realidad Aumentada (AR) y la Realidad Virtual (VR) son tecnologías que mezclan el mundo digital con el mundo real o generan entornos completamente simulados para el usuario. Estas tecnologías ofrecen nuevas formas de interactuar con la IA y el mundo digital, proporcionando experiencias inmersivas y enriquecedoras.**
 
 Algunas aplicaciones destacadas son:
 
@@ -1150,4 +1205,3 @@ mindmap
       (Cerebro</br>Computadora)
       (RA y RV)
 ```
-
