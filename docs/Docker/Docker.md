@@ -148,6 +148,32 @@ sudo apt install ./docker-desktop-*.deb
 systemctl --user start docker-desktop
 ```
 
+!!! warning "Problemas con Ubuntu 24.04"
+    Si tienes problemas con Ubuntu 24.04, yo me he encontrado dos:
+    
+    1. Problema de permisos
+        ```bash
+        ...
+        S'estan processant els activadors per a desktop-file-utils (0.27-2build1)…
+        N: La baixada es duu a terme fora de l'entorn segur com a root ja que el fitxer «/home/ubuntu/docker-desktop-4.27.2-amd64.deb» no és accessible per l'usuari «_apt». - pkgAcquire::Run (13: Permission denied)
+        ```
+
+        Lo he resuelto cambiando los permisos del deb:
+        ```bash
+        # Change ownership of the file to make it accessible
+        sudo chown _apt:root /home/ubuntu/docker-desktop-4.27.2-amd64.deb
+        # Or alternatively, change permissions to make it readable
+        sudo chmod 644 /home/ubuntu/docker-desktop-4.27.2-amd64.deb
+        ```
+    
+    2. Lanzas Docker-desktop, aparece el icono, pero desaparece y la aplicación no incia:
+        Parece un problema con un cambio en Ubuntu 24.04 que he resuelto con la información de este [post](https://askubuntu.com/questions/1511725/ubuntu-24-04-docker-desktop-is-not-starting/1519662#1519662): 
+        ```bash
+        sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
+        systemctl --user restart docker-desktop
+        ```
+
+
 #### Ventajas docker desktop (GUI) vs Línea de Comandos (CLI)
 
 ✅ **Ventajas de Docker Desktop:**
