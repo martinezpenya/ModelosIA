@@ -148,7 +148,7 @@ sudo apt install ./docker-desktop-*.deb
 systemctl --user start docker-desktop
 ```
 
-!!! warning "Problemas con Ubuntu 24.04"
+??? warning "Problemas con Ubuntu 24.04"
     Si tienes problemas con Ubuntu 24.04, yo me he encontrado dos:
     
     1. Problema de permisos
