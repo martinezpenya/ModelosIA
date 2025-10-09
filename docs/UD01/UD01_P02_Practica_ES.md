@@ -85,7 +85,7 @@ El código fuente de su Bot (el nombre del bot será el nombre de su autor más 
 
 ## Requisitos mínimos
 
-- **Versión 0.27.0 de la API** (Añadido el 12/12/24, para contemplar la instalación de Docker en Windows.)
+- **Versión 0.33.1 de la API** (Añadido el 09/10/25, habían pasado demasiadas versiones, probamos esta y si hay algun problema, decidimos.)
 - Modo melé
 - 10 asaltos
 - RamFire, Walls, SpinBot
