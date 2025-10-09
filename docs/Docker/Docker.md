@@ -173,6 +173,31 @@ systemctl --user start docker-desktop
         systemctl --user restart docker-desktop
         ```
 
+        En algunos casos parece que la solución anterior solo sirve hasta que reinicias, si es así, prueba esto también:
+        
+        Crea un nuevo fichero:
+        ```bash
+        sudo nano /etc/apparmor.d/opt.docker-desktop.bin.com.docker.backend
+        ```
+
+        Escribe dentro el siguiente contenido:
+        ```bash
+        abi <abi/4.0>,
+
+        include <tunables/global>
+
+        /opt/docker-desktop/bin/com.docker.backend flags=(default_allow) {
+        userns,
+
+        # Site-specific additions and overrides. See local/README for details.
+        include if exists <local/opt.docker-desktop.bin.com.docker.backend>
+        }
+        ```
+
+        Reinicia el servicio `apparmor.service`:
+        ```bash
+        sudo systemctl restart apparmor.service
+        ```
 
 #### Ventajas docker desktop (GUI) vs Línea de Comandos (CLI)
 
