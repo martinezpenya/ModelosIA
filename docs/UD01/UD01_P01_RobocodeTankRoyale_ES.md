@@ -2,7 +2,7 @@
 
 ## Preparación del entorno
 
-* Al menos java 11 (Yo estoy usando Java 21 y la versión 0.33.1 de Tank Royale)
+* Al menos java 11 (Yo estoy usando Java 23 (OpenJDK) y la versión 0.32.1 de Tank Royale)
 
   ```sh
   java -version
@@ -67,10 +67,10 @@ La estructura debería quedar de la siguiente manera:
 
 ### Configuración del servidor (GUI) y el proyecto IntelliJ para ejecutar en local o remoto
 
-El servidor permite conexiones en remoto/local a través de un password que se genera automáticamente la primera vez que lanzas la GUI. Este password lo puedes encontrar/modificar en el archivo `server.properties`, en el ejemplo siguiente la clave de acceso es **CEIABDEPM2024**
+El servidor permite conexiones en remoto/local a través de un password que se genera automáticamente la primera vez que lanzas la GUI. Este password lo puedes encontrar/modificar en el archivo `server.properties`, en el ejemplo siguiente la clave de acceso es **CEIABDEPM2025**
 
 ```sh
-bots-secrets=CEIABDEPM2024
+bots-secrets=CEIABDEPM2025
 [...]
 ```
 
@@ -83,7 +83,7 @@ Ahora solo queda configurar nuestro proyecto de IntelliJ para configurar estas v
 Puedes ver que en el apartado `Environment Variables` tienes el siguiente valor:
 
 ```sh
-SERVER_SECRET=CEIABDEPM2024;SERVER_URL=ws://localhost:7654
+SERVER_SECRET=CEIABDEPM2025;SERVER_URL=ws://localhost:7654
 ```
 
 Como puedes imaginar **SERVER_SECRET** hace referencia a la clave del servidor, y **SERVER_URL** a la dirección del servidor y es donde deberás reemplazar (según el caso) localhost por la IP que te indique el profesor. Así podrás ejecutar tu Bot directamente desde IntelliJ y aparecerá en el Servidor para poder añadirlo a las batallas. 

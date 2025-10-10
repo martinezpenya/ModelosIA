@@ -32,9 +32,9 @@ Documentación de la API:
     Ojo! RCTR se basa en una versión más antigua de RoboCode, con un API diferente, y por lo tanto los robots anteriores, y el funcionamiento del campo de batalla han cambiado sustancialmente.
 
     Por lo tanto, mucha de la documentación que encontrareis es sobre el sistema antiguo, en la que la parte de estrategias es válida, pero no el código que la acompaña. La tarea de traducción del antiguo sistema al nuevo se ha llevado a cabo en forma de un "bridge" entre las dos versiones, y está disponible en GitHub: https://github.com/robocode-dev/robocode-api-bridge
-
+    
     En cuanto a la documentación y estrategias, la API antigua todavía se puede encontrar en: https://robocode.sourceforge.io/docs/robocode/
-
+    
     Y una página que contaba con muchisima información sobre estrategias, robots, código, etc ya solo está disponible en archive.org, la última versión cacheada que he encontrado disponible está en: https://web.archive.org/web/20200323061702/http://robowiki.net/
 
 ## Objetivo de la práctica
@@ -85,7 +85,7 @@ El código fuente de su Bot (el nombre del bot será el nombre de su autor más 
 
 ## Requisitos mínimos
 
-- **Versión 0.33.1 de la API** (Añadido el 09/10/25, habían pasado demasiadas versiones, probamos esta y si hay algun problema, decidimos.)
+- **Versión 0.32.1 de la API** (Cambiado el 10/10/25, la última no funciona con maven.)
 - Modo melé
 - 10 asaltos
 - RamFire, Walls, SpinBot
