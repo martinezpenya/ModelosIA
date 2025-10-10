@@ -2,7 +2,7 @@
 
 ## Preparación del entorno
 
-* Al menos java 11 (Yo estoy usando Java 21 y la versión 0.24.4 de Tank Royale)
+* Al menos java 11 (Yo estoy usando Java 21 y la versión 0.33.1 de Tank Royale)
 
   ```sh
   java -version
@@ -33,7 +33,8 @@
 
 * Necesitaras IntelliJ para poner todo en funcionamiento y para programar tu Bot.
 
-> Juega un poco por tu cuenta con el entorno GUI, explora las opciones, tipos de batallas, crea alguna ronda de las mismas, inicializa Bots, añádelos, juega con la velocidad de juego, etc.
+!!! tip "Consejo"
+    Juega un poco por tu cuenta con el entorno GUI, explora las opciones, tipos de batallas, crea alguna ronda de las mismas, inicializa Bots, añádelos, juega con la velocidad de juego, etc.
 
 ## Robocode con Maven
 
@@ -43,7 +44,7 @@ Desde hace "relativamente" poco, robocode tankroyale está disponible como artef
 
 ### Proyecto IntelliJ
 
-Para acelerar el proceso, he preparado un proyecto en IntelliJ con toda la arquitectura básica que necesitará tu Bot. Descarga y descomprime esta [carpeta](https://raw.githubusercontent.com/martinezpenya/MIA-IABD-2425/master/UD01/assets/IABDBot.zip) o [esta para maven](https://raw.githubusercontent.com/martinezpenya/MIA-IABD-2425/master/UD01/assets/IABDBotMaven.zip) y abre el proyecto con el IDE IntelliJ.
+Para acelerar el proceso, he preparado un proyecto en IntelliJ con toda la arquitectura básica que necesitará tu Bot. Descarga y descomprime [esta para maven](assets/IABDBotMaven.zip) y abre el proyecto con el IDE IntelliJ.
 
 También necesitaras la libreria (API) de Robocode Tank Royale que puedes descargar desde aquí: https://github.com/robocode-dev/tank-royale/releases. Descarga el archivo: `robocode-tankroyale-bot-api-x.y.z.jar`
 
@@ -59,9 +60,10 @@ La estructura debería quedar de la siguiente manera:
     └── IABDBot.iml
 ```
 
-> Asegúrate de entender el funcionamiento del Bot IABDBot, tiene comentarios donde se explican partes importante del Bot y que daremos por conocidas en los siguientes puntos.
->
-> Es muy importante que entiendas la diferencia entre movimientos bloqueantes y simultáneos, así como las condiciones y los eventos disponibles.
+!!! warning "Atención"
+    Asegúrate de entender el funcionamiento del Bot IABDBot, tiene comentarios donde se explican partes importante del Bot y que daremos por conocidas en los siguientes puntos.
+
+    Es muy importante que entiendas la diferencia entre movimientos bloqueantes y simultáneos, así como las condiciones y los eventos disponibles.
 
 ### Configuración del servidor (GUI) y el proyecto IntelliJ para ejecutar en local o remoto
 
@@ -86,25 +88,27 @@ SERVER_SECRET=CEIABDEPM2024;SERVER_URL=ws://localhost:7654
 
 Como puedes imaginar **SERVER_SECRET** hace referencia a la clave del servidor, y **SERVER_URL** a la dirección del servidor y es donde deberás reemplazar (según el caso) localhost por la IP que te indique el profesor. Así podrás ejecutar tu Bot directamente desde IntelliJ y aparecerá en el Servidor para poder añadirlo a las batallas. 
 
-> Ojo, el servidor debe estar inicializado antes de lanzar el bot de lo contrario obendrás un error similar a este:
->
-> ```sh
-> Exception in thread "main" dev.robocode.tankroyale.botapi.BotException: Could not create web socket for URL: ws://localhost:7654
-> 	at dev.robocode.tankroyale.botapi.internal.BaseBotInternals.connect(BaseBotInternals.java:268)
-> 	at dev.robocode.tankroyale.botapi.internal.BaseBotInternals.start(BaseBotInternals.java:254)
-> 	at dev.robocode.tankroyale.botapi.BaseBot.start(BaseBot.java:114)
-> 	at IABDBot.main(IABDBot.java:11)
-> 
-> Process finished with exit code 1
-> ```
+!!! Danger "Atención"
+    Ojo, el servidor debe estar inicializado antes de lanzar el bot de lo contrario obendrás un error similar a este:
+
+    ```bash
+    Exception in thread "main" dev.robocode.tankroyale.botapi.BotException: Could not create web socket for URL: ws://localhost:7654
+        at dev.robocode.tankroyale.botapi.internal.BaseBotInternals.connect(BaseBotInternals.java:268)
+        at dev.robocode.tankroyale.botapi.internal.BaseBotInternals.start(BaseBotInternals.java:254)
+        at dev.robocode.tankroyale.botapi.BaseBot.start(BaseBot.java:114)
+        at IABDBot.main(IABDBot.java:11)
+    
+    Process finished with exit code 1
+    ```
 
 Si el Bot encuentra el servidor y la contraseña es correcta deberia aparecer esto al inicializarlo en IntelliJ:
 
-```sh
+```bash
 Connected to: ws://localhost:7654
 ```
 
-> Prueba por tu cuenta mezclando en las batallas Bots de ejemplo, con tu Bot o incluso el de algún compañero/a.
+!!! tip "Consejo"
+    Prueba por tu cuenta mezclando en las batallas Bots de ejemplo, con tu Bot o incluso el de algún compañero/a.
 
 ## ¿Cómo mejoro mi Bot?
 
@@ -159,21 +163,21 @@ Puntos importantes:
 Definimos una condición, y cuando esta se cumple se dispara un evento:
 
 ```java
-    // Esta condición se dispara cuando el bot completa su giro
-    public static class TurnCompleteCondition extends Condition {
+// Esta condición se dispara cuando el bot completa su giro
+public static class TurnCompleteCondition extends Condition {
 
-        private final IBot bot;
+    private final IBot bot;
 
-        public TurnCompleteCondition(IBot bot) {
-            this.bot = bot;
-        }
-
-        @Override
-        public boolean test() {
-            // El método test() es el que debemos reescribir para definir el resultado de nuestra condición.
-            return bot.getTurnRemaining() == 0;
-        }
+    public TurnCompleteCondition(IBot bot) {
+        this.bot = bot;
     }
+
+    @Override
+    public boolean test() {
+        // El método test() es el que debemos reescribir para definir el resultado de nuestra condición.
+        return bot.getTurnRemaining() == 0;
+    }
+}
 ```
 
 Podriamos usar esta condición en un fragmento similar a este:
