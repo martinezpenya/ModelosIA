@@ -86,7 +86,7 @@ El código fuente de su Bot (el nombre del bot será el nombre de su autor más 
 ## Requisitos mínimos
 
 - **Versión 0.33.1 de la API** (Cambiado el 11/10/25, **Flemming N. Larsen** ha reparado la última versión, y además permite grabar las partidas.)
-- Modo melé
+- Modo **classic**
 - 10 asaltos
 - RamFire, Walls, SpinBot
 - Ganar por puntuación acumulada
@@ -95,3 +95,4 @@ El código fuente de su Bot (el nombre del bot será el nombre de su autor más 
 - Máximo tiempo de inactividad: 450
 - No llamar a métodos prohibidos
 - Demostrar IA (no por azar)
+- Los combates serán grabados y devueltos al alumno como feedback por si los quiere revisar.
