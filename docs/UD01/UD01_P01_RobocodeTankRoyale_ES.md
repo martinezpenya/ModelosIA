@@ -2,7 +2,7 @@
 
 ## Preparación del entorno
 
-* Al menos java 11 (Yo estoy usando Java 23 (OpenJDK) y la versión 0.32.1 de Tank Royale)
+* Al menos java 11 (Yo estoy usando Java 23 (OpenJDK) y la versión 0.33.1 de Tank Royale)
 
   ```sh
   java -version
@@ -38,32 +38,57 @@
 
 ## Robocode con Maven
 
-Desde hace "relativamente" poco, robocode tankroyale está disponible como artefacto del repositorio de maven, si estas familiarizado con el uso de maven puede simplificar bastante el trabajo y actualizaciones de dependencias, te dejo el enlace por si quieres investigar por tu cuenta, ya que escapa del objetivo de esta asignatura: https://central.sonatype.com/search?q=g:dev.robocode.tankroyale&smo=true
+Robocode tankroyale está disponible como artefacto del repositorio de maven, si estas familiarizado con el uso de maven puede simplificar bastante el trabajo y actualizaciones de dependencias, te dejo el enlace por si quieres investigar por tu cuenta, ya que escapa del objetivo de esta asignatura: https://central.sonatype.com/search?q=g:dev.robocode.tankroyale&smo=true
 
 ## Mi primer Bot
 
 ### Proyecto IntelliJ
 
-Para acelerar el proceso, he preparado un proyecto en IntelliJ con toda la arquitectura básica que necesitará tu Bot. Descarga y descomprime [esta para maven](assets/IABDBotMaven.zip) y abre el proyecto con el IDE IntelliJ.
+Para acelerar el proceso, he preparado un proyecto en IntelliJ con toda la arquitectura básica que necesitará tu Bot. Descarga y descomprime [este paquete](assets/IABDBotMaven.zip) y abre el proyecto con el IDE IntelliJ.
 
-También necesitaras la libreria (API) de Robocode Tank Royale que puedes descargar desde aquí: https://github.com/robocode-dev/tank-royale/releases. Descarga el archivo: `robocode-tankroyale-bot-api-x.y.z.jar`
+!!! tip "Sin maven"
+    Si no quieres usar maven y deseas montar el proyecto por tu cuenta sigue estas indicaciones:
 
-La estructura debería quedar de la siguiente manera:
-
-```sh
-[directorio padre]
-├── lib
-|	└──robocode-tankroyale-gui-x.y.z.jar
-└── IABDBot  <-- Proyecto de IntelliJ
-    ├── src
-    ...
-    └── IABDBot.iml
-```
+    También necesitaras la libreria (API) de Robocode Tank Royale que puedes descargar desde aquí: https://github.com/robocode-dev/tank-royale/releases. Descarga el archivo: `robocode-tankroyale-bot-api-x.y.z.jar`
+    
+    La estructura debería quedar de la siguiente manera:
+    
+    ```sh
+    [directorio padre]
+    ├── lib
+    |	└──robocode-tankroyale-gui-x.y.z.jar
+    └── IABDBot  <-- Proyecto de IntelliJ
+        ├── src
+        ...
+        └── IABDBot.iml
+    ```
 
 !!! warning "Atención"
     Asegúrate de entender el funcionamiento del Bot IABDBot, tiene comentarios donde se explican partes importante del Bot y que daremos por conocidas en los siguientes puntos.
 
     Es muy importante que entiendas la diferencia entre movimientos bloqueantes y simultáneos, así como las condiciones y los eventos disponibles.
+
+!!! danger "Ojo!"
+    Gracias a este fragmento, tu bot funcionará correctamente desde IntelliJ y desde el gui de RoboCode:
+    ```java
+    // Constructor, que carga el fichero de configuración
+    IABDBot() {
+        super(BotInfo.fromFile(getConfigPath()));
+    }
+
+    // Este método obtiene la ruta del fichero de configuración y se asegura que funcione desde IntelliJ y desde la gui de Robocode
+    private static String getConfigPath() {
+        String miBot = "IABDBot";
+        String configPath = "src/main/java/" + miBot + ".json";
+        java.io.File configFile = new java.io.File(configPath);
+        if (!configFile.exists()) {
+            configPath = miBot + ".json";
+        }
+        return configPath;
+    }
+    ```
+### Últimas novedades del proyecto
+- Se pueden grabar los combates en un fichero dentro de la carpeta `recordings` con la extensión `battle.gz` que luego podemos reproducir en diferido.  Esto nos permite revisar situaciones y estudiar estrategias de mejora.
 
 ### Configuración del servidor (GUI) y el proyecto IntelliJ para ejecutar en local o remoto
 
@@ -74,6 +99,11 @@ bots-secrets=CEIABDEPM2025
 [...]
 ```
 
+!!! danger "Ojo"
+    Con las últimas versiones de la gui el uso de contraseñas en el servidor está inicialmente deshabilitado, si queremos habilitarlo lo podemos hacer desde el propio interfaz: `Config/Server Options/Enable server secrets` o bien desde el fichero de configuración `server.properties` añadiendo:
+    ```properties
+    server-secrets-enabled=true
+    ```
 Otra información que necesitaras será la IP del servidor al que quieres conectar, normalmente será `localhost` (tu host local), y cuando sea necesario hacer pruebas el profesor te facilitará su IP.
 
 Ahora solo queda configurar nuestro proyecto de IntelliJ para configurar estas variables en el momento de ejecutar el Bot. Accede a la configuración de las ejecuciones en la parte superior derecha (una vez abierta la clase `IABDBot.java)`:
@@ -199,13 +229,15 @@ El resultado de los dos fragmentos seria el mismo.
 Podemos establecer colores para el cuerpo, torreta de cañón, el radar, el arco de escaneo y de la bala:
 
 ```java
-Color kaki = Color.fromString("#febe56");
-setBodyColor(kaki);
-setTurretColor(kaki);
-setRadarColor(kaki);
-setScanColor(kaki);
-setBulletColor(kaki);
+Color verde = Color.fromRgb(0,255,0);
+setBodyColor(Color.KHAKI);
+setTurretColor(Color.KHAKI);
+setRadarColor(Color.KHAKI);
+setScanColor(Color.KHAKI);
+setBulletColor(Color.KHAKI);
 ```
+
+Puedes encontrar la lista completa de colores disponibles en la API de Robocode TankRoyale.
 
 ### Técnicas de escaneo (Radar)
 

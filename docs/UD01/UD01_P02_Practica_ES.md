@@ -85,7 +85,7 @@ El código fuente de su Bot (el nombre del bot será el nombre de su autor más 
 
 ## Requisitos mínimos
 
-- **Versión 0.32.1 de la API** (Cambiado el 10/10/25, la última no funciona con maven.)
+- **Versión 0.33.1 de la API** (Cambiado el 11/10/25, **Flemming N. Larsen** ha reparado la última versión, y además permite grabar las partidas.)
 - Modo melé
 - 10 asaltos
 - RamFire, Walls, SpinBot
