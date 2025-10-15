@@ -379,4 +379,5 @@ Como tarea, se propone:
 - Si te atreves con ello, crea un diagrama de flujo en el que indiques los pasos que realizas un sábado por la mañana.
 - Exporta el documento a pdf.
 
+ 
 **Subir a la plataforma *<u>AULES</u>* un documento Markdown (*.md)  y otro documento PDF (*.pdf) que sea la exportación del primero.**
