@@ -2,7 +2,7 @@
 
 ## Preparación del entorno
 
-* Al menos java 11 (Yo estoy usando Java 23 (OpenJDK) y la versión 0.33.1 de Tank Royale)
+* Al menos java 11 (Yo estoy usando Java 23 (OpenJDK) y la versión 0.34.0 de Tank Royale)
 
   ```sh
   java -version
