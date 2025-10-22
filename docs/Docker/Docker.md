@@ -157,7 +157,7 @@ systemctl --user start docker-desktop
         S'estan processant els activadors per a desktop-file-utils (0.27-2build1)…
         N: La baixada es duu a terme fora de l'entorn segur com a root ja que el fitxer «/home/ubuntu/docker-desktop-4.27.2-amd64.deb» no és accessible per l'usuari «_apt». - pkgAcquire::Run (13: Permission denied)
         ```
-
+    
         Lo he resuelto cambiando los permisos del deb:
         ```bash
         # Change ownership of the file to make it accessible
@@ -172,28 +172,28 @@ systemctl --user start docker-desktop
         sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
         systemctl --user restart docker-desktop
         ```
-
+    
         En algunos casos parece que la solución anterior solo sirve hasta que reinicias, si es así, prueba esto también:
         
         Crea un nuevo fichero:
         ```bash
         sudo nano /etc/apparmor.d/opt.docker-desktop.bin.com.docker.backend
         ```
-
+    
         Escribe dentro el siguiente contenido:
         ```bash
         abi <abi/4.0>,
-
+    
         include <tunables/global>
-
+    
         /opt/docker-desktop/bin/com.docker.backend flags=(default_allow) {
         userns,
-
+    
         # Site-specific additions and overrides. See local/README for details.
         include if exists <local/opt.docker-desktop.bin.com.docker.backend>
         }
         ```
-
+    
         Reinicia el servicio `apparmor.service`:
         ```bash
         sudo systemctl restart apparmor.service
@@ -1031,11 +1031,16 @@ Necesitamos una carpeta con la siguiente estructura:
 El fichero `Dockerfile` tiene el siguiente contenido:
 
 ```dockerfile
-FROM python:3.6 #versión de python compatible con experta
-RUN pip3 install experta #libreria de python para sistemas expertos
-RUN pip3 install notebook #libreria para usar notebooks en python
-WORKDIR /home/MIA2526 #creamos la carpeta de trabajo
-CMD jupyter notebook --allow-root --ip=0.0.0.0 --port=8888 --no-browser #ejecutamos el jupyter notebook en el puerto 8888
+#versión de python compatible con experta
+FROM python:3.6
+#libreria de python para sistemas expertos
+RUN pip3 install experta
+#libreria para usar notebooks en python
+RUN pip3 install notebook 
+#creamos la carpeta de trabajo
+WORKDIR /home/MIA2526
+#ejecutamos el jupyter notebook en el puerto 8888
+CMD jupyter notebook --allow-root --ip=0.0.0.0 --port=8888 --no-browser 
 ```
 
 Ahora, para el `docker-compose.yml` tendremos:
