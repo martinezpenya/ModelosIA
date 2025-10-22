@@ -214,6 +214,7 @@ Si insertamos guiones <code>---</code> dentro de una celda crearemos el encabeza
 |--- |--- |--- |
 | celda 1.1 | celda 1.2 | celda 1.3 |
 | celda 2.1 | celda 2.2 | celda 2.3 |
+| celda 3.1 | celda 3.2 | celda 3.3 |
 ```
 
 Quedaría:
@@ -222,6 +223,7 @@ Quedaría:
 | ----------- | ----------- | ----------- |
 | celda 1.1   | celda 1.2   | celda 1.3   |
 | celda 2.1   | celda 2.2   | celda 2.3   |
+| celda 3.1   | celda 3.2   | celda 3.3   |
 
 Si queremos una **celda con más de una línea** de texto podremos insertar <code>\<br /></code> (o **Shift+Intro**) al final de ésta.
 
