@@ -491,9 +491,11 @@ ls -> existe el archivo prueba.txt
 
 #### Docker Compose
 
-Docker Compose es una herramienta que permite simplificar el uso de Docker. A partir de archivos YAML es mas sencillo crear contenedores, conectarlos, habilitar puertos, volúmenes, etc.
+Docker Compose es una herramienta que permite simplificar y automatizar la gestión de múltiples contenedores de Docker. En lugar de ejecutar manualmente comandos para crear y configurar cada contenedor, Compose utiliza archivos de configuración en formato YAML (normalmente llamados docker-compose.yml) donde se definen todos los servicios, redes, volúmenes y dependencias necesarias para que una aplicación funcione correctamente.
 
-Con Compose puedes crear diferentes contenedores y al mismo tiempo, en cada contenedor, diferentes servicios, unirlos a un volúmen común, iniciarlos y apagarlos, etc. Es un componente fundamental para poder construir aplicaciones y microservicios
+Gracias a esto, puedes levantar todo un entorno completo con un solo comando (docker-compose up), incluyendo bases de datos, servidores web, APIs y otros servicios auxiliares. Compose se encarga de crear los contenedores, conectarlos entre sí mediante redes internas, asignar puertos al host y compartir volúmenes para el almacenamiento persistente de datos.
+
+Además, Docker Compose facilita el trabajo en equipo y la portabilidad, ya que todo el entorno de desarrollo o despliegue queda descrito en un único archivo, lo que permite reproducirlo fácilmente en cualquier máquina. También permite escalar servicios, iniciando varias réplicas de un mismo contenedor para balancear la carga o mejorar la disponibilidad.
 
 **Parámetros docker-compose.yml**
 
