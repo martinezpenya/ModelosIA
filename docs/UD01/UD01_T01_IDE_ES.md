@@ -177,9 +177,10 @@ Debes entregar un documento `*.pdf` explicando:
 
 Una captura de pantalla en la que se vea el resultado del comando:
 
-- ```java
+- ```
   java --version
   ```
 
 Y también capturas de pantalla donde se pueda ver que editas el fichero fuente (`HolaMundo.java`), lo compilas y lo ejecutas dentro del IDE IntelliJ (explica los pasos que has seguido)
+
 
