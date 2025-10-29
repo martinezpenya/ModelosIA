@@ -1,5 +1,5 @@
 # Taller UD01_T02: Crear cuenta en GitHub
-
+# Fran Camara
 ## Qué es GitHub
 
 GitHub es una plataforma en la nube basada en Git que permite a los desarrolladores almacenar, gestionar y colaborar en proyectos de código. Es el portafolio universal de los programadores.
