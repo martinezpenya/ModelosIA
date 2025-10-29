@@ -1,5 +1,5 @@
 # Robocode TankRoyale
-
+Prueba de Quique
 ## Preparación del entorno
 
 * Al menos java 11 (Yo estoy usando Java 23 (OpenJDK) y la versión 0.34.0 de Tank Royale)
@@ -727,3 +727,4 @@ Aquí te dejo algunas mejoras para que las valores:
 ## Investigación y desarrollo propio
 
 A partir de aquí el trabajo será individual de cada alumno (puede solaparse con el paso 3). Deberéis investigar/prever a vuestros adversarios (los conocidos, y los de vuestros compañeros). Aplicar las técnicas que consideréis más útiles para intentar quedar lo más arriba posible en la tabla de clasificación.
+
