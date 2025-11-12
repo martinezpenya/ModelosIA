@@ -1227,7 +1227,7 @@ docker load -i fichero.tar
 
 ## Ejercicios
 
-### **Ejercicio1**
+### Ejercicio1
 
 Instala docker desktop en tu PC. Guarda una captura de pantalla que demuestre que funciona en tu PC.
 
