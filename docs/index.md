@@ -12,14 +12,15 @@
 
 | **Bloque**                 | TRIMESTRE/UNIDAD                                             | **Horas** |
 | -------------------------- | ------------------------------------------------------------ | --------: |
-|                            | **📅 PRIMER TRIMESTRE**                                      | **44**    |
-| **1AVA**                   | � UD01: Caracterización de sistemas y utilización de modelos de Inteligencia Artificial | 27        |
+|                            | **📅 PRIMER TRIMESTRE**                                      | **45**   |
+| **1AVA**                   | � UD01: Caracterización de sistemas y utilización de modelos de Inteligencia Artificial | 15       |
 |                            | 🧠 UD02: Sistemas Expertos                                   | 15        |
+| | 💬 UD03: Procesamiento del Lenguaje Natural | 15 |
 | **📊 1a EVALUACIÓN**       |                                                              | **2**     |
-|                            | **📅 SEGUNDO TRIMESTRE**                                     | **46**    |
-| **2AVA**                   | 💬 UD03: Procesamiento del Lenguaje Natural                  | 15        |
-|                            | 🤖 UD04: Análisis de sistemas robotizados                    | 15        |
-|                            | ⚖️ UD05: Aplicación de principios legales y éticos de la Inteligencia Artificial | 14        |
+|                            | **📅 SEGUNDO TRIMESTRE**                                     | **45**   |
+| **2AVA**                   | 🤖 UD04: Análisis de sistemas robotizados                     |        15 |
+|                            | ⚖️ UD05: Aplicación de principios legales y éticos de la Inteligencia Artificial |        10 |
+|                              | Proyecto intermodular                                        |        20 |
 | **📊 2ª EVALUACIÓN**       |                                                              | **2**     |
 | **🎓 CONVOCATÒRIA ORDINÀRIA** |                                                              | **2**     |
 |                            | **🧮 TOTAL**                                                 | **90**    |
