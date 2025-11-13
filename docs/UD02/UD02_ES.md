@@ -192,9 +192,9 @@ Por tanto, las reglas constituyen la forma más común de codificar el conocimie
     Este conocimiento se podría expresar como:
     
     ```pseudocode
-        IF (cliente mayor de 18 años) AND (tiene nómina)
-        AND ((tiene contrato indefinido) OR (la duración del contrato es superior al tiempo de devolución del préstamo))
-        THEN (conceder préstamo solicitado)
+    IF (cliente mayor de 18 años) AND (tiene nómina)
+    AND ((tiene contrato indefinido) OR (la duración del contrato es superior al tiempo de devolución del préstamo))
+    THEN (conceder préstamo solicitado)
     ```
     Por tanto, si el único criterio que se emplea para la concesión de créditos al consumo es el indicado por el bancario, un sistema experto que tenga implementada la regla expuesta más arriba será capaz de gestionar la concesión de créditos obteniendo los mismos resultados.
 
