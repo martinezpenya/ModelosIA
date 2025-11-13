@@ -19,7 +19,8 @@
   * **Información**: Datos con significado.
   * **Conocimiento**: Información con significado y estructura.
 
-> El conocimiento es un conjunto de información estructurada e interrelacionada que permite a un agente realizar tareas.
+!!! info "Definición"
+    El conocimiento es un conjunto de información estructurada e interrelacionada que permite a un agente realizar tareas.
 
 ### Jerarquía del conocimiento
 
@@ -103,7 +104,8 @@ Los sistemas expertos son una aplicación de la inteligencia artificial que hace
 
 Se considera que los primeros sistemas de inteligencia artificial que fueron capaces de obtener resultados con utilidad práctica fueron los expertos. Se trata de sistemas basados fundamentalmente en reglas. Para el desarrollo de un sistema experto, resulta imprescindible disponer del conocimiento de un especialista en el campo objeto de estudio. Es decir, es necesario contar con información relativa a cómo un especialista trataría el problema propuesto. A los sistemas expertos se les denomina también por ese motivo «sistemas basados en conocimientos», o «sistemas basados en reglas».
 
-> Todo sistema experto ha de tener la capacidad de explicar cuál es la decisión que ha tomado.
+!!! warning "Importante
+    Todo sistema experto ha de tener la capacidad de explicar cuál es la decisión que ha tomado.
 
 Un sistema experto se puede definir como un software que es capaz de simular el proceso de decisión que tomaría un experto humano en cierto campo. Por tanto, los sistemas expertos se diseñan de manera que puedan tomar de forma automática decisiones como si fueran expertos. Además, cabe señalar que todo sistema experto debe ser capaz de explicar la decisión que ha tomado y también ha de ser capaz de aprender cuando se le facilita nueva información.
 
@@ -182,21 +184,18 @@ SI <antecedente1> O <antecedente2>
 
 Por tanto, las reglas constituyen la forma más común de codificar el conocimiento adquirido por un experto.
 
-> Se pretende construir un sistema experto que decida si se concede o no un crédito al consumo a cierto cliente. Este sistema experto debe trabajar como lo haría un bancario acostumbrado a dicha operación.
->
-> Un bancario con experiencia indica que únicamente se conceden este tipo de créditos a mayores de 18 años que dispongan de nómina y cuyo contrato sea bien de carácter indefinido o que la duración del mismo sea superior al tiempo necesario para la devolución de todas las cuotas del préstamo.
->
-> Este conocimiento se podría expresar como:
->
-> ```SI (cliente mayor de 18 años)
-> SI (cliente mayor de 18 años)
-> Y (tiene nómina)
-> Y (tiene contrato indefinido)
-> O (la duración del contrato es superior al tiempo de devolución del préstamo)
-> ENTONCES (conceder préstamo solicitado)
-> ```
->
-> Por tanto, si el único criterio que se emplea para la concesión de créditos al consumo es el indicado por el bancario, un sistema experto que tenga implementada la regla expuesta más arriba será capaz de gestionar la concesión de créditos obteniendo los mismos resultados.
+!!! example "Ejemplo"
+    Se pretende construir un sistema experto que decida si se concede o no un crédito al consumo a cierto cliente. Este sistema experto debe trabajar como lo haría un bancario acostumbrado a dicha operación.
+    Un bancario con experiencia indica que únicamente se conceden este tipo de créditos a mayores de 18 años que dispongan de nómina y cuyo contrato sea bien de carácter indefinido o que la duración del mismo sea superior al tiempo necesario para la devolución de todas las cuotas del préstamo.
+    Este conocimiento se podría expresar como:
+    ```SI (cliente mayor de 18 años)
+    SI (cliente mayor de 18 años)
+    Y (tiene nómina)
+    Y (tiene contrato indefinido)
+    O (la duración del contrato es superior al tiempo de devolución del préstamo)
+    ENTONCES (conceder préstamo solicitado)
+    ```
+    Por tanto, si el único criterio que se emplea para la concesión de créditos al consumo es el indicado por el bancario, un sistema experto que tenga implementada la regla expuesta más arriba será capaz de gestionar la concesión de créditos obteniendo los mismos resultados.
 
 A la hora de implementar un sistema experto, resulta conveniente tener en cuenta que el conocimiento que proporcionan los expertos se pueda clasificar en distintas categorías:
 
@@ -255,16 +254,17 @@ Los principales mecanismos o modos de razonamiento son:
 
 Para obtener conclusiones, utilizaremos los diferentes tipos de reglas y estrategias de inferencia y control. Te recomendamos empezar por considerar las más básicas como son **Modus Ponens** y **Modus Tollens** como sistemas de inferencia y el **encadenamiento de reglas hacia adelante** y **encadenamiento de reglas hacia atrás** como estrategias de inferencia.
 
-> Para conocer mejor los sistemas de inferencia **Modus Ponens** y **Modus Tollens**, puedes recurrir a sus correspondientes artículos en la Wikipedia:
->
-> - [Modus Ponens](https://es.wikipedia.org/wiki/Modus_ponendo_ponens) "si *P* implica *Q; y* si *P* es verdad; entonces *Q* también es verdad."
-> - [Modus Tollens](https://es.wikipedia.org/wiki/Modus_tollendo_tollens) "Si *P* implica *Q*, y *Q* no es cierto, entonces *P* no es cierto"
->
-> Así como ver este [vídeo](https://youtu.be/MLe9flR4PsA) corto en el que se hace un planteamiento sencillo de los conceptos.
+!!! info "Más información"
+    Para conocer mejor los sistemas de inferencia **Modus Ponens** y **Modus Tollens**, puedes recurrir a sus correspondientes artículos en la Wikipedia:
 
-> Encadenamiento hacia adelante y hacia atrás
->
-> [<img src="assets/Encadenamiento.png" alt="Encadenamiento hacia adelnate y hacia atras" style="zoom:50%;" />](https://prezi.com/fvw2aokvct7r/encadenamiento-hacia-adelante-y-hacia-atras/)
+    - [Modus Ponens](https://es.wikipedia.org/wiki/Modus_ponendo_ponens) "si *P* implica *Q; y* si *P* es verdad; entonces *Q* también es verdad."
+    - [Modus Tollens](https://es.wikipedia.org/wiki/Modus_tollendo_tollens) "Si *P* implica *Q*, y *Q* no es cierto, entonces *P* no es cierto"
+    
+    Así como ver este [vídeo](https://youtu.be/MLe9flR4PsA) corto en el que se hace un planteamiento sencillo de los conceptos.
+    
+    Encadenamiento hacia adelante y hacia atrás
+    
+    [<img src="assets/Encadenamiento.png" alt="Encadenamiento hacia adelnate y hacia atras" style="zoom:50%;" />](https://prezi.com/fvw2aokvct7r/encadenamiento-hacia-adelante-y-hacia-atras/)
 
 ## Sistemas híbridos Reglas/Datos
 
@@ -417,6 +417,6 @@ Utilizaremos funciones triangulares para representar las variables de entrada y 
 
 <img src="assets/plot_tipping_problem_newapi_5.png" alt="ajuste correcto" style="zoom:50%;" />
 
-> **Lógica difusa**
->
-> Si quieres profundizar más en el tema de la lógica difusa o borrosa que permite la toma de decisiones en algunos sistemas expertos, puedes leer sobre ello en este [artículo de la Wikipedia](https://es.wikipedia.org/wiki/Lógica_difusa).
+!!! info "Más información"
+    **Lógica difusa**
+    Si quieres profundizar más en el tema de la lógica difusa o borrosa que permite la toma de decisiones en algunos sistemas expertos, puedes leer sobre ello en este [artículo de la Wikipedia](https://es.wikipedia.org/wiki/Lógica_difusa).
