@@ -1,4 +1,6 @@
-﻿<p><iframe src="https://www.youtube.com/embed/cqWKSraG-bk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" width="100%" height="315" frameborder="0"></iframe></p>
+﻿# Sistemas basados en el conocimiento
+
+![type:video](assets/UD02_Sistemas_Basados_en_Conocimiento.mp4)
 
 ## Inteligencia Artificial Simbólica
 
