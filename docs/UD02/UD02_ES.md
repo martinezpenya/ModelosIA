@@ -186,8 +186,11 @@ Por tanto, las reglas constituyen la forma más común de codificar el conocimie
 
 !!! example "Ejemplo"
     Se pretende construir un sistema experto que decida si se concede o no un crédito al consumo a cierto cliente. Este sistema experto debe trabajar como lo haría un bancario acostumbrado a dicha operación.
+    
     Un bancario con experiencia indica que únicamente se conceden este tipo de créditos a mayores de 18 años que dispongan de nómina y cuyo contrato sea bien de carácter indefinido o que la duración del mismo sea superior al tiempo necesario para la devolución de todas las cuotas del préstamo.
+    
     Este conocimiento se podría expresar como:
+    
     ```SI (cliente mayor de 18 años)
     SI (cliente mayor de 18 años)
     Y (tiene nómina)
@@ -195,6 +198,7 @@ Por tanto, las reglas constituyen la forma más común de codificar el conocimie
     O (la duración del contrato es superior al tiempo de devolución del préstamo)
     ENTONCES (conceder préstamo solicitado)
     ```
+    
     Por tanto, si el único criterio que se emplea para la concesión de créditos al consumo es el indicado por el bancario, un sistema experto que tenga implementada la regla expuesta más arriba será capaz de gestionar la concesión de créditos obteniendo los mismos resultados.
 
 A la hora de implementar un sistema experto, resulta conveniente tener en cuenta que el conocimiento que proporcionan los expertos se pueda clasificar en distintas categorías:
