@@ -29,16 +29,16 @@
 * Muchas veces definimos el conocimiento en relación a conceptos similares.
 * La jerarquía del conocimiento o jerarquía de **DIKW** es un modelo que muestra la relación entre _datos_, _información_, _conocimiento_ y _sabiduría_.
 
-* **Datos** (**D**ata): Hechos o valores registrados en un soporte físico. Es independiente del agente y puede ser interpretado de distintas formas.
+* **Datos** ( **D** ata): Hechos o valores registrados en un soporte físico. Es independiente del agente y puede ser interpretado de distintas formas.
   * Ejemplo: _"Un reloj inteligente registra la temperatura corporal de la persona."_
 
-* **Información** (**I**nformation): Es como los datos son interpretados por un agente. Es subjetiva y depende del agente.
+* **Información** ( **I** nformation): Es como los datos son interpretados por un agente. Es subjetiva y depende del agente.
   * Ejemplo: _"La temperatura corporal de la persona es 37ºC"_
 
-* **Conocimiento** (**K**nowledge): Es información integrada en nuestro modelo del mundo. Depende del agente y de sus conocimientos previos.
+* **Conocimiento** ( **K** nowledge): Es información integrada en nuestro modelo del mundo. Depende del agente y de sus conocimientos previos.
   * Ejemplo: _"Si la temperatura es superior a 37ºC, entonces la persona tiene fiebre"_
 
-* **Sabiduría** (**W**isdom): Representa el meta-conocimiento: conocimiento sobre cómo y cuándo aplicar el conocimiento.
+* **Sabiduría** ( **W** isdom): Representa el meta-conocimiento: conocimiento sobre cómo y cuándo aplicar el conocimiento.
   * Ejemplo: _"Si la persona tiene fiebre, entonces debe tomar paracetamol"_
 
 ### Representación del conocimiento
