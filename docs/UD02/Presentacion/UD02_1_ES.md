@@ -1,6 +1,5 @@
 ﻿---
 marp: true
-style: pre.mermaid { all: unset; }
 ---
 <!--
 theme: gaia
@@ -488,11 +487,3 @@ section {
 - Tasa de matrícula: **19,24%**
 
 ![bg right fit](../../UD02/assets/plot_tipping_problem_newapi_5.png)
-
-<!-- Put this script at the end of Markdown file. -->
-<script type="module">
-import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10.0.0/dist/mermaid.esm.min.mjs';
-mermaid.initialize({ startOnLoad: true });
-
-window.addEventListener('vscode.markdown.updateContent', function() { mermaid.init() });
-</script>
