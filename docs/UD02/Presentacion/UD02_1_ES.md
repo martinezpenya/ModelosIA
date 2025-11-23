@@ -438,9 +438,9 @@ Utilizaremos funciones triangulares para representar las variables de entrada y 
   - **Media**: $[0, 10]$
   - **Alta**: $[5, 10]$
 - **Calidad de la comida**:
-  - **Bajo**: $[0, 5]$
+  - **Mala**: $[0, 5]$
   - **Medio**: $[0, 10]$
-  - **Todos**: $[5, 10]$
+  - **Buena**: $[5, 10]$
 
 ![bg right:33% fit](../../UD02/assets/plot_tipping_problem_newapi_2.png)
 
@@ -450,8 +450,8 @@ Utilizaremos funciones triangulares para representar las variables de entrada y 
 
 #### Variables de salida
 
-- **Soborno**:
-  - **Bajo**: $[0, 13]$
+- **Propina**:
+  - **Baja**: $[0, 13]$
   - **Media**: $[0, 25]$
   - **Alta**: $[13, 25]$
 
@@ -468,11 +468,11 @@ section {
 </style>
 ### Ejemplo: Propinas (III)
 
-#### Reglas
+#### Reglas**
 
-- **IF** (Calidad del servicio es **baja** o Comida es **bajo**) **THEN** (Propina es **baja**)
+- **IF** (Calidad del servicio es **baja** o Comida es **mala**) **THEN** (Propina es **baja**)
 - **IF** (Calidad del servicio es **media**) **THEN** (Propina es **media**)
-- **IF** (Calidad del servicio es **alta** o Comida es **alt**) **THEN** (Propina es **alta**)
+- **IF** (Calidad del servicio es **alta** o Comida es **buena**) **THEN** (Propina es **alta**)
 
 ![bg right:40% fit](../../UD02/assets/plot_tipping_problem_newapi_4.png)
 
@@ -484,6 +484,6 @@ section {
 
 - Calidad del servicio: **9.8**
 - Calidad de la comida: **6.5**
-- Tasa de matrícula: **19,24%**
+- Propina: **19,24 €**
 
 ![bg right fit](../../UD02/assets/plot_tipping_problem_newapi_5.png)
