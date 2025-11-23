@@ -136,10 +136,10 @@ Para **ignorar los caracteres** de formato de Markdown, ponga <code>\\</code> an
 Las citas se generar utilizando el carácter *mayor que* <code> > </code> al comienzo del bloque de texto.
 
 ```
-> No hay que ir para atrás ni para darse impulso.  — Lao Tsé.
+> No hay que ir para atrás, ni para darse impulso.  — Lao Tsé.
 ```
 
-> No hay que ir para atrás ni para darse impulso.  — Lao Tsé.
+> No hay que ir para atrás, ni para darse impulso.  — Lao Tsé.
 
 Si la cita en cuestión se compone de **varios párrafos**, deberás añadir el mismo símbolo `>` al comienzo de cada uno de ellos.
 
