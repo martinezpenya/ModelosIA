@@ -1,6 +1,7 @@
 FROM python:3.10
+RUN pip3 install --upgrade pip
 RUN pip3 install notebook
-RUN pip3 install numpy
+RUN pip3 install numpy==1.23.5
 RUN pip3 install matplotlib
 WORKDIR /home/MIA2526
 #VOLUME .
