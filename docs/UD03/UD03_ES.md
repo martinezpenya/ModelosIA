@@ -1,3 +1,8 @@
+# Procesamiento del Lenguaje Natural
+
+![type:video](assets/UD03_PLN.mp4)
+
+
 <p><iframe width="100%" height="315" src="https://www.youtube.com/embed/o3C2P-Wio5U?si=7-y0dOLnh5ql2bnu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe></p>
 
 ## Introducción al PLN
@@ -6,7 +11,8 @@ El procesamiento del lenguaje natural es un campo muy amplio, que abarca diversa
 
 <img src="assets/EsquemaTestGeorgetown.png" alt="Esquema del test de Georgetown" style="zoom:33%;" />
 
-> El procesamiento del lenguaje natural estudia las relaciones del lenguaje entre los seres humanos y las máquinas.
+!!! info "Definición"
+    El procesamiento del lenguaje natural estudia las relaciones del lenguaje entre los seres humanos y las máquinas.
 
 Tras ello hubo un parón en el desarrollo de esta disciplina, debido a limitaciones del hardware, que perduraría hasta la década de 1980.
 
@@ -16,9 +22,11 @@ El procesamiento del lenguaje natural implica necesariamente de la unión de dos
 
 <img src="assets/LeyDeMoore.png" alt="Ley de Moore" style="zoom:50%;" />
 
-> A largo de la historia de la humanidad ha habido distintos tipos de teorías lingüísticas comunes a varios idiomas, siendo muy común la de Noam Chomsky (por ejemplo, la gramática de constituyentes/transformacional).
+!!! info "Más información"
+    A lo largo de la historia de la humanidad ha habido distintos tipos de teorías lingüísticas comunes a varios idiomas, siendo muy común la de Noam Chomsky (por ejemplo, la gramática de constituyentes/transformacional).
 
-> El objetivo general de los sistemas de Procesamiento del Lenguaje Natural (PLN) es el tratamiento de la lengua a fin de ser interpretada y/o producida a la manera en la que lo hacemos los seres humanos (COMPRENSIÓN). Es una tarea de gran complejidad.
+!!! info "Definición"
+    El objetivo general de los sistemas de Procesamiento del Lenguaje Natural (PLN) es el tratamiento de la lengua a fin de ser interpretada y/o producida a la manera en la que lo hacemos los seres humanos (COMPRENSIÓN). Es una tarea de gran complejidad.
 
 Un corpus es un conjunto de palabras (un texto) de una lengua y se emplea para formar un diccionario, pero no en el sentido de documento donde se explica o definen palabras, sino como concepto de conjunto de palabras de una lengua. Diversos métodos de inteligencia artificial emplean corpus para entrenarse.
 
@@ -26,13 +34,11 @@ La gramática de constituyentes/transformacional en sus fundamentos teóricos no
 
 Por tanto, la unión de una falta de potencia de cálculo y del tipo de lingüística predominante hasta 1980 marcó el lento desarrollo del procesamiento del lenguaje natural.
 
-> Si una persona española tuviera que pensar qué corpus emplear para el entrenamiento de un procesador de lenguaje natural en español, es fácil que centrara en las grandes obras literarias de nuestra lengua, como por ejemplo *El Quijote*, o un texto difundido en nuestra lengua, de amplia proyección, como puede ser *La Biblia*.
->
-> Lo mismo ocurre en otros idiomas, y en inglés en concreto, existe una base de datos que contiene un conjunto de corpus en esta lengua, que fue realizado en 2014 y recibe el nombre de Gutemberg.
-
-> En el siguiente link se puede ampliar información acerca de la base de datos Gutemberg: https://github.com/pgcorpus/gutenberg
->
-> En el link que aparece a continuación figura uno de los muchos corpus que pueden encontrarse para español: https://github.com/roquegv/spanishNLPModelCorpus
+!!! example "Ejemplo"
+    Si una persona española tuviera que pensar qué corpus emplear para el entrenamiento de un procesador de lenguaje natural en español, es fácil que centrara en las grandes obras literarias de nuestra lengua, como por ejemplo *El Quijote*, o un texto difundido en nuestra lengua, de amplia proyección, como puede ser *La Biblia*.
+    Lo mismo ocurre en otros idiomas, y en inglés en concreto, existe una base de datos que contiene un conjunto de corpus en esta lengua, que fue realizado en 2014 y recibe el nombre de Gutemberg.
+    En el siguiente link se puede ampliar información acerca de la base de datos Gutemberg: https://github.com/pgcorpus/gutenberg
+    En el link que aparece a continuación figura uno de los muchos corpus que pueden encontrarse para español: https://github.com/roquegv/spanishNLPModelCorpus
 
 Por tanto, a la hora de llevar a cabo avances en el campo del procesamiento del lenguaje natural, es necesario disponer de un set de datos (o corpus) específico para cada lengua y, por consiguiente, existirán modelos específicos para cada idioma; todo ello determina el papel del lingüista en un proyecto de inteligencia artificial.
 
@@ -47,7 +53,8 @@ La disciplina que hace uso de sistemas de computación para la compresión y la 
 
 Un lingüista en un proyecto de inteligencia artificial aporta el conocimiento y el enfoque para llevar a cabo exitosamente la programación de las complejas estructuras (variables en virtud de los detalles de origen y evolución de cada lengua) entre los diferentes caracteres para formar una palabra, y de las diversas palabras para crear oraciones. Una clave de esta labor es el etiquetado, por el cual a una palabra, grafía, sintagma o estructura determinada se le asigna una etiqueta que lo clasifica.
 
-> **Perro** es la combinación de las grafías «p» «e» «r» «r» «o», que a su vez desde un punto semántico representa el concepto de un animal, y cuya vocal «o» final denota el género de la palabra, que hace referencia al sexo del animal.
+!!! example "Ejemplo"
+    **Perro** es la combinación de las grafías «p» «e» «r» «r» «o», que a su vez desde un punto semántico representa el concepto de un animal, y cuya vocal «o» final denota el género de la palabra, que hace referencia al sexo del animal.
 
 Dejando de lado conceptos técnicos más específicos, como el uso de N-gramas, expresiones regulares para la búsqueda de cadenas, transductores de estado finito, o modelos como el de cadenas ocultas de Markov, para el experto en inteligencia artificial (IA) es preciso tener un mínimo entendimiento de la parte realizada por el lingüista y, por tanto, conocer la esencia de estos campos:
 
@@ -66,29 +73,25 @@ Dejando de lado conceptos técnicos más específicos, como el uso de N-gramas, 
 
   Por supuesto, dentro de una etiqueta pueden existir subcategorías, por ejemplo, «niño» es un sustantivo (nombre) de tipo «común» y «el» es un determinante de tipo «artículo».
 
-> Existen herramientas web, como la que figura en el siguiente link, que llevan a cabo el etiquetado y la unificación: https://sintaxis.org/analizador/solucion/
+!!! info "Enlace"
+    Existen herramientas web, como la que figura en el siguiente link, que llevan a cabo el etiquetado y la unificación: https://sintaxis.org/analizador/solucion/
 
 - **Morfología**: según Jurafsky, estudia las reglas que rigen la flexión, la composición y la derivación de las palabras. Durante el etiquetado morfológico se determina la forma, clase o categoría gramatical de una palabra. El género de las palabras (masculino y femenino), el número de los nombres (singular o plural), o la persona de las formas conjugadas (primera, segunda o tercera) son ejemplos de este campo.
 
-> El siguiente enlace presenta un analizador morfológico de la Biblioteca Virtual Miguel de Cervantes (BVMC) que usa el [corpus Ancora](https://nlp.stanford.edu/software/spanish-faq.shtml#tagset).
+!!! info "Enlace"
+    El siguiente enlace presenta un analizador morfológico de la Biblioteca Virtual Miguel de Cervantes (BVMC) que usa el [corpus Ancora](https://nlp.stanford.edu/software/spanish-faq.shtml#tagset).
 >https://data.cervantesvirtual.com/analizador
-> 
 
 - **Semántica**: siguiendo el texto, estudia significado de las expresiones lingüísticas, es decir, las realidades que representan las grafías.
 
 - **Pragmática**: se centra en el análisis de la relación del lenguaje con los usuarios y las circunstancias de la comunicación o contexto. El contexto debe entenderse como situación, ya que puede incluir cualquier aspecto extra-lingüístico: la situación comunicativa, un conocimiento popular compartido por los hablantes, relaciones personales, y otros muchos.
 
-> RESUMEN:
->
-> **Morfología**: El estudio de la información contenida en una palabra considerada ésta en el contexto en el que se utiliza.
->
-> **Sintaxis**: Estudio de las relaciones estructurales entre las palabras en una frase. Estudio de cómo ordenar y agrupar las palabras en la frase.
->
-> **Semántica**: Estudio de los significados de las palabras y su forma de combinarse para formar significados más complejos.
->
-> **Pragmática**, **Discurso**: Estudia cómo el contexto afecta a la interpretación de las oraciones.
->
-> El conocimiento inmersivo y exhaustivo de estos términos sus relaciones, y el etiquetado es labor del lingüista, y se lo debe proporcionar al experto en IA para una correcta modelización de un sistema de procesamiento del lenguaje natural, en un idioma concreto.
+!!! info "RESUMEN:"
+    - **Morfología**: El estudio de la información contenida en una palabra considerada ésta en el contexto en el que se utiliza.
+    - **Sintaxis**: Estudio de las relaciones estructurales entre las palabras en una frase. Estudio de cómo ordenar y agrupar las palabras en la frase.
+    - **Semántica**: Estudio de los significados de las palabras y su forma de combinarse para formar significados más complejos.
+    - **Pragmática**, **Discurso**: Estudia cómo el contexto afecta a la interpretación de las oraciones.
+    El conocimiento inmersivo y exhaustivo de estos términos sus relaciones, y el etiquetado es labor del lingüista, y se lo debe proporcionar al experto en IA para una correcta modelización de un sistema de procesamiento del lenguaje natural, en un idioma concreto.
 
 ### Aplicaciones del PLN
 
@@ -152,32 +155,20 @@ Una de las limitaciones mayores alrededor del procesamiento de lenguaje natural 
 - **Ambigüedad fonológica**: se presenta cuando una cadena de sonidos puede resultar confusa.
 - **Ambigüedad funcional**: se observa si se emplea un término con doble función gramatical.
 
-> **Ambigüedades**
->
-> - **Ambigüedad sintáctica:**
->
->   Los perros y los gatos enfermos son recogidos por el servicio municipal de recogida de animales. Se podría tener la duda de si son recogidos todos los perros y sólo los gatos enfermos, o si sólo los enfermos (ya sean perros o gatos). Compro los libros baratos. No se puede afirmar si los libros que estoy comprando son los baratos (adjetivo de libros) únicamente, o si estoy comprando libros, que resultan ser baratos (complemento predicativo): http://gedlc.ulpgc.es/investigacion/desambigua/morfosintactico.htm
->
-> - **Ambigüedad léxica/morfológica**:
->
->   - Usted aquí no pinta nada (no se sabe si se refiere a que no tiene mando o a que no pinta por ejemplo una pared).
->   - Pedro y yo escribimos un cuento (no se sabe si lo hemos escrito ya o lo estamos escribiendo porque la forma conjugada puede pertenecer a un presente de indicativo o a un pretérito).
->
-> - **Ambigüedad semántica:** 
->
->   Pedro quiere pelearse con un italiano (no se distingue si se trata de cualquier italiano o de un individuo concreto).
->
-> - **Ambigüedad pragmática**: 
->
->   Golpeó el armario con el bastón y lo rompió (no se sabe si se rompió el bastón o el armario).
->
-> - **Ambigüedad fonológica**: 
->
->   «es»-«conde» (puede significar una forma conjugada del verbo esconder o el predicado del verbo ser, o un título nobiliario).
->
-> - **Ambigüedad funcional:** 
->
->   He vuelto a oler (antes no tenía olfato y ahora sí; o bien, regresé a un lugar a oler algo para comprobar su aroma).
+!!! example "Ejemplo de Ambigüedades"
+    - **Ambigüedad sintáctica:**
+        Los perros y los gatos enfermos son recogidos por el servicio municipal de recogida de animales. Se podría tener la duda de si son recogidos todos los perros y sólo los gatos enfermos, o si sólo los enfermos (ya sean perros o gatos). Compro los libros baratos. No se puede afirmar si los libros que estoy comprando son los baratos (adjetivo de libros) únicamente, o si estoy comprando libros, que resultan ser baratos (complemento predicativo): http://gedlc.ulpgc.es/investigacion/desambigua/morfosintactico.htm
+    - **Ambigüedad léxica/morfológica**:
+        - Usted aquí no pinta nada (no se sabe si se refiere a que no tiene mando o a que no pinta por ejemplo una pared).
+        - Pedro y yo escribimos un cuento (no se sabe si lo hemos escrito ya o lo estamos escribiendo porque la forma conjugada puede pertenecer a un presente de indicativo o a un pretérito).
+    - **Ambigüedad semántica:** 
+        Pedro quiere pelearse con un italiano (no se distingue si se trata de cualquier italiano o de un individuo concreto).
+    - **Ambigüedad pragmática**: 
+        Golpeó el armario con el bastón y lo rompió (no se sabe si se rompió el bastón o el armario).
+    - **Ambigüedad fonológica**: 
+        «es»-«conde» (puede significar una forma conjugada del verbo esconder o el predicado del verbo ser, o un título nobiliario).
+    - **Ambigüedad funcional:** 
+        He vuelto a oler (antes no tenía olfato y ahora sí; o bien, regresé a un lugar a oler algo para comprobar su aroma).
 
 ### Desambiguación
 
@@ -297,7 +288,6 @@ Un experto en sistemas de inteligencia artificial que desee adquirir conocimient
     - Preguntas/Respuestas (QA)
     - Texto a voz (TTS)
 
-
 ## Elaboración de un sistema de procesamiento de lenguaje orientado a una tarea específica
 
 Se propone aunar todo lo aprendido en la generación de un código que tras adquirir vía ASR la conversación de un usuario con un robot de cocina, sea capaz de hacer que este funcione, teniendo en cuenta las siguientes limitaciones:
@@ -320,10 +310,8 @@ El abordaje de esta labor es sencillo:
    - Se va haciendo agregación sintagmática.
    - Se activan las salidas en una GPIO.
 
-> Puede emplear los contenedores de nVidia para, mediante Docker, emplear NeMo sobre un sistema operativo Ubuntu con gran facilidad.
->
-> NLTK y Spacy son librerías simples pero muy eficaces para trabajar con los aspectos informáticos principales del lenguaje natural, si bien NeMo es una solución mucho más potente capaz de llevar a cabo labores TTS y ASR.
->
-> El reconocimiento de entidades nombradas (NER), el tokenizado, y el etiquetado son instrumentos básicos a la hora de descomponer un texto y extraer la información más relevante.
->
-> En el reconocimiento del lenguaje natural, además de la figura del técnico, ha de existir una figura asociada al lingüista.
+!!! example "Ejemplo"
+    Puede emplear los contenedores de nVidia para, mediante Docker, emplear NeMo sobre un sistema operativo Ubuntu con gran facilidad.
+    NLTK y Spacy son librerías simples pero muy eficaces para trabajar con los aspectos informáticos principales del lenguaje natural, si bien NeMo es una solución mucho más potente capaz de llevar a cabo labores TTS y ASR.
+    El reconocimiento de entidades nombradas (NER), el tokenizado, y el etiquetado son instrumentos básicos a la hora de descomponer un texto y extraer la información más relevante.
+    En el reconocimiento del lenguaje natural, además de la figura del técnico, ha de existir una figura asociada al lingüista.
