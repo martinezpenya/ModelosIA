@@ -162,7 +162,9 @@ Una de las limitaciones mayores alrededor del procesamiento de lenguaje natural 
 !!! example "Ejemplo de Ambigüedades"
     - **Ambigüedad sintáctica:**
         
-        Los perros y los gatos enfermos son recogidos por el servicio municipal de recogida de animales. Se podría tener la duda de si son recogidos todos los perros y sólo los gatos enfermos, o si sólo los enfermos (ya sean perros o gatos). Compro los libros baratos. No se puede afirmar si los libros que estoy comprando son los baratos (adjetivo de libros) únicamente, o si estoy comprando libros, que resultan ser baratos (complemento predicativo): http://gedlc.ulpgc.es/investigacion/desambigua/morfosintactico.htm
+        Los perros y los gatos enfermos son recogidos por el servicio municipal de recogida de animales. 
+        
+        Se podría tener la duda de si son recogidos todos los perros y sólo los gatos enfermos, o si sólo los enfermos (ya sean perros o gatos). Compro los libros baratos. No se puede afirmar si los libros que estoy comprando son los baratos (adjetivo de libros) únicamente, o si estoy comprando libros, que resultan ser baratos (complemento predicativo): http://gedlc.ulpgc.es/investigacion/desambigua/morfosintactico.htm
     
     - **Ambigüedad léxica/morfológica**:
         
@@ -179,7 +181,7 @@ Una de las limitaciones mayores alrededor del procesamiento de lenguaje natural 
         
     - **Ambigüedad fonológica**: 
         
-        «es»-«conde» (puede significar una forma conjugada del verbo esconder o el predicado del verbo ser, o un título nobiliario).
+        «es»-«conde» (puede significar una forma conjugada del verbo esconder o el predicado del verbo ser y un título nobiliario).
         
     - **Ambigüedad funcional:** 
         
