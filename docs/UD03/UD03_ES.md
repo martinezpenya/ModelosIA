@@ -36,8 +36,11 @@ Por tanto, la unión de una falta de potencia de cálculo y del tipo de lingüí
 
 !!! example "Ejemplo"
     Si una persona española tuviera que pensar qué corpus emplear para el entrenamiento de un procesador de lenguaje natural en español, es fácil que centrara en las grandes obras literarias de nuestra lengua, como por ejemplo *El Quijote*, o un texto difundido en nuestra lengua, de amplia proyección, como puede ser *La Biblia*.
+    
     Lo mismo ocurre en otros idiomas, y en inglés en concreto, existe una base de datos que contiene un conjunto de corpus en esta lengua, que fue realizado en 2014 y recibe el nombre de Gutemberg.
+    
     En el siguiente link se puede ampliar información acerca de la base de datos Gutemberg: https://github.com/pgcorpus/gutenberg
+    
     En el link que aparece a continuación figura uno de los muchos corpus que pueden encontrarse para español: https://github.com/roquegv/spanishNLPModelCorpus
 
 Por tanto, a la hora de llevar a cabo avances en el campo del procesamiento del lenguaje natural, es necesario disponer de un set de datos (o corpus) específico para cada lengua y, por consiguiente, existirán modelos específicos para cada idioma; todo ello determina el papel del lingüista en un proyecto de inteligencia artificial.
@@ -80,7 +83,8 @@ Dejando de lado conceptos técnicos más específicos, como el uso de N-gramas, 
 
 !!! info "Enlace"
     El siguiente enlace presenta un analizador morfológico de la Biblioteca Virtual Miguel de Cervantes (BVMC) que usa el [corpus Ancora](https://nlp.stanford.edu/software/spanish-faq.shtml#tagset).
->https://data.cervantesvirtual.com/analizador
+    
+    https://data.cervantesvirtual.com/analizador
 
 - **Semántica**: siguiendo el texto, estudia significado de las expresiones lingüísticas, es decir, las realidades que representan las grafías.
 
@@ -157,17 +161,28 @@ Una de las limitaciones mayores alrededor del procesamiento de lenguaje natural 
 
 !!! example "Ejemplo de Ambigüedades"
     - **Ambigüedad sintáctica:**
+        
         Los perros y los gatos enfermos son recogidos por el servicio municipal de recogida de animales. Se podría tener la duda de si son recogidos todos los perros y sólo los gatos enfermos, o si sólo los enfermos (ya sean perros o gatos). Compro los libros baratos. No se puede afirmar si los libros que estoy comprando son los baratos (adjetivo de libros) únicamente, o si estoy comprando libros, que resultan ser baratos (complemento predicativo): http://gedlc.ulpgc.es/investigacion/desambigua/morfosintactico.htm
+    
     - **Ambigüedad léxica/morfológica**:
+        
         - Usted aquí no pinta nada (no se sabe si se refiere a que no tiene mando o a que no pinta por ejemplo una pared).
         - Pedro y yo escribimos un cuento (no se sabe si lo hemos escrito ya o lo estamos escribiendo porque la forma conjugada puede pertenecer a un presente de indicativo o a un pretérito).
+    
     - **Ambigüedad semántica:** 
+        
         Pedro quiere pelearse con un italiano (no se distingue si se trata de cualquier italiano o de un individuo concreto).
+        
     - **Ambigüedad pragmática**: 
+        
         Golpeó el armario con el bastón y lo rompió (no se sabe si se rompió el bastón o el armario).
+        
     - **Ambigüedad fonológica**: 
+        
         «es»-«conde» (puede significar una forma conjugada del verbo esconder o el predicado del verbo ser, o un título nobiliario).
+        
     - **Ambigüedad funcional:** 
+        
         He vuelto a oler (antes no tenía olfato y ahora sí; o bien, regresé a un lugar a oler algo para comprobar su aroma).
 
 ### Desambiguación
@@ -312,6 +327,9 @@ El abordaje de esta labor es sencillo:
 
 !!! example "Ejemplo"
     Puede emplear los contenedores de nVidia para, mediante Docker, emplear NeMo sobre un sistema operativo Ubuntu con gran facilidad.
+    
     NLTK y Spacy son librerías simples pero muy eficaces para trabajar con los aspectos informáticos principales del lenguaje natural, si bien NeMo es una solución mucho más potente capaz de llevar a cabo labores TTS y ASR.
+    
     El reconocimiento de entidades nombradas (NER), el tokenizado, y el etiquetado son instrumentos básicos a la hora de descomponer un texto y extraer la información más relevante.
+    
     En el reconocimiento del lenguaje natural, además de la figura del técnico, ha de existir una figura asociada al lingüista.
