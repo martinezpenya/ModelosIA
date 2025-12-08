@@ -1,5 +1,5 @@
 services:
-  experta:
+  fuzzy:
     container_name: fuzzylogic
     build: .
     ports:
