@@ -1,5 +1,5 @@
-# 1º DAM: Programación
-Apuntes para el módulo de Programación del curso de 1º de DAM (Desarrollo de Aplicaciones Multiplataforma)
+# CE IA&BD: Modelos de IA
+Apuntes para el módulo de Modelos de Inteligencia Artificial del curso de Especialización de Inteligencia Artificial y Big Data (CEIABD)
 
 🏫 [IES Eduardo Primo Marqués](http://www.ieseduardoprimo.es) de Carlet
 
