@@ -215,5 +215,5 @@ plugins:
         #enabled_if_env: ENABLE_PDF_EXPORT
         #
         #debug_html: true
-        show_anchors: true
-        verbose: true
+        # show_anchors: true
+        # verbose: true
