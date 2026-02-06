@@ -59,6 +59,7 @@ theme:
     #- navigation.indexes
   icon:
     logo: material/robot-confused-outline
+  favicon: assets/favicon.ico
     admonition:
       note: fontawesome/solid/note-sticky
       abstract: fontawesome/solid/book
