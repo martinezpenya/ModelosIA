@@ -150,6 +150,13 @@ extra_javascript:
 extra:
   search:
     language: es
+  meta:
+    - name: description
+      content: "Apuntes de Modelos de Inteligencia Artificial para el curso de especialización de IA y Big Data"
+    - name: author
+      content: "David Martínez Peña"
+    - name: keywords
+      content: "inteligencia artificial, big data, machine learning, NLP, procesamiento lenguaje natural, robótica, ética IA, sistemas expertos"
   social:
     - icon: simple/youtube
       link: https://youtube.com/@martinezpenya
@@ -171,7 +178,7 @@ copyright: "© 2025 David Martínez licensed under CC BY-NC-SA 4.0"
 
 plugins:
     - mkdocs-video
-    - offline
+    # - offline  # Comentado para permitir indexación SEO
     - search
     - git-revision-date-localized:
         fallback_to_build_date: true
