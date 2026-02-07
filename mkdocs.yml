@@ -2,6 +2,7 @@ site_name: 'Modelos de IA (CE Inteligencia Artificial y Big Data)'
 site_url: https://martinezpenya.es/ModelosIA/
 repo_url: https://github.com/martinezpenya/ModelosIA
 edit_uri: edit/main/docs
+use_directory_urls: false
 
 nav:
   - UD00:
