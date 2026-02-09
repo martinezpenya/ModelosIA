@@ -35,7 +35,7 @@ Algunos tienen una gran carga útil, como los que ensamblan automóviles, mientr
 
 Los robots móviles son aquellos que utilizan ruedas, patas o rotores para moverse por el entorno. Los drones cuadricóptero son un tipo de vehículo aéreo no tripulado ([UAV](https://es.wikipedia.org/wiki/Veh%C3%ADculo_a%C3%A9reo_no_tripulado)); Los vehículos submarinos autónomos ([AUV](https://es.wikipedia.org/wiki/Veh%C3%ADculo_submarino_aut%C3%B3nomo)) recorren los océanos. Pero muchos robots móviles permanecen en el interior y se mueven sobre ruedas, como una aspiradora o un robot repartidor de toallas en un hotel. Sus homólogos al aire libre incluyen coches autónomos o rovers que exploran nuevos terrenos, incluso en la superficie de Marte.
 
-<img src="assets/u=https%3A%2F%2Fcdn.businessinsider.nl%2Fwp-content%2Fuploads%2F2021%2F02%2F6035a5780270d.jpeg" alt="Nieuwe Marsrover van NASA stuurt adembenemende eerste foto's" style="zoom: 25%;" />
+![Nieuwe Marsrover van NASA stuurt adembenemende eerste foto's](assets/marsrover.jpeg){width=800px}
 
  Finalmente, los robots con patas están destinados a atravesar terrenos accidentados a los que no se puede acceder con ruedas. La desventaja es que controlar las piernas para hacer lo correcto es más desafiante que hacer girar las ruedas.
 
@@ -50,7 +50,7 @@ Los telémetros son sensores que miden la distancia a objetos cercanos. Los sens
 
 Para los robots terrestres móviles, el sonar y la visión estéreo rara vez se utilizan ahora, porque no son confiablemente precisos. El Kinect es un sensor popular de bajo costo que combina una cámara y un proyector de luz estructurada, que proyecta un patrón de líneas de cuadrícula en una escena. La cámara ve cómo se doblan las líneas de la cuadrícula, dándole al robot información sobre la forma de los objetos en la escena. Si se desea, la proyección puede ser luz infrarroja, para no interferir con otros sensores (como los ojos humanos).
 
-![Kinect for Windows SDK Programming Guide | Packt](assets/u=https%3A%2F%2Fstatic.packt-cdn.com%2Fproducts%2F9781849692380%2Fgraphics%2F2380_01_01.jpeg)
+![Kinect for Windows SDK Programming Guide | Packt](assets/kinect.jpeg)
 
 La mayoría de los robots terrestres ahora están equipados con telémetros ópticos activos. Al igual que los sensores de sonar, los sensores de alcance óptico emiten señales activas (luz) y miden el tiempo hasta que un reflejo de esta señal llega al sensor. La [cámara de tiempo de vuelo](https://es.wikipedia.org/wiki/C%C3%A1mara_de_tiempo_de_vuelo) adquiere imágenes de rango como la que se muestra más abajo a hasta 60 fotogramas por segundo. Los automóviles autónomos suelen utilizar [lidares](https://es.wikipedia.org/wiki/LiDAR) de escaneo (abreviatura de detección de luz y alcance): sensores activos que emiten rayos láser y detectan el haz reflejado, brindando mediciones de alcance con una precisión de un centímetro a una distancia de 100 metros. Utilizan complejas disposiciones de espejos o elementos giratorios para barrer el haz a través del entorno y construir un mapa. Los lidars de escaneo tienden a funcionar mejor que las cámaras de tiempo de vuelo a distancias más largas y tienden a funcionar mejor a plena luz del día.
 
@@ -74,7 +74,7 @@ Los actuadores se utilizan a menudo para mover juntas que conectan cuerpos rígi
 
 Para interactuar con los objetos del entorno, los robots utilizan pinzas. El tipo más básico de pinza es la pinza de mandíbula paralela, con dos dedos y un único actuador que junta los dedos para agarrar objetos. Este efector es amado y odiado por su simplicidad.
 
-![Shadow Hand & Glove for Dextrous Manipulation | Shadow Robot](assets/u=https%3A%2F%2Fwww.shadowrobot.com%2Fwp-content%2Fuploads%2F2022%2F07%2FShadow-Robot-Co4266-copy-2-2.png)
+![Shadow Hand & Glove for Dextrous Manipulation | Shadow Robot](assets/robothand.png){width=800px}
 
 Las pinzas de tres dedos ofrecen un poco más de flexibilidad manteniendo la simplicidad. En el otro extremo del espectro están las manos humanoides (antropomórficas). Por ejemplo, Shadow Dexterous Hand tiene un total de 20 actuadores. Esto ofrece mucha más flexibilidad para manipulaciones complejas, incluidas maniobras con manipuladores en la mano (piense en levantar su teléfono celular y girarlo en la mano para orientarlo hacia arriba), pero esta flexibilidad tiene un precio: aprender a controlar Estas pinzas complejas son más desafiantes.
 
@@ -123,7 +123,7 @@ El filtro de Kalman, que representa el estado de creencia como un gaussiano mult
 
 La localización mediante filtrado de partículas se denomina **[localización de Monte Carlo](https://en.wikipedia.org/wiki/Monte_Carlo_localization)** o MCL. Todo lo que tenemos que hacer es proporcionar el modelo de movimiento y el modelo de sensor adecuados. El funcionamiento del algoritmo se se ve más abajo. Cuando el robot descubre dónde se encuentra dentro de un edificio de oficinas. En la primera imagen, las partículas están distribuidas uniformemente según la anterior, lo que indica incertidumbre global sobre la posición del robot. En la segunda imagen, llega el primer conjunto de mediciones y las partículas forman cúmulos en las zonas de alta creencia posterior. En el tercero, se dispone de suficientes mediciones para empujar todas las partículas a un solo lugar.
 
-![Adaptive Monte Carlo Localization - Robotics Knowledgebase](assets/u=https%3A%2F%2Froboticsknowledgebase.com%2Fwiki%2Fstate-estimation%2Fassets%2FAdaptiveMonteCarloLocalization-0d322.png)
+![Adaptive Monte Carlo Localization - Robotics Knowledgebase](assets/adaptatativelocalization.png)
 
 El filtro de Kalman es la otra forma importante de localización. A medida que el robot se mueve, la incertidumbre en la estimación de su ubicación aumenta. Su error disminuye a medida que detecta el alcance y el rumbo hacia un punto de referencia con una ubicación conocida y aumenta nuevamente cuando el robot pierde de vista el punto de referencia. Los algoritmos EKF funcionan bien si los puntos de referencia se identifican fácilmente.
 
@@ -185,7 +185,7 @@ Ahora consideremos algunas formas de resolver el problema de planificación del 
 
 #### Gráficos de visibilidad
 
-![Gráficos de visibilidad](assets/u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.jpeg)
+![Gráficos de visibilidad](assets/graficoVisibilidad.jpeg)
 
 Los gráficos de visibilidad son una técnica comúnmente utilizada en la planificación de movimiento para robots móviles. Estos gráficos representan una estructura de datos que modela la conectividad entre diferentes puntos en un entorno, teniendo en cuenta las líneas de visibilidad entre estos puntos. Son particularmente útiles en entornos con obstáculos donde se desea encontrar un camino libre de colisiones para un robot.
 
@@ -394,15 +394,15 @@ La tecnología robótica ya está impregnando nuestro mundo y tiene el potencial
 
 **Cuidados en el hogar:** Los robots han comenzado a ingresar a los hogares para cuidar a los adultos mayores y a las personas con discapacidad motriz, ayudándolos con las actividades de la vida diaria y permitiéndoles vivir de manera más independiente. Estos incluyen sillas de ruedas y brazos montados en sillas de ruedas como el brazo Kinova. Aunque al principio son operados directamente por un humano, estos robots están ganando cada vez más autonomía. En el horizonte hay robots operados mediante interfaces cerebro-máquina, que se ha demostrado que permiten a las personas con cuadriplejía utilizar un brazo robótico para agarrar objetos e incluso alimentarse. Relacionados con esto están las prótesis que responden inteligentemente a nuestras acciones y los exoesqueletos que nos dan una fuerza sobrehumana o permiten que las personas que no pueden controlar sus músculos de la cintura para abajo vuelvan a caminar.
 
-![Brazo Kinova](assets/u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.jpeg)
+![Brazo Kinova](assets/brazokinova.jpeg)
 
 Los robots personales están destinados a ayudarnos con tareas diarias como limpiar y organizar, liberándonos tiempo. Aunque la manipulación todavía tiene un camino por recorrer antes de que pueda funcionar sin problemas en entornos humanos desordenados y desestructurados, la navegación ha logrado algunos avances. En particular, muchos hogares ya cuentan con un robot aspirador móvil.
 
-![JASPER, robots aspiradores básicos - Robots al Detalle](assets/u=https%3A%2F%2Frobotsaldetalle.es%2Fwp-content%2Fuploads%2F2011%2F05%2FJASPEr-robot-aspirador-modelos.jpeg)
+![JASPER, robots aspiradores básicos - Robots al Detalle](assets/jasperrobots.jpeg)
 
 **Atención médica:** los robots ayudan y potencian a los cirujanos, permitiendo procedimientos más precisos, mínimamente invasivos y seguros con mejores resultados para los pacientes. El robot quirúrgico Da Vinci ahora se utiliza ampliamente en hospitales de EE. UU.
 
-![Robot Da Vinci para cirugía robótica. Especialidades y usos](assets/u=https%3A%2F%2Frevistaderobots.com%2Fwp-content%2Fuploads%2F2020%2F07%2FRobot-Da-Vinci-para-próstata-y-precio-en-la-seguridad-social.jpeg)
+![Robot Da Vinci para cirugía robótica. Especialidades y usos](assets/davinci.jpeg)
 
 **Servicios**: Los robots móviles ayudan en edificios de oficinas, hoteles y hospitales. Savioke ha instalado robots en hoteles que entregan productos como toallas o pasta de dientes en la habitación. Los robots Helpmate y TUG transportan alimentos y medicamentos en los hospitales, mientras que el robot Moxi de Diligent Robotics ayuda a las enfermeras con las responsabilidades logísticas de back-end. Co-Bot deambula por los pasillos de la Universidad Carnegie Mellon, listo para guiarte a la oficina de alguien. También podemos utilizar robots de telepresencia como el Beam para asistir a reuniones y conferencias de forma remota, robots de Telepresencia o controlar a nuestros abuelos.
 
@@ -410,7 +410,7 @@ Los robots personales están destinados a ayudarnos con tareas diarias como limp
 
 **Entretenimiento**: Disney ha estado utilizando robots (bajo el nombre de animatronics) en sus parques desde 1963. Originalmente, estos robots estaban restringidos a movimientos (y habla) invariables, de circuito abierto y diseñados a mano, pero desde 2009 una versión llamada autonomatronics puede generar acciones autónomas. Los robots también toman la forma de juguetes inteligentes para niños; por ejemplo, Cozmo de Anki juega con niños y puede golpear la mesa con frustración cuando pierde. Finalmente, los cuadrotores como el R1 de Skydio de la actúan como fotógrafos y camarógrafos personales, siguiéndonos para tomar fotografías de acción mientras esquiamos o andamos en bicicleta.
 
-<img src="assets/u=http%3A%2F%2Fcontent.bikeroar.com%2Fsystem%2Fcontent%2F000%2F423%2F298%2Foriginal%2FSkydio_R1_Self-Flying_Camera_for_cyclists.jpeg" alt="Skydio R1 drone tracks and videos your ride - even through the trees" style="zoom:25%;" />
+![Skydio R1 drone tracks and videos your ride - even through the trees](assets/dronbici.jpeg){width=800px}
 
 **Exploración y entornos peligrosos:** los robots han llegado a lugares donde ningún ser humano había llegado antes, incluida la superficie de Marte. Los brazos robóticos ayudan a los astronautas a desplegar y recuperar satélites y a construir la Estación Espacial Internacional. Los robots también ayudan a explorar bajo el mar. Se utilizan habitualmente para adquirir mapas de barcos hundidos. En 1996, un equipo de investigadores introdujo un robot con patas en el cráter de un volcán activo para adquirir datos para la investigación climática. Los robots se están convirtiendo en herramientas muy efectivas para recopilar información en dominios de difícil (o peligroso) acceso para las personas.
 
