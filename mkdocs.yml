@@ -31,7 +31,7 @@ nav:
     - Actividades Entregables: UD03/UD03_ActividadesEntregables.md
   - UD04:
     - Análisis de sistemas robotizados: UD04/UD04_ES.md
-    #- Diapositivas: UD04/UD04_Diapositivas.md
+    - Diapositivas: UD04/UD04_Diapositivas.md
     - Actividades Guiadas: UD04/UD04_ActividadesGuiadas.md
     - Actividades Entregables: UD04/UD04_ActividadesEntregables.md
   - UD05:
