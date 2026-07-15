@@ -4,6 +4,11 @@ repo_url: https://github.com/martinezpenya/ModelosIA
 edit_uri: edit/main/docs
 use_directory_urls: false
 
+exclude_docs: |
+  UD01/Presentacion/*.html
+  UD02/Presentacion/*.html
+  UD03/Presentacion/*.html
+
 nav:
   - UD00:
     - Información importante: index.md
@@ -13,10 +18,12 @@ nav:
     - Caracterización de sistemas y utilización de modelos de Inteligencia Artificial: UD01/UD01_ES.md
     - Diapositivas: UD01/diapositivas.md
     - Actividades:
-      - P01 Robocode: UD01/UD01_P01_RobocodeTankRoyale_ES.md
+      - P00 Comparativa Java vs Python: UD01/UD01_P00_Comparativa_Java_VS_Python_ES.md
+      - P01 Robocode (Java): UD01/UD01_P01_RobocodeTankRoyale_ES.md
+      - P01 Robocode (Python): UD01/UD01_P01_RobocodeTankRoyale_Python_ES.md
       - P02 Entregable: UD01/UD01_P02_Practica_ES.md
     - Talleres:
-      - T01 Java: UD01/UD01_T01_IDE_ES.md
+      - T01 Java/Python: UD01/UD01_T01_IDE_ES.md
       - T02 GitHub: UD01/UD01_T02_GitHub.md
       - T03 Markdown: UD01/UD01_T03_Markdown.md
   - UD02:
@@ -205,9 +212,15 @@ plugins:
         #    - 'release-notes/:upgrading'
         #    - 'release-notes/:changelog'
         #
-        #exclude_pages:
-        #    - 'bugs/'
-        #    - 'appendix/contribute/'
+        exclude_pages:
+            - 'Docker/assets/'
+            - 'UD01/assets/IABDBotMaven.zip'
+            - 'UD01/Presentacion/'
+            - 'UD02/Presentacion/'
+            - 'UD02/Dockerfile'
+            - 'UD02/docker-compose.yml'
+            - 'UD03/Presentacion/'
+            - 'UD04/Presentacion/'
         #convert_iframe:
         #    - src: IFRAME SRC
         #      img: POSTER IMAGE URL

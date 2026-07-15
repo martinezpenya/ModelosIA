@@ -71,8 +71,14 @@ El código fuente de su Bot (el nombre del bot será el nombre de su autor más 
 
 **El código fuente** del Bot incluye (ejemplo con mi nombre):
 
+**Si usas Java:**
 - Archivo .java con la clase del Bot (`David4849.java`)
-- Archivo .json que incluirá la información completa del autor (`David4849.json`)
+- Archivo .json con la información del autor (`David4849.json`)
+- Archivos para inicializar el Bot en Windows y Linux (`David4849.cmd` y `David4849.sh`)
+
+**Si usas Python:**
+- Archivo .py con la clase del Bot (`David4849.py`)
+- Archivo .json con la información del autor (`David4849.json`)
 - Archivos para inicializar el Bot en Windows y Linux (`David4849.cmd` y `David4849.sh`)
 
 **La memoria** en formato PDF debe contener al menos los siguientes apartados:

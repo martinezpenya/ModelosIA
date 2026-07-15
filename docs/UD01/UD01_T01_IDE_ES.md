@@ -91,7 +91,7 @@ Una vez instalada la caja de herramientas, puede elegir instalar todos los produ
 
 Una vez instalada la Idea (IDE) puedes crear una entrada de escritorio desde la pantalla inicial:
 
-<img src="/assets/intellij.png" alt="Create desktop icon" style="zoom:50%;" />
+<img src="assets/intellij.png" alt="Create desktop icon" style="zoom:50%;" />
 
 Y en la opción Administrar licencias debes seguir estas instrucciones: https://www.jetbrains.com/help/license_server/Activating_license.html
 
@@ -171,15 +171,88 @@ Mucha más información:
 
 4. **Configuración manual del proyecto:** La configuración de proyectos Java puede requerir más pasos y configuración manual en comparación con IntelliJ IDEA.
 
+## Python y VS Code
+
+Si vas a hacer la actividad Robocode en **Python**, necesitarás configurar un entorno alternativo al Java/IntelliJ.
+
+### Instalación de Python
+
+Descarga Python desde https://www.python.org/downloads/ o usa el gestor de paquetes:
+
+=== "Linux (Debian/Ubuntu)"
+    ```sh
+    sudo apt install python3 python3-pip python3-venv
+    ```
+=== "macOS"
+    ```sh
+    brew install python3
+    ```
+=== "Windows"
+    Descarga el instalador desde https://www.python.org/downloads/ y **marca la opción "Add Python to PATH"** durante la instalación.
+
+!!! tip "Windows"
+    Si usas Windows, el comando es `python --version` en lugar de `python3 --version`.
+
+Verifica la instalación:
+
+```sh
+python3 --version
+```
+
+### Visual Studio Code
+
+Descarga VS Code desde https://code.visualstudio.com/
+
+Instala las siguientes extensiones desde el mercado de extensiones (icono de cuadrícula en la barra lateral izquierda):
+
+1. **Python** (Microsoft) — soporte completo: linting, debugging, IntelliSense
+2. **Pylance** (Microsoft) — completado de código y tipado avanzado
+
+### Entorno virtual y primera prueba
+
+Crea una carpeta para tus proyectos, abre un terminal y ejecuta:
+
+```sh
+python3 -m venv .venv
+# Linux/macOS:
+source .venv/bin/activate
+# Windows:
+# .venv\Scripts\activate
+```
+
+Crea un fichero `hola.py`:
+
+```python
+print("¡Hola, mundo!")
+```
+
+Ejecútalo:
+
+```sh
+python3 hola.py
+```
+
+![VS Code con hola.py y terminal](assets/vscode_hola_mundo_python.png)
+
+### Instalación de la API de Robocode para Python
+
+Cuando llegues a la actividad Robocode, instala la API con:
+
+```sh
+pip install robocode-tank-royale
+```
+
+![Instalación de la API con pip](assets/terminal_pip_install.png)
+
 ## Tarea
 
 Debes entregar un documento `*.pdf` explicando:
 
-Una captura de pantalla en la que se vea el resultado del comando:
+**Si eliges Java:**
+- Captura del comando `java --version`
+- Capturas donde se vea que editas `HolaMundo.java`, lo compilas y lo ejecutas en IntelliJ
 
-- ```java
-  java --version
-  ```
-
-Y también capturas de pantalla donde se pueda ver que editas el fichero fuente (`HolaMundo.java`), lo compilas y lo ejecutas dentro del IDE IntelliJ (explica los pasos que has seguido)
+**Si eliges Python:**
+- Captura del comando `python3 --version`
+- Captura de VS Code con el fichero `hola.py` abierto, con la extensión Python visible y la terminal mostrando la salida
 
