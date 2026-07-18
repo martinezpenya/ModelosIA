@@ -1,1 +1,5 @@
+site/
+docs/Libro.pdf
+__pycache__/
+*.pyc
 pdf_event_hook/__pycache__/

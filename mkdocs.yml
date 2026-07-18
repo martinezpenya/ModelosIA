@@ -5,9 +5,9 @@ edit_uri: edit/main/docs
 use_directory_urls: false
 
 exclude_docs: |
-  UD01/Presentacion/*.html
-  UD02/Presentacion/*.html
-  UD03/Presentacion/*.html
+  UD01/Presentacion/*.md
+  UD02/Presentacion/*.md
+  UD03/Presentacion/*.md
 
 nav:
   - UD00:
@@ -43,7 +43,7 @@ nav:
     - Actividades Entregables: UD04/UD04_ActividadesEntregables.md
   - UD05:
     - Aplicación de principios legales y éticos de la IA: UD05/UD05_ES.md
-    #- Diapositivas: UD05/UD05_Diapositivas.md
+    - Diapositivas: UD05/UD05_Diapositivas.md
     - Actividades Guiadas: UD05/UD05_ActividadesGuiadas.md
     - Actividades Entregables: UD05/UD05_ActividadesEntregables.md
   - Sobre mi: sobremi.md
