@@ -249,10 +249,12 @@ pip install robocode-tank-royale
 Debes entregar un documento `*.pdf` explicando:
 
 **Si eliges Java:**
+
 - Captura del comando `java --version`
 - Capturas donde se vea que editas `HolaMundo.java`, lo compilas y lo ejecutas en IntelliJ
 
 **Si eliges Python:**
+
 - Captura del comando `python3 --version`
 - Captura de VS Code con el fichero `hola.py` abierto, con la extensión Python visible y la terminal mostrando la salida
 
