@@ -5,4 +5,4 @@ services:
     ports:
       - "8888:8888"     # http://localhost:8888 (token: cursoia)
     volumes:
-      - ./notebooks:/home/mia   # tus notebooks viven en el host, no en el contenedor
+      - ../notebooks:/home/mia  # los notebooks de la unidad, en el host, no en el contenedor

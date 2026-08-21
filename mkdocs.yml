@@ -186,6 +186,12 @@ copyright: "© 2025 David Martínez licensed under CC BY-NC-SA 4.0"
 
 plugins:
     - mkdocs-video
+    # Render local de notebooks (decisión 2026-08-20: render local + enlace a Colab).
+    # Acotado a las unidades ya fusionadas; se amplía el patrón al fusionar cada una.
+    - mkdocs-jupyter:
+        include: ["UD00/notebooks/*.ipynb"]
+        include_source: true
+        execute: false
     - redirects:
         redirect_maps:
             # Docker pasa a formar parte de la UD00 (decisión 2026-08-20).

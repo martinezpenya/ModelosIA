@@ -1112,20 +1112,29 @@ CONTAINER ID   IMAGE            COMMAND          CREATED          STATUS        
 
 - [Ejercicios de la unidad](UD00_Ejercicios.md)
 - [Talleres: verificación del entorno + contenedor de prácticas de IA](UD00_Talleres.md)
-- [Notebook: entorno Python para IA](notebooks/UD00_entorno_python_ia.ipynb)
+### Notebook de la unidad
 
-<a class="btn-notebook download" href="notebooks/UD00_entorno_python_ia.ipynb" download>Descargar notebook</a>
-<a class="btn-notebook colab" href="https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD00/notebooks/UD00_entorno_python_ia.ipynb" target="_blank" rel="noopener">Abrir en Colab</a>
-<a class="btn-notebook colab" href="#" title="Enlace a Google Colab pendiente de configurar (requiere repositorio GitHub)">Abrir en Colab</a>
+| Notebook | Descargar | Ejecutar |
+|---|---|---|
+| [Entorno Python para IA](notebooks/UD00_entorno_python_ia.ipynb) | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD00/notebooks/UD00_entorno_python_ia.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD00/notebooks/UD00_entorno_python_ia.ipynb){:target="_blank"} |
 
-**Referencias**: [Docker · What is Docker?](https://docs.docker.com/get-started/overview/) ·
-[Docker · What is a container?](https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/) ·
-[Docker · Dockerfile reference](https://docs.docker.com/reference/dockerfile/) ·
-[Docker · Compose Quickstart](https://docs.docker.com/compose/gettingstarted/) ·
-[Docker · Building best practices](https://docs.docker.com/build/building/best-practices/) ·
-[RD 279/2021](https://www.boe.es/eli/es/rd/2021/04/20/279) ·
-[Orden 8/2025 CV](https://dogv.gva.es/datos/2025/04/30/pdf/2025_13083_es.pdf) ·
-[Aules GVA](https://portal.edu.gva.es/aules/)
+El enlace del nombre abre el notebook **aquí mismo**, ya renderizado; el badge azul lo descarga y el
+de Colab lo ejecuta en el navegador sin instalar nada.
+
+??? note "Referencias de la unidad"
+    Documentación oficial de Docker:
+
+    - [What is Docker?](https://docs.docker.com/get-started/overview/)
+    - [What is a container?](https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/)
+    - [Dockerfile reference](https://docs.docker.com/reference/dockerfile/)
+    - [Compose Quickstart](https://docs.docker.com/compose/gettingstarted/)
+    - [Building best practices](https://docs.docker.com/build/building/best-practices/)
+
+    Normativa y plataforma:
+
+    - [RD 279/2021](https://www.boe.es/eli/es/rd/2021/04/20/279) — currículo del curso de especialización
+    - [Orden 8/2025 de la Comunitat Valenciana](https://dogv.gva.es/datos/2025/04/30/pdf/2025_13083_es.pdf) — evaluación
+    - [Aules GVA](https://portal.edu.gva.es/aules/) — plataforma del centro
 
 ## 17. Evaluación
 
