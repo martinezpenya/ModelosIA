@@ -198,6 +198,7 @@ plugins:
         include: ["UD00/notebooks/*.ipynb"]
         include_source: true
         execute: false
+        ignore_h1_titles: true
     - redirects:
         redirect_maps:
             # Docker pasa a formar parte de la UD00 (decisión 2026-08-20).
