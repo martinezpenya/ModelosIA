@@ -4,6 +4,9 @@ repo_url: https://github.com/martinezpenya/ModelosIA
 edit_uri: edit/main/docs
 use_directory_urls: false
 
+hooks:
+  - hooks.py
+
 exclude_docs: |
   UD00/Presentacion/*.md
   UD01/Presentacion/*.md
@@ -111,6 +114,7 @@ theme:
 extra_css:
   - css/extra.css
 markdown_extensions:
+  - sane_lists
   - admonition
   - abbr
   - attr_list
@@ -244,7 +248,7 @@ plugins:
             - 'UD04/Presentacion/'
         convert_iframe:
             - src: 'https://martinezpenya.es/ModelosIA/UD00/Presentacion/UD00_1_ES.html'
-              img: 'https://martinezpenya.es/ModelosIA/assets/portada.png'
+              img: 'https://martinezpenya.es/ModelosIA/UD00/Presentacion/img/poster-slide1.png'
               text: 'Ver la presentación interactiva de la UD00'
         #two_columns_level: 3
         #
