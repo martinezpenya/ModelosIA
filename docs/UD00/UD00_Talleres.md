@@ -236,10 +236,10 @@ volumes:
 
 Sube a Moodle un informe breve con:
 
-1. Captura del **Paso 5** (Jupyter abierto con el import correcto).
+1. Captura de la **fase 5 de este taller** (Jupyter abierto con el import correcto).
 2. Salida de `docker compose ps` mostrando el servicio activo.
 3. Respuesta a: *¿por qué este entorno es reproducible en cualquier equipo?*
-4. Captura del **Paso 7** mostrando que un notebook sobrevive a `docker compose down`.
+4. Captura de la **fase 7** mostrando que un notebook sobrevive a `docker compose down`.
 
 !!! note "Soluciones"
     Las soluciones no se publican: se corrigen y comentan en clase.

@@ -264,8 +264,8 @@ Es la aplicación oficial de Docker que te da una **interfaz gráfica (GUI)** pa
 **Linux (Ubuntu/Debian ejemplo):**
 
 ```bash
-# Paso 1: Descargar .deb oficial
-wget https://desktop.docker.com/linux/main/amd64/docker-desktop-4.25.0-amd64.deb
+# Paso 1: Descargar el .deb oficial (siempre la última versión)
+wget https://desktop.docker.com/linux/main/amd64/docker-desktop-amd64.deb
 
 # Paso 2: Instalar
 sudo apt install ./docker-desktop-*.deb
