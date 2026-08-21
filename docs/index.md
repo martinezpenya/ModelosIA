@@ -52,36 +52,22 @@ aprendizaje (UD05 es siempre RA5), no al orden en que se imparte.
     (RA7)**, común a todo el curso de especialización: durante unas cinco semanas tu equipo trabaja
     el proyecto en las horas de todos los módulos.
 
-## 🎯 Resultados de Aprendizaje (RA)
+## 🎯 Resultados de aprendizaje, pesos y calificación
 
-<!-- AUTO:ra inicio -->
-| RA | CE | Enunciado |
-|---|---|---|
-| **RA1** | 4 | Caracteriza sistemas de Inteligencia Artificial relacionándolos con la mejora de la eficiencia operativa de las organizaciones y empresas. |
-| **RA2** | 6 | Utiliza modelos de sistemas de Inteligencia Artificial implementando sistemas de resolución de problemas. |
-| **RA3** | 7 | Relaciona el procesamiento de lenguaje natural con sus aplicaciones determinando su potencial e identificando sus limitaciones. |
-| **RA4** | 4 | Analiza sistemas robotizados, evaluando opciones de diseño e implementación. |
-| **RA5** | 5 | Aplica sistemas expertos evaluando la influencia de los controladores inteligentes en el comportamiento del sistema. |
-| **RA6** | 6 | Aplica principios legales y éticos al desarrollo de la Inteligencia Artificial integrándolos como parte del proceso. |
-| **RA7** | 9 | Desarrolla un proyecto integrador que combine técnicas de IA y análisis de datos masivos para resolver un problema real o simulado, gestionando todo el ciclo de vida del proyecto. |
-<!-- AUTO:ra fin -->
+<!-- AUTO:ra_pesos inicio -->
+| RA | CE | Descripción | Nota mínima | Peso |
+|---|---|---|---|---|
+| **RA1** | 4 | Caracteriza sistemas de Inteligencia Artificial relacionándolos con la mejora de la eficiencia operativa de las organizaciones y empresas. | **5** | **13,33 %** |
+| **RA2** | 6 | Utiliza modelos de sistemas de Inteligencia Artificial implementando sistemas de resolución de problemas. | **5** | **13,33 %** |
+| **RA3** | 7 | Relaciona el procesamiento de lenguaje natural con sus aplicaciones determinando su potencial e identificando sus limitaciones. | **5** | **13,33 %** |
+| **RA4** | 4 | Analiza sistemas robotizados, evaluando opciones de diseño e implementación. | **5** | **13,33 %** |
+| **RA5** | 5 | Aplica sistemas expertos evaluando la influencia de los controladores inteligentes en el comportamiento del sistema. | **5** | **13,33 %** |
+| **RA6** | 6 | Aplica principios legales y éticos al desarrollo de la Inteligencia Artificial integrándolos como parte del proceso. | **5** | **13,33 %** |
+| **RA7** | 9 | Desarrolla un proyecto integrador que combine técnicas de IA y análisis de datos masivos para resolver un problema real o simulado, gestionando todo el ciclo de vida del proyecto. | **5** | **20 %** |
+| | | | | **100 %** |
 
-## 📊 Pesos y criterios de calificación
-
-<!-- AUTO:pesos inicio -->
-| RA | Peso en la nota del módulo |
-|---|---|
-| RA1 | 13,33 % |
-| RA2 | 13,33 % |
-| RA3 | 13,33 % |
-| RA4 | 13,33 % |
-| RA5 | 13,33 % |
-| RA6 | 13,33 % |
-| RA7 | 20 % |
-| | **100 %** |
-
-Cada RA se califica 0-10 = **40 %** tareas, talleres y ejercicios + **60 %** prueba escrita. Para superar el módulo hace falta **≥5 en cada RA**.
-<!-- AUTO:pesos fin -->
+Cada RA se califica de 0 a 10: **40 %** tareas, talleres y ejercicios + **60 %** prueba escrita. Para superar el módulo hace falta **5 o más en cada RA**.
+<!-- AUTO:ra_pesos fin -->
 
 ## 📝 Evaluación
 
@@ -92,10 +78,10 @@ Cada RA se califica 0-10 = **40 %** tareas, talleres y ejercicios + **60 %** pru
 - 📊 La nota final del módulo sale de la ponderación de los RA. Cada RA se evalúa de forma
   independiente, con calificación de 0 a 10.
 
-- 📝 Cada RA tiene **una prueba en Moodle** al cerrar su unidad: unas **15 preguntas de test** de
-  cuatro opciones, en las que una respuesta incorrecta **descuenta un tercio** del valor de la
-  pregunta, más **2 preguntas de desarrollo**. Las preguntas se extraen al azar, así que cada
-  alumno recibe un examen distinto.
+- 📝 Cada RA tiene **una prueba en Moodle** al cerrar su unidad, con preguntas de test de cuatro
+  opciones y preguntas de desarrollo. En las de test, una respuesta incorrecta **descuenta un
+  tercio** del valor de la pregunta, así que responder al azar penaliza. Las preguntas se extraen
+  aleatoriamente del banco: **cada alumno recibe un examen distinto**.
 
 - ✅ Hay que obtener al menos un **5 en cada RA** para aprobar el módulo.
 

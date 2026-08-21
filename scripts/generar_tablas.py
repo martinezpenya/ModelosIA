@@ -28,11 +28,11 @@ RAIZ = Path(__file__).resolve().parent.parent
 DATOS = RAIZ / "datos" / "curriculo.yml"
 
 # tabla -> ficheros destino
-# En ModelosIA (sitio maestro) las tres tablas viven en la portada.
+# En ModelosIA (sitio maestro) las tablas viven en la portada. La de RA lleva
+# incorporados los pesos y la nota mínima (decisión del profesor, 2026-08-21).
 DESTINOS = {
     "unidades": ["docs/index.md"],
-    "ra": ["docs/index.md"],
-    "pesos": ["docs/index.md"],
+    "ra_pesos": ["docs/index.md"],
 }
 
 
@@ -96,7 +96,25 @@ def tabla_pesos(d: dict) -> str:
     return "\n".join(filas)
 
 
-GENERADORES = {"unidades": tabla_unidades, "ra": tabla_ra, "pesos": tabla_pesos}
+def tabla_ra_pesos(d: dict) -> str:
+    """RA + CE + enunciado + nota mínima + peso, en una sola tabla."""
+    ev = d["evaluacion"]
+    pesos = ev["pesos_ra"]
+    minima = ev["nota_minima_por_ra"]
+    filas = ["| RA | CE | Descripción | Nota mínima | Peso |", "|---|---|---|---|---|"]
+    for r in d["resultados_aprendizaje"]:
+        enunciado = " ".join(r["enunciado"].split())
+        peso = f"{pesos.get(r['id'], 0):g}".replace(".", ",")
+        filas.append(f"| **{r['id']}** | {r['ce']} | {enunciado} | **{minima}** | **{peso} %** |")
+    filas.append("| | | | | **100 %** |")
+    filas.append("")
+    filas.append(f"Cada RA se califica de 0 a 10: **{ev['peso_actividades']} %** tareas, talleres y "
+                 f"ejercicios + **{ev['peso_prueba_escrita']} %** prueba escrita. Para superar el "
+                 f"módulo hace falta **{minima} o más en cada RA**.")
+    return "\n".join(filas)
+
+GENERADORES = {"unidades": tabla_unidades, "ra": tabla_ra,
+               "pesos": tabla_pesos, "ra_pesos": tabla_ra_pesos}
 
 
 def aplicar(texto: str, nombre: str, contenido: str) -> tuple[str, bool]:
