@@ -2,6 +2,8 @@ import logging
 import re, os.path
 from urllib.parse import urlparse, urlunparse
 
+from pathlib import Path
+
 from bs4 import BeautifulSoup
 from mkdocs.structure.pages import Page
 
@@ -57,34 +59,31 @@ def inject_link(html: str, href: str,
 #         tag['data-md-color-scheme'] = 'print'
 #     return soup
 
-### Banner cover-logo solution
-# def normalize_url(str_url):
-#     url = urlparse(str_url)
-#     if url.scheme == 'file' and '\\' in url.netloc:
-#         return urlunparse((url.scheme, url.netloc.replace('\\', '/'), url.path, url.params, url.query, url.fragment))
-#     elif not url.scheme:
-#         return urlunparse(('file', url.netloc, os.path.abspath(url.path).replace('\\', '/'), url.params, url.query, url.fragment))
-#     return str_url
-#
-#
-# def fix_urls(match):
-#     quote, str_url = match.groups()
-#     return f'url({quote}{normalize_url(str_url)}{quote})'
-#
-#
-# def pre_pdf_render(soup: BeautifulSoup, logger: logging) -> BeautifulSoup:
-#     logger.info('(hook on pre_pdf_render)')
-#     url_re = re.compile(r'\burl\(([\'"]?)(.*?)\1\)')
-#     logger.info('Replacing relative url links with absolute and Windows-style paths in CSS')
-#     for tag in soup.find_all(lambda t: 'style' in t.attrs or t.name == 'style'):
-#         if tag.name == 'style':
-#             for child in tag.children:
-#                 child.replace_with(url_re.sub(fix_urls, child))
-#         else:
-#             tag['style'] = url_re.sub(fix_urls, tag['style'])
-#     logger.info('Replacing img src tags')
-#     for tag in soup('img'):
-#         src = tag.get('src')
-#         if src:
-#             tag['src'] = normalize_url(src)
-#     return soup
+
+def pre_pdf_render(soup: BeautifulSoup, logger: logging) -> BeautifulSoup:
+    """Resuelve las imágenes con ruta relativa del documento combinado.
+
+    `convert_iframe` del plugin crea sus <img> DESPUÉS de que
+    `replace_asset_hrefs` haya convertido las rutas relativas en absolutas
+    (generator.py: convert_iframe en la línea 135, prep_combined en la 211).
+    Esas imágenes se quedan sin base URI y weasyprint las descarta con
+    "Relative URI reference without a base URI".
+
+    Aquí se convierten a file:// absoluto, tomando como base la raíz del
+    repositorio, que es el directorio de trabajo tanto en local como en el
+    runner de CI.
+    """
+    raiz = Path(__file__).parent.parent
+    arreglados = 0
+    for tag in soup('img'):
+        src = tag.get('src', '')
+        if not src or '://' in src or src.startswith('data:') or src.startswith('/'):
+            continue
+        destino = (raiz / src).resolve()
+        if destino.exists():
+            tag['src'] = destino.as_uri()
+            arreglados += 1
+    if arreglados:
+        logger.info(f'(hook pre_pdf_render: {arreglados} imagen(es) con ruta '
+                    f'relativa resueltas a file://)')
+    return soup

@@ -248,7 +248,7 @@ plugins:
             - 'UD04/Presentacion/'
         convert_iframe:
             - src: 'https://martinezpenya.es/ModelosIA/UD00/Presentacion/UD00_1_ES.html'
-              img: 'https://martinezpenya.es/ModelosIA/UD00/Presentacion/img/poster-slide1.png'
+              img: 'docs/UD00/Presentacion/img/poster-slide1.png'
               text: 'Ver la presentación interactiva de la UD00'
         #two_columns_level: 3
         #
