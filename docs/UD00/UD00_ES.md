@@ -1122,7 +1122,7 @@ CONTAINER ID   IMAGE            COMMAND          CREATED          STATUS        
 
     | Notebook | Descargar | Ejecutar |
     |---|---|---|
-    | [Entorno Python para IA](notebooks/UD00_entorno_python_ia.ipynb) | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD00/notebooks/UD00_entorno_python_ia.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD00/notebooks/UD00_entorno_python_ia.ipynb){:target="_blank"} |
+    | [N01 · Entorno Python para IA](notebooks/UD00_N01_entorno_python_ia.ipynb) | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD00/notebooks/UD00_N01_entorno_python_ia.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD00/notebooks/UD00_N01_entorno_python_ia.ipynb){:target="_blank"} |
 
 ??? note "Referencias de la unidad"
     Documentación oficial de Docker:

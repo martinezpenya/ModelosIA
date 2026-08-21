@@ -7,7 +7,7 @@
 # Requisitos: node (para npx) y un Chromium para el PDF. Se apoya en el que trae Playwright si
 # está disponible; CHROME_NO_SANDBOX es necesario en esta máquina o el PDF falla sin mensaje claro.
 set -euo pipefail
-cd "$(dirname "$0")"
+cd "$(dirname "$0")/.."
 UD="${1:?Uso: ./generar-diapositivas.sh UDxx [fichero.md]}"
 DIR="docs/$UD/Presentacion"
 [ -d "$DIR" ] || { echo "No existe $DIR"; exit 1; }
