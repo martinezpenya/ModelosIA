@@ -44,7 +44,7 @@ section {
 ![h:260 center](../../assets/portada.png)
 # UD00: Presentación y curso rápido de Docker
 #### Modelos de Inteligencia Artificial
-###### version: 2026-10-01
+###### version: 2026-08-21
 ___
 <!-- footer: d.martinezpena@edu.gva.es -->
 <!-- header: Modelos de Inteligencia Artificial 26-27 (UD00_1)-->
@@ -153,8 +153,8 @@ ___
 * **Daemon** (`dockerd`): el servicio que las ejecuta — descarga imágenes, crea contenedores
 * **Registro** (Docker Hub): el almacén público de imágenes
 
-> Tú nunca hablas con el contenedor: hablas con el **daemon**, y él se encarga. Por eso, si tu
-> usuario no tiene permiso sobre su *socket*, nada funciona.
+> Tú nunca hablas con el contenedor: hablas con el **daemon**. Sin permiso sobre su *socket*,
+> nada funciona.
 ___
 
 ## El recorrido completo
@@ -284,7 +284,7 @@ docker run --rm python:3.12-slim bash -c "$PRUEBA"   # falla
 * Se arregla con **tres líneas** antes del import
 ___
 
-## <!--fit--> Tres lecciones
+## Tres lecciones
 
 1. **El entorno importa**: el mismo código y dos resultados distintos
 2. **Las dependencias se abandonan**: elegir una biblioteca es apostar por quien la mantiene
@@ -304,10 +304,10 @@ docker compose up -d      # y Jupyter en http://localhost:8888
 ```
 ___
 
-## <!--fit--> ¿Y ahora?
+## ¿Y ahora?
 
 1. Instala Docker y haz el **Taller 1**
 2. Levanta el entorno con el **Taller 2**
 3. Ejecuta el **notebook** de la unidad y entrégalo
 
-> En la **UD01** empezamos con los sistemas de IA: qué son, dónde se aplican y qué técnicas usan.
+> En la **UD01**: sistemas de IA, dónde se aplican y qué técnicas usan.

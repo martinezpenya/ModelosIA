@@ -1,8 +1,9 @@
 # UD00 — Ejercicios
 
 !!! note "Cómo se trabajan"
-    Resuélvelos en tu cuaderno o en un documento Markdown. Entrega el **notebook de la unidad**
-    resuelto en Moodle al terminar la unidad.
+    Resuélvelos en tu cuaderno o en un documento Markdown, a tu ritmo. Si te atascas en alguno,
+    pregunta en clase o por Moodle: el profesor te da la solución. (El **notebook** de la unidad
+    es un entregable aparte, con su propia entrega — ver [Recursos](UD00_ES.md#16-recursos).)
 
 ## A. Sobre el módulo y la evaluación
 

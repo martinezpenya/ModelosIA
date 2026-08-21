@@ -21,9 +21,12 @@ shift || true
 FICHEROS=("$@")
 [ ${#FICHEROS[@]} -eq 0 ] && mapfile -t FICHEROS < <(cd "$DIR" && ls *.md 2>/dev/null)
 
+HOY="$(date +%F)"
 for f in "${FICHEROS[@]}"; do
   base="${f%.md}"
   echo "· $UD/$f"
+  # La version de la portada es la fecha de modificacion: se sella al generar.
+  sed -i -E "s/^###### version: .*/###### version: $HOY/" "$DIR/$f"
   (cd "$DIR" && npx --yes @marp-team/marp-cli@latest "$f" -o "$base.html" >/dev/null 2>&1)
   if [ -n "${CHROME_PATH:-}" ] && [ -x "${CHROME_PATH:-}" ]; then
     (cd "$DIR" && npx --yes @marp-team/marp-cli@latest "$f" --pdf --allow-local-files -o "$base.pdf" >/dev/null 2>&1) \
