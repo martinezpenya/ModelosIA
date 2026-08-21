@@ -1,9 +1,10 @@
 # UD00 — Talleres
 
-> **Unidad no calificable.** El Taller 1 se entrega y se marca como **hecho / no hecho**: no lleva
-> nota, pero se tiene en cuenta y **es requisito para las prácticas de la UD02** (sin entorno
-> funcionando no se puede hacer Robocode). Los viernes no hay clase: son el momento de recopilar
-> capturas y redactar la memoria.
+!!! important "Unidad no calificable, pero requisito"
+    El Taller 1 se entrega y se marca como **hecho / no hecho**: no lleva nota, pero se tiene en
+    cuenta y **es requisito para las prácticas de la UD02** (sin entorno funcionando no se puede
+    hacer Robocode). Los viernes no hay clase: son el momento de recopilar capturas y redactar la
+    memoria.
 
 ## Taller 1 · Verificación del entorno y primer contenedor
 

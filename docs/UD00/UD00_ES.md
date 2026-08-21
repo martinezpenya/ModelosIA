@@ -1,10 +1,10 @@
 # UD00 — Presentación del módulo y curso rápido de Docker
 
-> Unidad transversal de **6 h** (1-8 de octubre). No tiene prueba escrita: el entorno de trabajo es
-> **requisito** para el resto del módulo y el entregable del Taller 1 se marca como
-> **hecho / no hecho**.
+!!! info "Unidad 0 · 6 h · semanas 1-2 (1 al 8 de octubre)"
+    Unidad transversal de presentación y arranque del curso. **No tiene prueba escrita**: el entorno
+    de trabajo es **requisito** para el resto del módulo, y el entregable del Taller 1 se marca como
+    **hecho / no hecho**.
 
-> Unidad 0 · 6 horas · semanas 1-2 · Unidad transversal de presentación y arranque
 
 ## 1. Introducción
 
@@ -16,9 +16,10 @@ lucha contra configuraciones que no funcionan. Por eso el núcleo técnico de la
 **curso rápido de Docker**, la tecnología que nos permitirá ejecutar el mismo entorno de Python y
 Jupyter en cualquier equipo.
 
-> La IA se hace con **entornos reproducibles**: si cada alumno tiene una configuración distinta,
-> los resultados no son comparables. Docker resuelve ese problema empaquetando el entorno completo
-> en un contenedor.
+!!! important "La idea que sostiene la unidad"
+    La IA se hace con **entornos reproducibles**: si cada alumno tiene una configuración distinta,
+    los resultados no son comparables. Docker resuelve ese problema empaquetando el entorno completo
+    en un contenedor.
 
 <!-- VIDEO: vídeo breve (2-3 min) que muestre a una persona creando un entorno de desarrollo "a mano" y luego ejecutando el mismo entorno en otra máquina gracias a Docker -->
 
@@ -358,9 +359,10 @@ systemctl --user start docker-desktop
 difieren: versiones de Python, bibliotecas, sistema operativo, configuraciones. **Docker resuelve
 este problema** empaquetando la aplicación y todo lo que necesita en un **contenedor**.
 
-> **Docker** es una plataforma abierta para desarrollar, distribuir y ejecutar aplicaciones. Permite
-> separar la aplicación de la infraestructura mediante contenedores: entornos aislados y ligeros que
-> incluyen todo lo necesario para ejecutar la aplicación.
+!!! note "Definición"
+    **Docker** es una plataforma abierta para desarrollar, distribuir y ejecutar aplicaciones.
+    Permite separar la aplicación de la infraestructura mediante contenedores: entornos aislados y
+    ligeros que incluyen todo lo necesario para ejecutar la aplicación.
 
 ```mermaid
 flowchart LR

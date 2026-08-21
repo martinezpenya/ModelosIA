@@ -3,3 +3,4 @@ docs/Libro.pdf
 __pycache__/
 *.pyc
 pdf_event_hook/__pycache__/
+mkdocs.local.yml
