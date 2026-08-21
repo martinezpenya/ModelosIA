@@ -119,7 +119,7 @@ los pesos:
 | Evaluación continua | Se pierde al superar el **15 % de inasistencia** (asistencia ≥ 85 %) |
 | Evaluaciones parciales | Dos parciales **informativos** (fin del 1.er y 2.º trimestre) |
 | Recuperación | Programa individual por **cada RA no superado**; en junio, solo los RA pendientes |
-| Esta unidad (UD00) | **No se califica**: es requisito. El taller se marca hecho / no hecho |
+| Esta unidad (UD00) | **No se califica**: es requisito. Sus **tres entregables** (los dos talleres y el notebook) se marcan **hecho / no hecho** |
 
 !!! warning "Asistencia"
     Si superas el **15 % de faltas** perderás la evaluación continua del módulo (art. 7.3 Orden
@@ -1114,9 +1114,11 @@ CONTAINER ID   IMAGE            COMMAND          CREATED          STATUS        
 - Talleres:
     - [T01 · Verificación del entorno y primer contenedor](UD00_T01_Verificacion_entorno_ES.md)
       — entregable, se marca **hecho / no hecho**
-    - [T02 · Contenedor de prácticas de IA](UD00_T02_Contenedor_practicas_ES.md) — de aula
-- **Notebooks de la unidad** — el nombre lo abre aquí mismo ya renderizado, el badge azul lo descarga
-  y el de Colab lo ejecuta en el navegador sin instalar nada:
+    - [T02 · Contenedor de prácticas de IA](UD00_T02_Contenedor_practicas_ES.md)
+      — entregable, se marca **hecho / no hecho**
+- **Notebooks de la unidad** — entregable, se marca **hecho / no hecho**. El nombre lo abre aquí
+  mismo ya renderizado, el badge azul lo descarga y el de Colab lo ejecuta en el navegador sin
+  instalar nada:
 
     | Notebook | Descargar | Ejecutar |
     |---|---|---|

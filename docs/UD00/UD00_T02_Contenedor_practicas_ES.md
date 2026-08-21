@@ -1,8 +1,9 @@
 # UD00 · Taller 2 — Contenedor de prácticas de IA
 
-!!! info "Taller de aula"
-    Se trabaja en clase, en el bloque largo de la semana 2. Al terminar tendrás el
-    **entorno del curso levantado**, que es el que usarás en el resto de las unidades.
+!!! important "Entregable · se marca hecho / no hecho"
+    Se trabaja en clase, en el bloque largo de la semana 2, y **se entrega en Moodle**. No lleva
+    nota, pero **es requisito**: al terminar tendrás el **entorno del curso levantado**, que es el
+    que usarás en el resto de las unidades. Sin él no se pueden hacer las prácticas de la UD02.
 
 **Objetivo**: levantar un entorno **Jupyter** reproducible con las bibliotecas del curso.
 
@@ -102,7 +103,7 @@ volumes:
 
 ### Entrega
 
-Sube a Moodle un informe breve con:
+Sube a Moodle un **informe breve**, que se marca como **hecho / no hecho**, con:
 
 1. Captura de la **fase 5 de este taller** (Jupyter abierto con el import correcto).
 2. Salida de `docker compose ps` mostrando el servicio activo.

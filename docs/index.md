@@ -90,8 +90,9 @@ Cada RA se califica **1 a 10, sin decimales** (Orden 8/2025, art. 5.1): **40 %**
   superados**: no hay prueba global del módulo.
 
 - 🐳 La **UD00** (presentación y Docker) **no se califica**: el entorno de trabajo es un requisito.
-  Su taller se entrega y se marca como **hecho / no hecho**, y hace falta tenerlo para poder hacer
-  las prácticas de la UD02.
+  Sus tres entregables —los dos talleres y el notebook— se marcan como **hecho / no hecho**, sin
+  nota pero **obligatorios**: son la prueba de que tienes el entorno operativo, y sin ellos no se
+  pueden hacer las prácticas de la UD02.
 
 !!! warning "Importante"
     - ❗ Aprobar las evaluaciones parciales **no garantiza** aprobar el módulo.
