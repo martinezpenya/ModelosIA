@@ -18,6 +18,10 @@ img[alt~="center"] {
   display: block;
   margin: 0 auto;
 }
+section img {
+  max-height: 380px;
+  width: auto;
+}
 table {
   margin-left: auto;
   margin-right: auto;
@@ -96,8 +100,17 @@ ___
 | 18 ene – 11 mar | UD03 (PLN) y UD04 (robótica) |
 | 15 mar – 23 abr | UD06 · ética y legalidad |
 | 26 abr – 28 may | **Proyecto intermodular (RA7)** |
+___
 
-> Navidad: 22 dic – 6 ene · Pascua: 25 mar – 5 abr · Fallas: 17 y 18 de marzo
+## Las interrupciones del curso
+
+| Cuándo | Qué |
+|---|---|
+| 22 dic – 6 ene | Vacaciones de Navidad |
+| 17 y 18 mar | Fallas |
+| 25 mar – 5 abr | Vacaciones de Pascua |
+
+> **Marzo es el mes más roto del curso**: tenlo en cuenta antes de dejar una entrega para el final.
 ___
 
 ## El problema: «en mi máquina funciona»
@@ -118,8 +131,11 @@ ___
 | Sistema operativo | Uno **propio** por máquina | Comparte el **kernel** del anfitrión |
 | Arranque | Minutos | **Segundos** |
 | Tamaño | Gigabytes | Megabytes |
+___
 
-![h:180 center](../assets/docker.png)
+## Lo mismo, en un dibujo
+
+![h:330 center](../assets/docker.png)
 ___
 
 ## Imagen y contenedor
@@ -128,9 +144,46 @@ ___
 * **Contenedor**: una **instancia en ejecución** de esa imagen
 * **Registro** (Docker Hub): donde viven las imágenes
 
-![h:300 center](../assets/docker1.png)
-
 > Una imagen, muchos contenedores. Como una clase y sus objetos.
+___
+
+## Las tres piezas de Docker
+
+* **Cliente** (`docker`): el comando que escribes tú. Solo manda órdenes
+* **Daemon** (`dockerd`): el servicio que las ejecuta — descarga imágenes, crea contenedores
+* **Registro** (Docker Hub): el almacén público de imágenes
+
+> Tú nunca hablas con el contenedor: hablas con el **daemon**, y él se encarga. Por eso, si tu
+> usuario no tiene permiso sobre su *socket*, nada funciona.
+___
+
+## El recorrido completo
+
+![h:340 center](../assets/docker1.png)
+___
+
+## Instalar Docker en Linux
+
+```bash
+# 1. Clave GPG y repositorio oficial de Docker
+# 2. Instalar el motor
+sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+# 3. Poder usarlo sin sudo
+sudo usermod -aG docker $USER
+```
+
+> El paso 3 no surte efecto **hasta cerrar y volver a abrir la sesión**. Es el error del primer día.
+___
+
+## Docker Desktop
+
+Para **Windows y macOS** es la vía normal; en Linux es opcional.
+
+* Incluye el motor, la interfaz gráfica y Compose
+* En Windows se apoya en **WSL 2**
+* En Linux se instala con el `.deb` oficial
+
+> Comprueba siempre la instalación con `docker run hello-world` antes de seguir.
 ___
 
 ## Los comandos que usarás el 90 % del tiempo
@@ -146,6 +199,19 @@ docker run -d -p 8080:80 nginx                     # servicio en segundo plano
 > `-it` interactivo · `-d` en segundo plano · `-p` publicar puerto · `--rm` borrar al salir
 ___
 
+## Lo que se acumula sin darte cuenta
+
+```bash
+docker images              # ¿cuánto ocupan?
+docker rmi <imagen>        # borrar una concreta
+docker image prune         # borrar las huérfanas, sin etiqueta
+docker image prune -a      # TODAS las que no use ningún contenedor
+```
+
+> `prune -a` decide por ti: se lleva también las imágenes que construiste y no has publicado.
+> Mira antes con `docker images`.
+___
+
 ## Volúmenes: que los datos sobrevivan
 
 Un contenedor es **desechable**: lo que escribes dentro desaparece al borrarlo.
@@ -158,6 +224,16 @@ docker run --rm -v "$PWD":/app -w /app python:3.12 python app.py
 * **volumen nombrado**: Docker gestiona el almacenamiento
 
 > Tus notebooks viven **en tu equipo**, no dentro del contenedor.
+___
+
+## Copias de seguridad
+
+| Qué copias | Comandos | Conserva |
+|---|---|---|
+| Una **imagen** | `docker save` / `docker load` | Capas, etiquetas y metadatos |
+| Un **contenedor** | `docker export` / `docker import` | Solo los ficheros, aplanados |
+
+> Con `save` puedes seguir trabajando sobre la imagen; con `export` obtienes una foto plana.
 ___
 
 ## Dockerfile: la receta
@@ -198,23 +274,34 @@ ___
 `experta` es el motor de reglas de la UD02 y la UD05. Última versión: **2019**.
 
 ```bash
-docker run --rm python:3.9-slim  bash -c "pip install -q experta && python -c 'import experta'"
-docker run --rm python:3.12-slim bash -c "pip install -q experta && python -c 'import experta'"
+PRUEBA="pip install -q experta && python -c 'import experta'"
+
+docker run --rm python:3.9-slim  bash -c "$PRUEBA"   # funciona
+docker run --rm python:3.12-slim bash -c "$PRUEBA"   # falla
 ```
 
-* En 3.9 **funciona**; en 3.12 falla: `collections.Mapping` desapareció en Python 3.10
+* `collections.Mapping` **desapareció en Python 3.10**
 * Se arregla con **tres líneas** antes del import
+___
 
-> Tres lecciones: el entorno importa, las dependencias se abandonan, y se puede convivir con ello.
+## <!--fit--> Tres lecciones
+
+1. **El entorno importa**: el mismo código y dos resultados distintos
+2. **Las dependencias se abandonan**: elegir una biblioteca es apostar por quien la mantiene
+3. **Se puede convivir con ello**: un parche documentado y sigues adelante
+
+> Lo que no vale es descubrirlo el día de la entrega.
 ___
 
 ## Nuestro entorno de prácticas
 
-![h:280 center](../assets/jupyter.png)
-
 * Un `Dockerfile` con **Python 3.12** y las bibliotecas del curso
 * Un `docker-compose.yml` que publica **Jupyter** en el puerto 8888
 * Un volumen para que **tus notebooks** queden en tu equipo
+
+```bash
+docker compose up -d      # y Jupyter en http://localhost:8888
+```
 ___
 
 ## <!--fit--> ¿Y ahora?
