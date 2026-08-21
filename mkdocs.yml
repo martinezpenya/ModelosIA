@@ -5,6 +5,7 @@ edit_uri: edit/main/docs
 use_directory_urls: false
 
 exclude_docs: |
+  UD00/Presentacion/*.md
   UD01/Presentacion/*.md
   UD02/Presentacion/*.md
   UD03/Presentacion/*.md
@@ -13,6 +14,7 @@ nav:
   - Información importante: index.md
   - UD00:
     - Presentación del módulo y curso rápido de Docker: UD00/UD00_ES.md
+    - Diapositivas: UD00/UD00_Diapositivas.md
     - Ejercicios: UD00/UD00_Ejercicios.md
     - Talleres:
       - T01 Verificación del entorno y primer contenedor: UD00/UD00_T01_Verificacion_entorno_ES.md
@@ -230,6 +232,7 @@ plugins:
         #
         exclude_pages:
             - 'UD00/assets/'
+            - 'UD00/Presentacion/'
             - 'UD00/entorno/'
             - 'UD00/notebooks/'
             - 'UD01/assets/IABDBotMaven.zip'
