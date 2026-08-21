@@ -6,55 +6,108 @@
 
 **📚 Curso de especialización de Inteligencia Artificial y Big Data**
 
-🤖 Modelos de Inteligencia Artificial (MIA)
+🤖 Modelos de Inteligencia Artificial (MIA) · Código **5071** · **90 h** · 4 ECTS
 
-## 📋 Contenidos
+!!! info "Curso 2026-2027"
+    La docencia empieza el **1 de octubre de 2026** y el módulo termina el **28 de mayo de 2027**;
+    junio se reserva a la **convocatoria ordinaria**. Las clases son de **lunes a jueves**: los
+    viernes no hay clase y se aprovechan para las tareas y los talleres en casa.
 
-| **Bloque**                 | TRIMESTRE/UNIDAD                                             | **Horas** |
-| -------------------------- | ------------------------------------------------------------ | --------: |
-|                            | **📅 PRIMER TRIMESTRE**                                      | **45**   |
-| **1AVA**                   | � UD01: Caracterización de sistemas y utilización de modelos de Inteligencia Artificial | 15       |
-|                            | 🧠 UD02: Sistemas Expertos                                   | 15        |
-| | 💬 UD03: Procesamiento del Lenguaje Natural | 15 |
-| **📊 1a EVALUACIÓN**       |                                                              | **2**     |
-|                            | **📅 SEGUNDO TRIMESTRE**                                     | **45**   |
-| **2AVA**                   | 🤖 UD04: Análisis de sistemas robotizados                     |        15 |
-|                            | ⚖️ UD05: Aplicación de principios legales y éticos de la Inteligencia Artificial |        10 |
-|                              | Proyecto intermodular                                        |        20 |
-| **📊 2ª EVALUACIÓN**       |                                                              | **2**     |
-| **🎓 CONVOCATÒRIA ORDINÀRIA** |                                                              | **2**     |
-|                            | **🧮 TOTAL**                                                 | **90**    |
+    Vacaciones: **Navidad** del 22 de diciembre al 6 de enero · **Pascua** del 25 de marzo al 5 de
+    abril.
+
+## 📋 Contenidos y temporalización
+
+Las unidades se imparten en este orden. El identificador `UDxx` va ligado a su resultado de
+aprendizaje (UD05 es siempre RA5), no al orden en que se imparte.
+
+<!-- AUTO:unidades inicio -->
+| UD | Título | RA | Horas | Semanas | Fechas |
+|---|---|---|---|---|---|
+| UD00 | Presentación y curso rápido de Docker | — | 6 | 1-2 | 1 oct – 8 oct |
+| UD01 | Caracterización de sistemas de IA | RA1 | 12 | 3-6 | 12 oct – 6 nov |
+| UD02 | Modelos de IA y resolución de problemas | RA2 | 12 | 7-10 | 9 nov – 3 dic |
+| UD05 | Sistemas expertos | RA5 | 12 | 11-15 | 7 dic – 14 ene |
+| UD03 | Procesamiento del Lenguaje Natural | RA3 | 12 | 16-19 | 18 ene – 11 feb |
+| UD04 | Análisis de sistemas robotizados | RA4 | 12 | 20-23 | 15 feb – 11 mar |
+| UD06 | Principios legales y éticos de la IA | RA6 | 6 | 24-28 | 15 mar – 23 abr |
+| UD07 | **Proyecto integrador (común al curso)** | RA7 | 15 | 29-33 | 26 abr – 28 may |
+| Cierre | Presentaciones RA7 y prueba ordinaria (solo RA no superados) | — | 3 | 34-35 | 1 jun – 18 jun |
+| | **Total** | | **90** | **30** nominales<br/>33 con clase | |
+<!-- AUTO:unidades fin -->
+
+!!! note "Por qué este orden"
+    La UD05 (sistemas expertos) se imparte justo después de la UD02 porque se construye sobre las
+    reglas y la lógica difusa que se ven allí. Y la UD06 (ética) ocupa el tramo de Fallas y Pascua,
+    el más fragmentado del curso, porque es la unidad con menos carga de laboratorio.
+
+    El **contenido del módulo acaba a finales de abril**. Después viene el **proyecto intermodular
+    (RA7)**, común a todo el curso de especialización: durante unas cinco semanas tu equipo trabaja
+    el proyecto en las horas de todos los módulos.
 
 ## 🎯 Resultados de Aprendizaje (RA)
 
-|         | **Descripción**                                              | **Unidades** | **Nota mínima** |    **Peso** |
-| ------- | ------------------------------------------------------------ | -----------: | --------------: | ----------: |
-| **RA1** | 🔍 Caracteriza sistemas de Inteligencia Artificial relacionándolos con la mejora de la eficiencia operativa de las organizaciones y empresas. |            1 |           **5** |  **10,00%** |
-| **RA2** | ⚙️ Utiliza modelos de sistemas de Inteligencia Artificial implementando sistemas de resolución de problemas. |            1 |           **5** |  **10,00%** |
-| **RA3** | 💬 Relaciona el procesamiento de lenguaje natural con sus aplicaciones determinando su potencial e identificando sus limitaciones. |            3 |           **5** |  **15,00%** |
-| **RA4** | 🤖 Analiza sistemas robotizados, evaluando opciones de diseño e implementación. |            4 |           **5** |  **15,00%** |
-| **RA5** | 🧠 Aplica sistemas expertos evaluando la influencia de los controladores inteligentes en el comportamiento del sistema. |            2 |           **5** |  **15,00%** |
-| **RA6** | ⚖️ Aplica principios legales y éticos al desarrollo de la Inteligencia Artificial integrándolos como parte del proceso. |            5 |           **5** |  **15,00%** |
-| RA7     | Proyecto intermodular                                        |              |           **5** |  **20,00%** |
-|         |                                                              |              |                 | **100,00%** |
+<!-- AUTO:ra inicio -->
+| RA | CE | Enunciado |
+|---|---|---|
+| **RA1** | 4 | Caracteriza sistemas de Inteligencia Artificial relacionándolos con la mejora de la eficiencia operativa de las organizaciones y empresas. |
+| **RA2** | 6 | Utiliza modelos de sistemas de Inteligencia Artificial implementando sistemas de resolución de problemas. |
+| **RA3** | 7 | Relaciona el procesamiento de lenguaje natural con sus aplicaciones determinando su potencial e identificando sus limitaciones. |
+| **RA4** | 4 | Analiza sistemas robotizados, evaluando opciones de diseño e implementación. |
+| **RA5** | 5 | Aplica sistemas expertos evaluando la influencia de los controladores inteligentes en el comportamiento del sistema. |
+| **RA6** | 6 | Aplica principios legales y éticos al desarrollo de la Inteligencia Artificial integrándolos como parte del proceso. |
+| **RA7** | 9 | Desarrolla un proyecto integrador que combine técnicas de IA y análisis de datos masivos para resolver un problema real o simulado, gestionando todo el ciclo de vida del proyecto. |
+<!-- AUTO:ra fin -->
 
-## 📜 Legislación vigente
+## 📊 Pesos y criterios de calificación
 
-- 📄 [RD 497/2024 21-05-2024](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-10682)
-- 📄 [RD 279/2021 20-04-2021](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2021-7686)
-- 🕒 [Horario](https://ceice.gva.es/va/web/formacion-profesional/publicador-de-cursos-especialitzacio/-/asset_publisher/MRg14dkTb9DQ/content/inteligencia-artificial-y-big-data?_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_MRg14dkTb9DQ_assetEntryId=390408782&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_MRg14dkTb9DQ_redirect=https%3A%2F%2Fceice.gva.es%2Fes%2Fweb%2Fformacion-profesional%2Fpublicador-de-cursos-especialitzacio%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_MRg14dkTb9DQ%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_MRg14dkTb9DQ_cur%3D0%26p_r_p_resetCur%3Dfalse%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_MRg14dkTb9DQ_assetEntryId%3D390408782)
+<!-- AUTO:pesos inicio -->
+| RA | Peso en la nota del módulo |
+|---|---|
+| RA1 | 13,33 % |
+| RA2 | 13,33 % |
+| RA3 | 13,33 % |
+| RA4 | 13,33 % |
+| RA5 | 13,33 % |
+| RA6 | 13,33 % |
+| RA7 | 20 % |
+| | **100 %** |
+
+Cada RA se califica 0-10 = **40 %** tareas, talleres y ejercicios + **60 %** prueba escrita. Para superar el módulo hace falta **≥5 en cada RA**.
+<!-- AUTO:pesos fin -->
 
 ## 📝 Evaluación
 
-- 🔍 La evaluación del módulo se realizará con base en los **Resultados de Aprendizaje (RA)** definidos en el currículo del Curso de especialización de Inteligencia Artificial y Big Data. Cada RA estará asociado a **criterios de evaluación** (**CE**) que serán los que determinen el grado de adquisición de las competencias previstas para el módulo.
+- 🔍 La evaluación del módulo se realiza sobre los **Resultados de Aprendizaje (RA)** del currículo.
+  Cada RA tiene asociados sus **criterios de evaluación (CE)**, que son los que determinan el grado
+  de adquisición de las competencias del módulo.
 
-- 📊 La nota final del módulo se obtendrá a partir de la ponderación de los **RA**, como se mencionó anteriormente. Cada **RA** será evaluado de forma independiente, con calificaciones en una escala de 0 a 10.
+- 📊 La nota final del módulo sale de la ponderación de los RA. Cada RA se evalúa de forma
+  independiente, con calificación de 0 a 10.
 
-- ✅ El alumno debe obtener al menos una nota de **5** en cada **RA** para aprobar el módulo.
+- 📝 Cada RA tiene **una prueba en Moodle** al cerrar su unidad: unas **15 preguntas de test** de
+  cuatro opciones, en las que una respuesta incorrecta **descuenta un tercio** del valor de la
+  pregunta, más **2 preguntas de desarrollo**. Las preguntas se extraen al azar, así que cada
+  alumno recibe un examen distinto.
 
-- 🔄 Si un alumno obtiene menos de un **5** en algún RA, tendrá que recuperarlo mediante las actividades/exámenes de recuperación diseñadas específicamente para esos resultados de aprendizaje.
+- ✅ Hay que obtener al menos un **5 en cada RA** para aprobar el módulo.
 
-  > ⚠️ **IMPORTANTE:**
-  >
-  > - ❗ Aprobar las distintas evaluaciones no garantiza aprobar el curso.
-  > - 📌 Puedes aprobar (y con muy buena nota) las dos evaluaciones, tener un `RA` suspendido y por tanto suspender el módulo.
+- 🔄 Si un RA queda por debajo de 5, se recupera con las actividades y pruebas diseñadas para **ese**
+  resultado de aprendizaje. La convocatoria ordinaria de junio se dirige **solo a los RA no
+  superados**: no hay prueba global del módulo.
+
+- 🐳 La **UD00** (presentación y Docker) **no se califica**: el entorno de trabajo es un requisito.
+  Su taller se entrega y se marca como **hecho / no hecho**, y hace falta tenerlo para poder hacer
+  las prácticas de la UD02.
+
+!!! warning "Importante"
+    - ❗ Aprobar las evaluaciones parciales **no garantiza** aprobar el módulo.
+    - 📌 Puedes aprobar las dos evaluaciones con buena nota, tener **un solo RA suspendido** y
+      suspender el módulo.
+
+## 📜 Legislación vigente
+
+- 📄 [RD 279/2021, de 20 de abril](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2021-7686) — establece el curso de especialización y fija los **RA y CE** del módulo.
+- 📄 [RD 497/2024, de 21 de mayo](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2024-10682) — modifica determinados reales decretos de cursos de especialización.
+- 📄 [Decreto 95/2026, de 9 de junio (DOGV)](https://dogv.gva.es/datos/2026/06/25/pdf/2026_21170_es.pdf) — currículo en la Comunitat Valenciana: fija el módulo en **90 h**.
+- 🕒 [Horario y organización del curso (GVA)](https://ceice.gva.es/va/web/formacion-profesional/publicador-de-cursos-especialitzacio)

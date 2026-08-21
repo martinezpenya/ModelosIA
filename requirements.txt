@@ -14,3 +14,4 @@ mkdocs-extra-sass-plugin
 mkdocs-video
 livereload
 qrcode
+pyyaml
