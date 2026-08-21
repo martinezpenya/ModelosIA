@@ -199,6 +199,8 @@ evaluacion:
   peso_actividades: 40
   peso_prueba_escrita: 60
   nota_minima_por_ra: 5
+  # Orden 8/2025 art. 5.1, verificado en el PDF oficial: «entre 1 y 10, sin decimales».
+  escala_calificacion: 1 a 10, sin decimales
   pesos_ra:
     RA1: 13.33
     RA2: 13.33

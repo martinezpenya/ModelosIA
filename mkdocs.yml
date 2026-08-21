@@ -10,8 +10,8 @@ exclude_docs: |
   UD03/Presentacion/*.md
 
 nav:
+  - Información importante: index.md
   - UD00:
-    - Información importante: index.md
     - Presentación del módulo y curso rápido de Docker: UD00/UD00_ES.md
     - Ejercicios: UD00/UD00_Ejercicios.md
     - Talleres: UD00/UD00_Talleres.md

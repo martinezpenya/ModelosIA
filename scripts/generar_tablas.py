@@ -90,7 +90,8 @@ def tabla_pesos(d: dict) -> str:
         filas.append(f"| {ra} | {txt} % |")
     filas.append("| | **100 %** |")
     filas.append("")
-    filas.append(f"Cada RA se califica 0-10 = **{ev['peso_actividades']} %** tareas, talleres y "
+    filas.append(f"Cada RA se califica ({ev['escala_calificacion']}) = "
+                 f"**{ev['peso_actividades']} %** tareas, talleres y "
                  f"ejercicios + **{ev['peso_prueba_escrita']} %** prueba escrita. "
                  f"Para superar el módulo hace falta **≥{ev['nota_minima_por_ra']} en cada RA**.")
     return "\n".join(filas)
@@ -108,7 +109,8 @@ def tabla_ra_pesos(d: dict) -> str:
         filas.append(f"| **{r['id']}** | {r['ce']} | {enunciado} | **{minima}** | **{peso} %** |")
     filas.append("| | | | | **100 %** |")
     filas.append("")
-    filas.append(f"Cada RA se califica de 0 a 10: **{ev['peso_actividades']} %** tareas, talleres y "
+    filas.append(f"Cada RA se califica **{ev['escala_calificacion']}** "
+                 f"(Orden 8/2025, art. 5.1): **{ev['peso_actividades']} %** tareas, talleres y "
                  f"ejercicios + **{ev['peso_prueba_escrita']} %** prueba escrita. Para superar el "
                  f"módulo hace falta **{minima} o más en cada RA**.")
     return "\n".join(filas)

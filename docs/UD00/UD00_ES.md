@@ -108,15 +108,18 @@ Es transversal por dos razones:
 La evaluación se rige por la **Orden 8/2025** de la Comunitat Valenciana (modificada por la
 **Orden 5/2026**). Lo que debes saber desde el primer día:
 
+Los **pesos de cada RA, la nota mínima y el reparto 40/60** están en la
+[página de información importante](../index.md), que es la referencia única: si algún día cambian,
+cambian allí. Aquí van las reglas que conviene tener claras desde el primer día y que no dependen de
+los pesos:
+
 | Aspecto | Regla |
 |---|---|
-| Calificación por RA | Cada RA se califica de 1 a 10 (sin decimales) |
-| Superación del módulo | Se exige **cada RA ≥ 5** (criterio del centro, recogido en la programación didáctica) |
-| Composición de la nota de RA | 40 % tareas/talleres/ejercicios + 60 % prueba escrita |
-| Nota final del módulo | RA1-RA6 = 80 % (13,33 % cada uno) + RA7 = 20 % |
+| Calificación por RA | De **1 a 10, sin decimales** (art. 5.1) |
 | Evaluación continua | Se pierde al superar el **15 % de inasistencia** (asistencia ≥ 85 %) |
-| Evaluaciones parciales | Dos parciales informativos (fin del 1.er y 2.º trimestre) |
-| Recuperación | Programa de recuperación individual por cada RA no superado |
+| Evaluaciones parciales | Dos parciales **informativos** (fin del 1.er y 2.º trimestre) |
+| Recuperación | Programa individual por **cada RA no superado**; en junio, solo los RA pendientes |
+| Esta unidad (UD00) | **No se califica**: es requisito. El taller se marca hecho / no hecho |
 
 !!! warning "Asistencia"
     Si superas el **15 % de faltas** perderás la evaluación continua del módulo (art. 7.3 Orden

@@ -66,7 +66,7 @@ aprendizaje (UD05 es siempre RA5), no al orden en que se imparte.
 | **RA7** | 9 | Desarrolla un proyecto integrador que combine técnicas de IA y análisis de datos masivos para resolver un problema real o simulado, gestionando todo el ciclo de vida del proyecto. | **5** | **20 %** |
 | | | | | **100 %** |
 
-Cada RA se califica de 0 a 10: **40 %** tareas, talleres y ejercicios + **60 %** prueba escrita. Para superar el módulo hace falta **5 o más en cada RA**.
+Cada RA se califica **1 a 10, sin decimales** (Orden 8/2025, art. 5.1): **40 %** tareas, talleres y ejercicios + **60 %** prueba escrita. Para superar el módulo hace falta **5 o más en cada RA**.
 <!-- AUTO:ra_pesos fin -->
 
 ## 📝 Evaluación
@@ -76,7 +76,7 @@ Cada RA se califica de 0 a 10: **40 %** tareas, talleres y ejercicios + **60 %**
   de adquisición de las competencias del módulo.
 
 - 📊 La nota final del módulo sale de la ponderación de los RA. Cada RA se evalúa de forma
-  independiente, con calificación de 0 a 10.
+  independiente, con **calificación de 1 a 10, sin decimales** (Orden 8/2025, art. 5.1).
 
 - 📝 Cada RA tiene **una prueba en Moodle** al cerrar su unidad, con preguntas de test de cuatro
   opciones y preguntas de desarrollo. En las de test, una respuesta incorrecta **descuenta un
