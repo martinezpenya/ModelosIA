@@ -235,7 +235,6 @@ plugins:
             - 'UD00/assets/'
             - 'UD00/Presentacion/'
             - 'UD00/entorno/'
-            - 'UD00/notebooks/'
             - 'UD01/assets/IABDBotMaven.zip'
             - 'UD01/Presentacion/'
             - 'UD02/Presentacion/'
@@ -243,11 +242,10 @@ plugins:
             - 'UD02/docker-compose.yml'
             - 'UD03/Presentacion/'
             - 'UD04/Presentacion/'
-        #convert_iframe:
-        #    - src: IFRAME SRC
-        #      img: POSTER IMAGE URL
-        #      text: ALTERNATE TEXT
-        #    - src: ...
+        convert_iframe:
+            - src: 'https://martinezpenya.es/ModelosIA/UD00/Presentacion/UD00_1_ES.html'
+              img: 'https://martinezpenya.es/ModelosIA/assets/portada.png'
+              text: 'Ver la presentación interactiva de la UD00'
         #two_columns_level: 3
         #
         #render_js: true
