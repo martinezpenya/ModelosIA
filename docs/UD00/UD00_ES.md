@@ -1111,15 +1111,16 @@ CONTAINER ID   IMAGE            COMMAND          CREATED          STATUS        
 ## 16. Recursos
 
 - [Ejercicios de la unidad](UD00_Ejercicios.md)
-- [Talleres: verificación del entorno + contenedor de prácticas de IA](UD00_Talleres.md)
-### Notebook de la unidad
+- Talleres:
+    - [T01 · Verificación del entorno y primer contenedor](UD00_T01_Verificacion_entorno_ES.md)
+      — entregable, se marca **hecho / no hecho**
+    - [T02 · Contenedor de prácticas de IA](UD00_T02_Contenedor_practicas_ES.md) — de aula
+- **Notebooks de la unidad** — el nombre lo abre aquí mismo ya renderizado, el badge azul lo descarga
+  y el de Colab lo ejecuta en el navegador sin instalar nada:
 
-| Notebook | Descargar | Ejecutar |
-|---|---|---|
-| [Entorno Python para IA](notebooks/UD00_entorno_python_ia.ipynb) | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD00/notebooks/UD00_entorno_python_ia.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD00/notebooks/UD00_entorno_python_ia.ipynb){:target="_blank"} |
-
-El enlace del nombre abre el notebook **aquí mismo**, ya renderizado; el badge azul lo descarga y el
-de Colab lo ejecuta en el navegador sin instalar nada.
+    | Notebook | Descargar | Ejecutar |
+    |---|---|---|
+    | [Entorno Python para IA](notebooks/UD00_entorno_python_ia.ipynb) | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD00/notebooks/UD00_entorno_python_ia.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD00/notebooks/UD00_entorno_python_ia.ipynb){:target="_blank"} |
 
 ??? note "Referencias de la unidad"
     Documentación oficial de Docker:

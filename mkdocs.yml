@@ -14,7 +14,11 @@ nav:
   - UD00:
     - Presentación del módulo y curso rápido de Docker: UD00/UD00_ES.md
     - Ejercicios: UD00/UD00_Ejercicios.md
-    - Talleres: UD00/UD00_Talleres.md
+    - Talleres:
+      - T01 Verificación del entorno y primer contenedor: UD00/UD00_T01_Verificacion_entorno_ES.md
+      - T02 Contenedor de prácticas de IA: UD00/UD00_T02_Contenedor_practicas_ES.md
+    - Notebooks:
+      - Entorno Python para IA: UD00/notebooks/UD00_entorno_python_ia.ipynb
   - UD01:
     - Caracterización de sistemas y utilización de modelos de Inteligencia Artificial: UD01/UD01_ES.md
     - Diapositivas: UD01/diapositivas.md

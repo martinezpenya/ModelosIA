@@ -68,4 +68,4 @@
     Las soluciones no se publican: se corrigen y comentan en clase.
 
 ---
-[Volver a la UD00](UD00_ES.md) · [Talleres](UD00_Talleres.md)
+[Volver a la UD00](UD00_ES.md) · [Taller 1](UD00_T01_Verificacion_entorno_ES.md) · [Taller 2](UD00_T02_Contenedor_practicas_ES.md)
