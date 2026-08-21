@@ -12,8 +12,9 @@ exclude_docs: |
 nav:
   - UD00:
     - Información importante: index.md
-  - Docker:
-    - Introducción a docker: Docker/Docker.md
+    - Presentación del módulo y curso rápido de Docker: UD00/UD00_ES.md
+    - Ejercicios: UD00/UD00_Ejercicios.md
+    - Talleres: UD00/UD00_Talleres.md
   - UD01:
     - Caracterización de sistemas y utilización de modelos de Inteligencia Artificial: UD01/UD01_ES.md
     - Diapositivas: UD01/diapositivas.md
@@ -185,6 +186,11 @@ copyright: "© 2025 David Martínez licensed under CC BY-NC-SA 4.0"
 
 plugins:
     - mkdocs-video
+    - redirects:
+        redirect_maps:
+            # Docker pasa a formar parte de la UD00 (decisión 2026-08-20).
+            # La URL antigua queda redirigida para no romper enlaces ya indexados.
+            'Docker/Docker.md': 'UD00/UD00_ES.md'
     # - offline  # Comentado para permitir indexación SEO
     - search
     - git-revision-date-localized:
@@ -213,7 +219,9 @@ plugins:
         #    - 'release-notes/:changelog'
         #
         exclude_pages:
-            - 'Docker/assets/'
+            - 'UD00/assets/'
+            - 'UD00/entorno/'
+            - 'UD00/notebooks/'
             - 'UD01/assets/IABDBotMaven.zip'
             - 'UD01/Presentacion/'
             - 'UD02/Presentacion/'
