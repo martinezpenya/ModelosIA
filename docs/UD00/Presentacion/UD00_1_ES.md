@@ -153,8 +153,7 @@ ___
 * **Daemon** (`dockerd`): el servicio que las ejecuta — descarga imágenes, crea contenedores
 * **Registro** (Docker Hub): el almacén público de imágenes
 
-> Tú nunca hablas con el contenedor: hablas con el **daemon**. Sin permiso sobre su *socket*,
-> nada funciona.
+> Tú nunca hablas con el contenedor: hablas con el **daemon**. Sin permiso sobre su *socket*, nada funciona.
 ___
 
 ## El recorrido completo
@@ -208,8 +207,7 @@ docker image prune         # borrar las huérfanas, sin etiqueta
 docker image prune -a      # TODAS las que no use ningún contenedor
 ```
 
-> `prune -a` decide por ti: se lleva también las imágenes que construiste y no has publicado.
-> Mira antes con `docker images`.
+> `prune -a` decide por ti: se lleva también las imágenes que construiste y no has publicado. Mira antes con `docker images`.
 ___
 
 ## Volúmenes: que los datos sobrevivan
@@ -247,8 +245,7 @@ EXPOSE 8888
 CMD ["jupyter", "notebook", "--ip=0.0.0.0"]
 ```
 
-> Cada instrucción es una **capa** y las capas se **cachean**: por eso las dependencias van antes
-> que el código, para no reinstalarlas en cada cambio.
+> Cada instrucción es una **capa** y las capas se **cachean**: por eso las dependencias van antes que el código, para no reinstalarlas en cada cambio.
 ___
 
 ## Compose: describir en vez de recordar
