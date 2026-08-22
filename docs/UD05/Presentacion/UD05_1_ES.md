@@ -36,13 +36,13 @@ section {
  }
 </style>
 
-![h:300 center](../../UD02/assets/cover.png)
-# **UD02: Sistemas Basados en el Conocimiento**
+![h:300 center](../../UD05/assets/cover.png)
+# **UD05: Sistemas Basados en el Conocimiento**
 #### Modelos de Inteligencia Artificial
 ###### version: 2025-11-18
 ___
 <!-- footer: d.martinezpena@edu.gva.es -->
-<!-- header: Modelos de Inteligencia Artificial 25-26 (UD02_1)-->
+<!-- header: Modelos de Inteligencia Artificial 25-26 (UD05_1)-->
 # ¿Qué veremos?
 1. IA Simbolica
 2. Sistemas Expertos
@@ -75,7 +75,7 @@ ___
 - Muchas veces definimos el conocimiento en relación a conceptos similares.
 - La jerarquía del conocimiento o jerarquía de DIKW es un modelo que muestra la relación entre _datos_, _información_, _conocimiento_ y _sabiduría_.
 
-![bg fit](../../UD02/assets/DIKW_Pyramid.png)
+![bg fit](../../UD05/assets/DIKW_Pyramid.png)
 
 ---
 
@@ -122,7 +122,7 @@ ___
 
 ## Continuum del conocimiento
 
-![bg fit](../../UD02/assets/knowledge-spectrum.png)
+![bg fit](../../UD05/assets/knowledge-spectrum.png)
 
 ---
 
@@ -255,7 +255,7 @@ Así como ver este [vídeo](https://youtu.be/MLe9flR4PsA) corto en el que se hac
 
 ## Sistemas de razonamiento impreciso
 
-![bg opacity](../../UD02/assets/1280px-Fuzzy_logic_temperature_en.svg.png)
+![bg opacity](../../UD05/assets/1280px-Fuzzy_logic_temperature_en.svg.png)
 
 ---
 
@@ -302,7 +302,7 @@ section {
 
 ---
 
-![bg fit](../../UD02/assets/1%20QgzU5OF0uGucga5d1nzdig.webp)
+![bg fit](../../UD05/assets/1%20QgzU5OF0uGucga5d1nzdig.webp)
 
 ---
 
@@ -412,7 +412,7 @@ section {
 
 ### Funciones de relevancia (I)
 
-![w:800](../../UD02/assets/membership_fuctions.png)
+![w:800](../../UD05/assets/membership_fuctions.png)
 
 - Las más utilizadas son las **funciones trapezoidales** y las **funciones triangulares**.
 - Las sinusoidales son útiles para representar **periodos**.
@@ -442,7 +442,7 @@ Utilizaremos funciones triangulares para representar las variables de entrada y 
   - **Medio**: $[0, 10]$
   - **Buena**: $[5, 10]$
 
-![bg right:33% fit](../../UD02/assets/plot_tipping_problem_newapi_2.png)
+![bg right:33% fit](../../UD05/assets/plot_tipping_problem_newapi_2.png)
 
 ---
 
@@ -455,7 +455,7 @@ Utilizaremos funciones triangulares para representar las variables de entrada y 
   - **Media**: $[0, 25]$
   - **Alta**: $[13, 25]$
 
-![bg right:35% fit](../../UD02/assets/plot_tipping_problem_newapi_3.png)
+![bg right:35% fit](../../UD05/assets/plot_tipping_problem_newapi_3.png)
 
 ---
 
@@ -474,7 +474,7 @@ section {
 - **IF** (Calidad del servicio es **media**) **THEN** (Propina es **media**)
 - **IF** (Calidad del servicio es **alta** o Comida es **buena**) **THEN** (Propina es **alta**)
 
-![bg right:40% fit](../../UD02/assets/plot_tipping_problem_newapi_4.png)
+![bg right:40% fit](../../UD05/assets/plot_tipping_problem_newapi_4.png)
 
 ---
 
@@ -486,4 +486,4 @@ section {
 - Calidad de la comida: **6.5**
 - Propina: **19,24 €**
 
-![bg right fit](../../UD02/assets/plot_tipping_problem_newapi_5.png)
+![bg right fit](../../UD05/assets/plot_tipping_problem_newapi_5.png)

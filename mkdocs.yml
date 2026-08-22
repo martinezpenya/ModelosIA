@@ -10,8 +10,9 @@ hooks:
 exclude_docs: |
   UD00/Presentacion/*.md
   UD01/Presentacion/*.md
-  UD02/Presentacion/*.md
+  UD05/Presentacion/*.md
   UD03/Presentacion/*.md
+  UD06/Presentacion/*.md
 
 nav:
   - Información importante: index.md
@@ -36,11 +37,11 @@ nav:
       - T01 Java/Python: UD01/UD01_T01_IDE_ES.md
       - T02 GitHub: UD01/UD01_T02_GitHub.md
       - T03 Markdown: UD01/UD01_T03_Markdown.md
-  - UD02:
-    - Sistemas basados en el conocimiento: UD02/UD02_ES.md
-    - Diapositivas: UD02/UD02_Diapositivas.md
-    - Actividades Guiadas: UD02/UD02_ActividadesGuiadas.md
-    - Actividades Entregables: UD02/UD02_ActividadesEntregables.md
+  - UD05:
+    - Sistemas basados en el conocimiento: UD05/UD05_ES.md
+    - Diapositivas: UD05/UD05_Diapositivas.md
+    - Actividades Guiadas: UD05/UD05_ActividadesGuiadas.md
+    - Actividades Entregables: UD05/UD05_ActividadesEntregables.md
   - UD03:
     - Procesamiento del Lenguaje Natural: UD03/UD03_ES.md
     - Diapositivas: UD03/UD03_Diapositivas.md
@@ -51,11 +52,20 @@ nav:
     - Diapositivas: UD04/UD04_Diapositivas.md
     - Actividades Guiadas: UD04/UD04_ActividadesGuiadas.md
     - Actividades Entregables: UD04/UD04_ActividadesEntregables.md
-  - UD05:
-    - Aplicación de principios legales y éticos de la IA: UD05/UD05_ES.md
-    - Diapositivas: UD05/UD05_Diapositivas.md
-    - Actividades Guiadas: UD05/UD05_ActividadesGuiadas.md
-    - Actividades Entregables: UD05/UD05_ActividadesEntregables.md
+  - UD06:
+    - Aplicación de principios legales y éticos de la IA: UD06/UD06_ES.md
+    - Diapositivas: UD06/UD06_Diapositivas.md
+    - Ejercicios: UD06/UD06_Ejercicios.md
+    - Talleres:
+      - T01 Análisis de un caso ético: UD06/UD06_T01_Analisis_caso_etico_ES.md
+      - T02 Auditoría de sesgos con Fairlearn: UD06/UD06_T02_Auditoria_sesgos_ES.md
+    - Debates:
+      - D01 Límites éticos de la IA: UD06/UD06_D01_Debate_limites_eticos_ES.md
+      - D02 El algoritmo contra el crimen: UD06/UD06_D02_Debate_algoritmo_crimen_ES.md
+    - Notebooks:
+      - N01 Detección y corrección de sesgos: UD06/notebooks/UD06_N01_sesgos_ia.ipynb
+    - Actividades Guiadas: UD06/UD06_ActividadesGuiadas.md
+    - Actividades Entregables: UD06/UD06_ActividadesEntregables.md
   - Sobre mi: sobremi.md
   - Fuentes de información: fuentes.md
 
@@ -199,7 +209,7 @@ plugins:
     # Render local de notebooks (decisión 2026-08-20: render local + enlace a Colab).
     # Acotado a las unidades ya fusionadas; se amplía el patrón al fusionar cada una.
     - mkdocs-jupyter:
-        include: ["UD00/notebooks/*.ipynb"]
+        include: ["UD00/notebooks/*.ipynb", "UD06/notebooks/*.ipynb"]
         include_source: true
         execute: false
         ignore_h1_titles: true
@@ -208,6 +218,13 @@ plugins:
             # Docker pasa a formar parte de la UD00 (decisión 2026-08-20).
             # La URL antigua queda redirigida para no romper enlaces ya indexados.
             'Docker/Docker.md': 'UD00/UD00_ES.md'
+            # Renumeración a «UDxx = RA» (2026-08-22): la UD02 antigua (RA5) pasa a UD05.
+            # OJO: la UD05 antigua (RA6, ética) pasa a UD06, pero NO se puede redirigir:
+            # 'UD05/*' lo ocupa ahora RA5 y el plugin sobrescribiría la página real sin avisar.
+            'UD02/UD02_ES.md': 'UD05/UD05_ES.md'
+            'UD02/UD02_Diapositivas.md': 'UD05/UD05_Diapositivas.md'
+            'UD02/UD02_ActividadesGuiadas.md': 'UD05/UD05_ActividadesGuiadas.md'
+            'UD02/UD02_ActividadesEntregables.md': 'UD05/UD05_ActividadesEntregables.md'
     # - offline  # Comentado para permitir indexación SEO
     - search
     - git-revision-date-localized:
@@ -241,15 +258,20 @@ plugins:
             - 'UD00/entorno/'
             - 'UD01/assets/IABDBotMaven.zip'
             - 'UD01/Presentacion/'
-            - 'UD02/Presentacion/'
-            - 'UD02/Dockerfile'
-            - 'UD02/docker-compose.yml'
+            - 'UD05/Presentacion/'
+            - 'UD06/Presentacion/'
+            - 'UD06/assets/'
+            - 'UD05/Dockerfile'
+            - 'UD05/docker-compose.yml'
             - 'UD03/Presentacion/'
             - 'UD04/Presentacion/'
         convert_iframe:
             - src: 'https://martinezpenya.es/ModelosIA/UD00/Presentacion/UD00_1_ES.html'
               img: 'docs/UD00/Presentacion/img/poster-slide1.png'
               text: 'Ver la presentación interactiva de la UD00'
+            - src: 'https://martinezpenya.es/ModelosIA/UD06/Presentacion/UD06_1_ES.html'
+              img: 'docs/UD06/Presentacion/img/poster-slide1.png'
+              text: 'Ver la presentación interactiva de la UD06'
         #two_columns_level: 3
         #
         #render_js: true

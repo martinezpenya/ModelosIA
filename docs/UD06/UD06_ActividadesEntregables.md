@@ -1,0 +1,119 @@
+# UD06 · Actividades entregables
+
+!!! important "Qué cuenta y cuánto"
+    El RA6 se califica con **40 % de actividades + 60 % de prueba escrita**, y hay que superar el RA
+    con **≥ 5**. Esta página resume qué se entrega, cuándo y con qué se corrige.
+
+## Resumen de entregas
+
+| # | Actividad | Cuándo | Qué se entrega | Cómo se corrige |
+|---|---|---|---|---|
+| 1 | [**Debate 1** · Límites éticos de la IA](UD06_D01_Debate_limites_eticos_ES.md) | Sesión 2 | Participación en el aula **+** reflexión escrita de máx. **300 palabras** en Moodle | [Rúbrica de debate](#rubrica-de-los-debates), 100 puntos escalados sobre 10 |
+| 2 | [**Debate 2** · El algoritmo contra el crimen](UD06_D02_Debate_algoritmo_crimen_ES.md) | Sesión 4 | Participación en el aula **+** reflexión escrita de máx. **300 palabras** en Moodle | La **misma** rúbrica |
+| 3 | [**Taller 1** · Análisis de un caso ético](UD06_T01_Analisis_caso_etico_ES.md) | Sesión 3 | Informe de 2-3 páginas con las cinco tablas y las respuestas | Corrección del profesor |
+| 4 | [**Taller 2** · Auditoría de sesgos con Fairlearn](UD06_T02_Auditoria_sesgos_ES.md) | Sesión 3 | Informe con las métricas antes/después y las seis respuestas | Corrección del profesor |
+| 5 | [**Notebook N01** · Detección de sesgos](notebooks/UD06_N01_sesgos_ia.ipynb) | Sesión 3 | Notebook con las celdas de actividad resueltas | Corrección del profesor |
+| — | [Tertulia de ciencia-ficción](#tertulia-de-ciencia-ficcion) | Libre | Voluntaria, de ampliación | Sin nota |
+
+!!! warning "Los debates no se recuperan repitiéndolos"
+    **70 de los 100 puntos** de la rúbrica se observan **en directo**: dominio del rol,
+    argumentación, participación y empatía. Si faltas a la sesión, esa parte no se puede reproducir
+    después. Los otros 30 son la reflexión escrita, que sí se entrega fuera de clase.
+
+## Rúbrica de los debates
+
+Es la **misma para los dos debates**. Suma **100 puntos**, que se escalan a la nota sobre 10. También
+se aplica a quien tenga el papel de **Observador Crítico**: en ese caso, el criterio 1 se lee como
+coherencia de la postura personal defendida, no como fidelidad a un personaje.
+
+### Criterio 1 · Dominio del rol (0-20)
+
+| Puntos | Nivel |
+|---|---|
+| 0 | No participa |
+| 5 | No logra mantener el rol o ignora las consignas asignadas |
+| 10 | Se desvía ocasionalmente del rol o repite ideas sin profundizar |
+| 15 | Sigue el rol, pero con algunos argumentos genéricos o poco desarrollados |
+| 20 | Defiende su rol con consistencia y profundidad, usando lenguaje y ejemplos específicos del personaje |
+
+### Criterio 2 · Argumentación ética (0-20)
+
+| Puntos | Nivel |
+|---|---|
+| 0 | No participa |
+| 5 | Argumentos confusos o irrelevantes al tema |
+| 10 | Argumentos superficiales o repetitivos, sin referencias éticas claras |
+| 15 | Argumentos válidos, pero con poca conexión con marcos éticos |
+| 20 | Argumentos sólidos, vinculados a principios éticos (justicia, privacidad, responsabilidad) |
+
+### Criterio 3 · Participación activa (0-15)
+
+| Puntos | Nivel |
+|---|---|
+| 0 | No participa |
+| 3 | Interrumpe sin aportar al debate |
+| 7 | Interviene poco y solo cuando se le solicita |
+| 11 | Participa, pero con contribuciones esporádicas o predecibles |
+| 15 | Interviene con frecuencia y enriquece el debate con preguntas o contraargumentos |
+
+### Criterio 4 · Empatía y perspectiva (0-15)
+
+| Puntos | Nivel |
+|---|---|
+| 0 | No participa |
+| 3 | Rechaza abiertamente el rol o se burla de la postura asignada |
+| 7 | Muestra resistencia a defender el rol o lo hace de forma mecánica |
+| 11 | Reconoce la perspectiva del rol, pero sin profundizar en sus motivaciones |
+| 15 | Demuestra comprensión genuina de la postura asignada, aunque difiera de la propia |
+
+### Criterio 5 · Reflexión escrita (0-30)
+
+| Puntos | Nivel |
+|---|---|
+| 0 | No entrega |
+| 2 | La reflexión es irrelevante |
+| 10 | Descripción superficial, sin conexión con el debate |
+| 20 | Reflexión clara, pero con poco análisis personal o ético |
+| 30 | Escrito reflexivo que analiza contradicciones, aprendizajes y dilemas éticos |
+
+!!! tip "Cómo usar esta rúbrica antes del debate, no después"
+    Léela **la víspera**. Tres decisiones que puedes tomar de antemano y que valen puntos:
+
+    1. Prepara **una frase de apertura desde el rol** («Como… sostengo que…»): eso es el criterio 1.
+    2. Ancla cada argumento en **un principio ético con nombre** —justicia, privacidad,
+       responsabilidad, transparencia— y, si puedes, en un dato del §9: eso es el criterio 2.
+    3. Anota durante el debate **una contradicción** que detectes en otro rol o en el tuyo: eso es lo
+       que separa un 20 de un 30 en el criterio 5.
+
+## Tertulia de ciencia-ficción
+
+Actividad **voluntaria de ampliación**, sin nota. La ciencia-ficción lleva décadas planteando los
+dilemas de esta unidad antes de que fueran técnicamente posibles, y sirve para llegar al debate con
+ejemplos que todo el mundo reconoce.
+
+Elige **una** obra, míralas o léela, y prepara tres minutos: qué dilema plantea, con qué apartado de
+la teoría se corresponde y si lo que describe ya es posible hoy.
+
+| Obra | Año | Temas | Apartado |
+|---|---|---|---|
+| **Black Mirror** (serie) | 2011– | Privacidad y datos personales («Nosedive», «The Entire History of You»); responsabilidad y rendición de cuentas («White Bear», «Hated in the Nation») | §5, §6.2 |
+| **Westworld** (serie) | 2016-2022 | Autonomía y control humano; conciencia y moralidad de crear seres conscientes | §4.3, FAQ de derechos de los robots |
+| **Person of Interest** (serie) | 2011-2016 | Vigilancia masiva y prevención de delitos; supervisión humana de un sistema autónomo | §5.5, §9.4 |
+| **Years and Years** (serie) | 2019 | Vigilancia masiva y autoritarismo digital: reconocimiento facial y crédito social | §5.5, §6.1 (usos prohibidos) |
+| **Cassandra** (serie) | 2025 | Un asistente doméstico con IA diseñado en los años 60: problemas de diseño y de convivencia cotidiana | §7.3, §7.4 |
+| **Ex Machina** | 2014 | Transparencia y explicabilidad; sesgos y dinámicas de poder entre creador y criatura | §6.3, §9 |
+| **Her** | 2013 | Privacidad en la interacción con una IA; responsabilidad emocional | §5, §9.6 |
+| **Minority Report** | 2002 | Predicción del delito y precrimen; libertad frente a determinismo | **§9.4** |
+| **The Matrix** | 1999 | Control y manipulación de la realidad; impacto social y económico | §4.5, §7.4 |
+| **El hombre bicentenario** | 1999 | Derechos de las IA; identidad y autonomía | FAQ de derechos de los robots |
+| **1984**, de George Orwell (novela) | 1949 | Vigilancia y control totalitario; manipulación de la información | §5.5 |
+
+!!! tip "La pregunta que hace interesante la tertulia"
+    No es «¿esto podría pasar?». Es **«¿qué parte de esto ya está pasando, y con qué nombre técnico
+    lo llamamos en esta unidad?»**. *Minority Report* es puntuación de riesgo (§9.4). *Nosedive* es
+    puntuación social, que el AI Act **prohíbe** (§6.1). *Years and Years* es reconocimiento facial
+    masivo, también prohibido. La ficción envejeció; el temario, no.
+
+---
+[Volver a la UD06](UD06_ES.md) · [Actividades guiadas](UD06_ActividadesGuiadas.md) ·
+[Ejercicios](UD06_Ejercicios.md)
