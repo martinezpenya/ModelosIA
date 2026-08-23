@@ -1,7 +1,5 @@
 # Caracterización de sistemas y utilización de modelos de Inteligencia Artificial
 
-![type:video](assets/UD01_IA_El_Siguiente_Capitulo.mp4)
-
 ## Fundamentos de los Sistemas Inteligentes
 
 ### Definición de Inteligencia Artificial (IA)

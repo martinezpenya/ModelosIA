@@ -882,7 +882,7 @@ docker load -i fichero.tar
   en **90 horas** en la Comunitat Valenciana.
 - El módulo 5071 desarrolla **6 RA** más el **RA7 de proyecto integrador transversal** (común a todo
   el curso, semanas 25-29, nota consensuada).
-- Para superar el módulo hay que alcanzar **cada RA ≥ 5**; la nota de cada RA combina **40 % tareas +
+- **La normativa** exige alcanzar **todos los RA** del módulo; el centro lo concreta en **cada RA ≥ 5**. La nota de cada RA combina **40 % tareas +
   60 % prueba escrita**; se pierde la evaluación continua superando el **15 % de inasistencia**.
 - El entorno de trabajo usa **Aules** (Moodle), la web del curso, **Python + Jupyter** y **Docker**.
 - Un **contenedor** es una instancia ejecutable de una **imagen**; Docker aporta aislamiento por
@@ -1144,7 +1144,10 @@ CONTAINER ID   IMAGE            COMMAND          CREATED          STATUS        
 - **Tarea de la unidad** (40 % de la nota del RA al que se asocia): entregar el informe de los
   talleres 1 y 2 en Moodle.
 - **Evaluación inicial**: diagnóstica, sin nota, antes del segundo mes lectivo.
-- Criterio general: para superar el módulo hay que superar **cada RA con ≥ 5**.
+- **La normativa exige alcanzar todos los RA** del módulo para superarlo (art. 5.1 de la Orden
+  8/2025: la calificación del módulo está *«en función de la consecución de los RA»*; y las
+  Instrucciones 26-27, que impiden calificar positivamente un módulo con RA no superados). El
+  centro concreta ese mandato exigiendo **≥ 5 en cada RA**.
 
 ## 18. Recuperación
 

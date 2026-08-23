@@ -1,4 +1,4 @@
-﻿---
+---
 marp: true
 ---
 <!--
@@ -36,454 +36,858 @@ section {
  }
 </style>
 
-![h:300 center](../../UD05/assets/cover.png)
-# **UD05: Sistemas Basados en el Conocimiento**
+![h:300 center](../assets/cover.png)
+# **UD05: Sistemas expertos y controladores inteligentes**
 #### Modelos de Inteligencia Artificial
-###### version: 2025-11-18
-___
+###### version: 2026-08-23
+
+---
 <!-- footer: d.martinezpena@edu.gva.es -->
-<!-- header: Modelos de Inteligencia Artificial 25-26 (UD05_1)-->
+<!-- header: Modelos de Inteligencia Artificial 26-27 (UD05_1)-->
+<style scoped>section { font-size: 30px; }</style>
+
 # ¿Qué veremos?
-1. IA Simbolica
-2. Sistemas Expertos
-3. Sistemas híbridos Reglas/Datos
-4. Sistemas de razonamiento impreciso
-___
-## Inteligencia artificial simbólica
 
-- **IA simbólica** o **IA basada en conocimiento**:
-  - Extraemos conocimiento de expertos y lo representamos de una forma que las máquinas puedan entender.
-  - Utilizamos este conocimiento para:
-    - Resolver problemas automáticamente.
-    - Explicar el razonamiento de la máquina.
-    - Aprender nuevas cosas.
-    - Mejorar el conocimiento existente.
+1. Arquitectura y dinámica de un sistema experto
+2. Estructuras de representación del conocimiento
+3. Representar y simular con `experta`
+4. Sistemas híbridos reglas/datos
+5. Razonamiento impreciso: lógica difusa
+6. Variación de características y dinámica
+7. Estrategias de control
+8. Controladores inteligentes
+9. Aplicaciones y tendencias
+
+---
+<style scoped>section { font-size: 26px; }</style>
+
+## RA5 y sus criterios de evaluación
+
+> **RA5** — Aplica sistemas expertos evaluando la influencia de los controladores inteligentes en el comportamiento del sistema.
+
+| CE | Criterio | Dónde |
+|---|---|---|
+| **a** | Dinámica y estructuras elementales | §1-2 |
+| **b** | Representar y simular comportamientos de ámbitos diversos | §3-5 |
+| **c** | Cómo influye la variación de características en la dinámica | §6 |
+| **d** | Estrategias de control: objetivos y especificaciones | §7 |
+| **e** | Relacionar controladores inteligentes con el comportamiento | §8 |
+
+---
+<style scoped>section { font-size: 25px; }</style>
+
+## Al terminar la unidad serás capaz de…
+
+- **Situar** el conocimiento en la jerarquía DIKW y **describir** la arquitectura de un sistema experto.
+- **Diferenciar** los modos de representación: reglas, marcos, lógica, ontologías, redes semánticas.
+- **Representar y simular** un comportamiento con `experta`, en un dominio real.
+- **Combinar** reglas con datos cuando el conocimiento experto no basta.
+- **Aplicar** lógica difusa a un problema con incertidumbre.
+- **Explicar** cómo influye variar reglas, hechos y umbrales (sensibilidad / robustez).
+- **Desarrollar** estrategias de control con sus especificaciones.
+- **Relacionar** los controladores inteligentes con el comportamiento, frente a un PID.
+
+---
+<!-- _class: lead -->
+
+# 1. Arquitectura y dinámica
+
+### del sistema experto
+
+###### RA5-a
 
 ---
 
-## Representación del conocimiento
+## Del dato al conocimiento
 
-- Conocimiento vs datos vs información:
-  - **Datos**: Hechos o valores.
-  - **Información**: Datos con significado.
-  - **Conocimiento**: Información con significado y estructura.
+- Antes de representarlo hay que **distinguirlo de sus vecinos**.
+- La jerarquía **DIKW** los ordena: *Data, Information, Knowledge, Wisdom*.
+- No es filosofía: marca **qué guarda** un sistema experto.
 
-> El conocimiento es un conjunto de información estructurada e interrelacionada que permite a un agente realizar tareas.
-
----
-## Jerarquía del conocimiento (I)
-- Muchas veces definimos el conocimiento en relación a conceptos similares.
-- La jerarquía del conocimiento o jerarquía de DIKW es un modelo que muestra la relación entre _datos_, _información_, _conocimiento_ y _sabiduría_.
-
-![bg fit](../../UD05/assets/DIKW_Pyramid.png)
+![bg right:38% fit](../assets/DIKW_Pyramid.png)
 
 ---
+<style scoped>section { font-size: 26px; }</style>
 
-## Jerarquía del conocimiento (II)
+## La jerarquía DIKW
 
-- **Datos** (**D**ata): Hechos o valores registrados en un soporte físico. Es independiente del agente y puede ser interpretado de diferentes maneras.
-
-  - Ejemplo: _"Un reloj inteligente registra la temperatura corporal de la persona."_
-
-- **Información** (**I**nformation): Es como los datos son interpretados por un agente. Es subjetiva y depende del agente.
-  - Ejemplo: _"La temperatura corporal de la persona es 37ºC"_
+| Nivel | Qué es | Ejemplo |
+|---|---|---|
+| **Datos** | Hechos registrados, independientes de quien los lee | «Un reloj registra la temperatura corporal» |
+| **Información** | Los datos interpretados por un agente; subjetiva | «La temperatura es 37 ºC» |
+| **Conocimiento** | Información integrada en un modelo del mundo | «Si supera 37 ºC, tiene fiebre» |
+| **Sabiduría** | Meta-conocimiento: cuándo y cómo aplicarlo | «Si tiene fiebre, debe tomar paracetamol» |
 
 ---
 
-## Jerarquía del conocimiento (III)
+## Por qué importa la distinción
 
-- **Conocimiento** (**K**nowledge): Es información integrada en nuestro modelo del mundo. Depende del agente y de sus conocimientos previos.
-
-  - Ejemplo: _"Si la temperatura es superior a 37ºC, entonces la persona tiene fiebre"_
-
-- **Sabiduría** (**W**isdom): Representa el meta-conocimiento: conocimiento sobre cómo y cuándo aplicar el conocimiento.
-  - Ejemplo: _"Si la persona tiene fiebre, entonces debe tomar paracetamol"_
+- Un sistema experto **no almacena datos ni información**: almacena **conocimiento** (reglas).
+- Los más avanzados guardan algo de **sabiduría**: metarreglas que deciden cuándo aplicar otras reglas (el *control de meta* del §7).
+- **El error más común al empezar**: acumular datos en vez de codificar reglas.
 
 ---
 
-## Representación del conocimiento (I)
+## ¿Qué es un sistema experto?
 
-- Es la forma en la que representamos el conocimiento para que las máquinas puedan entenderlo.
-- Es uno de los problemas fundamentales de la inteligencia artificial.
-- Se debe representar de forma que:
-  - Sea **entendible** para las máquinas.
-  - Sea **útil** para resolver problemas.
-  - Sea **eficiente** para ser procesado por las máquinas.
+- Programa que **emula el razonamiento de un experto humano** en un dominio concreto.
+- Codifica su conocimiento en una **base de conocimiento** y lo aplica con un **motor de inferencia**.
+- Nacen en los **años 70**; se consideran los primeros sistemas de IA con utilidad práctica real.
+- Imprescindible: disponer del conocimiento de un **especialista** del campo.
 
 ---
 
-## Representación del conocimiento (II)
+## Los componentes
 
-- Podemos ver las diferentes representaciones como un **continuum**:
-  - A la izquierda tenemos las representaciones más **simples** (algoritmos); utilizables por los ordenadores de forma eficiente pero muy poco flexibles.
-  - A la derecha tenemos las representaciones más **flexibles** (texto natural); muy potentes pero no utilizables directamente por las máquinas.
+![h:460 center](img/Expert-Systems.png)
+
+---
+<style scoped>section { font-size: 23px; }</style>
+
+## Qué hace cada componente
+
+| Componente | Función |
+|---|---|
+| **Interfaz de usuario** | Pregunta datos, muestra resultados, alerta de errores; incluye comunicaciones con otros sistemas |
+| **Base de conocimiento** | Reglas y hechos del dominio, formalizados por el **ingeniero de conocimiento** con el experto |
+| **Memoria de trabajo** | Hechos actuales: los del usuario o los sensores, más los deducidos al razonar |
+| **Motor de inferencia** | Evalúa qué reglas se cumplen, resuelve conflictos y ejecuta las acciones |
+| **Subsistema de explicación** | Justifica el «por qué» y el «cómo»; sirve para **depurar** y **verificar** la base |
+| **Adquisición de conocimiento** | Incorporar conocimiento nuevo sin perfil técnico (el *bottleneck* del experto) |
 
 ---
 
-## Continuum del conocimiento
+## La explicación marca la diferencia
 
-![bg fit](../../UD05/assets/knowledge-spectrum.png)
+- Poder **explicar** su razonamiento distingue a un sistema experto de un modelo de ML.
+- En dominios regulados —medicina, finanzas— la justificación es **obligatoria**.
+- **MYCIN** fue el pionero: mostraba las reglas de inferencia empleadas.
+- Su límite: en consultas complejas, enumerar todas las reglas resulta **tedioso** para el usuario.
+
+---
+<style scoped>section { font-size: 27px; }</style>
+
+## La dinámica: el ciclo reconocer-actuar
+
+1. **Reconocer (*match*)**: se comparan los hechos de la memoria de trabajo con las condiciones de las reglas; las activas van a la **agenda**.
+2. **Resolver (*resolve*)**: si hay varias activas, se elige una según la estrategia de control (§7).
+3. **Actuar (*act*)**: se ejecuta el consecuente, que declara, modifica o retira hechos — y el ciclo se repite.
+
+Objetivo de fondo: que la lógica sea **explícita**, para que el experto del dominio pueda revisarla sin ser informático.
 
 ---
 
-## Representación del conocimiento (III)
+<style scoped>section { font-size: 26px; }</style>
 
-- **Representaciones de red**:
-  - En la mente humana el conocimiento se representa como una red de conceptos interrelacionados.
-  - Las representaciones de red intentamos hacer lo mismo en un grafo dentro de los ordenadores.
-    - Las llamamos **redes semánticas**.
-  - Existen diferentes tipos: Pares de atributos y valores, representaciones jerárquicas, representaciones procedurales, lógica, etc.
+## Mecanismos de razonamiento
+
+- **Hacia delante** (*forward*, dirigido por datos): parte de los hechos y deduce conclusiones. Monitorización, control en tiempo real, planificación.
+- **Hacia atrás** (*backward*, dirigido por metas): parte de una meta y busca qué hechos la sustentan, preguntando solo lo necesario. Diagnóstico (MYCIN, Prolog).
+- **Mixto**: combina los dos.
+- **Búsqueda heurística** (recorre un árbol) y **herencia** (un hijo hereda del padre).
+
+---
+<style scoped>section { font-size: 27px; }</style>
+
+## Las dos reglas de inferencia clásicas
+
+- **Modus Ponens**: si *P* implica *Q*, y *P* es verdad, entonces *Q* es verdad.
+- **Modus Tollens**: si *P* implica *Q*, y *Q* no es cierto, entonces *P* no es cierto.
+
+El encadenamiento **hacia delante** aplica Modus Ponens repetidamente; el encadenamiento **hacia atrás** busca qué *P* sustentaría un *Q* dado.
+
+![bg right:33% fit](../assets/Encadenamiento.png)
 
 ---
 
-<style scoped>
-section {
-  @extend .markdown-body;
-  font-size: 30px;
-  justify-content: top;
- }
-</style>
-## Pares de atributos y valores o tripletes objeto-atributo-valor
+<style scoped>section { font-size: 26px; }</style>
 
-- Aprovechamos que un grafo se puede representar como una lista de nodos y aristas para representar el conocimiento.
-- El conocimiento se representa como una lista de pares de atributos y valores.
-  - _"El perro es un animal, el perro tiene cuatro patas, el perro tiene pelo, el perro tiene cola, etc."_
-  - _"La paloma es un animal, la paloma es un pájaro, la paloma tiene dos patas, etc."_
-  - _"El coche es un vehículo, el coche tiene cuatro ruedas, el coche tiene un motor, etc."_
+## Incertidumbre: factores de certeza
+
+- **MYCIN** introdujo los **factores de certeza (CF)**: cada regla lleva el suyo y se combinan al encadenar.
+- «SI fiebre alta ENTONCES meningitis **CF = 0,6**» + «SI rigidez de nuca ENTONCES meningitis **CF = 0,4**» → confianza conjunta **mayor** que cada una por separado.
+- Si hay evidencia en contra, los CF se **descuentan**: es la **acumulación de evidencia**.
+- Alternativas modernas: **lógica difusa** (§5), Dempster-Shafer, redes bayesianas.
+
+---
+<!-- _class: lead -->
+
+# 2. Estructuras de representación
+
+### del conocimiento
+
+###### RA5-a / RA5-b
 
 ---
 
-## Representaciones jerárquicas
+## Un continuo, no una lista cerrada
 
-- El conocimiento se representa como un árbol.
-- Los nodos del árbol representan conceptos.
-- Las aristas representan relaciones entre conceptos.
-  - Animales $\rightarrow$ Vertebrados $\rightarrow$ Mamíferos $\rightarrow$ Perros $\rightarrow$ Caniche
-  - Animales $\rightarrow$ Vertebrados $\rightarrow$ Pájaros $\rightarrow$ Palomas $\rightarrow$ Paloma común
-  - Objetos $\rightarrow$ Vehículos $\rightarrow$ Coches $\rightarrow$ Coche de gasolina
+Representar el conocimiento hay que hacerlo **entendible** para la máquina, **útil** para resolver y **eficiente** de procesar.
 
----
-
-## Representaciones procedurales
-
-- El conocimiento se representa como un conjunto de acciones que pueden realizarse cuando se dan ciertas condiciones.
-- Llamamos **reglas de producción** a las **declaraciones** que nos permiten obtener conclusiones a partir de ciertas premisas.
-- Son de la forma: **IF** (premisa) **THEN** (conclusión)
-  - **IF** (la temperatura es superior a 37ºC) **THEN** (la persona tiene fiebre)
-  - **IF** (la persona tiene fiebre) **THEN** (la persona debe tomar paracetamol)
+- A la izquierda, lo **simple** (algoritmos): eficiente, poco flexible.
+- A la derecha, lo **flexible** (texto natural): expresivo, no utilizable directamente.
+- En medio viven las representaciones de esta unidad.
 
 ---
 
-<style scoped>
-section {
-  @extend .markdown-body;
-  font-size: 30px;
-  justify-content: top;
- }
-</style>
+![bg fit](../assets/knowledge-spectrum.png)
 
-## Lógica
-
-- La lógica es un sistema formal que nos permite representar el conocimiento y razonar sobre él propuesta por Aristóteles hace más de 2000 años como herramienta para la deducción.
-- La lógica proposicional es un sistema formal que nos permite representar el conocimiento y razonar sobre él. Muy potente a nivel teórico pero no directamente utilizable por las máquinas; un subconjunto es utilizable en sistemas como prolog.
-- Ej: $p$: "La persona tiene fiebre", $q$: "La persona debe tomar paracetamol"
-  - $p \rightarrow q$: "Si la persona tiene fiebre, entonces la persona debe tomar paracetamol"
-  - $p \land q$: "La persona tiene fiebre y la persona debe tomar paracetamol"
 ---
-<style scoped>
-section {
-  @extend .markdown-body;
-  font-size: 31px;
-  justify-content: top;
- }
-</style>
-# 2. Sistemas Expertos
-* Los sistemas expertos son una aplicación de la inteligencia artificial.
-* Los sistemas expertos comenzaron su desarrollo en la década de 1970.
-* Se considera que los primeros sistemas que fueron capaces de obtener resultados con utilidad práctica.
-* Basados fundamentalmente en reglas. 
-* imprescindible disponer del conocimiento de un especialista en el campo objeto de estudio.
-  > Todo sistema experto ha de tener la capacidad de explicar cuál es la decisión que ha tomado.
+<style scoped>section { font-size: 22px; }</style>
 
-<!--Un sistema experto se puede definir como un software que es capaz de simular el proceso de decisión que tomaría un experto humano en cierto campo. Por tanto, los sistemas expertos se diseñan de manera que puedan tomar de forma automática decisiones como si fueran expertos. Además, cabe señalar que todo sistema experto debe ser capaz de explicar la decisión que ha tomado y también ha de ser capaz de aprender cuando se le facilita nueva información.-->
-___
-# 2. Estructuras elementales de los sistemas expertos
-* La arquitectura... basado en reglas del tipo: «SI ... ENTONCES»
-* Cada regla representa una porción del conocimiento que se pretende introducir en el sistema. 
-* Un conjunto de reglas relacionadas puede llevar de una serie de hechos y datos conocidos hasta algunas conclusiones de utilidad.
-___
-Todo sistema experto está formado por los siguientes elementos:
-![h:500 center](img/Expert-Systems.png)
-___
-# 3.Dinámica de un sistema experto.
-* En un programa informático, la lógica está incrustada en un código que,solo puede ser revisado por un especialista informático.
-* En un sistema experto, el objetivo era especificar las reglas en un formato que fuera intuitivo y fácil de entender, revisar e incluso editar por expertos en el dominio en lugar de expertos en TI.
-* Un sistema experto debe ser capaz de generar información no explícita, razonando con los elementos que se le dan.
-* Un sistema experto puede actuar como un intermediario inteligente que guía y apoya el trabajo del usuario final.
-___
-## Mecanismos de razonamiento.
-* **Encadenamiento hacia delante**: se parte de hechos para llegar a resultados.
-* **Encadenamiento hacia atrás**: se parte de los resultados y se trata de encontrar o volver a los hechos.
-* **Encadenamiento mixto**: combina los anteriores.
-* **Algoritmo de búsqueda heurística**: el proceso de inferencia es una búsqueda en una estructura de tipo árbol.
-* **Herencia**: usado en entornos de programación orientada a objetos. Un objeto hijo hereda propiedades y hechos de los padres.
-___
-### [Encadenamiento hacia adelante y hacia atrás](https://prezi.com/fvw2aokvct7r/encadenamiento-hacia-adelante-y-hacia-atras/)
+## Las representaciones (I)
 
-### Para obtener conclusiones...
-* [Modus Ponens](https://es.wikipedia.org/wiki/Modus_ponendo_ponens) "si *P* implica *Q; y* si *P* es verdad; entonces *Q* también es verdad."
-* [Modus Tollens](https://es.wikipedia.org/wiki/Modus_tollendo_tollens) "Si *P* implica *Q*, y *Q* no es cierto, entonces *P* no es cierto"
+| Representación | Estructura | Ventajas | Límites |
+|---|---|---|---|
+| **Pares atributo-valor** | Lista de nodos y aristas: «el perro es un animal, tiene cuatro patas…» | Muy simple de construir | Poco expresiva para relaciones complejas |
+| **Reglas de producción** | `SI … ENTONCES …` | Modular, legible, explicable | Difícil con jerarquías; lenta con bases grandes |
+| **Jerárquicas** | Árbol: Animales → Vertebrados → Mamíferos → Perros | Natural para taxonomías | Rígida si un concepto está en varias ramas |
 
-Así como ver este [vídeo](https://youtu.be/MLe9flR4PsA) corto en el que se hace un planteamiento sencillo de los conceptos.
+---
+<style scoped>section { font-size: 22px; }</style>
+
+## Las representaciones (II)
+
+| Representación | Estructura | Ventajas | Límites |
+|---|---|---|---|
+| **Marcos (*frames*)** | Registros con ranuras y valores por defecto | Conocimiento estructurado | Conflicto con herencia múltiple |
+| **Lógica formal** | Predicados de primer orden (Aristóteles, hace 2.000 años) | Rigor matemático | Explosión combinatoria; solo un subconjunto es usable (Prolog) |
+| **Redes semánticas** | Grafos dirigidos etiquetados | Intuitiva para relaciones | Semántica ambigua |
+| **Ontologías** | Clases, propiedades, axiomas (OWL) | Interoperabilidad, reutilización | Curva de aprendizaje alta |
+
+---
+<style scoped>section { font-size: 26px; }</style>
+
+## Lo mismo, en cuatro formas
+
+«Si la temperatura supera 37 ºC, la persona tiene fiebre» se escribe como…
+
+- **Regla de producción**: `SI temperatura > 37 ENTONCES fiebre`
+- **Lógica proposicional**: $p \rightarrow q$
+- **Jerarquía**: Síntomas → Fiebre → Paracetamol
+- **Par atributo-valor**: `persona.temperatura = 38.2`, evaluado por una regla externa
+
+Elegir la representación es elegir **qué será fácil de hacer** con ese conocimiento después.
 
 ---
 
-<style scoped>section { font-size:32px; }</style>
+## Qué usaremos en esta unidad
 
-## Sistemas híbridos Reglas/Datos (II)
+- Sobre todo **reglas de producción**, con `experta`.
+- Y **lógica difusa**, con `scikit-fuzzy`.
+- Las **ontologías** y las **redes semánticas** se mencionan como alternativas.
+- Los **marcos** y la **lógica formal**, a nivel conceptual.
 
-### Librerías
+![bg right:30% fit](../assets/RedesSemanticas.png)
 
-- [Human-Learn](https://koaning.github.io/human-learn/index.html): Permite definir y dibujar reglas que se pueden mejorar con el aprendizaje automático.
-- [skope-rules](https://github.com/scikit-learn-contrib/skope-rules): Analitza les dades i dedueix regles per a classificar.
-  - Permite analizar las reglas para mejorarlas e interpretarlas.
-- [SpaCy](https://spacy.io/usage/rule-based-matching):
-  - Permite definir reglas para extracción de información para textos.
-  - Útil en casos donde no se dispone de suficientes datos etiquetados o por casos específicos.
+---
+<!-- _class: lead -->
+
+# 3. Representar y simular
+
+### con `experta`
+
+###### RA5-b
+
+---
+<style scoped>section { font-size: 26px; }</style>
+
+## El parche obligatorio
+
+`experta` es de 2019 y `collections.Mapping` desapareció en Python 3.10. **Siempre antes de importar**:
+
+```python
+import collections, collections.abc
+if not hasattr(collections, 'Mapping'):
+    collections.Mapping = collections.abc.Mapping
+    collections.Iterable = collections.abc.Iterable
+    collections.MutableMapping = collections.abc.MutableMapping
+
+from experta import *
+```
+
+---
+<style scoped>section { font-size: 24px; }</style>
+
+## Un diagnóstico, paso a paso (I)
+
+```python
+class DiagnosticoPc(KnowledgeEngine):
+    @DefFacts()
+    def inicio(self):
+        yield Fact(accion="diagnosticar")
+
+    @Rule(Fact(accion="diagnosticar"), salience=10)
+    def arrancar(self):
+        print("Diagnóstico del PC...")
+        self.declare(Fact(luz_encendida=True))
+        self.declare(Fact(sonido="pitidos_cortos"))
+```
+
+- `@DefFacts()` — los hechos iniciales, que carga `reset()`.
+- `@Rule(...)` — el antecedente; `salience` fija la prioridad.
+
+---
+<style scoped>section { font-size: 24px; }</style>
+
+## Un diagnóstico, paso a paso (II)
+
+```python
+    @Rule(Fact(luz_encendida=True), Fact(sonido="pitidos_cortos"))
+    def ram(self):
+        self.declare(Fact(causa="problema_ram"))
+
+    @Rule(Fact(causa="problema_ram"))
+    def resultado(self):
+        print("DIAGNÓSTICO: Fallo de memoria RAM.")
+
+engine = DiagnosticoPc()
+engine.reset()   # sin reset() no se cargan los DefFacts
+engine.run()
+```
+
+```text
+Diagnóstico del PC...
+DIAGNÓSTICO: Fallo de memoria RAM.
+```
+
+---
+<style scoped>section { font-size: 23px; }</style>
+
+## Otro ámbito, el mismo motor
+
+```python
+class Animales(KnowledgeEngine):
+    @DefFacts()
+    def inicio(self):
+        yield Fact(analizar=True)
+
+    @Rule(Fact(analizar=True), salience=10)
+    def datos(self):
+        self.declare(Fact(pelo=True), Fact(carnivoro=True), Fact(color="leonado"))
+        self.declare(Fact(manchas="oscuras"))
+
+    @Rule(Fact(pelo=True))
+    def mamifero(self):
+        self.declare(Fact(mamifero=True))
+
+    @Rule(Fact(mamifero=True), Fact(carnivoro=True), Fact(color="leonado"),
+          Fact(manchas="oscuras"))
+    def guepardo(self):
+        print("IDENTIFICADO: guepardo")
+```
+
+---
+<style scoped>section { font-size: 24px; }</style>
+
+## «Muy diversos ámbitos»: los notebooks
+
+| Notebook | Dominio | Qué simula |
+|---|---|---|
+| `0.-SEPythonYExperta` | Introducción | Hechos, reglas, `DefFacts` |
+| `0.-rockpaperscissors` | Juego | Piedra, papel o tijera por reglas |
+| `1.-animals_ES` | Zoología | El ejemplo anterior, ejecutado |
+| **`EX1` · rodilla** | Medicina | Diagnóstico de una lesión por síntomas |
+| `2.-titanic_ES` | Datos históricos | Reglas **extraídas** de datos (§4) |
+| **`EX2` · valor de mercado** | Deporte | Híbrido reglas + aprendizaje (§4) |
+| **`EX3` · `EX4`** | Deporte · industria | Lógica difusa y control real (§5, §8) |
 
 ---
 
-## Sistemas de razonamiento impreciso
+## Por qué importa la diversidad
 
-![bg opacity](../../UD05/assets/1280px-Fuzzy_logic_temperature_en.svg.png)
+- Un sistema experto **no es una técnica de un solo dominio**.
+- La **misma arquitectura** —base de conocimiento + motor de inferencia— sirve para diagnosticar una rodilla, valorar a un futbolista o regular un quemador de gas.
+- Lo que cambia es **el conocimiento que se codifica**, no el motor que lo aplica.
+
+---
+<!-- _class: lead -->
+
+# 4. Sistemas híbridos
+
+### reglas / datos
+
+###### RA5-b
 
 ---
 
-<style scoped>
-section {
-  @extend .markdown-body;
-  font-size: 32px;
-  justify-content: top;
- }
-</style>
+<style scoped>section { font-size: 25px; }</style>
 
-### Definición
+## Cuando nadie ha escrito las reglas
 
-- **Lògica difusa** o **lògica borrosa**:
-  – Extensión de la lógica proposicional para trabajar con la incertidumbre.
-  - Permite trabajar con valores imprecisos.
-- **Sistemas de razonamiento impreciso**:
-  - Sistemas basados ​​en reglas que utilizan la lógica difusa.
-  - Permiten trabajar con valores **continuos**.
-  - Facilitan modelar el **conocimiento humano**.
-  - Muy apropiados para **sistemas de control**
-  - Nos permiten tener una **buena** solución, si no la **mejor**.
+Un sistema experto puro necesita que **alguien las escriba a mano**. Dos salidas:
+
+- **Deducirlas de los datos**: un algoritmo las genera del entrenamiento. Sigue siendo `SI … ENTONCES …`, no una caja negra.
+- **Integrarlas con aprendizaje automático**: el experto pone las de partida y el ML las **mejora**.
+
+![bg right:30% fit](../assets/1%20wkeYZMEmA1W-lAbUTLzPrw.webp)
+
+---
+<style scoped>section { font-size: 25px; }</style>
+
+## Las bibliotecas
+
+| Biblioteca | Qué hace |
+|---|---|
+| **Human-Learn** | Definir y **dibujar** tus reglas como un clasificador de scikit-learn, y combinarlas con ML |
+| **skope-rules** | Analiza los datos y **deduce** reglas de clasificación, auditables |
+| **FIGS** (`imodels`) | Reglas fáciles de interpretar combinando varios árboles pequeños |
+| **spaCy** | Reglas para **extraer información de texto**, sin datos etiquetados suficientes |
 
 ---
 
-<style scoped>
-section {
-  @extend .markdown-body;
-  font-size: 32px;
-  justify-content: top;
- }
-</style>
+## Titanic: reglas que salen de los datos
 
-### Lógica difusa (I)
-
-- La lógica proposicional es **binaria**.
-  - Un enunciado es **cierto** o **falso**.
-- La lógica difusa permite trabajar con valores **continuos**.
-  - Un enunciado puede ser **cierto** _y_ **falso** en un grado **parcial**.
-- Los valores de verdad son **números reales** en el intervalo $[0, 1]$.
-  - $0: Falso$, $1: Cierto$, $0.5:$ $Cierto$ al $50\%$
-- La pertenencia de un elemento a un conjunto vendrá dada por una **función de pertenencia**.
-  - $\mu_A(x)$: Grado de pertenencia de $x$ al conjunto $A$.
+- Nadie escribe a mano «si viajas en primera clase y eres mujer, sobrevives».
+- **FIGS** analiza los datos históricos y **genera esa regla por sí solo**, junto con otras.
+- El resultado sigue siendo legible —un árbol de reglas pequeño— pero **nadie lo escribió**.
+- Es el primero de los dos enfoques.
 
 ---
 
-![bg fit](../../UD05/assets/1%20QgzU5OF0uGucga5d1nzdig.webp)
+## `EX2`: los dos enfoques sobre los mismos datos
+
+- Datos de **FIFA 22**, dos caminos a la vez:
+    - una `FunctionClassifier` de **Human-Learn** con reglas que **tú** defines,
+    - y un `FIGSClassifier` que **deduce** las suyas del entrenamiento.
+- Comparar los dos resultados sobre el mismo problema es la mejor forma de **sentir la diferencia** entre los enfoques híbridos.
 
 ---
 
-<style scoped>
-section {
-  @extend .markdown-body;
-  font-size: 32px;
-  justify-content: top;
- }
-</style>
+## No es una técnica aislada: es una tendencia
 
-### Lógica difusa (II)
+- Los híbridos reglas/datos son la puerta de entrada a los **sistemas neuro-simbólicos** y a las **reglas como guardarraíl del ML** (§9).
+- No son un tema aparte de los sistemas expertos: son su **evolución natural** cuando el conocimiento no cabe entero en la cabeza de un experto.
 
-- La lógica difusa facilita la **representación del conocimiento humano**.
-  - Los humanos no razonamos en términos binarios.
-  - Los humanos no tenemos un conocimiento preciso ni completo.
-- Conceptos como $húmedo$ o $frio$ son difíciles de definir con precisión.
-  - La lógica difusa nos permite definirlos con **funciones de relevancia**.
-  - El poder trabajar con estos conceptos facilita la creación de dispositivos como secadores o termostatos.
-    - _"Si la temperatura es fría, entonces enciende la calefacción"_
+---
+<!-- _class: lead -->
+
+# 5. Razonamiento impreciso
+
+### la lógica difusa
+
+###### RA5-b / RA5-d
 
 ---
 
-<style scoped>
-section {
-  @extend .markdown-body;
-  font-size: 32px;
-  justify-content: top;
- }
-</style>
-### Conceptos básicos (I)
+![bg opacity](../assets/1280px-Fuzzy_logic_temperature_en.svg.png)
 
-- **Variable lingüística**: Variable que puede tomar valores lingüísticos.
-  - Ejemplos: $Temperatura$
-- **Valores lingüísticos**: Valores que puede tomar una variable lingüística.
-  - Ejemplo: $Frio, Calor$
-- **Función de pertenencia**: Función que asigna a cada valor de una variable lingüística un grado de pertenencia a un valor lingüístico.
-  - Ejemplo: $Temperatura = 27^oC \rightarrow Calor = 0,8\, Mucho Calor = 0,2$
+## Ni frío ni calor: cuestión de grado
+
+---
+<style scoped>section { font-size: 27px; }</style>
+
+## De lo binario a lo continuo
+
+La lógica clásica es **binaria**. Pero «hace frío» no es verdadero o falso de forma tajante.
+
+- Los valores de verdad son **reales en $[0, 1]$**: 0 falso, 1 cierto, 0,5 cierto al 50 %.
+- La pertenencia la da una **función de pertenencia**, $\mu_A(x)$: grado de pertenencia de $x$ a $A$.
+- *Húmedo* o *frío* no se definen con precisión, pero **sí** con funciones de pertenencia.
 
 ---
 
-<style scoped>
-section {
-  @extend .markdown-body;
-  font-size: 32px;
-  justify-content: top;
- }
-</style>
-### Conceptos básicos (II)
-
-- **Regla difusa**: Regla que utiliza valores difusos.
-  - Ejemplo: _"Si la temperatura es **fría**, entonces **calefacción alta**"_
-- **Función de agregación**: Función que combina los valores difusos de las reglas para deducir la conclusión final.
-  - Exemple: $Calor = 0.8, Humedad = 0.7 \rightarrow Sensacion\:desagradable = 0.8$
-- **Sistema de razonamiento impreciso**:
-  - Sistema basado en reglas que utiliza la lógica difusa.
-  - Ejemplo: Sistema de control de temperatura de una casa.
+![bg fit](../assets/1%20QgzU5OF0uGucga5d1nzdig.webp)
 
 ---
 
-### Funcionamiento de los sistemas de razonamiento impreciso (I)
+## Sistema de razonamiento impreciso
 
-- _Fuzzyficación_:
-  - Conversión de los datos de entrada precisos a valores difusos.
-  - Pasamos de valores precisos a valores difusos.
-  - Utiliza las **funciones de pertenencia**.
-    - Asigne a cada valor de entrada un grado de relevancia para cada **variable de idioma**
-    - $$27^oC \rightarrow Calor = 0.8, Mucha\:calor = 0.2$$
+Un sistema basado en reglas que usa lógica difusa:
+
+- Trabaja con valores **continuos**.
+- Modela mejor el **conocimiento humano** — nosotros no razonamos en binario.
+- Muy apropiado para **sistemas de control**: enlaza directo con §7 y §8.
+- Da una **buena** solución, aunque no sea la **mejor**.
+
+---
+<style scoped>section { font-size: 24px; }</style>
+
+## Conceptos básicos
+
+| Concepto | Qué es | Ejemplo |
+|---|---|---|
+| **Variable lingüística** | Variable que toma valores lingüísticos | *Temperatura* |
+| **Valores lingüísticos** | Los valores que puede tomar | *Frío*, *Calor* |
+| **Función de pertenencia** | Asigna a cada valor un grado de pertenencia | $27\,°C \rightarrow Calor = 0{,}8$ |
+| **Regla difusa** | Regla que usa valores difusos | «Si es **fría**, calefacción **alta**» |
+| **Función de agregación** | Combina los difusos de varias reglas | $Calor=0{,}8,\ H=0{,}7 \rightarrow 0{,}8$ |
+
+---
+<style scoped>section { font-size: 26px; }</style>
+
+## El funcionamiento, en tres pasos
+
+1. **Fuzzificación** — convierte las entradas precisas en valores difusos, con las funciones de pertenencia: $27\,°C \rightarrow Calor=0{,}8$.
+2. **Evaluación de las reglas** — se aplican combinando las entradas: «si la temperatura es **alta** y la humedad **baja**, el ventilador **alto**».
+3. **Desfuzzificación** — devuelve un valor preciso, con **centro de gravedad** o **máximo**.
 
 ---
 
-<style scoped>
-section {
-  @extend .markdown-body;
-  font-size: 32px;
-  justify-content: top;
- }
-</style>
-### Funcionamiento de los sistemas de razonamiento impreciso (II)
+## Las formas de las funciones
 
-- _Evaluación de las reglas_:
-  - En este paso se **aplican las reglas del sistema**.
-  - Se establece la relación entre las **variables de entrada** y las **variables de salida**.
-  - _"Si la temperatura es **alta** y la humedad es **baja**, entonces la velocidad del ventilador debe ser **alta**"_
-  - Se combinan las **funciones de relevancia** de las **variables de entrada**
-    - deducir la **relevancia** de la variable de **salida**.
+- **Trapezoidales** y **triangulares**: las más usadas.
+- **Sinusoidales**: para representar periodos.
+- **Sigmoidales**: para probabilidades.
+
+![bg right:45% fit](../assets/membership_fuctions.png)
 
 ---
 
-<style scoped>
-section {
-  @extend .markdown-body;
-  font-size: 34px;
-  justify-content: top;
- }
-</style>
-### Funcionamiento de los sistemas de razonamiento impreciso (III)
+## Ejemplo: la propina del restaurante
 
-- _Desfuzzyficación_:
-  - Conversión de los datos de salida difusos a valores precisos.
-  - Pasamos de valores difusos a valores precisos.
-  - Utiliza las **funciones de agregación**.
-    - Combina las conclusiones de las reglas para deducir la conclusión final.
-    - Se suele utilizar la función de **centro de gravedad** o **máximo**.
+Las **entradas**, con funciones triangulares:
+
+- **Servicio**: baja $[0,5]$ · media $[0,10]$ · alta $[5,10]$
+- **Comida**: mala $[0,5]$ · media $[0,10]$ · buena $[5,10]$
+
+![bg right:40% fit](../assets/plot_tipping_problem_newapi_2.png)
 
 ---
 
-### Funciones de relevancia (I)
+## La salida
 
-![w:800](../../UD05/assets/membership_fuctions.png)
+**Propina**: baja $[0,13]$ · media $[0,25]$ · alta $[13,25]$
 
-- Las más utilizadas son las **funciones trapezoidales** y las **funciones triangulares**.
-- Las sinusoidales son útiles para representar **periodos**.
-- Las sigmoidales son útiles para representar **probabilidades**.
+El universo se discretiza — y esa resolución **cambia el resultado**, como veremos.
 
----
-
-<style scoped>
-section {
-  @extend .markdown-body;
-  font-size: 26px;
-  justify-content: top;
- }
-</style>
-### Ejemplo: Propinas (I)
-
-#### Variables d'entrada
-
-Utilizaremos funciones triangulares para representar las variables de entrada y salida
-
-- **Servicio**:
-  - **Bajo**: $[0, 5]$
-  - **Media**: $[0, 10]$
-  - **Alta**: $[5, 10]$
-- **Calidad de la comida**:
-  - **Mala**: $[0, 5]$
-  - **Medio**: $[0, 10]$
-  - **Buena**: $[5, 10]$
-
-![bg right:33% fit](../../UD05/assets/plot_tipping_problem_newapi_2.png)
+![bg right:42% fit](../assets/plot_tipping_problem_newapi_3.png)
 
 ---
 
-### Ejemplo: Propinas (II)
+## Las reglas
 
-#### Variables de salida
+- SI (servicio **bajo** O comida **mala**) → propina **baja**
+- SI (servicio **medio**) → propina **media**
+- SI (servicio **alto** O comida **buena**) → propina **alta**
 
-- **Propina**:
-  - **Baja**: $[0, 13]$
-  - **Media**: $[0, 25]$
-  - **Alta**: $[13, 25]$
-
-![bg right:35% fit](../../UD05/assets/plot_tipping_problem_newapi_3.png)
+![bg right:40% fit](../assets/plot_tipping_problem_newapi_4.png)
 
 ---
 
-<style scoped>
-section {
-  @extend .markdown-body;
-  font-size: 32px;
-  justify-content: top;
- }
-</style>
-### Ejemplo: Propinas (III)
+## La inferencia
 
-#### Reglas**
+Con servicio **9,8** y comida **6,5**, el sistema desfuzzifica **19,24 €**: banda alta, coherente con un servicio casi perfecto.
 
-- **IF** (Calidad del servicio es **baja** o Comida es **mala**) **THEN** (Propina es **baja**)
-- **IF** (Calidad del servicio es **media**) **THEN** (Propina es **media**)
-- **IF** (Calidad del servicio es **alta** o Comida es **buena**) **THEN** (Propina es **alta**)
+Al ejecutarlo con `np.arange(0, 26, 1)` sale **19,85 €**: la diferencia es la **discretización del universo**, no un error.
 
-![bg right:40% fit](../../UD05/assets/plot_tipping_problem_newapi_4.png)
+![bg right:38% fit](../assets/plot_tipping_problem_newapi_5.png)
 
 ---
 
-### Ejemplo: Propinas (IV)
+## De la propina al quemador de gas
 
-#### Inferencia
+- La estructura es **idéntica** en el Taller 3 y en el entregable `EX4`: entradas difusas, reglas lingüísticas, una salida desfuzzificada.
+- La diferencia: ahí la salida no es una propina, es la **potencia de un actuador real**.
+- Ese es el salto de este bloque al de controladores.
 
-- Calidad del servicio: **9.8**
-- Calidad de la comida: **6.5**
-- Propina: **19,24 €**
+---
+<!-- _class: lead -->
 
-![bg right fit](../../UD05/assets/plot_tipping_problem_newapi_5.png)
+# 6. Variación y dinámica
+
+### sensibilidad y robustez
+
+###### RA5-c
+
+---
+
+## Sensibilidad frente a robustez
+
+- **Sensibilidad**: cuánto cambian las conclusiones ante pequeñas desviaciones de parámetros o entradas. Muy sensible = detecta pronto las anomalías, pero da **falsas alarmas** con ruido.
+- **Robustez**: mantener conclusiones estables y seguras ante perturbaciones, ruido o fallos parciales.
+- Todo el diseño consiste en **elegir dónde ponerse** entre las dos.
+
+---
+<style scoped>section { font-size: 25px; }</style>
+
+## Tres mecanismos de variación
+
+| Qué varía | Efecto en la dinámica |
+|---|---|
+| **Las reglas** (estructura lógica) | Añadir condiciones → más inercia, la regla se dispara menos. Simplificar → **sobreactivación** ante transitorios sin riesgo |
+| **Los hechos** (perturbaciones) | Ruido en un sensor —CO oscilando junto al umbral— → el sistema **conmuta actuadores sin parar** |
+| **Los umbrales de certeza** | Subirlo → menos falsos positivos, pero puede **ignorar alertas tempranas** |
+
+---
+
+## El problema de la histéresis
+
+- Un sensor de CO en un túnel oscila entre **28 y 32 ppm**, con el umbral en **30**.
+- Sin histéresis, los extractores se **encienden y apagan en cada ciclo**.
+- Dos soluciones:
+    - **Histéresis temporal**: la alerta debe mantenerse 30 s antes de actuar.
+    - **Controlador difuso**: suaviza la transición en vez de cortarla en seco.
+
+---
+<!-- _class: lead -->
+
+# 7. Estrategias de control
+
+### del sistema experto
+
+###### RA5-d
+
+---
+<style scoped>section { font-size: 25px; }</style>
+
+## Control de la agenda
+
+Cuando varias reglas están activas a la vez, hay que **elegir**:
+
+| Estrategia | Qué hace |
+|---|---|
+| **Salience** | Prioridad numérica explícita: las de emergencia, primero |
+| **Recency** | Prefiere las reglas con hechos más recientes |
+| **Specificity** | Prefiere la regla con más condiciones en el antecedente |
+| **Control de meta** | Reglas de nivel superior que cambian prioridades o activan grupos según el modo (arranque, operación, parada) |
+
+El control de meta es la **sabiduría** del DIKW, aplicada al propio motor.
+
+---
+<style scoped>section { font-size: 26px; }</style>
+
+## Especificaciones de la respuesta
+
+| Especificación | Qué mide |
+|---|---|
+| **Precisión** | Error en régimen permanente: variable − setpoint al estabilizarse |
+| **Tiempo de respuesta** | Tiempo de subida (tr) y de asentamiento (ts) |
+| **Estabilidad** | Ausencia de oscilaciones; sobreimpulso máximo aceptable |
+| **Alcance** | Rango de operación de la planta |
+
+En este módulo se trabajan de forma **conceptual**: definir el objetivo y saber interpretar si la respuesta lo cumple.
+
+---
+<style scoped>section { font-size: 26px; }</style>
+
+## Ejemplo guiado: climatizar una sala a 21 ºC
+
+1. **Setpoint y precisión** — estabilizarse en 21 ºC con error de **±0,5 ºC** máximo.
+2. **Tiempo de respuesta** — entrar en la banda 20,5-21,5 ºC en menos de **15 min**.
+3. **Estabilidad** — sobreimpulso máximo de **1 ºC**, sin oscilaciones que dañen el equipo.
+
+Las especificaciones se escriben **antes** de elegir el controlador.
+
+---
+<style scoped>section { font-size: 26px; }</style>
+
+## Ejemplo guiado (II): elegir y comprobar
+
+4. **Elegir el controlador** — un PID bien sintonizado cumpliría en un sistema lineal, pero la sala tiene **inercia térmica y perturbaciones** (puertas, sol). Un controlador experto o difuso, con reglas del operador, logra **menos sobreimpulso y más robustez**.
+5. **Comprobar y ajustar** — simular, medir ts y sobreimpulso, y si no cumple, ajustar reglas o ganancias.
+
+---
+
+## Controlar no es «conectar un motor»
+
+Es **definir el objetivo** (precisión), **acotar el tiempo**, **limitar el sobreimpulso** y **elegir el controlador** que lo cumpla, verificándolo con una simulación.
+
+Ese es el sentido de los criterios **d** y **e** — y exactamente lo que se pide en `EX4`, con un quemador de gas real en vez de una sala.
+
+---
+<!-- _class: lead -->
+
+# 8. Controladores inteligentes
+
+### frente al PID clásico
+
+###### RA5-e
+
+---
+<style scoped>section { font-size: 26px; }</style>
+
+## El lazo de control clásico
+
+Compara el **setpoint** (SP) con la variable medida (PV), calcula el error y aplica una acción (MV).
+
+```text
+ SP ──►(+/−)──► Controlador ──► Actuador ──► Planta ──┬──► PV
+         ▲          PID / inteligente                 │
+         └──────────── realimentación ────────────────┘
+```
+
+$$u = K_p\,e + K_i\!\int\! e + K_d\,\frac{de}{dt}$$
+
+La parte **proporcional** responde al error, la **integral** elimina el residual, la **derivada** reduce el sobreimpulso.
+
+---
+
+## Dónde falla el PID
+
+- **No predice el futuro**: solo reacciona al error presente y pasado.
+- Se degrada con **retrasos** y **no linealidades**.
+- Sus ganancias son **fijas**: hay que **re-sintonizarlo** cuando la planta envejece.
+- Sufre con perturbaciones **multivariable**.
+
+Es eficaz en sistemas lineales bien modelados — y ahí sigue siendo la opción correcta.
+
+---
+<style scoped>section { font-size: 24px; }</style>
+
+## Cuatro controladores inteligentes
+
+| Controlador | Cómo funciona | Ventaja frente al PID |
+|---|---|---|
+| **Difuso** | Reglas lingüísticas + funciones de pertenencia (Mamdani, Sugeno) | Robusto ante ruido y no linealidad; **no necesita modelo** |
+| **Por reglas (experto)** | Motor de inferencia con reglas del operador | Captura heurísticas humanas; fácil de entender |
+| **Redes neuronales** | Aprenden la dinámica inversa de la planta | Se adapta a sistemas no lineales |
+| **Predictivo (MPC)** | Predice la trayectoria futura y optimiza | **Anticipa** restricciones; proactivo |
+
+---
+<style scoped>section { font-size: 26px; }</style>
+
+## Y funciona, con datos
+
+| Caso | Mejora frente al PID |
+|---|---|
+| **Control térmico difuso** | Asentamiento −76 % (416 s → 100 s); sobreimpulso 5,64 % → **0 %** |
+| **Horno de fundición (ANN)** | MSE 132,75 frente a 134,13 (mejora ligera) |
+| **Mitsubishi, aire acondicionado** | 5× más rápido, **−24 %** de consumo |
+| **DeepMind, centros de datos** | **−40 %** en energía de refrigeración |
+
+---
+
+## ¿Gana siempre el inteligente?
+
+**No.**
+
+- El PID es **simple, barato y fiable** en sistemas bien modelados.
+- El controlador inteligente aporta cuando hay **no linealidad, retraso o ruido fuerte**.
+- La regla: **empezar simple** y añadir inteligencia solo si se justifica.
+- Es lo que comprobarás en `EX4`, que pide **dos enfoques distintos** para el mismo quemador.
+
+---
+<style scoped>section { font-size: 25px; }</style>
+
+## El sistema experto como controlador
+
+Patrón del **control experto** (Åström, Anton y Årzén, 1986): un motor de inferencia **dentro** del lazo.
+
+- Evalúa el error **y su variación**, decide por reglas y **explica** la decisión.
+- Dos formas de actuar:
+    - **directa** — «si el error es negativo grande y aumenta → máxima potencia»,
+    - **supervisando un PID** — ajusta sus ganancias cuando la respuesta se degrada.
+- Base de sistemas industriales como **Gensym G2** (refinerías, energía, farmacia) desde los 80.
+
+---
+<style scoped>section { font-size: 27px; }</style>
+
+## Una regla de verdad
+
+```text
+SI error de temperatura es NEGATIVO_GRANDE
+Y variación del error es POSITIVA_PEQUENA
+ENTONCES potencia del quemador es MEDIA_ALTA
+```
+
+Captura la heurística de un operador humano y es **fácil de auditar** — algo que un PID o una red neuronal no ofrecen de forma directa.
+
+---
+<!-- _class: lead -->
+
+# 9. Aplicaciones y tendencias
+
+###### contenidos del RA5
+
+---
+
+## Por sector
+
+| Sector | Uso |
+|---|---|
+| **Industria** | Control de procesos, diagnóstico de máquinas, mantenimiento |
+| **Salud** | Diagnóstico asistido (MYCIN, GARVAN-ES1), dosificación |
+| **Finanzas** | Asesoramiento, detección de fraude por reglas |
+| **Telecomunicaciones** | Gestión de redes, diagnóstico de averías |
+
+---
+<style scoped>section { font-size: 24px; }</style>
+
+## Los clásicos, con cifras
+
+- **DENDRAL** (1965): el primer sistema experto; acotaba millones de isómeros moleculares a un conjunto manejable.
+- **MYCIN** (Stanford, 1972): 500-600 reglas de diagnóstico clínico, precisión **69-70 %**, equiparable a especialistas. Pionero de la explicación y los factores de certeza.
+- **XCON/R1** (CMU/DEC, 1978): configuraba ordenadores VAX; de 250 a más de **6.200 reglas** en 1986, precisión 95-98 % y ~**25 M$/año** de ahorro.
+- **SID** (DEC): generó el **93 %** de las puertas lógicas del VAX 9000.
+- **Cyc** (1984): enciclopediar el sentido común, millones de hechos y reglas.
+
+---
+<style scoped>section { font-size: 23px; }</style>
+
+## Tendencias
+
+- **BRMS** — motores de reglas de negocio como **Drools** (Apache KIE), con DMN/JSR-94: miles de reglas separadas del código, con motores que escalan linealmente.
+- **Neuro-simbólico** (3.ª ola de la IA) — redes neuronales para aprender + reglas para razonar; reduce alucinaciones y aporta explicabilidad. Amazon lo usa en sus motores de compra.
+- **IA explicable (XAI)** — de MYCIN a SHAP/LIME, con el **derecho a explicación** del RGPD detrás (enlaza con la UD06).
+- **Agentes con razonamiento declarativo** — planifican con reglas y guardas lógicas de seguridad.
+- **Reglas como guardarraíl del ML** — validar y acotar las salidas de los modelos, incluidos los generativos.
+
+---
+
+## Del pasado al presente
+
+- MYCIN y XCON demostraron que el **conocimiento declarativo** y la **explicación** importan.
+- Esa idea **no ha muerto**: vive en los BRMS, en el neuro-simbólico y en los guardarraíles del ML.
+- Saber construir y **auditar** sistemas basados en reglas —puras, híbridas o difusas— sigue siendo una competencia valiosa.
+
+---
+<!-- _class: lead -->
+
+# Cierre
+
+---
+<style scoped>section { font-size: 22px; }</style>
+
+## Puntos clave (I)
+
+- El **DIKW** distingue dato, información, conocimiento y sabiduría: un sistema experto guarda **conocimiento** (reglas) y, como mucho, **metarreglas**.
+- Un sistema experto = **base de conocimiento** + **motor de inferencia**, con el ciclo reconocer-actuar y encadenamiento hacia delante o hacia atrás.
+- La **explicación** es su gran ventaja frente al ML, y es obligatoria en dominios regulados.
+- La representación del conocimiento es un **continuo**: atributo-valor, reglas, jerarquías, marcos, lógica, redes semánticas, ontologías.
+- Con `experta` se simulan comportamientos de ámbitos **muy diversos**: medicina, zoología, deporte, industria.
+
+---
+<style scoped>section { font-size: 22px; }</style>
+
+## Puntos clave (II)
+
+- Los **híbridos reglas/datos** (Human-Learn, FIGS, skope-rules) combinan lo que sabe el experto con lo que dicen los datos.
+- La **lógica difusa** extiende la lógica a $[0,1]$: fuzzificación, evaluación de reglas y desfuzzificación.
+- **Sensibilidad frente a robustez**: variar reglas, hechos o umbrales cambia la dinámica; la histéresis y el control difuso la estabilizan.
+- Las **estrategias de control** y las **especificaciones** definen la calidad de la respuesta.
+- Los **controladores inteligentes** superan al PID en sistemas no lineales: −76 % de asentamiento, 0 % de sobreimpulso.
+
+---
+<style scoped>section { font-size: 26px; }</style>
+
+## Las cinco sesiones
+
+| Semana | Contenido | CE |
+|---|---|---|
+| 11 | DIKW, arquitectura y dinámica; representación | a |
+| 12 | Taller 1 (`experta`), `EX1`; híbridos y `EX2` | b |
+| 13 | Lógica difusa: Taller 2; variación y dinámica | b, c |
+| 14 | Estrategias de control; controladores; Taller 3 | d |
+| 15 | `EX3`, `EX4`; aplicaciones y tendencias; evaluación | d, e |
+
+---
+<style scoped>section { font-size: 26px; }</style>
+
+## Cómo se evalúa
+
+| Peso | Instrumento |
+|---|---|
+| **40 %** | Media de los **cinco entregables** (`EX0`-`EX4`), cada uno con su rúbrica sobre 10 |
+| **60 %** | Prueba del RA5: ~15 test de 4 opciones con penalización del 33,33 % + 2 de desarrollo |
+
+La **normativa exige alcanzar todos los RA** del módulo para superarlo; el centro lo concreta en **≥ 5 en cada RA**.
+
+---
+<!-- _class: lead -->
+
+## ¿Y ahora?
+
+Un sistema experto convierte lo que sabe una persona en reglas que **diagnostican, asesoran y controlan** — y sabe explicar por qué.
+
+### A construirlo.

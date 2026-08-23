@@ -5,8 +5,6 @@
     Pascua) porque es la que menos carga de laboratorio tiene. Se evalúa con **dos debates por
     roles** y la **prueba escrita del RA6**.
 
-![type:video](assets/UD06_Etica.mp4)
-
 <p><iframe width="100%" height="315" src="https://www.youtube.com/embed/AB7Wt0epglQ?si=TAMl6AUuzGWCe5qu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></p>
 
 ## 1. Introducción
@@ -1220,7 +1218,10 @@ trabajo personal.
 | **40 %** actividades | **Debate 1** y **Debate 2**, con la [rúbrica de debate](UD06_ActividadesEntregables.md) (5 criterios, 100 puntos, escalados sobre 10), más los talleres T01 y T02 y el notebook N01 |
 | **60 %** prueba escrita | Prueba del RA6 en Moodle: ~15 preguntas de test de 4 opciones con **penalización del 33,33 %** + 2 de desarrollo, aleatorias por alumno |
 
-- Criterio del centro: para superar el módulo hay que superar **cada RA con ≥ 5**.
+- **La normativa exige alcanzar todos los RA** del módulo para superarlo (art. 5.1 de la Orden
+  8/2025: la calificación del módulo está *«en función de la consecución de los RA»*; y las
+  Instrucciones 26-27, que impiden calificar positivamente un módulo con RA no superados). El
+  centro concreta ese mandato exigiendo **≥ 5 en cada RA**.
 - La reflexión escrita individual de cada debate (máximo **300 palabras**) vale **30 de los 100
   puntos** de la rúbrica: no es un trámite.
 

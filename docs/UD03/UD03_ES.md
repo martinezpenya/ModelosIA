@@ -1,7 +1,5 @@
 # Procesamiento del Lenguaje Natural
 
-![type:video](assets/UD03_PLN.mp4)
-
 
 <p><iframe width="100%" height="315" src="https://www.youtube.com/embed/o3C2P-Wio5U?si=7-y0dOLnh5ql2bnu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe></p>
 

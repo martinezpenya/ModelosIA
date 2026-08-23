@@ -38,10 +38,25 @@ nav:
       - T02 GitHub: UD01/UD01_T02_GitHub.md
       - T03 Markdown: UD01/UD01_T03_Markdown.md
   - UD05:
-    - Sistemas basados en el conocimiento: UD05/UD05_ES.md
+    - Sistemas expertos y controladores inteligentes: UD05/UD05_ES.md
     - Diapositivas: UD05/UD05_Diapositivas.md
+    - Ejercicios: UD05/UD05_Ejercicios.md
+    - Talleres: UD05/UD05_Talleres.md
     - Actividades Guiadas: UD05/UD05_ActividadesGuiadas.md
     - Actividades Entregables: UD05/UD05_ActividadesEntregables.md
+    - Notebooks:
+      - 0 Sistema experto con Python y Experta: UD05/notebooks/0.-SEPythonYExperta.ipynb
+      - 0 Piedra, papel o tijera: UD05/notebooks/0.-rockpaperscissors.ipynb
+      - 1 Clasificación de animales: UD05/notebooks/1.-animals_ES.ipynb
+      - 2 Reglas sobre datos, Titanic: UD05/notebooks/2.-titanic_ES.ipynb
+      - 3 Control difuso, regar el césped: UD05/notebooks/3.-regar_gespa_ES.ipynb
+      - 4 Lógica difusa, quién jugará: UD05/notebooks/4.-qui_jugara_ES.ipynb
+      - EX0 Sistema experto de libre elección: UD05/notebooks/EX0.-PracticaExperta.ipynb
+      - EX0 Referencia, tasación de vehículos: UD05/notebooks/EX0.-TasacionVehiculosUsados.ipynb
+      - EX1 Detectar lesiones de rodilla: UD05/notebooks/EX1.-genoll_ES.ipynb
+      - EX2 Previsión del valor de mercado: UD05/notebooks/EX2.-preveure_valor_mercat_ES.ipynb
+      - EX3 Centrocampistas con potencial: UD05/notebooks/EX3.-detectar_centrocampistes_joves_ES.ipynb
+      - EX4 Simulador de quemador de gas: UD05/notebooks/EX4.-cremador_ES.ipynb
   - UD03:
     - Procesamiento del Lenguaje Natural: UD03/UD03_ES.md
     - Diapositivas: UD03/UD03_Diapositivas.md
@@ -209,7 +224,7 @@ plugins:
     # Render local de notebooks (decisión 2026-08-20: render local + enlace a Colab).
     # Acotado a las unidades ya fusionadas; se amplía el patrón al fusionar cada una.
     - mkdocs-jupyter:
-        include: ["UD00/notebooks/*.ipynb", "UD06/notebooks/*.ipynb"]
+        include: ["UD00/notebooks/*.ipynb", "UD05/notebooks/*.ipynb", "UD06/notebooks/*.ipynb"]
         include_source: true
         execute: false
         ignore_h1_titles: true
@@ -272,6 +287,9 @@ plugins:
             - src: 'https://martinezpenya.es/ModelosIA/UD06/Presentacion/UD06_1_ES.html'
               img: 'docs/UD06/Presentacion/img/poster-slide1.png'
               text: 'Ver la presentación interactiva de la UD06'
+            - src: 'https://martinezpenya.es/ModelosIA/UD05/Presentacion/UD05_1_ES.html'
+              img: 'docs/UD05/Presentacion/img/poster-slide1.png'
+              text: 'Ver la presentación interactiva de la UD05'
         #two_columns_level: 3
         #
         #render_js: true

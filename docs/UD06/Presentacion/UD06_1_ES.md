@@ -44,7 +44,7 @@ section {
 ![h:260 center](../../assets/portada.png)
 # UD06: Principios legales y éticos de la IA
 #### Modelos de Inteligencia Artificial
-###### version: 2026-08-22
+###### version: 2026-08-23
 ___
 <!-- footer: d.martinezpena@edu.gva.es -->
 <!-- header: Modelos de Inteligencia Artificial 26-27 (UD06_1)-->
@@ -68,6 +68,32 @@ Esto es **qué puedes hacer con él y qué no debes**.
 |---|---|
 | Duración | **6 h** · semanas 24-28 |
 | Criterio | **RA6** y sus 6 CE |
+___
+<style scoped>section { font-size: 24px; }</style>
+
+## RA6 y sus criterios de evaluación
+
+> **RA6** — Aplica principios legales y éticos al desarrollo de la Inteligencia Artificial integrándolos como parte del proceso.
+
+| CE | Criterio | Dónde |
+|---|---|---|
+| **a** | Argumentar los riesgos legales y éticos de aplicar IA | §1 |
+| **b** | Reconocer la necesidad de respetar la privacidad de los datos | §2 |
+| **c** | Decidir el cumplimiento estricto de la legalidad | §3 |
+| **d** | Integrar la protección frente a errores y ataques (*security by design*) | §4 |
+| **e** | Comprobar que se cumplen las normas en todas las áreas (*privacy by design*) | §5 |
+| **f** | Identificar y corregir los sesgos de género | §6 |
+___
+<style scoped>section { font-size: 25px; }</style>
+
+## Al terminar la unidad serás capaz de…
+
+- **Argumentar** los riesgos legales y éticos de la IA apoyándote en casos reales con datos.
+- **Reconocer** qué obliga el RGPD y la LOPDGDD sobre los datos con los que se entrena un modelo.
+- **Clasificar** un sistema según el nivel de riesgo del AI Act y decir qué obligaciones le tocan.
+- **Integrar** la protección frente a errores y ataques en el ciclo de vida del sistema.
+- **Aplicar** una técnica concreta de privacidad desde el diseño a un caso dado.
+- **Medir** el sesgo de un modelo con métricas de equidad y **proponer** una corrección.
 ___
 ## Cómo se evalúa
 
@@ -630,6 +656,30 @@ ___
 * Se atacan **posturas**, nunca personas
 
 > El objetivo no es ganar: es entender **cómo los intereses condicionan la postura**.
+___
+<style scoped>section { font-size: 22px; }</style>
+
+## Puntos clave
+
+- Los riesgos de la IA **no son hipotéticos**: Google Photos, Uber en Tempe, COMPAS. Depurar IA no es depurar software.
+- Los marcos deontológicos coinciden en los principios; el problema es **bajarlos a decisiones concretas**.
+- El **RGPD** y la **LOPDGDD** ya obligan; el **AI Act** añade cuatro niveles de riesgo con calendario escalonado.
+- **Security by design** protege de errores *y* de ataques; **privacy by design** no se resuelve desidentificando.
+- «Justo» significa **seis cosas distintas**, y son **matemáticamente incompatibles** (Kleinberg).
+- Una métrica global **no ve** el sesgo: hay que auditar por grupos, y con más de un atributo.
+___
+<style scoped>section { font-size: 25px; }</style>
+
+## Las cuatro sesiones
+
+| Sesión | Contenido | CE |
+|---|---|---|
+| 1 | Riesgos, deontología y principios; el futuro del trabajo. Preparación del debate 1 y **sorteo de roles** | a |
+| 2 | **Debate 1 · Límites éticos de la IA** | a, c |
+| 3 | Normativa como lectura guiada: RGPD, LOPDGDD, AI Act, *security* y *privacy by design*. Taller de sesgos | b, c, d, e |
+| 4 | **Debate 2 · El algoritmo contra el crimen**, con COMPAS y Simpson. Cierre | f |
+
+Los documentales se ven **fuera de clase**; la reflexión escrita es trabajo personal.
 ___
 ## ¿Y ahora?
 

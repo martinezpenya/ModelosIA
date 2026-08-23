@@ -44,7 +44,7 @@ section {
 ![h:260 center](../../assets/portada.png)
 # UD00: Presentación y curso rápido de Docker
 #### Modelos de Inteligencia Artificial
-###### version: 2026-08-21
+###### version: 2026-08-23
 ___
 <!-- footer: d.martinezpena@edu.gva.es -->
 <!-- header: Modelos de Inteligencia Artificial 26-27 (UD00_1)-->
@@ -69,6 +69,27 @@ ___
 > Del 1 de octubre al 28 de mayo. Clases de **lunes a jueves**: los viernes son para tareas y talleres.
 ___
 
+<style scoped>section { font-size: 24px; }</style>
+
+## Esta unidad no desarrolla un RA propio
+
+El currículo desarrolla **6 RA** para el módulo (RA1-RA6). La UD00 es la unidad de **presentación y puesta en marcha** que prepara el terreno: sin ella, los RA1-RA6 perderían horas configurando entornos.
+
+Lo que sí trabaja se asocia al **RA7-i** (ética y cuidado del entorno de trabajo) y a los **hábitos de trabajo** del curso.
+___
+<style scoped>section { font-size: 24px; }</style>
+
+## Al terminar la unidad serás capaz de…
+
+- **Describir** el curso de especialización y el papel del módulo 5071 en él.
+- **Explicar** cómo se evalúa el módulo: criterios, calificación y recuperación.
+- **Identificar** el entorno del curso: Aules, la web, Python, Jupyter y Docker.
+- **Diferenciar** contenedor, imagen, volumen y red, y qué aporta Docker frente a una máquina virtual.
+- **Crear, ejecutar, detener y eliminar** contenedores con `docker run`.
+- **Escribir** un `Dockerfile` sencillo y **orquestar** varios servicios con Compose.
+- **Levantar** el contenedor de prácticas con Jupyter y las bibliotecas del curso.
+___
+
 ## Cómo se evalúa
 
 * Cada **RA** se califica de **1 a 10, sin decimales**
@@ -79,7 +100,7 @@ ___
 > Puedes aprobar las dos evaluaciones y suspender el módulo por **un solo RA**.
 ___
 
-## Esta unidad no se califica… pero es obligatoria
+## Obligatoria y no calificable: los tres entregables
 
 Tres entregables, marcados **hecho / no hecho**:
 
@@ -299,6 +320,31 @@ ___
 ```bash
 docker compose up -d      # y Jupyter en http://localhost:8888
 ```
+___
+
+<style scoped>section { font-size: 22px; }</style>
+
+## Puntos clave
+
+- El curso de especialización dura **600 h / 36 ECTS**; el módulo 5071 son **90 h** en la Comunitat Valenciana.
+- El módulo desarrolla **6 RA** más el **RA7** de proyecto intermodular, con nota consensuada.
+- **La normativa exige alcanzar todos los RA**; el centro lo concreta en **≥ 5 en cada uno**. Cada RA: **40 % tareas + 60 % prueba**. Se pierde la evaluación continua con más del **15 % de inasistencia**.
+- Un **contenedor** es una instancia ejecutable de una **imagen**: aislamiento por procesos, ligereza y reproducibilidad.
+- Los contenedores son **efímeros**: los datos se conservan con **volúmenes** o *bind mounts*.
+- Un `Dockerfile` define la imagen **por capas**, y el orden de las instrucciones aprovecha la caché.
+___
+<style scoped>section { font-size: 26px; }</style>
+
+## Las dos sesiones
+
+**6 h en dos semanas** (1-8 de octubre), a 3 h por semana.
+
+| Semana | Contenido | Evidencia |
+|---|---|---|
+| 1 | Presentación del curso, del módulo y de la evaluación · instalar Docker · imagen, contenedor, registro | Docker funcionando (`docker run hello-world`) |
+| 2 | `docker run` y volúmenes · Dockerfile y Compose · contenedor de prácticas de IA | **Taller 1** y el entorno levantado |
+
+> Si el horario es 2 h + 1 h, el bloque de **2 h** es el único que admite trabajo con contenedores.
 ___
 
 ## ¿Y ahora?
