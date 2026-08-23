@@ -34,6 +34,11 @@
 código las tres fases de un sistema de razonamiento impreciso: fuzzificación, evaluación de reglas
 y desfuzzificación (CE b).
 
+!!! tip "Hazlo en el notebook"
+    Tienes este taller como **notebook con las celdas a rellenar**:
+    [`UD05_T02_logica_difusa.ipynb`](notebooks/UD05_T02_logica_difusa.ipynb). Esta página es la referencia; lo que se
+    entrega es el notebook completado.
+
 ### Fase 1 — Instalación y variables de entrada
 
 ```bash

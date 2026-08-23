@@ -21,6 +21,11 @@
 de **clasificación**, demostrando que un mismo motor simula comportamientos de ámbitos distintos
 (CE b).
 
+!!! tip "Hazlo en el notebook"
+    Tienes este taller como **notebook con las celdas a rellenar**:
+    [`UD05_T01_simular_sistema_experto.ipynb`](notebooks/UD05_T01_simular_sistema_experto.ipynb). Esta página es la referencia; lo que se
+    entrega es el notebook completado.
+
 ### Fase 1 — Parche e importación
 
 ```python
@@ -128,7 +133,9 @@ class DiagnosticoConPregunta(KnowledgeEngine):
     def sin_luces(self):
         print("Sin corriente: revisa batería y conexiones.")
 
-DiagnosticoConPregunta().run()
+motor = DiagnosticoConPregunta()
+motor.reset()   # sin reset() los DefFacts no se cargan y NO se dispara nada
+motor.run()
 ```
 
 ### Fase 6 — Analiza la sensibilidad

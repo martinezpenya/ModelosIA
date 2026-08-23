@@ -102,7 +102,7 @@ ___
 | **40 %** | 2 debates, 2 talleres, 1 notebook |
 | **60 %** | Prueba del RA6 |
 
-Prueba: ~15 test con **penalización del 33,33 %** + 2 de desarrollo.
+Prueba: test y desarrollo sobre el contenido de la unidad.
 
 > Hace falta **5 o más** en el RA.
 ___

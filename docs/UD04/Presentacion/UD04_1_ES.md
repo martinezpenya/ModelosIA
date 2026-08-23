@@ -1022,7 +1022,7 @@ robot.add_device(bots.Camera(64, 32))
 | Peso | Instrumento |
 |---|---|
 | **40 %** | Media de los **seis entregables** (`EX1`-`EX6`), cada uno con su rúbrica sobre 10 |
-| **60 %** | Prueba del RA4: ~15 test de 4 opciones con penalización del 33,33 % + 2 de desarrollo |
+| **60 %** | Prueba del RA4: test y desarrollo sobre el contenido de la unidad |
 
 Los entregables son una **secuencia**: `EX4` genera los datos de `EX5`. No conviene dejarlos para el final ni saltarse el orden.
 

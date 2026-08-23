@@ -1158,6 +1158,7 @@ trabajo personal.
 
 ## 14. Recursos
 
+- [Diapositivas](UD06_Diapositivas.md)
 - [Ejercicios de la unidad](UD06_Ejercicios.md)
 - Talleres:
     - [T01 · Análisis de un caso ético](UD06_T01_Analisis_caso_etico_ES.md)
@@ -1168,12 +1169,7 @@ trabajo personal.
 - [Actividades guiadas](UD06_ActividadesGuiadas.md) — documentales y entrevistas que se ven antes de
   cada debate
 - [Actividades entregables](UD06_ActividadesEntregables.md) — resumen de lo que se entrega y cuándo
-- **Notebook de la unidad**. El nombre lo abre aquí mismo ya renderizado, el badge azul lo descarga y
-  el de Colab lo ejecuta en el navegador sin instalar nada:
-
-    | Notebook | Descargar | Ejecutar |
-    |---|---|---|
-    | [N01 · Detección de sesgos en un conjunto de datos](notebooks/UD06_N01_sesgos_ia.ipynb) | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD06/notebooks/UD06_N01_sesgos_ia.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD06/notebooks/UD06_N01_sesgos_ia.ipynb){:target="_blank"} |
+- **Notebooks** — todos los de la unidad, con descarga y apertura en Colab, en el menú «Notebooks»
 
 ??? note "Referencias de la unidad"
     **Normativa** (texto consolidado):
@@ -1216,7 +1212,7 @@ trabajo personal.
 | Peso | Instrumento |
 |---|---|
 | **40 %** actividades | **Debate 1** y **Debate 2**, con la [rúbrica de debate](UD06_ActividadesEntregables.md) (5 criterios, 100 puntos, escalados sobre 10), más los talleres T01 y T02 y el notebook N01 |
-| **60 %** prueba escrita | Prueba del RA6 en Moodle: ~15 preguntas de test de 4 opciones con **penalización del 33,33 %** + 2 de desarrollo, aleatorias por alumno |
+| **60 %** prueba escrita | Prueba del RA6 en Moodle: preguntas de test y de desarrollo sobre el contenido de la unidad |
 
 - **La normativa exige alcanzar todos los RA** del módulo para superarlo (art. 5.1 de la Orden
   8/2025: la calificación del módulo está *«en función de la consecución de los RA»*; y las

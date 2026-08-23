@@ -78,10 +78,8 @@ Cada RA se califica **1 a 10, sin decimales** (Orden 8/2025, art. 5.1): **40 %**
 - 📊 La nota final del módulo sale de la ponderación de los RA. Cada RA se evalúa de forma
   independiente, con **calificación de 1 a 10, sin decimales** (Orden 8/2025, art. 5.1).
 
-- 📝 Cada RA tiene **una prueba en Moodle** al cerrar su unidad, con preguntas de test de cuatro
-  opciones y preguntas de desarrollo. En las de test, una respuesta incorrecta **descuenta un
-  tercio** del valor de la pregunta, así que responder al azar penaliza. Las preguntas se extraen
-  aleatoriamente del banco: **cada alumno recibe un examen distinto**.
+- 📝 Cada RA tiene **una prueba escrita en Moodle** al cerrar su unidad, con preguntas de test y de
+  desarrollo sobre el contenido de la unidad.
 
 - ✅ Hay que obtener al menos un **5 en cada RA** para aprobar el módulo.
 

@@ -21,6 +21,11 @@
 definiendo las especificaciones de respuesta (CE d) y observando cómo influye en el comportamiento
 del sistema (CE e).
 
+!!! tip "Hazlo en el notebook"
+    Tienes este taller como **notebook con las celdas a rellenar**:
+    [`UD05_T03_controlador_experto.ipynb`](notebooks/UD05_T03_controlador_experto.ipynb). Esta página es la referencia; lo que se
+    entrega es el notebook completado.
+
 ### Fase 1 — La planta (modelo simple)
 
 ```python

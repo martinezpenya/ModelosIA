@@ -791,10 +791,12 @@ es **explicable**: se puede consultar qué regla se disparó y por qué.
 
 ## 17. Recursos
 
+- [Diapositivas](UD05_Diapositivas.md)
 - [Ejercicios de la unidad](UD05_Ejercicios.md)
 - Talleres: [T01 · simular un sistema experto](UD05_T01_Simular_sistema_experto_ES.md) · [T02 · lógica difusa](UD05_T02_Logica_difusa_ES.md) · [T03 · controlador experto](UD05_T03_Controlador_experto_ES.md)
 - [Actividades guiadas](UD05_ActividadesGuiadas.md) — 6 notebooks de introducción y práctica
 - [Actividades entregables](UD05_ActividadesEntregables.md) — 5 notebooks evaluables (`EX0`-`EX4`), con sus rúbricas
+- **Notebooks** — todos los de la unidad, con descarga y apertura en Colab, en el menú «Notebooks»
 
 ??? note "Referencias de la unidad"
     - [Wikipedia · Expert system](https://en.wikipedia.org/wiki/Expert_system)
@@ -816,7 +818,7 @@ es **explicable**: se puede consultar qué regla se disparó y por qué.
 | Peso | Instrumento |
 |---|---|
 | **40 %** actividades | Media de los **cinco entregables** (`EX0`-`EX4`); cada uno con su [rúbrica](UD05_ActividadesEntregables.md#rubricas) sobre 10 |
-| **60 %** prueba escrita | Prueba del RA5 en Moodle: ~15 preguntas de test de 4 opciones con **penalización del 33,33 %** + 2 de desarrollo |
+| **60 %** prueba escrita | Prueba del RA5 en Moodle: preguntas de test y de desarrollo sobre el contenido de la unidad |
 
 - **La normativa exige alcanzar todos los RA** del módulo para superarlo (art. 5.1 de la Orden
   8/2025: la calificación del módulo está *«en función de la consecución de los RA»*; y las

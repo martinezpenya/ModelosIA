@@ -49,30 +49,50 @@ nav:
     - Actividades Guiadas: UD05/UD05_ActividadesGuiadas.md
     - Actividades Entregables: UD05/UD05_ActividadesEntregables.md
     - Notebooks:
-      - 0 Sistema experto con Python y Experta: UD05/notebooks/UD05_N01_experta_primeros_pasos.ipynb
-      - 0 Piedra, papel o tijera: UD05/notebooks/UD05_N02_piedra_papel_tijera.ipynb
-      - 1 Clasificación de animales: UD05/notebooks/UD05_N03_clasificacion_animales.ipynb
-      - 2 Reglas sobre datos, Titanic: UD05/notebooks/UD05_N04_reglas_desde_datos_titanic.ipynb
-      - 3 Control difuso, regar el césped: UD05/notebooks/UD05_N05_control_difuso_riego.ipynb
-      - 4 Lógica difusa, quién jugará: UD05/notebooks/UD05_N06_logica_difusa_quien_jugara.ipynb
+      - N01 Sistema experto con Python y Experta: UD05/notebooks/UD05_N01_experta_primeros_pasos.ipynb
+      - N02 Piedra, papel o tijera: UD05/notebooks/UD05_N02_piedra_papel_tijera.ipynb
+      - N03 Clasificación de animales: UD05/notebooks/UD05_N03_clasificacion_animales.ipynb
+      - N04 Reglas sobre datos, Titanic: UD05/notebooks/UD05_N04_reglas_desde_datos_titanic.ipynb
+      - N05 Control difuso, regar el césped: UD05/notebooks/UD05_N05_control_difuso_riego.ipynb
+      - N06 Lógica difusa, quién jugará: UD05/notebooks/UD05_N06_logica_difusa_quien_jugara.ipynb
       - EX0 Sistema experto de libre elección: UD05/notebooks/UD05_EX0_sistema_experto_libre.ipynb
       - EX0 Referencia, tasación de vehículos: UD05/notebooks/UD05_EX0_referencia_tasacion_vehiculos.ipynb
       - EX1 Detectar lesiones de rodilla: UD05/notebooks/UD05_EX1_lesiones_rodilla.ipynb
       - EX2 Previsión del valor de mercado: UD05/notebooks/UD05_EX2_valor_mercado_jugadores.ipynb
       - EX3 Centrocampistas con potencial: UD05/notebooks/UD05_EX3_centrocampistas_jovenes.ipynb
       - EX4 Simulador de quemador de gas: UD05/notebooks/UD05_EX4_quemador_gas.ipynb
+      - T01 Simular un sistema experto: UD05/notebooks/UD05_T01_simular_sistema_experto.ipynb
+      - T02 Lógica difusa, las propinas: UD05/notebooks/UD05_T02_logica_difusa.ipynb
+      - T03 Controlador experto: UD05/notebooks/UD05_T03_controlador_experto.ipynb
   - UD03:
     - Procesamiento del Lenguaje Natural: UD03/UD03_ES.md
     - Diapositivas: UD03/UD03_Diapositivas.md
+    - Ejercicios: UD03/UD03_Ejercicios.md
+    - Talleres:
+      - T01 Del texto al vector: UD03/UD03_T01_Del_texto_al_vector_ES.md
+      - T02 Un sistema de PLN de punta a punta: UD03/UD03_T02_Sistema_PLN_ES.md
     - Actividades Guiadas: UD03/UD03_ActividadesGuiadas.md
     - Actividades Entregables: UD03/UD03_ActividadesEntregables.md
+    - Notebooks:
+      - N01 Introducción al PLN: UD03/notebooks/UD03_N01_introduccion_pln.ipynb
+      - N02 Clasificación de texto con PyTorch: UD03/notebooks/UD03_N02_clasificacion_texto_torch.ipynb
+      - N03 Modelos de lenguaje, DistilBERT: UD03/notebooks/UD03_N03_modelos_lenguaje_distilbert.ipynb
+      - N04 spaCy, primeros pasos: UD03/notebooks/UD03_N04_spacy_primeros_pasos.ipynb
+      - N05 Ampliación, géneros musicales: UD03/notebooks/UD03_N05_ampliacion_clasificador_generos_musicales.ipynb
+      - EX1 Representación de texto: UD03/notebooks/UD03_EX1_representacion_texto.ipynb
+      - EX2 Clasificador de preguntas: UD03/notebooks/UD03_EX2_clasificador_preguntas.ipynb
+      - EX2.5 NLTK y Python: UD03/notebooks/UD03_EX2_5_nltk_python.ipynb
+      - EX3 Sentimiento en IMDb: UD03/notebooks/UD03_EX3_sentimiento_imdb.ipynb
+      - EX4 Asistente virtual: UD03/notebooks/UD03_EX4_asistente_virtual.ipynb
+      - T01 Del texto al vector: UD03/notebooks/UD03_T01_del_texto_al_vector.ipynb
+      - T02 Sistema de PLN: UD03/notebooks/UD03_T02_sistema_pln.ipynb
   - UD04:
     - Análisis de sistemas robotizados: UD04/UD04_ES.md
+    - Diapositivas: UD04/UD04_Diapositivas.md
     - Ejercicios: UD04/UD04_Ejercicios.md
     - Talleres:
       - T01 Cinemática de un manipulador: UD04/UD04_T01_Cinematica_manipulador_ES.md
       - T02 Diseño de un sistema robotizado: UD04/UD04_T02_Diseno_sistema_robotizado_ES.md
-    - Diapositivas: UD04/UD04_Diapositivas.md
     - Actividades Guiadas: UD04/UD04_ActividadesGuiadas.md
     - Actividades Entregables: UD04/UD04_ActividadesEntregables.md
     - Notebooks:
@@ -97,10 +117,12 @@ nav:
     - Debates:
       - D01 Límites éticos de la IA: UD06/UD06_D01_Debate_limites_eticos_ES.md
       - D02 El algoritmo contra el crimen: UD06/UD06_D02_Debate_algoritmo_crimen_ES.md
-    - Notebooks:
-      - N01 Detección y corrección de sesgos: UD06/notebooks/UD06_N01_sesgos_ia.ipynb
     - Actividades Guiadas: UD06/UD06_ActividadesGuiadas.md
     - Actividades Entregables: UD06/UD06_ActividadesEntregables.md
+    - Notebooks:
+      - N01 Detección y corrección de sesgos: UD06/notebooks/UD06_N01_sesgos_ia.ipynb
+      - T01 Análisis de un caso ético: UD06/notebooks/UD06_T01_analisis_caso_etico.ipynb
+      - T02 Auditoría de sesgos con Fairlearn: UD06/notebooks/UD06_T02_auditoria_sesgos.ipynb
   - Sobre mi: sobremi.md
   - Fuentes de información: fuentes.md
 
@@ -244,7 +266,7 @@ plugins:
     # Render local de notebooks (decisión 2026-08-20: render local + enlace a Colab).
     # Acotado a las unidades ya fusionadas; se amplía el patrón al fusionar cada una.
     - mkdocs-jupyter:
-        include: ["UD00/notebooks/*.ipynb", "UD04/notebooks/*.ipynb", "UD05/notebooks/*.ipynb", "UD06/notebooks/*.ipynb"]
+        include: ["UD00/notebooks/*.ipynb", "UD03/notebooks/*.ipynb", "UD04/notebooks/*.ipynb", "UD05/notebooks/*.ipynb", "UD06/notebooks/*.ipynb"]
         include_source: true
         execute: false
         ignore_h1_titles: true
@@ -319,6 +341,9 @@ plugins:
             - src: 'https://martinezpenya.es/ModelosIA/UD04/Presentacion/UD04_1_ES.html'
               img: 'docs/UD04/Presentacion/img/poster-slide1.png'
               text: 'Ver la presentación interactiva de la UD04'
+            - src: 'https://martinezpenya.es/ModelosIA/UD03/Presentacion/UD03_1_ES.html'
+              img: 'docs/UD03/Presentacion/img/poster-slide1.png'
+              text: 'Ver la presentación interactiva de la UD03'
         #two_columns_level: 3
         #
         #render_js: true

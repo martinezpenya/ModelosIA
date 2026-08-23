@@ -10,6 +10,11 @@ IA (RA6-a, RA6-c, RA6-f), argumentando con principios deontológicos, métricas 
 
 **Entrega**: informe en PDF o Markdown con las cinco tablas rellenas y las respuestas de la Fase 6.
 
+!!! tip "Hazlo en el notebook"
+    Tienes este taller como **notebook con las celdas a rellenar**:
+    [`UD06_T01_analisis_caso_etico.ipynb`](notebooks/UD06_T01_analisis_caso_etico.ipynb). Esta página es la referencia; lo que se
+    entrega es el notebook completado.
+
 ### Fase 1 — Elige el caso
 
 Elige uno de estos casos (o propón otro y valídalo con el profesor):

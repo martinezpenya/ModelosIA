@@ -879,7 +879,7 @@ Captura la heurística de un operador humano y es **fácil de auditar** — algo
 | Peso | Instrumento |
 |---|---|
 | **40 %** | Media de los **cinco entregables** (`EX0`-`EX4`), cada uno con su rúbrica sobre 10 |
-| **60 %** | Prueba del RA5: ~15 test de 4 opciones con penalización del 33,33 % + 2 de desarrollo |
+| **60 %** | Prueba del RA5: test y desarrollo sobre el contenido de la unidad |
 
 La **normativa exige alcanzar todos los RA** del módulo para superarlo; el centro lo concreta en **≥ 5 en cada RA**.
 

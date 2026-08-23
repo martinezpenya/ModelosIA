@@ -12,6 +12,11 @@ que se paga** por hacerlo (RA6-f, con conexión a RA6-b y RA6-e).
     `scikit-learn 1.9.0` y `pandas 3.0.5`. Si tus números difieren un poco, revisa las versiones: no
     revises tu razonamiento.
 
+!!! tip "Hazlo en el notebook"
+    Tienes este taller como **notebook con las celdas a rellenar**:
+    [`UD06_T02_auditoria_sesgos.ipynb`](notebooks/UD06_T02_auditoria_sesgos.ipynb). Esta página es la referencia; lo que se
+    entrega es el notebook completado.
+
 ### Fase 1 — Prepara el entorno y carga los datos
 
 Usaremos el conjunto **UCI Adult** (48.842 filas), que predice si una persona gana más de 50 000 $ al

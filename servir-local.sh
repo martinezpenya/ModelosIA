@@ -31,7 +31,7 @@ PY
 # hay que pararlo y volver a lanzarlo. `--watch mkdocs.yml` no sirve, porque el rebuild vuelve
 # a leer la copia, no el original.
 echo
-echo "  Sirviendo en http://127.0.0.1:8000/ModelosIA/"
+echo "  Sirviendo en http://127.0.0.1:8000/ModelosIA/ (y en la red local, ver mas abajo)"
 echo "  Si cambias mkdocs.yml, para el servidor (Ctrl+C) y relanzalo: la configuracion no se recarga."
 echo
-exec "$VENV/bin/mkdocs" serve -f mkdocs.local.yml -a 127.0.0.1:8000
+exec "$VENV/bin/mkdocs" serve -f mkdocs.local.yml -a 0.0.0.0:8000
