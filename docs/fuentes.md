@@ -24,7 +24,7 @@
 
 - Introducción al Procesamiento del Lenguaje Natural (PLN) Ferran Pla 2017
 
-- Artificial Intelligence a modern approach 4th edition (Peter Norvig)
+- [*Artificial Intelligence: A Modern Approach*, 4.ª edición](https://aima.cs.berkeley.edu/) — Stuart Russell y Peter Norvig (Pearson, 2021). El capítulo 26, *Robotics*, es la base de la parte teórica de la UD04.
 
 - https://www.jetbrains.com
 

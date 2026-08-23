@@ -36,8 +36,8 @@ section {
  }
 </style>
 
-![h:300 center](../assets/cover.png)
-# **UD05: Sistemas expertos y controladores inteligentes**
+![h:260 center](../assets/cover.png)
+# UD05: Sistemas expertos y controladores inteligentes
 #### Modelos de Inteligencia Artificial
 ###### version: 2026-08-23
 

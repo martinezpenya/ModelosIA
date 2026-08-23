@@ -41,7 +41,7 @@ section {
  }
 </style>
 
-![h:260 center](../../assets/portada.png)
+![h:260 center](../assets/cover.png)
 # UD06: Principios legales y éticos de la IA
 #### Modelos de Inteligencia Artificial
 ###### version: 2026-08-23
