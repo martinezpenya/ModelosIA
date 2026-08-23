@@ -25,5 +25,13 @@ for l in Path("mkdocs.yml").read_text(encoding="utf-8").splitlines():
 Path("mkdocs.local.yml").write_text("\n".join(out) + "\n", encoding="utf-8")
 PY
 
-echo "Sirviendo en http://127.0.0.1:8000  (Ctrl+C para parar)"
+# OJO: mkdocs serve recarga el contenido de docs/, pero relee la CONFIGURACION de
+# mkdocs.local.yml, que es la copia que este script genera arriba una sola vez. Si tocas
+# mkdocs.yml (nav, plugins, exclude_docs...), el servidor seguira sirviendo la copia vieja:
+# hay que pararlo y volver a lanzarlo. `--watch mkdocs.yml` no sirve, porque el rebuild vuelve
+# a leer la copia, no el original.
+echo
+echo "  Sirviendo en http://127.0.0.1:8000/ModelosIA/"
+echo "  Si cambias mkdocs.yml, para el servidor (Ctrl+C) y relanzalo: la configuracion no se recarga."
+echo
 exec "$VENV/bin/mkdocs" serve -f mkdocs.local.yml -a 127.0.0.1:8000

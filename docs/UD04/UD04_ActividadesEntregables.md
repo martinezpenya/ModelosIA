@@ -1,18 +1,195 @@
-# Actividades entregables de la UD04
+# UD04 · Actividades entregables
 
-| Notebooks a entregar:                                        |                                                       Enlace |
-| :----------------------------------------------------------- | -----------------------------------------------------------: |
-| [EX1 Ejercicios OpenCV](https://github.com/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/EX1.-Exercicis_OpenCV_ES.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/EX1.-Exercicis_OpenCV_ES.ipynb){:target="_blank"} |
-| [PNG "`EX1.-camp.png`" (Para EX1)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/master/docs/UD04/notebooks/EX1.-camp.png){:target="_blank"}<br>![](notebooks/EX1.-camp.png){width=200px} | [![PNG](https://img.shields.io/badge/PNG-EX1.camp.png-blue?logo=pandas)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/master/docs/UD04/notebooks/EX1.-camp.png){:target="_blank"} |
-| ["`EX1.-vtest.mp4`" (Para EX1)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/master/docs/UD04/notebooks/EX1.-vtest.mp4){:target="_blank"}<br>![type:video](notebooks/EX1.-vtest.mp4){width=200px} |                                                              |
-| [EX2 Navegar con camara](https://github.com/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/EX2.-navegant_camera_ES.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/EX2.-navegant_camera_ES.ipynb){:target="_blank"} |
-| [PNG "`EX2_pista_1.png`" (Para EX2 y 3)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/master/docs/UD04/notebooks/EX2_pista_1.png){:target="_blank"}<br>![](notebooks/EX2_pista_1.png){width=200px} | [![PNG](https://img.shields.io/badge/PNG-EX2_pista_1.png-blue?logo=pandas)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/master/docs/UD04/notebooks/EX2_pista_1.png){:target="_blank"} |
-| [PNG "`EX2_pista_2.png`" (Para EX2 y 3)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/master/docs/UD04/notebooks/EX2_pista_2.png){:target="_blank"}<br>![](notebooks/EX2_pista_2.png){width=200px} | [![PNG](https://img.shields.io/badge/PNG-EX2_pista_2.png-blue?logo=pandas)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/master/docs/UD04/notebooks/EX2_pista_2.png){:target="_blank"} |
-| [PNG "`EX2_pista_3.png`" (Para EX2 y 3)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/master/docs/UD04/notebooks/EX2_pista_3.png){:target="_blank"}<br>![](notebooks/EX2_pista_3.png){width=200px} | [![PNG](https://img.shields.io/badge/PNG-EX2_pista_3.png-blue?logo=pandas)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/master/docs/UD04/notebooks/EX2_pista_3.png){:target="_blank"} |
-| [PNG "`EX2_pista_4.png`" (Para EX2 y 3)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/master/docs/UD04/notebooks/EX2_pista_4.png){:target="_blank"}<br>![](notebooks/EX2_pista_4.png){width=200px} | [![PNG](https://img.shields.io/badge/PNG-EX2_pista_4.png-blue?logo=pandas)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/master/docs/UD04/notebooks/EX2_pista_4.png){:target="_blank"} |
-| [PNG "`EX2_pista_5.png`" (Para EX2 y 3)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/master/docs/UD04/notebooks/EX2_pista_5.png){:target="_blank"}<br>![](notebooks/EX2_pista_5.png){width=200px} | [![PNG](https://img.shields.io/badge/PNG-EX2_pista_5.png-blue?logo=pandas)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/master/docs/UD04/notebooks/EX2_pista_5.png){:target="_blank"} |
-| [PNG "`EX2_pista_6.png`" (Para EX2 y 3)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/master/docs/UD04/notebooks/EX2_pista_6.png){:target="_blank"} <br> ![](notebooks/EX2_pista_6.png){width=200px} | [![PNG](https://img.shields.io/badge/PNG-EX2_pista_6.png-blue?logo=pandas)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/master/docs/UD04/notebooks/EX2_pista_6.png){:target="_blank"} |
-| [EX3 Navegar con camara difusa](https://github.com/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/EX3.-navegant_camera_fuzzy_ES.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/EX3.-navegant_camera_fuzzy_ES.ipynb){:target="_blank"} |
-| [EX4 Generar datos de entrenamiento con camara](https://github.com/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/EX4.-generant_dades_entrenament_camera_ES.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/EX4.-generant_dades_entrenament_camera_ES.ipynb){:target="_blank"} |
-| [EX5 Controlar robot con una Red Neuronal entrenada con los datos de EX4](https://github.com/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/EX5.-controlant_robot_amb_una_xn_camera_ES.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/EX5.-controlant_robot_amb_una_xn_camera_ES.ipynb){:target="_blank"} |
-| [EX6 Controlar robot con aprendizaje por refuerzo (NEAT)](https://github.com/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/EX6.-entrenar_xarxa_neat_camera_ES.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/EX6.-entrenar_xarxa_neat_camera_ES.ipynb){:target="_blank"} |
+!!! important "Los seis cuentan para la nota del RA4"
+    Los seis notebooks forman el **40 % de actividades** del RA4. Cada uno se califica **sobre 10**
+    con su [rúbrica](#rubricas), que tienes más abajo: puedes leerla **antes** de empezar y saber
+    exactamente con qué se te evalúa.
+
+!!! warning "No son independientes: son una secuencia"
+    `EX4` genera el fichero de datos que necesita `EX5`. Si te saltas el orden o pierdes ese
+    fichero, tendrás que volver atrás.
+
+    ```mermaid
+    flowchart LR
+        A["EX1 · OpenCV<br/>ver la imagen"] --> B["EX2 · reglas<br/>seguir la línea"]
+        B --> C["EX3 · lógica difusa<br/>la misma línea, suave"]
+        C --> D["EX4 · generar datos<br/>conduces y se graba"]
+        D -->|training_data.txt| E["EX5 · red neuronal<br/>aprende de tus datos"]
+        E -->|robot.keras| F["EX6 · NEAT<br/>evoluciona sin datos"]
+    ```
+
+!!! note "Entorno"
+    Todos funcionan en **Colab** y en el contenedor de la UD00. La primera celda instala lo
+    necesario. Dos avisos que te ahorrarán tiempo:
+
+    - **No instales `tensorflow` a mano.** `EX5` usa **Keras 3**, que funciona con el backend que
+      haya: en Colab usa el TensorFlow que ya viene, y en local, PyTorch.
+    - Si ves código antiguo con `keras.backend.mean` o `keras.backend.abs`, **ya no existen** en
+      Keras 3: el equivalente es `keras.ops.mean` y `keras.ops.abs`.
+
+## EX1 · Ejercicios de OpenCV
+
+Tres ejercicios de visión sobre imagen y vídeo: detectar **bordes** y enmarcarlos, detectar
+**movimiento** entre fotogramas consecutivos y calcular el **flujo óptico**.
+
+| Recurso | Enlace |
+|---|---|
+| Notebook | [`UD04_EX1_ejercicios_opencv.ipynb`](notebooks/UD04_EX1_ejercicios_opencv.ipynb) |
+| Imagen | [`EX1.-camp.png`](notebooks/EX1.-camp.png) |
+| Vídeo | [`EX1.-vtest.mp4`](notebooks/EX1.-vtest.mp4) |
+
+**Se entrega**: el notebook con los tres ejercicios resueltos y sus salidas.
+
+## EX2 · Navegar con cámara, por reglas
+
+El robot tiene que **seguir una línea** en el suelo usando solo lo que ve su cámara. Aquí escribes
+tú todas las condiciones: dónde está la línea en la imagen, y qué hacer en cada caso.
+
+Dos escenarios: **línea simple** y **línea doble**.
+
+| Recurso | Enlace |
+|---|---|
+| Notebook | [`UD04_EX2_navegar_camara.ipynb`](notebooks/UD04_EX2_navegar_camara.ipynb) |
+| Pistas | [1](notebooks/EX2_pista_1.png) · [2](notebooks/EX2_pista_2.png) · [3](notebooks/EX2_pista_3.png) · [4](notebooks/EX2_pista_4.png) · [5](notebooks/EX2_pista_5.png) · [6](notebooks/EX2_pista_6.png) |
+
+**Se entrega**: el notebook con el controlador funcionando en los dos escenarios.
+
+## EX3 · Navegar con cámara, con lógica difusa
+
+El **mismo problema** que `EX2`, resuelto con lógica difusa: variables lingüísticas, funciones de
+pertenencia, reglas y desfuzzificación. Enlaza directamente con la UD05.
+
+| Recurso | Enlace |
+|---|---|
+| Notebook | [`UD04_EX3_navegar_camara_difusa.ipynb`](notebooks/UD04_EX3_navegar_camara_difusa.ipynb) |
+| Pistas | Las mismas seis de `EX2` |
+
+**Se entrega**: el notebook con el sistema difuso completo y el robot navegando en los dos
+escenarios.
+
+!!! tip "Compara antes de entregar"
+    Ya has resuelto el mismo problema de dos formas. Antes de entregar, apunta en qué se diferencian
+    el comportamiento de `EX2` y el de `EX3`: no cuál «va mejor», sino **cómo se mueve el robot** en
+    cada caso, y por qué.
+
+## EX4 · Generar los datos de entrenamiento
+
+Aquí no se entrena nada todavía: **conduces tú el robot** y el notebook graba lo que ve la cámara
+junto con lo que tú decidiste hacer. El resultado es un conjunto de ejemplos etiquetados.
+
+| Recurso | Enlace |
+|---|---|
+| Notebook | [`UD04_EX4_generar_datos_entrenamiento.ipynb`](notebooks/UD04_EX4_generar_datos_entrenamiento.ipynb) |
+
+**Se entrega**: el notebook **y el fichero `training_data.txt` con tu nombre**. Guárdatelo: es la
+entrada de `EX5`.
+
+## EX5 · Controlar el robot con una red neuronal
+
+Lees el `training_data.txt` de `EX4`, **construyes y entrenas** una red neuronal con esos ejemplos y
+la usas para conducir el robot. Tres celdas están vacías a propósito: la arquitectura de la red, el
+entrenamiento y la función de control.
+
+| Recurso | Enlace |
+|---|---|
+| Notebook | [`UD04_EX5_red_neuronal.ipynb`](notebooks/UD04_EX5_red_neuronal.ipynb) |
+
+**Se entrega**: el notebook **y el fichero `.keras` con tu nombre**, con la red ya entrenada. Con ese
+fichero, la celda de carga permite **probar cómo se comporta tu red sin repetir el entrenamiento**
+—que es largo—, y es así como se corrige.
+
+!!! note "Antes de entrenar hay que mirar los datos"
+    La rúbrica puntúa `classifica_moviments` y el **balanceo**, y no es un capricho: conduciendo, un
+    robot va hacia delante muchísimo más de lo que gira, así que el conjunto sale **desequilibrado**.
+    Una red entrenada con esos datos aprende a ir recto siempre, que es lo que más acierta de media
+    y lo que peor sigue la línea.
+
+## EX6 · Aprendizaje por refuerzo con NEAT
+
+El mismo control, sin ejemplos. **NEAT** evoluciona a la vez los pesos **y la topología** de la red:
+tú solo defines qué entra, qué sale y cómo se mide si lo está haciendo bien.
+
+| Recurso | Enlace |
+|---|---|
+| Notebook | [`UD04_EX6_neat.ipynb`](notebooks/UD04_EX6_neat.ipynb) |
+
+**Se entrega**: el notebook y una **memoria en PDF** con tus pruebas variando `fitness_threshold` y
+`pop_size`, la justificación de `num_inputs` y `num_outputs`, y una reflexión sobre el aprendizaje
+por refuerzo. Ojo: **la memoria y su formato son la mitad de la nota** de este entregable.
+
+## Rúbricas
+
+Son las rúbricas reales del curso. Las seis tareas se califican **sobre 10**; los puntos de cada
+rúbrica se **escalan** a esa nota.
+
+Los niveles son los mismos en casi todos los criterios: **No entregada** (0) · **Incorrecta** ·
+**Parcialmente incorrecta** · **Bien pero fuera de plazo** · **Correcta**.
+
+!!! warning "Entregar tarde cuesta casi lo mismo que entregar a medias"
+    Fíjate en los niveles: «bien pero fuera de plazo» puntúa igual o casi igual que «parcialmente
+    incorrecta». No es un redondeo: es la forma de decir que el plazo cuenta.
+
+### EX1 · Ejercicios de OpenCV (8 puntos)
+
+| Criterio | Correcta | Parcial o fuera de plazo | Incorrecta |
+|---|---|---|---|
+| Ejercicio 1 · bordes | 4 | 2 | 0,5 |
+| Ejercicio 2 · detección de movimiento | 2 | 1 | 0,5 |
+| Ejercicio 3 · flujo óptico | 2 | 1-2 | 0,5 |
+
+### EX2 · Navegar con cámara (6 puntos)
+
+| Criterio | Correcta | Parcial o fuera de plazo | Incorrecta |
+|---|---|---|---|
+| Seguidor de línea simple | 4 | 2 | 0,5 |
+| Seguimiento de línea doble | 2 | 1 | 0,5 |
+
+### EX3 · Navegar con cámara difusa (15 puntos)
+
+Cinco criterios de **3 puntos** cada uno (correcta 3 · parcial 2 · fuera de plazo 1,5 · incorrecta 1):
+
+| Criterio |
+|---|
+| Variable de entrada y funciones de pertenencia |
+| Variables de salida |
+| Reglas, sistema de control y simulación |
+| Controlador del robot · línea simple |
+| Controlador del robot · línea doble |
+
+### EX4 · Generar datos de entrenamiento (14 puntos)
+
+| Criterio | Correcta | Parcial o fuera de plazo | Incorrecta |
+|---|---|---|---|
+| Entrega `training_data.txt` con tu nombre | 2 | 1 | 1 |
+| `determine_move` devuelve movimiento, rotación y centro | **6** | 3 | 1 |
+| Normalización de datos | 3 | 2 · 1,5 | 1 |
+| Generación masiva de datos | 3 | 2 · 1,5 | 1 |
+
+`determine_move` vale **6 de 14**: casi la mitad de la tarea.
+
+### EX5 · Red neuronal con los datos de EX4 (14 puntos)
+
+| Criterio | Correcta | Parcial o fuera de plazo | Incorrecta |
+|---|---|---|---|
+| `classifica_moviments` | 3 | 2 · 1,5 | 1 |
+| Balanceo de movimientos | 3 | 2 · 1,5 | 1 |
+| Crear y entrenar la red neuronal | 3 | 2 · 1,5 | 1 |
+| `network_driver` · controlar el robot con la red | 3 | 2 · 1,5 | 1 |
+| Entrega el `.keras` con tu nombre y la red entrenada | 2 | 1 | 1 |
+
+### EX6 · Aprendizaje por refuerzo con NEAT (12 puntos)
+
+Cuatro criterios de **3 puntos** (correcta 3 · parcial 2 · fuera de plazo 1,5 · incorrecta 1):
+
+| Criterio |
+|---|
+| Decisión de `num_inputs` y `num_outputs` |
+| Pruebas con `fitness_threshold` y `pop_size` |
+| Reflexión sobre el aprendizaje por refuerzo |
+| Formato de la memoria en PDF (portada, pie, etc.) |
+
+La reflexión y el formato son **6 de 12**: la mitad. Es el entregable más abierto de la unidad y el
+único cuya rúbrica puntúa explícitamente cómo comunicas el trabajo.
+
+---
+[Volver a la UD04](UD04_ES.md) · [Actividades guiadas](UD04_ActividadesGuiadas.md) · [Taller 1](UD04_T01_Cinematica_manipulador_ES.md) · [Taller 2](UD04_T02_Diseno_sistema_robotizado_ES.md)

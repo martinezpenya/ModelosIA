@@ -61,7 +61,7 @@
 22. ¿Qué hace **Human-Learn** que no hace un sistema experto puro?
 23. ¿Qué ventaja tiene **FIGS** frente a un árbol de decisión grande, en términos de
     interpretabilidad?
-24. En `2.-titanic_ES.ipynb`, ¿quién escribe las reglas: el experto o el algoritmo? Justifica con lo
+24. En `UD05_N04_reglas_desde_datos_titanic.ipynb`, ¿quién escribe las reglas: el experto o el algoritmo? Justifica con lo
     que hace `FIGSClassifier`.
 25. Propón un caso donde usarías **skope-rules** en vez de escribir las reglas a mano.
 
@@ -127,4 +127,4 @@
     respuesta tendría si actuara como controlador.
 
 ---
-[Volver a la UD05](UD05_ES.md) · [Talleres](UD05_Talleres.md)
+[Volver a la UD05](UD05_ES.md) · [Taller 1](UD05_T01_Simular_sistema_experto_ES.md) · [Taller 2](UD05_T02_Logica_difusa_ES.md) · [Taller 3](UD05_T03_Controlador_experto_ES.md)

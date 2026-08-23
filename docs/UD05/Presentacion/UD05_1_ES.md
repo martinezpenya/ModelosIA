@@ -384,11 +384,11 @@ class Animales(KnowledgeEngine):
 
 | Notebook | Dominio | Qué simula |
 |---|---|---|
-| `0.-SEPythonYExperta` | Introducción | Hechos, reglas, `DefFacts` |
-| `0.-rockpaperscissors` | Juego | Piedra, papel o tijera por reglas |
-| `1.-animals_ES` | Zoología | El ejemplo anterior, ejecutado |
+| `UD05_N01_experta_primeros_pasos` | Introducción | Hechos, reglas, `DefFacts` |
+| `UD05_N02_piedra_papel_tijera` | Juego | Piedra, papel o tijera por reglas |
+| `UD05_N03_clasificacion_animales` | Zoología | El ejemplo anterior, ejecutado |
 | **`EX1` · rodilla** | Medicina | Diagnóstico de una lesión por síntomas |
-| `2.-titanic_ES` | Datos históricos | Reglas **extraídas** de datos (§4) |
+| `UD05_N04_reglas_desde_datos_titanic` | Datos históricos | Reglas **extraídas** de datos (§4) |
 | **`EX2` · valor de mercado** | Deporte | Híbrido reglas + aprendizaje (§4) |
 | **`EX3` · `EX4`** | Deporte · industria | Lógica difusa y control real (§5, §8) |
 

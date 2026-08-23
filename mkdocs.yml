@@ -13,6 +13,7 @@ exclude_docs: |
   UD05/Presentacion/*.md
   UD03/Presentacion/*.md
   UD06/Presentacion/*.md
+  UD04/Presentacion/*.md
 
 nav:
   - Información importante: index.md
@@ -41,22 +42,25 @@ nav:
     - Sistemas expertos y controladores inteligentes: UD05/UD05_ES.md
     - Diapositivas: UD05/UD05_Diapositivas.md
     - Ejercicios: UD05/UD05_Ejercicios.md
-    - Talleres: UD05/UD05_Talleres.md
+    - Talleres:
+      - T01 Simular un sistema experto: UD05/UD05_T01_Simular_sistema_experto_ES.md
+      - T02 Lógica difusa, las propinas: UD05/UD05_T02_Logica_difusa_ES.md
+      - T03 Controlador experto de un proceso: UD05/UD05_T03_Controlador_experto_ES.md
     - Actividades Guiadas: UD05/UD05_ActividadesGuiadas.md
     - Actividades Entregables: UD05/UD05_ActividadesEntregables.md
     - Notebooks:
-      - 0 Sistema experto con Python y Experta: UD05/notebooks/0.-SEPythonYExperta.ipynb
-      - 0 Piedra, papel o tijera: UD05/notebooks/0.-rockpaperscissors.ipynb
-      - 1 Clasificación de animales: UD05/notebooks/1.-animals_ES.ipynb
-      - 2 Reglas sobre datos, Titanic: UD05/notebooks/2.-titanic_ES.ipynb
-      - 3 Control difuso, regar el césped: UD05/notebooks/3.-regar_gespa_ES.ipynb
-      - 4 Lógica difusa, quién jugará: UD05/notebooks/4.-qui_jugara_ES.ipynb
-      - EX0 Sistema experto de libre elección: UD05/notebooks/EX0.-PracticaExperta.ipynb
-      - EX0 Referencia, tasación de vehículos: UD05/notebooks/EX0.-TasacionVehiculosUsados.ipynb
-      - EX1 Detectar lesiones de rodilla: UD05/notebooks/EX1.-genoll_ES.ipynb
-      - EX2 Previsión del valor de mercado: UD05/notebooks/EX2.-preveure_valor_mercat_ES.ipynb
-      - EX3 Centrocampistas con potencial: UD05/notebooks/EX3.-detectar_centrocampistes_joves_ES.ipynb
-      - EX4 Simulador de quemador de gas: UD05/notebooks/EX4.-cremador_ES.ipynb
+      - 0 Sistema experto con Python y Experta: UD05/notebooks/UD05_N01_experta_primeros_pasos.ipynb
+      - 0 Piedra, papel o tijera: UD05/notebooks/UD05_N02_piedra_papel_tijera.ipynb
+      - 1 Clasificación de animales: UD05/notebooks/UD05_N03_clasificacion_animales.ipynb
+      - 2 Reglas sobre datos, Titanic: UD05/notebooks/UD05_N04_reglas_desde_datos_titanic.ipynb
+      - 3 Control difuso, regar el césped: UD05/notebooks/UD05_N05_control_difuso_riego.ipynb
+      - 4 Lógica difusa, quién jugará: UD05/notebooks/UD05_N06_logica_difusa_quien_jugara.ipynb
+      - EX0 Sistema experto de libre elección: UD05/notebooks/UD05_EX0_sistema_experto_libre.ipynb
+      - EX0 Referencia, tasación de vehículos: UD05/notebooks/UD05_EX0_referencia_tasacion_vehiculos.ipynb
+      - EX1 Detectar lesiones de rodilla: UD05/notebooks/UD05_EX1_lesiones_rodilla.ipynb
+      - EX2 Previsión del valor de mercado: UD05/notebooks/UD05_EX2_valor_mercado_jugadores.ipynb
+      - EX3 Centrocampistas con potencial: UD05/notebooks/UD05_EX3_centrocampistas_jovenes.ipynb
+      - EX4 Simulador de quemador de gas: UD05/notebooks/UD05_EX4_quemador_gas.ipynb
   - UD03:
     - Procesamiento del Lenguaje Natural: UD03/UD03_ES.md
     - Diapositivas: UD03/UD03_Diapositivas.md
@@ -64,9 +68,25 @@ nav:
     - Actividades Entregables: UD03/UD03_ActividadesEntregables.md
   - UD04:
     - Análisis de sistemas robotizados: UD04/UD04_ES.md
+    - Ejercicios: UD04/UD04_Ejercicios.md
+    - Talleres:
+      - T01 Cinemática de un manipulador: UD04/UD04_T01_Cinematica_manipulador_ES.md
+      - T02 Diseño de un sistema robotizado: UD04/UD04_T02_Diseno_sistema_robotizado_ES.md
     - Diapositivas: UD04/UD04_Diapositivas.md
     - Actividades Guiadas: UD04/UD04_ActividadesGuiadas.md
     - Actividades Entregables: UD04/UD04_ActividadesEntregables.md
+    - Notebooks:
+      - 1 Introducción a OpenCV: UD04/notebooks/UD04_N01_introduccion_opencv.ipynb
+      - 2 Vehículos de Braitenberg: UD04/notebooks/UD04_N02_vehiculos_braitenberg.ipynb
+      - 3 Ejemplos de robots en AITK: UD04/notebooks/UD04_N03_ejemplos_robots.ipynb
+      - EX1 Ejercicios de OpenCV: UD04/notebooks/UD04_EX1_ejercicios_opencv.ipynb
+      - EX2 Navegar con cámara: UD04/notebooks/UD04_EX2_navegar_camara.ipynb
+      - EX3 Navegar con cámara difusa: UD04/notebooks/UD04_EX3_navegar_camara_difusa.ipynb
+      - EX4 Generar datos de entrenamiento: UD04/notebooks/UD04_EX4_generar_datos_entrenamiento.ipynb
+      - EX5 Controlar el robot con una red neuronal: UD04/notebooks/UD04_EX5_red_neuronal.ipynb
+      - EX6 Aprendizaje por refuerzo con NEAT: UD04/notebooks/UD04_EX6_neat.ipynb
+      - T01 Cinemática de un manipulador: UD04/notebooks/UD04_T01_cinematica_manipulador.ipynb
+      - T02 Diseño de un sistema robotizado: UD04/notebooks/UD04_T02_diseno_sistema_robotizado.ipynb
   - UD06:
     - Aplicación de principios legales y éticos de la IA: UD06/UD06_ES.md
     - Diapositivas: UD06/UD06_Diapositivas.md
@@ -224,7 +244,7 @@ plugins:
     # Render local de notebooks (decisión 2026-08-20: render local + enlace a Colab).
     # Acotado a las unidades ya fusionadas; se amplía el patrón al fusionar cada una.
     - mkdocs-jupyter:
-        include: ["UD00/notebooks/*.ipynb", "UD05/notebooks/*.ipynb", "UD06/notebooks/*.ipynb"]
+        include: ["UD00/notebooks/*.ipynb", "UD04/notebooks/*.ipynb", "UD05/notebooks/*.ipynb", "UD06/notebooks/*.ipynb"]
         include_source: true
         execute: false
         ignore_h1_titles: true
@@ -240,6 +260,12 @@ plugins:
             'UD02/UD02_Diapositivas.md': 'UD05/UD05_Diapositivas.md'
             'UD02/UD02_ActividadesGuiadas.md': 'UD05/UD05_ActividadesGuiadas.md'
             'UD02/UD02_ActividadesEntregables.md': 'UD05/UD05_ActividadesEntregables.md'
+            # Un taller, una página (2026-08-23): la página que los reunía desaparece.
+            'UD05/UD05_Talleres.md': 'UD05/UD05_T01_Simular_sistema_experto_ES.md'
+            # Los notebooks de la UD05 se renombraron al castellano el 2026-08-23 y sus URLs
+            # antiguas (publicadas ese mismo día) quedan rotas. NO se pueden redirigir: el plugin
+            # solo acepta fuentes `.md` y avisa «is not a valid markdown file» con un `.ipynb`.
+            # Se asume la rotura: el curso no ha empezado y estuvieron publicadas menos de un día.
     # - offline  # Comentado para permitir indexación SEO
     - search
     - git-revision-date-localized:
@@ -290,6 +316,9 @@ plugins:
             - src: 'https://martinezpenya.es/ModelosIA/UD05/Presentacion/UD05_1_ES.html'
               img: 'docs/UD05/Presentacion/img/poster-slide1.png'
               text: 'Ver la presentación interactiva de la UD05'
+            - src: 'https://martinezpenya.es/ModelosIA/UD04/Presentacion/UD04_1_ES.html'
+              img: 'docs/UD04/Presentacion/img/poster-slide1.png'
+              text: 'Ver la presentación interactiva de la UD04'
         #two_columns_level: 3
         #
         #render_js: true

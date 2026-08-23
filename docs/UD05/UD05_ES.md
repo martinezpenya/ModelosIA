@@ -317,11 +317,11 @@ las [actividades guiadas](UD05_ActividadesGuiadas.md) y las [entregables](UD05_A
 
 | Notebook | Dominio | Qué simula |
 |---|---|---|
-| `0.-SEPythonYExperta.ipynb` | Introducción | Primeros pasos con `experta`: hechos, reglas, `DefFacts` |
-| `0.-rockpaperscissors.ipynb` | Juego | Piedra, papel o tijera decidido por reglas |
-| `1.-animals_ES.ipynb` | Zoología | El ejemplo de arriba, completo y ejecutado |
+| `UD05_N01_experta_primeros_pasos.ipynb` | Introducción | Primeros pasos con `experta`: hechos, reglas, `DefFacts` |
+| `UD05_N02_piedra_papel_tijera.ipynb` | Juego | Piedra, papel o tijera decidido por reglas |
+| `UD05_N03_clasificacion_animales.ipynb` | Zoología | El ejemplo de arriba, completo y ejecutado |
 | **`EX1` · lesión de rodilla** | Medicina | Diagnóstico de una lesión a partir de síntomas, con `experta` |
-| `2.-titanic_ES.ipynb` | Datos históricos | Reglas **extraídas** de datos, no escritas a mano (§7) |
+| `UD05_N04_reglas_desde_datos_titanic.ipynb` | Datos históricos | Reglas **extraídas** de datos, no escritas a mano (§7) |
 | **`EX2` · valor de mercado** | Deporte | Estimación híbrida reglas + aprendizaje automático (§7) |
 | **`EX3` · centrocampistas** · **`EX4` · quemador de gas** | Deporte · industria | Lógica difusa (§8) y control de un proceso real (§10-11) |
 
@@ -355,7 +355,7 @@ enfoques:
 | **[FIGS](https://github.com/csinva/imodels)** (`imodels`) | Genera **reglas fáciles de interpretar** combinando varios árboles pequeños («sumas de árboles»), en vez de un único árbol grande difícil de leer |
 | **[spaCy](https://spacy.io/usage/rule-based-matching)** | Reglas para **extraer información de texto**: útil cuando no hay suficientes datos etiquetados o para casos muy específicos |
 
-!!! example "`2.-titanic_ES.ipynb`: reglas que salen de los datos, no de un experto"
+!!! example "`UD05_N04_reglas_desde_datos_titanic.ipynb`: reglas que salen de los datos, no de un experto"
     En vez de que alguien escriba a mano «si viajas en primera clase y eres mujer, sobrevives»,
     **FIGS** analiza los datos históricos del Titanic y **genera esa regla por sí solo**, junto con
     otras. El resultado sigue siendo legible —un árbol de reglas pequeño—, pero nadie lo escribió a
@@ -427,7 +427,7 @@ sirven para representar periodos, y las sigmoidales, probabilidades.
 ### 8.4 Ejemplo trabajado: la propina del restaurante
 
 Es el ejemplo canónico de `scikit-fuzzy`, y el que verás resuelto paso a paso en el
-[Taller 2](UD05_Talleres.md).
+[Taller 2](UD05_T02_Logica_difusa_ES.md).
 
 **Variables de entrada** (funciones triangulares):
 
@@ -792,7 +792,7 @@ es **explicable**: se puede consultar qué regla se disparó y por qué.
 ## 17. Recursos
 
 - [Ejercicios de la unidad](UD05_Ejercicios.md)
-- [Talleres: simular un sistema experto · lógica difusa · controlador experto de un proceso](UD05_Talleres.md)
+- Talleres: [T01 · simular un sistema experto](UD05_T01_Simular_sistema_experto_ES.md) · [T02 · lógica difusa](UD05_T02_Logica_difusa_ES.md) · [T03 · controlador experto](UD05_T03_Controlador_experto_ES.md)
 - [Actividades guiadas](UD05_ActividadesGuiadas.md) — 6 notebooks de introducción y práctica
 - [Actividades entregables](UD05_ActividadesEntregables.md) — 5 notebooks evaluables (`EX0`-`EX4`), con sus rúbricas
 
