@@ -41,6 +41,13 @@ img {
     .pdf-spacer {
         display: block;
     }
+    /* sobremi.md: el pie con los logos del centro y la licencia CC duplica casi exactamente la
+       contraportada que mkdocs-with-pdf ya genera automáticamente (back_cover + cover_logo),
+       justo en la página anterior. Se oculta solo en el PDF; en el sitio web sigue siendo el pie
+       normal de la página. */
+    .web-only-footer {
+        display: none !important;
+    }
     /* Solo imágenes de contenido (.md-typeset img): un selector `img, svg` sin acotar pisaba
        tambien los iconos pequeños de la interfaz (p. ej. el reloj de "Última actualización" de
        git-revision-date-localized-plugin, un <svg viewBox="0 0 24 24"> sin ancho/alto propios).

@@ -46,6 +46,8 @@
 
 ---
 
+<div class="web-only-footer" markdown>
+
 <p align="center">
 <img src="assets/dep.png" alt="Departament" width="150">
 &nbsp;&nbsp;&nbsp;
@@ -63,3 +65,5 @@
 ![img](https://mirrors.creativecommons.org/presskit/icons/nc.svg){width=22}
 ![img](https://mirrors.creativecommons.org/presskit/icons/sa.svg){width=22}](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1)
 </p>
+
+</div>
