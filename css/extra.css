@@ -54,8 +54,13 @@ img {
        Al forzar `width/height: auto` con !important sobre ESE svg, sin nada que lo acote salvo
        el `max-height: 24cm`, el icono podía crecer hasta casi una página entera -exactamente el
        patron "una imagen enorme rompe la paginación de WeasyPrint" que causaba el corte real
-       del PDF (hallazgo 2026-08-24, tras aplicar sin éxito el reescalado de diagramas mermaid). */
-    .md-typeset img {
+       del PDF (hallazgo 2026-08-24, tras aplicar sin éxito el reescalado de diagramas mermaid).
+       `:not([width])` (hallazgo 2026-08-24, mismo día): sin acotar, esta regla también pisaba
+       imágenes con un `{width=NN}` de Markdown explícito -los iconos de licencia CC de
+       fuentes.md, `width="22"`- forzando `width:auto` y haciéndolos enormes en el PDF. Las
+       imágenes con `zoom` nunca tienen atributo `width` real (por eso usaban `zoom`), así que
+       excluirlas aquí no vuelve a dejar pasar el problema original. */
+    .md-typeset img:not([width]) {
         max-width: 100% !important;
         max-height: 24cm !important;
         width: auto !important;
