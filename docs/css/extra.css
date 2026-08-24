@@ -28,7 +28,14 @@ img {
    documento a partir de ahí, y el PDF se corta en seco. Límite de altura y bloques de código
    partibles entre páginas, para que ninguna imagen o bloque vuelva a hacerlo. */
 @media print {
-    img, svg {
+    /* Solo imágenes de contenido (.md-typeset img): un selector `img, svg` sin acotar pisaba
+       tambien los iconos pequeños de la interfaz (p. ej. el reloj de "Última actualización" de
+       git-revision-date-localized-plugin, un <svg viewBox="0 0 24 24"> sin ancho/alto propios).
+       Al forzar `width/height: auto` con !important sobre ESE svg, sin nada que lo acote salvo
+       el `max-height: 24cm`, el icono podía crecer hasta casi una página entera -exactamente el
+       patron "una imagen enorme rompe la paginación de WeasyPrint" que causaba el corte real
+       del PDF (hallazgo 2026-08-24, tras aplicar sin éxito el reescalado de diagramas mermaid). */
+    .md-typeset img {
         max-width: 100% !important;
         max-height: 24cm !important;
         width: auto !important;
