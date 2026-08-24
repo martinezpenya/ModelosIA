@@ -39,7 +39,7 @@ section {
 ![h:260 center](../assets/cover.png)
 # UD04: Análisis de sistemas robotizados
 #### Modelos de Inteligencia Artificial
-###### version: 2026-08-23
+###### version: 2026-08-24
 
 ---
 <!-- footer: d.martinezpena@edu.gva.es -->
@@ -62,6 +62,8 @@ section {
 <style scoped>section { font-size: 26px; }</style>
 
 ## RA4 y sus criterios de evaluación
+
+<!-- El bloque de contenidos del RD 279/2021 (anexo I) se llama textualmente «Análisis de sistemas robotizados»; agrupa métodos y aplicaciones, modelado y control, programación y diseño e implementación. Es la excepción del módulo: en el resto de RA los contenidos oficiales no casan uno a uno con los CE. -->
 
 > **RA4** — Analiza sistemas robotizados, evaluando opciones de diseño e implementación.
 
@@ -100,6 +102,8 @@ Cuatro contenidos oficiales para cuatro CE: en este RA **encajan casi uno a uno*
 ---
 
 ## Un robot es un agente encarnado
+
+<!-- El bloque de percepción, planificación de movimiento, aprendizaje por refuerzo e interacción humano-robot se basa en el capítulo 26 (Robotics) de Artificial Intelligence: A Modern Approach, 4.ª edición, de Stuart Russell y Peter Norvig. Las prácticas con el simulador AITK proceden del curso Models d'IA de Carles Gonzalez. -->
 
 Es el único sistema de IA del curso que **cambia el estado del mundo físico**.
 
@@ -234,6 +238,8 @@ Mueven articulaciones de **revolución** (giran, ángulo θ) o **prismáticas** 
 
 ## Pinzas: el compromiso
 
+<!-- El nombre completo del robot citado es Shadow Dexterous Hand. -->
+
 - **Mordaza paralela** — dos dedos, un actuador. «Amada y odiada por su simplicidad».
 - **Tres dedos** — algo más de flexibilidad sin complicarse.
 - **Mano antropomórfica** — la Shadow Hand tiene **20 actuadores**: puede girar el móvil en la mano, y **es mucho más difícil de controlar**.
@@ -252,6 +258,8 @@ Casi toda la robótica industrial funciona con **dos dedos y un actuador**, porq
 <style scoped>section { font-size: 25px; }</style>
 
 ## La robótica, con datos (IFR 2025)
+
+<!-- IFR son las siglas de International Federation of Robotics, que publica cada año el informe World Robotics con las estadísticas oficiales del sector; es la fuente de estas cifras. -->
 
 | Dato | Valor (2024) |
 |---|---|
@@ -397,6 +405,8 @@ Se escribe la tabla DH del robot y la pose sale de encadenar las matrices.
 
 ## Tabla DH del Puma 560 (fragmento)
 
+<!-- El Puma 560 es un brazo industrial clásico, uno de los modelos de referencia junto al Panda de Franka que trae ya resueltos roboticstoolbox-python. -->
+
 | Articulación | θ | d | a | α |
 |---|---|---|---|---|
 | 1 | q₁ | 0,6718 | 0 | −90° |
@@ -440,6 +450,8 @@ Métodos **analíticos** (Pieper, desacoplamiento) o **numéricos** (Newton-Raph
 <style scoped>section { font-size: 26px; }</style>
 
 ## Controlar el movimiento
+
+<!-- PID son las siglas de proporcional-integral-derivativo, el controlador clásico de posición en robots industriales. -->
 
 | Estrategia | Cómo |
 |---|---|
@@ -519,6 +531,8 @@ Se evitan al planificar, o se cruzan bajando la velocidad.
 
 ## Precisión no es repetibilidad
 
+<!-- Un ejemplo real de calibración con programación offline es un ABB IRB 1600 corregido con un láser tracker. -->
+
 Un robot puede ser **repetible** y a la vez **impreciso**: vuelve siempre al mismo punto, pero **ese punto no es el que se programó**.
 
 - Con *teach pendant* basta la repetibilidad: el punto se enseñó ahí.
@@ -588,6 +602,8 @@ Y la robótica real hace una **componenda en dos pasos**.
 
 ## La componenda, y su precio
 
+<!-- El control óptimo usa técnicas de optimización de trayectoria como multiple shooting y colocación directa; LQR resuelve el caso ideal de coste cuadrático y dinámica lineal, e iLQR es la variante que se usa cuando esas condiciones no se cumplen, que es casi siempre. -->
+
 1. **Planificar** en un espacio simplificado — solo cinemática, sin dinámica. Sale la trayectoria de referencia.
 2. **Convertirla en política**: un controlador que la sigue y **vuelve a ella** al desviarse.
 
@@ -609,6 +625,8 @@ El **control óptimo** (LQR, iLQR) ataca las dos a la vez.
 <style scoped>section { font-size: 27px; }</style>
 
 ## Tres problemas, de menos a más
+
+<!-- SLAM son las siglas de Simultaneous Localization And Mapping: localización y mapeo simultáneos. -->
 
 | Problema | Se sabe | Se busca |
 |---|---|---|
@@ -638,6 +656,8 @@ Las herramientas son las de toda la IA con incertidumbre:
 
 ## Monte Carlo, en tres fotos
 
+<!-- Esta técnica se llama formalmente localización de Monte Carlo o MCL (Monte Carlo Localization), y se implementa con un filtro de partículas. -->
+
 Una nube de «partículas», cada una una hipótesis:
 
 1. Al arrancar, **repartidas por todo el plano**.
@@ -655,6 +675,8 @@ Y solo necesita dos modelos: el del **movimiento** y el del **sensor**.
 ---
 
 ## Pero no siempre hace falta la artillería
+
+<!-- Es el mismo criterio que se aplica en la UD05 con el PID: empezar simple y añadir complejidad solo cuando se justifica. -->
 
 La tendencia va hacia representaciones con **semántica** —no «aquí hay algo», sino «esto es una puerta»— y las técnicas probabilísticas **ganan** en los problemas difíciles.
 
@@ -718,6 +740,8 @@ Falla justo en el paso 2 de Monte Carlo: cuando hay **varias hipótesis igual de
 ---
 
 ## De ahí el problema *sim-to-real*
+
+<!-- En ese recorrido, EX4 genera los datos conduciendo el robot, EX5 entrena la red con esos datos y EX6 evoluciona la solución con NEAT sin ejemplos etiquetados. -->
 
 Transferir a un robot real lo aprendido en simulación es un **área de investigación activa**.
 
@@ -855,6 +879,8 @@ Se descompone en dos:
 
 ## Aprender lo que la persona quiere
 
+<!-- Es el mismo problema que la UD06 llama specification gaming o problema del rey Midas, y también aplica a un vehículo de dos toneladas, no solo a un brazo fijo. -->
+
 El usuario **no sabría escribir** la función objetivo perfecta. El robot tiene que **inferirla observando**: qué corrige, qué acepta, qué repite.
 
 Y esto no es un detalle técnico: un robot que optimiza una **aproximación mala** del objetivo hace **exactamente lo que se le pidió** y no lo que se quería.
@@ -884,6 +910,8 @@ Con un brazo de una tonelada, **especificar mal el objetivo es un modo de fallo*
 ---
 
 ## El payload no es el peso de la pieza
+
+<!-- La herramienta del extremo del brazo se llama EOAT: end of arm tooling. -->
 
 Es la pieza **más** la herramienta, la brida, los cables y los sensores acoplados.
 
@@ -915,6 +943,8 @@ Y el orden importa: **primero la tarea, después el robot**. Nunca al revés.
 <style scoped>section { font-size: 26px; }</style>
 
 ## La célula y la Industria 4.0
+
+<!-- Además de PROFINET y EtherCAT, el bus determinista del PLC también puede ser EtherNet/IP, otro protocolo industrial habitual en la célula. -->
 
 ```text
 PLC de seguridad ◄──PROFINET/EtherCAT──► Robot ──► Sensores + herramienta
@@ -956,6 +986,8 @@ Un robot conectado a la red de planta es una **superficie de ataque**: es el *se
 <style scoped>section { font-size: 26px; }</style>
 
 ## Dos simuladores, dos trabajos
+
+<!-- roboticstoolbox-python está desarrollado por Peter Corke. -->
 
 **`roboticstoolbox-python`** — para la cinemática de manipuladores: más de 50 robots reales con su cinemática resuelta.
 
@@ -1018,6 +1050,8 @@ robot.add_device(bots.Camera(64, 32))
 <style scoped>section { font-size: 25px; }</style>
 
 ## Cómo se evalúa
+
+<!-- La exigencia de superar todos los RA viene del art. 5.1 de la Orden 8/2025 y de las Instrucciones 26-27, que impiden calificar positivamente un módulo con algún RA no superado. -->
 
 | Peso | Instrumento |
 |---|---|

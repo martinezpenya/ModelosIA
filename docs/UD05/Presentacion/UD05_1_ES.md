@@ -39,7 +39,7 @@ section {
 ![h:260 center](../assets/cover.png)
 # UD05: Sistemas expertos y controladores inteligentes
 #### Modelos de Inteligencia Artificial
-###### version: 2026-08-23
+###### version: 2026-08-24
 
 ---
 <!-- footer: d.martinezpena@edu.gva.es -->
@@ -47,6 +47,8 @@ section {
 <style scoped>section { font-size: 30px; }</style>
 
 # ¿Qué veremos?
+
+<!-- Cada bloque de este índice se corresponde con un CE de RA5: el 1 con RA5-a, el 2 con RA5-a y RA5-b, los bloques 3 y 4 con RA5-b, el 5 con RA5-b y RA5-d, el 6 con RA5-c, el 7 con RA5-d y el 8 con RA5-e; el bloque 9, aplicaciones y tendencias, no tiene CE propio y se reparte entre todos. -->
 
 1. Arquitectura y dinámica de un sistema experto
 2. Estructuras de representación del conocimiento
@@ -62,6 +64,8 @@ section {
 <style scoped>section { font-size: 26px; }</style>
 
 ## RA5 y sus criterios de evaluación
+
+<!-- Estos cinco CE proceden del anexo I del RD 279/2021, que fija el currículo del ciclo; el Decreto 95/2026 de la Comunitat Valenciana lo concreta para el centro. El currículo oficial detalla en cambio seis contenidos para este bloque: dos de ellos, aplicaciones y tendencias, no tienen CE propio, y RA5-c, la variación de características, no tiene contenido explícito y lo desarrolla el centro. -->
 
 > **RA5** — Aplica sistemas expertos evaluando la influencia de los controladores inteligentes en el comportamiento del sistema.
 
@@ -204,6 +208,8 @@ El encadenamiento **hacia delante** aplica Modus Ponens repetidamente; el encade
 
 ## Incertidumbre: factores de certeza
 
+<!-- La comparación entre los factores de certeza y las redes bayesianas como alternativa se formalizó en Heckerman y Shortliffe (1992). -->
+
 - **MYCIN** introdujo los **factores de certeza (CF)**: cada regla lleva el suyo y se combinan al encadenar.
 - «SI fiebre alta ENTONCES meningitis **CF = 0,6**» + «SI rigidez de nuca ENTONCES meningitis **CF = 0,4**» → confianza conjunta **mayor** que cada una por separado.
 - Si hay evidencia en contra, los CF se **descuentan**: es la **acumulación de evidencia**.
@@ -247,6 +253,8 @@ Representar el conocimiento hay que hacerlo **entendible** para la máquina, **�
 <style scoped>section { font-size: 22px; }</style>
 
 ## Las representaciones (II)
+
+<!-- OWL son las siglas de Web Ontology Language, el estándar para construir ontologías; sus razonadores típicos son Pellet o HermiT. -->
 
 | Representación | Estructura | Ventajas | Límites |
 |---|---|---|---|
@@ -293,6 +301,8 @@ Elegir la representación es elegir **qué será fácil de hacer** con ese conoc
 <style scoped>section { font-size: 26px; }</style>
 
 ## El parche obligatorio
+
+<!-- Existe un fork de la librería, om-experta, que resuelve el mismo problema de otra forma, pero está archivado desde 2023; en esta unidad se usa siempre el parche manual para no tener dos soluciones al mismo problema. -->
 
 `experta` es de 2019 y `collections.Mapping` desapareció en Python 3.10. **Siempre antes de importar**:
 
@@ -381,6 +391,8 @@ class Animales(KnowledgeEngine):
 <style scoped>section { font-size: 24px; }</style>
 
 ## «Muy diversos ámbitos»: los notebooks
+
+<!-- Los notebooks N01 a N06 son actividades guiadas que se trabajan en clase y no son evaluables por sí solos: preparan los cinco entregables EX0 a EX4, que sí cuentan en el 40% de la nota de la unidad. -->
 
 | Notebook | Dominio | Qué simula |
 |---|---|---|
@@ -535,6 +547,8 @@ Un sistema basado en reglas que usa lógica difusa:
 ---
 
 ## Ejemplo: la propina del restaurante
+
+<!-- Este es el ejemplo canónico de la documentación oficial de scikit-fuzzy, el mismo que resolverás paso a paso con código en el Taller 2. -->
 
 Las **entradas**, con funciones triangulares:
 
@@ -727,6 +741,8 @@ Es eficaz en sistemas lineales bien modelados — y ahí sigue siendo la opción
 
 ## Cuatro controladores inteligentes
 
+<!-- Mamdani y Sugeno son los dos métodos clásicos de inferencia difusa y difieren en cómo definen la salida: Mamdani usa conjuntos difusos, como el ejemplo de la propina; Sugeno usa funciones matemáticas. MPC son las siglas de Model Predictive Control, control predictivo basado en un modelo de la planta. -->
+
 | Controlador | Cómo funciona | Ventaja frente al PID |
 |---|---|---|
 | **Difuso** | Reglas lingüísticas + funciones de pertenencia (Mamdani, Sugeno) | Robusto ante ruido y no linealidad; **no necesita modelo** |
@@ -738,6 +754,8 @@ Es eficaz en sistemas lineales bien modelados — y ahí sigue siendo la opción
 <style scoped>section { font-size: 26px; }</style>
 
 ## Y funciona, con datos
+
+<!-- DeepMind también reportó una reducción adicional del 15% en el PUE, la eficiencia energética global del centro de datos, además del 40% en refrigeración. -->
 
 | Caso | Mejora frente al PID |
 |---|---|
@@ -817,6 +835,8 @@ Captura la heurística de un operador humano y es **fácil de auditar** — algo
 
 ## Tendencias
 
+<!-- RETE era el algoritmo clásico de coincidencia de patrones de los primeros motores de reglas; los BRMS modernos, como Drools, evolucionaron a PHREAK, que escala mejor con miles de reglas. SHAP y LIME son las siglas de dos técnicas de explicabilidad del aprendizaje automático. -->
+
 - **BRMS** — motores de reglas de negocio como **Drools** (Apache KIE), con DMN/JSR-94: miles de reglas separadas del código, con motores que escalan linealmente.
 - **Neuro-simbólico** (3.ª ola de la IA) — redes neuronales para aprender + reglas para razonar; reduce alucinaciones y aporta explicabilidad. Amazon lo usa en sus motores de compra.
 - **IA explicable (XAI)** — de MYCIN a SHAP/LIME, con el **derecho a explicación** del RGPD detrás (enlaza con la UD06).
@@ -875,6 +895,8 @@ Captura la heurística de un operador humano y es **fácil de auditar** — algo
 <style scoped>section { font-size: 26px; }</style>
 
 ## Cómo se evalúa
+
+<!-- La base legal concreta de esa exigencia es el artículo 5.1 de la Orden 8/2025, que liga la calificación del módulo a la consecución de los RA, junto con las Instrucciones 26-27, que impiden calificar positivamente un módulo con algún RA no superado. De los cinco entregables, EX0 es de libre elección del alumno y premia la originalidad, mientras que EX1 a EX4 tienen un dominio fijo. -->
 
 | Peso | Instrumento |
 |---|---|

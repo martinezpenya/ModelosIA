@@ -65,6 +65,8 @@ section {
 
 ## RA3 y sus criterios de evaluación
 
+<!-- El anexo I del RD 279/2021 solo asigna a este bloque dos contenidos oficiales (potencial y limitaciones; aplicaciones) para siete criterios: es el desajuste más grande de todo el módulo. Los CE sobre el papel del lingüista, la cooperación y la formación del investigador no tienen contenido propio en el currículo: los desarrolla el centro. -->
+
 > **RA3** — Relaciona el PLN con sus aplicaciones, su potencial y sus limitaciones.
 
 | CE | Criterio | Dónde |
@@ -118,6 +120,8 @@ section {
 
 ## Los niveles del lenguaje
 
+<!-- ASR es el reconocimiento automático del habla y TTS la síntesis de voz (texto a voz): son las tareas típicas del nivel fonético y fonológico. -->
+
 | Nivel | Analiza | Tarea de PLN |
 |---|---|---|
 | **Fonética/fonología** | Sonidos | ASR, TTS |
@@ -132,6 +136,8 @@ Hay ambigüedad en **todos** los niveles: es el mapa del bloque 3.
 <style scoped>section { font-size: 24px; }</style>
 
 ## Las tareas del PLN
+
+<!-- NER son las siglas de reconocimiento de entidades nombradas. Además de PER (persona) y LOC (lugar), el conjunto habitual de etiquetas añade ORG (organización) y MISC (miscelánea). -->
 
 | Tarea | Ejemplo |
 |---|---|
@@ -167,6 +173,8 @@ El corrector, el buscador y el asistente de voz son los mismos cuatro pasos.
 
 ## Qué se consigue hoy
 
+<!-- OCR es el reconocimiento óptico de caracteres: el paso que convierte la imagen del documento en texto, antes de aplicar NER para extraer los campos de facturas y contratos. -->
+
 | Aplicación | Estado |
 |---|---|
 | Buscadores, asistentes de voz | Entienden, extraen entidades, responden |
@@ -186,6 +194,8 @@ El corrector, el buscador y el asistente de voz son los mismos cuatro pasos.
 ---
 
 ## Los modelos de uso general
+
+<!-- El AI Act es, formalmente, el Reglamento (UE) 2024/1689 del Parlamento Europeo. -->
 
 El **AI Act** los define: **≥ 1.000 millones de parámetros**, autosupervisión a gran escala, competentes en muchas tareas. Los LLM son el ejemplo típico.
 
@@ -243,6 +253,8 @@ Casi todas se resuelven **con el contexto**, no con la frase.
 
 ## No se arregla: se decide
 
+<!-- Emily Bender y Alexander Koller publicaron esta idea en el artículo de 2020 Climbing towards NLU. -->
+
 La ambigüedad **no es un error** del lenguaje: es una propiedad, y además útil.
 
 **Forma ≠ significado** (Bender y Koller): un modelo entrenado solo con la forma **no tiene forma *a priori*** de aprender el significado. Aprende correlaciones, no comprensión.
@@ -271,6 +283,8 @@ Ningún diccionario resuelve esto: hace falta el **contexto**. Es el primer paso
 
 ## Elegir el *tagset*: un compromiso
 
+<!-- Penn Treebank es el tagset de referencia en inglés; LexEsp (PAROLE) es el tagset de referencia en español. -->
+
 Más etiquetas = **más información** y **más difícil acertar**.
 
 | *Tagset* | Etiquetas |
@@ -293,6 +307,8 @@ Es el ejemplo más concreto del **RA3-b**.
 ---
 
 ## Cómo se etiqueta
+
+<!-- HMM son las siglas de Hidden Markov Model, modelo oculto de Markov: la técnica estadística clásica de etiquetado, anterior a los modelos neuronales. -->
 
 | Enfoque | Cómo | Dónde |
 |---|---|---|
@@ -329,6 +345,8 @@ En cualquier tarea con consecuencias, **la salida se verifica**.
 
 ## Lenguas con pocos recursos, e ironía
 
+<!-- Los modelos neuronales solo dan buenos resultados a partir de decenas de miles de tokens de entrenamiento; por debajo de esa cantidad, las técnicas estadísticas clásicas pueden superarlos. -->
+
 - Casi todo se entrena en **inglés**. En lenguas minoritarias, lo **estadístico clásico** puede
   ganar a lo neuronal.
 - *«¡Qué buena idea, se me ha caído el móvil al agua!»*: literalmente positivo, pragmáticamente
@@ -359,6 +377,8 @@ En cualquier tarea con consecuencias, **la salida se verifica**.
 <style scoped>section { font-size: 23px; }</style>
 
 ## Factible y no factible
+
+<!-- El considerando 53 también incluye como bajo riesgo estructurar datos no organizados y buscar y vincular datos en archivos; y el artículo 5 añade a los no factibles la detección de sarcasmo con alta precisión. -->
 
 | Factible hoy | Prohibido o no factible |
 |---|---|
@@ -394,6 +414,8 @@ En cualquier tarea con consecuencias, **la salida se verifica**.
 
 ## Cooperación: dos casos reales
 
+<!-- NLLB son las siglas de No Language Left Behind, el proyecto de traducción de Meta. BLEU es la métrica estándar para medir la calidad de una traducción automática. -->
+
 - **Meta NLLB** (200 idiomas): hablantes nativos anotaron y evaluaron → **+44 % de BLEU**.
 - **Masakhane** (PLN africano): 1.000+ participantes, 30 países. Los lingüistas locales son
   **investigadores**, no «solo anotadores». Rechazan la investigación **paracaidista**.
@@ -407,6 +429,8 @@ En cualquier tarea con consecuencias, **la salida se verifica**.
 ---
 
 ## La formación del investigador
+
+<!-- El libro de Jurafsky y Martin se titula Speech and Language Processing: es la referencia clásica del campo, y de acceso libre en internet. -->
 
 **Tres patas**: lingüística · estadística y ML · informática.
 
@@ -435,12 +459,16 @@ Se pide justificar qué decisiones tomaría un lingüista, qué aporta cada perf
 
 ## Dos entornos
 
+<!-- El contenedor de la unidad incluye además gensim y textblob, también porque ninguno entrena redes grandes. -->
+
 - **Contenedor de la unidad**: `nltk`, spaCy, scikit-learn. Todo lo que no entrena redes grandes.
 - **Colab**: `transformers`, entrenamiento, audio. Ahí hay GPU.
 
 ---
 
 ## NLTK, para entender
+
+<!-- NLTK es una plataforma pensada para la enseñanza y la investigación, con más de 50 corpus y recursos léxicos incluidos. -->
 
 Transparente: cada paso, a mano.
 
@@ -469,6 +497,8 @@ En una frase corriente, el analizador puede encontrar **miles de análisis posib
 ---
 
 ## Sentimiento y *transformers*
+
+<!-- BERT es un modelo de lenguaje bidireccional: analiza el contexto a ambos lados de cada palabra. DistilBERT es su versión reducida, pensada para funcionar en CPU en vez de GPU. -->
 
 - **scikit-learn** (tf-idf + regresión logística): funciona en español, sin GPU. Cuidado:
   `stop_words` solo acepta `'english'` — para español, una **lista**.
@@ -502,6 +532,8 @@ El paso que más se salta es el **5**: mirar los errores, no solo la métrica.
 
 ## La progresión de los notebooks
 
+<!-- Hay un quinto notebook, N05, con POS tagging sobre el corpus cess_esp y validación cruzada; se corresponde con el entregable EX3 de anotación. -->
+
 | Notebook | Construye | Representación |
 |---|---|---|
 | `N01` | Tokenizar, BoW, tf-idf | Cuenta de palabras |
@@ -514,6 +546,8 @@ Y los cinco entregables aplican cada nivel a un problema propio: **EX1** represe
 ---
 
 ## Ejemplo guiado: clasificador de reseñas
+
+<!-- Los dos errores que se leen en el paso 5 casi siempre resultan ser de ironía o de una negación mal interpretada: es el patrón que se repite en la mayoría de proyectos pequeños. -->
 
 **1** clasificar positiva/negativa · **2** 60 reseñas anotadas · **3** tf-idf, no *transformer* · **4** `TfidfVectorizer → LogisticRegression` · **5** exactitud + leer 2 errores · **6** documentar origen y límites.
 
@@ -552,6 +586,8 @@ Y los cinco entregables aplican cada nivel a un problema propio: **EX1** represe
 <style scoped>section { font-size: 25px; }</style>
 
 ## Cómo se evalúa
+
+<!-- La exigencia de superar todos los RA viene del artículo 5.1 de la Orden 8/2025 y de las Instrucciones 26 y 27, que impiden calificar positivamente un módulo con algún RA no superado. -->
 
 | Peso | Instrumento |
 |---|---|

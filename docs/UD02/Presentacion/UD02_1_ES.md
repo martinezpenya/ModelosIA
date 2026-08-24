@@ -46,6 +46,8 @@ section {
 <!-- header: Modelos de Inteligencia Artificial 26-27 (UD02_1)-->
 <style scoped>section { font-size: 28px; }</style>
 
+<!-- Cada bloque de este índice se corresponde con un criterio de RA2: bloque 1 con RA2-a, bloque 2 con RA2-b, bloque 3 con RA2-c, bloque 4 con RA2-d, bloque 5 con RA2-e y bloque 6 con RA2-f. -->
+
 # ¿Qué veremos?
 1. Sistema de resolución de problemas y búsqueda
 2. Clasificación de modelos de IA
@@ -71,6 +73,8 @@ section {
 
 ## Hilo conductor de la unidad
 
+<!-- La unidad son 12 horas repartidas entre las semanas 7 y 10 del curso, del 9 de noviembre al 3 de diciembre. -->
+
 **Antes de programar IA hay que saber formalizar un problema y elegir bien el modelo.**
 
 Modelar → clasificar → automatizar → razonar (difuso y por reglas) → decidir → implementar.
@@ -85,6 +89,8 @@ El cierre de la unidad, Robocode, recorre las seis fases con un bot de combate r
 
 ## Cinco requisitos de un SRP
 
+<!-- Los cinco requisitos no son independientes entre sí: un sistema puede cumplir muy bien cuatro y fallar por el quinto, como un algoritmo de búsqueda óptimo que nadie sabe usar porque no tiene una interfaz comprensible. -->
+
 1. **Representación**: elegir estructura y modelo fieles al problema.
 2. **Razonamiento y decisión**: lógica, aprendizaje o búsqueda heurística.
 3. **Aprendizaje y adaptabilidad**: mejorar con la experiencia.
@@ -94,6 +100,8 @@ El cierre de la unidad, Robocode, recorre las seis fases con un bot de combate r
 ---
 
 ## El espacio de estados
+
+<!-- AIMA es "Artificial Intelligence: A Modern Approach", el manual de referencia de Stuart Russell y Peter Norvig que fija estos cinco elementos formales de un sistema de resolución de problemas. -->
 
 ```mermaid
 flowchart LR
@@ -106,6 +114,8 @@ Un problema bien planteado responde a: ¿estado inicial?, ¿acciones aplicables?
 ---
 
 ## Ejemplos clásicos de representación
+
+<!-- En las 8 reinas, sin restricciones (cualquier casilla del tablero) hay 4.426.165.368 arreglos posibles; limitando a una reina por columna se reduce a 8!=40.320. En el 15-puzzle, las soluciones óptimas pueden necesitar hasta 80 movimientos. -->
 
 | Problema | Representación | Detalle |
 |---|---|---|
@@ -126,6 +136,8 @@ Un espacio real (rutas de reparto, planificación) es enorme: hace falta una est
 
 ## BFS, DFS y A*
 
+<!-- En memoria, BFS y A* son O(b elevado a d) en el peor caso porque guardan todos los estados de un nivel; DFS es mucho más ligera, O(b por d), porque solo mantiene el camino actual. -->
+
 | Criterio | BFS | DFS | A* |
 |---|---|---|---|
 | Estructura | Cola (FIFO) | Pila (LIFO) | Cola de prioridad `f=g+h` |
@@ -136,6 +148,8 @@ Un espacio real (rutas de reparto, planificación) es enorme: hace falta una est
 ---
 
 ## Heurística: A* en el 8-puzzle
+
+<!-- La distancia de Manhattan suma, para cada ficha, los pasos horizontales y verticales que le faltan hasta llegar a su posición correcta en el objetivo. -->
 
 `f(n) = g(n) + h(n)`: coste acumulado más una estimación de lo que falta.
 
@@ -151,6 +165,8 @@ Heurísticas admisibles habituales: número de fichas mal colocadas, o distancia
 
 ## Por paradigma de aprendizaje
 
+<!-- En scikit-learn, el supervisado se implementa con regresión logística, SVM o árboles; el no supervisado con k-means, DBSCAN o PCA; el de refuerzo queda fuera del stack estándar del curso. -->
+
 | | Supervisado | No supervisado | Refuerzo |
 |---|---|---|---|
 | Datos | Etiquetados | Sin etiquetas | Recompensas |
@@ -163,6 +179,8 @@ Heurísticas admisibles habituales: número de fichas mal colocadas, o distancia
 
 ## Por tipo de análisis y por base
 
+<!-- Gartner llama al análisis prescriptivo "la última frontera" de la analítica, porque no se limita a predecir sino que recomienda o ejecuta directamente la decisión óptima. -->
+
 | Análisis | Pregunta | Ejemplo |
 |---|---|---|
 | Descriptivo | ¿Qué pasó? | Informe de ventas |
@@ -174,6 +192,8 @@ Basados en **conocimiento** (reglas explícitas, interpretable) frente a basados
 ---
 
 ## Mapa de los modelos de IA
+
+<!-- El diagrama se simplifica para la diapositiva: dentro de "basados en conocimiento" también entran los sistemas expertos (MYCIN, XCON), y dentro de Machine Learning se distinguen supervisado, no supervisado y refuerzo. -->
 
 ```mermaid
 flowchart TD
@@ -193,6 +213,8 @@ flowchart TD
 
 ## RPA frente a IA
 
+<!-- BPM son las siglas de Business Process Management (gestión de procesos de negocio): la capa que orquesta los flujos y conecta la decisión de la IA con la ejecución del RPA. -->
+
 | | RPA | IA |
 |---|---|---|
 | Qué hace | **Hace**: replica tareas en la interfaz | **Piensa**: reconoce patrones y decide |
@@ -204,6 +226,8 @@ flowchart TD
 ---
 
 ## Agentes software y tareas cognitivas
+
+<!-- OCR es el reconocimiento óptico de caracteres y NER el reconocimiento de entidades nombradas (named entity recognition); son las dos técnicas típicas de extracción. Google Speech-to-Text y Microsoft Azure Speech Service son ejemplos de sistemas de reconocimiento de voz que automatizan la transcripción. -->
 
 De más simple a más avanzado: reflejo simple → reflejo con modelo → basado en objetivos → basado en utilidad → con aprendizaje.
 
@@ -227,6 +251,8 @@ Ejemplo: "18 ºC es frío con 0,7" en vez de "18 ºC es frío: sí/no".
 
 ## Funciones de pertenencia
 
+<!-- En scikit-fuzzy cada función tiene su propia llamada: trimf para la triangular, trapmf para la trapezoidal, gaussmf para la gaussiana y sigmf para la sigmoidal. -->
+
 | Función | Forma | Uso típico |
 |---|---|---|
 | Triangular | Pico en un punto | Variables simples |
@@ -239,6 +265,8 @@ Se recomiendan entre 3 y 7 curvas por variable, solapadas para que no existan hu
 ---
 
 ## El sistema de inferencia difuso (FIS)
+
+<!-- En Sugeno/TSK la salida de cada regla no es un conjunto difuso sino una función z=f(x,y); resulta menos intuitiva que Mamdani pero más eficiente para tareas de control. -->
 
 ```mermaid
 flowchart LR
@@ -254,6 +282,8 @@ Dos familias: **Mamdani** (salida difusa defuzzificada, la usa `scikit-fuzzy`) y
 ---
 
 ## Lógica difusa en el mundo real
+
+<!-- El Metro de Sendai es de 1987. El autofocus de Canon usa 12 entradas (claridad y velocidad del objetivo) para sus 13 reglas. Otro caso histórico son los hornos de cemento de Dinamarca (1976) y los aires acondicionados Mitsubishi, que calientan y enfrían 5 veces más rápido con un 24 % menos de consumo. -->
 
 Metro de Sendai (frenado y aceleración) · autofocus de Canon (13 reglas, 1,1 KB) · ABS de los frenos · lavadoras y aires acondicionados.
 
@@ -300,6 +330,8 @@ Motores industriales usan el algoritmo **RETE** (Forgy, 1974) para no reevaluar 
 
 ## Encadenamiento, CLIPS y experta
 
+<!-- CLIPS son las siglas de C Language Integrated Production System. Lo desarrolló la NASA entre 1985 y 1996, y es de dominio público desde 1996. -->
+
 **Hacia delante** (data-driven): parte de los hechos, deduce hechos nuevos — lo usan CLIPS y `experta`.
 
 **Hacia atrás** (goal-driven): parte de una meta y pregunta solo lo necesario — propio del diagnóstico (MYCIN).
@@ -320,6 +352,8 @@ Ventaja frente al ML: el razonamiento es **transparente y explicable**.
 
 ## Práctica con experta
 
+<!-- experta es de 2019 (versión 1.9.4) y fija frozendict==1.2, que a su vez usa collections.Mapping, eliminado en Python 3.10; por eso hace falta el parche antes del import. -->
+
 ```python
 # PARCHE para Python 3.10+
 if not hasattr(collections, 'Mapping'):
@@ -336,6 +370,8 @@ class DiagnosticoVehiculo(KnowledgeEngine):
 
 ## Sistemas expertos que cambiaron su sector
 
+<!-- MYCIN usaba encadenamiento hacia atrás y factores de certeza sobre unas 500-600 reglas. La tabla no incluye Dendral (Stanford, años 70), considerado el primer sistema experto completo, dedicado a identificar moléculas orgánicas. -->
+
 | Sistema | Origen | Dato relevante |
 |---|---|---|
 | MYCIN | Stanford, 1972 | 65-70 % de acierto |
@@ -351,6 +387,8 @@ class DiagnosticoVehiculo(KnowledgeEngine):
 ---
 
 ## Cinco criterios para elegir modelo
+
+<!-- La regla de "empieza simple" coincide con varias fuentes: la guía de problem framing de Google, el mapa de selección de estimadores de scikit-learn y la recomendación de Azure ML de probar varios algoritmos en paralelo. Un estudio con 45 datasets tabulares (unas 10.000 muestras) mostró que los modelos basados en árboles siguen siendo estado del arte y más rápidos de entrenar que el deep learning. -->
 
 **Datos** disponibles · **explicabilidad** exigida · **coste** de cómputo y mantenimiento · **precisión** requerida · **tiempo real** o latencia admisible.
 
@@ -389,6 +427,8 @@ RPA hace, la IA piensa; la difusa modela vaguedad, las reglas ejecutan reconocer
 ---
 
 ## Evaluación
+
+<!-- La exigencia de un 5 en cada RA viene del art. 5.1 de la Orden 8/2025 (la calificación depende de la consecución de los RA) y de las Instrucciones 26-27, que impiden aprobar un módulo con algún RA no superado. -->
 
 | Peso | Instrumento |
 |---|---|

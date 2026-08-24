@@ -44,7 +44,7 @@ section {
 ![h:260 center](../../assets/portada.png)
 # UD00: Presentación y curso rápido de Docker
 #### Modelos de Inteligencia Artificial
-###### version: 2026-08-23
+###### version: 2026-08-24
 ___
 <!-- footer: d.martinezpena@edu.gva.es -->
 <!-- header: Modelos de Inteligencia Artificial 26-27 (UD00_1)-->
@@ -59,6 +59,8 @@ ___
 
 ## El módulo 5071
 
+<!-- El curso de especialización dura 600 horas y 36 ECTS, repartidas en cinco módulos (5071 a 5075); se accede desde ciclos de grado superior de la familia de informática, como ASIR, DAM, DAW, telecomunicaciones o mecatrónica y robótica industrial. -->
+
 | | |
 |---|---|
 | Código | **5071** · Modelos de Inteligencia Artificial |
@@ -72,6 +74,8 @@ ___
 <style scoped>section { font-size: 24px; }</style>
 
 ## Esta unidad no desarrolla un RA propio
+
+<!-- El RD 279/2021 es el real decreto que fija el currículo del ciclo y desarrolla los seis resultados de aprendizaje del módulo 5071. -->
 
 El currículo desarrolla **6 RA** para el módulo (RA1-RA6). La UD00 es la unidad de **presentación y puesta en marcha** que prepara el terreno: sin ella, los RA1-RA6 perderían horas configurando entornos.
 
@@ -91,6 +95,8 @@ ___
 ___
 
 ## Cómo se evalúa
+
+<!-- Estas reglas proceden de la Orden 8/2025 de la Comunitat Valenciana, modificada por la Orden 5/2026. -->
 
 * Cada **RA** se califica de **1 a 10, sin decimales**
 * Nota de cada RA = **40 %** tareas, talleres y ejercicios + **60 %** prueba escrita
@@ -146,6 +152,8 @@ ___
 
 ## Contenedor frente a máquina virtual
 
+<!-- Además de estas filas, un servidor físico soporta solo decenas de máquinas virtuales frente a cientos o miles de contenedores, y la reproducibilidad es alta en contenedores por la imagen inmutable y sus capas, media en las máquinas virtuales. -->
+
 | | Máquina virtual | Contenedor |
 |---|---|---|
 | Qué virtualiza | Hardware completo | Solo el proceso |
@@ -184,6 +192,8 @@ ___
 
 ## Instalar Docker en Linux
 
+<!-- Los paquetes previos cumplen cada uno un papel: apt-transport-https permite transferir paquetes por https, ca-certificates verifica certificados de seguridad, curl transfiere datos como wget y software-properties-common gestiona los repositorios de software. -->
+
 ```bash
 # 1. Clave GPG y repositorio oficial de Docker
 # 2. Instalar el motor
@@ -196,6 +206,8 @@ sudo usermod -aG docker $USER
 ___
 
 ## Docker Desktop
+
+<!-- En macOS hace falta macOS 12 Monterey o superior, con chip Apple Silicon o Intel de 2010 en adelante; en Linux se pide kernel 5.10 o superior con systemd, sobre distribuciones como Ubuntu 20.04, Debian 11, Fedora 36 o Arch Linux. -->
 
 Para **Windows y macOS** es la vía normal; en Linux es opcional.
 
@@ -233,6 +245,8 @@ ___
 
 ## Volúmenes: que los datos sobrevivan
 
+<!-- Los volúmenes nombrados los gestiona Docker en /var/lib/docker/volumes; son la opción recomendada para datos que no necesitas ver desde el host, como cachés o bases de datos. -->
+
 Un contenedor es **desechable**: lo que escribes dentro desaparece al borrarlo.
 
 ```bash
@@ -257,6 +271,8 @@ ___
 
 ## Dockerfile: la receta
 
+<!-- EXPOSE solo documenta el puerto y no lo publica; hace falta -p en docker run o ports en Compose. ENTRYPOINT fija el ejecutable y se puede combinar con CMD para pasarle los argumentos. -->
+
 ```dockerfile
 FROM python:3.12-slim
 WORKDIR /home/mia
@@ -270,6 +286,8 @@ CMD ["jupyter", "notebook", "--ip=0.0.0.0"]
 ___
 
 ## Compose: describir en vez de recordar
+
+<!-- Para ordenar el arranque entre servicios se usa depends_on, normalmente junto con un healthcheck que espera a que el servicio esté realmente listo, mediante la condición service_healthy. -->
 
 ```yaml
 services:
@@ -288,6 +306,8 @@ docker compose down      # parar y limpiar
 ___
 
 ## El mismo código, dos entornos
+
+<!-- La última versión de experta es la 1.9.4, del 16 de noviembre de 2019, y declara soportar Python de 3.5 a 3.8. El fallo está documentado como el issue 34 del repositorio, abierto desde julio de 2023; la causa es su dependencia frozendict 1.2, que usa collections.Mapping. -->
 
 `experta` es el motor de reglas de la UD02 y la UD05. Última versión: **2019**.
 
@@ -312,6 +332,8 @@ ___
 ___
 
 ## Nuestro entorno de prácticas
+
+<!-- El token JUPYTER_TOKEN se fija para que la URL de acceso sea siempre la misma, en vez de un token aleatorio distinto cada vez que arranca el contenedor. -->
 
 * Un `Dockerfile` con **Python 3.12** y las bibliotecas del curso
 * Un `docker-compose.yml` que publica **Jupyter** en el puerto 8888

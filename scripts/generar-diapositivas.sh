@@ -27,11 +27,25 @@ for f in "${FICHEROS[@]}"; do
   echo "· $UD/$f"
   # La version de la portada es la fecha de modificacion: se sella al generar.
   sed -i -E "s/^###### version: .*/###### version: $HOY/" "$DIR/$f"
-  (cd "$DIR" && npx --yes @marp-team/marp-cli@latest "$f" -o "$base.html" >/dev/null 2>&1)
+
+  # Marp no renderiza mermaid: los bloques ```mermaid saldrian como texto plano en la
+  # diapositiva. Se rasterizan a PNG y se sustituyen en una COPIA (el guion original conserva
+  # el codigo mermaid editable). La copia vive en el mismo directorio para no romper las rutas
+  # relativas a ../assets e img/. Si no hay mermaid, el script devuelve el original tal cual.
+  FUENTE="$(python3 scripts/prerender_mermaid_marp.py "$DIR/$f")"
+  FUENTE_REL="$(basename "$FUENTE")"
+
+  # Tanto el HTML como el PDF se generan desde la copia rasterizada: los diagramas se ven en
+  # ambos formatos, no solo en el PDF.
+  (cd "$DIR" && npx --yes @marp-team/marp-cli@latest "$FUENTE_REL" --allow-local-files -o "$base.html" >/dev/null 2>&1)
   if [ -n "${CHROME_PATH:-}" ] && [ -x "${CHROME_PATH:-}" ]; then
-    (cd "$DIR" && npx --yes @marp-team/marp-cli@latest "$f" --pdf --allow-local-files -o "$base.pdf" >/dev/null 2>&1) \
+    (cd "$DIR" && npx --yes @marp-team/marp-cli@latest "$FUENTE_REL" --pdf --allow-local-files -o "$base.pdf" >/dev/null 2>&1) \
       && echo "  PDF y HTML generados" || echo "  HTML generado; el PDF ha fallado (revisa CHROME_PATH)"
   else
     echo "  HTML generado; sin Chromium no se puede hacer el PDF"
+  fi
+
+  if [ "$FUENTE_REL" != "$f" ]; then
+    rm -f "$FUENTE"
   fi
 done
