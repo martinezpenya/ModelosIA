@@ -355,6 +355,11 @@ plugins:
             - 'UD04/notebooks/'
             - 'UD05/notebooks/'
             - 'UD06/notebooks/'
+            # EXPERIMENTO 2026-08-24: talleres y ejercicios fuera del PDF, a ver si reducir el
+            # tamano del libro evita el corte de docs/Libro.pdf en produccion (causa real sin
+            # confirmar tras dos intentos previos). Si no ayuda, revertir estas dos lineas.
+            - 'UD\d\d/UD\d\d_T\d+_'
+            - 'UD\d\d/UD\d\d_Ejercicios'
         convert_iframe:
             - src: 'https://martinezpenya.es/ModelosIA/UD00/Presentacion/UD00_1_ES.html'
               img: 'docs/UD00/Presentacion/img/poster-slide1.png'
