@@ -67,6 +67,14 @@ img {
         height: auto !important;
         page-break-inside: avoid;
     }
+    /* Los iconos de licencia CC (cc/by/nc/sa.svg de creativecommons.org) declaran su propio
+       width="64px"/height="64px" dentro del propio SVG; WeasyPrint usa ese tamaño intrínseco en
+       vez del atributo width="22" de la etiqueta <img>, así que salen ~3 veces más grandes de lo
+       previsto en el PDF (aunque en el sitio web se ven bien). Se fuerza aquí el tamaño real. */
+    .md-typeset img[src*="creativecommons.org/presskit/icons/"] {
+        width: 22px !important;
+        height: 22px !important;
+    }
     pre, code, .highlight {
         white-space: pre-wrap !important;
         overflow-wrap: break-word !important;
