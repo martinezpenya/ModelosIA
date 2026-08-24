@@ -1,10 +1,13 @@
 import hashlib
+import io
 import os
 import posixpath
 import re
 import subprocess
 import tempfile
 from pathlib import Path
+
+from PIL import Image
 
 PRERENDER = os.environ.get('PRERENDER_MERMAID', '0') == '1'
 PUPPETEER_CONFIG = Path(__file__).parent / 'puppeteer-config.json'
@@ -70,6 +73,37 @@ def _valid_png(data: bytes) -> bool:
     return True
 
 
+_TALL_HEIGHT_LIMIT = 900  # px; por encima de esto, un diagrama mermaid vertical rompe el PDF
+
+
+def _shrink_if_tall(data: bytes) -> bytes:
+    """Reduce diagramas mermaid excesivamente altos y estrechos antes de insertarlos en el PDF.
+
+    Hallazgo 2026-08-24, contrastado con el mismo problema en el repositorio hermano
+    1DAMProgramacion: WeasyPrint 62.3 tiene un fallo de paginacion, sin excepcion ni aviso en el
+    log, que se dispara al maquetar una imagen concreta con dimensiones nativas grandes y de
+    aspecto muy vertical (alto/ancho alto) -confirmado alli con un diagrama de 486x1114 px al subir
+    la escala de mmdc de -s 1 a -s 2-, y trunca el resto del documento sin dejar rastro. El
+    diagrama `flowchart TD` con mas nodos encadenados de este sitio genera 567x1495 px incluso a
+    escala 1 (la escala minima), justo en la unidad donde el PDF de producción se corta. El
+    `style="max-height"` en CSS no evita el fallo porque este ocurre al decodificar/maquetar el
+    PNG por sus dimensiones nativas, antes de que WeasyPrint aplique ningun estilo. Se reescala
+    aqui con Pillow a una altura maxima segura, conservando el aspecto; con eso basta para que el
+    PNG que llega a WeasyPrint tenga las dimensiones de cualquier otro diagrama del sitio que ya
+    se sabe que renderiza bien.
+    """
+    with Image.open(io.BytesIO(data)) as img:
+        width, height = img.size
+        if height <= _TALL_HEIGHT_LIMIT:
+            return data
+        scale = _TALL_HEIGHT_LIMIT / height
+        new_size = (max(1, round(width * scale)), _TALL_HEIGHT_LIMIT)
+        resized = img.resize(new_size, Image.LANCZOS)
+        buf = io.BytesIO()
+        resized.save(buf, format='PNG')
+        return buf.getvalue()
+
+
 def _quote_labels(code: str) -> str:
     """Wrap unquoted labels in quotes to handle special characters."""
     def _wrap(m):
@@ -99,7 +133,7 @@ def _render_mermaid_png(code: str, index: int) -> str | None:
             data = Path(png_path).read_bytes()
             ok = _valid_png(data)
             if ok:
-                result_png = data
+                result_png = _shrink_if_tall(data)
         for p in [mmd_path, png_path]:
             Path(p).unlink(missing_ok=True)
         return ok

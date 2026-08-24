@@ -7,6 +7,10 @@
 weasyprint == 62.3
 pydyf == 0.10.0
 mkdocs-with-pdf == 0.9.3
+# Usado directamente por hooks.py (_shrink_if_tall) para reescalar diagramas mermaid muy altos
+# antes de entregarlos a WeasyPrint. Ya llega como dependencia transitiva de weasyprint, pero se
+# fija aqui por ser una importacion directa del hook.
+Pillow >= 9.1.0
 
 # Nucleo
 mkdocs == 1.6.1
