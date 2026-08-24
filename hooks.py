@@ -166,6 +166,18 @@ MERMAID_RE = re.compile(
     re.DOTALL,
 )
 
+# Hallazgo 2026-08-24, aislado por biseccion exhaustiva contra la CI real (no reproducible en
+# local): una admonicion `!!!` justo despues de una tabla, sin ningun elemento de bloque entre
+# medias, corrompe la paginacion de WeasyPrint 62.3 en el runner de GitHub Actions -sin excepcion
+# ni aviso en ningun log-, y trunca en seco el resto del PDF combinado a partir de ahi. Confirmado
+# en aislamiento total: cambiar el texto de la admonicion no lo arregla; un simple margen CSS
+# tampoco; intercalar un parrafo real de contenido si. El patron aparece en ~70 paginas del sitio
+# (tabla seguida de un aviso sobre ella es una forma de escribir muy natural), asi que en vez de
+# reescribir el contenido en cada sitio se inserta aqui, por hook, un parrafo separador real
+# entre cualquier `</table>` y la admonicion que la siga inmediatamente.
+TABLE_ADMONITION_RE = re.compile(r'(</table>)\s*(<div class="admonition)')
+TABLE_ADMONITION_SPACER = '<p class="pdf-spacer">&nbsp;</p>'
+
 
 def on_page_markdown(markdown, page, config, files):
     site_url = config.get('site_url', '').rstrip('/')
@@ -198,5 +210,10 @@ def on_page_content(html, page, config, files):
 
     if rendered[0] > 0:
         print(f'  [hooks] Pre-rendered {rendered[0]} Mermaid diagram(s) on {page.url}')
+
+    result, n_spacers = TABLE_ADMONITION_RE.subn(
+        lambda m: m.group(1) + TABLE_ADMONITION_SPACER + m.group(2), result)
+    if n_spacers > 0:
+        print(f'  [hooks] Inserted {n_spacers} table->admonition spacer(s) on {page.url}')
 
     return result
