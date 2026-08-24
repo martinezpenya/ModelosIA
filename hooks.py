@@ -41,6 +41,35 @@ def _mmdc_render(code: str, mmd_path: str, png_path: str) -> bool:
     return result.returncode == 0
 
 
+_PNG_MAGIC = b'\x89PNG\r\n\x1a\n'
+_PNG_MAX_DIMENSION = 2000  # px; una imagen mas alta o ancha que esto rompe la paginacion en el PDF
+
+
+def _valid_png(data: bytes) -> bool:
+    """Descarta PNG corruptos, vacios o desproporcionados antes de insertarlos en el HTML.
+
+    Hallazgo 2026-08-24: en produccion (GitHub Actions), algun diagrama Mermaid pre-renderizado
+    corta en seco el PDF combinado (docs/Libro.pdf) a partir de ese punto, sin que se haya podido
+    reproducir en local con el mismo entorno (PRERENDER_MERMAID=1, misma version de mermaid-cli).
+    Sin logs de la CI para confirmar la causa exacta, la defensa robusta es no confiar en que
+    "returncode == 0" signifique "imagen valida": si el PNG esta corrupto, vacio o tiene un tamano
+    fuera de lo razonable para un diagrama, se descarta aqui y el diagrama cae al texto plano de
+    respaldo (siempre seguro) en vez de arriesgarse a que WeasyPrint reciba algo que le rompa la
+    paginacion del resto del documento.
+    """
+    if len(data) < 100 or not data.startswith(_PNG_MAGIC):
+        return False
+    if len(data) < 33:
+        return False
+    width = int.from_bytes(data[16:20], 'big')
+    height = int.from_bytes(data[20:24], 'big')
+    if width <= 0 or height <= 0:
+        return False
+    if width > _PNG_MAX_DIMENSION or height > _PNG_MAX_DIMENSION:
+        return False
+    return True
+
+
 def _quote_labels(code: str) -> str:
     """Wrap unquoted labels in quotes to handle special characters."""
     def _wrap(m):
@@ -67,7 +96,10 @@ def _render_mermaid_png(code: str, index: int) -> str | None:
         png_path = mmd_path.replace('.mmd', '.png')
         ok = _mmdc_render(mmd_text, mmd_path, png_path)
         if ok:
-            result_png = Path(png_path).read_bytes()
+            data = Path(png_path).read_bytes()
+            ok = _valid_png(data)
+            if ok:
+                result_png = data
         for p in [mmd_path, png_path]:
             Path(p).unlink(missing_ok=True)
         return ok

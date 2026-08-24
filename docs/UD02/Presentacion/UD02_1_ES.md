@@ -58,16 +58,14 @@ section {
 
 ## RA2 y sus criterios de evaluación
 
-**RA2**: utiliza modelos de sistemas de Inteligencia Artificial implementando sistemas de resolución de problemas.
+**RA2**: implementa sistemas de resolución de problemas con modelos de IA.
 
 | CE | Criterio |
 |---|---|
-| a | Requisitos básicos de un sistema de resolución de problemas |
-| b | Clasificación de modelos de IA |
-| c | Modelos de automatización de tareas |
-| d | Modelos de razonamiento impreciso |
-| e | Modelos de sistemas basados en reglas |
-| f | Adecuación del modelo a la implementación |
+| a | Requisitos de un SRP |
+| b, c | Clasificación de modelos de IA y automatización de tareas |
+| d, e | Razonamiento impreciso y sistemas basados en reglas |
+| f | Adecuación del modelo |
 
 ---
 
@@ -111,10 +109,10 @@ Un problema bien planteado responde a: ¿estado inicial?, ¿acciones aplicables?
 
 | Problema | Representación | Detalle |
 |---|---|---|
-| Jarras 8-5-3 | `[jarra8, jarra5, jarra3]` | De `[8,0,0]` a `[4,4,0]` en 7 pasos |
+| Jarras 8-5-3 | `[jarra8, jarra5, jarra3]` | De `[8,0,0]` a `[4,4,0]` |
 | Misioneros y caníbales | `⟨m,c,barca⟩` | De `⟨3,3,1⟩` a `⟨0,0,0⟩` |
-| 8-reinas | Permutación de 1..8 | 8!=40.320 arreglos, solo **92 soluciones** |
-| 15-puzzle | Matriz 4×4 | ≈10,46·10¹² estados posibles |
+| 8-reinas | Permutación de 1..8 | 40.320 arreglos, **92 soluciones** |
+| 15-puzzle | Matriz 4×4 | ≈10,46·10¹² estados |
 
 ---
 
@@ -155,11 +153,11 @@ Heurísticas admisibles habituales: número de fichas mal colocadas, o distancia
 
 | | Supervisado | No supervisado | Refuerzo |
 |---|---|---|---|
-| Datos | Etiquetados | Sin etiquetas | Estados, acciones, recompensas |
+| Datos | Etiquetados | Sin etiquetas | Recompensas |
 | Objetivo | Predecir la salida | Descubrir patrones | Maximizar recompensa |
-| Ejemplos | Spam, precio de un coche | Segmentación (k-means) | AlphaGo, robot que aprende a andar |
+| Ejemplos | Spam, precio de coche | Segmentar clientes | AlphaGo, robots |
 
-**Todo ML es IA, pero no toda IA es ML**: las reglas y la lógica difusa son IA sin aprender de datos.
+**Todo ML es IA, pero no toda IA es ML**: reglas y lógica difusa son IA sin aprender de datos.
 
 ---
 
@@ -340,11 +338,11 @@ class DiagnosticoVehiculo(KnowledgeEngine):
 
 | Sistema | Origen | Dato relevante |
 |---|---|---|
-| MYCIN | Stanford, 1972 | 65-70 % de acierto en diagnóstico |
+| MYCIN | Stanford, 1972 | 65-70 % de acierto |
 | XCON/R1 | DEC, 1978 | ~25 M$/año de ahorro |
-| SID | DEC, años 80 | Generó el 93 % de las puertas lógicas del VAX 9000 |
+| SID | DEC, años 80 | 93 % de puertas del VAX 9000 |
 
-**Cuándo usar reglas y cuándo ML**: reglas si el dominio está acotado y hace falta explicabilidad; ML si hay datos abundantes y patrones complejos.
+**Reglas** si el dominio está acotado y hace falta explicabilidad; **ML** si hay datos y patrones complejos.
 
 ---
 <!-- _class: lead -->
@@ -368,25 +366,17 @@ El teorema **No Free Lunch** (Wolpert y Macready, 1997): ningún algoritmo es me
 
 ## Robocode como sistema de resolución de problemas
 
-**Representación**: el estado del bot y del campo de batalla en variables legibles cada turno.
+**Representación**: el estado del bot y del campo de batalla en variables legibles cada turno. **Razonamiento**: reglas fijas, lógica difusa o una combinación para decidir disparo y movimiento.
 
-**Razonamiento**: reglas fijas, lógica difusa o una combinación para decidir disparo y movimiento.
-
-**Eficiencia**: decisión en tiempo real, turno a turno.
-
-**Adecuación (CE f)**: sin datos previos sobre "cómo gana este bot", el punto de partida natural es la regla o heurística, no el aprendizaje automático.
+**Eficiencia**: decisión en tiempo real, turno a turno. **Adecuación (CE f)**: sin datos previos, el punto de partida es la regla o heurística, no el ML.
 
 ---
 
 ## Puntos clave de la unidad
 
-Un SRP se formaliza con estado inicial, acciones, transición, objetivo y coste; BFS/DFS/A* recorren el espacio de estados con distintas garantías.
+Un SRP se formaliza con estado inicial, acciones, transición, objetivo y coste; BFS/DFS/A* recorren el espacio de estados con garantías distintas. Los modelos se clasifican por aprendizaje, análisis y base (conocimiento/datos).
 
-Los modelos se clasifican por aprendizaje, por análisis y por base (conocimiento/datos).
-
-RPA hace, la IA piensa. La lógica difusa modela vaguedad; los sistemas basados en reglas ejecutan el ciclo reconocer-actuar.
-
-Elegir modelo (CE f): valora datos, explicabilidad, coste, precisión y tiempo real — y empieza simple.
+RPA hace, la IA piensa; la difusa modela vaguedad, las reglas ejecutan reconocer-actuar. Elegir modelo (CE f): datos, explicabilidad, coste, precisión, tiempo real — empieza simple.
 
 ---
 

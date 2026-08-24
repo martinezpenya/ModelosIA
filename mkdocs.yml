@@ -28,8 +28,17 @@ nav:
     - Notebooks:
       - N01 Entorno Python para IA: UD00/notebooks/UD00_N01_entorno_python_ia.ipynb
   - UD01:
-    - Caracterización de sistemas y utilización de modelos de Inteligencia Artificial: UD01/UD01_ES.md
-    - Diapositivas: UD01/diapositivas.md
+    - Caracterización de sistemas de IA: UD01/UD01_ES.md
+    - Diapositivas: UD01/UD01_Diapositivas.md
+    - Ejercicios: UD01/UD01_Ejercicios.md
+    - Talleres:
+      - T01 Mapa de sistemas inteligentes: UD01/UD01_T01_Mapa_sistemas_ES.md
+      - T02 Técnicas en casos reales: UD01/UD01_T02_Tecnicas_casos_ES.md
+      - T03 Nuevas interacciones: UD01/UD01_T03_Nuevas_interacciones_ES.md
+      - T04 Línea del tiempo de la IA: UD01/UD01_T04_Linea_tiempo_ES.md
+    - Actividades Guiadas: UD01/UD01_ActividadesGuiadas.md
+    - Notebooks:
+      - N01 Técnicas de IA en acción: UD01/notebooks/UD01_N01_tecnicas_ia.ipynb
   - UD02:
     - Modelos de IA y resolución de problemas: UD02/UD02_ES.md
     - Diapositivas: UD02/UD02_Diapositivas.md
@@ -276,7 +285,7 @@ plugins:
     # Render local de notebooks (decisión 2026-08-20: render local + enlace a Colab).
     # Acotado a las unidades ya fusionadas; se amplía el patrón al fusionar cada una.
     - mkdocs-jupyter:
-        include: ["UD00/notebooks/*.ipynb", "UD02/notebooks/*.ipynb", "UD03/notebooks/*.ipynb", "UD04/notebooks/*.ipynb", "UD05/notebooks/*.ipynb", "UD06/notebooks/*.ipynb"]
+        include: ["UD00/notebooks/*.ipynb", "UD01/notebooks/*.ipynb", "UD02/notebooks/*.ipynb", "UD03/notebooks/*.ipynb", "UD04/notebooks/*.ipynb", "UD05/notebooks/*.ipynb", "UD06/notebooks/*.ipynb"]
         include_source: true
         execute: false
         ignore_h1_titles: true
@@ -340,6 +349,7 @@ plugins:
             # y CSS (heredado de Jupyter), no pensado para paginar en WeasyPrint, y rompía el libro
             # a partir del primer notebook. Se leen en el sitio web o en Colab, no en el PDF.
             - 'UD00/notebooks/'
+            - 'UD01/notebooks/'
             - 'UD02/notebooks/'
             - 'UD03/notebooks/'
             - 'UD04/notebooks/'
@@ -349,6 +359,9 @@ plugins:
             - src: 'https://martinezpenya.es/ModelosIA/UD00/Presentacion/UD00_1_ES.html'
               img: 'docs/UD00/Presentacion/img/poster-slide1.png'
               text: 'Ver la presentación interactiva de la UD00'
+            - src: 'https://martinezpenya.es/ModelosIA/UD01/Presentacion/UD01_1_ES.html'
+              img: 'docs/UD01/Presentacion/img/poster-slide1.png'
+              text: 'Ver la presentación interactiva de la UD01'
             - src: 'https://martinezpenya.es/ModelosIA/UD02/Presentacion/UD02_1_ES.html'
               img: 'docs/UD02/Presentacion/img/poster-slide1.png'
               text: 'Ver la presentación interactiva de la UD02'
