@@ -28,6 +28,18 @@ img {
    documento a partir de ahí, y el PDF se corta en seco. Límite de altura y bloques de código
    partibles entre páginas, para que ninguna imagen o bloque vuelva a hacerlo. */
 @media print {
+    /* Hallazgo 2026-08-24, tras aislar el corte real del PDF por bisección exhaustiva: una
+       admonición `!!!` justo después de una tabla, sin párrafo de por medio, hace que WeasyPrint
+       62.3 corrompa la paginación del resto del documento en el runner de GitHub Actions -sin
+       excepción ni aviso, y sin reproducirse en local con el mismo HTML combinado-. Confirmado
+       cambiando solo el contenido de la admonición (sigue rompiendo) y luego intercalando un
+       párrafo cualquiera entre la tabla y la admonición (arregla el corte sin tocar el texto).
+       Se fuerza aquí un margen explícito en vez de tocar el contenido de las ~70 páginas del
+       sitio que tienen este mismo patrón, para no reescribir texto solo por una rareza de
+       renderizado. */
+    .md-typeset table + .admonition {
+        margin-top: 1.5em !important;
+    }
     /* Solo imágenes de contenido (.md-typeset img): un selector `img, svg` sin acotar pisaba
        tambien los iconos pequeños de la interfaz (p. ej. el reloj de "Última actualización" de
        git-revision-date-localized-plugin, un <svg viewBox="0 0 24 24"> sin ancho/alto propios).
