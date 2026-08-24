@@ -19,12 +19,11 @@ img {
     max-width: initial;
 }
 
-/* Invisible en el sitio web; se vuelve un párrafo real solo en impresión (ver @media print más
-   abajo). Insertado por hooks.py entre cualquier tabla y la admonición que la siga sin más de
-   por medio, único arreglo que evita el corte de docs/Libro.pdf (ver ese bloque para el porqué). */
-.pdf-spacer {
-    display: none;
-}
+/* PRUEBA TEMPORAL 2026-08-24: el toggle display:none/@media print no arregló el corte (¿orden
+   de cascada de WeasyPrint distinto al esperado?). Se deja visible siempre, sin CSS, para
+   confirmar primero que el mecanismo (un <p> real entre tabla y admonición) funciona; si
+   confirma, se busca después cómo ocultarlo del sitio web sin CSS condicional. Insertado por
+   hooks.py entre cualquier tabla y la admonición que la siga sin nada de por medio. */
 
 /* PDF (mkdocs-with-pdf + WeasyPrint), no afecta al sitio web: WeasyPrint renderiza con el media
    "print" por defecto. Corrige el corte del libro hacia la página 160 (2026-08-24): varias
@@ -35,12 +34,6 @@ img {
    documento a partir de ahí, y el PDF se corta en seco. Límite de altura y bloques de código
    partibles entre páginas, para que ninguna imagen o bloque vuelva a hacerlo. */
 @media print {
-    /* Ver hooks.py (TABLE_ADMONITION_RE) y la regla .pdf-spacer de arriba: un margen CSS
-       (probado antes) NO evitaba el corte, hacía falta un elemento de bloque real. */
-    .pdf-spacer {
-        display: block;
-        height: 0.8em;
-    }
     /* Solo imágenes de contenido (.md-typeset img): un selector `img, svg` sin acotar pisaba
        tambien los iconos pequeños de la interfaz (p. ej. el reloj de "Última actualización" de
        git-revision-date-localized-plugin, un <svg viewBox="0 0 24 24"> sin ancho/alto propios).
