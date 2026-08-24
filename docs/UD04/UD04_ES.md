@@ -615,12 +615,6 @@ Los **cobots** comparten espacio con las personas sin vallado gracias a la **lim
 y fuerza**. Ejemplos: Universal Robots (UR3e a UR16e, de 3 a 16 kg), Franka Emika (orientada a la
 academia) y KUKA LBR.
 
-!!! important "«Colaborativo» no es una propiedad del hardware"
-    La **ISO 10218:2025** prohíbe llamar «robot colaborativo» a un brazo aislado. Lo que puede ser
-    colaborativa es la **aplicación completa**: robot + herramienta + entorno + tarea. Un cobot con
-    un cuchillo en la pinza no es una aplicación colaborativa. Es un matiz legal, y es el que
-    decide si hace falta vallado.
-
 ## 11. Humanos y robots (RA4-c, RA4-d)
 
 Cuando el robot comparte espacio con personas aparece un problema que no es de mecánica ni de
