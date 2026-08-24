@@ -2,22 +2,22 @@
 
 !!! important "Los cinco cuentan para la nota del RA3"
     Los cinco notebooks forman el **40 % de actividades** del RA3. Cada uno se califica **sobre 10**
-    con su [rúbrica](#rubricas), que tienes más abajo. `EX2` y `EX4` llevan además una **parte
+    con su [rúbrica](#rubricas), que tienes más abajo. `EX2` y `EX5` llevan además una **parte
     escrita** que cubre los criterios sobre el papel del lingüista, el trabajo cooperativo y la
     formación del investigador (RA3-b, RA3-e, RA3-f) — léela antes de empezar, porque cuenta en la
     rúbrica.
 
 !!! warning "Dos entornos"
-    `EX1` y `EX2.5` van en el **contenedor** de la unidad. `EX2`, `EX3` y `EX4` usan
+    `EX1` y `EX3` van en el **contenedor** de la unidad. `EX2`, `EX4` y `EX5` usan
     `transformers` o audio: van en **Colab**.
 
 !!! caution "Identificadores de *dataset* que ya no funcionan"
     Los nombres clásicos de algunos conjuntos de datos de Hugging Face **ya no resuelven**:
     `datasets` exige el formato `namespace/name`. `EX2` usa
-    [`SetFit/TREC-QC`](https://huggingface.co/datasets/SetFit/TREC-QC) en vez de `trec`, y `EX3`
+    [`SetFit/TREC-QC`](https://huggingface.co/datasets/SetFit/TREC-QC) en vez de `trec`, y `EX4`
     usa [`stanfordnlp/imdb`](https://huggingface.co/datasets/stanfordnlp/imdb) en vez de `imdb`.
 
-!!! caution "`EX4`: tres trampas verificadas"
+!!! caution "`EX5`: tres trampas verificadas"
     `pipeline("translation", ...)` ya no existe como tarea genérica (usa `AutoTokenizer` +
     `AutoModelForSeq2SeqLM`), cargar el audio con la ruta directa puede pedir `ffmpeg` (carga con
     `librosa` en su lugar) y el modelo de traducción necesita `sentencepiece`. Todo explicado en el
@@ -49,36 +49,36 @@ conclusiones** que responda: ¿qué decisiones de anotación tomaría un lingüi
 preguntas? ¿Qué perfiles harían falta si el proyecto creciera? ¿Qué formación necesitarías tú para
 mejorar este sistema?
 
-## EX2.5 · NLTK y Python: etiquetado con `cess_esp`
+## EX3 · NLTK y Python: etiquetado con `cess_esp`
 
 Procesa el corpus español anotado `cess_esp`: separa entrenamiento y prueba, reduce el conjunto de
 etiquetas morfosintácticas de 289 a un conjunto manejable, y valida con validación cruzada.
 
 | Recurso | Enlace |
 |---|---|
-| Notebook | [`UD03_EX2_5_nltk_python.ipynb`](notebooks/UD03_EX2_5_nltk_python.ipynb) |
+| Notebook | [`UD03_EX3_nltk_python.ipynb`](notebooks/UD03_EX3_nltk_python.ipynb) |
 
 **Se entrega**: el notebook con los seis apartados resueltos.
 
-## EX3 · Análisis de sentimiento en reseñas de cine
+## EX4 · Análisis de sentimiento en reseñas de cine
 
 *Transfer learning*: parte del DistilBERT de `N03` —afinado para tuits— y adáptalo a reseñas de
 IMDb, un dominio distinto.
 
 | Recurso | Enlace |
 |---|---|
-| Notebook | [`UD03_EX3_sentimiento_imdb.ipynb`](notebooks/UD03_EX3_sentimiento_imdb.ipynb) |
+| Notebook | [`UD03_EX4_sentimiento_imdb.ipynb`](notebooks/UD03_EX4_sentimiento_imdb.ipynb) |
 
 **Se entrega**: el notebook con el modelo afinado y evaluado sobre las reseñas.
 
-## EX4 · Asistente virtual por voz
+## EX5 · Asistente virtual por voz
 
 Encadena tres modelos —voz a texto, traducción y texto a voz— en **una sola función** que reciba un
 audio y devuelva otro.
 
 | Recurso | Enlace |
 |---|---|
-| Notebook | [`UD03_EX4_asistente_virtual.ipynb`](notebooks/UD03_EX4_asistente_virtual.ipynb) |
+| Notebook | [`UD03_EX5_asistente_virtual.ipynb`](notebooks/UD03_EX5_asistente_virtual.ipynb) |
 | Audio de prueba | [`OpenTheDoor.wav`](notebooks/OpenTheDoor.wav) |
 
 **Se entrega**: el notebook con la función conjunta funcionando de punta a punta, **y una sección
@@ -111,11 +111,11 @@ Cuatro criterios de 2 puntos, uno por ejercicio (correcta 2 · parcial 1 · inco
 
 El último criterio es donde se puntúa la **parte escrita** sobre el lingüista y la cooperación.
 
-### EX2.5 · NLTK y `cess_esp` (10 puntos)
+### EX3 · NLTK y `cess_esp` (10 puntos)
 
 Cinco criterios de 2 puntos, apartados a) a e).
 
-### EX3 · Sentimiento en IMDb (10 puntos)
+### EX4 · Sentimiento en IMDb (10 puntos)
 
 | Criterio | Puntos |
 |---|---|
@@ -125,7 +125,7 @@ Cinco criterios de 2 puntos, apartados a) a e).
 | Afinar el modelo (*fine-tuning*) | 2 |
 | Inferencia | 2 |
 
-### EX4 · Asistente virtual (8 puntos)
+### EX5 · Asistente virtual (8 puntos)
 
 | Criterio | Puntos |
 |---|---|

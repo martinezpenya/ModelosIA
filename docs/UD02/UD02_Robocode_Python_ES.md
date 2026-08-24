@@ -1,10 +1,10 @@
-# Robocode TankRoyale en Python
+# UD02 · Robocode Tank Royale en Python
 
 ## Antes de empezar
 
-Leed primero la [Comparativa Java vs Python](UD01_P00_Comparativa_Java_VS_Python_ES.md) para entender las diferencias y elegir vuestro camino.
+Leed primero la [Comparativa Java vs Python](UD02_Robocode_Comparativa_ES.md) para entender las diferencias y elegir vuestro camino.
 
-Esta guía es la versión **Python** de la actividad Robocode. Si buscáis la versión Java, id a [P01 Robocode (Java)](UD01_P01_RobocodeTankRoyale_ES.md).
+Esta guía es la versión **Python** de la actividad Robocode. Si buscáis la versión Java, id a [Robocode en Java](UD02_Robocode_Java_ES.md).
 
 ## Preparación del entorno
 
@@ -95,7 +95,7 @@ java -jar robocode-tankroyale-gui-x.y.z.jar
 ```
 
 !!! warning "Java necesario para la GUI"
-    La GUI requiere Java 11 o superior para ejecutarse, independientemente de que vuestro bot esté escrito en Python. Si no tenéis Java, ved el [Taller T01: Preparar entorno para Java](UD01_T01_IDE_ES.md) o instalad OpenJDK:
+    La GUI requiere Java 11 o superior para ejecutarse, independientemente de que vuestro bot esté escrito en Python. Si no tenéis Java, ved el [Taller 3: preparar el entorno](UD02_T03_Preparar_entorno_ES.md) o instalad OpenJDK:
     ```sh
     sudo apt install default-jdk   # Linux
     ```

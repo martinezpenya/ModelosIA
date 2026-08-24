@@ -451,7 +451,7 @@ El perfil combina tres patas, y **ninguna sobra**:
     ética** de modelos. Los tres parten de la misma base: **lingüística más técnica**.
 
 !!! tip "Cómo se evalúan estos tres criterios en esta unidad"
-    No con un examen aparte: con la **parte escrita de los entregables `EX2` y `EX4`**. En cada uno
+    No con un examen aparte: con la **parte escrita de los entregables `EX2` y `EX5`**. En cada uno
     se pide justificar qué decisiones tomaría un lingüista en ese problema concreto, qué aporta cada
     perfil y qué formación haría falta. Está en la rúbrica, y cuenta.
 
@@ -591,7 +591,7 @@ print(clasificador("El servicio fue excelente, volveré seguro."))
 !!! tip "DistilBERT, y por qué se usa aquí"
     **DistilBERT** tiene un **40 % menos de parámetros** y es un **60 % más rápido** que BERT,
     conservando el **97 %** de su capacidad. Por eso es el modelo de los notebooks de la unidad:
-    cabe en una sesión de clase. El entregable `EX3` lo **afina** para reseñas de cine, que es
+    cabe en una sesión de clase. El entregable `EX4` lo **afina** para reseñas de cine, que es
     *transfer learning* de manual.
 
 ## 12. Construir un sistema orientado a una tarea (RA3-g)
@@ -639,8 +639,9 @@ Y los cuatro entregables aplican cada nivel a un problema propio:
 |---|---|---|
 | `EX1` | Representación de texto: tokenizar, *stopwords*, BoW y tf-idf | Los fundamentos, **por dos caminos** (NLTK y TextBlob) |
 | `EX2` | **Clasificar preguntas** repitiendo el proceso de `N02` | Construir un clasificador propio |
-| `EX3` | **Afinar DistilBERT** para reseñas de cine | *Transfer learning* a una tarea nueva |
-| `EX4` | **Asistente virtual por voz** | Un sistema de punta a punta, con audio |
+| `EX3` | **Etiquetado morfosintáctico** del corpus `cess_esp` con NLTK | Trabajar con anotación real en español |
+| `EX4` | **Afinar DistilBERT** para reseñas de cine | *Transfer learning* a una tarea nueva |
+| `EX5` | **Asistente virtual por voz** | Un sistema de punta a punta, con audio |
 
 !!! example "Ejemplo guiado: un clasificador de reseñas en seis pasos"
     **1 · Tarea**: clasificar una reseña de restaurante como positiva o negativa. **2 · Datos**: 60
@@ -792,7 +793,7 @@ Y los cuatro entregables aplican cada nivel a un problema propio:
 | 16 | 3 | Qué es el PLN, tareas y *pipeline*; el potencial con cifras. `N01` (`nltk`) y `EX1` | RA3-a, RA3-c |
 | 17 | 3 | **La ambigüedad en sus seis formas**; desambiguación y POS *tagging*. `N04` (spaCy) y `N05` (`cess_esp`); Taller 1 | RA3-a, RA3-c |
 | 18 | 3 | Las demás limitaciones; cuándo es factible con la lupa del AI Act. `N02` y `EX2`; Taller 2 | RA3-c, RA3-d, RA3-g |
-| 19 | 3 | El lingüista, la cooperación y la formación; sistemas orientados a tarea. `N03`, `EX3` y `EX4`; evaluación | RA3-b, RA3-e, RA3-f, RA3-g |
+| 19 | 3 | El lingüista, la cooperación y la formación; sistemas orientados a tarea. `N03`, `EX4` y `EX5`; evaluación | RA3-b, RA3-e, RA3-f, RA3-g |
 
 !!! note "Sobre el reparto"
     Los tres CE «humanos» se tratan en la **semana 19**, cuando el alumnado ya ha peleado con los
@@ -805,7 +806,7 @@ Y los cuatro entregables aplican cada nivel a un problema propio:
 - [Ejercicios de la unidad](UD03_Ejercicios.md)
 - Talleres: [T01 · del texto al vector](UD03_T01_Del_texto_al_vector_ES.md) · [T02 · un sistema de PLN de punta a punta](UD03_T02_Sistema_PLN_ES.md)
 - [Actividades guiadas](UD03_ActividadesGuiadas.md) — 5 notebooks
-- [Actividades entregables](UD03_ActividadesEntregables.md) — 4 notebooks evaluables, con sus rúbricas
+- [Actividades entregables](UD03_ActividadesEntregables.md) — 5 notebooks evaluables, con sus rúbricas
 - **Notebooks** — todos los de la unidad, con descarga y apertura en Colab, en el menú «Notebooks»
 
 ??? note "Referencias de la unidad"
@@ -821,25 +822,25 @@ Y los cuatro entregables aplican cada nivel a un problema propio:
 
 | Peso | Instrumento |
 |---|---|
-| **40 %** actividades | Media de los **cuatro entregables** (`EX1`-`EX4`); cada uno con su [rúbrica](UD03_ActividadesEntregables.md#rubricas) sobre 10 |
+| **40 %** actividades | Media de los **cinco entregables** (`EX1`-`EX5`); cada uno con su [rúbrica](UD03_ActividadesEntregables.md#rubricas) sobre 10 |
 | **60 %** prueba escrita | Prueba del RA3 en Moodle: preguntas de test y de desarrollo sobre el contenido de la unidad |
 
 - **La normativa exige alcanzar todos los RA** del módulo para superarlo (art. 5.1 de la Orden
   8/2025: la calificación del módulo está *«en función de la consecución de los RA»*; y las
   Instrucciones 26-27, que impiden calificar positivamente un módulo con RA no superados). El centro
   concreta ese mandato exigiendo **≥ 5 en cada RA**.
-- **`EX2` y `EX4` llevan una parte escrita** que cubre los criterios b, e y f: el papel del
+- **`EX2` y `EX5` llevan una parte escrita** que cubre los criterios b, e y f: el papel del
   lingüista, la cooperación entre perfiles y la formación necesaria. Está en su rúbrica y **cuenta**.
 
 | CE | Dónde se trabaja | Con qué se evalúa |
 |---|---|---|
 | RA3-a | §4, §7 | Taller 1, `EX1`, prueba del RA3 |
-| RA3-b | §10.1 | **Parte escrita de `EX2` y `EX4`**, prueba del RA3 |
-| RA3-c | §5-8 | `EX1`, `EX3`, Talleres 1 y 2, prueba del RA3 |
+| RA3-b | §10.1 | **Parte escrita de `EX2` y `EX5`**, prueba del RA3 |
+| RA3-c | §5-8 | `EX1`, `EX4`, Talleres 1 y 2, prueba del RA3 |
 | RA3-d | §9 | Taller 2, prueba del RA3 |
-| RA3-e | §10.2 | **Parte escrita de `EX2` y `EX4`**, prueba del RA3 |
-| RA3-f | §10.3 | **Parte escrita de `EX2` y `EX4`**, prueba del RA3 |
-| RA3-g | §11-12 | `EX2`, `EX3`, `EX4`, Taller 2 |
+| RA3-e | §10.2 | **Parte escrita de `EX2` y `EX5`**, prueba del RA3 |
+| RA3-f | §10.3 | **Parte escrita de `EX2` y `EX5`**, prueba del RA3 |
+| RA3-g | §11-12 | `EX2`, `EX4`, `EX5`, Taller 2 |
 
 ## 19. Recuperación
 

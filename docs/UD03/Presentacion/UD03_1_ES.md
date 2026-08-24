@@ -39,7 +39,7 @@ section {
 ![h:260 center](../assets/cover.png)
 # UD03: Procesamiento del Lenguaje Natural
 #### Modelos de Inteligencia Artificial
-###### version: 2026-08-23
+###### version: 2026-08-24
 
 ---
 <!-- footer: d.martinezpena@edu.gva.es -->
@@ -418,7 +418,7 @@ En cualquier tarea con consecuencias, **la salida se verifica**.
 
 ## Cómo se evalúan estos tres criterios
 
-**No con un examen aparte**: con la **parte escrita** de `EX2` y `EX4`.
+**No con un examen aparte**: con la **parte escrita** de `EX2` y `EX5`.
 
 Se pide justificar qué decisiones tomaría un lingüista, qué aporta cada perfil y qué formación haría falta. **Está en la rúbrica, y cuenta.**
 
@@ -509,7 +509,7 @@ El paso que más se salta es el **5**: mirar los errores, no solo la métrica.
 | `N03` | Afinar DistilBERT | *Embeddings* contextuales |
 | `N04` | *Pipeline* de spaCy | Modelo preentrenado |
 
-Y los cuatro entregables aplican cada nivel a un problema propio: **EX1** representación · **EX2** clasificador · **EX3** *transfer learning* · **EX4** asistente de punta a punta.
+Y los cinco entregables aplican cada nivel a un problema propio: **EX1** representación · **EX2** clasificador · **EX3** anotación · **EX4** *transfer learning* · **EX5** asistente de punta a punta.
 
 ---
 
@@ -555,10 +555,10 @@ Y los cuatro entregables aplican cada nivel a un problema propio: **EX1** repres
 
 | Peso | Instrumento |
 |---|---|
-| **40 %** | Media de los **cinco entregables** (`EX1`, `EX2`, `EX2.5`, `EX3`, `EX4`) |
+| **40 %** | Media de los **cinco entregables** (`EX1`-`EX5`) |
 | **60 %** | Prueba del RA3: test y desarrollo sobre el contenido de la unidad |
 
-`EX2` y `EX4` llevan una **parte escrita** que cubre RA3-b, RA3-e y RA3-f. **Cuenta.**
+`EX2` y `EX5` llevan una **parte escrita** que cubre RA3-b, RA3-e y RA3-f. **Cuenta.**
 
 La normativa exige alcanzar todos los RA; el centro lo concreta en **≥ 5 en cada uno**.
 

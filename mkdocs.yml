@@ -10,6 +10,7 @@ hooks:
 exclude_docs: |
   UD00/Presentacion/*.md
   UD01/Presentacion/*.md
+  UD02/Presentacion/*.md
   UD05/Presentacion/*.md
   UD03/Presentacion/*.md
   UD06/Presentacion/*.md
@@ -29,15 +30,24 @@ nav:
   - UD01:
     - Caracterización de sistemas y utilización de modelos de Inteligencia Artificial: UD01/UD01_ES.md
     - Diapositivas: UD01/diapositivas.md
-    - Actividades:
-      - P00 Comparativa Java vs Python: UD01/UD01_P00_Comparativa_Java_VS_Python_ES.md
-      - P01 Robocode (Java): UD01/UD01_P01_RobocodeTankRoyale_ES.md
-      - P01 Robocode (Python): UD01/UD01_P01_RobocodeTankRoyale_Python_ES.md
-      - P02 Entregable: UD01/UD01_P02_Practica_ES.md
+  - UD02:
+    - Modelos de IA y resolución de problemas: UD02/UD02_ES.md
+    - Diapositivas: UD02/UD02_Diapositivas.md
+    - Ejercicios: UD02/UD02_Ejercicios.md
     - Talleres:
-      - T01 Java/Python: UD01/UD01_T01_IDE_ES.md
-      - T02 GitHub: UD01/UD01_T02_GitHub.md
-      - T03 Markdown: UD01/UD01_T03_Markdown.md
+      - T01 Control difuso con scikit-fuzzy: UD02/UD02_T01_Control_difuso_ES.md
+      - T02 Sistema basado en reglas con experta: UD02/UD02_T02_Sistema_reglas_ES.md
+      - T03 Preparar el entorno para Robocode: UD02/UD02_T03_Preparar_entorno_ES.md
+      - T04 Control de versiones con GitHub: UD02/UD02_T04_GitHub_ES.md
+      - T05 Documentar con Markdown: UD02/UD02_T05_Markdown_ES.md
+    - Actividades Entregables:
+      - Robocode Tank Royale: UD02/UD02_ActividadesEntregables.md
+      - Comparativa Java vs Python: UD02/UD02_Robocode_Comparativa_ES.md
+      - Tutorial Robocode (Java): UD02/UD02_Robocode_Java_ES.md
+      - Tutorial Robocode (Python): UD02/UD02_Robocode_Python_ES.md
+    - Notebooks:
+      - T01 Control difuso con scikit-fuzzy: UD02/notebooks/UD02_T01_control_difuso.ipynb
+      - T02 Sistema basado en reglas con experta: UD02/notebooks/UD02_T02_sistema_reglas.ipynb
   - UD05:
     - Sistemas expertos y controladores inteligentes: UD05/UD05_ES.md
     - Diapositivas: UD05/UD05_Diapositivas.md
@@ -81,9 +91,9 @@ nav:
       - N05 Ampliación, géneros musicales: UD03/notebooks/UD03_N05_ampliacion_clasificador_generos_musicales.ipynb
       - EX1 Representación de texto: UD03/notebooks/UD03_EX1_representacion_texto.ipynb
       - EX2 Clasificador de preguntas: UD03/notebooks/UD03_EX2_clasificador_preguntas.ipynb
-      - EX2.5 NLTK y Python: UD03/notebooks/UD03_EX2_5_nltk_python.ipynb
-      - EX3 Sentimiento en IMDb: UD03/notebooks/UD03_EX3_sentimiento_imdb.ipynb
-      - EX4 Asistente virtual: UD03/notebooks/UD03_EX4_asistente_virtual.ipynb
+      - EX3 NLTK y Python: UD03/notebooks/UD03_EX3_nltk_python.ipynb
+      - EX4 Sentimiento en IMDb: UD03/notebooks/UD03_EX4_sentimiento_imdb.ipynb
+      - EX5 Asistente virtual: UD03/notebooks/UD03_EX5_asistente_virtual.ipynb
       - T01 Del texto al vector: UD03/notebooks/UD03_T01_del_texto_al_vector.ipynb
       - T02 Sistema de PLN: UD03/notebooks/UD03_T02_sistema_pln.ipynb
   - UD04:
@@ -266,7 +276,7 @@ plugins:
     # Render local de notebooks (decisión 2026-08-20: render local + enlace a Colab).
     # Acotado a las unidades ya fusionadas; se amplía el patrón al fusionar cada una.
     - mkdocs-jupyter:
-        include: ["UD00/notebooks/*.ipynb", "UD03/notebooks/*.ipynb", "UD04/notebooks/*.ipynb", "UD05/notebooks/*.ipynb", "UD06/notebooks/*.ipynb"]
+        include: ["UD00/notebooks/*.ipynb", "UD02/notebooks/*.ipynb", "UD03/notebooks/*.ipynb", "UD04/notebooks/*.ipynb", "UD05/notebooks/*.ipynb", "UD06/notebooks/*.ipynb"]
         include_source: true
         execute: false
         ignore_h1_titles: true
@@ -275,13 +285,10 @@ plugins:
             # Docker pasa a formar parte de la UD00 (decisión 2026-08-20).
             # La URL antigua queda redirigida para no romper enlaces ya indexados.
             'Docker/Docker.md': 'UD00/UD00_ES.md'
-            # Renumeración a «UDxx = RA» (2026-08-22): la UD02 antigua (RA5) pasa a UD05.
-            # OJO: la UD05 antigua (RA6, ética) pasa a UD06, pero NO se puede redirigir:
-            # 'UD05/*' lo ocupa ahora RA5 y el plugin sobrescribiría la página real sin avisar.
-            'UD02/UD02_ES.md': 'UD05/UD05_ES.md'
-            'UD02/UD02_Diapositivas.md': 'UD05/UD05_Diapositivas.md'
-            'UD02/UD02_ActividadesGuiadas.md': 'UD05/UD05_ActividadesGuiadas.md'
-            'UD02/UD02_ActividadesEntregables.md': 'UD05/UD05_ActividadesEntregables.md'
+            # Los redirects de 'UD02/*' hacia 'UD05/*' (de la renumeración del 2026-08-22, cuando
+            # UD02 era un identificador libre) se retiraron el 2026-08-24 al fusionar la UD02 real
+            # (RA2): 'UD02/UD02_ES.md' ya no está libre, es la página nueva y un redirect la habría
+            # tapado sin avisar.
             # Un taller, una página (2026-08-23): la página que los reunía desaparece.
             'UD05/UD05_Talleres.md': 'UD05/UD05_T01_Simular_sistema_experto_ES.md'
             # Los notebooks de la UD05 se renombraron al castellano el 2026-08-23 y sus URLs
@@ -319,8 +326,9 @@ plugins:
             - 'UD00/assets/'
             - 'UD00/Presentacion/'
             - 'UD00/entorno/'
-            - 'UD01/assets/IABDBotMaven.zip'
             - 'UD01/Presentacion/'
+            - 'UD02/assets/IABDBotMaven.zip'
+            - 'UD02/Presentacion/'
             - 'UD05/Presentacion/'
             - 'UD06/Presentacion/'
             - 'UD06/assets/'
@@ -328,10 +336,22 @@ plugins:
             - 'UD05/docker-compose.yml'
             - 'UD03/Presentacion/'
             - 'UD04/Presentacion/'
+            # Notebooks fuera del PDF combinado (2026-08-24): mkdocs-jupyter genera su propio HTML
+            # y CSS (heredado de Jupyter), no pensado para paginar en WeasyPrint, y rompía el libro
+            # a partir del primer notebook. Se leen en el sitio web o en Colab, no en el PDF.
+            - 'UD00/notebooks/'
+            - 'UD02/notebooks/'
+            - 'UD03/notebooks/'
+            - 'UD04/notebooks/'
+            - 'UD05/notebooks/'
+            - 'UD06/notebooks/'
         convert_iframe:
             - src: 'https://martinezpenya.es/ModelosIA/UD00/Presentacion/UD00_1_ES.html'
               img: 'docs/UD00/Presentacion/img/poster-slide1.png'
               text: 'Ver la presentación interactiva de la UD00'
+            - src: 'https://martinezpenya.es/ModelosIA/UD02/Presentacion/UD02_1_ES.html'
+              img: 'docs/UD02/Presentacion/img/poster-slide1.png'
+              text: 'Ver la presentación interactiva de la UD02'
             - src: 'https://martinezpenya.es/ModelosIA/UD06/Presentacion/UD06_1_ES.html'
               img: 'docs/UD06/Presentacion/img/poster-slide1.png'
               text: 'Ver la presentación interactiva de la UD06'

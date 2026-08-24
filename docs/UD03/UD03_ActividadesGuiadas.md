@@ -39,7 +39,7 @@ con un modelo de PyTorch entrenado y evaluado. Es el notebook que `EX2` repite s
 ## N03 · Modelos de lenguaje: afinar DistilBERT
 
 *Transfer learning* de manual: parte de un **DistilBERT** preentrenado y lo afina para análisis de
-sentimiento con una base de datos de tuits. `EX3` repite el proceso sobre reseñas de cine.
+sentimiento con una base de datos de tuits. `EX4` repite el proceso sobre reseñas de cine.
 
 | Recurso | Enlace |
 |---|---|
@@ -58,7 +58,7 @@ en español.
 
 Un sistema de PLN aplicado a **audio**: clasificar el género de una canción combinando `librosa` y
 `transformers`. Es el notebook más largo del módulo (240 celdas) y **no cuenta horas de la unidad**:
-queda como material de ampliación para quien quiera ir más allá de `EX4`.
+queda como material de ampliación para quien quiera ir más allá de `EX5`.
 
 | Recurso | Enlace |
 |---|---|
