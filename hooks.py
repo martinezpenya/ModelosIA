@@ -48,14 +48,14 @@ _PNG_MAX_DIMENSION = 2000  # px; una imagen mas alta o ancha que esto rompe la p
 def _valid_png(data: bytes) -> bool:
     """Descarta PNG corruptos, vacios o desproporcionados antes de insertarlos en el HTML.
 
-    Hallazgo 2026-08-24: en produccion (GitHub Actions), algun diagrama Mermaid pre-renderizado
-    corta en seco el PDF combinado (docs/Libro.pdf) a partir de ese punto, sin que se haya podido
-    reproducir en local con el mismo entorno (PRERENDER_MERMAID=1, misma version de mermaid-cli).
-    Sin logs de la CI para confirmar la causa exacta, la defensa robusta es no confiar en que
-    "returncode == 0" signifique "imagen valida": si el PNG esta corrupto, vacio o tiene un tamano
-    fuera de lo razonable para un diagrama, se descarta aqui y el diagrama cae al texto plano de
-    respaldo (siempre seguro) en vez de arriesgarse a que WeasyPrint reciba algo que le rompa la
-    paginacion del resto del documento.
+    Anadido el 2026-08-24 como defensa general: "returncode == 0" de mmdc no garantiza "imagen
+    valida", asi que si el PNG esta corrupto, vacio o tiene un tamano fuera de lo razonable para
+    un diagrama, se descarta aqui y el diagrama cae al texto plano de respaldo (siempre seguro).
+
+    OJO: esto NO es el arreglo del corte de docs/Libro.pdf en produccion (sigue sin explicar,
+    ver HISTORIAL.md 2026-08-24). Esta funcion solo protegeria contra un PNG de mmdc realmente
+    corrupto o desproporcionado; los PNG que genera mmdc en la CI son validos, asi que este
+    filtro no rechaza nada en la practica y no cambia el resultado del PDF truncado.
     """
     if len(data) < 100 or not data.startswith(_PNG_MAGIC):
         return False
