@@ -18,6 +18,52 @@ img {
 .md-grid {
     max-width: initial;
 }
+
+/* PDF (mkdocs-with-pdf + WeasyPrint), no afecta al sitio web: WeasyPrint renderiza con el media
+   "print" por defecto. Corrige el corte del libro hacia la página 160 (2026-08-24): varias
+   imágenes del material original usan `style="zoom: NN%"` para reducir su tamaño en el editor,
+   pero `zoom` no es una propiedad CSS estándar y WeasyPrint la ignora por completo, así que esas
+   imágenes se renderizan a su tamaño nativo en píxeles (algunas de más de 2000 px, muy por encima
+   de una página A4). Una caja más alta que una página descuadra la paginación del resto del
+   documento a partir de ahí, y el PDF se corta en seco. Límite de altura y bloques de código
+   partibles entre páginas, para que ninguna imagen o bloque vuelva a hacerlo. */
+@media print {
+    img, svg {
+        max-width: 100% !important;
+        max-height: 24cm !important;
+        width: auto !important;
+        height: auto !important;
+        page-break-inside: avoid;
+    }
+    pre, code, .highlight {
+        white-space: pre-wrap !important;
+        overflow-wrap: break-word !important;
+        overflow: visible !important;
+        page-break-inside: auto !important;
+    }
+    /* Causa real del corte (2026-08-24, hallazgo tras el de las imágenes): Material pone
+       `.tabbed-content { display: contents }` en impresión para apilar las pestañas
+       (`=== "Java" / "Python"`), y WeasyPrint no soporta bien `display: contents` — la caja
+       desaparece pero rompe el árbol de paginación de todo lo que viene después en el documento,
+       justo como con las imágenes. Se sustituye por bloques normales, sin flex ni `order`. */
+    .md-typeset .tabbed-set {
+        display: block !important;
+    }
+    .md-typeset .tabbed-labels {
+        display: block !important;
+    }
+    .md-typeset .tabbed-labels > label {
+        display: block !important;
+        font-weight: bold;
+    }
+    .md-typeset .tabbed-content {
+        display: block !important;
+    }
+    .md-typeset .tabbed-block {
+        display: block !important;
+        page-break-inside: avoid;
+    }
+}
 /*
 :root {
     --md-primary-fg-color: #60102f;

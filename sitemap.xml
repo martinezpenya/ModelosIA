@@ -41,35 +41,63 @@
          <lastmod>2026-08-24</lastmod>
     </url>
     <url>
-         <loc>https://martinezpenya.es/ModelosIA/UD01/UD01_P00_Comparativa_Java_VS_Python_ES.html</loc>
-         <lastmod>2026-08-24</lastmod>
-    </url>
-    <url>
-         <loc>https://martinezpenya.es/ModelosIA/UD01/UD01_P01_RobocodeTankRoyale_ES.html</loc>
-         <lastmod>2026-08-24</lastmod>
-    </url>
-    <url>
-         <loc>https://martinezpenya.es/ModelosIA/UD01/UD01_P01_RobocodeTankRoyale_Python_ES.html</loc>
-         <lastmod>2026-08-24</lastmod>
-    </url>
-    <url>
-         <loc>https://martinezpenya.es/ModelosIA/UD01/UD01_P02_Practica_ES.html</loc>
-         <lastmod>2026-08-24</lastmod>
-    </url>
-    <url>
-         <loc>https://martinezpenya.es/ModelosIA/UD01/UD01_T01_IDE_ES.html</loc>
-         <lastmod>2026-08-24</lastmod>
-    </url>
-    <url>
-         <loc>https://martinezpenya.es/ModelosIA/UD01/UD01_T02_GitHub.html</loc>
-         <lastmod>2026-08-24</lastmod>
-    </url>
-    <url>
-         <loc>https://martinezpenya.es/ModelosIA/UD01/UD01_T03_Markdown.html</loc>
-         <lastmod>2026-08-24</lastmod>
-    </url>
-    <url>
          <loc>https://martinezpenya.es/ModelosIA/UD01/diapositivas.html</loc>
+         <lastmod>2026-08-24</lastmod>
+    </url>
+    <url>
+         <loc>https://martinezpenya.es/ModelosIA/UD02/UD02_ActividadesEntregables.html</loc>
+         <lastmod>2026-08-24</lastmod>
+    </url>
+    <url>
+         <loc>https://martinezpenya.es/ModelosIA/UD02/UD02_Diapositivas.html</loc>
+         <lastmod>2026-08-24</lastmod>
+    </url>
+    <url>
+         <loc>https://martinezpenya.es/ModelosIA/UD02/UD02_ES.html</loc>
+         <lastmod>2026-08-24</lastmod>
+    </url>
+    <url>
+         <loc>https://martinezpenya.es/ModelosIA/UD02/UD02_Ejercicios.html</loc>
+         <lastmod>2026-08-24</lastmod>
+    </url>
+    <url>
+         <loc>https://martinezpenya.es/ModelosIA/UD02/UD02_Robocode_Comparativa_ES.html</loc>
+         <lastmod>2026-08-24</lastmod>
+    </url>
+    <url>
+         <loc>https://martinezpenya.es/ModelosIA/UD02/UD02_Robocode_Java_ES.html</loc>
+         <lastmod>2026-08-24</lastmod>
+    </url>
+    <url>
+         <loc>https://martinezpenya.es/ModelosIA/UD02/UD02_Robocode_Python_ES.html</loc>
+         <lastmod>2026-08-24</lastmod>
+    </url>
+    <url>
+         <loc>https://martinezpenya.es/ModelosIA/UD02/UD02_T01_Control_difuso_ES.html</loc>
+         <lastmod>2026-08-24</lastmod>
+    </url>
+    <url>
+         <loc>https://martinezpenya.es/ModelosIA/UD02/UD02_T02_Sistema_reglas_ES.html</loc>
+         <lastmod>2026-08-24</lastmod>
+    </url>
+    <url>
+         <loc>https://martinezpenya.es/ModelosIA/UD02/UD02_T03_Preparar_entorno_ES.html</loc>
+         <lastmod>2026-08-24</lastmod>
+    </url>
+    <url>
+         <loc>https://martinezpenya.es/ModelosIA/UD02/UD02_T04_GitHub_ES.html</loc>
+         <lastmod>2026-08-24</lastmod>
+    </url>
+    <url>
+         <loc>https://martinezpenya.es/ModelosIA/UD02/UD02_T05_Markdown_ES.html</loc>
+         <lastmod>2026-08-24</lastmod>
+    </url>
+    <url>
+         <loc>https://martinezpenya.es/ModelosIA/UD02/notebooks/UD02_T01_control_difuso.html</loc>
+         <lastmod>2026-08-24</lastmod>
+    </url>
+    <url>
+         <loc>https://martinezpenya.es/ModelosIA/UD02/notebooks/UD02_T02_sistema_reglas.html</loc>
          <lastmod>2026-08-24</lastmod>
     </url>
     <url>
@@ -105,19 +133,19 @@
          <lastmod>2026-08-24</lastmod>
     </url>
     <url>
-         <loc>https://martinezpenya.es/ModelosIA/UD03/notebooks/UD03_EX2_5_nltk_python.html</loc>
-         <lastmod>2026-08-24</lastmod>
-    </url>
-    <url>
          <loc>https://martinezpenya.es/ModelosIA/UD03/notebooks/UD03_EX2_clasificador_preguntas.html</loc>
          <lastmod>2026-08-24</lastmod>
     </url>
     <url>
-         <loc>https://martinezpenya.es/ModelosIA/UD03/notebooks/UD03_EX3_sentimiento_imdb.html</loc>
+         <loc>https://martinezpenya.es/ModelosIA/UD03/notebooks/UD03_EX3_nltk_python.html</loc>
          <lastmod>2026-08-24</lastmod>
     </url>
     <url>
-         <loc>https://martinezpenya.es/ModelosIA/UD03/notebooks/UD03_EX4_asistente_virtual.html</loc>
+         <loc>https://martinezpenya.es/ModelosIA/UD03/notebooks/UD03_EX4_sentimiento_imdb.html</loc>
+         <lastmod>2026-08-24</lastmod>
+    </url>
+    <url>
+         <loc>https://martinezpenya.es/ModelosIA/UD03/notebooks/UD03_EX5_asistente_virtual.html</loc>
          <lastmod>2026-08-24</lastmod>
     </url>
     <url>
