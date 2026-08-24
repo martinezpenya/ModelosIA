@@ -592,6 +592,18 @@ forma de aprender rápido y de comportarse con seguridad mientras aprende.
     donde se puede: generar datos conduciendo el robot, entrenar una red con ellos, y después
     dejar que la solución **evolucione** sin datos etiquetados.
 
+## 10. Técnicas de programación de robots (RA4-c)
+
+### 10.1 Las cinco formas de programar un robot industrial
+
+| Técnica | Cómo funciona | Ventajas | Desventajas | Cuándo |
+|---|---|---|---|---|
+| **Teach pendant** | Guías el brazo con la consola por los puntos de paso y los grabas | Curva de aprendizaje mínima, puesta a punto rápida | **Para la producción** mientras se programa; poca flexibilidad | Trayectorias básicas, paletizado, soldadura por puntos |
+| **Guiado manual** | Mueves el efector con la mano y registras posiciones | Muy intuitivo, sin escribir código | Solo en cobots seguros | Cobots, montaje asistido |
+| **Programación textual** | Código nativo del fabricante: RAPID, KRL, URScript | Determinista, se integra con PLC y seguridad | Sintaxis propietaria, **no portable** | Células industriales estables de alta cadencia |
+| **Programación offline (OLP)** | Se programa en simulación sobre modelos CAD | **Cero impacto en producción**; permite probar hipótesis | Coste de licencias; **exige modelos precisos y robot calibrado** | Geometrías complejas, células multimarca |
+| **ROS 2 y frameworks** | Middleware de nodos, *topics* y servicios | Estándar abierto, acceso directo a algoritmos de IA | Curva de aprendizaje alta | Investigación, robots móviles, multi-robot |
+
 ## 11. Humanos y robots (RA4-c, RA4-d)
 
 Cuando el robot comparte espacio con personas aparece un problema que no es de mecánica ni de
