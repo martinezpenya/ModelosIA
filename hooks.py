@@ -7,6 +7,7 @@ import subprocess
 import tempfile
 from pathlib import Path
 
+from bs4 import BeautifulSoup
 from PIL import Image
 
 PRERENDER = os.environ.get('PRERENDER_MERMAID', '0') == '1'
@@ -179,6 +180,61 @@ TABLE_ADMONITION_RE = re.compile(r'(</table>)\s*(<div class="admonition)')
 TABLE_ADMONITION_SPACER = '<p class="pdf-spacer">Nota sobre la tabla anterior.</p>'
 
 
+def _fix_tabbed_for_print(html: str) -> tuple[str, int]:
+    """Reconstruye las pestañas (`=== "..."`) como bloques lineales para impresion.
+
+    pymdownx.tabbed genera todas las <label> juntas dentro de .tabbed-labels y, aparte,
+    todos los .tabbed-block juntos dentro de un unico .tabbed-content -el emparejamiento
+    label<->contenido lo hace en pantalla la seleccion CSS `:checked ~ .tabbed-content`,
+    no el orden del DOM. Forzar `display:block` (como se hacia antes) linealiza el DOM tal
+    cual: todas las etiquetas primero, todo el contenido despues, sin relacion visible entre
+    ambos en el PDF. Aqui se reconstruye, solo para impresion, una copia con cada etiqueta
+    seguida de su bloque, insertada como hermana del `.tabbed-set` original.
+
+    El `.tabbed-set` original se deja tal cual (forzado a `display:block`, igual que antes)
+    y solo se oculta su `.tabbed-labels` (docs/css/extra.css), ya redundante porque cada
+    etiqueta se repite como cabecera en la copia. Probado y descartado: ocultar por completo
+    el `.tabbed-set` original con `display:none` -en vez de solo su `.tabbed-labels`- corrompe
+    de nuevo la paginacion de WeasyPrint en todo el libro a partir de ahi (mismo sintoma que
+    TABLE_ADMONITION_RE mas arriba, sin excepcion ni aviso), aun reproducible en local. La
+    reconstruccion del DOM en si (mover los `.tabbed-block` a la copia) no es la causa -aislado
+    por bisección: con el `.tabbed-set` visible y forzado a bloque, la copia convive sin
+    problema-; el disparador es concretamente el `display:none` sobre un contenedor cuyo
+    `.tabbed-content` interno lleva `display:contents` en el CSS de Material, aunque ese
+    descendiente nunca deberia pintarse al estar oculto el antecesor.
+    """
+    if 'tabbed-set' not in html:
+        return html, 0
+
+    soup = BeautifulSoup(html, 'html.parser')
+    count = 0
+    for tabbed_set in soup.find_all('div', class_='tabbed-set'):
+        labels_div = tabbed_set.find('div', class_='tabbed-labels', recursive=False)
+        content_div = tabbed_set.find('div', class_='tabbed-content', recursive=False)
+        if not labels_div or not content_div:
+            continue
+        labels = labels_div.find_all('label', recursive=False)
+        blocks = content_div.find_all('div', class_='tabbed-block', recursive=False)
+        if not labels or len(labels) != len(blocks):
+            continue
+
+        print_div = soup.new_tag('div')
+        print_div['class'] = ['tabbed-print']
+        for label, block in zip(labels, blocks):
+            heading = soup.new_tag('p')
+            heading['class'] = ['tabbed-print-label']
+            strong = soup.new_tag('strong')
+            strong.string = label.get_text()
+            heading.append(strong)
+            print_div.append(heading)
+            print_div.append(block.extract())
+
+        tabbed_set.insert_after(print_div)
+        count += 1
+
+    return str(soup), count
+
+
 def on_page_markdown(markdown, page, config, files):
     site_url = config.get('site_url', '').rstrip('/')
     return markdown.replace('{{ site_url }}', site_url)
@@ -215,5 +271,9 @@ def on_page_content(html, page, config, files):
         lambda m: m.group(1) + TABLE_ADMONITION_SPACER + m.group(2), result)
     if n_spacers > 0:
         print(f'  [hooks] Inserted {n_spacers} table->admonition spacer(s) on {page.url}')
+
+    result, n_tabbed = _fix_tabbed_for_print(result)
+    if n_tabbed > 0:
+        print(f'  [hooks] Rebuilt {n_tabbed} tabbed-set(s) for print on {page.url}')
 
     return result

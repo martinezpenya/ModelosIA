@@ -82,19 +82,25 @@ img {
         page-break-inside: auto !important;
     }
     /* Causa real del corte (2026-08-24, hallazgo tras el de las imágenes): Material pone
-       `.tabbed-content { display: contents }` en impresión para apilar las pestañas
-       (`=== "Java" / "Python"`), y WeasyPrint no soporta bien `display: contents` — la caja
-       desaparece pero rompe el árbol de paginación de todo lo que viene después en el documento,
-       justo como con las imágenes. Se sustituye por bloques normales, sin flex ni `order`. */
+       `.tabbed-labels`/`.tabbed-content` a `display: contents` en impresión para apilar las
+       pestañas (`=== "Java" / "Python"`), y WeasyPrint no soporta bien `display: contents` — la
+       caja desaparece pero rompe el árbol de paginación de todo lo que viene después en el
+       documento, justo como con las imágenes. Se sustituye por bloques normales, sin flex ni
+       `order`. No tocar este `display: block`: sustituirlo por `display: none` sobre el
+       `.tabbed-set` completo (probado el mismo día, al añadir hooks.py/_fix_tabbed_for_print)
+       corrompe de nuevo la paginación en el mismo punto -aun con el `.tabbed-set` oculto, su
+       `.tabbed-content` interno sigue llevando `display: contents` de Material, y WeasyPrint
+       parece procesarlo igual aunque el antecesor no deba pintarse-. */
     .md-typeset .tabbed-set {
         display: block !important;
     }
+    /* Redundante para impresión desde que hooks.py (_fix_tabbed_for_print) reconstruye, junto a
+       cada `.tabbed-set`, una copia `.tabbed-print` con cada etiqueta ya emparejada con su
+       bloque -ver el comentario de esa función-: sin esto, "Linux / macOS / Windows" saldría
+       primero suelto y luego otra vez como cabecera de cada bloque. Solo se oculta la fila de
+       etiquetas, nunca el `.tabbed-set` completo (ver nota de arriba). */
     .md-typeset .tabbed-labels {
-        display: block !important;
-    }
-    .md-typeset .tabbed-labels > label {
-        display: block !important;
-        font-weight: bold;
+        display: none !important;
     }
     .md-typeset .tabbed-content {
         display: block !important;
@@ -102,6 +108,12 @@ img {
     .md-typeset .tabbed-block {
         display: block !important;
         page-break-inside: avoid;
+    }
+    .tabbed-print {
+        display: block !important;
+    }
+    .tabbed-print-label {
+        margin-bottom: 0.3em;
     }
     /* Los mazos Marp se embeben con <iframe> (WeasyPrint no ejecuta HTML/JS: no los renderiza).
        El convert_iframe del plugin with-pdf nunca coincidia porque compara el src ya resuelto a
@@ -118,6 +130,10 @@ img {
 }
 
 .deck-poster-print {
+    display: none;
+}
+
+.tabbed-print {
     display: none;
 }
 
