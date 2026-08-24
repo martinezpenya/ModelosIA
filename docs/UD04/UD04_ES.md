@@ -621,33 +621,6 @@ academia) y KUKA LBR.
     un cuchillo en la pinza no es una aplicación colaborativa. Es un matiz legal, y es el que
     decide si hace falta vallado.
 
-### 10.3 Comparar técnicas de verdad: el mismo problema, cuatro veces
-
-La tabla del §10.1 compara técnicas **industriales**. Pero el criterio RA4-c pide valorar
-características diferenciadoras, y eso se aprende mejor resolviendo **un mismo problema de varias
-maneras** y viendo qué cambia.
-
-Los entregables de esta unidad hacen precisamente eso: un robot con una cámara tiene que **seguir
-una línea** en el suelo, y el problema se resuelve cuatro veces.
-
-| Entregable | Técnica | Qué escribes tú | Qué sale del programa |
-|---|---|---|---|
-| `EX2` | **Reglas** sobre los píxeles | Todas las condiciones, a mano | Nada: el comportamiento es el que programaste |
-| `EX3` | **Lógica difusa** | Las variables lingüísticas y las reglas | La transición suave entre ellas |
-| `EX5` | **Red neuronal supervisada** | La arquitectura y el entrenamiento; los datos salen de `EX4` | El comportamiento, aprendido de tus propios ejemplos |
-| `EX6` | **Neuroevolución (NEAT)** | La función de aptitud | La red **y su topología**, evolucionadas sin ejemplos |
-
-<!-- PRUEBA TEMPORAL 2026-08-24: diagrama mermaid quitado para acotar el disparador del corte de
-     docs/Libro.pdf; se restaura en cuanto se confirme o descarte. -->
-
-!!! note "Lo que hay que observar al compararlas"
-    No es cuál «funciona mejor», sino **qué se gana y qué se pierde** en cada salto: cuánto código
-    escribes, cuánto tienes que entender del problema, cuántos datos necesitas, cuánto tarda en
-    estar listo y —lo más importante— **si puedes explicar por qué el robot hizo lo que hizo**. Las
-    reglas de `EX2` se leen; los pesos de la red de `EX5`, no. Es la misma tensión entre
-    interpretabilidad y potencia que viste en la UD05 con los sistemas expertos, y que la UD06
-    convierte en un problema legal.
-
 ## 11. Humanos y robots (RA4-c, RA4-d)
 
 Cuando el robot comparte espacio con personas aparece un problema que no es de mecánica ni de
