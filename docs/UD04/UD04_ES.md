@@ -604,10 +604,12 @@ forma de aprender rápido y de comportarse con seguridad mientras aprende.
 | **Programación offline (OLP)** | Se programa en simulación sobre modelos CAD | **Cero impacto en producción**; permite probar hipótesis | Coste de licencias; **exige modelos precisos y robot calibrado** | Geometrías complejas, células multimarca |
 | **ROS 2 y frameworks** | Middleware de nodos, *topics* y servicios | Estándar abierto, acceso directo a algoritmos de IA | Curva de aprendizaje alta | Investigación, robots móviles, multi-robot |
 
-!!! tip "Prueba temporal de contenido sustituto"
-    Este es un párrafo distinto, con palabras normales y sin siglas raras, puesto exactamente en
-    el mismo sitio que el aviso original, para ver si el problema depende del contenido concreto
-    del párrafo o solo de su posición en el documento.
+Los robots de **Universal Robots** se programan en **URScript**, un lenguaje muy parecido a Python.
+
+!!! tip "URScript se parece a Python"
+    Los robots de **Universal Robots** se programan en **URScript**, un lenguaje muy parecido a
+    Python que además puede enviarse al robot desde un cliente Python por FTP, SSH o RTDE. Es la
+    puerta de entrada natural a la programación de cobots desde este módulo.
 
 ## 11. Humanos y robots (RA4-c, RA4-d)
 
