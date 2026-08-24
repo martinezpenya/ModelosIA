@@ -46,6 +46,8 @@ section {
 <!-- header: Modelos de Inteligencia Artificial 26-27 (UD01_1)-->
 <style scoped>section { font-size: 28px; }</style>
 
+<!-- Cada bloque de este índice se corresponde con un criterio de RA1: bloques 1 y 2 con RA1-a, bloque 3 con RA1-c, bloque 4 con RA1-b y bloques 5-6 con RA1-d. -->
+
 # ¿Qué veremos?
 1. Fundamentos de los sistemas inteligentes
 2. Escuelas de pensamiento y clasificaciones de la IA
@@ -57,6 +59,8 @@ section {
 ---
 
 ## RA1 y sus criterios de evaluación
+
+<!-- Estos cuatro criterios de evaluación proceden del anexo I del RD 279/2021, el real decreto que fija el currículo del ciclo; la letra de cada CE es la numeración oficial de la norma, no un orden nuestro. -->
 
 **RA1**: caracteriza sistemas de IA y su relación con la mejora de la eficiencia operativa.
 
@@ -106,6 +110,8 @@ flowchart LR
 
 ## Características de un sistema inteligente
 
+<!-- Cuando la tarea se complica y definir todas las reglas se vuelve inviable, entra el aprendizaje automático (machine learning): en vez de que alguien programe las reglas a mano, el propio algoritmo deduce los patrones a partir de los datos. -->
+
 | Característica | Descripción |
 |---|---|
 | **Autonomía** | Opera sin supervisión humana constante |
@@ -117,6 +123,8 @@ Un termostato con reglas `si...entonces...` ya es, formalmente, IA basada en reg
 ---
 
 ## IA débil frente a IA fuerte
+
+<!-- Ejemplos de IA fuerte solo existen en la ficción: el T-800 de Terminator, Wall-E, J.A.R.V.I.S. Ningún sistema real se aproxima a esa flexibilidad. -->
 
 **Débil (narrow)**: una tarea concreta, reactiva, no flexible, sin conciencia. **Es toda la IA que existe hoy** (Siri, Alexa).
 
@@ -132,6 +140,8 @@ La IA débil también tiene riesgos: ejecuta su tarea sin evaluar consecuencias 
 
 ## Dos escuelas: convencional y computacional
 
+<!-- Con el auge del machine learning, buena parte de lo que hacía la escuela convencional se ha ido llevando al campo computacional: no son compartimentos estancos, sino una evolución histórica del campo. -->
+
 | | Convencional | Computacional |
 |---|---|---|
 | Cómo razona | Análisis formal explícito | Aprendizaje a partir de datos |
@@ -141,6 +151,8 @@ La IA débil también tiene riesgos: ejecuta su tarea sin evaluar consecuencias 
 ---
 
 ## Russell y Norvig (1995): cuatro categorías
+
+<!-- Los autores son Stuart Russell y Peter Norvig (1995). Las dos últimas categorías, leyes del pensamiento y agentes racionales, exigen una capacidad de cómputo que, para el caso general, todavía es inalcanzable. -->
 
 | Categoría | Enfoque |
 |---|---|
@@ -155,6 +167,8 @@ De *Artificial Intelligence: A Modern Approach*, el libro de texto de IA más us
 
 ## Hintze (2016): clasificación por capacidades
 
+<!-- La clasificación es de Arend Hintze, investigador de la Universidad de Michigan (2016). La teoría de la mente consistiría en representarse lo que piensan y sienten otros agentes, la base de la interacción social; la autoconciencia sería que el sistema se representara a sí mismo, conociendo sus propios estados internos. -->
+
 ```mermaid
 flowchart LR
     A[Reactivas] --> B[Memoria limitada]
@@ -167,6 +181,8 @@ flowchart LR
 ---
 
 ## Breve historia de la IA
+
+<!-- Falta en esta línea del tiempo un hito de 2011: Watson, de IBM, gana en el concurso de televisión Jeopardy!, un hito que suele señalarse como el momento en que emerge la ciencia de datos como disciplina. -->
 
 - **1950** Test de Turing
 - **1956** Dartmouth acuña «inteligencia artificial»
@@ -197,6 +213,8 @@ flowchart TD
 
 ## Cómo funciona un modelo de ML
 
+<!-- El objetivo de fondo de todo este proceso se llama generalización: que el modelo acierte con datos nuevos, no solo con los de entrenamiento. Por eso el paso de evaluación usa datos que el modelo nunca ha visto. -->
+
 1. **Representar** los datos como vectores de *features*.
 2. **Entrenar**: ajustar parámetros para minimizar el error.
 3. **Evaluar** con datos no vistos (evita el sobreajuste).
@@ -208,6 +226,8 @@ flowchart TD
 
 ## Tipos de aprendizaje
 
+<!-- Algoritmos supervisados típicos: árboles de decisión, k-vecinos (KNN), naive Bayes, SVM, regresión logística, random forest. No supervisados: k-means y DBSCAN para clustering, PCA para reducir dimensiones. Todos disponibles en la librería scikit-learn de Python, con la misma interfaz fit/predict. -->
+
 | Tipo | Datos | Ejemplos |
 |---|---|---|
 | **Supervisado** | Etiquetados | Spam, precio de vivienda |
@@ -218,6 +238,8 @@ flowchart TD
 ---
 
 ## Deep learning e IA generativa
+
+<!-- RLHF significa aprendizaje por refuerzo con feedback humano (reinforcement learning from human feedback). Más allá del Transformer existe Mamba (2023), una arquitectura alternativa basada en modelos de espacio de estados, con menor coste computacional para secuencias largas. -->
 
 **DL**: redes con muchas capas, backpropagation, necesita datos y GPU. **CNN** (imágenes), **RNN/LSTM** (secuencias), **Transformers** (atención, base de los LLM).
 
@@ -231,6 +253,8 @@ flowchart TD
 
 ## Campos de aplicación de la IA
 
+<!-- La IA también está en usos cotidianos que no parecen IA: buscadores que aprenden de los datos, termostatos que se adaptan al comportamiento, ciberseguridad que detecta patrones de ataque, y sistemas que identifican noticias falsas analizando fuentes y lenguaje. -->
+
 | Campo | Ejemplo | Beneficio |
 |---|---|---|
 | Industria | Mantenimiento predictivo | Menos paradas |
@@ -241,6 +265,8 @@ flowchart TD
 ---
 
 ## Casos de estudio con beneficio medible
+
+<!-- Un cuarto caso, no en esta diapositiva: en salud, sistemas de IA analizan llamadas de emergencia para reconocer un paro cardíaco más rápido que un operador humano, y usan visión artificial para detectar infecciones en TAC pulmonar. -->
 
 **Fraude en banca**: modelo de ML sobre datos etiquetados → alerta inmediata en vez de revisión manual posterior.
 
@@ -256,6 +282,8 @@ flowchart TD
 
 ## Nuevas formas de interacción
 
+<!-- PLN significa procesamiento del lenguaje natural. Las tareas concretas detrás de estas interacciones son análisis de sentimiento, reconocimiento de entidades o NER (nombres, lugares, fechas), clasificación de texto, traducción automática y resumen automático. -->
+
 | Interacción | Ejemplo |
 |---|---|
 | **Asistente virtual** | Siri, Alexa |
@@ -268,6 +296,8 @@ Detrás del texto y la voz hay tareas de **PLN** — se estudian en la UD03.
 ---
 
 ## Eficiencia operativa y KPIs
+
+<!-- FCR es first contact resolution, el porcentaje de consultas resueltas en el primer contacto; AHT es average handling time, el tiempo medio de gestión de una consulta. OEE es overall equipment effectiveness (disponibilidad por rendimiento por calidad de una máquina); MTBF es mean time between failures, el tiempo medio entre dos averías. -->
 
 La IA mejora la eficiencia cuando reduce **costes, tiempos o errores**. Se mide comparando **antes/después** con indicadores: tiempo de ciclo, coste unitario, tasa de error, disponibilidad.
 
@@ -291,6 +321,8 @@ Coste antes: 1.000 × 3 € = **3.000 €**. Coste después: 600 × 0,10 € + 4
 
 ## Una visión general (se profundiza en la UD06)
 
+<!-- El AI Act (Reglamento UE 2024/1689) entra en vigor por fases: sanciones desde el 2 de agosto de 2025 y aplicación general desde el 2 de agosto de 2026. Su artículo 51 presume riesgo sistémico cuando el cómputo acumulado del entrenamiento de un modelo supera los 10 elevado a 25 FLOPS. -->
+
 **Beneficios**: automatización de tareas repetitivas, mejor toma de decisiones, disponibilidad 24×7, menos errores humanos.
 
 **Riesgos**: datos con sesgos, modelos alterados, *model drift*, privacidad.
@@ -311,6 +343,8 @@ Las nuevas interacciones (chatbots, voz, visión, agentes) mejoran la eficiencia
 
 ## La unidad en la práctica
 
+<!-- La rúbrica de evaluación de los cuatro talleres está publicada en la página del taller 4 (línea del tiempo). -->
+
 **4 talleres**: mapa de sistemas inteligentes · técnicas en casos reales · nuevas interacciones · línea del tiempo de la IA.
 
 **Actividad guiada**: notebook demo de aprendizaje supervisado, no supervisado y medición de la mejora operativa.
@@ -318,6 +352,8 @@ Las nuevas interacciones (chatbots, voz, visión, agentes) mejoran la eficiencia
 ---
 
 ## Evaluación
+
+<!-- Esta exigencia de 5 o más por RA viene de la normativa: el artículo 5.1 de la Orden 8/2025 liga la calificación del módulo a la consecución de los RA, y las Instrucciones 26-27 impiden calificar positivamente un módulo con algún RA no superado. -->
 
 | Peso | Instrumento |
 |---|---|
