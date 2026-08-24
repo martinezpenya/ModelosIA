@@ -176,7 +176,7 @@ MERMAID_RE = re.compile(
 # reescribir el contenido en cada sitio se inserta aqui, por hook, un parrafo separador real
 # entre cualquier `</table>` y la admonicion que la siga inmediatamente.
 TABLE_ADMONITION_RE = re.compile(r'(</table>)\s*(<div class="admonition)')
-TABLE_ADMONITION_SPACER = '<p class="pdf-spacer">&nbsp;</p>'
+TABLE_ADMONITION_SPACER = '<p class="pdf-spacer">Nota sobre la tabla anterior.</p>'
 
 
 def on_page_markdown(markdown, page, config, files):
