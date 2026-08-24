@@ -355,16 +355,16 @@ plugins:
             - 'UD04/notebooks/'
             - 'UD05/notebooks/'
             - 'UD06/notebooks/'
-            # EXPERIMENTO 2026-08-24: talleres y ejercicios fuera del PDF, a ver si reducir el
-            # tamano del libro evita el corte de docs/Libro.pdf en produccion (causa real sin
-            # confirmar tras dos intentos previos). Si no ayuda, revertir estas dos lineas.
-            - 'UD\d\d/UD\d\d_T\d+_'
-            - 'UD\d\d/UD\d\d_Ejercicios'
-            # PRUEBA DECISIVA 2026-08-24: excluir tambien las 7 paginas de diapositivas (el unico
-            # <iframe> del sitio que WeasyPrint no sabe renderizar; convert_iframe nunca lo
-            # convertia, ver mas abajo). Si esto arregla el corte, confirma que el iframe crudo es
-            # la causa; si no, se revierte y se descarta esta hipotesis tambien.
-            - 'UD\d\d/UD\d\d_Diapositivas'
+            # 2026-08-24: se probo a excluir tambien talleres/ejercicios y las 7 paginas de
+            # diapositivas (el unico <iframe> del sitio) para ver si el corte de docs/Libro.pdf
+            # dependia del tamano del libro o del iframe sin convertir. Ninguna de las dos cosas
+            # lo arreglo -el corte cae exactamente en el mismo punto de la UD04 en todos los
+            # casos-, asi que se revierte: talleres, ejercicios y diapositivas vuelven al PDF.
+            # Investigacion completa en HISTORIAL.md.
+            # PRUEBA DE AISLAMIENTO 2026-08-24: excluir solo la teoria de la UD04 (unica pagina,
+            # no toca sus talleres/ejercicios/diapositivas) para confirmar si el problema esta
+            # realmente dentro de este fichero o es independiente del contenido.
+            - 'UD04/UD04_ES'
         # convert_iframe retirado (2026-08-24): nunca coincidia. El plugin compara iframe['src']
         # ya resuelto por replace_asset_hrefs a una ruta local file:// (segun site_dir en el
         # momento del build) contra la URL de produccion que hay aqui configurada -no pueden
