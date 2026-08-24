@@ -360,28 +360,18 @@ plugins:
             # confirmar tras dos intentos previos). Si no ayuda, revertir estas dos lineas.
             - 'UD\d\d/UD\d\d_T\d+_'
             - 'UD\d\d/UD\d\d_Ejercicios'
-        convert_iframe:
-            - src: 'https://martinezpenya.es/ModelosIA/UD00/Presentacion/UD00_1_ES.html'
-              img: 'docs/UD00/Presentacion/img/poster-slide1.png'
-              text: 'Ver la presentación interactiva de la UD00'
-            - src: 'https://martinezpenya.es/ModelosIA/UD01/Presentacion/UD01_1_ES.html'
-              img: 'docs/UD01/Presentacion/img/poster-slide1.png'
-              text: 'Ver la presentación interactiva de la UD01'
-            - src: 'https://martinezpenya.es/ModelosIA/UD02/Presentacion/UD02_1_ES.html'
-              img: 'docs/UD02/Presentacion/img/poster-slide1.png'
-              text: 'Ver la presentación interactiva de la UD02'
-            - src: 'https://martinezpenya.es/ModelosIA/UD06/Presentacion/UD06_1_ES.html'
-              img: 'docs/UD06/Presentacion/img/poster-slide1.png'
-              text: 'Ver la presentación interactiva de la UD06'
-            - src: 'https://martinezpenya.es/ModelosIA/UD05/Presentacion/UD05_1_ES.html'
-              img: 'docs/UD05/Presentacion/img/poster-slide1.png'
-              text: 'Ver la presentación interactiva de la UD05'
-            - src: 'https://martinezpenya.es/ModelosIA/UD04/Presentacion/UD04_1_ES.html'
-              img: 'docs/UD04/Presentacion/img/poster-slide1.png'
-              text: 'Ver la presentación interactiva de la UD04'
-            - src: 'https://martinezpenya.es/ModelosIA/UD03/Presentacion/UD03_1_ES.html'
-              img: 'docs/UD03/Presentacion/img/poster-slide1.png'
-              text: 'Ver la presentación interactiva de la UD03'
+            # PRUEBA DECISIVA 2026-08-24: excluir tambien las 7 paginas de diapositivas (el unico
+            # <iframe> del sitio que WeasyPrint no sabe renderizar; convert_iframe nunca lo
+            # convertia, ver mas abajo). Si esto arregla el corte, confirma que el iframe crudo es
+            # la causa; si no, se revierte y se descarta esta hipotesis tambien.
+            - 'UD\d\d/UD\d\d_Diapositivas'
+        # convert_iframe retirado (2026-08-24): nunca coincidia. El plugin compara iframe['src']
+        # ya resuelto por replace_asset_hrefs a una ruta local file:// (segun site_dir en el
+        # momento del build) contra la URL de produccion que hay aqui configurada -no pueden
+        # coincidir nunca, en ningun entorno-, asi que el <iframe> crudo llegaba sin convertir a
+        # WeasyPrint en las 7 paginas de diapositivas. Sustituido por un bloque
+        # `deck-poster-print` en cada UDxx_Diapositivas.md, oculto en pantalla y mostrado solo en
+        # impresion por CSS (docs/css/extra.css), que no depende de esta coincidencia rota.
         #two_columns_level: 3
         #
         #render_js: true

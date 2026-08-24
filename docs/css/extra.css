@@ -70,6 +70,22 @@ img {
         display: block !important;
         page-break-inside: avoid;
     }
+    /* Los mazos Marp se embeben con <iframe> (WeasyPrint no ejecuta HTML/JS: no los renderiza).
+       El convert_iframe del plugin with-pdf nunca coincidia porque compara el src ya resuelto a
+       ruta local file:// contra la URL de produccion configurada en mkdocs.yml -no hay forma de
+       que coincidan- asi que el <iframe> crudo llegaba tal cual a WeasyPrint. Se oculta aqui y se
+       muestra en su lugar un enlace con la miniatura de la diapositiva 1 (ver deck-poster-print
+       en cada UDxx_Diapositivas.md), controlado por display normal en pantalla. */
+    .deck-iframe {
+        display: none !important;
+    }
+    .deck-poster-print {
+        display: block !important;
+    }
+}
+
+.deck-poster-print {
+    display: none;
 }
 
 /* Página "Sobre mí": bloque de cabecera centrado, foto a la izquierda del texto. */
