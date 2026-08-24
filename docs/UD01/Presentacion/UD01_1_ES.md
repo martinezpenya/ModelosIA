@@ -168,9 +168,13 @@ flowchart LR
 
 ## Breve historia de la IA
 
-**1950** Test de Turing · **1956** Dartmouth acuña «inteligencia artificial» · **1958** perceptrón de Rosenblatt · **1997** Deep Blue vence a Kasparov · **2016** AlphaGo gana en Go.
-
-**2017**: *Attention Is All You Need* propone el **Transformer** — la base técnica de los LLM y la IA generativa. **2022**: los LLM cambian la industria.
+- **1950** Test de Turing
+- **1956** Dartmouth acuña «inteligencia artificial»
+- **1958** perceptrón de Rosenblatt
+- **1997** Deep Blue vence a Kasparov
+- **2016** AlphaGo gana en Go
+- **2017** *Attention Is All You Need* propone el **Transformer**, base de los LLM y la IA generativa
+- **2022** los LLM cambian la industria
 
 ---
 <!-- _class: lead -->
