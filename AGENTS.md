@@ -35,9 +35,19 @@ Or just run `./serve.sh` which does all the above then `mkdocs serve`.
 
 ## PDF output
 
-- `mkdocs-with-pdf` plugin outputs `docs/Libro.pdf`
+- `mkdocs-with-pdf` outputs `docs/Libro.pdf`, but only runs when `PRERENDER_MERMAID=1`
+  (`enabled_if_env` in `mkdocs.yml`) — the plain web build (`mkdocs build`, no env var) skips it
+  entirely. `ci.yml` does two separate builds: a web build for the live site, and a
+  `PRERENDER_MERMAID=1` build into `site-pdf/` whose PDF gets copied into the real `site/` before
+  deploy. Reason: `mkdocs-with-pdf` fails intermittently on the GitHub Actions runner with
+  hundreds of "No anchor" errors, not reproducible locally (2026-08-25) — the web build no longer
+  pays that risk since it doesn't need the PDF anyway, only the one build that does.
 - Custom cover/back-cover templates in `templates/`
-- `pdf_event_hook/__init__.py` injects a PDF download button into the nav bar
+- `pdf_event_hook/__init__.py` is **orphaned, not wired into `mkdocs.yml`** — despite the name it
+  hasn't injected anything for a while (found 2026-08-25, cause not investigated further). The PDF
+  download icon in the header (top right, next to the GitHub link on desktop / next to the search
+  icon on mobile) is now added independently in `hooks.py`'s `on_post_page`, which runs regardless
+  of whether `mkdocs-with-pdf` is enabled for that build.
 - The `offline` plugin is commented out (it would break SEO)
 
 ## Structure
