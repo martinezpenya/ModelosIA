@@ -18,10 +18,10 @@ eficiencia operativa de las organizaciones y empresas.
     El currículo para este RA dice textualmente:
 
     - *Caracterización de sistemas de Inteligencia Artificial:*
-    - *– Principios de los sistemas inteligentes.*
-    - *– Campos de aplicación.*
-    - *– Técnicas de la Inteligencia Artificial.*
-    - *– Nuevas formas de interacción.*
+        - *Principios de los sistemas inteligentes.*
+        - *Campos de aplicación.*
+        - *Técnicas de la Inteligencia Artificial.*
+        - *Nuevas formas de interacción.*
 
 ## 2. Objetivos de la unidad
 

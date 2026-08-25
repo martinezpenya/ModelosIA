@@ -48,9 +48,11 @@ resolución de problemas.
     El currículo para este RA dice textualmente:
 
     - *Utilización de modelos de Inteligencia Artificial:*
-    - *– Requisitos básicos de un sistema de resolución de problemas.*
-    - *– Modelos de sistemas de Inteligencia Artificial: Automatización de tareas. Sistemas de
-      razonamiento impreciso. Sistemas basados en reglas.*
+        - *Requisitos básicos de un sistema de resolución de problemas.*
+        - *Modelos de sistemas de Inteligencia Artificial:*
+            - *Automatización de tareas.*
+            - *Sistemas de razonamiento impreciso.*
+            - *Sistemas basados en reglas.*
 
 ## 3. Objetivos de la unidad
 
