@@ -170,6 +170,7 @@ flowchart LR
 | 1958 | Frank Rosenblatt publica el **perceptrón**, primera red neuronal que aprende (concebido en 1957; máquina Mark I Perceptron construida entre 1958 y 1960) |
 | 1997 | Deep Blue (IBM) vence al campeón de ajedrez Kasparov |
 | 2011 | Watson (IBM) gana en *Jeopardy!*; emerge la ciencia de datos |
+| 2015 | Google libera **TensorFlow** como código abierto, democratizando las herramientas de deep learning |
 | 2016 | AlphaGo (DeepMind) vence en Go (más de 14,5 billones de jugadas tras 4 movimientos) |
 | **2017** | **Vaswani et al. publican *Attention Is All You Need*** y proponen la arquitectura **Transformer**, basada solo en mecanismos de atención: elimina la recurrencia y las convoluciones. Es la base técnica de los LLM y de la IA generativa posterior |
 | 2022 | Los **grandes modelos de lenguaje (LLM)**, p. ej. ChatGPT, cambian la industria |

@@ -39,7 +39,7 @@ section {
 ![h:260 center](../assets/cover.png)
 # UD04: Análisis de sistemas robotizados
 #### Modelos de Inteligencia Artificial
-###### version: 2026-08-24
+###### version: 2026-08-25
 
 ---
 <!-- footer: d.martinezpena@edu.gva.es -->
@@ -268,7 +268,9 @@ Casi toda la robótica industrial funciona con **dos dedos y un actuador**, porq
 | Líder en densidad | **Corea del Sur** (1.012-1.220 por 10.000 empleados) |
 | Líder de mercado | **China** (295.000, el 54 %) |
 | **España**, 3.er mercado europeo | **5.100 unidades**, por la automoción |
-| Robótica médica | **+91 %** |
+| Robótica médica | **+91 %**, con **da Vinci** como referencia |
+
+<a href="https://www.youtube.com/watch?v=4yTPcDWopBo" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/4yTPcDWopBo/hqdefault.jpg" height="100" /></a>
 
 ---
 <style scoped>section { font-size: 24px; }</style>

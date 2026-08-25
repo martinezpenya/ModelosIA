@@ -39,7 +39,7 @@ section {
 ![h:260 center](../assets/cover.png)
 # UD01: Caracterización de sistemas de IA
 #### Modelos de Inteligencia Artificial
-###### version: 2026-08-24
+###### version: 2026-08-25
 
 ---
 <!-- footer: d.martinezpena@edu.gva.es -->
@@ -180,6 +180,8 @@ flowchart LR
 
 ---
 
+<style scoped>section { font-size: 24px; }</style>
+
 ## Breve historia de la IA
 
 <!-- Falta en esta línea del tiempo un hito de 2011: Watson, de IBM, gana en el concurso de televisión Jeopardy!, un hito que suele señalarse como el momento en que emerge la ciencia de datos como disciplina. -->
@@ -188,9 +190,12 @@ flowchart LR
 - **1956** Dartmouth acuña «inteligencia artificial»
 - **1958** perceptrón de Rosenblatt
 - **1997** Deep Blue vence a Kasparov
+- **2015** Google libera TensorFlow, código abierto
 - **2016** AlphaGo gana en Go
 - **2017** *Attention Is All You Need* propone el **Transformer**, base de los LLM y la IA generativa
 - **2022** los LLM cambian la industria
+
+<a href="https://www.youtube.com/watch?v=oZikw5k_2FM" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/oZikw5k_2FM/hqdefault.jpg" height="90" /></a> <a href="https://www.youtube.com/watch?v=WXuK6gekU1Y" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/WXuK6gekU1Y/hqdefault.jpg" height="90" /></a>
 
 ---
 <!-- _class: lead -->
@@ -224,6 +229,8 @@ flowchart TD
 
 ---
 
+<style scoped>section { font-size: 24px; }</style>
+
 ## Tipos de aprendizaje
 
 <!-- Algoritmos supervisados típicos: árboles de decisión, k-vecinos (KNN), naive Bayes, SVM, regresión logística, random forest. No supervisados: k-means y DBSCAN para clustering, PCA para reducir dimensiones. Todos disponibles en la librería scikit-learn de Python, con la misma interfaz fit/predict. -->
@@ -235,7 +242,14 @@ flowchart TD
 | **Refuerzo** | Recompensas | Robots, juegos |
 | **Semi / auto-supervisado** | Pocas o ninguna etiqueta | Entrenar LLM |
 
+<a href="https://www.youtube.com/watch?v=V1eYniJ0Rnk" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/V1eYniJ0Rnk/hqdefault.jpg" height="80" /></a> <a href="https://www.youtube.com/watch?v=gn4nRCC9TwQ" target="_blank" rel="noopener"><img src="https://img.youtube.com/vi/gn4nRCC9TwQ/hqdefault.jpg" height="80" /></a>
+
 ---
+
+<!-- IMAGEN: ejemplo generado con MidJourney (ya en el repo) -->
+![bg right:35% fit](../assets/MidJourney.png)
+
+<style scoped>section { font-size: 24px; }</style>
 
 ## Deep learning e IA generativa
 
@@ -244,6 +258,9 @@ flowchart TD
 **DL**: redes con muchas capas, backpropagation, necesita datos y GPU. **CNN** (imágenes), **RNN/LSTM** (secuencias), **Transformers** (atención, base de los LLM).
 
 **IA generativa**: modelo de base entrenado con datos masivos → ajuste (*fine-tuning*, RLHF) → generación, a veces con **RAG**. Los **agentes de IA** van un paso más allá: actúan, no solo responden.
+
+<!-- IMAGEN: cara generada por una GAN, https://thispersondoesnotexist.com/ -->
+<!-- IMAGEN: paisaje generado con GauGAN (Nvidia) -->
 
 ---
 <!-- _class: lead -->

@@ -206,7 +206,7 @@ Para agarrar, el robot usa **pinzas**, y aquí hay un compromiso claro:
 | País líder en densidad | **Corea del Sur** (1.012-1.220) |
 | Líder de mercado | **China** (295.000 unidades, 54 % de las instalaciones) |
 | España, 3.er mercado europeo | **5.100 unidades**, impulsado por la automoción |
-| Robótica médica | **+91 %** (~16.700 unidades) |
+| Robótica médica | **+91 %** (~16.700 unidades), con el sistema **da Vinci** (cirugía por telemanipulación) como referencia del sector |
 | Robots de servicio profesional | ~200.000 unidades (+9 %) |
 
 !!! note "¿Por qué estos datos?"
