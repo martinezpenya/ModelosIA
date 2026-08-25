@@ -202,26 +202,36 @@ evaluacion:
   # Orden 8/2025 art. 5.1, verificado en el PDF oficial: «entre 1 y 10, sin decimales».
   escala_calificacion: 1 a 10, sin decimales
   pesos_ra:
-    RA1: 13.33
-    RA2: 13.33
-    RA3: 13.33
-    RA4: 13.33
-    RA5: 13.33
-    RA6: 13.33
+    RA1: 14.55
+    RA2: 14.55
+    RA3: 14.55
+    RA4: 14.55
+    RA5: 14.55
+    RA6: 7.27
     RA7: 20
   nota: >-
-    RA1-RA6 = 80 % (13,33 % cada uno) + RA7 = 20 %. El criterio «cada RA ≥5» es del centro,
-    más estricto que el mínimo de la Orden 8/2025 (art. 5.2); debe constar en la programación
-    citando los arts. 5.1 y 12.9.
+    Pesos proporcionales a las horas lectivas de cada RA (decisión del profesor, 2026-08-25,
+    autorizada por la Orden 8/2025 art. 5): RA1-RA5 tienen 12 h cada uno y pesan
+    12/66 × 80 % ≈ 14,55 %; RA6 tiene solo 6 h y pesa 6/66 × 80 % ≈ 7,27 % (66 h = horas de
+    RA1-RA6, excluidas las 15 h de RA7 y las 3 h de cierre). RA7 se mantiene al 20 %. La suma
+    exacta es 100 % antes de redondear a dos decimales para mostrar (el reparto plano anterior,
+    13,33 % × 6 + 20 % = 99,98 %, ya tenía el mismo redondeo de visualización). El criterio
+    «cada RA ≥5» es del centro, más estricto que el mínimo de la Orden 8/2025 (art. 5.2); debe
+    constar en la programación citando los arts. 5.1 y 12.9.
 
 # Divergencias conocidas frente a otras fuentes, PENDIENTES DE DECISIÓN
 # (PROPUESTAS_MEJORA.md §10.3 y §10.4). No resolver sin el profesor.
 conflictos:
   - asunto: pesos por RA
-    aqui: RA1-RA6 al 13,33 % + RA7 al 20 % (suma 100 %)
+    aqui: RA1-RA5 al 14,55 % (12 h cada uno) + RA6 al 7,27 % (6 h) + RA7 al 20 %, proporcional a
+      las horas lectivas de cada RA
     programacion_docx: RA3-RA6 al 20 % cada uno (suma 120 %)
     alternativa_index_modelosia: RA1=10, RA2=10, RA3..RA6=15, RA7=20 (suma 100 %)
-    estado: RESUELTO 2026-08-20 — se mantiene el reparto de aquí; el RA7 sí cuenta en el módulo
+    estado: >-
+      RESUELTO 2026-08-20 (reparto plano 13,33 % × 6) — REVISADO 2026-08-25 a petición del
+      profesor: RA6 tiene la mitad de horas (6 h) que el resto (12 h) y no tiene sentido que pese
+      igual; se pasa a ponderación proporcional a horas lectivas, que la Orden 8/2025 art. 5
+      permite. El RA7 sí cuenta en el módulo y se mantiene al 20 %.
   - asunto: horas por unidad
     aqui: UD01 = 12 h (RA1 solo) · RA1 + RA2 = 24 h
     programacion_docx: UD01 = 27 h (RA1 + RA2 juntos)

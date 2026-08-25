@@ -57,12 +57,12 @@ aprendizaje (UD05 es siempre RA5), no al orden en que se imparte.
 <!-- AUTO:ra_pesos inicio -->
 | RA | CE | Descripción | Nota mínima | Peso |
 |---|---|---|---|---|
-| **RA1** | 4 | Caracteriza sistemas de Inteligencia Artificial relacionándolos con la mejora de la eficiencia operativa de las organizaciones y empresas. | **5** | **13,33 %** |
-| **RA2** | 6 | Utiliza modelos de sistemas de Inteligencia Artificial implementando sistemas de resolución de problemas. | **5** | **13,33 %** |
-| **RA3** | 7 | Relaciona el procesamiento de lenguaje natural con sus aplicaciones determinando su potencial e identificando sus limitaciones. | **5** | **13,33 %** |
-| **RA4** | 4 | Analiza sistemas robotizados, evaluando opciones de diseño e implementación. | **5** | **13,33 %** |
-| **RA5** | 5 | Aplica sistemas expertos evaluando la influencia de los controladores inteligentes en el comportamiento del sistema. | **5** | **13,33 %** |
-| **RA6** | 6 | Aplica principios legales y éticos al desarrollo de la Inteligencia Artificial integrándolos como parte del proceso. | **5** | **13,33 %** |
+| **RA1** | 4 | Caracteriza sistemas de Inteligencia Artificial relacionándolos con la mejora de la eficiencia operativa de las organizaciones y empresas. | **5** | **14,55 %** |
+| **RA2** | 6 | Utiliza modelos de sistemas de Inteligencia Artificial implementando sistemas de resolución de problemas. | **5** | **14,55 %** |
+| **RA3** | 7 | Relaciona el procesamiento de lenguaje natural con sus aplicaciones determinando su potencial e identificando sus limitaciones. | **5** | **14,55 %** |
+| **RA4** | 4 | Analiza sistemas robotizados, evaluando opciones de diseño e implementación. | **5** | **14,55 %** |
+| **RA5** | 5 | Aplica sistemas expertos evaluando la influencia de los controladores inteligentes en el comportamiento del sistema. | **5** | **14,55 %** |
+| **RA6** | 6 | Aplica principios legales y éticos al desarrollo de la Inteligencia Artificial integrándolos como parte del proceso. | **5** | **7,27 %** |
 | **RA7** | 9 | Desarrolla un proyecto integrador que combine técnicas de IA y análisis de datos masivos para resolver un problema real o simulado, gestionando todo el ciclo de vida del proyecto. | **5** | **20 %** |
 | | | | | **100 %** |
 
