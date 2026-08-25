@@ -17,11 +17,12 @@ eficiencia operativa de las organizaciones y empresas.
 !!! note "Bloque de contenidos oficial (RD 279/2021, anexo I)"
     El currículo para este RA dice textualmente:
 
-    - *Caracterización de sistemas de Inteligencia Artificial:*
-        - *Principios de los sistemas inteligentes.*
-        - *Campos de aplicación.*
-        - *Técnicas de la Inteligencia Artificial.*
-        - *Nuevas formas de interacción.*
+    *Caracterización de sistemas de Inteligencia Artificial:*
+
+    - *Principios de los sistemas inteligentes.*
+    - *Campos de aplicación.*
+    - *Técnicas de la Inteligencia Artificial.*
+    - *Nuevas formas de interacción.*
 
 ## 2. Objetivos de la unidad
 
