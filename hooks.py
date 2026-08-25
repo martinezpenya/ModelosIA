@@ -396,6 +396,37 @@ def _source_for_sitemap_url(loc: str, docs_dir: Path, base_path: str) -> Path | 
     return None
 
 
+def _relative_pdf_path(dest_path: str) -> str:
+    start_dir = posixpath.split(dest_path)[0]
+    return posixpath.join(posixpath.relpath('docs', start_dir), 'Libro.pdf')
+
+
+def on_post_page(output, page, config):
+    """Inyecta en el pie el enlace de descarga del PDF que ponía with-pdf.
+
+    with-pdf solo corre con PRERENDER_MERMAID=1 (enabled_if_env en mkdocs.yml, ver
+    _fix_dead_pdf_links): el build web normal ya no lo activa, así que perdía también
+    su único efecto útil sobre el sitio, el enlace "download PDF" del pie de página.
+    Se reproduce aquí el mismo enlace y la misma ruta relativa que calculaba
+    mkdocs_with_pdf.themes.material.inject_link; el selector es `.md-copyright`
+    (`.md-footer-copyright`, el que usa esa función, es de una versión de Material
+    anterior a la que trae este proyecto).
+    """
+    if PRERENDER:
+        return output
+    soup = BeautifulSoup(output, 'html.parser')
+    footer = soup.select('.md-copyright')
+    if not footer:
+        return output
+    container = footer[0]
+    container.append(' ... ')
+    a = soup.new_tag('a', href=_relative_pdf_path(page.file.dest_path), title='PDF',
+                      download=None, **{'class': 'link--pdf-download'})
+    a.append('download PDF')
+    container.append(a)
+    return str(soup)
+
+
 def on_post_build(config):
     """Reescribe <lastmod> del sitemap con la fecha real de git de cada fichero.
 
