@@ -57,7 +57,9 @@ jobs:
           done
           exit 1
       - name: Fusionar únicamente el PDF en el sitio real
-        run: cp site-pdf/docs/Libro.pdf site/docs/Libro.pdf
+        run: |
+          mkdir -p site/docs
+          cp site-pdf/docs/Libro.pdf site/docs/Libro.pdf
       - name: Deploy a GitHub Pages
         run: |
           MKDOCS_VERSION="$(python -c 'import mkdocs; print(mkdocs.__version__)')"
