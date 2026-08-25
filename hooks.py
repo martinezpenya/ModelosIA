@@ -411,28 +411,29 @@ _PDF_ICON_SVG = (
 
 
 def on_post_page(output, page, config):
-    """Añade el icono de descarga del PDF junto al de "editar esta página".
+    """Añade el icono de descarga del PDF en la cabecera, a la derecha de la lupa.
 
     with-pdf solo corre con PRERENDER_MERMAID=1 (enabled_if_env en mkdocs.yml, ver
     _fix_dead_pdf_links): el build web normal ya no lo activa, así que perdía también
     su único efecto útil sobre el sitio, el acceso al PDF completo desde cada página.
-    Se añade como un `.md-content__button` más, junto al lápiz de editar que pone el
-    propio tema Material (mismo icono `material/file-pdf-box` que trae el tema).
+    Se añade como un `.md-header__button` más, junto a los que ya pone el propio tema
+    Material (paleta, búsqueda), justo después del bloque de búsqueda para que en
+    móvil quede a la derecha de la lupa.
     """
     if PRERENDER:
         return output
     soup = BeautifulSoup(output, 'html.parser')
-    article = soup.select_one('.md-content__inner')
-    if not article:
+    header = soup.select_one('.md-header__inner')
+    if not header:
         return output
     a = soup.new_tag('a', href=_relative_pdf_path(page.file.dest_path), title='Descargar el PDF del libro completo',
-                      **{'class': 'md-content__button md-icon'})
+                      **{'class': 'md-header__button md-icon'})
     a.append(BeautifulSoup(_PDF_ICON_SVG, 'html.parser'))
-    edit_button = article.select_one('.md-content__button')
-    if edit_button:
-        edit_button.insert_after(a)
+    search = header.select_one('.md-search')
+    if search:
+        search.insert_after(a)
     else:
-        article.insert(0, a)
+        header.append(a)
     return str(soup)
 
 
