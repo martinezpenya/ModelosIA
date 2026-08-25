@@ -251,6 +251,7 @@ markdown_extensions:
 extra_javascript:
   - js/mathjax-config.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg-full.js
+  - js/mermaid-config.js
 extra:
   search:
     language: es
