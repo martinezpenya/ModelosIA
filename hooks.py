@@ -417,8 +417,10 @@ def on_post_page(output, page, config):
     _fix_dead_pdf_links): el build web normal ya no lo activa, así que perdía también
     su único efecto útil sobre el sitio, el acceso al PDF completo desde cada página.
     Se añade como un `.md-header__button` más, junto a los que ya pone el propio tema
-    Material (paleta, búsqueda), justo después del bloque de búsqueda para que en
-    móvil quede a la derecha de la lupa.
+    Material (paleta, búsqueda, repositorio). Se inserta al final de la cabecera, tras
+    el enlace al repositorio (`.md-header__source`, oculto en móvil por CSS): así en
+    escritorio queda a la derecha de GitHub y en móvil, donde ese enlace no ocupa
+    espacio, queda pegado a la derecha de la lupa.
     """
     if PRERENDER:
         return output
@@ -429,9 +431,9 @@ def on_post_page(output, page, config):
     a = soup.new_tag('a', href=_relative_pdf_path(page.file.dest_path), title='Descargar el PDF del libro completo',
                       **{'class': 'md-header__button md-icon'})
     a.append(BeautifulSoup(_PDF_ICON_SVG, 'html.parser'))
-    search = header.select_one('.md-search')
-    if search:
-        search.insert_after(a)
+    source = header.select_one('.md-header__source')
+    if source:
+        source.insert_after(a)
     else:
         header.append(a)
     return str(soup)
