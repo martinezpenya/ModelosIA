@@ -259,8 +259,7 @@ flowchart TD
 
 **IA generativa**: modelo de base entrenado con datos masivos → ajuste (*fine-tuning*, RLHF) → generación, a veces con **RAG**. Los **agentes de IA** van un paso más allá: actúan, no solo responden.
 
-<!-- IMAGEN: cara generada por una GAN, https://thispersondoesnotexist.com/ -->
-<!-- IMAGEN: paisaje generado con GauGAN (Nvidia) -->
+🔗 <a href="https://thispersondoesnotexist.com/" target="_blank" rel="noopener">Cara generada por IA (ThisPersonDoesNotExist)</a> · <a href="https://www.nvidia.com/en-us/research/ai-playground/" target="_blank" rel="noopener">Paisaje generado con GauGAN (NVIDIA AI Playground)</a>
 
 ---
 <!-- _class: lead -->

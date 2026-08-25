@@ -1,6 +1,7 @@
 import gzip
 import hashlib
 import io
+import logging
 import os
 import posixpath
 import re
@@ -15,6 +16,17 @@ from PIL import Image
 
 PRERENDER = os.environ.get('PRERENDER_MERMAID', '0') == '1'
 PUPPETEER_CONFIG = Path(__file__).parent / 'puppeteer-config.json'
+
+
+class _SkipWithPdfDisabledWarning(logging.Filter):
+    # with-pdf solo genera PDF si PRERENDER_MERMAID=1 (enabled_if_env en mkdocs.yml):
+    # el build web (sin la variable) avisa de que no genera PDF, y --strict lo convertiría
+    # en fallo aunque sea el comportamiento esperado.
+    def filter(self, record):
+        return 'without generate PDF' not in record.getMessage()
+
+
+logging.getLogger('mkdocs.with-pdf').addFilter(_SkipWithPdfDisabledWarning())
 
 _cache = {}
 

@@ -378,7 +378,7 @@ plugins:
         #headless_chrome_path: headless-chromium
         #
         output_path: docs/Libro.pdf
-        #enabled_if_env: ENABLE_PDF_EXPORT
+        enabled_if_env: PRERENDER_MERMAID
         #
         #debug_html: true
         # show_anchors: true
