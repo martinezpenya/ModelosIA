@@ -401,29 +401,38 @@ def _relative_pdf_path(dest_path: str) -> str:
     return posixpath.join(posixpath.relpath('docs', start_dir), 'Libro.pdf')
 
 
+_PDF_ICON_SVG = (
+    '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">'
+    '<path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2'
+    'm-9.5 8.5c0 .8-.7 1.5-1.5 1.5H7v2H5.5V9H8c.8 0 1.5.7 1.5 1.5zm5 2c0 .8-.7 1.5-1.5 1.5'
+    'h-2.5V9H13c.8 0 1.5.7 1.5 1.5zm4-3H17v1h1.5V13H17v2h-1.5V9h3zm-6.5 0h1v3h-1zm-5 0h1v1H7z"/>'
+    '</svg>'
+)
+
+
 def on_post_page(output, page, config):
-    """Inyecta en el pie el enlace de descarga del PDF que ponía with-pdf.
+    """Añade el icono de descarga del PDF junto al de "editar esta página".
 
     with-pdf solo corre con PRERENDER_MERMAID=1 (enabled_if_env en mkdocs.yml, ver
     _fix_dead_pdf_links): el build web normal ya no lo activa, así que perdía también
-    su único efecto útil sobre el sitio, el enlace "download PDF" del pie de página.
-    Se reproduce aquí el mismo enlace y la misma ruta relativa que calculaba
-    mkdocs_with_pdf.themes.material.inject_link; el selector es `.md-copyright`
-    (`.md-footer-copyright`, el que usa esa función, es de una versión de Material
-    anterior a la que trae este proyecto).
+    su único efecto útil sobre el sitio, el acceso al PDF completo desde cada página.
+    Se añade como un `.md-content__button` más, junto al lápiz de editar que pone el
+    propio tema Material (mismo icono `material/file-pdf-box` que trae el tema).
     """
     if PRERENDER:
         return output
     soup = BeautifulSoup(output, 'html.parser')
-    footer = soup.select('.md-copyright')
-    if not footer:
+    article = soup.select_one('.md-content__inner')
+    if not article:
         return output
-    container = footer[0]
-    container.append(' ... ')
-    a = soup.new_tag('a', href=_relative_pdf_path(page.file.dest_path), title='PDF',
-                      download=None, **{'class': 'link--pdf-download'})
-    a.append('download PDF')
-    container.append(a)
+    a = soup.new_tag('a', href=_relative_pdf_path(page.file.dest_path), title='Descargar el PDF del libro completo',
+                      **{'class': 'md-content__button md-icon'})
+    a.append(BeautifulSoup(_PDF_ICON_SVG, 'html.parser'))
+    edit_button = article.select_one('.md-content__button')
+    if edit_button:
+        edit_button.insert_after(a)
+    else:
+        article.insert(0, a)
     return str(soup)
 
 
