@@ -1,3 +1,4 @@
+import gzip
 import hashlib
 import io
 import os
@@ -5,7 +6,9 @@ import posixpath
 import re
 import subprocess
 import tempfile
+import xml.etree.ElementTree as ET
 from pathlib import Path
+from urllib.parse import urlsplit
 
 from bs4 import BeautifulSoup
 from PIL import Image
@@ -179,6 +182,69 @@ MERMAID_RE = re.compile(
 TABLE_ADMONITION_RE = re.compile(r'(</table>)\s*(<div class="admonition)')
 TABLE_ADMONITION_SPACER = '<p class="pdf-spacer">Nota sobre la tabla anterior.</p>'
 
+# Hallazgo 2026-08-25: mkdocs-with-pdf convierte CUALQUIER href relativo en un ancla interna del
+# PDF combinado (`get_combined` en su preprocessor: site-packages/mkdocs_with_pdf/preprocessor/
+# __init__.py), sin comprobar si el destino es una pagina excluida por `exclude_pages` (notebooks/,
+# Presentacion/...) ni si es directamente un fichero que no genera pagina (.ipynb, .zip, .mp4,
+# .wav servidos como asset estatico, enlazados desde el propio Markdown). Cuando esa pagina o esa
+# ancla no existen, WeasyPrint avisa "No anchor ... for internal URI reference" en cada build -no
+# rompe el PDF, pero ensucia el log y deja el enlace muerto dentro del libro-. `get_combined` solo
+# se salta los href que ya sean absolutos, así que aquí se convierten a absolutos esos enlaces
+# antes de que el plugin los procese: los trata entonces como externos (los deja intactos) y en
+# el PDF quedan clicables hacia la web en vez de ser un ancla muerta.
+ANCHOR_HREF_RE = re.compile(r'(<a\s[^>]*\bhref=")(?!\w+:|#)([^"#]+)(")')
+
+
+def _pdf_exclude_patterns(config):
+    """Los mismos patrones que usa mkdocs-with-pdf (Generator.__init__) para decidir que
+    paginas quedan fuera del PDF combinado, leidos de su propia config en vez de duplicar la
+    lista de mkdocs.yml aqui."""
+    plugin = config.get('plugins', {}).get('with-pdf')
+    if plugin is None:
+        return []
+    raw = (getattr(plugin, 'config', None) or {}).get('exclude_pages') or []
+    return [re.compile(p if p.startswith('^') else f'^{p}') for p in raw]
+
+
+def _fix_dead_pdf_links(html: str, page_url: str, site_url: str, exclude_patterns) -> tuple[str, int]:
+    if not site_url or '<a ' not in html:
+        return html, 0
+
+    base = site_url.rstrip('/')
+    count = 0
+
+    def _replace(m):
+        nonlocal count
+        href = m.group(2)
+        abs_path = posixpath.normpath(posixpath.join(posixpath.dirname(page_url), href))
+        es_asset = not abs_path.endswith('.html')
+        es_pagina_excluida = any(p.match(abs_path) for p in exclude_patterns)
+        if not (es_asset or es_pagina_excluida):
+            return m.group(0)
+        count += 1
+        return f'{m.group(1)}{base}/{abs_path.lstrip("/")}{m.group(3)}'
+
+    result = ANCHOR_HREF_RE.sub(_replace, html)
+    return result, count
+
+
+def _absolutize_notebook_links(html: str, page_url: str, site_url: str) -> tuple[str, int]:
+    if '/notebooks/' not in html or not site_url:
+        return html, 0
+
+    base = site_url.rstrip('/')
+    count = 0
+
+    def _replace(m):
+        nonlocal count
+        href = m.group(2)
+        abs_path = posixpath.normpath(posixpath.join(posixpath.dirname(page_url), href))
+        count += 1
+        return f'{m.group(1)}{base}/{abs_path.lstrip("/")}{m.group(3)}'
+
+    result = NOTEBOOK_HREF_RE.sub(_replace, html)
+    return result, count
+
 
 def _fix_tabbed_for_print(html: str) -> tuple[str, int]:
     """Reconstruye las pestañas (`=== "..."`) como bloques lineales para impresion.
@@ -241,8 +307,15 @@ def on_page_markdown(markdown, page, config, files):
 
 
 def on_page_content(html, page, config, files):
+    exclude_patterns = _pdf_exclude_patterns(config)
+    result, n_dead_links = _fix_dead_pdf_links(
+        html, page.url, config.get('site_url', ''), exclude_patterns)
+    if n_dead_links > 0:
+        print(f'  [hooks] {n_dead_links} enlace(s) a paginas/assets fuera del PDF '
+              f'convertido(s) a absoluto en {page.url} (evita anclas muertas de with-pdf)')
+
     if not PRERENDER:
-        return html
+        return result
 
     _cache.clear()
     rendered = [0]
@@ -262,7 +335,7 @@ def on_page_content(html, page, config, files):
             return f'<p><img class="mermaid-rendered" src="{rel_path}" alt="Mermaid diagram" style="max-width:70%;height:auto;max-height:350px;" /></p>'
         return match.group(0)
 
-    result = MERMAID_RE.sub(_replace, html)
+    result = MERMAID_RE.sub(_replace, result)
 
     if rendered[0] > 0:
         print(f'  [hooks] Pre-rendered {rendered[0]} Mermaid diagram(s) on {page.url}')
@@ -277,3 +350,87 @@ def on_page_content(html, page, config, files):
         print(f'  [hooks] Rebuilt {n_tabbed} tabbed-set(s) for print on {page.url}')
 
     return result
+
+
+SITEMAP_NS = '{http://www.sitemaps.org/schemas/sitemap/0.9}'
+
+
+def _git_last_commit_date(path: Path) -> str | None:
+    """Fecha (YYYY-MM-DD) del último commit que tocó `path`, o None si no está en git."""
+    try:
+        out = subprocess.run(
+            ['git', 'log', '-1', '--format=%cd', '--date=short', '--', path.name],
+            cwd=path.parent, capture_output=True, text=True, timeout=5,
+        )
+    except Exception:
+        return None
+    date = out.stdout.strip()
+    return date or None
+
+
+def _source_for_sitemap_url(loc: str, docs_dir: Path, base_path: str) -> Path | None:
+    """De una <loc> del sitemap, encuentra el .md o .ipynb de docs/ que la genera."""
+    rel = urlsplit(loc).path.lstrip('/')
+    if base_path and rel.startswith(base_path + '/'):
+        rel = rel[len(base_path) + 1:]
+    if rel.endswith('.html'):
+        rel = rel[:-len('.html')]
+    if not rel:
+        return None
+    for suffix in ('.md', '.ipynb'):
+        candidate = docs_dir / f'{rel}{suffix}'
+        if candidate.exists():
+            return candidate
+    return None
+
+
+def on_post_build(config):
+    """Reescribe <lastmod> del sitemap con la fecha real de git de cada fichero.
+
+    MkDocs pone la misma fecha de build en todas las URLs del sitemap; con eso Google
+    no puede distinguir una página que cambió hoy de una que no se toca hace meses.
+    """
+    site_dir = Path(config['site_dir'])
+    docs_dir = Path(config['docs_dir'])
+    sitemap_path = site_dir / 'sitemap.xml'
+    if not sitemap_path.exists():
+        return
+
+    base_path = urlsplit(config.get('site_url', '')).path.strip('/')
+
+    ET.register_namespace('', SITEMAP_NS.strip('{}'))
+    try:
+        tree = ET.parse(sitemap_path)
+    except ET.ParseError as e:
+        print(f'  [hooks] sitemap.xml: no se pudo parsear ({e}), lastmod sin tocar')
+        return
+
+    root = tree.getroot()
+    updated = 0
+    for url_el in root.findall(f'{SITEMAP_NS}url'):
+        loc_el = url_el.find(f'{SITEMAP_NS}loc')
+        lastmod_el = url_el.find(f'{SITEMAP_NS}lastmod')
+        if loc_el is None or lastmod_el is None or not loc_el.text:
+            continue
+
+        source = _source_for_sitemap_url(loc_el.text, docs_dir, base_path)
+        if source is None:
+            continue  # página generada sin fichero fuente propio (p. ej. una plantilla)
+
+        date = _git_last_commit_date(source)
+        if date:
+            lastmod_el.text = date
+            updated += 1
+
+    if not updated:
+        return
+
+    tree.write(sitemap_path, encoding='UTF-8', xml_declaration=True)
+
+    gz_path = site_dir / 'sitemap.xml.gz'
+    with open(sitemap_path, 'rb') as f:
+        content = f.read()
+    with gzip.GzipFile(gz_path, 'wb', mtime=0) as gz:
+        gz.write(content)
+
+    print(f'  [hooks] sitemap.xml: lastmod real de git aplicado en {updated} URLs')

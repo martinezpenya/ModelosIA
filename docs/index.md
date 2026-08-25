@@ -31,13 +31,13 @@ aprendizaje (UD05 es siempre RA5), no al orden en que se imparte.
 <!-- AUTO:unidades inicio -->
 | UD | Título | RA | Horas | Semanas | Fechas |
 |---|---|---|---|---|---|
-| UD00 | Presentación y curso rápido de Docker | — | 6 | 1-2 | 1 oct – 8 oct |
-| UD01 | Caracterización de sistemas de IA | RA1 | 12 | 3-6 | 12 oct – 6 nov |
-| UD02 | Modelos de IA y resolución de problemas | RA2 | 12 | 7-10 | 9 nov – 3 dic |
-| UD05 | Sistemas expertos | RA5 | 12 | 11-15 | 7 dic – 14 ene |
-| UD03 | Procesamiento del Lenguaje Natural | RA3 | 12 | 16-19 | 18 ene – 11 feb |
-| UD04 | Análisis de sistemas robotizados | RA4 | 12 | 20-23 | 15 feb – 11 mar |
-| UD06 | Principios legales y éticos de la IA | RA6 | 6 | 24-28 | 15 mar – 23 abr |
+| [UD00](UD00/UD00_ES.md) | [Presentación y curso rápido de Docker](UD00/UD00_ES.md) | — | 6 | 1-2 | 1 oct – 8 oct |
+| [UD01](UD01/UD01_ES.md) | [Caracterización de sistemas de IA](UD01/UD01_ES.md) | RA1 | 12 | 3-6 | 12 oct – 6 nov |
+| [UD02](UD02/UD02_ES.md) | [Modelos de IA y resolución de problemas](UD02/UD02_ES.md) | RA2 | 12 | 7-10 | 9 nov – 3 dic |
+| [UD05](UD05/UD05_ES.md) | [Sistemas expertos](UD05/UD05_ES.md) | RA5 | 12 | 11-15 | 7 dic – 14 ene |
+| [UD03](UD03/UD03_ES.md) | [Procesamiento del Lenguaje Natural](UD03/UD03_ES.md) | RA3 | 12 | 16-19 | 18 ene – 11 feb |
+| [UD04](UD04/UD04_ES.md) | [Análisis de sistemas robotizados](UD04/UD04_ES.md) | RA4 | 12 | 20-23 | 15 feb – 11 mar |
+| [UD06](UD06/UD06_ES.md) | [Principios legales y éticos de la IA](UD06/UD06_ES.md) | RA6 | 6 | 24-28 | 15 mar – 23 abr |
 | UD07 | **Proyecto integrador (común al curso)** | RA7 | 15 | 29-33 | 26 abr – 28 may |
 | Cierre | Presentaciones RA7 y prueba ordinaria (solo RA no superados) | — | 3 | 34-35 | 1 jun – 18 jun |
 | | **Total** | | **90** | **30** nominales<br/>33 con clase | |

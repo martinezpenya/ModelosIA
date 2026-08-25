@@ -53,6 +53,14 @@ def fechas(u: dict) -> str:
     return f"{a.day} {MESES[a.month - 1]} – {b.day} {MESES[b.month - 1]}"
 
 
+def pagina_unidad(u: dict) -> str | None:
+    """Ruta relativa a la página de teoría de la unidad, o None si no tiene entrada en el sitio
+    (UD07 es el proyecto integrador, placeholder deliberado; Cierre no es una unidad)."""
+    if u["id"] in ("UD07", "Cierre"):
+        return None
+    return f"{u['id']}/{u['id']}_ES.md"
+
+
 def tabla_unidades(d: dict) -> str:
     filas = ["| UD | Título | RA | Horas | Semanas | Fechas |",
              "|---|---|---|---|---|---|"]
@@ -61,8 +69,11 @@ def tabla_unidades(d: dict) -> str:
         titulo = u["titulo"]
         if u["id"] == "UD07":
             titulo = f"**{titulo}**"
+        pagina = pagina_unidad(u)
+        ud_celda = f"[{u['id']}]({pagina})" if pagina else u["id"]
+        titulo_celda = f"[{titulo}]({pagina})" if pagina else titulo
         filas.append(
-            f"| {u['id']} | {titulo} | {ra} | {u['horas']} | {semanas(u)} | {fechas(u)} |"
+            f"| {ud_celda} | {titulo_celda} | {ra} | {u['horas']} | {semanas(u)} | {fechas(u)} |"
         )
     total = sum(u["horas"] for u in d["unidades"])
     cal = d.get("calendario", {})
