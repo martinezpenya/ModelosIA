@@ -39,7 +39,7 @@ section {
 ![h:260 center](../assets/cover.png)
 # UD03: Procesamiento del Lenguaje Natural
 #### Modelos de Inteligencia Artificial
-###### version: 2026-08-24
+###### version: 2026-08-26
 
 ---
 <!-- footer: d.martinezpena@edu.gva.es -->
@@ -65,7 +65,7 @@ section {
 
 ## RA3 y sus criterios de evaluación
 
-<!-- El anexo I del RD 279/2021 solo asigna a este bloque dos contenidos oficiales (potencial y limitaciones; aplicaciones) para siete criterios: es el desajuste más grande de todo el módulo. Los CE sobre el papel del lingüista, la cooperación y la formación del investigador no tienen contenido propio en el currículo: los desarrolla el centro. -->
+<!-- El anexo I del RD 279/2021 solo asigna a este bloque dos contenidos oficiales (potencial y limitaciones; aplicaciones) para siete criterios: es el desajuste más grande de todo el módulo. Los CE sobre el papel del lingüista, la cooperación y la formación del investigador no tienen contenido propio en el currículo: los desarrolla el centro. (§2 de los apuntes) -->
 
 > **RA3** — Relaciona el PLN con sus aplicaciones, su potencial y sus limitaciones.
 
@@ -106,6 +106,7 @@ section {
 <style scoped>section { font-size: 25px; }</style>
 
 ## Tres disciplinas, un campo
+<!-- (§4.1 de los apuntes) -->
 
 | Disciplina | Qué aporta |
 |---|---|
@@ -120,7 +121,7 @@ section {
 
 ## Los niveles del lenguaje
 
-<!-- ASR es el reconocimiento automático del habla y TTS la síntesis de voz (texto a voz): son las tareas típicas del nivel fonético y fonológico. -->
+<!-- POS son las siglas de part-of-speech, categoría gramatical; «etiquetado POS» es sinónimo de «etiquetado morfológico». ASR es el reconocimiento automático del habla y TTS la síntesis de voz (texto a voz): son las tareas típicas del nivel fonético y fonológico. (§4.2 de los apuntes) -->
 
 | Nivel | Analiza | Tarea de PLN |
 |---|---|---|
@@ -137,7 +138,7 @@ Hay ambigüedad en **todos** los niveles: es el mapa del bloque 3.
 
 ## Las tareas del PLN
 
-<!-- NER son las siglas de reconocimiento de entidades nombradas. Además de PER (persona) y LOC (lugar), el conjunto habitual de etiquetas añade ORG (organización) y MISC (miscelánea). -->
+<!-- NER son las siglas de reconocimiento de entidades nombradas. Además de PER (persona) y LOC (lugar), el conjunto habitual de etiquetas añade ORG (organización) y MISC (miscelánea). (§4.3 de los apuntes) -->
 
 | Tarea | Ejemplo |
 |---|---|
@@ -151,6 +152,7 @@ Hay ambigüedad en **todos** los niveles: es el mapa del bloque 3.
 ---
 
 ## El *pipeline*, siempre igual
+<!-- BoW es bag of words, bolsa de palabras: representa el texto como el recuento de cada palabra, sin orden. tf-idf (term frequency – inverse document frequency) pondera esas cuentas por lo rara que es la palabra en el conjunto de documentos, para que las muy comunes pesen menos. (§4.4 de los apuntes) -->
 
 ```text
 Texto ──► Preprocesado ──► Representación ──► Modelo ──► Salida
@@ -173,7 +175,7 @@ El corrector, el buscador y el asistente de voz son los mismos cuatro pasos.
 
 ## Qué se consigue hoy
 
-<!-- OCR es el reconocimiento óptico de caracteres: el paso que convierte la imagen del documento en texto, antes de aplicar NER para extraer los campos de facturas y contratos. -->
+<!-- OCR es el reconocimiento óptico de caracteres: el paso que convierte la imagen del documento en texto, antes de aplicar NER para extraer los campos de facturas y contratos. (§5.1 de los apuntes) -->
 
 | Aplicación | Estado |
 |---|---|
@@ -186,6 +188,7 @@ El corrector, el buscador y el asistente de voz son los mismos cuatro pasos.
 ---
 
 ## Tres cifras para calibrar
+<!-- EM es exact match, la métrica de SQuAD que solo cuenta como acierto la respuesta idéntica a la de referencia, sin margen parcial; por eso un ~91 frente al ~87 humano es una comparación exigente, no maquillada. (§5.1 de los apuntes) -->
 
 - **SQuAD 2.0**: los mejores sistemas **superan la precisión humana** (EM ~91 frente a ~87).
 - Sentimiento en IMDb: de ~89 % (2011) a **95-97 %** con *transformers*.
@@ -195,7 +198,7 @@ El corrector, el buscador y el asistente de voz son los mismos cuatro pasos.
 
 ## Los modelos de uso general
 
-<!-- El AI Act es, formalmente, el Reglamento (UE) 2024/1689 del Parlamento Europeo. -->
+<!-- El AI Act es, formalmente, el Reglamento (UE) 2024/1689 del Parlamento Europeo. (§5.2 de los apuntes) -->
 
 El **AI Act** los define: **≥ 1.000 millones de parámetros**, autosupervisión a gran escala, competentes en muchas tareas. Los LLM son el ejemplo típico.
 
@@ -215,6 +218,7 @@ El **AI Act** los define: **≥ 1.000 millones de parámetros**, autosupervisió
 <style scoped>section { font-size: 25px; }</style>
 
 ## Seis tipos
+<!-- (§6.1 de los apuntes) -->
 
 | Tipo | Cuándo aparece |
 |---|---|
@@ -283,7 +287,7 @@ Ningún diccionario resuelve esto: hace falta el **contexto**. Es el primer paso
 
 ## Elegir el *tagset*: un compromiso
 
-<!-- Penn Treebank es el tagset de referencia en inglés; LexEsp (PAROLE) es el tagset de referencia en español. -->
+<!-- Penn Treebank es el tagset de referencia en inglés; LexEsp (PAROLE) es el tagset de referencia en español. (§7.2 de los apuntes) -->
 
 Más etiquetas = **más información** y **más difícil acertar**.
 
@@ -308,7 +312,7 @@ Es el ejemplo más concreto del **RA3-b**.
 
 ## Cómo se etiqueta
 
-<!-- HMM son las siglas de Hidden Markov Model, modelo oculto de Markov: la técnica estadística clásica de etiquetado, anterior a los modelos neuronales. -->
+<!-- HMM son las siglas de Hidden Markov Model, modelo oculto de Markov: la técnica estadística clásica de etiquetado, anterior a los modelos neuronales. (§7.3 de los apuntes) -->
 
 | Enfoque | Cómo | Dónde |
 |---|---|---|
@@ -364,6 +368,7 @@ En cualquier tarea con consecuencias, **la salida se verifica**.
 ---
 
 ## Cinco criterios
+<!-- (§9.1 de los apuntes) -->
 
 | Criterio | Pregunta guía |
 |---|---|
@@ -378,7 +383,7 @@ En cualquier tarea con consecuencias, **la salida se verifica**.
 
 ## Factible y no factible
 
-<!-- El considerando 53 también incluye como bajo riesgo estructurar datos no organizados y buscar y vincular datos en archivos; y el artículo 5 añade a los no factibles la detección de sarcasmo con alta precisión. -->
+<!-- El considerando 53 también incluye como bajo riesgo estructurar datos no organizados y buscar y vincular datos en archivos; y el artículo 5 añade a los no factibles la detección de sarcasmo con alta precisión. (§9.2 de los apuntes) -->
 
 | Factible hoy | Prohibido o no factible |
 |---|---|
@@ -399,6 +404,7 @@ En cualquier tarea con consecuencias, **la salida se verifica**.
 ---
 
 ## Qué aporta el lingüista
+<!-- (§10.1 de los apuntes) -->
 
 | Aportación | Ejemplo |
 |---|---|
@@ -414,7 +420,7 @@ En cualquier tarea con consecuencias, **la salida se verifica**.
 
 ## Cooperación: dos casos reales
 
-<!-- NLLB son las siglas de No Language Left Behind, el proyecto de traducción de Meta. BLEU es la métrica estándar para medir la calidad de una traducción automática. -->
+<!-- NLLB son las siglas de No Language Left Behind, el proyecto de traducción de Meta. BLEU es la métrica estándar para medir la calidad de una traducción automática. (§10.2 de los apuntes) -->
 
 - **Meta NLLB** (200 idiomas): hablantes nativos anotaron y evaluaron → **+44 % de BLEU**.
 - **Masakhane** (PLN africano): 1.000+ participantes, 30 países. Los lingüistas locales son
@@ -468,7 +474,7 @@ Se pide justificar qué decisiones tomaría un lingüista, qué aporta cada perf
 
 ## NLTK, para entender
 
-<!-- NLTK es una plataforma pensada para la enseñanza y la investigación, con más de 50 corpus y recursos léxicos incluidos. -->
+<!-- NLTK es una plataforma pensada para la enseñanza y la investigación, con más de 50 corpus y recursos léxicos incluidos. (§11.1 de los apuntes) -->
 
 Transparente: cada paso, a mano.
 
@@ -483,6 +489,7 @@ stem = SnowballStemmer('spanish').stem
 ---
 
 ## spaCy, para producir
+<!-- (§11.2 de los apuntes) -->
 
 Un objeto `nlp`, todo el *pipeline* de una pasada:
 
@@ -498,7 +505,7 @@ En una frase corriente, el analizador puede encontrar **miles de análisis posib
 
 ## Sentimiento y *transformers*
 
-<!-- BERT es un modelo de lenguaje bidireccional: analiza el contexto a ambos lados de cada palabra. DistilBERT es su versión reducida, pensada para funcionar en CPU en vez de GPU. -->
+<!-- BERT es un modelo de lenguaje bidireccional: analiza el contexto a ambos lados de cada palabra. DistilBERT es su versión reducida, pensada para funcionar en CPU en vez de GPU. (§11.3 y §11.4 de los apuntes) -->
 
 - **scikit-learn** (tf-idf + regresión logística): funciona en español, sin GPU. Cuidado:
   `stop_words` solo acepta `'english'` — para español, una **lista**.
@@ -518,6 +525,7 @@ En una frase corriente, el analizador puede encontrar **miles de análisis posib
 <style scoped>section { font-size: 24px; }</style>
 
 ## Seis pasos
+<!-- (§12.1 de los apuntes) -->
 
 ```text
 1. Definir la tarea → 2. Datos y licencia → 3. Elegir herramienta
@@ -532,7 +540,7 @@ El paso que más se salta es el **5**: mirar los errores, no solo la métrica.
 
 ## La progresión de los notebooks
 
-<!-- Hay un quinto notebook, N05, con POS tagging sobre el corpus cess_esp y validación cruzada; se corresponde con el entregable EX3 de anotación. -->
+<!-- Hay un quinto notebook, N05, con POS tagging sobre el corpus cess_esp y validación cruzada; se corresponde con el entregable EX3 de anotación. (§12.2 de los apuntes) -->
 
 | Notebook | Construye | Representación |
 |---|---|---|
@@ -547,7 +555,7 @@ Y los cinco entregables aplican cada nivel a un problema propio: **EX1** represe
 
 ## Ejemplo guiado: clasificador de reseñas
 
-<!-- Los dos errores que se leen en el paso 5 casi siempre resultan ser de ironía o de una negación mal interpretada: es el patrón que se repite en la mayoría de proyectos pequeños. -->
+<!-- Los dos errores que se leen en el paso 5 casi siempre resultan ser de ironía o de una negación mal interpretada: es el patrón que se repite en la mayoría de proyectos pequeños. (§12.2 de los apuntes) -->
 
 **1** clasificar positiva/negativa · **2** 60 reseñas anotadas · **3** tf-idf, no *transformer* · **4** `TfidfVectorizer → LogisticRegression` · **5** exactitud + leer 2 errores · **6** documentar origen y límites.
 
@@ -587,7 +595,7 @@ Y los cinco entregables aplican cada nivel a un problema propio: **EX1** represe
 
 ## Cómo se evalúa
 
-<!-- La exigencia de superar todos los RA viene del artículo 5.1 de la Orden 8/2025 y de las Instrucciones 26 y 27, que impiden calificar positivamente un módulo con algún RA no superado. -->
+<!-- La exigencia de superar todos los RA viene del artículo 5.1 de la Orden 8/2025 y de las Instrucciones 26 y 27, que impiden calificar positivamente un módulo con algún RA no superado. (§18 de los apuntes) -->
 
 | Peso | Instrumento |
 |---|---|

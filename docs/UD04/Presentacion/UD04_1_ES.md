@@ -39,7 +39,7 @@ section {
 ![h:260 center](../assets/cover.png)
 # UD04: Análisis de sistemas robotizados
 #### Modelos de Inteligencia Artificial
-###### version: 2026-08-25
+###### version: 2026-08-26
 
 ---
 <!-- footer: d.martinezpena@edu.gva.es -->
@@ -63,7 +63,7 @@ section {
 
 ## RA4 y sus criterios de evaluación
 
-<!-- El bloque de contenidos del RD 279/2021 (anexo I) se llama textualmente «Análisis de sistemas robotizados»; agrupa métodos y aplicaciones, modelado y control, programación y diseño e implementación. Es la excepción del módulo: en el resto de RA los contenidos oficiales no casan uno a uno con los CE. -->
+<!-- El bloque de contenidos del RD 279/2021 (anexo I) se llama textualmente «Análisis de sistemas robotizados»; agrupa métodos y aplicaciones, modelado y control, programación y diseño e implementación. Es la excepción del módulo: en el resto de RA los contenidos oficiales no casan uno a uno con los CE. (§2 de los apuntes) -->
 
 > **RA4** — Analiza sistemas robotizados, evaluando opciones de diseño e implementación.
 
@@ -115,6 +115,7 @@ Y su entorno es **parcialmente observable, estocástico y con más agentes dentr
 ---
 
 ## Percibir, procesar, actuar
+<!-- (§4.1 de los apuntes) -->
 
 ```text
  Sensores ──► Controlador ──► Actuadores ──► Entorno
@@ -132,6 +133,7 @@ Los **efectores** ejercen fuerza y pueden cambiar tres cosas:
 <style scoped>section { font-size: 24px; }</style>
 
 ## Tipos de robot
+<!-- (§4.2 de los apuntes) -->
 
 | Tipo | Qué es |
 |---|---|
@@ -172,6 +174,7 @@ Un manipulador de **una tonelada** y un brazo montado en una silla de ruedas se 
 <style scoped>section { font-size: 25px; }</style>
 
 ## Qué informa cada clase
+<!-- (§4.3 de los apuntes) -->
 
 | Clase | Sensores |
 |---|---|
@@ -185,6 +188,7 @@ Un manipulador de **una tonelada** y un brazo montado en una silla de ruedas se 
 <style scoped>section { font-size: 24px; }</style>
 
 ## Las cifras que deciden
+<!-- (§4.3 de los apuntes) -->
 
 | Sensor | Alcance y precisión |
 |---|---|
@@ -208,6 +212,7 @@ Por eso se combina siempre con giroscopios y con **una referencia externa**. Es 
 ---
 
 ## El caso de la bombilla
+<!-- (§4.3 de los apuntes) -->
 
 Un manipulador de **una tonelada** tiene que enroscar una bombilla. Es facilísimo romperla.
 
@@ -221,6 +226,7 @@ Manipular con cuidado no viene de tener un brazo más suave: viene de **medir r�
 <style scoped>section { font-size: 26px; }</style>
 
 ## Actuadores
+<!-- (§4.4 de los apuntes) -->
 
 | Tipo | Dónde se usa |
 |---|---|
@@ -238,7 +244,7 @@ Mueven articulaciones de **revolución** (giran, ángulo θ) o **prismáticas** 
 
 ## Pinzas: el compromiso
 
-<!-- El nombre completo del robot citado es Shadow Dexterous Hand. -->
+<!-- El nombre completo del robot citado es Shadow Dexterous Hand. (§4.4 de los apuntes) -->
 
 - **Mordaza paralela** — dos dedos, un actuador. «Amada y odiada por su simplicidad».
 - **Tres dedos** — algo más de flexibilidad sin complicarse.
@@ -259,7 +265,7 @@ Casi toda la robótica industrial funciona con **dos dedos y un actuador**, porq
 
 ## La robótica, con datos (IFR 2025)
 
-<!-- IFR son las siglas de International Federation of Robotics, que publica cada año el informe World Robotics con las estadísticas oficiales del sector; es la fuente de estas cifras. -->
+<!-- IFR son las siglas de International Federation of Robotics, que publica cada año el informe World Robotics con las estadísticas oficiales del sector; es la fuente de estas cifras. (§4.5 de los apuntes) -->
 
 | Dato | Valor (2024) |
 |---|---|
@@ -276,6 +282,7 @@ Casi toda la robótica industrial funciona con **dos dedos y un actuador**, porq
 <style scoped>section { font-size: 24px; }</style>
 
 ## Cuatro casos reales
+<!-- (§4.6 de los apuntes) -->
 
 | Robot | Características | Uso |
 |---|---|---|
@@ -329,6 +336,7 @@ Es el problema de alineación de la UD06, con un brazo de una tonelada.
 <style scoped>section { font-size: 26px; }</style>
 
 ## La jerarquía de tres niveles
+<!-- (§5.1 de los apuntes) -->
 
 En crudo, un robot ve píxeles y envía corrientes a motores. Entre eso y «lleva la comida a la 12» hay un abismo. Se salva **partiendo el problema**:
 
@@ -367,6 +375,7 @@ Por eso hoy se avanza en cada nivel **y en volver a integrarlos**.
 <style scoped>section { font-size: 25px; }</style>
 
 ## La cadena cinemática
+<!-- (§6.1 de los apuntes) -->
 
 | Concepto | Definición |
 |---|---|
@@ -380,6 +389,7 @@ Por eso hoy se avanza en cada nivel **y en volver a integrarlos**.
 <style scoped>section { font-size: 27px; }</style>
 
 ## Cuatro configuraciones
+<!-- (§6.1 de los apuntes) -->
 
 | Configuración | Articulaciones | Uso típico |
 |---|---|---|
@@ -393,6 +403,7 @@ Por eso hoy se avanza en cada nivel **y en volver a integrarlos**.
 ---
 
 ## Cinemática directa
+<!-- (§6.2 de los apuntes) -->
 
 De los ángulos a la pose: `pose = f(q)`. Se multiplican **matrices homogéneas 4×4**.
 
@@ -407,7 +418,7 @@ Se escribe la tabla DH del robot y la pose sale de encadenar las matrices.
 
 ## Tabla DH del Puma 560 (fragmento)
 
-<!-- El Puma 560 es un brazo industrial clásico, uno de los modelos de referencia junto al Panda de Franka que trae ya resueltos roboticstoolbox-python. -->
+<!-- El Puma 560 es un brazo industrial clásico, uno de los modelos de referencia junto al Panda de Franka que trae ya resueltos roboticstoolbox-python. (§6.2 de los apuntes) -->
 
 | Articulación | θ | d | a | α |
 |---|---|---|---|---|
@@ -422,6 +433,7 @@ Se escribe la tabla DH del robot y la pose sale de encadenar las matrices.
 <style scoped>section { font-size: 26px; }</style>
 
 ## Un brazo plano 3R, a mano
+<!-- (§6.2 de los apuntes) -->
 
 $$x = l_1\cos\theta_1 + l_2\cos(\theta_1{+}\theta_2) + l_3\cos(\theta_1{+}\theta_2{+}\theta_3)$$
 $$y = l_1\sin\theta_1 + l_2\sin(\theta_1{+}\theta_2) + l_3\sin(\theta_1{+}\theta_2{+}\theta_3)$$
@@ -436,6 +448,7 @@ La cinemática directa **siempre tiene una única solución**.
 <style scoped>section { font-size: 24px; }</style>
 
 ## La inversa es otra historia
+<!-- (§6.3 de los apuntes) -->
 
 `q = f⁻¹(pose)`. Aquí están casi todos los problemas que pide recopilar el CE a:
 
@@ -453,7 +466,7 @@ Métodos **analíticos** (Pieper, desacoplamiento) o **numéricos** (Newton-Raph
 
 ## Controlar el movimiento
 
-<!-- PID son las siglas de proporcional-integral-derivativo, el controlador clásico de posición en robots industriales. -->
+<!-- PID son las siglas de proporcional-integral-derivativo, el controlador clásico de posición en robots industriales. (§6.4 de los apuntes) -->
 
 | Estrategia | Cómo |
 |---|---|
@@ -477,6 +490,7 @@ Lo último es lo que usan los robots industriales de verdad.
 ---
 
 ## De dónde salen las trayectorias
+<!-- (§6.4 de los apuntes) -->
 
 No se salta de un punto a otro: **se interpola**.
 
@@ -496,6 +510,7 @@ El controlador va siguiendo esa trayectoria punto a punto.
 <style scoped>section { font-size: 26px; }</style>
 
 ## Las cuatro singularidades
+<!-- (§7.1 de los apuntes) -->
 
 | Singularidad | Cuándo ocurre |
 |---|---|
@@ -520,6 +535,7 @@ Se evitan al planificar, o se cruzan bajando la velocidad.
 <style scoped>section { font-size: 25px; }</style>
 
 ## Las soluciones
+<!-- (§7.2 de los apuntes) -->
 
 | Problema | Solución |
 |---|---|
@@ -533,7 +549,7 @@ Se evitan al planificar, o se cruzan bajando la velocidad.
 
 ## Precisión no es repetibilidad
 
-<!-- Un ejemplo real de calibración con programación offline es un ABB IRB 1600 corregido con un láser tracker. -->
+<!-- Un ejemplo real de calibración con programación offline es un ABB IRB 1600 corregido con un láser tracker. (§7.2 de los apuntes) -->
 
 Un robot puede ser **repetible** y a la vez **impreciso**: vuelve siempre al mismo punto, pero **ese punto no es el que se programó**.
 
@@ -557,6 +573,7 @@ Los obstáculos se vuelven **regiones prohibidas**; lo que queda es el **espacio
 <style scoped>section { font-size: 25px; }</style>
 
 ## El problema de la mudanza del piano
+<!-- (§7.3 de los apuntes) -->
 
 Se llama así por el esfuerzo de una empresa de mudanzas para llevar un piano grande e irregular de una habitación a otra **sin golpear nada**.
 
@@ -568,6 +585,7 @@ Se complica de tres formas: objetivo como **conjunto**, **coste** a minimizar, o
 <style scoped>section { font-size: 22px; }</style>
 
 ## Cuatro formas de planificar
+<!-- (§7.4 de los apuntes) -->
 
 | Método | Idea | Fuerte | Flojo |
 |---|---|---|---|
@@ -604,7 +622,7 @@ Y la robótica real hace una **componenda en dos pasos**.
 
 ## La componenda, y su precio
 
-<!-- El control óptimo usa técnicas de optimización de trayectoria como multiple shooting y colocación directa; LQR resuelve el caso ideal de coste cuadrático y dinámica lineal, e iLQR es la variante que se usa cuando esas condiciones no se cumplen, que es casi siempre. -->
+<!-- El control óptimo usa técnicas de optimización de trayectoria como multiple shooting y colocación directa; LQR resuelve el caso ideal de coste cuadrático y dinámica lineal, e iLQR es la variante que se usa cuando esas condiciones no se cumplen, que es casi siempre. (§7.5 de los apuntes) -->
 
 1. **Planificar** en un espacio simplificado — solo cinemática, sin dinámica. Sale la trayectoria de referencia.
 2. **Convertirla en política**: un controlador que la sigue y **vuelve a ella** al desviarse.
@@ -628,7 +646,7 @@ El **control óptimo** (LQR, iLQR) ataca las dos a la vez.
 
 ## Tres problemas, de menos a más
 
-<!-- SLAM son las siglas de Simultaneous Localization And Mapping: localización y mapeo simultáneos. -->
+<!-- SLAM son las siglas de Simultaneous Localization And Mapping: localización y mapeo simultáneos. (§8.1 de los apuntes) -->
 
 | Problema | Se sabe | Se busca |
 |---|---|---|
@@ -658,7 +676,7 @@ Las herramientas son las de toda la IA con incertidumbre:
 
 ## Monte Carlo, en tres fotos
 
-<!-- Esta técnica se llama formalmente localización de Monte Carlo o MCL (Monte Carlo Localization), y se implementa con un filtro de partículas. -->
+<!-- Esta técnica se llama formalmente localización de Monte Carlo o MCL (Monte Carlo Localization), y se implementa con un filtro de partículas. (§8.1 de los apuntes) -->
 
 Una nube de «partículas», cada una una hipótesis:
 
@@ -678,7 +696,7 @@ Y solo necesita dos modelos: el del **movimiento** y el del **sensor**.
 
 ## Pero no siempre hace falta la artillería
 
-<!-- Es el mismo criterio que se aplica en la UD05 con el PID: empezar simple y añadir complejidad solo cuando se justifica. -->
+<!-- Es el mismo criterio que se aplica en la UD05 con el PID: empezar simple y añadir complejidad solo cuando se justifica. (§8.2 de los apuntes) -->
 
 La tendencia va hacia representaciones con **semántica** —no «aquí hay algo», sino «esto es una puerta»— y las técnicas probabilísticas **ganan** en los problemas difíciles.
 
@@ -731,6 +749,7 @@ Falla justo en el paso 2 de Monte Carlo: cuando hay **varias hipótesis igual de
 <style scoped>section { font-size: 26px; }</style>
 
 ## Por qué el refuerzo falla en un robot real
+<!-- (§9.2 de los apuntes) -->
 
 | | En simulación | En el robot real |
 |---|---|---|
@@ -743,7 +762,7 @@ Falla justo en el paso 2 de Monte Carlo: cuando hay **varias hipótesis igual de
 
 ## De ahí el problema *sim-to-real*
 
-<!-- En ese recorrido, EX4 genera los datos conduciendo el robot, EX5 entrena la red con esos datos y EX6 evoluciona la solución con NEAT sin ejemplos etiquetados. -->
+<!-- En ese recorrido, EX4 genera los datos conduciendo el robot, EX5 entrena la red con esos datos y EX6 evoluciona la solución con NEAT sin ejemplos etiquetados. (§9.2 de los apuntes) -->
 
 Transferir a un robot real lo aprendido en simulación es un **área de investigación activa**.
 
@@ -764,6 +783,7 @@ Y por eso los sistemas prácticos incorporan **conocimiento previo** del robot, 
 <style scoped>section { font-size: 21px; }</style>
 
 ## Las cinco formas de programar un robot
+<!-- ROS son las siglas de Robot Operating System, aunque no es un sistema operativo en sentido estricto: es el middleware de nodos, topics y servicios más usado en investigación y robótica móvil. (§10.1 de los apuntes) -->
 
 | Técnica | Ventaja | Desventaja | Cuándo |
 |---|---|---|---|
@@ -778,6 +798,7 @@ Y por eso los sistemas prácticos incorporan **conocimiento previo** del robot, 
 ![bg right:32% fit](../assets/humble.png)
 
 ## URScript se parece a Python
+<!-- RTDE son las siglas de Real-Time Data Exchange, el protocolo propio de Universal Robots para intercambiar datos con el robot en tiempo real desde un cliente externo. (§10.1 de los apuntes) -->
 
 Los robots de **Universal Robots** se programan en **URScript**, un lenguaje muy parecido a Python.
 
@@ -801,6 +822,7 @@ Es un matiz legal, y es el que decide si hace falta vallado.
 <style scoped>section { font-size: 26px; }</style>
 
 ## Comparar de verdad: el mismo problema, cuatro veces
+<!-- (§10.3 de los apuntes) -->
 
 Un robot con cámara tiene que **seguir una línea** en el suelo. Y el problema se resuelve cuatro veces.
 
@@ -814,6 +836,7 @@ Eso es lo que pide el CE c: **valorar características diferenciadoras**.
 <style scoped>section { font-size: 23px; }</style>
 
 ## Qué cambia en cada salto
+<!-- (§10.3 de los apuntes) -->
 
 | Entregable | Técnica | Qué escribes tú | Qué sale del programa |
 |---|---|---|---|
@@ -881,7 +904,7 @@ Se descompone en dos:
 
 ## Aprender lo que la persona quiere
 
-<!-- Es el mismo problema que la UD06 llama specification gaming o problema del rey Midas, y también aplica a un vehículo de dos toneladas, no solo a un brazo fijo. -->
+<!-- Es el mismo problema que la UD06 llama specification gaming o problema del rey Midas, y también aplica a un vehículo de dos toneladas, no solo a un brazo fijo. (§11.2 de los apuntes) -->
 
 El usuario **no sabría escribir** la función objetivo perfecta. El robot tiene que **inferirla observando**: qué corrige, qué acepta, qué repite.
 
@@ -900,6 +923,7 @@ Con un brazo de una tonelada, **especificar mal el objetivo es un modo de fallo*
 <style scoped>section { font-size: 24px; }</style>
 
 ## Los cinco criterios de selección
+<!-- (§12.1 de los apuntes) -->
 
 | Criterio | Pregunta guía | Dato típico |
 |---|---|---|
@@ -913,7 +937,7 @@ Con un brazo de una tonelada, **especificar mal el objetivo es un modo de fallo*
 
 ## El payload no es el peso de la pieza
 
-<!-- La herramienta del extremo del brazo se llama EOAT: end of arm tooling. -->
+<!-- La herramienta del extremo del brazo se llama EOAT: end of arm tooling. (§12.1 de los apuntes) -->
 
 Es la pieza **más** la herramienta, la brida, los cables y los sensores acoplados.
 
@@ -925,6 +949,7 @@ Un robot puede aguantar **10 kg pegados a la brida** y **no aguantar 6 kg** en e
 <style scoped>section { font-size: 25px; }</style>
 
 ## Ejemplo guiado: pieza de 1,5 kg a 700 mm
+<!-- (§12.3 de los apuntes) -->
 
 1. **Payload** — pieza 1,5 + pinza 0,5 + cables ≈ **2,2 kg**. Hace falta ≥ 2,5 kg y ≥ 700 mm: un **UR5e** (5 kg / 850 mm) cumple.
 2. **Repetibilidad** — la tarea tolera ±0,1 mm; el UR5e da ±0,05. Y **no hace falta calibrar**, porque los puntos se enseñan.
@@ -946,7 +971,7 @@ Y el orden importa: **primero la tarea, después el robot**. Nunca al revés.
 
 ## La célula y la Industria 4.0
 
-<!-- Además de PROFINET y EtherCAT, el bus determinista del PLC también puede ser EtherNet/IP, otro protocolo industrial habitual en la célula. -->
+<!-- PLC son las siglas de programmable logic controller, el autómata industrial que coordina la célula por buses deterministas (PROFINET, EtherCAT o EtherNet/IP, que es otro protocolo industrial habitual). OPC UA y MQTT son los protocolos con los que esa telemetría se publica hacia el resto de la fábrica: IIoT es industrial internet of things, y MES (manufacturing execution system) es el software que lleva el seguimiento de la producción en planta. (§12.5 de los apuntes) -->
 
 ```text
 PLC de seguridad ◄──PROFINET/EtherCAT──► Robot ──► Sensores + herramienta
@@ -964,6 +989,7 @@ El bus del PLC es **determinista**; la telemetría va por OPC UA o MQTT. Con eso
 <style scoped>section { font-size: 25px; }</style>
 
 ## Seguridad y normativa
+<!-- (§12.6 de los apuntes) -->
 
 | Norma | Qué regula |
 |---|---|
@@ -989,7 +1015,7 @@ Un robot conectado a la red de planta es una **superficie de ataque**: es el *se
 
 ## Dos simuladores, dos trabajos
 
-<!-- roboticstoolbox-python está desarrollado por Peter Corke. -->
+<!-- roboticstoolbox-python está desarrollado por Peter Corke. (§13.1 y §13.2 de los apuntes) -->
 
 **`roboticstoolbox-python`** — para la cinemática de manipuladores: más de 50 robots reales con su cinemática resuelta.
 
@@ -1040,6 +1066,7 @@ robot.add_device(bots.Camera(64, 32))
 <style scoped>section { font-size: 25px; }</style>
 
 ## Las cuatro sesiones
+<!-- (§17 de los apuntes) -->
 
 | Semana | Contenido | CE |
 |---|---|---|
@@ -1053,7 +1080,7 @@ robot.add_device(bots.Camera(64, 32))
 
 ## Cómo se evalúa
 
-<!-- La exigencia de superar todos los RA viene del art. 5.1 de la Orden 8/2025 y de las Instrucciones 26-27, que impiden calificar positivamente un módulo con algún RA no superado. -->
+<!-- La exigencia de superar todos los RA viene del art. 5.1 de la Orden 8/2025 y de las Instrucciones 26-27, que impiden calificar positivamente un módulo con algún RA no superado. (§19 de los apuntes) -->
 
 | Peso | Instrumento |
 |---|---|

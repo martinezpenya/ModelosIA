@@ -40,7 +40,7 @@ Ninguno es obligatorio, pero todos dan munición para los debates y para el
 | *Justicia Artificial* (2024) | Película | **§9.4** justicia algorítmica: es la mejor entrada al debate 2 | En **Moodle** |
 | *Sin Piedad* (2026) | Película · sugerencia de un compañero de otro curso | §4 riesgos | Ficha en FilmAffinity (`film385719`) |
 
-## Actualidad: veinticuatro noticias para el debate
+## Actualidad: veinticinco noticias para el debate
 
 Un argumento con una noticia reciente y verificable vale más que tres opiniones. Esta selección está
 comprobada y **fechada**, porque la fecha es parte del argumento (§4.5), y cubre los diez ejes de la
@@ -72,6 +72,7 @@ unidad con hechos de los últimos cuatro años, la mitad de ellos del último cu
 | **27/06/2026** | [Un David aragonés contra el Goliat de la IA: así es la primera batalla contra los centros de datos en España](https://www.publico.es/sociedad/m-ambiente/david-aragones-goliat-ia-asi-primera-batalla-centros-datos-espana.html){:target="_blank"} (Público) | Sostenibilidad, la cifra: un solo centro consumirá el 16,5 % de la electricidad de Aragón |
 | **23/07/2026** | [Registro de algoritmos: el reto de iluminar la IA pública en Europa](https://hazrevista.org/transparencia/2026/07/registro-algoritmos-reto-iluminar-ia-publica-europa/){:target="_blank"} (Revista Haz) | §6.3 · opacidad, panorama europeo: solo 34 registros de algoritmos públicos activos |
 | **02/08/2026** | [Safer and more transparent AI](https://commission.europa.eu/news-and-media/news/safer-and-more-transparent-ai-2026-08-02_en){:target="_blank"} (Comisión Europea) | §6.1 · AI Act, entrada en vigor de las obligaciones de transparencia del art. 50 |
+| **19/08/2026** | ['I Saw a Shiny Thing': Cop Explains Why He Used License Plate Reader to Stalk Woman](https://www.404media.co/i-saw-a-shiny-thing-cop-explains-why-he-used-license-plate-reader-to-stalk-woman/){:target="_blank"} (404 Media) | **§5.5 · vigilancia**, y la mejor entrada al [debate 2](UD06_D02_Debate_algoritmo_crimen_ES.md): un agente de Florida metió la matrícula de una mujer en la *hot list* del lector automático (ALPR Guardian, de Turing) para que el sistema le avisara cada vez que pasaba ante una cámara. No falló la técnica: funcionó exactamente como está diseñada. Al menos **50 casos documentados** de uso policial de ALPR para acosar a exparejas y particulares en EE. UU. |
 
 ---
 [Volver a la UD06](UD06_ES.md) · [Debate 1](UD06_D01_Debate_limites_eticos_ES.md) ·

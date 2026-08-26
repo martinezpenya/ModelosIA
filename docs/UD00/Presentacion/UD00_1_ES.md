@@ -44,7 +44,7 @@ section {
 ![h:260 center](../../assets/portada.png)
 # UD00: Presentación y curso rápido de Docker
 #### Modelos de Inteligencia Artificial
-###### version: 2026-08-24
+###### version: 2026-08-26
 ___
 <!-- footer: d.martinezpena@edu.gva.es -->
 <!-- header: Modelos de Inteligencia Artificial 26-27 (UD00_1)-->
@@ -59,7 +59,7 @@ ___
 
 ## El módulo 5071
 
-<!-- El curso de especialización dura 600 horas y 36 ECTS, repartidas en cinco módulos (5071 a 5075); se accede desde ciclos de grado superior de la familia de informática, como ASIR, DAM, DAW, telecomunicaciones o mecatrónica y robótica industrial. -->
+<!-- RA son las siglas de resultado de aprendizaje: la capacidad que el alumnado debe demostrar al terminar el módulo, la unidad de medida de toda la evaluación del curso — se repite en cada unidad, así que a partir de aquí se da por conocido. ECTS son los European Credit Transfer System, el crédito académico europeo de carga de trabajo; no es habitual en un ciclo de FP, pero este curso de especialización sí los usa. El curso de especialización dura 600 horas y 36 ECTS, repartidas en cinco módulos (5071 a 5075); se accede desde ciclos de grado superior de la familia de informática, como ASIR, DAM, DAW, telecomunicaciones o mecatrónica y robótica industrial. (§3.1 y §3.2 de los apuntes) -->
 
 | | |
 |---|---|
@@ -75,7 +75,7 @@ ___
 
 ## Esta unidad no desarrolla un RA propio
 
-<!-- El RD 279/2021 es el real decreto que fija el currículo del ciclo y desarrolla los seis resultados de aprendizaje del módulo 5071. -->
+<!-- El RA7-i es el criterio i) del RA7: «trabaja de forma colaborativa y ética, mostrando autonomía, responsabilidad y respeto a la normativa de protección de datos y propiedad intelectual». El RD 279/2021 es el real decreto que fija el currículo del ciclo y desarrolla los seis resultados de aprendizaje del módulo 5071. -->
 
 El currículo desarrolla **6 RA** para el módulo (RA1-RA6). La UD00 es la unidad de **presentación y puesta en marcha** que prepara el terreno: sin ella, los RA1-RA6 perderían horas configurando entornos.
 
@@ -96,7 +96,7 @@ ___
 
 ## Cómo se evalúa
 
-<!-- Estas reglas proceden de la Orden 8/2025 de la Comunitat Valenciana, modificada por la Orden 5/2026. -->
+<!-- Estas reglas proceden de la Orden 8/2025 de la Comunitat Valenciana, modificada por la Orden 5/2026. (§4 de los apuntes) -->
 
 * Cada **RA** se califica de **1 a 10, sin decimales**
 * Nota de cada RA = **40 %** tareas, talleres y ejercicios + **60 %** prueba escrita
@@ -140,6 +140,34 @@ ___
 > **Marzo es el mes más roto del curso**: tenlo en cuenta antes de dejar una entrega para el final.
 ___
 
+## Instalar Docker en Linux
+
+<!-- Los paquetes previos cumplen cada uno un papel: apt-transport-https permite transferir paquetes por https, ca-certificates verifica certificados de seguridad, curl transfiere datos como wget y software-properties-common gestiona los repositorios de software. GPG son las siglas de GNU Privacy Guard, el sistema de firma criptográfica que permite comprobar que el paquete descargado es el original de Docker y no ha sido alterado. (§5.2 de los apuntes) -->
+
+```bash
+# 1. Clave GPG y repositorio oficial de Docker
+# 2. Instalar el motor
+sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+# 3. Poder usarlo sin sudo
+sudo usermod -aG docker $USER
+```
+
+> El paso 3 no surte efecto **hasta cerrar y volver a abrir la sesión**. Es el error del primer día.
+___
+
+## Docker Desktop
+
+<!-- En macOS hace falta macOS 12 Monterey o superior, con chip Apple Silicon o Intel de 2010 en adelante; en Linux se pide kernel 5.10 o superior con systemd, sobre distribuciones como Ubuntu 20.04, Debian 11, Fedora 36 o Arch Linux. WSL 2 es Windows Subsystem for Linux, la capa que permite ejecutar un kernel Linux real dentro de Windows; es el motor que usa Docker Desktop en Windows Home, que no tiene Hyper-V. (§5.2 de los apuntes) -->
+
+Para **Windows y macOS** es la vía normal; en Linux es opcional.
+
+* Incluye el motor, la interfaz gráfica y Compose
+* En Windows se apoya en **WSL 2**
+* En Linux se instala con el `.deb` oficial
+
+> Comprueba siempre la instalación con `docker run hello-world` antes de seguir.
+___
+
 ## El problema: «en mi máquina funciona»
 
 * Cada equipo tiene un Python distinto, con versiones distintas de cada biblioteca
@@ -152,7 +180,7 @@ ___
 
 ## Contenedor frente a máquina virtual
 
-<!-- Además de estas filas, un servidor físico soporta solo decenas de máquinas virtuales frente a cientos o miles de contenedores, y la reproducibilidad es alta en contenedores por la imagen inmutable y sus capas, media en las máquinas virtuales. -->
+<!-- Además de estas filas, un servidor físico soporta solo decenas de máquinas virtuales frente a cientos o miles de contenedores, y la reproducibilidad es alta en contenedores por la imagen inmutable y sus capas, media en las máquinas virtuales. (§6.2 de los apuntes) -->
 
 | | Máquina virtual | Contenedor |
 |---|---|---|
@@ -177,6 +205,7 @@ ___
 ___
 
 ## Las tres piezas de Docker
+<!-- El daemon escucha por defecto en el socket Unix /var/run/docker.sock; pertenecer al grupo docker da permiso de lectura y escritura sobre él, que es justo lo que falta si aparece «permission denied» al ejecutar docker run. -->
 
 * **Cliente** (`docker`): el comando que escribes tú. Solo manda órdenes
 * **Daemon** (`dockerd`): el servicio que las ejecuta — descarga imágenes, crea contenedores
@@ -190,124 +219,9 @@ ___
 ![h:340 center](../assets/docker1.png)
 ___
 
-## Instalar Docker en Linux
-
-<!-- Los paquetes previos cumplen cada uno un papel: apt-transport-https permite transferir paquetes por https, ca-certificates verifica certificados de seguridad, curl transfiere datos como wget y software-properties-common gestiona los repositorios de software. -->
-
-```bash
-# 1. Clave GPG y repositorio oficial de Docker
-# 2. Instalar el motor
-sudo apt install docker-ce docker-ce-cli containerd.io docker-compose-plugin
-# 3. Poder usarlo sin sudo
-sudo usermod -aG docker $USER
-```
-
-> El paso 3 no surte efecto **hasta cerrar y volver a abrir la sesión**. Es el error del primer día.
-___
-
-## Docker Desktop
-
-<!-- En macOS hace falta macOS 12 Monterey o superior, con chip Apple Silicon o Intel de 2010 en adelante; en Linux se pide kernel 5.10 o superior con systemd, sobre distribuciones como Ubuntu 20.04, Debian 11, Fedora 36 o Arch Linux. -->
-
-Para **Windows y macOS** es la vía normal; en Linux es opcional.
-
-* Incluye el motor, la interfaz gráfica y Compose
-* En Windows se apoya en **WSL 2**
-* En Linux se instala con el `.deb` oficial
-
-> Comprueba siempre la instalación con `docker run hello-world` antes de seguir.
-___
-
-## Los comandos que usarás el 90 % del tiempo
-
-```bash
-docker run -it --name mi-python python:3.12 bash   # crear y entrar
-docker ps -a                                       # qué contenedores tengo
-docker images                                      # qué imágenes tengo
-docker start / stop / rm                           # ciclo de vida
-docker run -d -p 8080:80 nginx                     # servicio en segundo plano
-```
-
-> `-it` interactivo · `-d` en segundo plano · `-p` publicar puerto · `--rm` borrar al salir
-___
-
-## Lo que se acumula sin darte cuenta
-
-```bash
-docker images              # ¿cuánto ocupan?
-docker rmi <imagen>        # borrar una concreta
-docker image prune         # borrar las huérfanas, sin etiqueta
-docker image prune -a      # TODAS las que no use ningún contenedor
-```
-
-> `prune -a` decide por ti: se lleva también las imágenes que construiste y no has publicado. Mira antes con `docker images`.
-___
-
-## Volúmenes: que los datos sobrevivan
-
-<!-- Los volúmenes nombrados los gestiona Docker en /var/lib/docker/volumes; son la opción recomendada para datos que no necesitas ver desde el host, como cachés o bases de datos. -->
-
-Un contenedor es **desechable**: lo que escribes dentro desaparece al borrarlo.
-
-```bash
-docker run --rm -v "$PWD":/app -w /app python:3.12 python app.py
-```
-
-* **bind mount**: una carpeta tuya se ve dentro del contenedor
-* **volumen nombrado**: Docker gestiona el almacenamiento
-
-> Tus notebooks viven **en tu equipo**, no dentro del contenedor.
-___
-
-## Copias de seguridad
-
-| Qué copias | Comandos | Conserva |
-|---|---|---|
-| Una **imagen** | `docker save` / `docker load` | Capas, etiquetas y metadatos |
-| Un **contenedor** | `docker export` / `docker import` | Solo los ficheros, aplanados |
-
-> Con `save` puedes seguir trabajando sobre la imagen; con `export` obtienes una foto plana.
-___
-
-## Dockerfile: la receta
-
-<!-- EXPOSE solo documenta el puerto y no lo publica; hace falta -p en docker run o ports en Compose. ENTRYPOINT fija el ejecutable y se puede combinar con CMD para pasarle los argumentos. -->
-
-```dockerfile
-FROM python:3.12-slim
-WORKDIR /home/mia
-COPY requirements-ia.txt .
-RUN pip install -r requirements-ia.txt
-EXPOSE 8888
-CMD ["jupyter", "notebook", "--ip=0.0.0.0"]
-```
-
-> Cada instrucción es una **capa** y las capas se **cachean**: por eso las dependencias van antes que el código, para no reinstalarlas en cada cambio.
-___
-
-## Compose: describir en vez de recordar
-
-<!-- Para ordenar el arranque entre servicios se usa depends_on, normalmente junto con un healthcheck que espera a que el servicio esté realmente listo, mediante la condición service_healthy. -->
-
-```yaml
-services:
-  mia:
-    build: .
-    ports:
-      - "8888:8888"
-    volumes:
-      - ../notebooks:/home/mia
-```
-
-```bash
-docker compose up -d     # levantar
-docker compose down      # parar y limpiar
-```
-___
-
 ## El mismo código, dos entornos
 
-<!-- La última versión de experta es la 1.9.4, del 16 de noviembre de 2019, y declara soportar Python de 3.5 a 3.8. El fallo está documentado como el issue 34 del repositorio, abierto desde julio de 2023; la causa es su dependencia frozendict 1.2, que usa collections.Mapping. -->
+<!-- La última versión de experta es la 1.9.4, del 16 de noviembre de 2019, y declara soportar Python de 3.5 a 3.8. El fallo está documentado como el issue 34 del repositorio, abierto desde julio de 2023; la causa es su dependencia frozendict 1.2, que usa collections.Mapping. (§6.5 de los apuntes) -->
 
 `experta` es el motor de reglas de la UD02 y la UD05. Última versión: **2019**.
 
@@ -331,9 +245,88 @@ ___
 > Lo que no vale es descubrirlo el día de la entrega.
 ___
 
+## Los comandos que usarás el 90 % del tiempo
+<!-- (§7.1 y §7.2 de los apuntes) -->
+
+```bash
+docker run -it --name mi-python python:3.12 bash   # crear y entrar
+docker ps -a                                       # qué contenedores tengo
+docker images                                      # qué imágenes tengo
+docker start / stop / rm                           # ciclo de vida
+docker run -d -p 8080:80 nginx                     # servicio en segundo plano
+```
+
+> `-it` interactivo · `-d` en segundo plano · `-p` publicar puerto · `--rm` borrar al salir
+___
+
+## Volúmenes: que los datos sobrevivan
+
+<!-- Los volúmenes nombrados los gestiona Docker en /var/lib/docker/volumes; son la opción recomendada para datos que no necesitas ver desde el host, como cachés o bases de datos. (§7.4 de los apuntes) -->
+
+Un contenedor es **desechable**: lo que escribes dentro desaparece al borrarlo.
+
+```bash
+docker run --rm -v "$PWD":/app -w /app python:3.12 python app.py
+```
+
+* **bind mount**: una carpeta tuya se ve dentro del contenedor
+* **volumen nombrado**: Docker gestiona el almacenamiento
+
+> Tus notebooks viven **en tu equipo**, no dentro del contenedor.
+___
+
+## Dockerfile: la receta
+
+<!-- EXPOSE solo documenta el puerto y no lo publica; hace falta -p en docker run o ports en Compose. ENTRYPOINT fija el ejecutable y se puede combinar con CMD para pasarle los argumentos. (§8.1 de los apuntes) -->
+
+```dockerfile
+FROM python:3.12-slim
+WORKDIR /home/mia
+COPY requirements-ia.txt .
+RUN pip install -r requirements-ia.txt
+EXPOSE 8888
+CMD ["jupyter", "notebook", "--ip=0.0.0.0"]
+```
+
+> Cada instrucción es una **capa** y las capas se **cachean**: por eso las dependencias van antes que el código, para no reinstalarlas en cada cambio.
+___
+
+## Lo que se acumula sin darte cuenta
+<!-- (§8.4 de los apuntes) -->
+
+```bash
+docker images              # ¿cuánto ocupan?
+docker rmi <imagen>        # borrar una concreta
+docker image prune         # borrar las huérfanas, sin etiqueta
+docker image prune -a      # TODAS las que no use ningún contenedor
+```
+
+> `prune -a` decide por ti: se lleva también las imágenes que construiste y no has publicado. Mira antes con `docker images`.
+___
+
+## Compose: describir en vez de recordar
+
+<!-- Para ordenar el arranque entre servicios se usa depends_on, normalmente junto con un healthcheck que espera a que el servicio esté realmente listo, mediante la condición service_healthy. (§9 de los apuntes) -->
+
+```yaml
+services:
+  mia:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - ../notebooks:/home/mia
+```
+
+```bash
+docker compose up -d     # levantar
+docker compose down      # parar y limpiar
+```
+___
+
 ## Nuestro entorno de prácticas
 
-<!-- El token JUPYTER_TOKEN se fija para que la URL de acceso sea siempre la misma, en vez de un token aleatorio distinto cada vez que arranca el contenedor. -->
+<!-- El token JUPYTER_TOKEN se fija para que la URL de acceso sea siempre la misma, en vez de un token aleatorio distinto cada vez que arranca el contenedor. (§10 de los apuntes) -->
 
 * Un `Dockerfile` con **Python 3.12** y las bibliotecas del curso
 * Un `docker-compose.yml` que publica **Jupyter** en el puerto 8888
@@ -342,6 +335,17 @@ ___
 ```bash
 docker compose up -d      # y Jupyter en http://localhost:8888
 ```
+___
+
+## Copias de seguridad
+<!-- (§11 de los apuntes) -->
+
+| Qué copias | Comandos | Conserva |
+|---|---|---|
+| Una **imagen** | `docker save` / `docker load` | Capas, etiquetas y metadatos |
+| Un **contenedor** | `docker export` / `docker import` | Solo los ficheros, aplanados |
+
+> Con `save` puedes seguir trabajando sobre la imagen; con `export` obtienes una foto plana.
 ___
 
 <style scoped>section { font-size: 22px; }</style>
@@ -358,6 +362,7 @@ ___
 <style scoped>section { font-size: 26px; }</style>
 
 ## Las dos sesiones
+<!-- (§15 de los apuntes) -->
 
 **6 h en dos semanas** (1-8 de octubre), a 3 h por semana.
 

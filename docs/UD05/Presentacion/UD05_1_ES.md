@@ -39,7 +39,7 @@ section {
 ![h:260 center](../assets/cover.png)
 # UD05: Sistemas expertos y controladores inteligentes
 #### Modelos de Inteligencia Artificial
-###### version: 2026-08-24
+###### version: 2026-08-26
 
 ---
 <!-- footer: d.martinezpena@edu.gva.es -->
@@ -65,7 +65,7 @@ section {
 
 ## RA5 y sus criterios de evaluación
 
-<!-- Estos cinco CE proceden del anexo I del RD 279/2021, que fija el currículo del ciclo; el Decreto 95/2026 de la Comunitat Valenciana lo concreta para el centro. El currículo oficial detalla en cambio seis contenidos para este bloque: dos de ellos, aplicaciones y tendencias, no tienen CE propio, y RA5-c, la variación de características, no tiene contenido explícito y lo desarrolla el centro. -->
+<!-- Estos cinco CE proceden del anexo I del RD 279/2021, que fija el currículo del ciclo; el Decreto 95/2026 de la Comunitat Valenciana lo concreta para el centro. El currículo oficial detalla en cambio seis contenidos para este bloque: dos de ellos, aplicaciones y tendencias, no tienen CE propio, y RA5-c, la variación de características, no tiene contenido explícito y lo desarrolla el centro. (§2 de los apuntes) -->
 
 > **RA5** — Aplica sistemas expertos evaluando la influencia de los controladores inteligentes en el comportamiento del sistema.
 
@@ -114,6 +114,7 @@ section {
 <style scoped>section { font-size: 26px; }</style>
 
 ## La jerarquía DIKW
+<!-- (§4.1 de los apuntes) -->
 
 | Nivel | Qué es | Ejemplo |
 |---|---|---|
@@ -149,6 +150,7 @@ section {
 <style scoped>section { font-size: 23px; }</style>
 
 ## Qué hace cada componente
+<!-- (§4.3 de los apuntes) -->
 
 | Componente | Función |
 |---|---|
@@ -172,6 +174,7 @@ section {
 <style scoped>section { font-size: 27px; }</style>
 
 ## La dinámica: el ciclo reconocer-actuar
+<!-- (§4.4 de los apuntes) -->
 
 1. **Reconocer (*match*)**: se comparan los hechos de la memoria de trabajo con las condiciones de las reglas; las activas van a la **agenda**.
 2. **Resolver (*resolve*)**: si hay varias activas, se elige una según la estrategia de control (§7).
@@ -208,7 +211,7 @@ El encadenamiento **hacia delante** aplica Modus Ponens repetidamente; el encade
 
 ## Incertidumbre: factores de certeza
 
-<!-- La comparación entre los factores de certeza y las redes bayesianas como alternativa se formalizó en Heckerman y Shortliffe (1992). -->
+<!-- La comparación entre los factores de certeza y las redes bayesianas como alternativa se formalizó en Heckerman y Shortliffe (1992). (§4.6 de los apuntes) -->
 
 - **MYCIN** introdujo los **factores de certeza (CF)**: cada regla lleva el suyo y se combinan al encadenar.
 - «SI fiebre alta ENTONCES meningitis **CF = 0,6**» + «SI rigidez de nuca ENTONCES meningitis **CF = 0,4**» → confianza conjunta **mayor** que cada una por separado.
@@ -242,6 +245,7 @@ Representar el conocimiento hay que hacerlo **entendible** para la máquina, **�
 <style scoped>section { font-size: 22px; }</style>
 
 ## Las representaciones (I)
+<!-- (§5.2 de los apuntes) -->
 
 | Representación | Estructura | Ventajas | Límites |
 |---|---|---|---|
@@ -254,7 +258,7 @@ Representar el conocimiento hay que hacerlo **entendible** para la máquina, **�
 
 ## Las representaciones (II)
 
-<!-- OWL son las siglas de Web Ontology Language, el estándar para construir ontologías; sus razonadores típicos son Pellet o HermiT. -->
+<!-- OWL son las siglas de Web Ontology Language, el estándar para construir ontologías; sus razonadores típicos son Pellet o HermiT. (§5.2 de los apuntes) -->
 
 | Representación | Estructura | Ventajas | Límites |
 |---|---|---|---|
@@ -267,6 +271,7 @@ Representar el conocimiento hay que hacerlo **entendible** para la máquina, **�
 <style scoped>section { font-size: 26px; }</style>
 
 ## Lo mismo, en cuatro formas
+<!-- (§5.2 de los apuntes) -->
 
 «Si la temperatura supera 37 ºC, la persona tiene fiebre» se escribe como…
 
@@ -302,7 +307,7 @@ Elegir la representación es elegir **qué será fácil de hacer** con ese conoc
 
 ## El parche obligatorio
 
-<!-- Existe un fork de la librería, om-experta, que resuelve el mismo problema de otra forma, pero está archivado desde 2023; en esta unidad se usa siempre el parche manual para no tener dos soluciones al mismo problema. -->
+<!-- Existe un fork de la librería, om-experta, que resuelve el mismo problema de otra forma, pero está archivado desde 2023; en esta unidad se usa siempre el parche manual para no tener dos soluciones al mismo problema. (§6 de los apuntes) -->
 
 `experta` es de 2019 y `collections.Mapping` desapareció en Python 3.10. **Siempre antes de importar**:
 
@@ -320,6 +325,7 @@ from experta import *
 <style scoped>section { font-size: 24px; }</style>
 
 ## Un diagnóstico, paso a paso (I)
+<!-- (§6 de los apuntes) -->
 
 ```python
 class DiagnosticoPc(KnowledgeEngine):
@@ -341,6 +347,7 @@ class DiagnosticoPc(KnowledgeEngine):
 <style scoped>section { font-size: 24px; }</style>
 
 ## Un diagnóstico, paso a paso (II)
+<!-- (§6 de los apuntes) -->
 
 ```python
     @Rule(Fact(luz_encendida=True), Fact(sonido="pitidos_cortos"))
@@ -365,6 +372,7 @@ DIAGNÓSTICO: Fallo de memoria RAM.
 <style scoped>section { font-size: 23px; }</style>
 
 ## Otro ámbito, el mismo motor
+<!-- (§6 de los apuntes) -->
 
 ```python
 class Animales(KnowledgeEngine):
@@ -392,7 +400,7 @@ class Animales(KnowledgeEngine):
 
 ## «Muy diversos ámbitos»: los notebooks
 
-<!-- Los notebooks N01 a N06 son actividades guiadas que se trabajan en clase y no son evaluables por sí solos: preparan los cinco entregables EX0 a EX4, que sí cuentan en el 40% de la nota de la unidad. -->
+<!-- Los notebooks N01 a N06 son actividades guiadas que se trabajan en clase y no son evaluables por sí solos: preparan los cinco entregables EX0 a EX4, que sí cuentan en el 40 % de la nota de la unidad. (§6.1 de los apuntes) -->
 
 | Notebook | Dominio | Qué simula |
 |---|---|---|
@@ -438,6 +446,7 @@ Un sistema experto puro necesita que **alguien las escriba a mano**. Dos salidas
 <style scoped>section { font-size: 25px; }</style>
 
 ## Las bibliotecas
+<!-- (§7.1 de los apuntes) -->
 
 | Biblioteca | Qué hace |
 |---|---|
@@ -449,6 +458,7 @@ Un sistema experto puro necesita que **alguien las escriba a mano**. Dos salidas
 ---
 
 ## Titanic: reglas que salen de los datos
+<!-- (§7.1 de los apuntes) -->
 
 - Nadie escribe a mano «si viajas en primera clase y eres mujer, sobrevives».
 - **FIGS** analiza los datos históricos y **genera esa regla por sí solo**, junto con otras.
@@ -458,6 +468,7 @@ Un sistema experto puro necesita que **alguien las escriba a mano**. Dos salidas
 ---
 
 ## `EX2`: los dos enfoques sobre los mismos datos
+<!-- (§7.1 de los apuntes) -->
 
 - Datos de **FIFA 22**, dos caminos a la vez:
     - una `FunctionClassifier` de **Human-Learn** con reglas que **tú** defines,
@@ -516,6 +527,7 @@ Un sistema basado en reglas que usa lógica difusa:
 <style scoped>section { font-size: 24px; }</style>
 
 ## Conceptos básicos
+<!-- (§8.2 de los apuntes) -->
 
 | Concepto | Qué es | Ejemplo |
 |---|---|---|
@@ -529,6 +541,7 @@ Un sistema basado en reglas que usa lógica difusa:
 <style scoped>section { font-size: 26px; }</style>
 
 ## El funcionamiento, en tres pasos
+<!-- (§8.3 de los apuntes) -->
 
 1. **Fuzzificación** — convierte las entradas precisas en valores difusos, con las funciones de pertenencia: $27\,°C \rightarrow Calor=0{,}8$.
 2. **Evaluación de las reglas** — se aplican combinando las entradas: «si la temperatura es **alta** y la humedad **baja**, el ventilador **alto**».
@@ -548,7 +561,7 @@ Un sistema basado en reglas que usa lógica difusa:
 
 ## Ejemplo: la propina del restaurante
 
-<!-- Este es el ejemplo canónico de la documentación oficial de scikit-fuzzy, el mismo que resolverás paso a paso con código en el Taller 2. -->
+<!-- Este es el ejemplo canónico de la documentación oficial de scikit-fuzzy, el mismo que resolverás paso a paso con código en el Taller 2. (§8.4 de los apuntes) -->
 
 Las **entradas**, con funciones triangulares:
 
@@ -560,6 +573,7 @@ Las **entradas**, con funciones triangulares:
 ---
 
 ## La salida
+<!-- (§8.4 de los apuntes) -->
 
 **Propina**: baja $[0,13]$ · media $[0,25]$ · alta $[13,25]$
 
@@ -570,6 +584,7 @@ El universo se discretiza — y esa resolución **cambia el resultado**, como ve
 ---
 
 ## Las reglas
+<!-- (§8.4 de los apuntes) -->
 
 - SI (servicio **bajo** O comida **mala**) → propina **baja**
 - SI (servicio **medio**) → propina **media**
@@ -580,6 +595,7 @@ El universo se discretiza — y esa resolución **cambia el resultado**, como ve
 ---
 
 ## La inferencia
+<!-- (§8.4 de los apuntes) -->
 
 Con servicio **9,8** y comida **6,5**, el sistema desfuzzifica **19,24 €**: banda alta, coherente con un servicio casi perfecto.
 
@@ -616,6 +632,7 @@ Al ejecutarlo con `np.arange(0, 26, 1)` sale **19,85 €**: la diferencia es la 
 <style scoped>section { font-size: 25px; }</style>
 
 ## Tres mecanismos de variación
+<!-- (§9.2 de los apuntes) -->
 
 | Qué varía | Efecto en la dinámica |
 |---|---|
@@ -626,6 +643,7 @@ Al ejecutarlo con `np.arange(0, 26, 1)` sale **19,85 €**: la diferencia es la 
 ---
 
 ## El problema de la histéresis
+<!-- (§9.2 de los apuntes) -->
 
 - Un sensor de CO en un túnel oscila entre **28 y 32 ppm**, con el umbral en **30**.
 - Sin histéresis, los extractores se **encienden y apagan en cada ciclo**.
@@ -646,6 +664,7 @@ Al ejecutarlo con `np.arange(0, 26, 1)` sale **19,85 €**: la diferencia es la 
 <style scoped>section { font-size: 25px; }</style>
 
 ## Control de la agenda
+<!-- (§10.1 de los apuntes) -->
 
 Cuando varias reglas están activas a la vez, hay que **elegir**:
 
@@ -662,6 +681,7 @@ El control de meta es la **sabiduría** del DIKW, aplicada al propio motor.
 <style scoped>section { font-size: 26px; }</style>
 
 ## Especificaciones de la respuesta
+<!-- (§10.2 de los apuntes) -->
 
 | Especificación | Qué mide |
 |---|---|
@@ -676,6 +696,7 @@ En este módulo se trabajan de forma **conceptual**: definir el objetivo y saber
 <style scoped>section { font-size: 26px; }</style>
 
 ## Ejemplo guiado: climatizar una sala a 21 ºC
+<!-- (§10.3 de los apuntes) -->
 
 1. **Setpoint y precisión** — estabilizarse en 21 ºC con error de **±0,5 ºC** máximo.
 2. **Tiempo de respuesta** — entrar en la banda 20,5-21,5 ºC en menos de **15 min**.
@@ -687,6 +708,7 @@ Las especificaciones se escriben **antes** de elegir el controlador.
 <style scoped>section { font-size: 26px; }</style>
 
 ## Ejemplo guiado (II): elegir y comprobar
+<!-- (§10.3 de los apuntes) -->
 
 4. **Elegir el controlador** — un PID bien sintonizado cumpliría en un sistema lineal, pero la sala tiene **inercia térmica y perturbaciones** (puertas, sol). Un controlador experto o difuso, con reglas del operador, logra **menos sobreimpulso y más robustez**.
 5. **Comprobar y ajustar** — simular, medir ts y sobreimpulso, y si no cumple, ajustar reglas o ganancias.
@@ -712,6 +734,7 @@ Ese es el sentido de los criterios **d** y **e** — y exactamente lo que se pid
 <style scoped>section { font-size: 26px; }</style>
 
 ## El lazo de control clásico
+<!-- (§11.1 de los apuntes) -->
 
 Compara el **setpoint** (SP) con la variable medida (PV), calcula el error y aplica una acción (MV).
 
@@ -728,6 +751,7 @@ La parte **proporcional** responde al error, la **integral** elimina el residual
 ---
 
 ## Dónde falla el PID
+<!-- (§11.1 de los apuntes) -->
 
 - **No predice el futuro**: solo reacciona al error presente y pasado.
 - Se degrada con **retrasos** y **no linealidades**.
@@ -741,7 +765,7 @@ Es eficaz en sistemas lineales bien modelados — y ahí sigue siendo la opción
 
 ## Cuatro controladores inteligentes
 
-<!-- Mamdani y Sugeno son los dos métodos clásicos de inferencia difusa y difieren en cómo definen la salida: Mamdani usa conjuntos difusos, como el ejemplo de la propina; Sugeno usa funciones matemáticas. MPC son las siglas de Model Predictive Control, control predictivo basado en un modelo de la planta. -->
+<!-- Mamdani y Sugeno son los dos métodos clásicos de inferencia difusa y difieren en cómo definen la salida: Mamdani usa conjuntos difusos, como el ejemplo de la propina; Sugeno usa funciones matemáticas. MPC son las siglas de Model Predictive Control, control predictivo basado en un modelo de la planta. (§11.1 de los apuntes) -->
 
 | Controlador | Cómo funciona | Ventaja frente al PID |
 |---|---|---|
@@ -755,7 +779,7 @@ Es eficaz en sistemas lineales bien modelados — y ahí sigue siendo la opción
 
 ## Y funciona, con datos
 
-<!-- DeepMind también reportó una reducción adicional del 15% en el PUE, la eficiencia energética global del centro de datos, además del 40% en refrigeración. -->
+<!-- DeepMind también reportó una reducción adicional del 15 % en el PUE, la eficiencia energética global del centro de datos, además del 40 % en refrigeración. (§11.2 de los apuntes) -->
 
 | Caso | Mejora frente al PID |
 |---|---|
@@ -779,6 +803,7 @@ Es eficaz en sistemas lineales bien modelados — y ahí sigue siendo la opción
 <style scoped>section { font-size: 25px; }</style>
 
 ## El sistema experto como controlador
+<!-- (§11.3 de los apuntes) -->
 
 Patrón del **control experto** (Åström, Anton y Årzén, 1986): un motor de inferencia **dentro** del lazo.
 
@@ -792,6 +817,7 @@ Patrón del **control experto** (Åström, Anton y Årzén, 1986): un motor de i
 <style scoped>section { font-size: 27px; }</style>
 
 ## Una regla de verdad
+<!-- (§11.3 de los apuntes) -->
 
 ```text
 SI error de temperatura es NEGATIVO_GRANDE
@@ -811,6 +837,7 @@ Captura la heurística de un operador humano y es **fácil de auditar** — algo
 ---
 
 ## Por sector
+<!-- (§12.1 de los apuntes) -->
 
 | Sector | Uso |
 |---|---|
@@ -823,6 +850,7 @@ Captura la heurística de un operador humano y es **fácil de auditar** — algo
 <style scoped>section { font-size: 24px; }</style>
 
 ## Los clásicos, con cifras
+<!-- (§12.1 de los apuntes) -->
 
 - **DENDRAL** (1965): el primer sistema experto; acotaba millones de isómeros moleculares a un conjunto manejable.
 - **MYCIN** (Stanford, 1972): 500-600 reglas de diagnóstico clínico, precisión **69-70 %**, equiparable a especialistas. Pionero de la explicación y los factores de certeza.
@@ -835,7 +863,7 @@ Captura la heurística de un operador humano y es **fácil de auditar** — algo
 
 ## Tendencias
 
-<!-- RETE era el algoritmo clásico de coincidencia de patrones de los primeros motores de reglas; los BRMS modernos, como Drools, evolucionaron a PHREAK, que escala mejor con miles de reglas. SHAP y LIME son las siglas de dos técnicas de explicabilidad del aprendizaje automático. -->
+<!-- RETE era el algoritmo clásico de coincidencia de patrones de los primeros motores de reglas; los BRMS modernos, como Drools, evolucionaron a PHREAK, que escala mejor con miles de reglas. SHAP y LIME son las siglas de dos técnicas de explicabilidad del aprendizaje automático. (§12.2 de los apuntes) -->
 
 - **BRMS** — motores de reglas de negocio como **Drools** (Apache KIE), con DMN/JSR-94: miles de reglas separadas del código, con motores que escalan linealmente.
 - **Neuro-simbólico** (3.ª ola de la IA) — redes neuronales para aprender + reglas para razonar; reduce alucinaciones y aporta explicabilidad. Amazon lo usa en sus motores de compra.
@@ -846,6 +874,7 @@ Captura la heurística de un operador humano y es **fácil de auditar** — algo
 ---
 
 ## Del pasado al presente
+<!-- (§12.2 de los apuntes) -->
 
 - MYCIN y XCON demostraron que el **conocimiento declarativo** y la **explicación** importan.
 - Esa idea **no ha muerto**: vive en los BRMS, en el neuro-simbólico y en los guardarraíles del ML.
@@ -882,6 +911,7 @@ Captura la heurística de un operador humano y es **fácil de auditar** — algo
 <style scoped>section { font-size: 26px; }</style>
 
 ## Las cinco sesiones
+<!-- (§16 de los apuntes) -->
 
 | Semana | Contenido | CE |
 |---|---|---|
@@ -896,7 +926,7 @@ Captura la heurística de un operador humano y es **fácil de auditar** — algo
 
 ## Cómo se evalúa
 
-<!-- La base legal concreta de esa exigencia es el artículo 5.1 de la Orden 8/2025, que liga la calificación del módulo a la consecución de los RA, junto con las Instrucciones 26-27, que impiden calificar positivamente un módulo con algún RA no superado. De los cinco entregables, EX0 es de libre elección del alumno y premia la originalidad, mientras que EX1 a EX4 tienen un dominio fijo. -->
+<!-- La base legal concreta de esa exigencia es el artículo 5.1 de la Orden 8/2025, que liga la calificación del módulo a la consecución de los RA, junto con las Instrucciones 26-27, que impiden calificar positivamente un módulo con algún RA no superado. De los cinco entregables, EX0 es de libre elección del alumno y premia la originalidad, mientras que EX1 a EX4 tienen un dominio fijo. (§18 de los apuntes) -->
 
 | Peso | Instrumento |
 |---|---|

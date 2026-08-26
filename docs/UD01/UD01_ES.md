@@ -133,6 +133,38 @@ inteligente**:
 Las dos últimas exigen una capacidad de cómputo que, para el caso general, todavía es
 inalcanzable.
 
+#### Los tests de Turing y de Lovelace: ¿demuestran que un sistema es inteligente?
+
+La fila «Test de Turing» de la tabla anterior remite a una propuesta muy concreta. **Alan Turing**
+planteó en 1950, en *Computing Machinery and Intelligence*, el **juego de la imitación**: un
+interrogador humano conversa por escrito con una persona y con una máquina, sin saber cuál es
+cuál; si tras el interrogatorio no logra distinguirlas de forma fiable, la máquina **pasa el
+test**. Es una prueba **conductual**: no exige que la máquina piense, solo que actúe de forma
+indistinguible de como lo haría una persona.
+
+Casi un siglo antes, **Ada Lovelace** ya había puesto en duda que eso bastara. En 1843, en la
+«Nota G» que acompañaba su traducción de un trabajo sobre la máquina analítica de Babbage, escribió
+que *«la máquina analítica no tiene pretensión de originar nada; puede hacer cualquier cosa que
+sepamos ordenarle que ejecute»* — para Lovelace, una máquina solo repite lo que alguien programó,
+nunca **origina** algo genuinamente nuevo. El propio Turing cita esta «objeción de Lovelace» en su
+artículo de 1950 y responde que una máquina sí podría «sorprendernos», sin zanjar el debate.
+
+Esa objeción, no la conversación, es lo que en 2001 formalizaron Selmer Bringsjord, Paul Bello y
+David Ferrucci en el **test de Lovelace**: un sistema lo supera si produce un resultado que su
+propio programador **no puede explicar cómo se generó** a partir del código que escribió — un test
+sobre **creatividad y originalidad**, no sobre saber conversar. En 2014, Mark Riedl propuso una
+versión más manejable, el **test de Lovelace 2.0**: pedir al sistema artefactos creativos concretos
+(un relato, un poema, una imagen) que cumplan unos requisitos dados por un evaluador humano, que
+juzga si el resultado los satisface — más fácil de repetir y de comparar entre sistemas que el
+criterio original.
+
+!!! note "Por qué importan los dos, no solo el de Turing"
+    El test de Turing mide si una máquina puede **imitar** una conversación humana. El de Lovelace
+    mide algo distinto: si puede **originar** algo que no es una consecuencia previsible de su
+    programación. Superar el primero no implica superar el segundo — y es justo la pregunta de
+    fondo al hablar de IA fuerte (§3.4): ¿la creatividad de una IA generativa es real, o solo una
+    recombinación muy sofisticada de lo que ya ha visto?
+
 #### Clasificación de Hintze (2016)
 
 Arend Hintze (Universidad de Michigan) propuso una clasificación por **capacidades**, de la más
@@ -562,6 +594,8 @@ señala los riesgos (correos ambiguos, privacidad de los datos de los clientes s
 | **Sistema inteligente** | Sistema que percibe, razona y actúa para lograr un objetivo |
 | **IA débil / fuerte** | Orientada a una tarea concreta (toda la actual) frente a IA general al nivel humano (teórica) |
 | **IA convencional / computacional** | Escuela simbólico-deductiva (reglas explícitas) frente a subsimbólica-inductiva (aprende de datos) |
+| **Test de Turing** | Un interrogador conversa con una persona y una máquina; si no las distingue, la máquina lo supera |
+| **Test de Lovelace** | El sistema origina un resultado que su propio programador no puede explicar a partir del código |
 | **Teoría de la mente / autoconciencia** | Niveles teóricos de la clasificación de Hintze, aún sin sistemas reales |
 | **ML (machine learning)** | Técnicas que aprenden patrones de los datos sin programación explícita |
 | **Deep learning** | Subconjunto del ML basado en redes neuronales profundas |

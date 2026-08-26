@@ -43,11 +43,21 @@ Or just run `./serve.sh` which does all the above then `mkdocs serve`.
   hundreds of "No anchor" errors, not reproducible locally (2026-08-25) — the web build no longer
   pays that risk since it doesn't need the PDF anyway, only the one build that does.
 - Custom cover/back-cover templates in `templates/`
-- `pdf_event_hook/__init__.py` is **orphaned, not wired into `mkdocs.yml`** — despite the name it
-  hasn't injected anything for a while (found 2026-08-25, cause not investigated further). The PDF
-  download icon in the header (top right, next to the GitHub link on desktop / next to the search
-  icon on mobile) is now added independently in `hooks.py`'s `on_post_page`, which runs regardless
-  of whether `mkdocs-with-pdf` is enabled for that build.
+- `pdf_event_hook/` was **deleted on 2026-08-26**. It was never wired into `mkdocs.yml`, but that
+  did not make it dead: `mkdocs-with-pdf` auto-imports a module of exactly that name from the CWD
+  (`drivers/event_hook.py`, `_module_name = 'pdf_event_hook'`), so it *was* loaded on every PDF
+  build — the CI log for `32858601564` shows `Found PDF rendering event hook module.` plus one
+  `(hook on inject_link: …)` line per page. Both of its functions had become no-ops, which is why
+  it looked orphaned: `inject_link` looks for `md-header-nav` or a `<nav class="md-header__inner">`
+  and Material 9 renders that node as a `<div>`, so it returned the HTML untouched; `pre_pdf_render`
+  absolutized relative `<img src>` left behind by the plugin's `convert_iframe`, and
+  `convert_iframe` was retired from `mkdocs.yml` on 2026-08-24 — it never logged a single fixed
+  image again. Removing it is safe because with-pdf now falls back to `themes/material.py`'s own
+  `inject_link`, which appends a "download PDF" link to the footer of the **`site-pdf/` build**,
+  and CI copies only `site-pdf/docs/Libro.pdf` into the real `site/` (`ci.yml`) — that HTML is
+  discarded. Side benefit: ~200 log lines per build gone. The PDF download icon in the header (top
+  right, next to the GitHub link on desktop / next to the search icon on mobile) is added
+  independently in `hooks.py`'s `on_post_page`, which skips the `PRERENDER_MERMAID=1` build.
 - The `offline` plugin is commented out (it would break SEO)
 
 ## Structure

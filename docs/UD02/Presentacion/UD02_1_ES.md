@@ -39,7 +39,7 @@ section {
 ![h:260 center](../assets/cover.png)
 # UD02: Modelos de IA y resolución de problemas
 #### Modelos de Inteligencia Artificial
-###### version: 2026-08-24
+###### version: 2026-08-26
 
 ---
 <!-- footer: d.martinezpena@edu.gva.es -->
@@ -59,6 +59,7 @@ section {
 ---
 
 ## RA2 y sus criterios de evaluación
+<!-- (§2 de los apuntes) -->
 
 **RA2**: implementa sistemas de resolución de problemas con modelos de IA.
 
@@ -73,7 +74,7 @@ section {
 
 ## Hilo conductor de la unidad
 
-<!-- La unidad son 12 horas repartidas entre las semanas 7 y 10 del curso, del 9 de noviembre al 3 de diciembre. -->
+<!-- La unidad son 12 horas repartidas entre las semanas 7 y 10 del curso, del 9 de noviembre al 3 de diciembre. (§3 de los apuntes) -->
 
 **Antes de programar IA hay que saber formalizar un problema y elegir bien el modelo.**
 
@@ -101,7 +102,7 @@ El cierre de la unidad, Robocode, recorre las seis fases con un bot de combate r
 
 ## El espacio de estados
 
-<!-- AIMA es "Artificial Intelligence: A Modern Approach", el manual de referencia de Stuart Russell y Peter Norvig que fija estos cinco elementos formales de un sistema de resolución de problemas. -->
+<!-- AIMA es «Artificial Intelligence: A Modern Approach», el manual de referencia de Stuart Russell y Peter Norvig que fija estos cinco elementos formales de un sistema de resolución de problemas. (§4.2 de los apuntes) -->
 
 ```mermaid
 flowchart LR
@@ -115,7 +116,7 @@ Un problema bien planteado responde a: ¿estado inicial?, ¿acciones aplicables?
 
 ## Ejemplos clásicos de representación
 
-<!-- En las 8 reinas, sin restricciones (cualquier casilla del tablero) hay 4.426.165.368 arreglos posibles; limitando a una reina por columna se reduce a 8!=40.320. En el 15-puzzle, las soluciones óptimas pueden necesitar hasta 80 movimientos. -->
+<!-- En las 8 reinas, sin restricciones (cualquier casilla del tablero) hay 4.426.165.368 arreglos posibles; limitando a una reina por columna se reduce a 8!=40.320. En el 15-puzzle, las soluciones óptimas pueden necesitar hasta 80 movimientos. (§4.3 de los apuntes) -->
 
 | Problema | Representación | Detalle |
 |---|---|---|
@@ -136,7 +137,7 @@ Un espacio real (rutas de reparto, planificación) es enorme: hace falta una est
 
 ## BFS, DFS y A*
 
-<!-- En memoria, BFS y A* son O(b elevado a d) en el peor caso porque guardan todos los estados de un nivel; DFS es mucho más ligera, O(b por d), porque solo mantiene el camino actual. -->
+<!-- En memoria, BFS y A* son O(b elevado a d) en el peor caso porque guardan todos los estados de un nivel; DFS es mucho más ligera, O(b por d), porque solo mantiene el camino actual. (§4.4 de los apuntes) -->
 
 | Criterio | BFS | DFS | A* |
 |---|---|---|---|
@@ -149,7 +150,7 @@ Un espacio real (rutas de reparto, planificación) es enorme: hace falta una est
 
 ## Heurística: A* en el 8-puzzle
 
-<!-- La distancia de Manhattan suma, para cada ficha, los pasos horizontales y verticales que le faltan hasta llegar a su posición correcta en el objetivo. -->
+<!-- La distancia de Manhattan suma, para cada ficha, los pasos horizontales y verticales que le faltan hasta llegar a su posición correcta en el objetivo. (§4.4 de los apuntes) -->
 
 `f(n) = g(n) + h(n)`: coste acumulado más una estimación de lo que falta.
 
@@ -165,7 +166,7 @@ Heurísticas admisibles habituales: número de fichas mal colocadas, o distancia
 
 ## Por paradigma de aprendizaje
 
-<!-- En scikit-learn, el supervisado se implementa con regresión logística, SVM o árboles; el no supervisado con k-means, DBSCAN o PCA; el de refuerzo queda fuera del stack estándar del curso. -->
+<!-- En scikit-learn, el supervisado se implementa con regresión logística, SVM o árboles; el no supervisado con k-means, DBSCAN o PCA; el de refuerzo queda fuera del stack estándar del curso. (§5.1 de los apuntes) -->
 
 | | Supervisado | No supervisado | Refuerzo |
 |---|---|---|---|
@@ -179,7 +180,7 @@ Heurísticas admisibles habituales: número de fichas mal colocadas, o distancia
 
 ## Por tipo de análisis y por base
 
-<!-- Gartner llama al análisis prescriptivo "la última frontera" de la analítica, porque no se limita a predecir sino que recomienda o ejecuta directamente la decisión óptima. -->
+<!-- Gartner llama al análisis prescriptivo «la última frontera» de la analítica, porque no se limita a predecir sino que recomienda o ejecuta directamente la decisión óptima. (§5.2 y §5.3 de los apuntes) -->
 
 | Análisis | Pregunta | Ejemplo |
 |---|---|---|
@@ -193,7 +194,7 @@ Basados en **conocimiento** (reglas explícitas, interpretable) frente a basados
 
 ## Mapa de los modelos de IA
 
-<!-- El diagrama se simplifica para la diapositiva: dentro de "basados en conocimiento" también entran los sistemas expertos (MYCIN, XCON), y dentro de Machine Learning se distinguen supervisado, no supervisado y refuerzo. -->
+<!-- El diagrama se simplifica para la diapositiva: dentro de «basados en conocimiento» también entran los sistemas expertos (MYCIN, XCON), y dentro de Machine Learning se distinguen supervisado, no supervisado y refuerzo. (§5.3 de los apuntes) -->
 
 ```mermaid
 flowchart TD
@@ -213,7 +214,7 @@ flowchart TD
 
 ## RPA frente a IA
 
-<!-- BPM son las siglas de Business Process Management (gestión de procesos de negocio): la capa que orquesta los flujos y conecta la decisión de la IA con la ejecución del RPA. -->
+<!-- RPA son las siglas de robotic process automation, automatización robótica de procesos: replica tareas humanas repetitivas en la interfaz, sin razonar sobre datos. BPM son las siglas de business process management (gestión de procesos de negocio): la capa que orquesta los flujos y conecta la decisión de la IA con la ejecución del RPA. (§6.1 de los apuntes) -->
 
 | | RPA | IA |
 |---|---|---|
@@ -240,6 +241,7 @@ Tareas cognitivas automatizables: **extracción** (OCR, NER), **clasificación**
 ---
 
 ## De lo booleano a lo difuso
+<!-- (§7.1 de los apuntes) -->
 
 La lógica clásica solo admite verdadero/falso. La **lógica difusa** (Zadeh, 1965) permite grados de verdad entre 0 y 1.
 
@@ -251,7 +253,7 @@ Ejemplo: "18 ºC es frío con 0,7" en vez de "18 ºC es frío: sí/no".
 
 ## Funciones de pertenencia
 
-<!-- En scikit-fuzzy cada función tiene su propia llamada: trimf para la triangular, trapmf para la trapezoidal, gaussmf para la gaussiana y sigmf para la sigmoidal. -->
+<!-- En scikit-fuzzy cada función tiene su propia llamada: trimf para la triangular, trapmf para la trapezoidal, gaussmf para la gaussiana y sigmf para la sigmoidal. (§7.2 de los apuntes) -->
 
 | Función | Forma | Uso típico |
 |---|---|---|
@@ -266,7 +268,7 @@ Se recomiendan entre 3 y 7 curvas por variable, solapadas para que no existan hu
 
 ## El sistema de inferencia difuso (FIS)
 
-<!-- En Sugeno/TSK la salida de cada regla no es un conjunto difuso sino una función z=f(x,y); resulta menos intuitiva que Mamdani pero más eficiente para tareas de control. -->
+<!-- En Sugeno/TSK la salida de cada regla no es un conjunto difuso sino una función z=f(x,y); resulta menos intuitiva que Mamdani pero más eficiente para tareas de control. (§7.4 de los apuntes) -->
 
 ```mermaid
 flowchart LR
@@ -283,7 +285,7 @@ Dos familias: **Mamdani** (salida difusa defuzzificada, la usa `scikit-fuzzy`) y
 
 ## Lógica difusa en el mundo real
 
-<!-- El Metro de Sendai es de 1987. El autofocus de Canon usa 12 entradas (claridad y velocidad del objetivo) para sus 13 reglas. Otro caso histórico son los hornos de cemento de Dinamarca (1976) y los aires acondicionados Mitsubishi, que calientan y enfrían 5 veces más rápido con un 24 % menos de consumo. -->
+<!-- El Metro de Sendai es de 1987. El autofocus de Canon usa 12 entradas (claridad y velocidad del objetivo) para sus 13 reglas. Otro caso histórico son los hornos de cemento de Dinamarca (1976) y los aires acondicionados Mitsubishi, que calientan y enfrían 5 veces más rápido con un 24 % menos de consumo. (§7.5 de los apuntes) -->
 
 Metro de Sendai (frenado y aceleración) · autofocus de Canon (13 reglas, 1,1 KB) · ABS de los frenos · lavadoras y aires acondicionados.
 
@@ -294,6 +296,7 @@ Metro de Sendai (frenado y aceleración) · autofocus de Canon (13 reglas, 1,1 K
 ---
 
 ## Práctica: el problema de la propina
+<!-- (§7.6 de los apuntes) -->
 
 ```python
 calidad = ctrl.Antecedent(np.arange(0, 11, 1), 'calidad')
@@ -314,6 +317,7 @@ sim.compute()
 ---
 
 ## El ciclo reconocer-actuar
+<!-- RETE no es una sigla: es la palabra latina para «red», por la red de nodos con la que indexa las condiciones para no reevaluar todas las reglas en cada ciclo. (§8.1 de los apuntes) -->
 
 ```mermaid
 flowchart LR
@@ -352,7 +356,7 @@ Ventaja frente al ML: el razonamiento es **transparente y explicable**.
 
 ## Práctica con experta
 
-<!-- experta es de 2019 (versión 1.9.4) y fija frozendict==1.2, que a su vez usa collections.Mapping, eliminado en Python 3.10; por eso hace falta el parche antes del import. -->
+<!-- experta es de 2019 (versión 1.9.4) y fija frozendict==1.2, que a su vez usa collections.Mapping, eliminado en Python 3.10; por eso hace falta el parche antes del import. (§8.5 de los apuntes) -->
 
 ```python
 # PARCHE para Python 3.10+
@@ -370,7 +374,7 @@ class DiagnosticoVehiculo(KnowledgeEngine):
 
 ## Sistemas expertos que cambiaron su sector
 
-<!-- MYCIN usaba encadenamiento hacia atrás y factores de certeza sobre unas 500-600 reglas. La tabla no incluye Dendral (Stanford, años 70), considerado el primer sistema experto completo, dedicado a identificar moléculas orgánicas. -->
+<!-- DEC son las siglas de Digital Equipment Corporation, el fabricante de los ordenadores VAX, comprado por Compaq en 1998 y hoy parte de HP; CMU es Carnegie Mellon University, donde se desarrolló XCON. MYCIN usaba encadenamiento hacia atrás y factores de certeza sobre unas 500-600 reglas. La tabla no incluye Dendral (Stanford, años 70), considerado el primer sistema experto completo, dedicado a identificar moléculas orgánicas. (§8.6 de los apuntes) -->
 
 | Sistema | Origen | Dato relevante |
 |---|---|---|
@@ -428,7 +432,7 @@ RPA hace, la IA piensa; la difusa modela vaguedad, las reglas ejecutan reconocer
 
 ## Evaluación
 
-<!-- La exigencia de un 5 en cada RA viene del art. 5.1 de la Orden 8/2025 (la calificación depende de la consecución de los RA) y de las Instrucciones 26-27, que impiden aprobar un módulo con algún RA no superado. -->
+<!-- La exigencia de un 5 en cada RA viene del art. 5.1 de la Orden 8/2025 (la calificación depende de la consecución de los RA) y de las Instrucciones 26-27, que impiden aprobar un módulo con algún RA no superado. (§17 de los apuntes) -->
 
 | Peso | Instrumento |
 |---|---|
