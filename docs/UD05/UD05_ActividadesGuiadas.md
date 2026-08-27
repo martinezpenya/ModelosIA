@@ -25,14 +25,14 @@
 
 ## Referencia: un sistema experto grande, resuelto
 
-[EX0 · Tasación de vehículos usados](notebooks/UD05_EX0_referencia_tasacion_vehiculos.ipynb)
-([descargar](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD05/notebooks/UD05_EX0_referencia_tasacion_vehiculos.ipynb){:target="_blank"} ·
-[Colab](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD05/notebooks/UD05_EX0_referencia_tasacion_vehiculos.ipynb){:target="_blank"})
+[N15 · Tasación de vehículos usados](notebooks/UD05_N09_referencia_tasacion_vehiculos.ipynb)
+([descargar](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD05/notebooks/UD05_N09_referencia_tasacion_vehiculos.ipynb){:target="_blank"} ·
+[Colab](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD05/notebooks/UD05_N09_referencia_tasacion_vehiculos.ipynb){:target="_blank"})
 es un ejemplo **extenso ya resuelto**, portado de una práctica original en CLIPS: no es un
 enunciado que tengas que entregar: es una referencia para ver cómo se estructura un sistema
 experto grande de principio a fin, con más reglas y más profundidad que los ejemplos guiados de
 arriba.
 
 ---
-[Volver a la UD05](UD05_ES.md) · [Ejercicios](UD05_Ejercicios.md) · [Taller 1](UD05_T01_Simular_sistema_experto_ES.md) · [Notebook 5](notebooks/UD05_N05_logica_difusa_propinas.ipynb) · [Notebook 8](notebooks/UD05_N08_controlador_experto.ipynb) ·
+[Volver a la UD05](UD05_ES.md) · [Ejercicios](UD05_Ejercicios.md) · [Notebook 10](notebooks/UD05_N10_simular_sistema_experto.ipynb) · [Notebook 5](notebooks/UD05_N05_logica_difusa_propinas.ipynb) · [Notebook 8](notebooks/UD05_N08_controlador_experto.ipynb) ·
 [Entregas](UD05_Entregas.md)

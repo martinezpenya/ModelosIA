@@ -103,4 +103,4 @@
     Robocode: ¿qué modelo usarías para decidir el disparo, y por qué?
 
 ---
-[Volver a la UD02](UD02_ES.md) · [Talleres](UD02_T01_Control_difuso_ES.md)
+[Volver a la UD02](UD02_ES.md) · [Talleres](notebooks/UD02_N01_control_difuso.ipynb)

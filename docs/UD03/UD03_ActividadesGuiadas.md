@@ -30,7 +30,7 @@ gramaticales, extraer frases nominales y construir representaciones bolsa de pal
 ## N02 · Clasificación de texto con PyTorch
 
 Construye un clasificador de texto **desde cero**: de la bolsa de palabras a los *word embeddings*,
-con un modelo de PyTorch entrenado y evaluado. Es el notebook que `EX2` repite sobre datos propios.
+con un modelo de PyTorch entrenado y evaluado. Es el notebook que `N09` repite sobre datos propios.
 
 | Recurso | Enlace |
 |---|---|
@@ -39,7 +39,7 @@ con un modelo de PyTorch entrenado y evaluado. Es el notebook que `EX2` repite s
 ## N03 · Modelos de lenguaje: afinar DistilBERT
 
 *Transfer learning* de manual: parte de un **DistilBERT** preentrenado y lo afina para análisis de
-sentimiento con una base de datos de tuits. `EX4` repite el proceso sobre reseñas de cine.
+sentimiento con una base de datos de tuits. `N10` repite el proceso sobre reseñas de cine.
 
 | Recurso | Enlace |
 |---|---|
@@ -58,11 +58,11 @@ en español.
 
 Un sistema de PLN aplicado a **audio**: clasificar el género de una canción combinando `librosa` y
 `transformers`. Es el notebook más largo del módulo (240 celdas) y **no cuenta horas de la unidad**:
-queda como material de ampliación para quien quiera ir más allá de `EX5`.
+queda como material de ampliación para quien quiera ir más allá de `N11`.
 
 | Recurso | Enlace |
 |---|---|
-| Notebook | [`UD03_N05_ampliacion_clasificador_generos_musicales.ipynb`](notebooks/UD03_N05_ampliacion_clasificador_generos_musicales.ipynb) |
+| Notebook | [`UD03_N05_ampliacion_generos_musicales.ipynb`](notebooks/UD03_N05_ampliacion_generos_musicales.ipynb) |
 
 ---
 [Volver a la UD03](UD03_ES.md) · [Entregas](UD03_Entregas.md)

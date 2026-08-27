@@ -451,7 +451,7 @@ El perfil combina tres patas, y **ninguna sobra**:
     ética** de modelos. Los tres parten de la misma base: **lingüística más técnica**.
 
 !!! tip "Cómo se evalúan estos tres criterios en esta unidad"
-    No con un examen aparte: con la **parte escrita de los entregables `EX2` y `EX5`**. En cada uno
+    No con un examen aparte: con la **parte escrita de los entregables `N09` y `N11`**. En cada uno
     se pide justificar qué decisiones tomaría un lingüista en ese problema concreto, qué aporta cada
     perfil y qué formación haría falta. Está en la rúbrica, y cuenta.
 
@@ -591,7 +591,7 @@ print(clasificador("El servicio fue excelente, volveré seguro."))
 !!! tip "DistilBERT, y por qué se usa aquí"
     **DistilBERT** tiene un **40 % menos de parámetros** y es un **60 % más rápido** que BERT,
     conservando el **97 %** de su capacidad. Por eso es el modelo de los notebooks de la unidad:
-    cabe en una sesión de clase. El entregable `EX4` lo **afina** para reseñas de cine, que es
+    cabe en una sesión de clase. El entregable `N10` lo **afina** para reseñas de cine, que es
     *transfer learning* de manual.
 
 ## 12. Construir un sistema orientado a una tarea (RA3-g)
@@ -637,11 +637,11 @@ Y los cuatro entregables aplican cada nivel a un problema propio:
 
 | Entregable | Tarea | Qué demuestra |
 |---|---|---|
-| `EX1` | Representación de texto: tokenizar, *stopwords*, BoW y tf-idf | Los fundamentos, **por dos caminos** (NLTK y TextBlob) |
-| `EX2` | **Clasificar preguntas** repitiendo el proceso de `N02` | Construir un clasificador propio |
-| `EX3` | **Etiquetado morfosintáctico** del corpus `cess_esp` con NLTK | Trabajar con anotación real en español |
-| `EX4` | **Afinar DistilBERT** para reseñas de cine | *Transfer learning* a una tarea nueva |
-| `EX5` | **Asistente virtual por voz** | Un sistema de punta a punta, con audio |
+| `N06` | Representación de texto: tokenizar, *stopwords*, BoW y tf-idf | Los fundamentos, **por dos caminos** (NLTK y TextBlob) |
+| `N09` | **Clasificar preguntas** repitiendo el proceso de `N02` | Construir un clasificador propio |
+| `N07` | **Etiquetado morfosintáctico** del corpus `cess_esp` con NLTK | Trabajar con anotación real en español |
+| `N10` | **Afinar DistilBERT** para reseñas de cine | *Transfer learning* a una tarea nueva |
+| `N11` | **Asistente virtual por voz** | Un sistema de punta a punta, con audio |
 
 !!! example "Ejemplo guiado: un clasificador de reseñas en seis pasos"
     **1 · Tarea**: clasificar una reseña de restaurante como positiva o negativa. **2 · Datos**: 60
@@ -790,10 +790,10 @@ Y los cuatro entregables aplican cada nivel a un problema propio:
 
 | Semana | Horas | Contenido | CE |
 |---|---|---|---|
-| 16 | 3 | Qué es el PLN, tareas y *pipeline*; el potencial con cifras. `N01` (`nltk`) y `EX1` | RA3-a, RA3-c |
-| 17 | 3 | **La ambigüedad en sus seis formas**; desambiguación y POS *tagging*. `N04` (spaCy) y `N05` (`cess_esp`); Taller 1 | RA3-a, RA3-c |
-| 18 | 3 | Las demás limitaciones; cuándo es factible con la lupa del AI Act. `N02` y `EX2`; Taller 2 | RA3-c, RA3-d, RA3-g |
-| 19 | 3 | El lingüista, la cooperación y la formación; sistemas orientados a tarea. `N03`, `EX4` y `EX5`; evaluación | RA3-b, RA3-e, RA3-f, RA3-g |
+| 16 | 3 | Qué es el PLN, tareas y *pipeline*; el potencial con cifras. `N01` (`nltk`) y `N06` | RA3-a, RA3-c |
+| 17 | 3 | **La ambigüedad en sus seis formas**; desambiguación y POS *tagging*. `N04` (spaCy) y `N05` (`cess_esp`); Notebook 8 | RA3-a, RA3-c |
+| 18 | 3 | Las demás limitaciones; cuándo es factible con la lupa del AI Act. `N02` y `N09`; Notebook 12 | RA3-c, RA3-d, RA3-g |
+| 19 | 3 | El lingüista, la cooperación y la formación; sistemas orientados a tarea. `N03`, `N10` y `N11`; evaluación | RA3-b, RA3-e, RA3-f, RA3-g |
 
 !!! note "Sobre el reparto"
     Los tres CE «humanos» se tratan en la **semana 19**, cuando el alumnado ya ha peleado con los
@@ -805,10 +805,10 @@ Y los cuatro entregables aplican cada nivel a un problema propio:
 - [Diapositivas](UD03_Diapositivas.md)
 - **Práctica** — se hace, no se entrega ni puntúa:
     - [Ejercicios de autoevaluación](UD03_Ejercicios.md)
-    - [Notebooks guiados](UD03_ActividadesGuiadas.md) — 5 notebooks, más los `EX1` y `EX3`
+    - [Notebooks guiados](UD03_ActividadesGuiadas.md) — 5 notebooks, más los `N06` y `N07`
 - **Entregas** — [qué se entrega](UD03_Entregas.md):
-    - [T01 · del texto al vector](UD03_T01_Del_texto_al_vector_ES.md) · [T02 · un sistema de PLN de punta a punta](UD03_T02_Sistema_PLN_ES.md)
-    - y los notebooks `EX2`, `EX4` y `EX5`, cada uno con su rúbrica
+    - [N08 · del texto al vector](notebooks/UD03_N08_del_texto_al_vector.ipynb) · [N12 · un sistema de PLN de punta a punta](notebooks/UD03_N12_sistema_pln.ipynb)
+    - y los notebooks `N09`, `N10` y `N11`, cada uno con su rúbrica
 - Los notebooks se abren desde **Práctica** y **Entregas**, con descarga y apertura en Colab.
 
 ??? note "Referencias de la unidad"
@@ -824,25 +824,25 @@ Y los cuatro entregables aplican cada nivel a un problema propio:
 
 | Peso | Instrumento |
 |---|---|
-| **40 %** actividades | Los talleres **T01** y **T02** y los notebooks **`EX2`**, **`EX4`** y **`EX5`**, cada uno con su rúbrica en la tarea de Moodle. **`EX1`** y **`EX3`** son práctica y no puntúan |
+| **40 %** actividades | Los talleres **N08** y **N12** y los notebooks **`N09`**, **`N10`** y **`N11`**, cada uno con su rúbrica en la tarea de Moodle. **`N06`** y **`N07`** son práctica y no puntúan |
 | **60 %** prueba escrita | Prueba del RA3 en Moodle: preguntas de test y de desarrollo sobre el contenido de la unidad |
 
 - **La normativa exige alcanzar todos los RA** del módulo para superarlo (art. 5.1 de la Orden
   8/2025: la calificación del módulo está *«en función de la consecución de los RA»*; y las
   Instrucciones 26-27, que impiden calificar positivamente un módulo con RA no superados). El centro
   concreta ese mandato exigiendo **≥ 5 en cada RA**.
-- **`EX2` y `EX5` llevan una parte escrita** que cubre los criterios b, e y f: el papel del
+- **`N09` y `N11` llevan una parte escrita** que cubre los criterios b, e y f: el papel del
   lingüista, la cooperación entre perfiles y la formación necesaria. Está en su rúbrica y **cuenta**.
 
 | CE | Dónde se trabaja | Con qué se evalúa |
 |---|---|---|
-| RA3-a | §4, §7 | Taller 1, `EX1`, prueba del RA3 |
-| RA3-b | §10.1 | **Parte escrita de `EX2` y `EX5`**, prueba del RA3 |
-| RA3-c | §5-8 | `EX1`, `EX4`, Talleres 1 y 2, prueba del RA3 |
-| RA3-d | §9 | Taller 2, prueba del RA3 |
-| RA3-e | §10.2 | **Parte escrita de `EX2` y `EX5`**, prueba del RA3 |
-| RA3-f | §10.3 | **Parte escrita de `EX2` y `EX5`**, prueba del RA3 |
-| RA3-g | §11-12 | `EX2`, `EX4`, `EX5`, Taller 2 |
+| RA3-a | §4, §7 | Notebook 8, `N06`, prueba del RA3 |
+| RA3-b | §10.1 | **Parte escrita de `N09` y `N11`**, prueba del RA3 |
+| RA3-c | §5-8 | `N06`, `N10`, Talleres 1 y 2, prueba del RA3 |
+| RA3-d | §9 | Notebook 12, prueba del RA3 |
+| RA3-e | §10.2 | **Parte escrita de `N09` y `N11`**, prueba del RA3 |
+| RA3-f | §10.3 | **Parte escrita de `N09` y `N11`**, prueba del RA3 |
+| RA3-g | §11-12 | `N09`, `N10`, `N11`, Notebook 12 |
 
 ## 19. Recuperación
 

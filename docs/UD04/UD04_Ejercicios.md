@@ -2,7 +2,7 @@
 
 !!! note "Cómo se trabajan"
     Resuélvelos en tu cuaderno o en un documento Markdown. No se entregan por separado: son la
-    preparación de la **prueba escrita del RA4** y de los talleres ([Taller 1](UD04_T01_Cinematica_manipulador_ES.md) · [Taller 2](UD04_T02_Diseno_sistema_robotizado_ES.md)). Los
+    preparación de la **prueba escrita del RA4** y de los talleres ([Notebook 4](notebooks/UD04_N04_cinematica_manipulador.ipynb) · [Notebook 11](notebooks/UD04_N11_diseno_sistema_robotizado.ipynb)). Los
     entregables evaluables son los [seis notebooks](UD04_Entregas.md).
 
 ## A. Métodos y aplicaciones de la robótica (RA4-a)
@@ -145,7 +145,7 @@
 57. ¿Por qué los cobots permiten el **guiado manual**? ¿Qué mecanismo lo hace posible?
 58. Un cobot lleva un cuchillo en la pinza. ¿Es una **aplicación colaborativa**? Justifica con la
     ISO 10218:2025.
-59. Para los cuatro entregables que resuelven la navegación con cámara (`EX2`, `EX3`, `EX5`, `EX6`),
+59. Para los cuatro entregables que resuelven la navegación con cámara (`N06`, `N07`, `N09`, `N10`),
     rellena una tabla con: qué escribes tú, qué decide el programa, cuántos datos necesita y si
     puedes explicar por qué el robot actuó como actuó.
 60. De esas cuatro técnicas, ¿cuál elegirías para una máquina que tiene que pasar una auditoría de
@@ -197,4 +197,4 @@
     Las soluciones no se publican: se corrigen y comentan en clase.
 
 ---
-[Volver a la UD04](UD04_ES.md) · [Taller 1](UD04_T01_Cinematica_manipulador_ES.md) · [Taller 2](UD04_T02_Diseno_sistema_robotizado_ES.md) · [Entregables](UD04_Entregas.md)
+[Volver a la UD04](UD04_ES.md) · [Notebook 4](notebooks/UD04_N04_cinematica_manipulador.ipynb) · [Notebook 11](notebooks/UD04_N11_diseno_sistema_robotizado.ipynb) · [Entregables](UD04_Entregas.md)

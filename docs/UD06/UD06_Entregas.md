@@ -15,7 +15,7 @@
 | 1 | [**Debate 1** · Límites éticos de la IA](UD06_D01_Debate_limites_eticos_ES.md) | Sesión 2 | Participación en el aula **+** reflexión escrita de máx. **300 palabras** en Moodle | Rúbrica de debate en Moodle, 100 puntos escalados sobre 10 |
 | 2 | [**Debate 2** · El algoritmo contra el crimen](UD06_D02_Debate_algoritmo_crimen_ES.md) | Sesión 4 | Participación en el aula **+** reflexión escrita de máx. **300 palabras** en Moodle | La **misma** rúbrica |
 | — | [**Notebook 2** · Análisis de un caso ético](notebooks/UD06_N02_analisis_caso_etico.ipynb) | Sesión 3 | **Práctica**: se trabaja en clase, no se entrega | Se corrige en clase |
-| 3 | [**Taller 2** · Auditoría de sesgos con Fairlearn](UD06_T02_Auditoria_sesgos_ES.md) | Sesión 3 | Informe con las métricas antes/después y las seis respuestas | Rúbrica propia, en la tarea de Moodle |
+| 3 | [**Notebook 3** · Auditoría de sesgos con Fairlearn](notebooks/UD06_N03_auditoria_sesgos.ipynb) | Sesión 3 | Informe con las métricas antes/después y las seis respuestas | Rúbrica propia, en la tarea de Moodle |
 | — | [**Notebook N01** · Detección de sesgos](notebooks/UD06_N01_sesgos_ia.ipynb) | Sesión 3 | **Práctica**: da soporte a la auditoría, no se entrega | Se revisa en clase |
 | — | [Tertulia de ciencia-ficción](#tertulia-de-ciencia-ficcion) | Libre | Voluntaria, de ampliación | Sin nota |
 

@@ -320,10 +320,10 @@ las [notebooks guiados](UD05_ActividadesGuiadas.md) y las [entregas](UD05_Entreg
 | `UD05_N01_experta_primeros_pasos.ipynb` | Introducción | Primeros pasos con `experta`: hechos, reglas, `DefFacts` |
 | `UD05_N02_piedra_papel_tijera.ipynb` | Juego | Piedra, papel o tijera decidido por reglas |
 | `UD05_N03_clasificacion_animales.ipynb` | Zoología | El ejemplo de arriba, completo y ejecutado |
-| **`EX1` · lesión de rodilla** | Medicina | Diagnóstico de una lesión a partir de síntomas, con `experta` |
+| **`N11` · lesión de rodilla** | Medicina | Diagnóstico de una lesión a partir de síntomas, con `experta` |
 | `UD05_N04_reglas_desde_datos_titanic.ipynb` | Datos históricos | Reglas **extraídas** de datos, no escritas a mano (§7) |
-| **`EX2` · valor de mercado** | Deporte | Estimación híbrida reglas + aprendizaje automático (§7) |
-| **`EX3` · centrocampistas** · **`EX4` · quemador de gas** | Deporte · industria | Lógica difusa (§8) y control de un proceso real (§10-11) |
+| **`N12` · valor de mercado** | Deporte | Estimación híbrida reglas + aprendizaje automático (§7) |
+| **`N13` · centrocampistas** · **`N14` · quemador de gas** | Deporte · industria | Lógica difusa (§8) y control de un proceso real (§10-11) |
 
 !!! important "Por qué importa la diversidad"
     Un sistema experto no es una técnica de un solo dominio: la **misma arquitectura**
@@ -361,8 +361,8 @@ enfoques:
     otras. El resultado sigue siendo legible —un árbol de reglas pequeño—, pero nadie lo escribió a
     mano: se dedujo de los datos. Es el primer enfoque de la tabla de arriba.
 
-!!! example "`EX2`: valor de mercado de futbolistas con Human-Learn + FIGS"
-    El entregable **EX2** combina las dos ideas sobre los mismos datos (FIFA 22): una
+!!! example "`N12`: valor de mercado de futbolistas con Human-Learn + FIGS"
+    El entregable **N12** combina las dos ideas sobre los mismos datos (FIFA 22): una
     `FunctionClassifier` de Human-Learn (reglas que **tú** defines sobre atributos del jugador) y un
     `FIGSClassifier` que **deduce** sus propias reglas del conjunto de entrenamiento. Comparar los
     dos resultados sobre el mismo problema es la mejor forma de sentir la diferencia entre los dos
@@ -455,8 +455,8 @@ notable.
 <img src="assets/plot_tipping_problem_newapi_5.png" alt="Resultado de la inferencia difusa" style="zoom: 45%;" />
 
 !!! tip "De la propina al quemador de gas"
-    Este ejemplo es idéntico en estructura al **Taller 3** (control de un quemador de gas) y al
-    entregable **EX4**: variables de entrada difusas, reglas lingüísticas, una salida
+    Este ejemplo es idéntico en estructura al **Notebook 8** (control de un quemador de gas) y al
+    entregable **N14**: variables de entrada difusas, reglas lingüísticas, una salida
     desfuzzificada. La diferencia es que ahí la salida no es una propina, es la **potencia de un
     actuador real** — es el paso del §8 al §11.
 
@@ -514,8 +514,8 @@ de la variable controlada:
 
 ### 10.3 Ejemplo guiado: definir las especificaciones de un controlador de climatización
 
-Recorremos juntos el razonamiento que repetirás en el Taller 3, antes de aplicarlo al quemador de
-gas real de `EX4`.
+Recorremos juntos el razonamiento que repetirás en el Notebook 8, antes de aplicarlo al quemador de
+gas real de `N14`.
 
 **Problema**: queremos controlar la temperatura de una sala para que llegue a 21 ºC.
 
@@ -541,7 +541,7 @@ cumple la especificación, se ajustan reglas o ganancias (análisis de sensibili
     Controlar no es «conectar un motor»: es **definir el objetivo** (precisión), **acotar el
     tiempo**, **limitar el sobreimpulso** y **elegir el controlador** que lo cumpla, verificándolo
     con una simulación. Ese es el sentido del CE d y del CE e — y exactamente lo que se te pide en
-    `EX4`, con un quemador de gas real en vez de una sala.
+    `N14`, con un quemador de gas real en vez de una sala.
 
 ## 11. Controladores inteligentes (RA5-e)
 
@@ -589,7 +589,7 @@ Los **controladores inteligentes** sustituyen o complementan al PID usando técn
     No siempre. El PID es simple, barato y fiable en sistemas bien modelados. El controlador
     inteligente aporta cuando hay **no linealidad, retraso o ruido fuerte**. La decisión es
     *empezar simple* y añadir inteligencia solo si se justifica — es lo que comprobarás tú mismo en
-    `EX4`, que pide **dos enfoques distintos** para el mismo quemador.
+    `N14`, que pide **dos enfoques distintos** para el mismo quemador.
 
 ### 11.3 El sistema experto como controlador
 
@@ -761,7 +761,7 @@ es **explicable**: se puede consultar qué regla se disparó y por qué.
 ??? question "¿Qué es mejor, un PID o un controlador inteligente?"
     Depende del sistema. El PID es simple y fiable en sistemas lineales; el controlador inteligente
     (difuso, ANN, MPC) gana en no linealidades, retrasos o ruido. Se empieza simple y se añade
-    inteligencia si hace falta — es lo que comprobarás con las dos versiones que pide `EX4`.
+    inteligencia si hace falta — es lo que comprobarás con las dos versiones que pide `N14`.
 
 ??? question "¿`experta` funciona en Python moderno?"
     La librería (2019) falla en Python 3.10+ por `frozendict`. Con el parche
@@ -784,10 +784,10 @@ es **explicable**: se puede consultar qué regla se disparó y por qué.
 | Semana | Horas | Contenido | CE |
 |---|---|---|---|
 | 11 | 3 | DIKW, arquitectura y dinámica; estructuras de representación | RA5-a |
-| 12 | 3 | Taller 1 (`experta`) + guiadas; `EX1`; sistemas híbridos reglas/datos (`EX2`) | RA5-b |
-| 13 | 3 | Lógica difusa: Taller 2 (propinas); variación y dinámica | RA5-b, RA5-c |
-| 14 | 3 | Estrategias de control; controladores inteligentes; Taller 3 | RA5-d |
-| 15 | 3 | `EX3`, `EX4`; aplicaciones y tendencias; evaluación | RA5-d, RA5-e |
+| 12 | 3 | Notebook 10 (`experta`) + guiadas; `N11`; sistemas híbridos reglas/datos (`N12`) | RA5-b |
+| 13 | 3 | Lógica difusa: Notebook 5 (propinas); variación y dinámica | RA5-b, RA5-c |
+| 14 | 3 | Estrategias de control; controladores inteligentes; Notebook 8 | RA5-d |
+| 15 | 3 | `N13`, `N14`; aplicaciones y tendencias; evaluación | RA5-d, RA5-e |
 
 ## 17. Recursos
 
@@ -797,8 +797,8 @@ es **explicable**: se puede consultar qué regla se disparó y por qué.
     - [Notebooks guiados](UD05_ActividadesGuiadas.md) — **ocho** notebooks, de menor a mayor
       dificultad: `N01`-`N04` reglas, `N05`-`N07` lógica difusa y `N08` control
 - **Entregas** — seis, cada una con su rúbrica; [qué se entrega](UD05_Entregas.md):
-    - [T01 · simular un sistema experto](UD05_T01_Simular_sistema_experto_ES.md)
-    - y los cinco sistemas `EX0` a `EX4`, en dominios distintos a propósito
+    - [N10 · simular un sistema experto](notebooks/UD05_N10_simular_sistema_experto.ipynb)
+    - y los cinco sistemas `N15` a `N14`, en dominios distintos a propósito
 - Los notebooks se abren desde **Práctica** y **Entregas**, con descarga y apertura en Colab.
 
 ??? note "Referencias de la unidad"
@@ -820,15 +820,15 @@ es **explicable**: se puede consultar qué regla se disparó y por qué.
 
 | Peso | Instrumento |
 |---|---|
-| **40 %** actividades | El taller **T01** y los cinco sistemas **`EX0`**-**`EX4`**, cada uno con su rúbrica en la tarea de Moodle. Los ocho notebooks guiados son práctica y no puntúan |
+| **40 %** actividades | El taller **N10** y los cinco sistemas **`N15`**-**`N14`**, cada uno con su rúbrica en la tarea de Moodle. Los ocho notebooks guiados son práctica y no puntúan |
 | **60 %** prueba escrita | Prueba del RA5 en Moodle: preguntas de test y de desarrollo sobre el contenido de la unidad |
 
 - **La normativa exige alcanzar todos los RA** del módulo para superarlo (art. 5.1 de la Orden
   8/2025: la calificación del módulo está *«en función de la consecución de los RA»*; y las
   Instrucciones 26-27, que impiden calificar positivamente un módulo con RA no superados). El
   centro concreta ese mandato exigiendo **≥ 5 en cada RA**.
-- Los entregables `EX1`-`EX4` cubren un dominio fijo cada uno (medicina, deporte × 2, industria);
-  `EX0` es de libre elección y premia la originalidad.
+- Los entregables `N11`-`N14` cubren un dominio fijo cada uno (medicina, deporte × 2, industria);
+  `N15` es de libre elección y premia la originalidad.
 
 ## 19. Recuperación
 

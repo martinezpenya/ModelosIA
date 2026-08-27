@@ -18,7 +18,7 @@
 ## N01 · Introducción a OpenCV
 
 Visión por computador aplicada: cargar una imagen, detectar **bordes**, detectar **movimiento**
-comparando fotogramas consecutivos y calcular el **flujo óptico**. Es la base de `EX1` y de todo lo
+comparando fotogramas consecutivos y calcular el **flujo óptico**. Es la base de `N05` y de todo lo
 que viene después, porque la cámara es el único sensor del robot en esta unidad.
 
 | Recurso | Enlace |
@@ -44,7 +44,7 @@ todas las demás.
 
 Recorrido por los robots del simulador: qué sensores puede llevar cada uno, cómo se define un mundo
 con obstáculos y cómo se le pasa una función de control. Es el notebook que hay que tener a mano
-mientras se hacen `EX2` a `EX6`.
+mientras se hacen `N06` a `N10`.
 
 | Recurso | Enlace |
 |---|---|

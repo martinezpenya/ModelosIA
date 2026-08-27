@@ -10,10 +10,10 @@
 
 | # | Taller | Qué se entrega | Dónde |
 |---|---|---|---|
-| `T01` | [Mapa de sistemas inteligentes](UD01_T01_Mapa_sistemas_ES.md) | El mapa con su justificación | Tarea de Moodle |
-| `T02` | [Técnicas en casos reales](UD01_T02_Tecnicas_casos_ES.md) | La tabla de casos con la técnica de cada uno | Tarea de Moodle |
-| `T03` | [Nuevas interacciones](UD01_T03_Nuevas_interacciones_ES.md) | La propuesta y su análisis de eficiencia | Tarea de Moodle |
-| `T04` | [Línea del tiempo de la IA](UD01_T04_Linea_tiempo_ES.md) | La cronología documentada con fuentes | Tarea de Moodle |
+| `N02` | [Mapa de sistemas inteligentes](notebooks/UD01_N02_mapa_sistemas.ipynb) | El mapa con su justificación | Tarea de Moodle |
+| `N03` | [Técnicas en casos reales](notebooks/UD01_N03_tecnicas_casos.ipynb) | La tabla de casos con la técnica de cada uno | Tarea de Moodle |
+| `N04` | [Nuevas interacciones](notebooks/UD01_N04_nuevas_interacciones.ipynb) | La propuesta y su análisis de eficiencia | Tarea de Moodle |
+| `N05` | [Línea del tiempo de la IA](notebooks/UD01_N05_linea_tiempo.ipynb) | La cronología documentada con fuentes | Tarea de Moodle |
 
 
 ---

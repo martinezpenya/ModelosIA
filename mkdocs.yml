@@ -29,8 +29,8 @@ nav:
       - Notebooks guiados: UD00/UD00_ActividadesGuiadas.md
     - Entregas:
       - Qué se entrega: UD00/UD00_Entregas.md
-      - T01 Verificación del entorno y primer contenedor (hecho / no hecho): UD00/UD00_T01_Verificacion_entorno_ES.md
-      - T02 Contenedor de prácticas de IA (hecho / no hecho): UD00/UD00_T02_Contenedor_practicas_ES.md
+      - T01 Verificación del entorno y primer contenedor: UD00/UD00_T01_Verificacion_entorno_ES.md
+      - T02 Contenedor de prácticas de IA: UD00/UD00_T02_Contenedor_practicas_ES.md
   - UD01:
     - Caracterización de sistemas de IA: UD01/UD01_ES.md
     - Diapositivas: UD01/UD01_Diapositivas.md
@@ -39,10 +39,10 @@ nav:
       - Notebooks guiados: UD01/UD01_ActividadesGuiadas.md
     - Entregas:
       - Qué se entrega: UD01/UD01_Entregas.md
-      - T01 Mapa de sistemas inteligentes: UD01/UD01_T01_Mapa_sistemas_ES.md
-      - T02 Técnicas en casos reales: UD01/UD01_T02_Tecnicas_casos_ES.md
-      - T03 Nuevas interacciones: UD01/UD01_T03_Nuevas_interacciones_ES.md
-      - T04 Línea del tiempo de la IA: UD01/UD01_T04_Linea_tiempo_ES.md
+      - N02 Mapa de sistemas inteligentes: UD01/notebooks/UD01_N02_mapa_sistemas.ipynb
+      - N03 Técnicas de IA en casos reales: UD01/notebooks/UD01_N03_tecnicas_casos.ipynb
+      - N04 Nuevas formas de interacción: UD01/notebooks/UD01_N04_nuevas_interacciones.ipynb
+      - N05 Línea del tiempo de la IA: UD01/notebooks/UD01_N05_linea_tiempo.ipynb
   - UD02:
     - Modelos de IA y resolución de problemas: UD02/UD02_ES.md
     - Diapositivas: UD02/UD02_Diapositivas.md
@@ -50,8 +50,8 @@ nav:
       - Ejercicios de autoevaluación: UD02/UD02_Ejercicios.md
     - Entregas:
       - Qué se entrega: UD02/UD02_Entregas.md
-      - T01 Control difuso con scikit-fuzzy: UD02/UD02_T01_Control_difuso_ES.md
-      - T02 Sistema basado en reglas con experta: UD02/UD02_T02_Sistema_reglas_ES.md
+      - N01 Control difuso con scikit-fuzzy: UD02/notebooks/UD02_N01_control_difuso.ipynb
+      - N02 Sistema basado en reglas con experta: UD02/notebooks/UD02_N02_sistema_reglas.ipynb
       - Robocode Tank Royale: UD02/UD02_Robocode_Entrega_ES.md
       - T03 Preparar el entorno para Robocode (hecho / no hecho): UD02/UD02_T03_Preparar_entorno_ES.md
       - T04 Control de versiones con GitHub (hecho / no hecho): UD02/UD02_T04_GitHub_ES.md
@@ -68,12 +68,12 @@ nav:
       - Notebooks guiados: UD05/UD05_ActividadesGuiadas.md
     - Entregas:
       - Qué se entrega: UD05/UD05_Entregas.md
-      - T01 Simular un sistema experto: UD05/UD05_T01_Simular_sistema_experto_ES.md
-      - EX0 Sistema experto de libre elección: UD05/notebooks/UD05_EX0_sistema_experto_libre.ipynb
-      - EX1 Detectar lesiones de rodilla: UD05/notebooks/UD05_EX1_lesiones_rodilla.ipynb
-      - EX2 Previsión del valor de mercado: UD05/notebooks/UD05_EX2_valor_mercado_jugadores.ipynb
-      - EX3 Centrocampistas con potencial: UD05/notebooks/UD05_EX3_centrocampistas_jovenes.ipynb
-      - EX4 Simulador de quemador de gas: UD05/notebooks/UD05_EX4_quemador_gas.ipynb
+      - N10 Simular un sistema experto: UD05/notebooks/UD05_N10_simular_sistema_experto.ipynb
+      - N11 Detectar lesiones de rodilla: UD05/notebooks/UD05_N11_lesiones_rodilla.ipynb
+      - N12 Previsión del valor de mercado: UD05/notebooks/UD05_N12_valor_mercado_jugadores.ipynb
+      - N13 Centrocampistas con potencial: UD05/notebooks/UD05_N13_centrocampistas_jovenes.ipynb
+      - N14 Simulador de quemador de gas: UD05/notebooks/UD05_N14_quemador_gas.ipynb
+      - N15 Sistema experto de libre elección: UD05/notebooks/UD05_N15_sistema_experto_libre.ipynb
   - UD03:
     - Procesamiento del Lenguaje Natural: UD03/UD03_ES.md
     - Diapositivas: UD03/UD03_Diapositivas.md
@@ -82,11 +82,11 @@ nav:
       - Notebooks guiados: UD03/UD03_ActividadesGuiadas.md
     - Entregas:
       - Qué se entrega: UD03/UD03_Entregas.md
-      - T01 Del texto al vector: UD03/UD03_T01_Del_texto_al_vector_ES.md
-      - T02 Un sistema de PLN de punta a punta: UD03/UD03_T02_Sistema_PLN_ES.md
-      - EX2 Clasificador de preguntas: UD03/notebooks/UD03_EX2_clasificador_preguntas.ipynb
-      - EX4 Sentimiento en IMDb: UD03/notebooks/UD03_EX4_sentimiento_imdb.ipynb
-      - EX5 Asistente virtual por voz: UD03/notebooks/UD03_EX5_asistente_virtual.ipynb
+      - N08 Del texto al vector: UD03/notebooks/UD03_N08_del_texto_al_vector.ipynb
+      - N09 Clasificador de preguntas: UD03/notebooks/UD03_N09_clasificador_preguntas.ipynb
+      - N10 Sentimiento en IMDb: UD03/notebooks/UD03_N10_sentimiento_imdb.ipynb
+      - N11 Asistente virtual por voz: UD03/notebooks/UD03_N11_asistente_virtual.ipynb
+      - N12 Un sistema de PLN de punta a punta: UD03/notebooks/UD03_N12_sistema_pln.ipynb
   - UD04:
     - Análisis de sistemas robotizados: UD04/UD04_ES.md
     - Diapositivas: UD04/UD04_Diapositivas.md
@@ -95,14 +95,14 @@ nav:
       - Notebooks guiados: UD04/UD04_ActividadesGuiadas.md
     - Entregas:
       - Qué se entrega: UD04/UD04_Entregas.md
-      - T01 Cinemática de un manipulador: UD04/UD04_T01_Cinematica_manipulador_ES.md
-      - EX1 Ejercicios de OpenCV: UD04/notebooks/UD04_EX1_ejercicios_opencv.ipynb
-      - EX2 Navegar con cámara, por reglas: UD04/notebooks/UD04_EX2_navegar_camara.ipynb
-      - EX3 Navegar con cámara, con lógica difusa: UD04/notebooks/UD04_EX3_navegar_camara_difusa.ipynb
-      - EX5 Controlar el robot con una red neuronal: UD04/notebooks/UD04_EX5_red_neuronal.ipynb
-      - T02 Diseño de un sistema robotizado (apto / no apto): UD04/UD04_T02_Diseno_sistema_robotizado_ES.md
-      - EX4 Generar los datos de entrenamiento (apto / no apto): UD04/notebooks/UD04_EX4_generar_datos_entrenamiento.ipynb
-      - EX6 Aprendizaje por refuerzo con NEAT (apto / no apto): UD04/notebooks/UD04_EX6_neat.ipynb
+      - N04 Cinemática de un manipulador: UD04/notebooks/UD04_N04_cinematica_manipulador.ipynb
+      - N05 Ejercicios de OpenCV: UD04/notebooks/UD04_N05_ejercicios_opencv.ipynb
+      - N06 Navegar con cámara, por reglas: UD04/notebooks/UD04_N06_navegar_camara.ipynb
+      - N07 Navegar con cámara, con lógica difusa: UD04/notebooks/UD04_N07_navegar_camara_difusa.ipynb
+      - N09 Controlar el robot con una red neuronal: UD04/notebooks/UD04_N09_red_neuronal.ipynb
+      - N08 Generar los datos de entrenamiento (apto / no apto): UD04/notebooks/UD04_N08_generar_datos_entrenamiento.ipynb
+      - N10 Aprendizaje por refuerzo con NEAT (apto / no apto): UD04/notebooks/UD04_N10_neat.ipynb
+      - N11 Diseño de un sistema robotizado (apto / no apto): UD04/notebooks/UD04_N11_diseno_sistema_robotizado.ipynb
   - UD06:
     - Aplicación de principios legales y éticos de la IA: UD06/UD06_ES.md
     - Diapositivas: UD06/UD06_Diapositivas.md
@@ -111,7 +111,7 @@ nav:
       - Documentales, noticias y notebooks: UD06/UD06_ActividadesGuiadas.md
     - Entregas:
       - Qué se entrega: UD06/UD06_Entregas.md
-      - T02 Auditoría de sesgos con Fairlearn: UD06/UD06_T02_Auditoria_sesgos_ES.md
+      - N03 Auditoría de sesgos con Fairlearn: UD06/notebooks/UD06_N03_auditoria_sesgos.ipynb
       - D01 Límites éticos de la IA: UD06/UD06_D01_Debate_limites_eticos_ES.md
       - D02 El algoritmo contra el crimen: UD06/UD06_D02_Debate_algoritmo_crimen_ES.md
   - Sobre mi: sobremi.md
@@ -270,8 +270,11 @@ plugins:
             # UD02 era un identificador libre) se retiraron el 2026-08-24 al fusionar la UD02 real
             # (RA2): 'UD02/UD02_ES.md' ya no está libre, es la página nueva y un redirect la habría
             # tapado sin avisar.
-            # Un taller, una página (2026-08-23): la página que los reunía desaparece.
-            'UD05/UD05_Talleres.md': 'UD05/UD05_T01_Simular_sistema_experto_ES.md'
+            # Un taller, una página (2026-08-23): la página que los reunía desaparece. Y el
+            # 2026-08-27 los talleres de la UD05 pasaron a ser notebooks, así que el destino ya no
+            # existe; el plugin no acepta `.ipynb` como destino, así que apunta al índice de
+            # entregas, que es lo que hoy hace el papel de aquella página.
+            'UD05/UD05_Talleres.md': 'UD05/UD05_Entregas.md'
             # Los notebooks de la UD05 se renombraron al castellano el 2026-08-23 y sus URLs
             # antiguas (publicadas ese mismo día) quedan rotas. NO se pueden redirigir: el plugin
             # solo acepta fuentes `.md` y avisa «is not a valid markdown file» con un `.ipynb`.

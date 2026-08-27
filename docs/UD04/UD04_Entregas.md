@@ -7,53 +7,53 @@
 
     | Actividad | Régimen |
     |---|---|
-    | [`T01` Cinemática de un manipulador](UD04_T01_Cinematica_manipulador_ES.md) | Entrega evaluable |
-    | `EX1` Ejercicios de OpenCV | Entrega evaluable |
-    | `EX2` Navegar con cámara, por reglas | Entrega evaluable |
-    | `EX3` Navegar con cámara, con lógica difusa | Entrega evaluable |
-    | `EX5` Controlar el robot con una red neuronal | Entrega evaluable |
-    | [`T02` Diseño de un sistema robotizado](UD04_T02_Diseno_sistema_robotizado_ES.md) | Apto / no apto |
-    | `EX4` Generar los datos de entrenamiento | Apto / no apto |
-    | `EX6` Aprendizaje por refuerzo con NEAT | Apto / no apto |
+    | [`N04` Cinemática de un manipulador](notebooks/UD04_N04_cinematica_manipulador.ipynb) | Entrega evaluable |
+    | [`N05` Ejercicios de OpenCV](notebooks/UD04_N05_ejercicios_opencv.ipynb) | Entrega evaluable |
+    | [`N06` Navegar con cámara, por reglas](notebooks/UD04_N06_navegar_camara.ipynb) | Entrega evaluable |
+    | [`N07` Navegar con cámara, con lógica difusa](notebooks/UD04_N07_navegar_camara_difusa.ipynb) | Entrega evaluable |
+    | [`N08` Generar los datos de entrenamiento](notebooks/UD04_N08_generar_datos_entrenamiento.ipynb) | Apto / no apto |
+    | [`N09` Controlar el robot con una red neuronal](notebooks/UD04_N09_red_neuronal.ipynb) | Entrega evaluable |
+    | [`N10` Aprendizaje por refuerzo con NEAT](notebooks/UD04_N10_neat.ipynb) | Apto / no apto |
+    | [`N11` Diseño de un sistema robotizado](notebooks/UD04_N11_diseno_sistema_robotizado.ipynb) | Apto / no apto |
 
     El **peso** de cada entrega está en el libro de calificaciones de Moodle, no aquí.
 
 !!! warning "No son independientes: son una secuencia"
-    `EX4` genera el fichero de datos que necesita `EX5`. Si te saltas el orden o pierdes ese
+    `N08` genera el fichero de datos que necesita `N09`. Si te saltas el orden o pierdes ese
     fichero, tendrás que volver atrás.
 
     ```mermaid
     flowchart LR
-        A["EX1 · OpenCV<br/>ver la imagen"] --> B["EX2 · reglas<br/>seguir la línea"]
-        B --> C["EX3 · lógica difusa<br/>la misma línea, suave"]
-        C --> D["EX4 · generar datos<br/>conduces y se graba"]
-        D -->|training_data.txt| E["EX5 · red neuronal<br/>aprende de tus datos"]
-        E -->|robot.keras| F["EX6 · NEAT<br/>evoluciona sin datos"]
+        A["N05 · OpenCV<br/>ver la imagen"] --> B["N06 · reglas<br/>seguir la línea"]
+        B --> C["N07 · lógica difusa<br/>la misma línea, suave"]
+        C --> D["N08 · generar datos<br/>conduces y se graba"]
+        D -->|training_data.txt| E["N09 · red neuronal<br/>aprende de tus datos"]
+        E -->|robot.keras| F["N10 · NEAT<br/>evoluciona sin datos"]
     ```
 
 !!! note "Entorno"
     Todos funcionan en **Colab** y en el contenedor de la UD00. La primera celda instala lo
     necesario. Dos avisos que te ahorrarán tiempo:
 
-    - **No instales `tensorflow` a mano.** `EX5` usa **Keras 3**, que funciona con el backend que
+    - **No instales `tensorflow` a mano.** `N09` usa **Keras 3**, que funciona con el backend que
       haya: en Colab usa el TensorFlow que ya viene, y en local, PyTorch.
     - Si ves código antiguo con `keras.backend.mean` o `keras.backend.abs`, **ya no existen** en
       Keras 3: el equivalente es `keras.ops.mean` y `keras.ops.abs`.
 
-## EX1 · Ejercicios de OpenCV
+## N05 · Ejercicios de OpenCV
 
 Tres ejercicios de visión sobre imagen y vídeo: detectar **bordes** y enmarcarlos, detectar
 **movimiento** entre fotogramas consecutivos y calcular el **flujo óptico**.
 
 | Recurso | Enlace |
 |---|---|
-| Notebook | [`UD04_EX1_ejercicios_opencv.ipynb`](notebooks/UD04_EX1_ejercicios_opencv.ipynb) |
+| Notebook | [`UD04_N05_ejercicios_opencv.ipynb`](notebooks/UD04_N05_ejercicios_opencv.ipynb) |
 | Imagen | [`EX1.-camp.png`](notebooks/EX1.-camp.png) |
 | Vídeo | [`EX1.-vtest.mp4`](notebooks/EX1.-vtest.mp4) |
 
 **Se entrega**: el notebook con los tres ejercicios resueltos y sus salidas.
 
-## EX2 · Navegar con cámara, por reglas
+## N06 · Navegar con cámara, por reglas
 
 El robot tiene que **seguir una línea** en el suelo usando solo lo que ve su cámara. Aquí escribes
 tú todas las condiciones: dónde está la línea en la imagen, y qué hacer en cada caso.
@@ -62,50 +62,50 @@ Dos escenarios: **línea simple** y **línea doble**.
 
 | Recurso | Enlace |
 |---|---|
-| Notebook | [`UD04_EX2_navegar_camara.ipynb`](notebooks/UD04_EX2_navegar_camara.ipynb) |
+| Notebook | [`UD04_N06_navegar_camara.ipynb`](notebooks/UD04_N06_navegar_camara.ipynb) |
 | Pistas | [1](notebooks/EX2_pista_1.png) · [2](notebooks/EX2_pista_2.png) · [3](notebooks/EX2_pista_3.png) · [4](notebooks/EX2_pista_4.png) · [5](notebooks/EX2_pista_5.png) · [6](notebooks/EX2_pista_6.png) |
 
 **Se entrega**: el notebook con el controlador funcionando en los dos escenarios.
 
-## EX3 · Navegar con cámara, con lógica difusa
+## N07 · Navegar con cámara, con lógica difusa
 
-El **mismo problema** que `EX2`, resuelto con lógica difusa: variables lingüísticas, funciones de
+El **mismo problema** que `N06`, resuelto con lógica difusa: variables lingüísticas, funciones de
 pertenencia, reglas y desfuzzificación. Enlaza directamente con la UD05.
 
 | Recurso | Enlace |
 |---|---|
-| Notebook | [`UD04_EX3_navegar_camara_difusa.ipynb`](notebooks/UD04_EX3_navegar_camara_difusa.ipynb) |
-| Pistas | Las mismas seis de `EX2` |
+| Notebook | [`UD04_N07_navegar_camara_difusa.ipynb`](notebooks/UD04_N07_navegar_camara_difusa.ipynb) |
+| Pistas | Las mismas seis de `N06` |
 
 **Se entrega**: el notebook con el sistema difuso completo y el robot navegando en los dos
 escenarios.
 
 !!! tip "Compara antes de entregar"
     Ya has resuelto el mismo problema de dos formas. Antes de entregar, apunta en qué se diferencian
-    el comportamiento de `EX2` y el de `EX3`: no cuál «va mejor», sino **cómo se mueve el robot** en
+    el comportamiento de `N06` y el de `N07`: no cuál «va mejor», sino **cómo se mueve el robot** en
     cada caso, y por qué.
 
-## EX4 · Generar los datos de entrenamiento
+## N08 · Generar los datos de entrenamiento
 
 Aquí no se entrena nada todavía: **conduces tú el robot** y el notebook graba lo que ve la cámara
 junto con lo que tú decidiste hacer. El resultado es un conjunto de ejemplos etiquetados.
 
 | Recurso | Enlace |
 |---|---|
-| Notebook | [`UD04_EX4_generar_datos_entrenamiento.ipynb`](notebooks/UD04_EX4_generar_datos_entrenamiento.ipynb) |
+| Notebook | [`UD04_N08_generar_datos_entrenamiento.ipynb`](notebooks/UD04_N08_generar_datos_entrenamiento.ipynb) |
 
 **Se entrega**: el notebook **y el fichero `training_data.txt` con tu nombre**. Guárdatelo: es la
-entrada de `EX5`.
+entrada de `N09`.
 
-## EX5 · Controlar el robot con una red neuronal
+## N09 · Controlar el robot con una red neuronal
 
-Lees el `training_data.txt` de `EX4`, **construyes y entrenas** una red neuronal con esos ejemplos y
+Lees el `training_data.txt` de `N08`, **construyes y entrenas** una red neuronal con esos ejemplos y
 la usas para conducir el robot. Tres celdas están vacías a propósito: la arquitectura de la red, el
 entrenamiento y la función de control.
 
 | Recurso | Enlace |
 |---|---|
-| Notebook | [`UD04_EX5_red_neuronal.ipynb`](notebooks/UD04_EX5_red_neuronal.ipynb) |
+| Notebook | [`UD04_N09_red_neuronal.ipynb`](notebooks/UD04_N09_red_neuronal.ipynb) |
 
 **Se entrega**: el notebook **y el fichero `.keras` con tu nombre**, con la red ya entrenada. Con ese
 fichero, la celda de carga permite **probar cómo se comporta tu red sin repetir el entrenamiento**
@@ -117,14 +117,14 @@ fichero, la celda de carga permite **probar cómo se comporta tu red sin repetir
     Una red entrenada con esos datos aprende a ir recto siempre, que es lo que más acierta de media
     y lo que peor sigue la línea.
 
-## EX6 · Aprendizaje por refuerzo con NEAT
+## N10 · Aprendizaje por refuerzo con NEAT
 
 El mismo control, sin ejemplos. **NEAT** evoluciona a la vez los pesos **y la topología** de la red:
 tú solo defines qué entra, qué sale y cómo se mide si lo está haciendo bien.
 
 | Recurso | Enlace |
 |---|---|
-| Notebook | [`UD04_EX6_neat.ipynb`](notebooks/UD04_EX6_neat.ipynb) |
+| Notebook | [`UD04_N10_neat.ipynb`](notebooks/UD04_N10_neat.ipynb) |
 
 **Se entrega**: el notebook y una **memoria en PDF** con tus pruebas variando `fitness_threshold` y
 `pop_size`, la justificación de `num_inputs` y `num_outputs`, y una reflexión sobre el aprendizaje
@@ -136,4 +136,4 @@ por refuerzo. Es de **apto / no apto**: sin la memoria no cuenta como entregado.
     que no haya dos versiones del mismo dato.
 
 ---
-[Volver a la UD04](UD04_ES.md) · [Notebooks guiados](UD04_ActividadesGuiadas.md) · [Taller 1](UD04_T01_Cinematica_manipulador_ES.md) · [Taller 2](UD04_T02_Diseno_sistema_robotizado_ES.md)
+[Volver a la UD04](UD04_ES.md) · [Notebooks guiados](UD04_ActividadesGuiadas.md) · [Notebook 4](notebooks/UD04_N04_cinematica_manipulador.ipynb) · [Notebook 11](notebooks/UD04_N11_diseno_sistema_robotizado.ipynb)

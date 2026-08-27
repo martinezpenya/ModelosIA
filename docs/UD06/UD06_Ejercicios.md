@@ -223,4 +223,4 @@
 
 ---
 [Volver a la UD06](UD06_ES.md) · [Notebook 2](notebooks/UD06_N02_analisis_caso_etico.ipynb) ·
-[Taller 2](UD06_T02_Auditoria_sesgos_ES.md)
+[Notebook 3](notebooks/UD06_N03_auditoria_sesgos.ipynb)

@@ -226,7 +226,7 @@ Para agarrar, el robot usa **pinzas**, y aquí hay un compromiso claro:
 !!! tip "Pensar en «robot + tarea», no en «robot»"
     No se elige el robot más caro: se define primero **la tarea** —qué pieza, qué peso, qué ritmo,
     qué precisión, qué entorno— y después se busca el modelo que cumple payload, alcance,
-    repetibilidad y seguridad. Es el enfoque del §12 y del Taller 2.
+    repetibilidad y seguridad. Es el enfoque del §12 y del Notebook 11.
 
 ## 5. Qué clase de problema resuelve la robótica
 
@@ -533,7 +533,7 @@ alternativas en los problemas difíciles de percepción, como el propio SLAM.
 !!! tip "Pero no siempre hace falta la artillería"
     Las técnicas estadísticas son a veces **demasiado engorrosas** para lo que se necesita, y una
     solución más simple es igual de efectiva en la práctica. Es el mismo criterio de la UD05 con el
-    PID: empezar simple y añadir complejidad solo cuando se justifica. Los `EX2` y `EX3` de esta
+    PID: empezar simple y añadir complejidad solo cuando se justifica. Los `N06` y `N07` de esta
     unidad navegan con reglas y con lógica difusa sobre los píxeles de una cámara, sin ningún filtro
     probabilístico, y funcionan.
 
@@ -588,7 +588,7 @@ prácticos incorporen **conocimiento previo** sobre el robot, el entorno y la ta
 forma de aprender rápido y de comportarse con seguridad mientras aprende.
 
 !!! tip "Esto conecta con toda la unidad"
-    `EX4`, `EX5` y `EX6` hacen exactamente este recorrido en pequeño y **en simulación**, que es
+    `N08`, `N09` y `N10` hacen exactamente este recorrido en pequeño y **en simulación**, que es
     donde se puede: generar datos conduciendo el robot, entrenar una red con ellos, y después
     dejar que la solución **evolucione** sin datos etiquetados.
 
@@ -632,24 +632,24 @@ una línea** en el suelo, y el problema se resuelve cuatro veces.
 
 | Entregable | Técnica | Qué escribes tú | Qué sale del programa |
 |---|---|---|---|
-| `EX2` | **Reglas** sobre los píxeles | Todas las condiciones, a mano | Nada: el comportamiento es el que programaste |
-| `EX3` | **Lógica difusa** | Las variables lingüísticas y las reglas | La transición suave entre ellas |
-| `EX5` | **Red neuronal supervisada** | La arquitectura y el entrenamiento; los datos salen de `EX4` | El comportamiento, aprendido de tus propios ejemplos |
-| `EX6` | **Neuroevolución (NEAT)** | La función de aptitud | La red **y su topología**, evolucionadas sin ejemplos |
+| `N06` | **Reglas** sobre los píxeles | Todas las condiciones, a mano | Nada: el comportamiento es el que programaste |
+| `N07` | **Lógica difusa** | Las variables lingüísticas y las reglas | La transición suave entre ellas |
+| `N09` | **Red neuronal supervisada** | La arquitectura y el entrenamiento; los datos salen de `N08` | El comportamiento, aprendido de tus propios ejemplos |
+| `N10` | **Neuroevolución (NEAT)** | La función de aptitud | La red **y su topología**, evolucionadas sin ejemplos |
 
 ```mermaid
 flowchart LR
-    A["EX2 · reglas<br/>tú decides todo"] --> B["EX3 · lógica difusa<br/>reglas + grados"]
-    B --> C["EX4 · generar datos<br/>conduces y se graba"]
-    C --> D["EX5 · red neuronal<br/>aprende de tus datos"]
-    D --> E["EX6 · NEAT<br/>evoluciona sin datos"]
+    A["N06 · reglas<br/>tú decides todo"] --> B["N07 · lógica difusa<br/>reglas + grados"]
+    B --> C["N08 · generar datos<br/>conduces y se graba"]
+    C --> D["N09 · red neuronal<br/>aprende de tus datos"]
+    D --> E["N10 · NEAT<br/>evoluciona sin datos"]
 ```
 
 !!! note "Lo que hay que observar al compararlas"
     No es cuál «funciona mejor», sino **qué se gana y qué se pierde** en cada salto: cuánto código
     escribes, cuánto tienes que entender del problema, cuántos datos necesitas, cuánto tarda en
     estar listo y —lo más importante— **si puedes explicar por qué el robot hizo lo que hizo**. Las
-    reglas de `EX2` se leen; los pesos de la red de `EX5`, no. Es la misma tensión entre
+    reglas de `N06` se leen; los pesos de la red de `N09`, no. Es la misma tensión entre
     interpretabilidad y potencia que viste en la UD05 con los sistemas expertos, y que la UD06
     convierte en un problema legal.
 
@@ -732,11 +732,11 @@ flowchart TD
 Los de **fuerza/par** son imprescindibles en tareas de contacto con control de impedancia. La
 **visión** es lo que permite el *pick and place* sin posiciones fijas —piezas en cualquier
 orientación— y es la puerta de entrada de la IA a la célula: es justo lo que se practica en el
-notebook de OpenCV y en `EX1`.
+notebook de OpenCV y en `N05`.
 
 ### 12.3 Ejemplo guiado: elegir el robot y evitar la singularidad
 
-Recorremos el razonamiento que repetirás en el Taller 2.
+Recorremos el razonamiento que repetirás en el Notebook 11.
 
 **Problema**: una línea de ensamblaje tiene que coger una pieza de 1,5 kg de un transportador y
 colocarla en una estación a 700 mm, con repetibilidad de ±0,1 mm.
@@ -1012,9 +1012,9 @@ world.seconds(30, [mi_controlador], real_time=True)
 | Semana | Horas | Contenido | CE |
 |---|---|---|---|
 | 15 | 3 | Métodos y aplicaciones; hardware, sensores y actuadores; qué problema resuelve la robótica | RA4-a |
-| 16 | 3 | Cinemática directa e inversa, singularidades; Taller 1 y notebook de cinemática | RA4-a, RA4-b |
-| 17 | 3 | Espacio de configuración y planificación; percepción y SLAM; OpenCV y `EX1`; `EX2` y `EX3` | RA4-b, RA4-c |
-| 18 | 3 | Técnicas de programación comparadas (`EX4`-`EX6`); diseño de la célula, seguridad y normativa; Taller 2; evaluación | RA4-c, RA4-d |
+| 16 | 3 | Cinemática directa e inversa, singularidades; Notebook 4 y notebook de cinemática | RA4-a, RA4-b |
+| 17 | 3 | Espacio de configuración y planificación; percepción y SLAM; OpenCV y `N05`; `N06` y `N07` | RA4-b, RA4-c |
+| 18 | 3 | Técnicas de programación comparadas (`N08`-`N10`); diseño de la célula, seguridad y normativa; Notebook 11; evaluación | RA4-c, RA4-d |
 
 ## 18. Recursos
 
@@ -1023,8 +1023,8 @@ world.seconds(30, [mi_controlador], real_time=True)
     - [Ejercicios de autoevaluación](UD04_Ejercicios.md)
     - [Notebooks guiados](UD04_ActividadesGuiadas.md) — `N01` a `N03`
 - **Entregas** — [qué se entrega](UD04_Entregas.md):
-    - con rúbrica: [T01 · cinemática de un manipulador](UD04_T01_Cinematica_manipulador_ES.md) y los notebooks `EX1`, `EX2`, `EX3` y `EX5`
-    - de **apto / no apto**: [T02 · diseño de un sistema robotizado](UD04_T02_Diseno_sistema_robotizado_ES.md), `EX4` y `EX6`
+    - con rúbrica: [N04 · cinemática de un manipulador](notebooks/UD04_N04_cinematica_manipulador.ipynb) y los notebooks `N05`, `N06`, `N07` y `N09`
+    - de **apto / no apto**: [N11 · diseño de un sistema robotizado](notebooks/UD04_N11_diseno_sistema_robotizado.ipynb), `N08` y `N10`
 - Los notebooks se abren desde **Práctica** y **Entregas**, con descarga y apertura en Colab.
 
 ??? note "Referencias de la unidad"
@@ -1040,22 +1040,22 @@ world.seconds(30, [mi_controlador], real_time=True)
 
 | Peso | Instrumento |
 |---|---|
-| **40 %** actividades | Con rúbrica en la tarea de Moodle: el taller **T01** y los notebooks **`EX1`**, **`EX2`**, **`EX3`** y **`EX5`**. De **apto / no apto**: el taller **T02** y los notebooks **`EX4`** y **`EX6`** |
+| **40 %** actividades | Con rúbrica en la tarea de Moodle: el taller **N04** y los notebooks **`N05`**, **`N06`**, **`N07`** y **`N09`**. De **apto / no apto**: el taller **N11** y los notebooks **`N08`** y **`N10`** |
 | **60 %** prueba escrita | Prueba del RA4 en Moodle: preguntas de test y de desarrollo sobre el contenido de la unidad |
 
 - **La normativa exige alcanzar todos los RA** del módulo para superarlo (art. 5.1 de la Orden
   8/2025: la calificación del módulo está *«en función de la consecución de los RA»*; y las
   Instrucciones 26-27, que impiden calificar positivamente un módulo con RA no superados). El centro
   concreta ese mandato exigiendo **≥ 5 en cada RA**.
-- Los entregables forman una **secuencia**: `EX4` genera los datos que necesita `EX5`. Conviene no
+- Los entregables forman una **secuencia**: `N08` genera los datos que necesita `N09`. Conviene no
   dejarlos para el final ni saltarse el orden.
 
 | CE | Dónde se trabaja | Con qué se evalúa |
 |---|---|---|
-| RA4-a | §4-6 | Taller 1, notebook de cinemática, prueba del RA4 |
-| RA4-b | §7-9 | `EX1`, `EX2`, `EX3`, prueba del RA4 |
-| RA4-c | §10-11 | `EX2` a `EX6` comparados, prueba del RA4 |
-| RA4-d | §12 | Taller 2, `EX5`, `EX6`, prueba del RA4 |
+| RA4-a | §4-6 | Notebook 4, notebook de cinemática, prueba del RA4 |
+| RA4-b | §7-9 | `N05`, `N06`, `N07`, prueba del RA4 |
+| RA4-c | §10-11 | `N06` a `N10` comparados, prueba del RA4 |
+| RA4-d | §12 | Notebook 11, `N09`, `N10`, prueba del RA4 |
 
 ## 20. Recuperación
 

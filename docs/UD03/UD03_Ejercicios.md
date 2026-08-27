@@ -183,4 +183,4 @@
     Las soluciones no se publican: se corrigen y comentan en clase.
 
 ---
-[Volver a la UD03](UD03_ES.md) · Talleres: [T01](UD03_T01_Del_texto_al_vector_ES.md) · [T02](UD03_T02_Sistema_PLN_ES.md) · [Entregables](UD03_Entregas.md)
+[Volver a la UD03](UD03_ES.md) · Talleres: [N08](notebooks/UD03_N08_del_texto_al_vector.ipynb) · [N12](notebooks/UD03_N12_sistema_pln.ipynb) · [Entregables](UD03_Entregas.md)
