@@ -14,8 +14,8 @@
     | `EX2` Previsión del valor de mercado | Entrega evaluable |
     | `EX3` Centrocampistas con potencial | Entrega evaluable |
     | `EX4` Simulador de quemador de gas | Entrega evaluable |
-    | [`T02` Lógica difusa, las propinas](UD05_T02_Logica_difusa_ES.md) | Práctica |
-    | [`T03` Controlador experto de un proceso](UD05_T03_Controlador_experto_ES.md) | Práctica |
+    | [`N05` Lógica difusa, las propinas](notebooks/UD05_N05_logica_difusa_propinas.ipynb) | Práctica |
+    | [`N08` Controlador experto de un proceso](notebooks/UD05_N08_controlador_experto.ipynb) | Práctica |
 
     **No se promedian a partes iguales**: cada entrega tiene su propio peso, y lo tienes en el libro
     de calificaciones de Moodle.
@@ -39,5 +39,5 @@
     que no haya dos versiones del mismo dato.
 
 ---
-[Volver a la UD05](UD05_ES.md) · [Ejercicios](UD05_Ejercicios.md) · [Taller 1](UD05_T01_Simular_sistema_experto_ES.md) · [Taller 2](UD05_T02_Logica_difusa_ES.md) · [Taller 3](UD05_T03_Controlador_experto_ES.md) ·
+[Volver a la UD05](UD05_ES.md) · [Ejercicios](UD05_Ejercicios.md) · [Taller 1](UD05_T01_Simular_sistema_experto_ES.md) · [Notebook 5](notebooks/UD05_N05_logica_difusa_propinas.ipynb) · [Notebook 8](notebooks/UD05_N08_controlador_experto.ipynb) ·
 [Notebooks guiados](UD05_ActividadesGuiadas.md)

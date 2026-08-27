@@ -239,4 +239,4 @@ seis respuestas de la Fase 6. Extensión orientativa: **dos o tres páginas**.
 
 ---
 [Volver a la UD06](UD06_ES.md) · [Ejercicios](UD06_Ejercicios.md) ·
-[Taller 1](UD06_T01_Analisis_caso_etico_ES.md)
+[Notebook 2](notebooks/UD06_N02_analisis_caso_etico.ipynb)

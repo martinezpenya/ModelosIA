@@ -677,7 +677,7 @@ señala los riesgos (correos ambiguos, privacidad de los datos de los clientes s
 - **Práctica** — se hace, no se entrega ni puntúa:
     - [Ejercicios de autoevaluación](UD01_Ejercicios.md)
     - [Notebooks guiados](UD01_ActividadesGuiadas.md) — el notebook demo del profesor
-- **Entregas** — las cuatro se corrigen con rúbrica; [qué se entrega y cuándo](UD01_Entregas.md):
+- **Entregas** — las cuatro se corrigen con rúbrica; [qué se entrega](UD01_Entregas.md):
     - [T01 · mapa de sistemas inteligentes](UD01_T01_Mapa_sistemas_ES.md) · [T02 · técnicas en casos reales](UD01_T02_Tecnicas_casos_ES.md) · [T03 · nuevas interacciones](UD01_T03_Nuevas_interacciones_ES.md) · [T04 · línea del tiempo](UD01_T04_Linea_tiempo_ES.md)
 - Los notebooks se abren desde **Práctica** y **Entregas**, con descarga y apertura en Colab.
 

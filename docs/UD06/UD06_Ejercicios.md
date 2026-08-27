@@ -218,9 +218,9 @@
     §8.2.
 95. Coge cualquier noticia de la lista de actualidad de las [actividades
     guiadas](UD06_ActividadesGuiadas.md) y analízala con la plantilla del [Taller
-    1](UD06_T01_Analisis_caso_etico_ES.md): hechos, partes afectadas, principios en conflicto,
+    1](notebooks/UD06_N02_analisis_caso_etico.ipynb): hechos, partes afectadas, principios en conflicto,
     normativa aplicable y propuesta.
 
 ---
-[Volver a la UD06](UD06_ES.md) · [Taller 1](UD06_T01_Analisis_caso_etico_ES.md) ·
+[Volver a la UD06](UD06_ES.md) · [Notebook 2](notebooks/UD06_N02_analisis_caso_etico.ipynb) ·
 [Taller 2](UD06_T02_Auditoria_sesgos_ES.md)

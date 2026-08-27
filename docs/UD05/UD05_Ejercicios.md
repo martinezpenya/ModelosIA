@@ -127,4 +127,4 @@
     respuesta tendría si actuara como controlador.
 
 ---
-[Volver a la UD05](UD05_ES.md) · [Taller 1](UD05_T01_Simular_sistema_experto_ES.md) · [Taller 2](UD05_T02_Logica_difusa_ES.md) · [Taller 3](UD05_T03_Controlador_experto_ES.md)
+[Volver a la UD05](UD05_ES.md) · [Taller 1](UD05_T01_Simular_sistema_experto_ES.md) · [Notebook 5](notebooks/UD05_N05_logica_difusa_propinas.ipynb) · [Notebook 8](notebooks/UD05_N08_controlador_experto.ipynb)

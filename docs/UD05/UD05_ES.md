@@ -427,7 +427,7 @@ sirven para representar periodos, y las sigmoidales, probabilidades.
 ### 8.4 Ejemplo trabajado: la propina del restaurante
 
 Es el ejemplo canónico de `scikit-fuzzy`, y el que verás resuelto paso a paso en el
-[Taller 2](UD05_T02_Logica_difusa_ES.md).
+[Notebook 5](notebooks/UD05_N05_logica_difusa_propinas.ipynb).
 
 **Variables de entrada** (funciones triangulares):
 
@@ -794,9 +794,9 @@ es **explicable**: se puede consultar qué regla se disparó y por qué.
 - [Diapositivas](UD05_Diapositivas.md)
 - **Práctica** — se hace, no se entrega ni puntúa:
     - [Ejercicios de autoevaluación](UD05_Ejercicios.md)
-    - [Notebooks guiados](UD05_ActividadesGuiadas.md) — 6 notebooks de introducción y práctica
-    - [T02 · lógica difusa](UD05_T02_Logica_difusa_ES.md) · [T03 · controlador experto](UD05_T03_Controlador_experto_ES.md)
-- **Entregas** — seis, cada una con su rúbrica; [qué se entrega y cuándo](UD05_Entregas.md):
+    - [Notebooks guiados](UD05_ActividadesGuiadas.md) — **ocho** notebooks, de menor a mayor
+      dificultad: `N01`-`N04` reglas, `N05`-`N07` lógica difusa y `N08` control
+- **Entregas** — seis, cada una con su rúbrica; [qué se entrega](UD05_Entregas.md):
     - [T01 · simular un sistema experto](UD05_T01_Simular_sistema_experto_ES.md)
     - y los cinco sistemas `EX0` a `EX4`, en dominios distintos a propósito
 - Los notebooks se abren desde **Práctica** y **Entregas**, con descarga y apertura en Colab.
@@ -820,7 +820,7 @@ es **explicable**: se puede consultar qué regla se disparó y por qué.
 
 | Peso | Instrumento |
 |---|---|
-| **40 %** actividades | El taller **T01** y los cinco sistemas **`EX0`**-**`EX4`**, cada uno con su rúbrica en la tarea de Moodle. **T02** y **T03** son práctica y no puntúan |
+| **40 %** actividades | El taller **T01** y los cinco sistemas **`EX0`**-**`EX4`**, cada uno con su rúbrica en la tarea de Moodle. Los ocho notebooks guiados son práctica y no puntúan |
 | **60 %** prueba escrita | Prueba del RA5 en Moodle: preguntas de test y de desarrollo sobre el contenido de la unidad |
 
 - **La normativa exige alcanzar todos los RA** del módulo para superarlo (art. 5.1 de la Orden

@@ -1,4 +1,4 @@
-# UD06 · Notebooks guiados
+# UD06 · Práctica: documentales, noticias y notebooks
 
 !!! info "Se ven fuera de clase"
     La unidad tiene 6 horas y **dos debates evaluables**, así que los documentales de partida **se
@@ -27,7 +27,7 @@ teoría** que encaje. Con eso llegas preparado a la fase 3 del debate.
 ## Para ampliar
 
 Ninguno es obligatorio, pero todos dan munición para los debates y para el
-[Taller 1](UD06_T01_Analisis_caso_etico_ES.md).
+[Notebook 2](notebooks/UD06_N02_analisis_caso_etico.ipynb).
 
 | Recurso | Tipo | Con qué apartado engancha | Enlace |
 |---|---|---|---|

@@ -66,8 +66,6 @@ nav:
     - Práctica:
       - Ejercicios de autoevaluación: UD05/UD05_Ejercicios.md
       - Notebooks guiados: UD05/UD05_ActividadesGuiadas.md
-      - T02 Lógica difusa, las propinas: UD05/UD05_T02_Logica_difusa_ES.md
-      - T03 Controlador experto de un proceso: UD05/UD05_T03_Controlador_experto_ES.md
     - Entregas:
       - Qué se entrega: UD05/UD05_Entregas.md
       - T01 Simular un sistema experto: UD05/UD05_T01_Simular_sistema_experto_ES.md
@@ -110,8 +108,7 @@ nav:
     - Diapositivas: UD06/UD06_Diapositivas.md
     - Práctica:
       - Ejercicios de autoevaluación: UD06/UD06_Ejercicios.md
-      - Notebooks guiados: UD06/UD06_ActividadesGuiadas.md
-      - T01 Análisis de un caso ético: UD06/UD06_T01_Analisis_caso_etico_ES.md
+      - Documentales, noticias y notebooks: UD06/UD06_ActividadesGuiadas.md
     - Entregas:
       - Qué se entrega: UD06/UD06_Entregas.md
       - T02 Auditoría de sesgos con Fairlearn: UD06/UD06_T02_Auditoria_sesgos_ES.md

@@ -161,4 +161,4 @@ expliques **qué reglas se dispararon y en qué orden**, no solo la salida final
     Las soluciones no se publican: se corrigen y comentan en clase.
 
 ---
-[Volver a la UD05](UD05_ES.md) · [Taller 2](UD05_T02_Logica_difusa_ES.md) · [Taller 3](UD05_T03_Controlador_experto_ES.md) · [Ejercicios](UD05_Ejercicios.md)
+[Volver a la UD05](UD05_ES.md) · [Notebook 5](notebooks/UD05_N05_logica_difusa_propinas.ipynb) · [Notebook 8](notebooks/UD05_N08_controlador_experto.ipynb) · [Ejercicios](UD05_Ejercicios.md)
