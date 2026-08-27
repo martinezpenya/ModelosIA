@@ -1,11 +1,30 @@
 # UD03 · Actividades entregables
 
-!!! important "Los cinco cuentan para la nota del RA3"
-    Los cinco notebooks forman el **40 % de actividades** del RA3. Cada uno se califica **sobre 10**
-    con su [rúbrica](#rubricas), que tienes más abajo. `EX2` y `EX5` llevan además una **parte
-    escrita** que cubre los criterios sobre el papel del lingüista, el trabajo cooperativo y la
-    formación del investigador (RA3-b, RA3-e, RA3-f) — léela antes de empezar, porque cuenta en la
-    rúbrica.
+!!! important "Qué se entrega y qué es práctica"
+    No todo lo de esta página se entrega. Las **entregas** se corrigen con su
+    [rúbrica](#rubricas), que puedes leer antes de empezar; la **práctica** se hace para preparar la
+    prueba escrita y no se entrega ni puntúa.
+
+    | Actividad | Régimen |
+    |---|---|
+    | [`T01` Del texto al vector](UD03_T01_Del_texto_al_vector_ES.md) | Entrega evaluable |
+    | [`T02` Un sistema de PLN de punta a punta](UD03_T02_Sistema_PLN_ES.md) | Entrega evaluable |
+    | `EX2` Clasificador de preguntas | Entrega evaluable |
+    | `EX4` Análisis de sentimiento en IMDb | Entrega evaluable |
+    | `EX5` Asistente virtual por voz | Entrega evaluable |
+    | `EX1` Representación de texto | Práctica |
+    | `EX3` NLTK y `cess_esp` | Práctica |
+
+    `EX2` y `EX5` llevan además una **parte escrita** que cubre los criterios sobre el papel del
+    lingüista, el trabajo cooperativo y la formación del investigador (RA3-b, RA3-e, RA3-f) — léela
+    antes de empezar, porque cuenta en la rúbrica.
+
+    El **peso** de cada entrega está en el libro de calificaciones de Moodle, no aquí.
+!!! warning "Fuera de plazo, la nota máxima es 5"
+    El plazo se cierra en la fecha indicada en Moodle. Si necesitas entregar después, **avisa al
+    profesor** y se reabre la tarea un tiempo limitado; en ese caso la nota máxima del trabajo es
+    **5 sobre 10**. La rúbrica lo recoge de forma explícita.
+
 
 !!! warning "Dos entornos"
     `EX1` y `EX3` van en el **contenedor** de la unidad. `EX2`, `EX4` y `EX5` usan

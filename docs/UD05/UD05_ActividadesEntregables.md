@@ -1,8 +1,29 @@
 # UD05 · Actividades entregables
 
-!!! important "Cinco entregables, promediados, 40 % de la nota de RA5"
-    Los cinco cuentan para la nota (decisión del profesor, 2026-08-22): se promedian sobre 10.
-    Cuatro tienen dominio fijo (`EX1`-`EX4`); `EX0` es de libre elección.
+!!! important "Seis entregas en el RA5"
+    A los cinco sistemas de esta página se suma el **taller `T01`**, que también se entrega. Cuatro
+    tienen dominio fijo (`EX1`-`EX4`) y `EX0` es de **libre elección**: los tres dominios distintos
+    son a propósito, porque el criterio RA5-b pide representar y simular sistemas «de muy diversos
+    ámbitos».
+
+    | Actividad | Régimen |
+    |---|---|
+    | [`T01` Simular un sistema experto](UD05_T01_Simular_sistema_experto_ES.md) | Entrega evaluable |
+    | `EX0` Sistema experto de libre elección | Entrega evaluable |
+    | `EX1` Detectar lesiones de rodilla | Entrega evaluable |
+    | `EX2` Previsión del valor de mercado | Entrega evaluable |
+    | `EX3` Centrocampistas con potencial | Entrega evaluable |
+    | `EX4` Simulador de quemador de gas | Entrega evaluable |
+    | [`T02` Lógica difusa, las propinas](UD05_T02_Logica_difusa_ES.md) | Práctica |
+    | [`T03` Controlador experto de un proceso](UD05_T03_Controlador_experto_ES.md) | Práctica |
+
+    **No se promedian a partes iguales**: cada entrega tiene su propio peso, y lo tienes en el libro
+    de calificaciones de Moodle.
+!!! warning "Fuera de plazo, la nota máxima es 5"
+    El plazo se cierra en la fecha indicada en Moodle. Si necesitas entregar después, **avisa al
+    profesor** y se reabre la tarea un tiempo limitado; en ese caso la nota máxima del trabajo es
+    **5 sobre 10**. La rúbrica lo recoge de forma explícita.
+
 
 | Notebook | Dominio | Descargar | Ejecutar |
 |---|---|---|---|

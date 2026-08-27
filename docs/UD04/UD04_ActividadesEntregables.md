@@ -1,9 +1,27 @@
 # UD04 · Actividades entregables
 
-!!! important "Los seis cuentan para la nota del RA4"
-    Los seis notebooks forman el **40 % de actividades** del RA4. Cada uno se califica **sobre 10**
-    con su [rúbrica](#rubricas), que tienes más abajo: puedes leerla **antes** de empezar y saber
-    exactamente con qué se te evalúa.
+!!! important "Qué se entrega, y con qué se corrige cada cosa"
+    En esta unidad hay tres regímenes. Las **entregas evaluables** se corrigen con su
+    [rúbrica](#rubricas), que puedes leer antes de empezar. Las de **apto / no apto** hay que
+    hacerlas y entregarlas, pero no se puntúan con rúbrica: cuentan como hechas o no hechas.
+
+    | Actividad | Régimen |
+    |---|---|
+    | [`T01` Cinemática de un manipulador](UD04_T01_Cinematica_manipulador_ES.md) | Entrega evaluable |
+    | `EX1` Ejercicios de OpenCV | Entrega evaluable |
+    | `EX2` Navegar con cámara, por reglas | Entrega evaluable |
+    | `EX3` Navegar con cámara, con lógica difusa | Entrega evaluable |
+    | `EX5` Controlar el robot con una red neuronal | Entrega evaluable |
+    | [`T02` Diseño de un sistema robotizado](UD04_T02_Diseno_sistema_robotizado_ES.md) | Apto / no apto |
+    | `EX4` Generar los datos de entrenamiento | Apto / no apto |
+    | `EX6` Aprendizaje por refuerzo con NEAT | Apto / no apto |
+
+    El **peso** de cada entrega está en el libro de calificaciones de Moodle, no aquí.
+!!! warning "Fuera de plazo, la nota máxima es 5"
+    El plazo se cierra en la fecha indicada en Moodle. Si necesitas entregar después, **avisa al
+    profesor** y se reabre la tarea un tiempo limitado; en ese caso la nota máxima del trabajo es
+    **5 sobre 10**. La rúbrica lo recoge de forma explícita.
+
 
 !!! warning "No son independientes: son una secuencia"
     `EX4` genera el fichero de datos que necesita `EX5`. Si te saltas el orden o pierdes ese
@@ -115,7 +133,7 @@ tú solo defines qué entra, qué sale y cómo se mide si lo está haciendo bien
 
 **Se entrega**: el notebook y una **memoria en PDF** con tus pruebas variando `fitness_threshold` y
 `pop_size`, la justificación de `num_inputs` y `num_outputs`, y una reflexión sobre el aprendizaje
-por refuerzo. Ojo: **la memoria y su formato son la mitad de la nota** de este entregable.
+por refuerzo. Es de **apto / no apto**: sin la memoria no cuenta como entregado.
 
 ## Rúbricas
 

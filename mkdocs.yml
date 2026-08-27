@@ -7,6 +7,9 @@ use_directory_urls: false
 hooks:
   - hooks.py
 
+not_in_nav: |
+  UD0*/notebooks/*.ipynb
+
 exclude_docs: |
   UD00/Presentacion/*.md
   UD01/Presentacion/*.md
@@ -21,130 +24,86 @@ nav:
   - UD00:
     - Presentación del módulo y curso rápido de Docker: UD00/UD00_ES.md
     - Diapositivas: UD00/UD00_Diapositivas.md
-    - Ejercicios: UD00/UD00_Ejercicios.md
-    - Talleres:
+    - Práctica:
+      - Ejercicios de autoevaluación: UD00/UD00_Ejercicios.md
+      - Notebooks guiados: UD00/UD00_ActividadesGuiadas.md
+    - Puesta a punto:
       - T01 Verificación del entorno y primer contenedor: UD00/UD00_T01_Verificacion_entorno_ES.md
       - T02 Contenedor de prácticas de IA: UD00/UD00_T02_Contenedor_practicas_ES.md
-    - Notebooks:
-      - N01 Entorno Python para IA: UD00/notebooks/UD00_N01_entorno_python_ia.ipynb
   - UD01:
     - Caracterización de sistemas de IA: UD01/UD01_ES.md
     - Diapositivas: UD01/UD01_Diapositivas.md
-    - Ejercicios: UD01/UD01_Ejercicios.md
-    - Talleres:
+    - Práctica:
+      - Ejercicios de autoevaluación: UD01/UD01_Ejercicios.md
+      - Notebooks guiados: UD01/UD01_ActividadesGuiadas.md
+    - Entregas:
+      - Qué se entrega y cuándo: UD01/UD01_ActividadesEntregables.md
       - T01 Mapa de sistemas inteligentes: UD01/UD01_T01_Mapa_sistemas_ES.md
       - T02 Técnicas en casos reales: UD01/UD01_T02_Tecnicas_casos_ES.md
       - T03 Nuevas interacciones: UD01/UD01_T03_Nuevas_interacciones_ES.md
       - T04 Línea del tiempo de la IA: UD01/UD01_T04_Linea_tiempo_ES.md
-    - Actividades Guiadas: UD01/UD01_ActividadesGuiadas.md
-    - Notebooks:
-      - N01 Técnicas de IA en acción: UD01/notebooks/UD01_N01_tecnicas_ia.ipynb
   - UD02:
     - Modelos de IA y resolución de problemas: UD02/UD02_ES.md
     - Diapositivas: UD02/UD02_Diapositivas.md
-    - Ejercicios: UD02/UD02_Ejercicios.md
-    - Talleres:
+    - Práctica:
+      - Ejercicios de autoevaluación: UD02/UD02_Ejercicios.md
+    - Entregas:
       - T01 Control difuso con scikit-fuzzy: UD02/UD02_T01_Control_difuso_ES.md
       - T02 Sistema basado en reglas con experta: UD02/UD02_T02_Sistema_reglas_ES.md
+      - Robocode Tank Royale: UD02/UD02_ActividadesEntregables.md
+    - Puesta a punto:
       - T03 Preparar el entorno para Robocode: UD02/UD02_T03_Preparar_entorno_ES.md
       - T04 Control de versiones con GitHub: UD02/UD02_T04_GitHub_ES.md
       - T05 Documentar con Markdown: UD02/UD02_T05_Markdown_ES.md
-    - Actividades Entregables:
-      - Robocode Tank Royale: UD02/UD02_ActividadesEntregables.md
-      - Comparativa Java vs Python: UD02/UD02_Robocode_Comparativa_ES.md
+    - Documentación de Robocode:
       - Tutorial Robocode (Java): UD02/UD02_Robocode_Java_ES.md
       - Tutorial Robocode (Python): UD02/UD02_Robocode_Python_ES.md
-    - Notebooks:
-      - T01 Control difuso con scikit-fuzzy: UD02/notebooks/UD02_T01_control_difuso.ipynb
-      - T02 Sistema basado en reglas con experta: UD02/notebooks/UD02_T02_sistema_reglas.ipynb
+      - Comparativa Java vs Python: UD02/UD02_Robocode_Comparativa_ES.md
   - UD05:
     - Sistemas expertos y controladores inteligentes: UD05/UD05_ES.md
     - Diapositivas: UD05/UD05_Diapositivas.md
-    - Ejercicios: UD05/UD05_Ejercicios.md
-    - Talleres:
-      - T01 Simular un sistema experto: UD05/UD05_T01_Simular_sistema_experto_ES.md
+    - Práctica:
+      - Ejercicios de autoevaluación: UD05/UD05_Ejercicios.md
+      - Notebooks guiados: UD05/UD05_ActividadesGuiadas.md
       - T02 Lógica difusa, las propinas: UD05/UD05_T02_Logica_difusa_ES.md
       - T03 Controlador experto de un proceso: UD05/UD05_T03_Controlador_experto_ES.md
-    - Actividades Guiadas: UD05/UD05_ActividadesGuiadas.md
-    - Actividades Entregables: UD05/UD05_ActividadesEntregables.md
-    - Notebooks:
-      - N01 Sistema experto con Python y Experta: UD05/notebooks/UD05_N01_experta_primeros_pasos.ipynb
-      - N02 Piedra, papel o tijera: UD05/notebooks/UD05_N02_piedra_papel_tijera.ipynb
-      - N03 Clasificación de animales: UD05/notebooks/UD05_N03_clasificacion_animales.ipynb
-      - N04 Reglas sobre datos, Titanic: UD05/notebooks/UD05_N04_reglas_desde_datos_titanic.ipynb
-      - N05 Control difuso, regar el césped: UD05/notebooks/UD05_N05_control_difuso_riego.ipynb
-      - N06 Lógica difusa, quién jugará: UD05/notebooks/UD05_N06_logica_difusa_quien_jugara.ipynb
-      - EX0 Sistema experto de libre elección: UD05/notebooks/UD05_EX0_sistema_experto_libre.ipynb
-      - EX0 Referencia, tasación de vehículos: UD05/notebooks/UD05_EX0_referencia_tasacion_vehiculos.ipynb
-      - EX1 Detectar lesiones de rodilla: UD05/notebooks/UD05_EX1_lesiones_rodilla.ipynb
-      - EX2 Previsión del valor de mercado: UD05/notebooks/UD05_EX2_valor_mercado_jugadores.ipynb
-      - EX3 Centrocampistas con potencial: UD05/notebooks/UD05_EX3_centrocampistas_jovenes.ipynb
-      - EX4 Simulador de quemador de gas: UD05/notebooks/UD05_EX4_quemador_gas.ipynb
-      - T01 Simular un sistema experto: UD05/notebooks/UD05_T01_simular_sistema_experto.ipynb
-      - T02 Lógica difusa, las propinas: UD05/notebooks/UD05_T02_logica_difusa.ipynb
-      - T03 Controlador experto: UD05/notebooks/UD05_T03_controlador_experto.ipynb
+    - Entregas:
+      - Qué se entrega y cuándo: UD05/UD05_ActividadesEntregables.md
+      - T01 Simular un sistema experto: UD05/UD05_T01_Simular_sistema_experto_ES.md
   - UD03:
     - Procesamiento del Lenguaje Natural: UD03/UD03_ES.md
     - Diapositivas: UD03/UD03_Diapositivas.md
-    - Ejercicios: UD03/UD03_Ejercicios.md
-    - Talleres:
+    - Práctica:
+      - Ejercicios de autoevaluación: UD03/UD03_Ejercicios.md
+      - Notebooks guiados: UD03/UD03_ActividadesGuiadas.md
+    - Entregas:
+      - Qué se entrega y cuándo: UD03/UD03_ActividadesEntregables.md
       - T01 Del texto al vector: UD03/UD03_T01_Del_texto_al_vector_ES.md
       - T02 Un sistema de PLN de punta a punta: UD03/UD03_T02_Sistema_PLN_ES.md
-    - Actividades Guiadas: UD03/UD03_ActividadesGuiadas.md
-    - Actividades Entregables: UD03/UD03_ActividadesEntregables.md
-    - Notebooks:
-      - N01 Introducción al PLN: UD03/notebooks/UD03_N01_introduccion_pln.ipynb
-      - N02 Clasificación de texto con PyTorch: UD03/notebooks/UD03_N02_clasificacion_texto_torch.ipynb
-      - N03 Modelos de lenguaje, DistilBERT: UD03/notebooks/UD03_N03_modelos_lenguaje_distilbert.ipynb
-      - N04 spaCy, primeros pasos: UD03/notebooks/UD03_N04_spacy_primeros_pasos.ipynb
-      - N05 Ampliación, géneros musicales: UD03/notebooks/UD03_N05_ampliacion_clasificador_generos_musicales.ipynb
-      - EX1 Representación de texto: UD03/notebooks/UD03_EX1_representacion_texto.ipynb
-      - EX2 Clasificador de preguntas: UD03/notebooks/UD03_EX2_clasificador_preguntas.ipynb
-      - EX3 NLTK y Python: UD03/notebooks/UD03_EX3_nltk_python.ipynb
-      - EX4 Sentimiento en IMDb: UD03/notebooks/UD03_EX4_sentimiento_imdb.ipynb
-      - EX5 Asistente virtual: UD03/notebooks/UD03_EX5_asistente_virtual.ipynb
-      - T01 Del texto al vector: UD03/notebooks/UD03_T01_del_texto_al_vector.ipynb
-      - T02 Sistema de PLN: UD03/notebooks/UD03_T02_sistema_pln.ipynb
   - UD04:
     - Análisis de sistemas robotizados: UD04/UD04_ES.md
     - Diapositivas: UD04/UD04_Diapositivas.md
-    - Ejercicios: UD04/UD04_Ejercicios.md
-    - Talleres:
+    - Práctica:
+      - Ejercicios de autoevaluación: UD04/UD04_Ejercicios.md
+      - Notebooks guiados: UD04/UD04_ActividadesGuiadas.md
+    - Entregas:
+      - Qué se entrega y cuándo: UD04/UD04_ActividadesEntregables.md
       - T01 Cinemática de un manipulador: UD04/UD04_T01_Cinematica_manipulador_ES.md
       - T02 Diseño de un sistema robotizado: UD04/UD04_T02_Diseno_sistema_robotizado_ES.md
-    - Actividades Guiadas: UD04/UD04_ActividadesGuiadas.md
-    - Actividades Entregables: UD04/UD04_ActividadesEntregables.md
-    - Notebooks:
-      - 1 Introducción a OpenCV: UD04/notebooks/UD04_N01_introduccion_opencv.ipynb
-      - 2 Vehículos de Braitenberg: UD04/notebooks/UD04_N02_vehiculos_braitenberg.ipynb
-      - 3 Ejemplos de robots en AITK: UD04/notebooks/UD04_N03_ejemplos_robots.ipynb
-      - EX1 Ejercicios de OpenCV: UD04/notebooks/UD04_EX1_ejercicios_opencv.ipynb
-      - EX2 Navegar con cámara: UD04/notebooks/UD04_EX2_navegar_camara.ipynb
-      - EX3 Navegar con cámara difusa: UD04/notebooks/UD04_EX3_navegar_camara_difusa.ipynb
-      - EX4 Generar datos de entrenamiento: UD04/notebooks/UD04_EX4_generar_datos_entrenamiento.ipynb
-      - EX5 Controlar el robot con una red neuronal: UD04/notebooks/UD04_EX5_red_neuronal.ipynb
-      - EX6 Aprendizaje por refuerzo con NEAT: UD04/notebooks/UD04_EX6_neat.ipynb
-      - T01 Cinemática de un manipulador: UD04/notebooks/UD04_T01_cinematica_manipulador.ipynb
-      - T02 Diseño de un sistema robotizado: UD04/notebooks/UD04_T02_diseno_sistema_robotizado.ipynb
   - UD06:
     - Aplicación de principios legales y éticos de la IA: UD06/UD06_ES.md
     - Diapositivas: UD06/UD06_Diapositivas.md
-    - Ejercicios: UD06/UD06_Ejercicios.md
-    - Talleres:
+    - Práctica:
+      - Ejercicios de autoevaluación: UD06/UD06_Ejercicios.md
+      - Notebooks guiados: UD06/UD06_ActividadesGuiadas.md
       - T01 Análisis de un caso ético: UD06/UD06_T01_Analisis_caso_etico_ES.md
+    - Entregas:
+      - Qué se entrega y cuándo: UD06/UD06_ActividadesEntregables.md
       - T02 Auditoría de sesgos con Fairlearn: UD06/UD06_T02_Auditoria_sesgos_ES.md
-    - Debates:
       - D01 Límites éticos de la IA: UD06/UD06_D01_Debate_limites_eticos_ES.md
       - D02 El algoritmo contra el crimen: UD06/UD06_D02_Debate_algoritmo_crimen_ES.md
-    - Actividades Guiadas: UD06/UD06_ActividadesGuiadas.md
-    - Actividades Entregables: UD06/UD06_ActividadesEntregables.md
-    - Notebooks:
-      - N01 Detección y corrección de sesgos: UD06/notebooks/UD06_N01_sesgos_ia.ipynb
-      - T01 Análisis de un caso ético: UD06/notebooks/UD06_T01_analisis_caso_etico.ipynb
-      - T02 Auditoría de sesgos con Fairlearn: UD06/notebooks/UD06_T02_auditoria_sesgos.ipynb
   - Sobre mi: sobremi.md
   - Fuentes de información: fuentes.md
-
 theme:
   name: material
   language: es

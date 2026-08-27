@@ -121,9 +121,11 @@ def tabla_ra_pesos(d: dict) -> str:
     filas.append("| | | | | **100 %** |")
     filas.append("")
     filas.append(f"Cada RA se califica **{ev['escala_calificacion']}** "
-                 f"(Orden 8/2025, art. 5.1): **{ev['peso_actividades']} %** tareas, talleres y "
-                 f"ejercicios + **{ev['peso_prueba_escrita']} %** prueba escrita. Para superar el "
-                 f"módulo hace falta **{minima} o más en cada RA**.")
+                 f"(Orden 8/2025, art. 5.1): **{ev['peso_actividades']} %** las entregas de la "
+                 f"unidad + **{ev['peso_prueba_escrita']} %** la prueba escrita. Para superar el "
+                 f"módulo hace falta **{minima} o más en cada RA**. Los ejercicios de "
+                 f"autoevaluación y los notebooks guiados son práctica: no se entregan ni "
+                 f"puntúan. El peso de cada entrega está en el libro de calificaciones de Moodle.")
     return "\n".join(filas)
 
 GENERADORES = {"unidades": tabla_unidades, "ra": tabla_ra,

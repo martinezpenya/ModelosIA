@@ -1,19 +1,28 @@
 # UD06 · Actividades entregables
 
-!!! important "Qué cuenta y cuánto"
-    El RA6 se califica con **40 % de actividades + 60 % de prueba escrita**, y hay que superar el RA
-    con **≥ 5**. Esta página resume qué se entrega, cuándo y con qué se corrige.
+!!! important "Qué cuenta y qué es práctica"
+    El RA6 se califica con **40 % de entregas + 60 % de prueba escrita**, y hay que superar el RA
+    con **≥ 5**. Se entregan **tres cosas**: los dos debates y la auditoría de sesgos. El taller 1 y
+    el notebook `N01` son **práctica**: se hacen en clase para preparar el debate y la auditoría, y
+    para la prueba escrita, pero no se entregan ni puntúan.
 
-## Resumen de entregas
+    El **peso** de cada entrega está en el libro de calificaciones de Moodle, no aquí.
+
+## Resumen de entregas y práctica
 
 | # | Actividad | Cuándo | Qué se entrega | Cómo se corrige |
 |---|---|---|---|---|
 | 1 | [**Debate 1** · Límites éticos de la IA](UD06_D01_Debate_limites_eticos_ES.md) | Sesión 2 | Participación en el aula **+** reflexión escrita de máx. **300 palabras** en Moodle | [Rúbrica de debate](#rubrica-de-los-debates), 100 puntos escalados sobre 10 |
 | 2 | [**Debate 2** · El algoritmo contra el crimen](UD06_D02_Debate_algoritmo_crimen_ES.md) | Sesión 4 | Participación en el aula **+** reflexión escrita de máx. **300 palabras** en Moodle | La **misma** rúbrica |
-| 3 | [**Taller 1** · Análisis de un caso ético](UD06_T01_Analisis_caso_etico_ES.md) | Sesión 3 | Informe de 2-3 páginas con las cinco tablas y las respuestas | Corrección del profesor |
-| 4 | [**Taller 2** · Auditoría de sesgos con Fairlearn](UD06_T02_Auditoria_sesgos_ES.md) | Sesión 3 | Informe con las métricas antes/después y las seis respuestas | Corrección del profesor |
-| 5 | [**Notebook N01** · Detección de sesgos](notebooks/UD06_N01_sesgos_ia.ipynb) | Sesión 3 | Notebook con las celdas de actividad resueltas | Corrección del profesor |
+| — | [**Taller 1** · Análisis de un caso ético](UD06_T01_Analisis_caso_etico_ES.md) | Sesión 3 | **Práctica**: se trabaja en clase, no se entrega | Se corrige en clase |
+| 3 | [**Taller 2** · Auditoría de sesgos con Fairlearn](UD06_T02_Auditoria_sesgos_ES.md) | Sesión 3 | Informe con las métricas antes/después y las seis respuestas | Rúbrica propia, en la tarea de Moodle |
+| — | [**Notebook N01** · Detección de sesgos](notebooks/UD06_N01_sesgos_ia.ipynb) | Sesión 3 | **Práctica**: da soporte a la auditoría, no se entrega | Se revisa en clase |
 | — | [Tertulia de ciencia-ficción](#tertulia-de-ciencia-ficcion) | Libre | Voluntaria, de ampliación | Sin nota |
+
+!!! warning "Fuera de plazo, la nota máxima es 5"
+    El plazo se cierra en la fecha indicada en Moodle. Si necesitas entregar después, **avisa al
+    profesor** y se reabre la tarea un tiempo limitado; en ese caso la nota máxima del trabajo es
+    **5 sobre 10**. La rúbrica lo recoge de forma explícita.
 
 !!! warning "Los debates no se recuperan repitiéndolos"
     **70 de los 100 puntos** de la rúbrica se observan **en directo**: dominio del rol,
