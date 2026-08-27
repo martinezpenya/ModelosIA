@@ -60,7 +60,6 @@ Tres ejercicios de visión sobre imagen y vídeo: detectar **bordes** y enmarcar
 
 | Recurso | Enlace |
 |---|---|
-| Notebook | [`UD04_N05_ejercicios_opencv.ipynb`](notebooks/UD04_N05_ejercicios_opencv.ipynb) |
 | Imagen | [`EX1.-camp.png`](notebooks/EX1.-camp.png) |
 | Vídeo | [`EX1.-vtest.mp4`](notebooks/EX1.-vtest.mp4) |
 **Se entrega**: el notebook con los tres ejercicios resueltos y sus salidas.
@@ -74,7 +73,6 @@ Dos escenarios: **línea simple** y **línea doble**.
 
 | Recurso | Enlace |
 |---|---|
-| Notebook | [`UD04_N06_navegar_camara.ipynb`](notebooks/UD04_N06_navegar_camara.ipynb) |
 | Pistas | [1](notebooks/EX2_pista_1.png) · [2](notebooks/EX2_pista_2.png) · [3](notebooks/EX2_pista_3.png) · [4](notebooks/EX2_pista_4.png) · [5](notebooks/EX2_pista_5.png) · [6](notebooks/EX2_pista_6.png) |
 
 **Se entrega**: el notebook con el controlador funcionando en los dos escenarios.
@@ -86,7 +84,6 @@ pertenencia, reglas y desfuzzificación. Enlaza directamente con la UD05.
 
 | Recurso | Enlace |
 |---|---|
-| Notebook | [`UD04_N07_navegar_camara_difusa.ipynb`](notebooks/UD04_N07_navegar_camara_difusa.ipynb) |
 | Pistas | Las mismas seis de `N06` |
 
 **Se entrega**: el notebook con el sistema difuso completo y el robot navegando en los dos
@@ -102,10 +99,6 @@ escenarios.
 Aquí no se entrena nada todavía: **conduces tú el robot** y el notebook graba lo que ve la cámara
 junto con lo que tú decidiste hacer. El resultado es un conjunto de ejemplos etiquetados.
 
-| Recurso | Enlace |
-|---|---|
-| Notebook | [`UD04_N08_generar_datos_entrenamiento.ipynb`](notebooks/UD04_N08_generar_datos_entrenamiento.ipynb) |
-
 **Se entrega**: el notebook **y el fichero `training_data.txt` con tu nombre**. Guárdatelo: es la
 entrada de `N09`.
 
@@ -114,10 +107,6 @@ entrada de `N09`.
 Lees el `training_data.txt` de `N08`, **construyes y entrenas** una red neuronal con esos ejemplos y
 la usas para conducir el robot. Tres celdas están vacías a propósito: la arquitectura de la red, el
 entrenamiento y la función de control.
-
-| Recurso | Enlace |
-|---|---|
-| Notebook | [`UD04_N09_red_neuronal.ipynb`](notebooks/UD04_N09_red_neuronal.ipynb) |
 
 **Se entrega**: el notebook **y el fichero `.keras` con tu nombre**, con la red ya entrenada. Con ese
 fichero, la celda de carga permite **probar cómo se comporta tu red sin repetir el entrenamiento**
@@ -133,10 +122,6 @@ fichero, la celda de carga permite **probar cómo se comporta tu red sin repetir
 
 El mismo control, sin ejemplos. **NEAT** evoluciona a la vez los pesos **y la topología** de la red:
 tú solo defines qué entra, qué sale y cómo se mide si lo está haciendo bien.
-
-| Recurso | Enlace |
-|---|---|
-| Notebook | [`UD04_N10_neat.ipynb`](notebooks/UD04_N10_neat.ipynb) |
 
 **Se entrega**: el notebook y una **memoria en PDF** con tus pruebas variando `fitness_threshold` y
 `pop_size`, la justificación de `num_inputs` y `num_outputs`, y una reflexión sobre el aprendizaje

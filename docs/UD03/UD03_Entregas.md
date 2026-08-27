@@ -50,9 +50,6 @@
 Tokenizar, quitar *stopwords* y construir una bolsa de palabras y un vector tf-idf, resuelto **con
 NLTK y con TextBlob** — el mismo ejercicio, dos librerías.
 
-| Recurso | Enlace |
-|---|---|
-| Notebook | [`UD03_N06_representacion_texto.ipynb`](notebooks/UD03_N06_representacion_texto.ipynb) |
 **Se entrega**: el notebook con los cuatro ejercicios resueltos por **uno** de los dos caminos —tú
 eliges— y una comparación breve con el otro.
 
@@ -60,10 +57,6 @@ eliges— y una comparación breve con el otro.
 
 Repite el proceso de `N02` —de la bolsa de palabras a un clasificador entrenado— sobre un conjunto
 de **preguntas**, en vez de noticias.
-
-| Recurso | Enlace |
-|---|---|
-| Notebook | [`UD03_N09_clasificador_preguntas.ipynb`](notebooks/UD03_N09_clasificador_preguntas.ipynb) |
 
 **Se entrega**: el notebook con el clasificador entrenado y evaluado, **y una sección de
 conclusiones** que responda: ¿qué decisiones de anotación tomaría un lingüista con este conjunto de
@@ -75,20 +68,12 @@ mejorar este sistema?
 Procesa el corpus español anotado `cess_esp`: separa entrenamiento y prueba, reduce el conjunto de
 etiquetas morfosintácticas de 289 a un conjunto manejable, y valida con validación cruzada.
 
-| Recurso | Enlace |
-|---|---|
-| Notebook | [`UD03_N07_nltk_python.ipynb`](notebooks/UD03_N07_nltk_python.ipynb) |
-
 **Se entrega**: el notebook con los seis apartados resueltos.
 
 ## N10 · Análisis de sentimiento en reseñas de cine
 
 *Transfer learning*: parte del DistilBERT de `N03` —afinado para tuits— y adáptalo a reseñas de
 IMDb, un dominio distinto.
-
-| Recurso | Enlace |
-|---|---|
-| Notebook | [`UD03_N10_sentimiento_imdb.ipynb`](notebooks/UD03_N10_sentimiento_imdb.ipynb) |
 
 **Se entrega**: el notebook con el modelo afinado y evaluado sobre las reseñas.
 
@@ -99,7 +84,6 @@ audio y devuelva otro.
 
 | Recurso | Enlace |
 |---|---|
-| Notebook | [`UD03_N11_asistente_virtual.ipynb`](notebooks/UD03_N11_asistente_virtual.ipynb) |
 | Audio de prueba | [`OpenTheDoor.wav`](notebooks/OpenTheDoor.wav) |
 
 **Se entrega**: el notebook con la función conjunta funcionando de punta a punta, **y una sección

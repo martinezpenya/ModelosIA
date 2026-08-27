@@ -17,7 +17,6 @@ listo para todo el módulo.
 
 | Recurso | Enlace |
 |---|---|
-| Notebook | [`UD00_N01_entorno_python_ia.ipynb`](notebooks/UD00_N01_entorno_python_ia.ipynb) |
 | Ejecutar en Colab | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD00/notebooks/UD00_N01_entorno_python_ia.ipynb){:target="_blank"} |
 
 ---
