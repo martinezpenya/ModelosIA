@@ -27,7 +27,7 @@
 
 ## Referencia: un sistema experto grande, resuelto
 
-[N15 · Tasación de vehículos usados](notebooks/UD05_N09_referencia_tasacion_vehiculos.ipynb)
+[`N09` · Tasación de vehículos usados](notebooks/UD05_N09_referencia_tasacion_vehiculos.ipynb)
 ([descargar](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD05/notebooks/UD05_N09_referencia_tasacion_vehiculos.ipynb){:target="_blank"} ·
 [Colab](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD05/notebooks/UD05_N09_referencia_tasacion_vehiculos.ipynb){:target="_blank"})
 es un ejemplo **extenso ya resuelto**, portado de una práctica original en CLIPS: no es un

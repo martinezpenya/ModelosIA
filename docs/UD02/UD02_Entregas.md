@@ -11,7 +11,7 @@
 | `T01` | [Preparar el entorno para Robocode](UD02_T01_Preparar_entorno_ES.md) | Capturas del entorno funcionando | Hecho / no hecho |
 | `T02` | [Control de versiones con GitHub](UD02_T02_GitHub_ES.md) | El repositorio creado | Hecho / no hecho |
 | `T03` | [Documentar con Markdown](UD02_T03_Markdown_ES.md) | El documento en Markdown | Hecho / no hecho |
-| — | [**Robocode Tank Royale**](UD02_Robocode_Entrega_ES.md) | El código del bot y su memoria | Rúbrica, en la tarea de Moodle |
+| `T04` | [**Robocode Tank Royale**](UD02_T04_Robocode_ES.md) | El código del bot y su memoria | Rúbrica, en la tarea de Moodle |
 
 !!! tip "Robocode es la entrega grande de la unidad"
     Es la práctica de cierre del RA2 y **pesa mucho más que las otras dos evaluables**: son dos

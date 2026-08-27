@@ -1,4 +1,4 @@
-# UD02 · Entrega: Robocode Tank Royale
+# UD02 · Taller 4 — Robocode Tank Royale
 
 !!! important "Cierre de la unidad"
     Robocode es la práctica de cierre del RA2, del **23 de noviembre al 3 de diciembre**. Cuenta

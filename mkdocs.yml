@@ -55,7 +55,7 @@ nav:
       - T01 Preparar el entorno para Robocode (hecho / no hecho): UD02/UD02_T01_Preparar_entorno_ES.md
       - T02 Control de versiones con GitHub (hecho / no hecho): UD02/UD02_T02_GitHub_ES.md
       - T03 Documentar con Markdown (hecho / no hecho): UD02/UD02_T03_Markdown_ES.md
-      - Robocode Tank Royale: UD02/UD02_Robocode_Entrega_ES.md
+      - T04 Robocode Tank Royale: UD02/UD02_T04_Robocode_ES.md
     - Documentación de Robocode:
       - Comparativa Java vs Python, elige lenguaje: UD02/UD02_Robocode_Comparativa_ES.md
       - Tutorial Robocode (Java): UD02/UD02_Robocode_Java_ES.md

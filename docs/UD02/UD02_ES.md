@@ -562,8 +562,8 @@ CAUSA PROBABLE: Batería descargada
 ## 10. Caso de estudio: Robocode como sistema de resolución de problemas completo
 
 Los cinco requisitos del §4.1 y la elección de modelo del §9 dejan de ser teoría en cuanto se
-programa un bot de **Robocode Tank Royale** (la [entrega de Robocode](UD02_Robocode_Entrega_ES.md)
-de la unidad):
+programa un bot de **Robocode Tank Royale** (el [taller `T04`](UD02_T04_Robocode_ES.md) de la
+unidad):
 
 - **Representación**: el estado del bot (posición, energía, rumbo del radar) y del campo de
   batalla se traduce a variables que el programa puede leer en cada turno.
@@ -667,7 +667,7 @@ de la unidad):
 | 9 | 3 | Lógica difusa (teoría + Notebook 1 scikit-fuzzy) | RA2-d | Notebook 1 |
 | 9-10 | 3 | Sistemas basados en reglas (teoría + Notebook 2 experta); CE f | RA2-e, RA2-f | Notebook 2 |
 | 9-10 | — | Talleres 3-5: preparar el entorno, GitHub y Markdown para Robocode | — | Talleres 3-5 |
-| 10 | 3 | Robocode Tank Royale: entrega y evaluación | RA2-a, RA2-f | Entrega: Robocode |
+| 10 | 3 | Robocode Tank Royale: entrega y evaluación | RA2-a, RA2-f | `T04` Robocode |
 
 ## 15. Tabla final RA/CE
 
@@ -686,7 +686,7 @@ de la unidad):
 - **Práctica** — se hace, no se entrega ni puntúa:
     - [Ejercicios de autoevaluación](UD02_Ejercicios.md)
 - **Entregas**:
-    - con rúbrica: [`N01` · control difuso](notebooks/UD02_N01_control_difuso.ipynb) · [N02 · sistema de reglas](notebooks/UD02_N02_sistema_reglas.ipynb) · [Robocode Tank Royale](UD02_Robocode_Entrega_ES.md), la práctica de cierre del RA2
+    - con rúbrica: [`N01` · control difuso](notebooks/UD02_N01_control_difuso.ipynb) · [`N02` · sistema de reglas](notebooks/UD02_N02_sistema_reglas.ipynb) · [`T04` · Robocode Tank Royale](UD02_T04_Robocode_ES.md), la práctica de cierre del RA2
     - de **hecho / no hecho**, requisito sin nota: [T01 · preparar el entorno](UD02_T01_Preparar_entorno_ES.md) · [T02 · GitHub](UD02_T02_GitHub_ES.md) · [T03 · Markdown](UD02_T03_Markdown_ES.md)
 - **Documentación de Robocode**: [comparativa Java/Python](UD02_Robocode_Comparativa_ES.md) · [tutorial Java](UD02_Robocode_Java_ES.md) · [tutorial Python](UD02_Robocode_Python_ES.md)
 - Los notebooks se abren desde **Práctica** y **Entregas**, con descarga y apertura en Colab.
@@ -707,7 +707,7 @@ de la unidad):
 
 | Peso | Instrumento |
 |---|---|
-| **40 %** actividades | **Robocode** y los notebooks **`N01`** y **`N02`**, cada uno con su rúbrica. Robocode es el de más peso, con diferencia. Los talleres **`T01`**-**`T03`** se entregan como **hecho / no hecho** y no puntúan |
+| **40 %** actividades | **`T04` Robocode** y los notebooks **`N01`** y **`N02`**, cada uno con su rúbrica. Robocode es el de más peso, con diferencia. Los talleres **`T01`**-**`T03`** se entregan como **hecho / no hecho** y no puntúan |
 | **60 %** prueba escrita | Prueba del RA2 en Moodle: preguntas de test y de desarrollo sobre el contenido de la unidad |
 
 - **La normativa exige alcanzar todos los RA** del módulo para superarlo (art. 5.1 de la Orden

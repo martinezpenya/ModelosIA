@@ -77,6 +77,25 @@ def tabla(fichas: list[dict], ud: str) -> str:
     return "\n".join(filas)
 
 
+def etiquetas_descuadradas() -> list[tuple[str, str, str]]:
+    """Enlaces cuya etiqueta cita un codigo distinto del notebook al que apuntan.
+
+    Es el fallo que aparecio al renumerar: el destino se reapunta con un sed y la etiqueta se queda
+    con el codigo viejo, asi que la pagina dice «N15» y abre el N09. No lo detecta el build, porque
+    el enlace es valido.
+    """
+    patron = re.compile(r"\[([^\]\n]*?)\]\(([^)\s]*?(UD0\d)_(N\d+)_[^)\s]*?\.ipynb)\)")
+    mal = []
+    for f in DOCS.rglob("*.md"):
+        if "Presentacion" in str(f):
+            continue
+        for m in patron.finditer(f.read_text(encoding="utf-8")):
+            codigos = re.findall(r"\bN\d+\b", m.group(1))
+            if codigos and m.group(4) not in codigos:
+                mal.append((str(f.relative_to(RAIZ)), m.group(1)[:60], m.group(4)))
+    return mal
+
+
 def main() -> int:
     check = "--check" in sys.argv
     datos = yaml.safe_load((RAIZ / "datos" / "notebooks.yml").read_text(encoding="utf-8"))
@@ -119,8 +138,15 @@ def main() -> int:
         print("\n  AVISO · notebooks sin descripción en datos/notebooks.yml:")
         for s in sin_ficha:
             print(f"    {s}")
-    if check and desfasados:
-        print("\n  DESFASADAS: " + ", ".join(desfasados))
+    mal = etiquetas_descuadradas()
+    if mal:
+        print("\n  ETIQUETAS DESCUADRADAS · la etiqueta cita un código distinto del destino:")
+        for ruta, etiqueta, cod in mal:
+            print(f"    {ruta}: «{etiqueta}» apunta al {cod}")
+
+    if check and (desfasados or mal):
+        if desfasados:
+            print("\n  DESFASADAS: " + ", ".join(desfasados))
         return 1
     return 0
 
