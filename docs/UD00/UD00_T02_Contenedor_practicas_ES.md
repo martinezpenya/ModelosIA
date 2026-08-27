@@ -1,9 +1,9 @@
 # UD00 · Taller 2 — Contenedor de prácticas de IA
 
-!!! important "Entregable · se marca hecho / no hecho"
-    Se trabaja en clase, en el bloque largo de la semana 2, y **se entrega en Moodle**. No lleva
-    nota, pero **es requisito**: al terminar tendrás el **entorno del curso levantado**, que es el
-    que usarás en el resto de las unidades. Sin él no se pueden hacer las prácticas de la UD02.
+!!! important "Entrega · hecho / no hecho"
+    Se entrega en Moodle y se califica como **hecho / no hecho**: no lleva nota ni ítem en el
+    libro de calificaciones, pero **es requisito**. Al terminar tendrás el **entorno del curso levantado**, que es
+    el que usarás en el resto de las unidades. Sin él no se pueden hacer las prácticas de la UD02.
 
 **Objetivo**: levantar un entorno **Jupyter** reproducible con las bibliotecas del curso.
 

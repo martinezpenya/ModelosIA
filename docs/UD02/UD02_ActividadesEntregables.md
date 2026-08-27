@@ -4,8 +4,8 @@
     Robocode es la práctica de cierre del RA2, del **23 de noviembre al 3 de diciembre**. Cuenta
     dentro de las entregas de la unidad, y es **la más importante de las tres**: `T01` y `T02` son
     talleres cortos y sus técnicas se vuelven a evaluar en el RA5, mientras que aquí construyes un
-    bot que compite y escribes su memoria. Los talleres `T03`, `T04` y `T05` son **puesta a punto**:
-    hay que hacerlos, pero no puntúan. El peso exacto de cada entrega está en el libro de
+    bot que compite y escribes su memoria. Los talleres `T03`, `T04` y `T05` se entregan y se califican
+    **hecho / no hecho**: son requisito, pero no puntúan. El peso exacto de cada entrega está en el libro de
     calificaciones de Moodle.
 
 ## Introducción

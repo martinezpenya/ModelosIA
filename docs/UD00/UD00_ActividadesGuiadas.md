@@ -6,7 +6,7 @@ Sirve para comprobar que el entorno de la asignatura funciona antes de empezar c
 ## N01 · Entorno Python para IA
 
 Repaso rápido de `numpy`, `pandas` y `matplotlib` dentro del contenedor que has montado en los dos
-talleres de puesta a punto. Si este notebook se ejecuta de arriba abajo sin errores, el entorno está
+talleres de la unidad. Si este notebook se ejecuta de arriba abajo sin errores, el entorno está
 listo para todo el módulo.
 
 | Recurso | Enlace |

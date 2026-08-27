@@ -1,10 +1,10 @@
 # UD00 · Taller 1 — Verificación del entorno y primer contenedor
 
-!!! important "Unidad no calificable, pero requisito"
-    El Taller 1 se entrega y se marca como **hecho / no hecho**: no lleva nota, pero se tiene en
-    cuenta y **es requisito para las prácticas de la UD02** (sin entorno funcionando no se puede
-    hacer Robocode). Los viernes no hay clase: son el momento de recopilar capturas y redactar la
-    memoria.
+!!! important "Entrega · hecho / no hecho"
+    Se entrega en Moodle y se califica como **hecho / no hecho**: no lleva nota ni ítem en el
+    libro de calificaciones, pero **es requisito**. Sin el entorno funcionando no se pueden hacer las
+    prácticas de la UD02. Los viernes no hay clase: son el momento de recopilar capturas y redactar
+    la memoria.
 
 **Objetivo**: dejar Docker funcionando en **tu** máquina y demostrarlo con evidencias.
 

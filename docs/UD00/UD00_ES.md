@@ -1114,7 +1114,8 @@ CONTAINER ID   IMAGE            COMMAND          CREATED          STATUS        
 - **Práctica** — se hace, no se entrega ni puntúa:
     - [Ejercicios de autoevaluación](UD00_Ejercicios.md)
     - [Notebooks guiados](UD00_ActividadesGuiadas.md) — `N01`, entorno Python para IA
-- **Puesta a punto** — hay que hacerla, pero no puntúa:
+- **Entregas** — se entregan en Moodle y se califican **hecho / no hecho**: no llevan nota, pero son
+  requisito para las prácticas de la UD02:
     - [T01 · Verificación del entorno y primer contenedor](UD00_T01_Verificacion_entorno_ES.md)
     - [T02 · Contenedor de prácticas de IA](UD00_T02_Contenedor_practicas_ES.md)
 - Los notebooks se abren desde **Práctica** y **Entregas**, con descarga y apertura en Colab.
@@ -1136,8 +1137,8 @@ CONTAINER ID   IMAGE            COMMAND          CREATED          STATUS        
 
 ## 17. Evaluación
 
-- **Puesta a punto**: entregar el informe de los talleres 1 y 2 en Moodle. Se marca **hecho / no
-  hecho**; es requisito para las prácticas de la UD02, pero **no puntúa** ni tiene ítem en el
+- **Entregas de la unidad**: el informe de los talleres 1 y 2, en Moodle. Se califican **hecho / no
+  hecho**; son requisito para las prácticas de la UD02, pero **no puntúan** ni tienen ítem en el
   libro de calificaciones.
 - **Evaluación inicial**: diagnóstica, sin nota, antes del segundo mes lectivo.
 - **La normativa exige alcanzar todos los RA** del módulo para superarlo (art. 5.1 de la Orden

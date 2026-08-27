@@ -1,8 +1,8 @@
 # UD02 · Taller 3 — Preparar el entorno para Robocode (Java o Python)
 
-!!! important "Puesta a punto: requisito, no puntúa"
-    Se entrega en Moodle y se marca **hecho / no hecho**. No lleva nota, pero es
-    **requisito**: sin el entorno del lenguaje elegido no se puede hacer
+!!! important "Entrega · hecho / no hecho"
+    Se entrega en Moodle y se califica como **hecho / no hecho**: no lleva nota ni ítem en el
+    libro de calificaciones, pero **es requisito**. Sin el entorno del lenguaje elegido no se puede hacer
     [Robocode](UD02_ActividadesEntregables.md).
 
 **Objetivo**: dejar listo el entorno de desarrollo del lenguaje elegido — Java con IntelliJ IDEA o

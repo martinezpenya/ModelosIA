@@ -1,10 +1,10 @@
 # UD02 · Taller 5 — Documentar con Markdown
 
-!!! important "Puesta a punto: requisito, no puntúa"
-    Se entrega en Moodle y se marca **hecho / no hecho**. No lleva nota, pero es
-    **requisito**: la memoria de [Robocode](UD02_ActividadesEntregables.md) se escribe y
-    documenta más rápido si dominas Markdown, y es el lenguaje en el que están escritos estos mismos
-    apuntes.
+!!! important "Entrega · hecho / no hecho"
+    Se entrega en Moodle y se califica como **hecho / no hecho**: no lleva nota ni ítem en el
+    libro de calificaciones, pero **es requisito**. La memoria de [Robocode](UD02_ActividadesEntregables.md) se
+    escribe y documenta más rápido si dominas Markdown, y es el lenguaje en el que están escritos
+    estos mismos apuntes.
 
 **Objetivo**: aprender la sintaxis de Markdown lo bastante a fondo como para documentar cualquier
 proyecto — texto, listas, tablas, enlaces, imágenes y código — y escribir un documento propio de

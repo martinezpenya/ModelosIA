@@ -1,9 +1,9 @@
 # UD02 · Taller 4 — Control de versiones con GitHub
 
-!!! important "Puesta a punto: requisito, no puntúa"
-    Se entrega en Moodle y se marca **hecho / no hecho**. No lleva nota, pero es
-    **requisito**: en [Robocode](UD02_ActividadesEntregables.md) entregarás el código de tu
-    bot, y saber moverte en un repositorio es parte de las herramientas del oficio.
+!!! important "Entrega · hecho / no hecho"
+    Se entrega en Moodle y se califica como **hecho / no hecho**: no lleva nota ni ítem en el
+    libro de calificaciones, pero **es requisito**. En [Robocode](UD02_ActividadesEntregables.md) entregarás el código
+    de tu bot, y saber moverte en un repositorio es parte de las herramientas del oficio.
 
 **Objetivo**: crear una cuenta en GitHub y completar un ciclo real de colaboración — *fork*, edición,
 *commit* y *pull request* — proponiendo una mejora a un repositorio ajeno.
