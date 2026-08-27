@@ -16,13 +16,5 @@
 | [`N04` · Nuevas formas de interacción](notebooks/UD01_N04_nuevas_interacciones.ipynb) | Análisis · propuesta de mejora operativa con su impacto estimado | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD01/notebooks/UD01_N04_nuevas_interacciones.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD01/notebooks/UD01_N04_nuevas_interacciones.ipynb){:target="_blank"} |
 | [`N05` · Línea del tiempo de la IA](notebooks/UD01_N05_linea_tiempo.ipynb) | Investigación · hitos históricos conectados con la técnica de hoy | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD01/notebooks/UD01_N05_linea_tiempo.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD01/notebooks/UD01_N05_linea_tiempo.ipynb){:target="_blank"} |
 <!-- AUTO:notebooks fin -->
-
-| # | Taller | Qué se entrega | Dónde |
-|---|---|---|---|
-| `N02` | [Mapa de sistemas inteligentes](notebooks/UD01_N02_mapa_sistemas.ipynb) | El mapa con su justificación | Tarea de Moodle |
-| `N03` | [Técnicas en casos reales](notebooks/UD01_N03_tecnicas_casos.ipynb) | La tabla de casos con la técnica de cada uno | Tarea de Moodle |
-| `N04` | [Nuevas interacciones](notebooks/UD01_N04_nuevas_interacciones.ipynb) | La propuesta y su análisis de eficiencia | Tarea de Moodle |
-| `N05` | [Línea del tiempo de la IA](notebooks/UD01_N05_linea_tiempo.ipynb) | La cronología documentada con fuentes | Tarea de Moodle |
-
 ---
 [Volver a la UD01](UD01_ES.md) · [Ejercicios de autoevaluación](UD01_Ejercicios.md) · [Notebooks guiados](UD01_ActividadesGuiadas.md)

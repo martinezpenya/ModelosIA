@@ -4,10 +4,10 @@
     En esta unidad se entregan seis cosas, pero **no todas cuentan igual**. Las tres primeras se
     corrigen con su rúbrica; las tres de entorno se marcan **hecho / no hecho**: hay que hacerlas,
     pero no llevan nota.
+### Lo que no es un notebook
+
 | # | Actividad | Qué se entrega | Cómo se corrige |
 |---|---|---|---|
-| `N01` | [Control difuso con scikit-fuzzy](notebooks/UD02_N01_control_difuso.ipynb) | El notebook completado | Rúbrica, en la tarea de Moodle |
-| `N02` | [Sistema basado en reglas con `experta`](notebooks/UD02_N02_sistema_reglas.ipynb) | El notebook completado | Rúbrica, en la tarea de Moodle |
 | `T01` | [Preparar el entorno para Robocode](UD02_T01_Preparar_entorno_ES.md) | Capturas del entorno funcionando | Hecho / no hecho |
 | `T02` | [Control de versiones con GitHub](UD02_T02_GitHub_ES.md) | El repositorio creado | Hecho / no hecho |
 | `T03` | [Documentar con Markdown](UD02_T03_Markdown_ES.md) | El documento en Markdown | Hecho / no hecho |

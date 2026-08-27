@@ -31,6 +31,7 @@ gramaticales, extraer frases nominales y construir representaciones bolsa de pal
 
 | Recurso | Enlace |
 |---|---|
+| Notebook | [`UD03_N01_introduccion_pln.ipynb`](notebooks/UD03_N01_introduccion_pln.ipynb) |
 !!! caution "`gensim` no instala en Python 3.14"
     La celda de *Word2Vec* usa `gensim`, que **todavía no publica rueda para Python 3.14** (su
     última versión, 4.4.0, llega hasta 3.13). En el contenedor de la unidad no pasa nada —lleva

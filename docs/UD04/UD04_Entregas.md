@@ -60,6 +60,9 @@ Tres ejercicios de visión sobre imagen y vídeo: detectar **bordes** y enmarcar
 
 | Recurso | Enlace |
 |---|---|
+| Notebook | [`UD04_N05_ejercicios_opencv.ipynb`](notebooks/UD04_N05_ejercicios_opencv.ipynb) |
+| Imagen | [`EX1.-camp.png`](notebooks/EX1.-camp.png) |
+| Vídeo | [`EX1.-vtest.mp4`](notebooks/EX1.-vtest.mp4) |
 **Se entrega**: el notebook con los tres ejercicios resueltos y sus salidas.
 
 ## N06 · Navegar con cámara, por reglas

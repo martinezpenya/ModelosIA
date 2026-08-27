@@ -16,5 +16,7 @@ Ejemplo de **aprendizaje supervisado**, **no supervisado** y de cómo medir la m
 
 | Recurso | Enlace |
 |---|---|
+| Notebook | [`UD01_N01_tecnicas_ia.ipynb`](notebooks/UD01_N01_tecnicas_ia.ipynb) |
+
 ---
 [Volver a la UD01](UD01_ES.md) · [Ejercicios](UD01_Ejercicios.md)

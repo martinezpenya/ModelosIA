@@ -52,6 +52,7 @@ NLTK y con TextBlob** — el mismo ejercicio, dos librerías.
 
 | Recurso | Enlace |
 |---|---|
+| Notebook | [`UD03_N06_representacion_texto.ipynb`](notebooks/UD03_N06_representacion_texto.ipynb) |
 **Se entrega**: el notebook con los cuatro ejercicios resueltos por **uno** de los dos caminos —tú
 eliges— y una comparación breve con el otro.
 
