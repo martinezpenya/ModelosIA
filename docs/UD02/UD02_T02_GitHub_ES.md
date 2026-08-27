@@ -1,4 +1,4 @@
-# UD02 · Taller 4 — Control de versiones con GitHub
+# UD02 · Taller 2 — Control de versiones con GitHub
 
 !!! important "Entrega · hecho / no hecho"
     Se entrega en Moodle y se califica como **hecho / no hecho**: no lleva nota ni ítem en el
@@ -32,7 +32,7 @@ tocar el original.
 ![Crear un fork](assets/GH_02.png)
 
 Pulsa **Fork this repository**. Verás el código fuente de la página, escrito en **Markdown** (lo
-trabajarás a fondo en el Taller 5):
+trabajarás a fondo en el Taller 1):
 
 ![Código fuente en Markdown](assets/GH_03.png)
 
@@ -71,7 +71,7 @@ esta actividad, lo que se evalúa es el proceso, no que te lo acepten. Si se ace
 
 ![Pull request aceptado](assets/GH_09.png)
 
-### Entrega del Taller 4
+### Entrega del Taller 2
 
 | Fase | Evidencia mínima |
 |---|---|
@@ -84,4 +84,4 @@ esta actividad, lo que se evalúa es el proceso, no que te lo acepten. Si se ace
     correcta que corregir en clase.
 
 ---
-[Volver a la UD02](UD02_ES.md) · [Taller 3](UD02_T03_Preparar_entorno_ES.md) · [Taller 5](UD02_T05_Markdown_ES.md)
+[Volver a la UD02](UD02_ES.md) · [Taller 1](UD02_T01_Preparar_entorno_ES.md) · [Taller 1](UD02_T03_Markdown_ES.md)

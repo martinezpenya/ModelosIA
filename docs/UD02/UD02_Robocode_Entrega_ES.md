@@ -4,7 +4,7 @@
     Robocode es la práctica de cierre del RA2, del **23 de noviembre al 3 de diciembre**. Cuenta
     dentro de las entregas de la unidad, y es **la más importante de las tres**: `N01` y `N02` son
     talleres cortos y sus técnicas se vuelven a evaluar en el RA5, mientras que aquí construyes un
-    bot que compite y escribes su memoria. Los talleres `T03`, `T04` y `T05` se entregan y se califican
+    bot que compite y escribes su memoria. Los talleres `T01`, `T02` y `T01` se entregan y se califican
     **hecho / no hecho**: son requisito, pero no puntúan. El peso exacto de cada entrega está en el libro de
     calificaciones de Moodle.
 
@@ -41,7 +41,7 @@ queda uno, como en un *Battle Royale* — de ahí Tank **Royale**.
 ## Antes de empezar
 
 1. Elige lenguaje con la [comparativa Java vs Python](UD02_Robocode_Comparativa_ES.md).
-2. Completa el [Taller 3](UD02_T03_Preparar_entorno_ES.md) para dejar listo tu entorno.
+2. Completa el [Taller 1](UD02_T01_Preparar_entorno_ES.md) para dejar listo tu entorno.
 3. Sigue el tutorial completo: [Robocode en Java](UD02_Robocode_Java_ES.md) o
    [Robocode en Python](UD02_Robocode_Python_ES.md), según el lenguaje elegido.
 

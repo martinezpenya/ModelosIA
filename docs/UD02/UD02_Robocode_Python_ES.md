@@ -95,7 +95,7 @@ java -jar robocode-tankroyale-gui-x.y.z.jar
 ```
 
 !!! warning "Java necesario para la GUI"
-    La GUI requiere Java 11 o superior para ejecutarse, independientemente de que vuestro bot esté escrito en Python. Si no tenéis Java, ved el [Taller 3: preparar el entorno](UD02_T03_Preparar_entorno_ES.md) o instalad OpenJDK:
+    La GUI requiere Java 11 o superior para ejecutarse, independientemente de que vuestro bot esté escrito en Python. Si no tenéis Java, ved el [Taller 1: preparar el entorno](UD02_T01_Preparar_entorno_ES.md) o instalad OpenJDK:
     ```sh
     sudo apt install default-jdk   # Linux
     ```

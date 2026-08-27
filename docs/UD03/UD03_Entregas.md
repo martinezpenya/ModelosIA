@@ -35,6 +35,16 @@
     `librosa` en su lugar) y el modelo de traducción necesita `sentencepiece`. Todo explicado en el
     propio notebook.
 
+<!-- AUTO:notebooks inicio -->
+| Notebook | Qué es | Descargar | Abrir en Colab |
+|---|---|---|---|
+| [`N08` · Del texto al vector](notebooks/UD03_N08_del_texto_al_vector.ipynb) | Clasificador de reseñas desde cero · del texto al vector | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD03/notebooks/UD03_N08_del_texto_al_vector.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD03/notebooks/UD03_N08_del_texto_al_vector.ipynb){:target="_blank"} |
+| [`N09` · Clasificador de preguntas](notebooks/UD03_N09_clasificador_preguntas.ipynb) | Clasificador de preguntas entrenado y medido | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD03/notebooks/UD03_N09_clasificador_preguntas.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD03/notebooks/UD03_N09_clasificador_preguntas.ipynb){:target="_blank"} |
+| [`N10` · Análisis de sentimientos en IMDb con DistilBERT](notebooks/UD03_N10_sentimiento_imdb.ipynb) | Análisis de sentimiento en reseñas de cine | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD03/notebooks/UD03_N10_sentimiento_imdb.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD03/notebooks/UD03_N10_sentimiento_imdb.ipynb){:target="_blank"} |
+| [`N11` · Prototipo de asistente virtual](notebooks/UD03_N11_asistente_virtual.ipynb) | Sistema completo · asistente virtual por voz | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD03/notebooks/UD03_N11_asistente_virtual.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD03/notebooks/UD03_N11_asistente_virtual.ipynb){:target="_blank"} |
+| [`N12` · Un sistema de PLN de punta a punta](notebooks/UD03_N12_sistema_pln.ipynb) | Sistema completo · extractor de entidades con spaCy | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD03/notebooks/UD03_N12_sistema_pln.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD03/notebooks/UD03_N12_sistema_pln.ipynb){:target="_blank"} |
+<!-- AUTO:notebooks fin -->
+
 ## N06 · Representación de texto, por dos caminos
 
 Tokenizar, quitar *stopwords* y construir una bolsa de palabras y un vector tf-idf, resuelto **con
@@ -42,8 +52,6 @@ NLTK y con TextBlob** — el mismo ejercicio, dos librerías.
 
 | Recurso | Enlace |
 |---|---|
-| Notebook | [`UD03_N06_representacion_texto.ipynb`](notebooks/UD03_N06_representacion_texto.ipynb) |
-
 **Se entrega**: el notebook con los cuatro ejercicios resueltos por **uno** de los dos caminos —tú
 eliges— y una comparación breve con el otro.
 

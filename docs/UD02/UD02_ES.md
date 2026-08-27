@@ -686,8 +686,8 @@ de la unidad):
 - **Práctica** — se hace, no se entrega ni puntúa:
     - [Ejercicios de autoevaluación](UD02_Ejercicios.md)
 - **Entregas**:
-    - con rúbrica: [N01 · control difuso](notebooks/UD02_N01_control_difuso.ipynb) · [N02 · sistema de reglas](notebooks/UD02_N02_sistema_reglas.ipynb) · [Robocode Tank Royale](UD02_Robocode_Entrega_ES.md), la práctica de cierre del RA2
-    - de **hecho / no hecho**, requisito sin nota: [T03 · preparar el entorno](UD02_T03_Preparar_entorno_ES.md) · [T04 · GitHub](UD02_T04_GitHub_ES.md) · [T05 · Markdown](UD02_T05_Markdown_ES.md)
+    - con rúbrica: [`N01` · control difuso](notebooks/UD02_N01_control_difuso.ipynb) · [N02 · sistema de reglas](notebooks/UD02_N02_sistema_reglas.ipynb) · [Robocode Tank Royale](UD02_Robocode_Entrega_ES.md), la práctica de cierre del RA2
+    - de **hecho / no hecho**, requisito sin nota: [T01 · preparar el entorno](UD02_T01_Preparar_entorno_ES.md) · [T02 · GitHub](UD02_T02_GitHub_ES.md) · [T03 · Markdown](UD02_T03_Markdown_ES.md)
 - **Documentación de Robocode**: [comparativa Java/Python](UD02_Robocode_Comparativa_ES.md) · [tutorial Java](UD02_Robocode_Java_ES.md) · [tutorial Python](UD02_Robocode_Python_ES.md)
 - Los notebooks se abren desde **Práctica** y **Entregas**, con descarga y apertura en Colab.
 
@@ -707,7 +707,7 @@ de la unidad):
 
 | Peso | Instrumento |
 |---|---|
-| **40 %** actividades | **Robocode** y los talleres **N01** y **N02**, cada uno con su rúbrica. Robocode es el de más peso, con diferencia. Los talleres **T03**-**T05** se entregan como **hecho / no hecho** y no puntúan |
+| **40 %** actividades | **Robocode** y los notebooks **`N01`** y **`N02`**, cada uno con su rúbrica. Robocode es el de más peso, con diferencia. Los talleres **`T01`**-**`T03`** se entregan como **hecho / no hecho** y no puntúan |
 | **60 %** prueba escrita | Prueba del RA2 en Moodle: preguntas de test y de desarrollo sobre el contenido de la unidad |
 
 - **La normativa exige alcanzar todos los RA** del módulo para superarlo (art. 5.1 de la Orden

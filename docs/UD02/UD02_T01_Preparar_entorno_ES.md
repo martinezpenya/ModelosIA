@@ -1,4 +1,4 @@
-# UD02 · Taller 3 — Preparar el entorno para Robocode (Java o Python)
+# UD02 · Taller 1 — Preparar el entorno para Robocode (Java o Python)
 
 !!! important "Entrega · hecho / no hecho"
     Se entrega en Moodle y se califica como **hecho / no hecho**: no lleva nota ni ítem en el
@@ -117,7 +117,7 @@ pip install robocode-tank-royale
 
 ![Instalación de la API con pip](assets/terminal_pip_install.png)
 
-## Entrega del Taller 3
+## Entrega del Taller 1
 
 Un documento PDF con:
 
@@ -131,4 +131,4 @@ Un documento PDF con:
     comprueba que el entorno funciona.
 
 ---
-[Volver a la UD02](UD02_ES.md) · [Taller 4](UD02_T04_GitHub_ES.md) · [Comparativa Java/Python](UD02_Robocode_Comparativa_ES.md)
+[Volver a la UD02](UD02_ES.md) · [Taller 2](UD02_T02_GitHub_ES.md) · [Comparativa Java/Python](UD02_Robocode_Comparativa_ES.md)

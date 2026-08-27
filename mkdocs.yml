@@ -52,14 +52,14 @@ nav:
       - Qué se entrega: UD02/UD02_Entregas.md
       - N01 Control difuso con scikit-fuzzy: UD02/notebooks/UD02_N01_control_difuso.ipynb
       - N02 Sistema basado en reglas con experta: UD02/notebooks/UD02_N02_sistema_reglas.ipynb
+      - T01 Preparar el entorno para Robocode (hecho / no hecho): UD02/UD02_T01_Preparar_entorno_ES.md
+      - T02 Control de versiones con GitHub (hecho / no hecho): UD02/UD02_T02_GitHub_ES.md
+      - T03 Documentar con Markdown (hecho / no hecho): UD02/UD02_T03_Markdown_ES.md
       - Robocode Tank Royale: UD02/UD02_Robocode_Entrega_ES.md
-      - T03 Preparar el entorno para Robocode (hecho / no hecho): UD02/UD02_T03_Preparar_entorno_ES.md
-      - T04 Control de versiones con GitHub (hecho / no hecho): UD02/UD02_T04_GitHub_ES.md
-      - T05 Documentar con Markdown (hecho / no hecho): UD02/UD02_T05_Markdown_ES.md
     - Documentación de Robocode:
+      - Comparativa Java vs Python, elige lenguaje: UD02/UD02_Robocode_Comparativa_ES.md
       - Tutorial Robocode (Java): UD02/UD02_Robocode_Java_ES.md
       - Tutorial Robocode (Python): UD02/UD02_Robocode_Python_ES.md
-      - Comparativa Java vs Python: UD02/UD02_Robocode_Comparativa_ES.md
   - UD05:
     - Sistemas expertos y controladores inteligentes: UD05/UD05_ES.md
     - Diapositivas: UD05/UD05_Diapositivas.md

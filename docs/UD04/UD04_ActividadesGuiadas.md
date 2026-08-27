@@ -15,6 +15,14 @@
 
     Funcionan igual en **Colab** y en el contenedor de prácticas de la UD00.
 
+<!-- AUTO:notebooks inicio -->
+| Notebook | Qué es | Descargar | Abrir en Colab |
+|---|---|---|---|
+| [`N01` · Introducción a OpenCV](notebooks/UD04_N01_introduccion_opencv.ipynb) | Introducción a OpenCV | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/UD04_N01_introduccion_opencv.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/UD04_N01_introduccion_opencv.ipynb){:target="_blank"} |
+| [`N02` · Vehículos de Braitenberg](notebooks/UD04_N02_vehiculos_braitenberg.ipynb) | Vehículos de Braitenberg · comportamiento sin planificación | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/UD04_N02_vehiculos_braitenberg.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/UD04_N02_vehiculos_braitenberg.ipynb){:target="_blank"} |
+| [`N03` · Ejemplos de robots en AITK](notebooks/UD04_N03_ejemplos_robots.ipynb) | Ejemplos de robots en AITK | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/UD04_N03_ejemplos_robots.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/UD04_N03_ejemplos_robots.ipynb){:target="_blank"} |
+<!-- AUTO:notebooks fin -->
+
 ## N01 · Introducción a OpenCV
 
 Visión por computador aplicada: cargar una imagen, detectar **bordes**, detectar **movimiento**
@@ -23,10 +31,6 @@ que viene después, porque la cámara es el único sensor del robot en esta unid
 
 | Recurso | Enlace |
 |---|---|
-| Notebook | [`UD04_N01_introduccion_opencv.ipynb`](notebooks/UD04_N01_introduccion_opencv.ipynb) |
-| Imágenes de apoyo | [`1.-line.png`](notebooks/1.-line.png) · [`1.-line_left.png`](notebooks/1.-line_left.png) · [`1.-line_right.png`](notebooks/1.-line_right.png) |
-| Vídeo de apoyo | [`1.-motionvideo.mp4`](notebooks/1.-motionvideo.mp4) |
-
 ## N02 · Vehículos de Braitenberg
 
 El control más simple que existe: conectar un sensor directamente a un motor, sin representación

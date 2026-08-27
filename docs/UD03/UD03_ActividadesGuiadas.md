@@ -11,6 +11,18 @@
     - **`N02`, `N03` y `N05`**: usan `transformers`, entrenan modelos o procesan audio. Van en
       **Colab**, que tiene GPU — en local, sin GPU, tardan horas.
 
+<!-- AUTO:notebooks inicio -->
+| Notebook | Qué es | Descargar | Abrir en Colab |
+|---|---|---|---|
+| [`N01` · Introducción al procesamiento del lenguaje natural](notebooks/UD03_N01_introduccion_pln.ipynb) | Introducción · el pipeline de PLN de punta a punta | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD03/notebooks/UD03_N01_introduccion_pln.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD03/notebooks/UD03_N01_introduccion_pln.ipynb){:target="_blank"} |
+| [`N02` · Clasificador de noticias](notebooks/UD03_N02_clasificacion_texto_torch.ipynb) | Clasificación de texto con PyTorch | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD03/notebooks/UD03_N02_clasificacion_texto_torch.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD03/notebooks/UD03_N02_clasificacion_texto_torch.ipynb){:target="_blank"} |
+| [`N03` · Modelos de lenguaje, DistilBERT](notebooks/UD03_N03_modelos_lenguaje_distilbert.ipynb) | Modelos de lenguaje · DistilBERT | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD03/notebooks/UD03_N03_modelos_lenguaje_distilbert.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD03/notebooks/UD03_N03_modelos_lenguaje_distilbert.ipynb){:target="_blank"} |
+| [`N04` · Primeros pasos con spaCy](notebooks/UD03_N04_spacy_primeros_pasos.ipynb) | Primeros pasos con spaCy | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD03/notebooks/UD03_N04_spacy_primeros_pasos.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD03/notebooks/UD03_N04_spacy_primeros_pasos.ipynb){:target="_blank"} |
+| [`N05` · Ampliación: clasificador de géneros musicales](notebooks/UD03_N05_ampliacion_generos_musicales.ipynb) | Ampliación · clasificador de géneros musicales | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD03/notebooks/UD03_N05_ampliacion_generos_musicales.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD03/notebooks/UD03_N05_ampliacion_generos_musicales.ipynb){:target="_blank"} |
+| [`N06` · Representación de texto](notebooks/UD03_N06_representacion_texto.ipynb) | Práctica · representación de texto por dos caminos | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD03/notebooks/UD03_N06_representacion_texto.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD03/notebooks/UD03_N06_representacion_texto.ipynb){:target="_blank"} |
+| [`N07` · NLTK y Python](notebooks/UD03_N07_nltk_python.ipynb) | Práctica · etiquetado con NLTK y `cess_esp` | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD03/notebooks/UD03_N07_nltk_python.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD03/notebooks/UD03_N07_nltk_python.ipynb){:target="_blank"} |
+<!-- AUTO:notebooks fin -->
+
 ## N01 · Introducción al PLN
 
 Los fundamentos con `nltk` y TextBlob: tokenizar, quitar *stopwords*, etiquetar categorías
@@ -19,8 +31,6 @@ gramaticales, extraer frases nominales y construir representaciones bolsa de pal
 
 | Recurso | Enlace |
 |---|---|
-| Notebook | [`UD03_N01_introduccion_pln.ipynb`](notebooks/UD03_N01_introduccion_pln.ipynb) |
-
 !!! caution "`gensim` no instala en Python 3.14"
     La celda de *Word2Vec* usa `gensim`, que **todavía no publica rueda para Python 3.14** (su
     última versión, 4.4.0, llega hasta 3.13). En el contenedor de la unidad no pasa nada —lleva

@@ -5,6 +5,13 @@
     ven en casa**, antes de la sesión que les corresponde. En clase se debate, no se proyecta.
     Todos los enlaces se comprobaron el **22 de agosto de 2026**.
 
+<!-- AUTO:notebooks inicio -->
+| Notebook | Qué es | Descargar | Abrir en Colab |
+|---|---|---|---|
+| [`N01` · Detección y corrección de sesgos](notebooks/UD06_N01_sesgos_ia.ipynb) | Detección y corrección de sesgos · da soporte a `N03` | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD06/notebooks/UD06_N01_sesgos_ia.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD06/notebooks/UD06_N01_sesgos_ia.ipynb){:target="_blank"} |
+| [`N02` · Análisis de un caso ético](notebooks/UD06_N02_analisis_caso_etico.ipynb) | Método de análisis ético sobre un caso real | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD06/notebooks/UD06_N02_analisis_caso_etico.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD06/notebooks/UD06_N02_analisis_caso_etico.ipynb){:target="_blank"} |
+<!-- AUTO:notebooks fin -->
+
 ## Antes de cada debate
 
 | Debate | Documental de partida | Enlace |

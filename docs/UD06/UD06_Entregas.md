@@ -8,6 +8,12 @@
 
     El **peso** de cada entrega está en el libro de calificaciones de Moodle, no aquí.
 
+<!-- AUTO:notebooks inicio -->
+| Notebook | Qué es | Descargar | Abrir en Colab |
+|---|---|---|---|
+| [`N03` · Auditoría de sesgos con Fairlearn](notebooks/UD06_N03_auditoria_sesgos.ipynb) | Auditoría con Fairlearn · medir, mitigar y ver el precio que se paga | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD06/notebooks/UD06_N03_auditoria_sesgos.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD06/notebooks/UD06_N03_auditoria_sesgos.ipynb){:target="_blank"} |
+<!-- AUTO:notebooks fin -->
+
 ## Resumen de entregas y práctica
 
 | # | Actividad | Cuándo | Qué se entrega | Cómo se corrige |

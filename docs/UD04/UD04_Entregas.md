@@ -40,6 +40,19 @@
     - Si ves código antiguo con `keras.backend.mean` o `keras.backend.abs`, **ya no existen** en
       Keras 3: el equivalente es `keras.ops.mean` y `keras.ops.abs`.
 
+<!-- AUTO:notebooks inicio -->
+| Notebook | Qué es | Descargar | Abrir en Colab |
+|---|---|---|---|
+| [`N04` · Cinemática de un manipulador](notebooks/UD04_N04_cinematica_manipulador.ipynb) | Cinemática directa e inversa de un robot real (Panda, Puma 560) | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/UD04_N04_cinematica_manipulador.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/UD04_N04_cinematica_manipulador.ipynb){:target="_blank"} |
+| [`N05` · Ejercicios de OpenCV](notebooks/UD04_N05_ejercicios_opencv.ipynb) | Visión · ejercicios de OpenCV sobre imagen y vídeo | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/UD04_N05_ejercicios_opencv.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/UD04_N05_ejercicios_opencv.ipynb){:target="_blank"} |
+| [`N06` · Navegar con cámara](notebooks/UD04_N06_navegar_camara.ipynb) | Navegación por reglas con la cámara | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/UD04_N06_navegar_camara.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/UD04_N06_navegar_camara.ipynb){:target="_blank"} |
+| [`N07` · Navegar con cámara difusa](notebooks/UD04_N07_navegar_camara_difusa.ipynb) | La misma navegación, con lógica difusa | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/UD04_N07_navegar_camara_difusa.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/UD04_N07_navegar_camara_difusa.ipynb){:target="_blank"} |
+| [`N08` · Generar datos de entrenamiento](notebooks/UD04_N08_generar_datos_entrenamiento.ipynb) | Insumo de `N09` · genera el conjunto de entrenamiento | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/UD04_N08_generar_datos_entrenamiento.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/UD04_N08_generar_datos_entrenamiento.ipynb){:target="_blank"} |
+| [`N09` · Controlar el robot con una red neuronal](notebooks/UD04_N09_red_neuronal.ipynb) | Navegación con una red neuronal entrenada | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/UD04_N09_red_neuronal.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/UD04_N09_red_neuronal.ipynb){:target="_blank"} |
+| [`N10` · Aprendizaje por refuerzo con NEAT](notebooks/UD04_N10_neat.ipynb) | Aprendizaje por refuerzo · evolucionar la red con NEAT | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/UD04_N10_neat.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/UD04_N10_neat.ipynb){:target="_blank"} |
+| [`N11` · Diseño de un sistema robotizado](notebooks/UD04_N11_diseno_sistema_robotizado.ipynb) | Diseño · evaluar alternativas para un problema real (CE d) | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/UD04_N11_diseno_sistema_robotizado.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/UD04_N11_diseno_sistema_robotizado.ipynb){:target="_blank"} |
+<!-- AUTO:notebooks fin -->
+
 ## N05 · Ejercicios de OpenCV
 
 Tres ejercicios de visión sobre imagen y vídeo: detectar **bordes** y enmarcarlos, detectar
@@ -47,10 +60,6 @@ Tres ejercicios de visión sobre imagen y vídeo: detectar **bordes** y enmarcar
 
 | Recurso | Enlace |
 |---|---|
-| Notebook | [`UD04_N05_ejercicios_opencv.ipynb`](notebooks/UD04_N05_ejercicios_opencv.ipynb) |
-| Imagen | [`EX1.-camp.png`](notebooks/EX1.-camp.png) |
-| Vídeo | [`EX1.-vtest.mp4`](notebooks/EX1.-vtest.mp4) |
-
 **Se entrega**: el notebook con los tres ejercicios resueltos y sus salidas.
 
 ## N06 · Navegar con cámara, por reglas
