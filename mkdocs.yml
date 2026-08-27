@@ -330,6 +330,28 @@ plugins:
             - 'UD04/notebooks/'
             - 'UD05/notebooks/'
             - 'UD06/notebooks/'
+            # Practica y Entregas fuera del PDF (decision del profesor, 2026-08-27): el libro es
+            # el material de estudio, y una tabla de enlaces a notebooks o el detalle de que se
+            # entrega no se leen en papel -viven en el sitio y en Moodle-. A diferencia de los
+            # notebooks, estas NO son una subcarpeta: los grupos "Practica" y "Entregas" son
+            # agrupaciones del `nav`, y sus paginas viven en `docs/UD0x/` junto a la teoria, asi
+            # que se excluyen pagina a pagina. Los patrones se comparan contra `page.url`
+            # (`Generator.on_post_page`), que con `use_directory_urls: false` es
+            # `UD01/UD01_Entregas.html`.
+            #
+            # Los enlaces que la teoria hace a estas paginas no quedan muertos: hooks.py
+            # (_fix_dead_pdf_links) lee esta misma lista del plugin y los convierte en enlaces
+            # absolutos al sitio, asi que en el PDF siguen siendo clicables hacia la web.
+            #
+            # Lo que SI se queda en el libro de la UD02: los tres documentos de Robocode
+            # (comparativa y los dos tutoriales), que son apuntes, no entregas.
+            - 'UD0\d/UD0\d_Ejercicios\.html'
+            - 'UD0\d/UD0\d_ActividadesGuiadas\.html'
+            - 'UD0\d/UD0\d_Entregas\.html'
+            # Las 8 paginas con enunciado propio que cuelgan de "Entregas": los dos talleres de
+            # Docker de la UD00, los cuatro de la UD02 (Robocode incluido) y los dos debates de
+            # la UD06.
+            - 'UD0\d/UD0\d_[TD]0\d_'
             # 2026-08-24: se probo a excluir tambien talleres/ejercicios y las 7 paginas de
             # diapositivas (el unico <iframe> del sitio) para ver si el corte de docs/Libro.pdf
             # dependia del tamano del libro o del iframe sin convertir. Ninguna de las dos cosas
@@ -338,7 +360,9 @@ plugins:
             # Excluir solo UD04_ES.md SI arreglo el corte (PDF completo, 278 paginas): confirma
             # que el disparador esta dentro de ese fichero. Revertido aqui para acotar el tramo
             # exacto con un cambio de contenido en vez de excluir la pagina entera.
-            # Investigacion completa en HISTORIAL.md.
+            # Investigacion completa en HISTORIAL.md. Ojo al leer este parrafo hoy: talleres y
+            # ejercicios han vuelto a salir del PDF el 2026-08-27, pero por decision editorial
+            # (ver arriba), no como intento de arreglar ningun corte. Las diapositivas se quedan.
         # convert_iframe retirado (2026-08-24): nunca coincidia. El plugin compara iframe['src']
         # ya resuelto por replace_asset_hrefs a una ruta local file:// (segun site_dir en el
         # momento del build) contra la URL de produccion que hay aqui configurada -no pueden

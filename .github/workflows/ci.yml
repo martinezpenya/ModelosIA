@@ -46,8 +46,23 @@ jobs:
         run: mkdocs build --strict
       # mkdocs-with-pdf falla de forma intermitente en el runner de GitHub Actions con
       # "No anchor ... for internal URI reference" en páginas sin relación con el commit
-      # (2026-08-25): no reproducible en local con el mismo commit ni las mismas versiones
-      # de paquetes tras varios intentos, así que se reintenta antes de dar el build por roto.
+      # (2026-08-25), así que se reintenta antes de dar el build por roto.
+      #
+      # OJO antes de volver a dar por intermitente ese error (2026-08-27): esa misma clase de
+      # error aparece también de forma DETERMINISTA cuando algo rompe la paginación de
+      # WeasyPrint (una rejilla `display: grid`, un `display: contents`, una imagen sin
+      # acotar). El documento combinado se corta en seco por ahí y todas las anclas de lo que
+      # venía después dejan de existir, en páginas que efectivamente no tienen relación con el
+      # commit. Los tres reintentos fallan igual, con el mismo número exacto de errores.
+      #
+      # Para reproducirlo en local hay que exportar la variable, porque el plugin del PDF está
+      # condicionado a ella (`enabled_if_env` en mkdocs.yml) y sin ella el build sale limpio
+      # sin generar nada:
+      #
+      #     PRERENDER_MERMAID=1 mkdocs build --strict -d /tmp/site-pdf
+      #
+      # Si el número de errores es estable entre ejecuciones, no es el fallo intermitente:
+      # abrir el Libro.pdf que se genera de todos modos y buscar en qué página se corta.
       - name: Build solo para extraer el PDF (Mermaid pre-renderizado, lo necesita WeasyPrint)
         run: |
           for intento in 1 2 3; do
