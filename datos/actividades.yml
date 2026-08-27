@@ -201,9 +201,13 @@ UD04:
       comparando fotogramas consecutivos y calcular el **flujo óptico**. Es la base de `N05` y de todo
       lo que viene después, porque la cámara es el único sensor del robot en esta unidad.'
     materiales:
-    - '| Imágenes de apoyo | [`1.-line.png`](notebooks/1.-line.png) · [`1.-line_left.png`](notebooks/1.-line_left.png)
-      · [`1.-line_right.png`](notebooks/1.-line_right.png) |'
     - '| Vídeo de apoyo | [`1.-motionvideo.mp4`](notebooks/1.-motionvideo.mp4) |'
+    galeria:
+      titulo: Las tres imágenes de apoyo
+      imagenes:
+      - {src: notebooks/1.-line.png, pie: Línea centrada}
+      - {src: notebooks/1.-line_left.png, pie: Línea a la izquierda}
+      - {src: notebooks/1.-line_right.png, pie: Línea a la derecha}
   UD04_N02_vehiculos_braitenberg.ipynb:
     que_es: Vehículos de Braitenberg · comportamiento sin planificación
     resumen: 'El control más simple que existe: conectar un sensor directamente a un motor, sin representación
@@ -227,18 +231,26 @@ UD04:
       **movimiento** entre fotogramas consecutivos y calcular el **flujo óptico**.'
     se_entrega: el notebook con los tres ejercicios resueltos y sus salidas.
     materiales:
-    - '| Imagen | [`EX1.-camp.png`](notebooks/EX1.-camp.png) |'
     - '| Vídeo | [`EX1.-vtest.mp4`](notebooks/EX1.-vtest.mp4) |'
+    galeria:
+      titulo: La imagen de partida
+      imagenes:
+      - {src: notebooks/EX1.-camp.png, pie: El campo}
   UD04_N06_navegar_camara.ipynb:
     que_es: Navegación por reglas con la cámara
     resumen: 'El robot tiene que **seguir una línea** en el suelo usando solo lo que ve su cámara. Aquí
       escribes tú todas las condiciones: dónde está la línea en la imagen, y qué hacer en cada caso. Dos
       escenarios: **línea simple** y **línea doble**.'
     se_entrega: el notebook con el controlador funcionando en los dos escenarios.
-    materiales:
-    - '| Pistas | [1](notebooks/EX2_pista_1.png) · [2](notebooks/EX2_pista_2.png) · [3](notebooks/EX2_pista_3.png)
-      · [4](notebooks/EX2_pista_4.png) · [5](notebooks/EX2_pista_5.png) · [6](notebooks/EX2_pista_6.png)
-      |'
+    galeria:
+      titulo: Las seis pistas
+      imagenes:
+      - {src: notebooks/EX2_pista_1.png, pie: Pista 1}
+      - {src: notebooks/EX2_pista_2.png, pie: Pista 2}
+      - {src: notebooks/EX2_pista_3.png, pie: Pista 3}
+      - {src: notebooks/EX2_pista_4.png, pie: Pista 4}
+      - {src: notebooks/EX2_pista_5.png, pie: Pista 5}
+      - {src: notebooks/EX2_pista_6.png, pie: Pista 6}
   UD04_N07_navegar_camara_difusa.ipynb:
     que_es: La misma navegación, con lógica difusa
     resumen: 'El **mismo problema** que `N06`, resuelto con lógica difusa: variables lingüísticas, funciones

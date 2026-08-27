@@ -113,6 +113,25 @@ def tabla(fichas: list[dict], ud: str) -> str:
     return "\n".join(filas)
 
 
+def galeria(g: dict) -> str:
+    """Rejilla de miniaturas, cada una enlazada a la imagen a tamaño completo.
+
+    Usa la clase `grid` de Material y `<figure markdown="span">`, que ya funcionan con las
+    extensiones `attr_list` y `md_in_html` que el sitio tiene activas: sin plugins nuevos.
+    """
+    fuera = [f"\n**{g['titulo']}.** Pulsa cualquiera para verla a tamaño completo.\n",
+             '<div class="grid" markdown>']
+    for im in g["imagenes"]:
+        src, pie = im["src"], im.get("pie", "")
+        fuera.append(f'<figure markdown="span">')
+        fuera.append(f"  [![{pie}]({src})]({src})")
+        if pie:
+            fuera.append(f"  <figcaption>{pie}</figcaption>")
+        fuera.append("</figure>")
+    fuera.append("</div>")
+    return "\n".join(fuera)
+
+
 def apartados(fichas: list[dict], grupo: str) -> str:
     """Un apartado por actividad: titulo, resumen, materiales y que se entrega."""
     fuera = []
@@ -121,6 +140,8 @@ def apartados(fichas: list[dict], grupo: str) -> str:
         fuera.append(f["resumen"])
         if f.get("materiales"):
             fuera.append("\n| Recurso | Enlace |\n|---|---|\n" + "\n".join(f["materiales"]))
+        if f.get("galeria"):
+            fuera.append(galeria(f["galeria"]))
         if f.get("se_entrega"):
             etiqueta = "Se entrega" if grupo == "entregas" else "Qué tienes que tener al terminar"
             fuera.append(f"\n**{etiqueta}**: {f['se_entrega']}")
@@ -269,6 +290,7 @@ def main() -> int:
                     "que_es": ficha.get("que_es", "—"), "resumen": ficha.get("resumen", ""),
                     "se_entrega": ficha.get("se_entrega", ""),
                     "materiales": ficha.get("materiales", []),
+                    "galeria": ficha.get("galeria"),
                 })
 
         for clave, grupo in (("_pagina_practica", "practica"), ("_pagina_entregas", "entregas")):

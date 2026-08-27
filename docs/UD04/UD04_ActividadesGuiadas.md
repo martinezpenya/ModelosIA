@@ -17,8 +17,24 @@ Visión por computador aplicada: cargar una imagen, detectar **bordes**, detecta
 
 | Recurso | Enlace |
 |---|---|
-| Imágenes de apoyo | [`1.-line.png`](notebooks/1.-line.png) · [`1.-line_left.png`](notebooks/1.-line_left.png) · [`1.-line_right.png`](notebooks/1.-line_right.png) |
 | Vídeo de apoyo | [`1.-motionvideo.mp4`](notebooks/1.-motionvideo.mp4) |
+
+**Las tres imágenes de apoyo.** Pulsa cualquiera para verla a tamaño completo.
+
+<div class="grid" markdown>
+<figure markdown="span">
+  [![Línea centrada](notebooks/1.-line.png)](notebooks/1.-line.png)
+  <figcaption>Línea centrada</figcaption>
+</figure>
+<figure markdown="span">
+  [![Línea a la izquierda](notebooks/1.-line_left.png)](notebooks/1.-line_left.png)
+  <figcaption>Línea a la izquierda</figcaption>
+</figure>
+<figure markdown="span">
+  [![Línea a la derecha](notebooks/1.-line_right.png)](notebooks/1.-line_right.png)
+  <figcaption>Línea a la derecha</figcaption>
+</figure>
+</div>
 
 ## `N02` · Vehículos de Braitenberg
 
