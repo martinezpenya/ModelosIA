@@ -119,14 +119,16 @@ def galeria(g: dict) -> str:
     Usa la clase `grid` de Material y `<figure markdown="span">`, que ya funcionan con las
     extensiones `attr_list` y `md_in_html` que el sitio tiene activas: sin plugins nuevos.
     """
-    fuera = [f"\n**{g['titulo']}.** Pulsa cualquiera para verla a tamaño completo.\n",
+    ancho = g.get("ancho", 200)
+    fuera = [f"\n**{g['titulo']}.** Pulsa la miniatura para verla a tamaño completo.\n",
              '<div class="grid" markdown>']
     for im in g["imagenes"]:
         src, pie = im["src"], im.get("pie", "")
-        fuera.append(f'<figure markdown="span">')
-        fuera.append(f"  [![{pie}]({src})]({src})")
-        if pie:
-            fuera.append(f"  <figcaption>{pie}</figcaption>")
+        crudo = f"{RAW}/{g['ud']}/{src}"
+        fuera.append('<figure markdown="span">')
+        fuera.append(f"  [![{pie}]({src}){{ width=\"{ancho}\" }}]({src})")
+        pie_txt = f"{pie} · " if pie else ""
+        fuera.append(f'  <figcaption>{pie_txt}<a href="{crudo}" download>descargar</a></figcaption>')
         fuera.append("</figure>")
     fuera.append("</div>")
     return "\n".join(fuera)
@@ -290,7 +292,7 @@ def main() -> int:
                     "que_es": ficha.get("que_es", "—"), "resumen": ficha.get("resumen", ""),
                     "se_entrega": ficha.get("se_entrega", ""),
                     "materiales": ficha.get("materiales", []),
-                    "galeria": ficha.get("galeria"),
+                    "galeria": (dict(ficha["galeria"], ud=ud) if ficha.get("galeria") else None),
                 })
 
         for clave, grupo in (("_pagina_practica", "practica"), ("_pagina_entregas", "entregas")):

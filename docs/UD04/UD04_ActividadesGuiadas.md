@@ -19,20 +19,20 @@ Visión por computador aplicada: cargar una imagen, detectar **bordes**, detecta
 |---|---|
 | Vídeo de apoyo | [`1.-motionvideo.mp4`](notebooks/1.-motionvideo.mp4) |
 
-**Las tres imágenes de apoyo.** Pulsa cualquiera para verla a tamaño completo.
+**Las tres imágenes de apoyo.** Pulsa la miniatura para verla a tamaño completo.
 
 <div class="grid" markdown>
 <figure markdown="span">
-  [![Línea centrada](notebooks/1.-line.png)](notebooks/1.-line.png)
-  <figcaption>Línea centrada</figcaption>
+  [![Línea centrada](notebooks/1.-line.png){ width="200" }](notebooks/1.-line.png)
+  <figcaption>Línea centrada · <a href="https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/1.-line.png" download>descargar</a></figcaption>
 </figure>
 <figure markdown="span">
-  [![Línea a la izquierda](notebooks/1.-line_left.png)](notebooks/1.-line_left.png)
-  <figcaption>Línea a la izquierda</figcaption>
+  [![Línea a la izquierda](notebooks/1.-line_left.png){ width="200" }](notebooks/1.-line_left.png)
+  <figcaption>Línea a la izquierda · <a href="https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/1.-line_left.png" download>descargar</a></figcaption>
 </figure>
 <figure markdown="span">
-  [![Línea a la derecha](notebooks/1.-line_right.png)](notebooks/1.-line_right.png)
-  <figcaption>Línea a la derecha</figcaption>
+  [![Línea a la derecha](notebooks/1.-line_right.png){ width="200" }](notebooks/1.-line_right.png)
+  <figcaption>Línea a la derecha · <a href="https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/1.-line_right.png" download>descargar</a></figcaption>
 </figure>
 </div>
 

@@ -35,12 +35,12 @@ Tres ejercicios de visión sobre imagen y vídeo: detectar **bordes** y enmarcar
 |---|---|
 | Vídeo | [`EX1.-vtest.mp4`](notebooks/EX1.-vtest.mp4) |
 
-**La imagen de partida.** Pulsa cualquiera para verla a tamaño completo.
+**La imagen de partida.** Pulsa la miniatura para verla a tamaño completo.
 
 <div class="grid" markdown>
 <figure markdown="span">
-  [![El campo](notebooks/EX1.-camp.png)](notebooks/EX1.-camp.png)
-  <figcaption>El campo</figcaption>
+  [![El campo](notebooks/EX1.-camp.png){ width="200" }](notebooks/EX1.-camp.png)
+  <figcaption>El campo · <a href="https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/EX1.-camp.png" download>descargar</a></figcaption>
 </figure>
 </div>
 
@@ -50,32 +50,32 @@ Tres ejercicios de visión sobre imagen y vídeo: detectar **bordes** y enmarcar
 
 El robot tiene que **seguir una línea** en el suelo usando solo lo que ve su cámara. Aquí escribes tú todas las condiciones: dónde está la línea en la imagen, y qué hacer en cada caso. Dos escenarios: **línea simple** y **línea doble**.
 
-**Las seis pistas.** Pulsa cualquiera para verla a tamaño completo.
+**Las seis pistas.** Pulsa la miniatura para verla a tamaño completo.
 
 <div class="grid" markdown>
 <figure markdown="span">
-  [![Pista 1](notebooks/EX2_pista_1.png)](notebooks/EX2_pista_1.png)
-  <figcaption>Pista 1</figcaption>
+  [![Pista 1](notebooks/EX2_pista_1.png){ width="200" }](notebooks/EX2_pista_1.png)
+  <figcaption>Pista 1 · <a href="https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/EX2_pista_1.png" download>descargar</a></figcaption>
 </figure>
 <figure markdown="span">
-  [![Pista 2](notebooks/EX2_pista_2.png)](notebooks/EX2_pista_2.png)
-  <figcaption>Pista 2</figcaption>
+  [![Pista 2](notebooks/EX2_pista_2.png){ width="200" }](notebooks/EX2_pista_2.png)
+  <figcaption>Pista 2 · <a href="https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/EX2_pista_2.png" download>descargar</a></figcaption>
 </figure>
 <figure markdown="span">
-  [![Pista 3](notebooks/EX2_pista_3.png)](notebooks/EX2_pista_3.png)
-  <figcaption>Pista 3</figcaption>
+  [![Pista 3](notebooks/EX2_pista_3.png){ width="200" }](notebooks/EX2_pista_3.png)
+  <figcaption>Pista 3 · <a href="https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/EX2_pista_3.png" download>descargar</a></figcaption>
 </figure>
 <figure markdown="span">
-  [![Pista 4](notebooks/EX2_pista_4.png)](notebooks/EX2_pista_4.png)
-  <figcaption>Pista 4</figcaption>
+  [![Pista 4](notebooks/EX2_pista_4.png){ width="200" }](notebooks/EX2_pista_4.png)
+  <figcaption>Pista 4 · <a href="https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/EX2_pista_4.png" download>descargar</a></figcaption>
 </figure>
 <figure markdown="span">
-  [![Pista 5](notebooks/EX2_pista_5.png)](notebooks/EX2_pista_5.png)
-  <figcaption>Pista 5</figcaption>
+  [![Pista 5](notebooks/EX2_pista_5.png){ width="200" }](notebooks/EX2_pista_5.png)
+  <figcaption>Pista 5 · <a href="https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/EX2_pista_5.png" download>descargar</a></figcaption>
 </figure>
 <figure markdown="span">
-  [![Pista 6](notebooks/EX2_pista_6.png)](notebooks/EX2_pista_6.png)
-  <figcaption>Pista 6</figcaption>
+  [![Pista 6](notebooks/EX2_pista_6.png){ width="200" }](notebooks/EX2_pista_6.png)
+  <figcaption>Pista 6 · <a href="https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/EX2_pista_6.png" download>descargar</a></figcaption>
 </figure>
 </div>
 
