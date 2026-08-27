@@ -42,5 +42,6 @@ anticipar sus fricciones reales.
 Afianzar los hitos históricos y conectarlos con la tecnología que se usa hoy.
 
 **Se entrega**: una línea del tiempo documentada de 10 hitos con su herencia actual.
+
 ---
 [Volver a la UD01](UD01_ES.md) · [Ejercicios de autoevaluación](UD01_Ejercicios.md) · [Notebooks guiados](UD01_ActividadesGuiadas.md)

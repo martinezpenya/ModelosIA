@@ -141,6 +141,8 @@ def lineas_absorbidas() -> list[str]:
             a, b = lineas[i].strip(), lineas[i + 1].strip()
             if a.startswith("|") and a.endswith("|") and b and not b.startswith(("|", "<!--")):
                 mal.append(f"{f.relative_to(RAIZ)}:{i + 2} → «{b[:55]}»")
+            if b == "---" and a and not a.startswith("<!--"):
+                mal.append(f"{f.relative_to(RAIZ)}:{i + 2} → el separador «---» pegado a «{a[:40]}»")
     return mal
 
 
@@ -164,6 +166,26 @@ def entregas_sin_apartado(datos: dict, entregas: set[str]) -> list[str]:
             if m and m.group(1) not in tiene:
                 faltan.append(f"{ud}/{pagina}: falta el resumen de {m.group(1)}")
     return faltan
+
+
+def recursos_redundantes() -> list[str]:
+    """Filas de «Recurso | Enlace» que repiten lo que ya da la tabla generada.
+
+    La tabla de arriba enlaza el notebook, su descarga y su Colab. Si un apartado vuelve a poner
+    esas mismas filas, el alumno lee dos veces lo mismo. La tabla del apartado solo se justifica
+    para el material de apoyo: imagenes, video, audio, CSV, pistas.
+    """
+    redundante = re.compile(r"^\|\s*(Notebook|Ejecutar en Colab|Colab|Abrir en Colab|Descargar)\s*\|", re.I)
+    mal = []
+    for f in sorted(DOCS.rglob("*.md")):
+        if "Presentacion" in str(f):
+            continue
+        for m in re.finditer(r"\| Recurso \| Enlace \|\n\|---\|---\|\n((?:\|[^\n]*\|\n)+)",
+                             f.read_text(encoding="utf-8")):
+            for fila in m.group(1).strip().split("\n"):
+                if redundante.match(fila.strip()):
+                    mal.append(f"{f.relative_to(RAIZ)}: «{fila.split('|')[1].strip()}» ya está en la tabla generada")
+    return mal
 
 
 def main() -> int:
@@ -220,6 +242,12 @@ def main() -> int:
         for x in faltan:
             print(f"    {x}")
 
+    repes = recursos_redundantes()
+    if repes:
+        print("\n  RECURSOS REPETIDOS · el apartado repite lo que da la tabla generada:")
+        for x in repes:
+            print(f"    {x}")
+
     absorbidas = lineas_absorbidas()
     if absorbidas:
         print("\n  LÍNEAS ABSORBIDAS POR UNA TABLA · falta la línea en blanco:")
@@ -232,7 +260,7 @@ def main() -> int:
         for ruta, etiqueta, cod in mal:
             print(f"    {ruta}: «{etiqueta}» apunta al {cod}")
 
-    if check and (desfasados or mal or fuera or absorbidas or faltan):
+    if check and (desfasados or mal or fuera or absorbidas or faltan or repes):
         if desfasados:
             print("\n  DESFASADAS: " + ", ".join(desfasados))
         return 1

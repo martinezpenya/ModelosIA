@@ -15,9 +15,5 @@ Repaso rápido de `numpy`, `pandas` y `matplotlib` dentro del contenedor que has
 talleres de la unidad. Si este notebook se ejecuta de arriba abajo sin errores, el entorno está
 listo para todo el módulo.
 
-| Recurso | Enlace |
-|---|---|
-| Ejecutar en Colab | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD00/notebooks/UD00_N01_entorno_python_ia.ipynb){:target="_blank"} |
-
 ---
 [Volver a la UD00](UD00_ES.md) · [Ejercicios de autoevaluación](UD00_Ejercicios.md)

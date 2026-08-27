@@ -46,5 +46,6 @@ Implementar un **mini sistema experto de diagnóstico** de un PC que no arranca 
 código el ciclo reconocer-actuar de un sistema basado en reglas (RA2-e).
 
 **Se entrega**: el notebook con el sistema resolviendo los casos de prueba.
+
 ---
 [Volver a la UD02](UD02_ES.md) · [Ejercicios de autoevaluación](UD02_Ejercicios.md)

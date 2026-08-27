@@ -145,5 +145,6 @@ Aplicar los criterios de diseño e implementación (CE d) para proponer un siste
 resuelva un caso real, justificando la selección y la seguridad.
 
 **Se entrega**: el notebook con las alternativas evaluadas y la propuesta justificada. Es de **apto / no apto**.
+
 ---
 [Volver a la UD04](UD04_ES.md) · [Notebooks guiados](UD04_ActividadesGuiadas.md) · [Notebook 4](notebooks/UD04_N04_cinematica_manipulador.ipynb) · [Notebook 11](notebooks/UD04_N11_diseno_sistema_robotizado.ipynb)

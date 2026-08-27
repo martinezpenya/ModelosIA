@@ -94,5 +94,6 @@ siguiendo la metodología del CE g: tarea → datos → herramienta → implemen
 documentar.
 
 **Se entrega**: el notebook con el extractor funcionando y evaluado, y la documentación de cada paso.
+
 ---
 [Volver a la UD03](UD03_ES.md) · [Notebooks guiados](UD03_ActividadesGuiadas.md) · Talleres: [N08](notebooks/UD03_N08_del_texto_al_vector.ipynb) · [N12](notebooks/UD03_N12_sistema_pln.ipynb)

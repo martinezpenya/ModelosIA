@@ -47,6 +47,35 @@ Ninguno es obligatorio, pero todos dan munición para los debates y para el
 | *Justicia Artificial* (2024) | Película | **§9.4** justicia algorítmica: es la mejor entrada al debate 2 | En **Moodle** |
 | *Sin Piedad* (2026) | Película · sugerencia de un compañero de otro curso | §4 riesgos | Ficha en FilmAffinity (`film385719`) |
 
+## Tertulia de ciencia-ficción
+
+Actividad **voluntaria de ampliación**, sin nota. La ciencia-ficción lleva décadas planteando los
+dilemas de esta unidad antes de que fueran técnicamente posibles, y sirve para llegar al debate con
+ejemplos que todo el mundo reconoce.
+
+Elige **una** obra, míralas o léela, y prepara tres minutos: qué dilema plantea, con qué apartado de
+la teoría se corresponde y si lo que describe ya es posible hoy.
+
+| Obra | Año | Temas | Apartado |
+|---|---|---|---|
+| **Black Mirror** (serie) | 2011– | Privacidad y datos personales («Nosedive», «The Entire History of You»); responsabilidad y rendición de cuentas («White Bear», «Hated in the Nation») | §5, §6.2 |
+| **Westworld** (serie) | 2016-2022 | Autonomía y control humano; conciencia y moralidad de crear seres conscientes | §4.3, FAQ de derechos de los robots |
+| **Person of Interest** (serie) | 2011-2016 | Vigilancia masiva y prevención de delitos; supervisión humana de un sistema autónomo | §5.5, §9.4 |
+| **Years and Years** (serie) | 2019 | Vigilancia masiva y autoritarismo digital: reconocimiento facial y crédito social | §5.5, §6.1 (usos prohibidos) |
+| **Cassandra** (serie) | 2025 | Un asistente doméstico con IA diseñado en los años 60: problemas de diseño y de convivencia cotidiana | §7.3, §7.4 |
+| **Ex Machina** | 2014 | Transparencia y explicabilidad; sesgos y dinámicas de poder entre creador y criatura | §6.3, §9 |
+| **Her** | 2013 | Privacidad en la interacción con una IA; responsabilidad emocional | §5, §9.6 |
+| **Minority Report** | 2002 | Predicción del delito y precrimen; libertad frente a determinismo | **§9.4** |
+| **The Matrix** | 1999 | Control y manipulación de la realidad; impacto social y económico | §4.5, §7.4 |
+| **El hombre bicentenario** | 1999 | Derechos de las IA; identidad y autonomía | FAQ de derechos de los robots |
+| **1984**, de George Orwell (novela) | 1949 | Vigilancia y control totalitario; manipulación de la información | §5.5 |
+
+!!! tip "La pregunta que hace interesante la tertulia"
+    No es «¿esto podría pasar?». Es **«¿qué parte de esto ya está pasando, y con qué nombre técnico
+    lo llamamos en esta unidad?»**. *Minority Report* es puntuación de riesgo (§9.4). *Nosedive* es
+    puntuación social, que el AI Act **prohíbe** (§6.1). *Years and Years* es reconocimiento facial
+    masivo, también prohibido. La ficción envejeció; el temario, no.
+
 ## Actualidad: veinticinco noticias para el debate
 
 Un argumento con una noticia reciente y verificable vale más que tres opiniones. Esta selección está

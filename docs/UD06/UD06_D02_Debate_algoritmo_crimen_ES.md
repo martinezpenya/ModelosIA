@@ -100,4 +100,4 @@ postura ajena:
 
 ---
 [Volver a la UD06](UD06_ES.md) · [Debate 1](UD06_D01_Debate_limites_eticos_ES.md) ·
-[Notebooks guiados](UD06_ActividadesGuiadas.md)
+[Práctica](UD06_ActividadesGuiadas.md)

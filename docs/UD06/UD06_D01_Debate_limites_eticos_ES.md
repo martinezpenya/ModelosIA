@@ -101,4 +101,4 @@ aprendido al defender una postura ajena. Para guiarlo, responde:
 
 ---
 [Volver a la UD06](UD06_ES.md) · [Debate 2](UD06_D02_Debate_algoritmo_crimen_ES.md) ·
-[Notebooks guiados](UD06_ActividadesGuiadas.md)
+[Práctica](UD06_ActividadesGuiadas.md)
