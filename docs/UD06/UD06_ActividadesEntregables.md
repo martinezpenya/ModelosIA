@@ -1,4 +1,5 @@
 # UD06 · Entregas
+
 !!! important "Qué cuenta y qué es práctica"
     El RA6 se califica con **40 % de entregas + 60 % de prueba escrita**, y hay que superar el RA
     con **≥ 5**. Se entregan **tres cosas**: los dos debates y la auditoría de sesgos. El taller 1 y
@@ -11,7 +12,7 @@
 
 | # | Actividad | Cuándo | Qué se entrega | Cómo se corrige |
 |---|---|---|---|---|
-| 1 | [**Debate 1** · Límites éticos de la IA](UD06_D01_Debate_limites_eticos_ES.md) | Sesión 2 | Participación en el aula **+** reflexión escrita de máx. **300 palabras** en Moodle | [Rúbrica de debate](#rubrica-de-los-debates), 100 puntos escalados sobre 10 |
+| 1 | [**Debate 1** · Límites éticos de la IA](UD06_D01_Debate_limites_eticos_ES.md) | Sesión 2 | Participación en el aula **+** reflexión escrita de máx. **300 palabras** en Moodle | Rúbrica de debate en Moodle, 100 puntos escalados sobre 10 |
 | 2 | [**Debate 2** · El algoritmo contra el crimen](UD06_D02_Debate_algoritmo_crimen_ES.md) | Sesión 4 | Participación en el aula **+** reflexión escrita de máx. **300 palabras** en Moodle | La **misma** rúbrica |
 | — | [**Taller 1** · Análisis de un caso ético](UD06_T01_Analisis_caso_etico_ES.md) | Sesión 3 | **Práctica**: se trabaja en clase, no se entrega | Se corrige en clase |
 | 3 | [**Taller 2** · Auditoría de sesgos con Fairlearn](UD06_T02_Auditoria_sesgos_ES.md) | Sesión 3 | Informe con las métricas antes/después y las seis respuestas | Rúbrica propia, en la tarea de Moodle |
@@ -28,70 +29,13 @@
     argumentación, participación y empatía. Si faltas a la sesión, esa parte no se puede reproducir
     después. Los otros 30 son la reflexión escrita, que sí se entrega fuera de clase.
 
-## Rúbrica de los debates
+!!! info "La rúbrica está en Moodle"
+    La rúbrica de los debates y la auditoría se ve **en la propia tarea de Moodle**, y puedes leerla **antes** de
+    empezar: ahí tienes los criterios, los niveles y lo que puntúa cada uno. No se duplica aquí para
+    que no haya dos versiones del mismo dato.
 
-Es la **misma para los dos debates**. Suma **100 puntos**, que se escalan a la nota sobre 10. También
-se aplica a quien tenga el papel de **Observador Crítico**: en ese caso, el criterio 1 se lee como
-coherencia de la postura personal defendida, no como fidelidad a un personaje.
-
-### Criterio 1 · Dominio del rol (0-20)
-
-| Puntos | Nivel |
-|---|---|
-| 0 | No participa |
-| 5 | No logra mantener el rol o ignora las consignas asignadas |
-| 10 | Se desvía ocasionalmente del rol o repite ideas sin profundizar |
-| 15 | Sigue el rol, pero con algunos argumentos genéricos o poco desarrollados |
-| 20 | Defiende su rol con consistencia y profundidad, usando lenguaje y ejemplos específicos del personaje |
-
-### Criterio 2 · Argumentación ética (0-20)
-
-| Puntos | Nivel |
-|---|---|
-| 0 | No participa |
-| 5 | Argumentos confusos o irrelevantes al tema |
-| 10 | Argumentos superficiales o repetitivos, sin referencias éticas claras |
-| 15 | Argumentos válidos, pero con poca conexión con marcos éticos |
-| 20 | Argumentos sólidos, vinculados a principios éticos (justicia, privacidad, responsabilidad) |
-
-### Criterio 3 · Participación activa (0-15)
-
-| Puntos | Nivel |
-|---|---|
-| 0 | No participa |
-| 3 | Interrumpe sin aportar al debate |
-| 7 | Interviene poco y solo cuando se le solicita |
-| 11 | Participa, pero con contribuciones esporádicas o predecibles |
-| 15 | Interviene con frecuencia y enriquece el debate con preguntas o contraargumentos |
-
-### Criterio 4 · Empatía y perspectiva (0-15)
-
-| Puntos | Nivel |
-|---|---|
-| 0 | No participa |
-| 3 | Rechaza abiertamente el rol o se burla de la postura asignada |
-| 7 | Muestra resistencia a defender el rol o lo hace de forma mecánica |
-| 11 | Reconoce la perspectiva del rol, pero sin profundizar en sus motivaciones |
-| 15 | Demuestra comprensión genuina de la postura asignada, aunque difiera de la propia |
-
-### Criterio 5 · Reflexión escrita (0-30)
-
-| Puntos | Nivel |
-|---|---|
-| 0 | No entrega |
-| 2 | La reflexión es irrelevante |
-| 10 | Descripción superficial, sin conexión con el debate |
-| 20 | Reflexión clara, pero con poco análisis personal o ético |
-| 30 | Escrito reflexivo que analiza contradicciones, aprendizajes y dilemas éticos |
-
-!!! tip "Cómo usar esta rúbrica antes del debate, no después"
-    Léela **la víspera**. Tres decisiones que puedes tomar de antemano y que valen puntos:
-
-    1. Prepara **una frase de apertura desde el rol** («Como… sostengo que…»): eso es el criterio 1.
-    2. Ancla cada argumento en **un principio ético con nombre** —justicia, privacidad,
-       responsabilidad, transparencia— y, si puedes, en un dato del §9: eso es el criterio 2.
-    3. Anota durante el debate **una contradicción** que detectes en otro rol o en el tuyo: eso es lo
-       que separa un 20 de un 30 en el criterio 5.
+    Recuerda que incluye el criterio de **entrega en plazo**: fuera de plazo, la nota máxima del
+    trabajo es 5 sobre 10.
 
 ## Tertulia de ciencia-ficción
 

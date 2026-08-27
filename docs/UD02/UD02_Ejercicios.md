@@ -1,4 +1,5 @@
 # UD02 · Ejercicios de autoevaluación
+
 !!! note "Cómo se corrigen"
     Resuélvelos en tu cuaderno o en un documento Markdown (buen momento para practicar el
     [Taller 5](UD02_T05_Markdown_ES.md)). Las soluciones no se publican: se corrigen y comentan en

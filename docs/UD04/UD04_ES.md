@@ -1040,7 +1040,7 @@ world.seconds(30, [mi_controlador], real_time=True)
 
 | Peso | Instrumento |
 |---|---|
-| **40 %** actividades | Con [rúbrica](UD04_ActividadesEntregables.md#rubricas): el taller **T01** y los notebooks **`EX1`**, **`EX2`**, **`EX3`** y **`EX5`**. De **apto / no apto**: el taller **T02** y los notebooks **`EX4`** y **`EX6`** |
+| **40 %** actividades | Con rúbrica en la tarea de Moodle: el taller **T01** y los notebooks **`EX1`**, **`EX2`**, **`EX3`** y **`EX5`**. De **apto / no apto**: el taller **T02** y los notebooks **`EX4`** y **`EX6`** |
 | **60 %** prueba escrita | Prueba del RA4 en Moodle: preguntas de test y de desarrollo sobre el contenido de la unidad |
 
 - **La normativa exige alcanzar todos los RA** del módulo para superarlo (art. 5.1 de la Orden

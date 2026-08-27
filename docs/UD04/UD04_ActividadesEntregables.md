@@ -1,7 +1,8 @@
 # UD04 · Entregas
+
 !!! important "Qué se entrega, y con qué se corrige cada cosa"
     En esta unidad hay tres regímenes. Las **entregas evaluables** se corrigen con su
-    [rúbrica](#rubricas), que puedes leer antes de empezar. Las de **apto / no apto** hay que
+    rúbrica de su tarea en Moodle, que puedes leer antes de empezar. Las de **apto / no apto** hay que
     hacerlas y entregarlas, pero no se puntúan con rúbrica: cuentan como hechas o no hechas.
 
     | Actividad | Régimen |
@@ -16,6 +17,7 @@
     | `EX6` Aprendizaje por refuerzo con NEAT | Apto / no apto |
 
     El **peso** de cada entrega está en el libro de calificaciones de Moodle, no aquí.
+
 !!! warning "Fuera de plazo, la nota máxima es 5"
     El plazo se cierra en la fecha indicada en Moodle. Si necesitas entregar después, **avisa al
     profesor** y se reabre la tarea un tiempo limitado; en ese caso la nota máxima del trabajo es
@@ -134,79 +136,13 @@ tú solo defines qué entra, qué sale y cómo se mide si lo está haciendo bien
 `pop_size`, la justificación de `num_inputs` y `num_outputs`, y una reflexión sobre el aprendizaje
 por refuerzo. Es de **apto / no apto**: sin la memoria no cuenta como entregado.
 
-## Rúbricas
+!!! info "La rúbrica está en Moodle"
+    La rúbrica de cada entrega se ve **en la propia tarea de Moodle**, y puedes leerla **antes** de
+    empezar: ahí tienes los criterios, los niveles y lo que puntúa cada uno. No se duplica aquí para
+    que no haya dos versiones del mismo dato.
 
-Son las rúbricas reales del curso. Las seis tareas se califican **sobre 10**; los puntos de cada
-rúbrica se **escalan** a esa nota.
-
-Los niveles son los mismos en casi todos los criterios: **No entregada** (0) · **Incorrecta** ·
-**Parcialmente incorrecta** · **Bien pero fuera de plazo** · **Correcta**.
-
-!!! warning "Entregar tarde cuesta casi lo mismo que entregar a medias"
-    Fíjate en los niveles: «bien pero fuera de plazo» puntúa igual o casi igual que «parcialmente
-    incorrecta». No es un redondeo: es la forma de decir que el plazo cuenta.
-
-### EX1 · Ejercicios de OpenCV (8 puntos)
-
-| Criterio | Correcta | Parcial o fuera de plazo | Incorrecta |
-|---|---|---|---|
-| Ejercicio 1 · bordes | 4 | 2 | 0,5 |
-| Ejercicio 2 · detección de movimiento | 2 | 1 | 0,5 |
-| Ejercicio 3 · flujo óptico | 2 | 1-2 | 0,5 |
-
-### EX2 · Navegar con cámara (6 puntos)
-
-| Criterio | Correcta | Parcial o fuera de plazo | Incorrecta |
-|---|---|---|---|
-| Seguidor de línea simple | 4 | 2 | 0,5 |
-| Seguimiento de línea doble | 2 | 1 | 0,5 |
-
-### EX3 · Navegar con cámara difusa (15 puntos)
-
-Cinco criterios de **3 puntos** cada uno (correcta 3 · parcial 2 · fuera de plazo 1,5 · incorrecta 1):
-
-| Criterio |
-|---|
-| Variable de entrada y funciones de pertenencia |
-| Variables de salida |
-| Reglas, sistema de control y simulación |
-| Controlador del robot · línea simple |
-| Controlador del robot · línea doble |
-
-### EX4 · Generar datos de entrenamiento (14 puntos)
-
-| Criterio | Correcta | Parcial o fuera de plazo | Incorrecta |
-|---|---|---|---|
-| Entrega `training_data.txt` con tu nombre | 2 | 1 | 1 |
-| `determine_move` devuelve movimiento, rotación y centro | **6** | 3 | 1 |
-| Normalización de datos | 3 | 2 · 1,5 | 1 |
-| Generación masiva de datos | 3 | 2 · 1,5 | 1 |
-
-`determine_move` vale **6 de 14**: casi la mitad de la tarea.
-
-### EX5 · Red neuronal con los datos de EX4 (14 puntos)
-
-| Criterio | Correcta | Parcial o fuera de plazo | Incorrecta |
-|---|---|---|---|
-| `classifica_moviments` | 3 | 2 · 1,5 | 1 |
-| Balanceo de movimientos | 3 | 2 · 1,5 | 1 |
-| Crear y entrenar la red neuronal | 3 | 2 · 1,5 | 1 |
-| `network_driver` · controlar el robot con la red | 3 | 2 · 1,5 | 1 |
-| Entrega el `.keras` con tu nombre y la red entrenada | 2 | 1 | 1 |
-
-### EX6 · Aprendizaje por refuerzo con NEAT (12 puntos)
-
-Cuatro criterios de **3 puntos** (correcta 3 · parcial 2 · fuera de plazo 1,5 · incorrecta 1):
-
-| Criterio |
-|---|
-| Decisión de `num_inputs` y `num_outputs` |
-| Pruebas con `fitness_threshold` y `pop_size` |
-| Reflexión sobre el aprendizaje por refuerzo |
-| Formato de la memoria en PDF (portada, pie, etc.) |
-
-La reflexión y el formato son **6 de 12**: la mitad. Es el entregable más abierto de la unidad y el
-único cuya rúbrica puntúa explícitamente cómo comunicas el trabajo.
+    Recuerda que incluye el criterio de **entrega en plazo**: fuera de plazo, la nota máxima del
+    trabajo es 5 sobre 10.
 
 ---
 [Volver a la UD04](UD04_ES.md) · [Notebooks guiados](UD04_ActividadesGuiadas.md) · [Taller 1](UD04_T01_Cinematica_manipulador_ES.md) · [Taller 2](UD04_T02_Diseno_sistema_robotizado_ES.md)

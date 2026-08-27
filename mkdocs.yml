@@ -70,6 +70,11 @@ nav:
     - Entregas:
       - Qué se entrega y cuándo: UD05/UD05_ActividadesEntregables.md
       - T01 Simular un sistema experto: UD05/UD05_T01_Simular_sistema_experto_ES.md
+      - EX0 Sistema experto de libre elección: UD05/notebooks/UD05_EX0_sistema_experto_libre.ipynb
+      - EX1 Detectar lesiones de rodilla: UD05/notebooks/UD05_EX1_lesiones_rodilla.ipynb
+      - EX2 Previsión del valor de mercado: UD05/notebooks/UD05_EX2_valor_mercado_jugadores.ipynb
+      - EX3 Centrocampistas con potencial: UD05/notebooks/UD05_EX3_centrocampistas_jovenes.ipynb
+      - EX4 Simulador de quemador de gas: UD05/notebooks/UD05_EX4_quemador_gas.ipynb
   - UD03:
     - Procesamiento del Lenguaje Natural: UD03/UD03_ES.md
     - Diapositivas: UD03/UD03_Diapositivas.md
@@ -80,6 +85,9 @@ nav:
       - Qué se entrega y cuándo: UD03/UD03_ActividadesEntregables.md
       - T01 Del texto al vector: UD03/UD03_T01_Del_texto_al_vector_ES.md
       - T02 Un sistema de PLN de punta a punta: UD03/UD03_T02_Sistema_PLN_ES.md
+      - EX2 Clasificador de preguntas: UD03/notebooks/UD03_EX2_clasificador_preguntas.ipynb
+      - EX4 Sentimiento en IMDb: UD03/notebooks/UD03_EX4_sentimiento_imdb.ipynb
+      - EX5 Asistente virtual por voz: UD03/notebooks/UD03_EX5_asistente_virtual.ipynb
   - UD04:
     - Análisis de sistemas robotizados: UD04/UD04_ES.md
     - Diapositivas: UD04/UD04_Diapositivas.md
@@ -89,7 +97,13 @@ nav:
     - Entregas:
       - Qué se entrega y cuándo: UD04/UD04_ActividadesEntregables.md
       - T01 Cinemática de un manipulador: UD04/UD04_T01_Cinematica_manipulador_ES.md
-      - T02 Diseño de un sistema robotizado: UD04/UD04_T02_Diseno_sistema_robotizado_ES.md
+      - EX1 Ejercicios de OpenCV: UD04/notebooks/UD04_EX1_ejercicios_opencv.ipynb
+      - EX2 Navegar con cámara, por reglas: UD04/notebooks/UD04_EX2_navegar_camara.ipynb
+      - EX3 Navegar con cámara, con lógica difusa: UD04/notebooks/UD04_EX3_navegar_camara_difusa.ipynb
+      - EX5 Controlar el robot con una red neuronal: UD04/notebooks/UD04_EX5_red_neuronal.ipynb
+      - T02 Diseño de un sistema robotizado (apto / no apto): UD04/UD04_T02_Diseno_sistema_robotizado_ES.md
+      - EX4 Generar los datos de entrenamiento (apto / no apto): UD04/notebooks/UD04_EX4_generar_datos_entrenamiento.ipynb
+      - EX6 Aprendizaje por refuerzo con NEAT (apto / no apto): UD04/notebooks/UD04_EX6_neat.ipynb
   - UD06:
     - Aplicación de principios legales y éticos de la IA: UD06/UD06_ES.md
     - Diapositivas: UD06/UD06_Diapositivas.md

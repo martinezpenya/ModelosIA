@@ -68,26 +68,41 @@ def normalizar(origen: Path) -> Image.Image:
 
 
 def portada_ud00() -> Image.Image:
-    """UD00 no tiene portada: se compone con material de la propia unidad y del sitio."""
+    """UD00 no tiene portada: se compone con los logotipos de lo que ensena la unidad.
+
+    Docker y Jupyter, que es exactamente de lo que va UD00. Los SVG son los oficiales de
+    simple-icons, copiados del tema Material a docs/UD00/assets/ para que esto sea reproducible
+    sin depender del venv. Son glifos de un solo trazo, asi que se les inyecta el color de marca.
+    """
     ancho = ANCHO_MAX
     alto = round(ancho / RATIO)
     lienzo = Image.new("RGB", (ancho, alto), (255, 255, 255))
 
-    banner = Image.open(DOCS / "assets" / "portada.png").convert("RGBA")
-    bw = round(ancho * 0.78)
-    banner = banner.resize((bw, round(banner.height * bw / banner.width)), Image.LANCZOS)
-    lienzo.paste(banner, ((ancho - bw) // 2, round(alto * 0.14)), banner)
+    LOGOS = [("logo-docker.svg", "#2496ED"), ("logo-jupyter.svg", "#F37626")]
+    lado = round(alto * 0.42)          # los dos glifos son cuadrados (viewBox 24x24)
+    hueco = round(ancho * 0.10)
+    piezas = []
+    for nombre, color in LOGOS:
+        svg = (DOCS / "UD00" / "assets" / nombre).read_text()
+        svg = svg.replace("<svg ", f'<svg fill="{color}" ', 1)
+        tmp_svg = Path(f"/tmp/_{nombre}")
+        tmp_png = Path(f"/tmp/_{nombre}.png")
+        tmp_svg.write_text(svg)
+        try:
+            subprocess.run(["convert", "-background", "none", "-density", "600",
+                            "-resize", f"{lado}x{lado}", str(tmp_svg), str(tmp_png)],
+                           check=True, capture_output=True)
+            piezas.append(Image.open(tmp_png).convert("RGBA"))
+        except Exception as e:                                    # noqa: BLE001
+            print(f"  aviso: no se pudo rasterizar {nombre} ({e})")
 
-    svg = DOCS / "UD00" / "assets" / "logo-docker-desktop-blue.svg"
-    png = Path("/tmp/_docker_wordmark.png")
-    dw = round(ancho * 0.58)
-    try:
-        subprocess.run(["convert", "-background", "none", "-resize", f"{dw}x",
-                        str(svg), str(png)], check=True, capture_output=True)
-        logo = Image.open(png).convert("RGBA")
-        lienzo.paste(logo, ((ancho - logo.width) // 2, round(alto * 0.62)), logo)
-    except Exception as e:                                    # noqa: BLE001
-        print(f"  aviso: no se pudo rasterizar el logotipo de Docker ({e}); portada sin el")
+    if not piezas:
+        return lienzo
+    total = sum(p.width for p in piezas) + hueco * (len(piezas) - 1)
+    x = (ancho - total) // 2
+    for pieza in piezas:
+        lienzo.paste(pieza, (x, (alto - pieza.height) // 2), pieza)
+        x += pieza.width + hueco
     return lienzo
 
 

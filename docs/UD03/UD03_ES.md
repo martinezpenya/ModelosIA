@@ -824,7 +824,7 @@ Y los cuatro entregables aplican cada nivel a un problema propio:
 
 | Peso | Instrumento |
 |---|---|
-| **40 %** actividades | Los talleres **T01** y **T02** y los notebooks **`EX2`**, **`EX4`** y **`EX5`**, cada uno con su [rúbrica](UD03_ActividadesEntregables.md#rubricas). **`EX1`** y **`EX3`** son práctica y no puntúan |
+| **40 %** actividades | Los talleres **T01** y **T02** y los notebooks **`EX2`**, **`EX4`** y **`EX5`**, cada uno con su rúbrica en la tarea de Moodle. **`EX1`** y **`EX3`** son práctica y no puntúan |
 | **60 %** prueba escrita | Prueba del RA3 en Moodle: preguntas de test y de desarrollo sobre el contenido de la unidad |
 
 - **La normativa exige alcanzar todos los RA** del módulo para superarlo (art. 5.1 de la Orden

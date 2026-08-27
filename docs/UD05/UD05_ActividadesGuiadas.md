@@ -1,4 +1,5 @@
 # UD05 · Notebooks guiados
+
 !!! info "Se trabajan en clase"
     Seis notebooks de introducción y práctica guiada, en dominios distintos (§6.1 de la teoría).
     No son evaluables por sí solos, pero preparan los cinco entregables de la

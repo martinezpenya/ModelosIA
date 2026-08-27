@@ -1,4 +1,5 @@
 # UD04 · Notebooks guiados
+
 !!! info "Cómo se trabajan"
     Estos tres notebooks **no se entregan**: se hacen en clase, con el profesor, y son la
     preparación de los [seis entregables](UD04_ActividadesEntregables.md). Están ejecutados: puedes

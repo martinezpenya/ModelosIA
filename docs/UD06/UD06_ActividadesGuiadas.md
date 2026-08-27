@@ -1,4 +1,5 @@
 # UD06 · Notebooks guiados
+
 !!! info "Se ven fuera de clase"
     La unidad tiene 6 horas y **dos debates evaluables**, así que los documentales de partida **se
     ven en casa**, antes de la sesión que les corresponde. En clase se debate, no se proyecta.

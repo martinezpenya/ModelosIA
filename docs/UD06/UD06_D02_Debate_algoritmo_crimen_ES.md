@@ -83,16 +83,9 @@ las preguntas incómodas en la fase 6. Se califica con la misma rúbrica.
 
 ## Cómo se califica
 
-La rúbrica, con todos sus niveles, está en las
-[entregas](UD06_ActividadesEntregables.md#rubrica-de-los-debates).
-
-| Criterio | Puntos |
-|---|---|
-| Dominio del rol | 20 |
-| Argumentación ética | 20 |
-| Participación activa | 15 |
-| Empatía y perspectiva | 15 |
-| **Reflexión escrita** | **30** |
+!!! info "La rúbrica está en Moodle"
+    Los criterios con los que se te califica están en la **rúbrica de la tarea de Moodle**, y puedes
+    leerlos antes del debate. No se duplican aquí para que no haya dos versiones del mismo dato.
 
 !!! important "70 de los 100 puntos se juegan en el aula"
     Los cuatro primeros criterios se observan **en directo** y no se recuperan después.

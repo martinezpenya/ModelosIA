@@ -89,58 +89,13 @@ detallada de los métodos definidos o usados, conclusiones y webgrafía/bibliogr
 - No se permite llamar a métodos prohibidos ni ganar por azar: **hay que demostrar IA**
 - Los combates se graban y se devuelven como feedback
 
-## Rúbrica
+!!! info "La rúbrica está en Moodle"
+    La rúbrica de Robocode se ve **en la propia tarea de Moodle**, y puedes leerla **antes** de
+    empezar: ahí tienes los criterios, los niveles y lo que puntúa cada uno. No se duplica aquí para
+    que no haya dos versiones del mismo dato.
 
-> Rúbrica real de la tarea en Moodle (`assign_8288613`, método `rubric`). Suma **10 puntos**: el
-> peso del resultado en combate (criterios 3 y 4) es de **8 sobre 10** — se premia el
-> comportamiento del bot, no solo la documentación.
-
-### Criterio 1 · Entrega de ficheros (0-1 punto)
-
-| Puntos | Nivel |
-|---|---|
-| 0 | No entregados |
-| 0,2 | Faltan archivos o es imposible hacer funcionar el bot |
-| 0,4 | Se entregan todos o casi todos los ficheros, pero el docente no consigue hacer funcionar el bot |
-| 0,6 | Ficheros con el formato correcto; el bot funciona con grandes correcciones del docente |
-| 0,8 | Ficheros con el formato correcto; el bot funciona con pequeñas correcciones del docente |
-| 1 | Se entregan únicamente los ficheros solicitados, con el formato correcto, y el bot funciona sin que el docente deba modificarlos |
-
-### Criterio 2 · Memoria (0-1 punto)
-
-| Puntos | Nivel |
-|---|---|
-| 0 | No entregada |
-| 0,25 | Insuficiente |
-| 0,5 | Suficiente |
-| 0,75 | Bien |
-| 1 | Muy bien |
-
-### Criterio 3 · Resultado de la melé final, todos contra todos (0-3 puntos)
-
-| Puntos | Nivel |
-|---|---|
-| 0 | No entregado |
-| 0,5 | Ni gana ni se acerca en ninguna de las rondas |
-| 1 | No gana ninguna ronda, pero queda relativamente cerca de la cabeza en las 3 |
-| 2 | Gana al menos una de las 3 rondas |
-| 3 | Gana las 3 rondas |
-
-### Criterio 4 · Resultado contra RamFire, Walls y SpinBot (0-5 puntos)
-
-Configuración: 3 rondas × 10 asaltos.
-
-| Puntos | Nivel |
-|---|---|
-| 0 | No entregado |
-| 1 | Queda al final de la clasificación y muy alejado en puntos |
-| 2 | Queda al final, pero relativamente cerca en puntuación |
-| 3 | No gana ninguna ronda, pero queda cerca de la cabeza en alguna |
-| 4 | Gana al menos una de las 3 rondas |
-| 5 | Gana las 3 rondas |
-
-!!! note "Soluciones"
-    Las soluciones no se publican: se corrigen en clase y en la competición final.
+    Recuerda que incluye el criterio de **entrega en plazo**: fuera de plazo, la nota máxima del
+    trabajo es 5 sobre 10.
 
 ---
 [Volver a la UD02](UD02_ES.md) · [Comparativa Java/Python](UD02_Robocode_Comparativa_ES.md)

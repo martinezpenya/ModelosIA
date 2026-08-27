@@ -820,7 +820,7 @@ es **explicable**: se puede consultar qué regla se disparó y por qué.
 
 | Peso | Instrumento |
 |---|---|
-| **40 %** actividades | El taller **T01** y los cinco sistemas **`EX0`**-**`EX4`**, cada uno con su [rúbrica](UD05_ActividadesEntregables.md#rubricas). **T02** y **T03** son práctica y no puntúan |
+| **40 %** actividades | El taller **T01** y los cinco sistemas **`EX0`**-**`EX4`**, cada uno con su rúbrica en la tarea de Moodle. **T02** y **T03** son práctica y no puntúan |
 | **60 %** prueba escrita | Prueba del RA5 en Moodle: preguntas de test y de desarrollo sobre el contenido de la unidad |
 
 - **La normativa exige alcanzar todos los RA** del módulo para superarlo (art. 5.1 de la Orden

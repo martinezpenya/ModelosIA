@@ -53,24 +53,13 @@ Entregad un **diagrama o tabla** con los 10 hitos, sus fechas contrastadas, la t
 el uso actual, más una nota final: *¿qué dos hitos han tenido más impacto en lo que hoy usa una
 empresa cualquiera, y por qué?*
 
-## Rúbrica de los talleres (tarea RA1)
+!!! info "La rúbrica está en Moodle"
+    La rúbrica de los cuatro talleres del RA1 se ve **en la propia tarea de Moodle**, y puedes leerla **antes** de
+    empezar: ahí tienes los criterios, los niveles y lo que puntúa cada uno. No se duplica aquí para
+    que no haya dos versiones del mismo dato.
 
-!!! note "Rúbrica común"
-    Rúbrica común a los 4 talleres de la unidad.
-
-| Criterio | Peso | Nivel de logro esperado |
-|---|---|---|
-| Identifica correctamente técnicas y campos (RA1 a-c) | 40 % | Clasifica sin errores y justifica cada elección con un criterio técnico |
-| Relaciona la solución con la mejora operativa (RA1-d) | 30 % | Aporta línea base, indicadores cuantificados y supuestos explícitos |
-| Justificación, datos concretos, fuentes y riesgos | 20 % | Cada dato tiene fuente contrastada; los riesgos llevan mitigación viable |
-| Entrega, formato y defensa | 10 % | Estructura clara por fases, tablas completas y defensa razonada |
-
-!!! tip "Cómo se corrige"
-    Se valora más una propuesta modesta con datos y supuestos honestos que una ambiciosa sin
-    números. Si estimas una cifra, di **cómo** la has estimado.
-
-!!! note "Soluciones"
-    Las soluciones no se publican: se corrigen y comentan en clase.
+    Recuerda que incluye el criterio de **entrega en plazo**: fuera de plazo, la nota máxima del
+    trabajo es 5 sobre 10.
 
 ---
 [Volver a la UD01](UD01_ES.md) · [Taller 3](UD01_T03_Nuevas_interacciones_ES.md) · [Ejercicios](UD01_Ejercicios.md)

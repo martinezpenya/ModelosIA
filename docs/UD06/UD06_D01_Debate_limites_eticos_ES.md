@@ -78,17 +78,9 @@ Ejes por los que va a ir el debate, para que llegues preparado:
 
 ## Cómo se califica
 
-La rúbrica es la misma en los dos debates y **suma 100 puntos**, que se escalan sobre 10. Está
-completa, con todos sus niveles, en las
-[entregas](UD06_ActividadesEntregables.md#rubrica-de-los-debates).
-
-| Criterio | Puntos | Qué se observa |
-|---|---|---|
-| Dominio del rol | 20 | Consistencia y profundidad, con lenguaje y ejemplos propios del personaje |
-| Argumentación ética | 20 | Argumentos sólidos vinculados a principios éticos (justicia, privacidad, responsabilidad) |
-| Participación activa | 15 | Intervenciones frecuentes que enriquecen el debate con preguntas o contraargumentos |
-| Empatía y perspectiva | 15 | Comprensión genuina de la postura asignada, aunque difiera de la propia |
-| **Reflexión escrita** | **30** | Escrito que analiza contradicciones, aprendizajes y dilemas éticos |
+!!! info "La rúbrica está en Moodle"
+    Los criterios con los que se te califica están en la **rúbrica de la tarea de Moodle**, y puedes
+    leerlos antes del debate. No se duplican aquí para que no haya dos versiones del mismo dato.
 
 !!! important "70 de los 100 puntos se juegan en el aula"
     Los cuatro primeros criterios **se observan en directo**: no se pueden recuperar después. Y el

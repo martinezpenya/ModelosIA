@@ -1,4 +1,5 @@
 # UD00 · Ejercicios de autoevaluación
+
 !!! note "Cómo se trabajan"
     Resuélvelos en tu cuaderno o en un documento Markdown, a tu ritmo. Si te atascas en alguno,
     pregunta en clase o por Moodle: el profesor te da la solución. (El **notebook** de la unidad

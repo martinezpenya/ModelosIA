@@ -41,10 +41,10 @@ section {
  }
 </style>
 
-![h:260 center](../../assets/portada.png)
+![h:260 center](../assets/cover.png)
 # UD00: Presentación y curso rápido de Docker
 #### Modelos de Inteligencia Artificial
-###### version: 2026-08-26
+###### version: 2026-08-27
 ___
 <!-- footer: d.martinezpena@edu.gva.es -->
 <!-- header: Modelos de Inteligencia Artificial 26-27 (UD00_1)-->

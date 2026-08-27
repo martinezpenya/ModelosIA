@@ -45,6 +45,16 @@ for f in "${FICHEROS[@]}"; do
     echo "  HTML generado; sin Chromium no se puede hacer el PDF"
   fi
 
+  # La miniatura de la primera diapositiva (poster-slide1.png) es lo que se ve en la pagina
+  # UDxx_Diapositivas.md y en el PDF del libro. Hasta el 2026-08-27 se hacia a mano, asi que se
+  # quedaba desfasada al cambiar la portada: ahora se regenera aqui, con --image (solo la 1.a).
+  if [ -n "${CHROME_PATH:-}" ] && [ -x "${CHROME_PATH:-}" ]; then
+    mkdir -p "$DIR/img"
+    (cd "$DIR" && npx --yes @marp-team/marp-cli@latest "$FUENTE_REL" --image png --allow-local-files \
+        -o "img/poster-slide1.png" >/dev/null 2>&1) \
+      && echo "  miniatura regenerada" || echo "  la miniatura ha fallado"
+  fi
+
   if [ "$FUENTE_REL" != "$f" ]; then
     rm -f "$FUENTE"
   fi

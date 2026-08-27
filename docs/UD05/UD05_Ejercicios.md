@@ -1,4 +1,5 @@
 # UD05 · Ejercicios de autoevaluación
+
 !!! note "Cómo se trabajan"
     Resuélvelos en tu cuaderno o en un documento Markdown. **No se publican las soluciones**: se
     corrigen y comentan en clase. Los cinco entregables (`EX0`-`EX4`) son la evaluación práctica de
