@@ -1,15 +1,29 @@
 # UD06 · Práctica: documentales, noticias y notebooks
 
-!!! info "Se ven fuera de clase"
-    La unidad tiene 6 horas y **dos debates evaluables**, así que los documentales de partida **se
-    ven en casa**, antes de la sesión que les corresponde. En clase se debate, no se proyecta.
-    Todos los enlaces se comprobaron el **22 de agosto de 2026**.
-
 <!-- AUTO:notebooks inicio -->
+!!! info "Práctica: se hace, no se entrega"
+    2 notebooks que se trabajan **en clase**, con el profesor. **No se entregan ni puntúan**: preparan las
+    [entregas de la unidad](UD06_Entregas.md) y la prueba escrita del RA6.
+
+    Los documentales de partida **se ven en casa**, antes de la sesión que les corresponde: la unidad
+    tiene 6 horas y en clase se debate, no se proyecta. Los enlaces se comprobaron el **22 de agosto
+    de 2026**.
+
 | Notebook | Qué es | Descargar | Abrir en Colab |
 |---|---|---|---|
 | [`N01` · Detección y corrección de sesgos](notebooks/UD06_N01_sesgos_ia.ipynb) | Detección y corrección de sesgos · da soporte a `N03` | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD06/notebooks/UD06_N01_sesgos_ia.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD06/notebooks/UD06_N01_sesgos_ia.ipynb){:target="_blank"} |
 | [`N02` · Análisis de un caso ético](notebooks/UD06_N02_analisis_caso_etico.ipynb) | Método de análisis ético sobre un caso real | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD06/notebooks/UD06_N02_analisis_caso_etico.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD06/notebooks/UD06_N02_analisis_caso_etico.ipynb){:target="_blank"} |
+
+## `N01` · Detección y corrección de sesgos
+
+Auditoría de equidad de un modelo real con **Fairlearn**: medir el sesgo por grupos, mitigarlo con
+postprocesado y ver el precio que se paga. Es el soporte técnico de `N03`.
+
+## `N02` · Análisis de un caso ético
+
+Un método de análisis ético reproducible aplicado a un caso real de sesgo o riesgo de la IA
+(RA6-a, RA6-c, RA6-f), argumentando con principios deontológicos, métricas y normativa. Trae una
+tabla con ocho casos reales y sus cifras para elegir.
 <!-- AUTO:notebooks fin -->
 
 ## Antes de cada debate
@@ -113,4 +127,3 @@ unidad con hechos de los últimos cuatro años, la mitad de ellos del último cu
 ---
 [Volver a la UD06](UD06_ES.md) · [Debate 1](UD06_D01_Debate_limites_eticos_ES.md) ·
 [Debate 2](UD06_D02_Debate_algoritmo_crimen_ES.md) ·
-[Entregas](UD06_Entregas.md)

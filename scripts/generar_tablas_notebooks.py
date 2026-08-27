@@ -64,6 +64,56 @@ def entregas_del_nav() -> set[str]:
     return entregas
 
 
+def apartados(fichas: list[dict], grupo: str) -> str:
+    """Un apartado por notebook: titulo, resumen y —si es entrega— que se entrega.
+
+    Decision del profesor (2026-08-27): «tabla con enlaces y a continuacion breve explicacion de
+    cada notebook y con los materiales/enlaces extra que se necesiten». Se genera para que ninguna
+    unidad se quede sin resumen y para que el orden sea siempre el numerico.
+    """
+    fuera = []
+    for f in fichas:
+        fuera.append(f"## `{f['codigo']}` · {f['titulo']}\n")
+        fuera.append(f["resumen"])
+        if f.get("materiales"):
+            fuera.append("\n| Recurso | Enlace |\n|---|---|\n" + "\n".join(f["materiales"]))
+        if grupo == "entregas" and f.get("se_entrega"):
+            fuera.append(f"\n**Se entrega**: {f['se_entrega']}")
+        elif f.get("se_entrega"):
+            fuera.append(f"\n**Qué tienes que tener al terminar**: {f['se_entrega']}")
+        fuera.append("")
+    return "\n".join(fuera).strip()
+
+
+def admonicion(grupo: str, n: int, ra: str | None, ud: str, extra: str | None,
+               sin_rubrica: bool = False, hay_practica: bool = True) -> str:
+    """La misma cabecera en las trece paginas, con lo que cambia entre unidades parametrizado."""
+    prueba = f"la prueba escrita del {ra}" if ra else "el resto del módulo"
+    if grupo == "practica":
+        cuerpo = (f'!!! info "Práctica: se hace, no se entrega"\n'
+                  f"    {n} notebook{'s' if n != 1 else ''} que se trabaja"
+                  f"{'n' if n != 1 else ''} **en clase**, con el profesor. "
+                  f"**No se entrega{'n' if n != 1 else ''} ni puntúa{'n' if n != 1 else ''}**: "
+                  f"prepara{'n' if n != 1 else ''} las\n    [entregas de la unidad]({ud}_Entregas.md) y {prueba}.")
+    else:
+        titulo_adm = f"{n} entrega{'s' if n != 1 else ''}" + (f" en el {ra}" if ra else "")
+        # La UD02 no tiene notebooks guiados, asi que no hay pagina de practica a la que enlazar.
+        cola = (f" La [práctica de la unidad]({ud}_ActividadesGuiadas.md) no se entrega\n    ni puntúa."
+                if hay_practica else
+                f" Los [ejercicios de autoevaluación]({ud}_Ejercicios.md) son práctica\n    y no se entregan.")
+        if sin_rubrica:
+            medio = ("    Se entregan en Moodle y **no llevan rúbrica**: se marcan como hechas o no hechas."
+                     + cola)
+        else:
+            medio = ("    Cada una se corrige con **su rúbrica**, que puedes leer antes de empezar en la propia\n"
+                     "    tarea de Moodle. El **peso** de cada entrega está en el libro de calificaciones de\n"
+                     "    Moodle, no aquí." + cola)
+        cuerpo = f'!!! important "{titulo_adm}"\n{medio}' 
+    if extra:
+        cuerpo += "\n\n" + "\n".join(f"    {l}" if l.strip() else "" for l in extra.strip().split("\n"))
+    return cuerpo
+
+
 def tabla(fichas: list[dict], ud: str) -> str:
     filas = ["| Notebook | Qué es | Descargar | Abrir en Colab |", "|---|---|---|---|"]
     for f in fichas:
@@ -200,16 +250,22 @@ def main() -> int:
             nb = nb_path.name
             cod = re.match(rf"{ud}_(N\d+)_", nb).group(1)
             que_es = datos[ud].get(nb)
+            if isinstance(que_es, dict) and not que_es.get("que_es"):
+                que_es = None
             if que_es is None:
                 sin_ficha.append(f"{ud}/{nb}")
                 que_es = "—"
+            ficha = dict(que_es) if isinstance(que_es, dict) else {"que_es": que_es}
             grupo = "entregas" if nb in entregas else "practica"
-            fichas[grupo].append({"fichero": nb, "codigo": cod,
-                                  "titulo": titulo(nb_path), "que_es": que_es})
+            fichas[grupo].append({"fichero": nb, "codigo": cod, "titulo": titulo(nb_path),
+                                  "que_es": ficha.get("que_es", "—"),
+                                  "resumen": ficha.get("resumen", ""),
+                                  "se_entrega": ficha.get("se_entrega", ""),
+                                  "materiales": ficha.get("materiales", [])})
 
         for grupo, pagina in (("practica", datos[ud].get("_pagina_practica")),
                               ("entregas", datos[ud].get("_pagina_entregas"))):
-            if not pagina or not fichas[grupo]:
+            if not pagina:
                 continue
             p = DOCS / ud / pagina
             texto = p.read_text(encoding="utf-8")
@@ -217,7 +273,16 @@ def main() -> int:
                 print(f"  {ud}/{pagina}: sin bloque AUTO:notebooks")
                 continue
             i, j = texto.index(INICIO) + len(INICIO), texto.index(FIN)
-            nuevo = f"\n{tabla(fichas[grupo], ud)}\n"
+            ra = datos[ud].get("_ra")
+            extra = datos[ud].get(f"_nota_{grupo}")
+            # Hay entregas que no son notebook —talleres, debates, Robocode— y cuentan en el total.
+            n = len(fichas[grupo]) + (datos[ud].get("_entregas_extra", 0) if grupo == "entregas" else 0)
+            nuevo = "\n" + admonicion(grupo, n, ra, ud, extra,
+                                      datos[ud].get("_sin_rubrica", False),
+                                      bool(datos[ud].get("_pagina_practica"))) + "\n"
+            if fichas[grupo]:
+                nuevo += ("\n" + tabla(fichas[grupo], ud)
+                          + "\n\n" + apartados(fichas[grupo], grupo) + "\n")
             if texto[i:j] == nuevo:
                 print(f"  al día: {ud}/{pagina} [{grupo}]")
                 continue
