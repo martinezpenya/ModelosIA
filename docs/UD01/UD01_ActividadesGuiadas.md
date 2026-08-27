@@ -1,16 +1,20 @@
-# UD01 — Actividades guiadas
+# UD01 · Notebooks guiados
 
-Notebook que se trabaja **en clase**, con el profesor. No es un entregable calificable: es la
-demostración en código de las técnicas de IA vistas en la teoría.
+<!-- AUTO:notebooks inicio -->
+!!! info "Práctica: se hace, no se entrega"
+    1 actividad que se trabaja **en clase**, con el profesor. **No se
+    entrega ni puntúa**: prepara las [entregas de la unidad](UD01_Entregas.md) y la prueba escrita del RA1.
 
-## Notebook 1 · Técnicas de IA en acción
+| Actividad | Qué es | Descargar | Abrir en Colab |
+|---|---|---|---|
+| [`N01` · Técnicas de IA en acción](notebooks/UD01_N01_tecnicas_ia.ipynb) | Demo del profesor · aprendizaje supervisado y no supervisado | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD01/notebooks/UD01_N01_tecnicas_ia.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD01/notebooks/UD01_N01_tecnicas_ia.ipynb){:target="_blank"} |
 
-Ejemplo de **aprendizaje supervisado**, **no supervisado** y de cómo medir la mejora operativa con
-`numpy`, `pandas` y `scikit-learn` — las mismas técnicas del §4 y §6 de la teoría, aplicadas.
+## `N01` · Técnicas de IA en acción
 
-| Recurso | Enlace |
-|---|---|
-| Notebook | [`UD01_N01_tecnicas_ia.ipynb`](notebooks/UD01_N01_tecnicas_ia.ipynb) |
+Muestra en código **las técnicas básicas de la IA** (RA1-c) y cómo se relacionan con la
+**mejora de la eficiencia operativa** (RA1-d): aprendizaje supervisado, no supervisado y cómo se
+mide la mejora, solo con `numpy`, `pandas` y `scikit-learn`.
+<!-- AUTO:notebooks fin -->
 
 ---
 [Volver a la UD01](UD01_ES.md) · [Ejercicios](UD01_Ejercicios.md)

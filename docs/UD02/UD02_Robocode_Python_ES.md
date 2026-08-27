@@ -95,7 +95,7 @@ java -jar robocode-tankroyale-gui-x.y.z.jar
 ```
 
 !!! warning "Java necesario para la GUI"
-    La GUI requiere Java 11 o superior para ejecutarse, independientemente de que vuestro bot esté escrito en Python. Si no tenéis Java, ved el [Taller 3: preparar el entorno](UD02_T03_Preparar_entorno_ES.md) o instalad OpenJDK:
+    La GUI requiere Java 11 o superior para ejecutarse, independientemente de que vuestro bot esté escrito en Python. Si no tenéis Java, ved el [Taller 1: preparar el entorno](UD02_T01_Preparar_entorno_ES.md) o instalad OpenJDK:
     ```sh
     sudo apt install default-jdk   # Linux
     ```
@@ -163,7 +163,6 @@ import os
 from robocode_tank_royale.bot_api import Bot, BotInfo
 from robocode_tank_royale.bot_api.events import ScannedBotEvent, HitByBulletEvent
 
-
 class MiBot(Bot):
     def __init__(self):
         config_path = os.path.join(os.path.dirname(__file__), "MiBot.json")
@@ -184,11 +183,9 @@ class MiBot(Bot):
         bearing = self.calc_bearing(hit_by_bullet_event.bullet.direction)
         self.turn_right(90 - bearing)
 
-
 def main():
     bot = MiBot()
     bot.start()
-
 
 if __name__ == "__main__":
     main()

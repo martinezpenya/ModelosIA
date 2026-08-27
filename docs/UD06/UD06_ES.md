@@ -1159,17 +1159,17 @@ trabajo personal.
 ## 14. Recursos
 
 - [Diapositivas](UD06_Diapositivas.md)
-- [Ejercicios de la unidad](UD06_Ejercicios.md)
-- Talleres:
-    - [T01 · Análisis de un caso ético](UD06_T01_Analisis_caso_etico_ES.md)
-    - [T02 · Auditoría de sesgos con Fairlearn](UD06_T02_Auditoria_sesgos_ES.md)
-- **Debates por roles** — los dos son **evaluables**, con la misma rúbrica:
-    - [D01 · Límites éticos de la Inteligencia Artificial](UD06_D01_Debate_limites_eticos_ES.md)
-    - [D02 · El algoritmo contra el crimen](UD06_D02_Debate_algoritmo_crimen_ES.md)
-- [Actividades guiadas](UD06_ActividadesGuiadas.md) — documentales y entrevistas que se ven antes de
-  cada debate
-- [Actividades entregables](UD06_ActividadesEntregables.md) — resumen de lo que se entrega y cuándo
-- **Notebooks** — todos los de la unidad, con descarga y apertura en Colab, en el menú «Notebooks»
+- **Práctica** — se hace, no se entrega ni puntúa:
+    - [Ejercicios de autoevaluación](UD06_Ejercicios.md)
+    - [Documentales, noticias y notebooks](UD06_ActividadesGuiadas.md) — los documentales que se ven
+      antes de cada debate, las noticias de actualidad y los dos notebooks guiados: `N01` de sesgos y
+      [`N02` de análisis de un caso ético](notebooks/UD06_N02_analisis_caso_etico.ipynb)
+- **Entregas** — tres, [qué se entrega](UD06_Entregas.md):
+    - [N03 · Auditoría de sesgos con Fairlearn](notebooks/UD06_N03_auditoria_sesgos.ipynb)
+    - **Debates por roles**, los dos con la misma rúbrica:
+      [D01 · Límites éticos de la Inteligencia Artificial](UD06_D01_Debate_limites_eticos_ES.md) ·
+      [D02 · El algoritmo contra el crimen](UD06_D02_Debate_algoritmo_crimen_ES.md)
+- Los notebooks se abren desde **Práctica** y **Entregas**, con descarga y apertura en Colab.
 
 ??? note "Referencias de la unidad"
     **Normativa** (texto consolidado):
@@ -1211,7 +1211,7 @@ trabajo personal.
 
 | Peso | Instrumento |
 |---|---|
-| **40 %** actividades | **Debate 1** y **Debate 2**, con la [rúbrica de debate](UD06_ActividadesEntregables.md) (5 criterios, 100 puntos, escalados sobre 10), más los talleres T01 y T02 y el notebook N01 |
+| **40 %** actividades | **Debate 1** y **Debate 2**, con la [rúbrica de debate](UD06_Entregas.md) (5 criterios, 100 puntos, escalados sobre 10), y el taller **N03** de auditoría de sesgos. Los dos notebooks guiados, **`N01`** de sesgos y **`N02`** de análisis de un caso ético, son práctica y no puntúan |
 | **60 %** prueba escrita | Prueba del RA6 en Moodle: preguntas de test y de desarrollo sobre el contenido de la unidad |
 
 - **La normativa exige alcanzar todos los RA** del módulo para superarlo (art. 5.1 de la Orden

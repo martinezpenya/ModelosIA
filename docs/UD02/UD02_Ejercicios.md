@@ -1,8 +1,8 @@
-# UD02 — Ejercicios
+# UD02 · Ejercicios de autoevaluación
 
 !!! note "Cómo se corrigen"
     Resuélvelos en tu cuaderno o en un documento Markdown (buen momento para practicar el
-    [Taller 5](UD02_T05_Markdown_ES.md)). Las soluciones no se publican: se corrigen y comentan en
+    [Taller 1](UD02_T03_Markdown_ES.md)). Las soluciones no se publican: se corrigen y comentan en
     clase.
 
 ## A. Sistema de resolución de problemas (RA2-a)
@@ -103,4 +103,4 @@
     Robocode: ¿qué modelo usarías para decidir el disparo, y por qué?
 
 ---
-[Volver a la UD02](UD02_ES.md) · [Talleres](UD02_T01_Control_difuso_ES.md)
+[Volver a la UD02](UD02_ES.md) · [Talleres](notebooks/UD02_N01_control_difuso.ipynb)

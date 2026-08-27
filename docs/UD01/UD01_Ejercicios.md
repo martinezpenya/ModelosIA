@@ -1,4 +1,4 @@
-# UD01 — Ejercicios
+# UD01 · Ejercicios de autoevaluación
 
 !!! note "Cómo se corrigen"
     Resuélvelos en tu cuaderno o en un documento. Las soluciones no se publican: se corrigen y
@@ -82,4 +82,4 @@
 31. Escribe el fragmento de código de `scikit-learn` que divide el dataset *Iris* en entrenamiento y prueba, entrena un árbol de decisión y muestra su precisión. Explica qué hace cada línea.
 
 ---
-[Volver a la UD01](UD01_ES.md) · [Talleres](UD01_T01_Mapa_sistemas_ES.md)
+[Volver a la UD01](UD01_ES.md) · [Talleres](notebooks/UD01_N02_mapa_sistemas.ipynb)

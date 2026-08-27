@@ -562,8 +562,8 @@ CAUSA PROBABLE: Batería descargada
 ## 10. Caso de estudio: Robocode como sistema de resolución de problemas completo
 
 Los cinco requisitos del §4.1 y la elección de modelo del §9 dejan de ser teoría en cuanto se
-programa un bot de **Robocode Tank Royale** (la [actividad entregable](UD02_ActividadesEntregables.md)
-de la unidad):
+programa un bot de **Robocode Tank Royale** (el [taller `T04`](UD02_T04_Robocode_ES.md) de la
+unidad):
 
 - **Representación**: el estado del bot (posición, energía, rumbo del radar) y del campo de
   batalla se traduce a variables que el programa puede leer en cada turno.
@@ -664,10 +664,10 @@ de la unidad):
 |---|---|---|---|---|
 | 7 | 3 | Requisitos de un SRP; espacio de estados y representación; BFS/DFS/A* | RA2-a | Ejercicios bloque A |
 | 8 | 3 | Clasificación de modelos; automatización de tareas | RA2-b, RA2-c | Ejercicios bloques B y C |
-| 9 | 3 | Lógica difusa (teoría + Taller 1 scikit-fuzzy) | RA2-d | Taller 1 |
-| 9-10 | 3 | Sistemas basados en reglas (teoría + Taller 2 experta); CE f | RA2-e, RA2-f | Taller 2 |
+| 9 | 3 | Lógica difusa (teoría + Notebook 1 scikit-fuzzy) | RA2-d | Notebook 1 |
+| 9-10 | 3 | Sistemas basados en reglas (teoría + Notebook 2 experta); CE f | RA2-e, RA2-f | Notebook 2 |
 | 9-10 | — | Talleres 3-5: preparar el entorno, GitHub y Markdown para Robocode | — | Talleres 3-5 |
-| 10 | 3 | Robocode Tank Royale: entrega y evaluación | RA2-a, RA2-f | Actividad entregable |
+| 10 | 3 | Robocode Tank Royale: entrega y evaluación | RA2-a, RA2-f | `T04` Robocode |
 
 ## 15. Tabla final RA/CE
 
@@ -676,17 +676,20 @@ de la unidad):
 | RA2-a | §4 | Ejercicios bloque A, Robocode |
 | RA2-b | §5 | Ejercicios bloque B |
 | RA2-c | §6 | Ejercicios bloque C |
-| RA2-d | §7 | Ejercicios bloque D, Taller 1 |
-| RA2-e | §8 | Ejercicios bloque E, Taller 2 |
+| RA2-d | §7 | Ejercicios bloque D, Notebook 1 |
+| RA2-e | §8 | Ejercicios bloque E, Notebook 2 |
 | RA2-f | §9, §10 | Ejercicios bloque F, Robocode |
 
 ## 16. Recursos
 
 - [Diapositivas](UD02_Diapositivas.md)
-- [Ejercicios de la unidad](UD02_Ejercicios.md)
-- Talleres: [T01 · control difuso](UD02_T01_Control_difuso_ES.md) · [T02 · sistema de reglas](UD02_T02_Sistema_reglas_ES.md) · [T03 · preparar el entorno](UD02_T03_Preparar_entorno_ES.md) · [T04 · GitHub](UD02_T04_GitHub_ES.md) · [T05 · Markdown](UD02_T05_Markdown_ES.md)
-- Actividad entregable: [Robocode Tank Royale](UD02_ActividadesEntregables.md) · [comparativa Java/Python](UD02_Robocode_Comparativa_ES.md) · [tutorial Java](UD02_Robocode_Java_ES.md) · [tutorial Python](UD02_Robocode_Python_ES.md)
-- **Notebooks** — Talleres 1 y 2, con descarga y apertura en Colab, en el menú «Notebooks»
+- **Práctica** — se hace, no se entrega ni puntúa:
+    - [Ejercicios de autoevaluación](UD02_Ejercicios.md)
+- **Entregas**:
+    - con rúbrica: [`N01` · control difuso](notebooks/UD02_N01_control_difuso.ipynb) · [`N02` · sistema de reglas](notebooks/UD02_N02_sistema_reglas.ipynb) · [`T04` · Robocode Tank Royale](UD02_T04_Robocode_ES.md), la práctica de cierre del RA2
+    - de **hecho / no hecho**, requisito sin nota: [T01 · preparar el entorno](UD02_T01_Preparar_entorno_ES.md) · [T02 · GitHub](UD02_T02_GitHub_ES.md) · [T03 · Markdown](UD02_T03_Markdown_ES.md)
+- **Documentación de Robocode**: [comparativa Java/Python](UD02_Robocode_Comparativa_ES.md) · [tutorial Java](UD02_Robocode_Java_ES.md) · [tutorial Python](UD02_Robocode_Python_ES.md)
+- Los notebooks se abren desde **Práctica** y **Entregas**, con descarga y apertura en Colab.
 
 ??? note "Referencias de la unidad"
     - [Red Blob Games · A*](https://www.redblobgames.com/pathfinding/a-star/introduction.html)
@@ -704,7 +707,7 @@ de la unidad):
 
 | Peso | Instrumento |
 |---|---|
-| **40 %** actividades | Media de los 5 talleres y la actividad entregable (Robocode), con su [rúbrica](UD02_ActividadesEntregables.md#rubrica) |
+| **40 %** actividades | **`T04` Robocode** y los notebooks **`N01`** y **`N02`**, cada uno con su rúbrica. Robocode es el de más peso, con diferencia. Los talleres **`T01`**-**`T03`** se entregan como **hecho / no hecho** y no puntúan |
 | **60 %** prueba escrita | Prueba del RA2 en Moodle: preguntas de test y de desarrollo sobre el contenido de la unidad |
 
 - **La normativa exige alcanzar todos los RA** del módulo para superarlo (art. 5.1 de la Orden

@@ -66,7 +66,7 @@ aprendizaje (UD05 es siempre RA5), no al orden en que se imparte.
 | **RA7** | 9 | Desarrolla un proyecto integrador que combine técnicas de IA y análisis de datos masivos para resolver un problema real o simulado, gestionando todo el ciclo de vida del proyecto. | **5** | **20 %** |
 | | | | | **100 %** |
 
-Cada RA se califica **1 a 10, sin decimales** (Orden 8/2025, art. 5.1): **40 %** tareas, talleres y ejercicios + **60 %** prueba escrita. Para superar el módulo hace falta **5 o más en cada RA**.
+Cada RA se califica **1 a 10, sin decimales** (Orden 8/2025, art. 5.1): **40 %** las entregas de la unidad + **60 %** la prueba escrita. Para superar el módulo hace falta **5 o más en cada RA**. Los ejercicios de autoevaluación y los notebooks guiados son práctica: no se entregan ni puntúan. El peso de cada entrega está en el libro de calificaciones de Moodle.
 <!-- AUTO:ra_pesos fin -->
 
 ## 📝 Evaluación
@@ -88,9 +88,19 @@ Cada RA se califica **1 a 10, sin decimales** (Orden 8/2025, art. 5.1): **40 %**
   superados**: no hay prueba global del módulo.
 
 - 🐳 La **UD00** (presentación y Docker) **no se califica**: el entorno de trabajo es un requisito.
-  Sus tres entregables —los dos talleres y el notebook— se marcan como **hecho / no hecho**, sin
-  nota pero **obligatorios**: son la prueba de que tienes el entorno operativo, y sin ellos no se
-  pueden hacer las prácticas de la UD02.
+  Sus **dos entregas** —los dos talleres— se marcan como **hecho / no hecho**, sin nota pero
+  **obligatorias**: son la prueba de que tienes el entorno operativo, y sin ellos no se pueden hacer
+  las prácticas de la UD02.
+
+- ⏰ **Las entregas fuera de plazo tienen un máximo de 5.** El plazo de cada entrega se cierra en la
+  fecha que indica Moodle. Si necesitas entregar después, **avísame** y te reabro esa tarea concreta
+  un tiempo limitado; en ese caso la nota máxima del trabajo es **5 sobre 10**, y la rúbrica lo
+  recoge de forma explícita. Vale para **todo el curso**, así que no se repite en cada unidad.
+
+- 📁 En cada unidad, **«Práctica» es lo que no se entrega** —ejercicios de autoevaluación y notebooks
+  guiados— y **«Entregas» es lo que sí**. Cada entrega dice en su página con qué se corrige:
+  **rúbrica**, **apto / no apto** o **hecho / no hecho**. El **peso** de cada una está en el libro
+  de calificaciones de Moodle, no en estas páginas.
 
 !!! warning "Importante"
     - ❗ Aprobar las evaluaciones parciales **no garantiza** aprobar el módulo.

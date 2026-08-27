@@ -657,27 +657,29 @@ señala los riesgos (correos ambiguos, privacidad de los datos de los clientes s
 
 | Semana | Horas | Contenido | CE | Evidencia / actividad |
 |---|---|---|---|---|
-| 3 | 3 | Fundamentos; escuelas de pensamiento y clasificaciones (débil/fuerte, Russell-Norvig, Hintze) | RA1-a | Ejercicios bloque A, Taller 1 |
+| 3 | 3 | Fundamentos; escuelas de pensamiento y clasificaciones (débil/fuerte, Russell-Norvig, Hintze) | RA1-a | Ejercicios bloque A, Notebook 2 |
 | 4 | 3 | Campos de aplicación de la IA | RA1-b | Ejercicios bloque C |
-| 5 | 3 | Técnicas de la IA (ML, PLN, visión, robótica, sistemas expertos) | RA1-c | Ejercicios bloques B y D, Taller 2 |
+| 5 | 3 | Técnicas de la IA (ML, PLN, visión, robótica, sistemas expertos) | RA1-c | Ejercicios bloques B y D, Notebook 3 |
 | 6 | 3 | Nuevas interacciones, eficiencia operativa y KPIs; entrega | RA1-d | Ejercicios bloques E y F, Talleres 3 y 4, notebook demo |
 
 ## 12. Tabla final RA/CE
 
 | CE | Dónde se trabaja | Con qué se evalúa |
 |---|---|---|
-| RA1-a | §3 | Ejercicios bloque A, Taller 1, Taller 4, prueba del RA1 |
-| RA1-b | §5 | Ejercicios bloque C, Taller 1, prueba del RA1 |
-| RA1-c | §4, §6.1 | Ejercicios bloques B y D, Taller 2, prueba del RA1 |
-| RA1-d | §6 | Ejercicios bloques E y F, Taller 3, prueba del RA1 |
+| RA1-a | §3 | Ejercicios bloque A, Notebook 2, Notebook 5, prueba del RA1 |
+| RA1-b | §5 | Ejercicios bloque C, Notebook 2, prueba del RA1 |
+| RA1-c | §4, §6.1 | Ejercicios bloques B y D, Notebook 3, prueba del RA1 |
+| RA1-d | §6 | Ejercicios bloques E y F, Notebook 4, prueba del RA1 |
 
 ## 13. Recursos
 
 - [Diapositivas](UD01_Diapositivas.md)
-- [Ejercicios de la unidad](UD01_Ejercicios.md)
-- Talleres: [T01 · mapa de sistemas inteligentes](UD01_T01_Mapa_sistemas_ES.md) · [T02 · técnicas en casos reales](UD01_T02_Tecnicas_casos_ES.md) · [T03 · nuevas interacciones](UD01_T03_Nuevas_interacciones_ES.md) · [T04 · línea del tiempo](UD01_T04_Linea_tiempo_ES.md)
-- [Actividades guiadas](UD01_ActividadesGuiadas.md) — notebook demo del profesor
-- **Notebooks** — el notebook guiado, con descarga y apertura en Colab, en el menú «Notebooks»
+- **Práctica** — se hace, no se entrega ni puntúa:
+    - [Ejercicios de autoevaluación](UD01_Ejercicios.md)
+    - [Notebooks guiados](UD01_ActividadesGuiadas.md) — el notebook demo del profesor
+- **Entregas** — las cuatro se corrigen con rúbrica; [qué se entrega](UD01_Entregas.md):
+    - [N02 · mapa de sistemas inteligentes](notebooks/UD01_N02_mapa_sistemas.ipynb) · [N03 · técnicas en casos reales](notebooks/UD01_N03_tecnicas_casos.ipynb) · [N04 · nuevas interacciones](notebooks/UD01_N04_nuevas_interacciones.ipynb) · [N05 · línea del tiempo](notebooks/UD01_N05_linea_tiempo.ipynb)
+- Los notebooks se abren desde **Práctica** y **Entregas**, con descarga y apertura en Colab.
 
 ??? note "Referencias de la unidad"
     - [IBM · ¿Qué es la IA?](https://www.ibm.com/topics/artificial-intelligence)
@@ -694,7 +696,7 @@ señala los riesgos (correos ambiguos, privacidad de los datos de los clientes s
 
 | Peso | Instrumento |
 |---|---|
-| **40 %** actividades | Media de los 4 talleres, con su [rúbrica](UD01_T04_Linea_tiempo_ES.md#rubrica-de-los-talleres-tarea-ra1) |
+| **40 %** actividades | Los **4 talleres**, cada uno con su rúbrica en la tarea de Moodle. Pesan lo mismo, así que es su media |
 | **60 %** prueba escrita | Prueba del RA1 en Moodle: preguntas de test y de desarrollo sobre el contenido de la unidad |
 
 - **La normativa exige alcanzar todos los RA** del módulo para superarlo (art. 5.1 de la Orden

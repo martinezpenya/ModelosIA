@@ -1,9 +1,8 @@
 # UD06 · Debate 2 — El algoritmo contra el crimen
 
-!!! important "Actividad evaluable · sesión 4"
-    Segunda de las **dos actividades evaluables** de la unidad, con la **misma rúbrica** que el
-    [Debate 1](UD06_D01_Debate_limites_eticos_ES.md). Reflexión escrita en Moodle, máximo
-    **300 palabras**, **30 de los 100 puntos**.
+!!! important "Entrega evaluable"
+    Se entrega en Moodle y se corrige con su **rúbrica**, que puedes leer en la propia tarea
+    antes de empezar. El **peso** de esta entrega está en el libro de calificaciones de Moodle.
 
 **Pregunta del debate**: ¿un sistema judicial en el que un algoritmo decida penas sería **más justo o
 más peligroso**?
@@ -15,7 +14,7 @@ de equidad son incompatibles y ver a un tribunal pronunciándose sobre el derech
 ## Antes de clase: el documental
 
 Hay que verlo **antes** de la sesión. Está en las
-[actividades guiadas](UD06_ActividadesGuiadas.md).
+[notebooks guiados](UD06_ActividadesGuiadas.md).
 
 Temas que trae el documental y que conviene tener frescos: **sesgos en los datos históricos**,
 **saturación judicial**, **opacidad de los algoritmos** y **vigilancia predictiva**.
@@ -83,16 +82,9 @@ las preguntas incómodas en la fase 6. Se califica con la misma rúbrica.
 
 ## Cómo se califica
 
-La rúbrica, con todos sus niveles, está en las
-[actividades entregables](UD06_ActividadesEntregables.md#rubrica-de-los-debates).
-
-| Criterio | Puntos |
-|---|---|
-| Dominio del rol | 20 |
-| Argumentación ética | 20 |
-| Participación activa | 15 |
-| Empatía y perspectiva | 15 |
-| **Reflexión escrita** | **30** |
+!!! info "La rúbrica está en Moodle"
+    Los criterios con los que se te califica están en la **rúbrica de la tarea de Moodle**, y puedes
+    leerlos antes del debate. No se duplican aquí para que no haya dos versiones del mismo dato.
 
 !!! important "70 de los 100 puntos se juegan en el aula"
     Los cuatro primeros criterios se observan **en directo** y no se recuperan después.
@@ -108,4 +100,4 @@ postura ajena:
 
 ---
 [Volver a la UD06](UD06_ES.md) · [Debate 1](UD06_D01_Debate_limites_eticos_ES.md) ·
-[Actividades guiadas](UD06_ActividadesGuiadas.md)
+[Práctica](UD06_ActividadesGuiadas.md)

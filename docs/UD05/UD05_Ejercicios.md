@@ -1,9 +1,9 @@
-# UD05 · Ejercicios
+# UD05 · Ejercicios de autoevaluación
 
 !!! note "Cómo se trabajan"
     Resuélvelos en tu cuaderno o en un documento Markdown. **No se publican las soluciones**: se
-    corrigen y comentan en clase. Los cinco entregables (`EX0`-`EX4`) son la evaluación práctica de
-    la unidad y se describen en las [actividades entregables](UD05_ActividadesEntregables.md).
+    corrigen y comentan en clase. Los cinco entregables (`N15`-`N14`) son la evaluación práctica de
+    la unidad y se describen en las [entregas](UD05_Entregas.md).
 
 ## A. Del conocimiento a la arquitectura (RA5-a)
 
@@ -122,9 +122,9 @@
 
 ## J. Caso práctico
 
-51. Elige uno de los cinco entregables (`EX0`-`EX4`) y, antes de programarlo, redacta en una tabla:
+51. Elige uno de los cinco entregables (`N15`-`N14`) y, antes de programarlo, redacta en una tabla:
     qué representación de conocimiento usarás, si es puro/híbrido/difuso, y qué especificación de
     respuesta tendría si actuara como controlador.
 
 ---
-[Volver a la UD05](UD05_ES.md) · [Taller 1](UD05_T01_Simular_sistema_experto_ES.md) · [Taller 2](UD05_T02_Logica_difusa_ES.md) · [Taller 3](UD05_T03_Controlador_experto_ES.md)
+[Volver a la UD05](UD05_ES.md) · [Notebook 10](notebooks/UD05_N10_simular_sistema_experto.ipynb) · [Notebook 5](notebooks/UD05_N05_logica_difusa_propinas.ipynb) · [Notebook 8](notebooks/UD05_N08_controlador_experto.ipynb)

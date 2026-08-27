@@ -215,9 +215,12 @@ evaluacion:
     12/66 × 80 % ≈ 14,55 %; RA6 tiene solo 6 h y pesa 6/66 × 80 % ≈ 7,27 % (66 h = horas de
     RA1-RA6, excluidas las 15 h de RA7 y las 3 h de cierre). RA7 se mantiene al 20 %. La suma
     exacta es 100 % antes de redondear a dos decimales para mostrar (el reparto plano anterior,
-    13,33 % × 6 + 20 % = 99,98 %, ya tenía el mismo redondeo de visualización). El criterio
-    «cada RA ≥5» es del centro, más estricto que el mínimo de la Orden 8/2025 (art. 5.2); debe
-    constar en la programación citando los arts. 5.1 y 12.9.
+    13,33 % × 6 + 20 % = 99,98 %, ya tenía el mismo redondeo de visualización). Alcanzar TODOS
+    los RA del módulo es exigencia NORMATIVA, no del centro: art. 5.1 de la Orden 8/2025 (la
+    calificación del módulo va «en función de la consecución de los RA») e Instrucciones 26-27,
+    ap. 9.6.3 y 15.1.6 (un módulo con RA no superados no se puede calificar positivamente). El
+    centro solo concreta el umbral: «≥5 en cada RA». Verificado contra las fuentes primarias el
+    2026-08-22.
 
 # Divergencias conocidas frente a otras fuentes, PENDIENTES DE DECISIÓN
 # (PROPUESTAS_MEJORA.md §10.3 y §10.4). No resolver sin el profesor.
@@ -242,9 +245,27 @@ conflictos:
     aqui: dentro de UD00 (6 h con la presentación)
     modelosia: sección propia en la navegación; en Moodle es «Taller UD00_T01»
     estado: >
-      Ubicación PENDIENTE (unidad propia o dentro de UD00). Evaluación RESUELTA 2026-08-20: UD00 y
-      el taller de Docker son REQUISITO NO CALIFICABLE, sin ítem en el cuaderno de Moodle; todo el
-      peso sigue en RA1-RA7. Aviso: como unidad propia sería una segunda unidad sin RA.
+      RESUELTO 2026-08-27: Docker se queda DENTRO de UD00, como hasta ahora. Evaluación ya resuelta
+      el 2026-08-20: UD00 y el taller de Docker son REQUISITO NO CALIFICABLE, sin ítem en el
+      cuaderno de Moodle; todo el peso sigue en RA1-RA7.
+  - asunto: horas de RA6 frente a su carga real
+    aqui: UD06 = 6 h (semanas 24-28, el tramo de Fallas y Pascua)
+    carga_real: >
+      Los DOS debates por roles son evaluables (decisión del profesor 2026-08-22) y suman ~2 h 20
+      solo de debate, sobre 6 h totales.
+    estado: >
+      RESUELTO 2026-08-27: RA6 se queda en 6 h. El módulo necesita 30 semanas y hay 33 con clase,
+      así que si sobra colchón se le da alguna sesión a la UD06; no se cambia la temporalización
+      nominal. Consecuencia asumida en moodle/spec/CALIFICABLE.md: RA6 tiene 3 actividades
+      evaluables y los CE b, d y e se evidencian solo con la prueba escrita.
+  - asunto: pesos de las actividades dentro de cada RA
+    aqui: peso explícito por actividad, sumando 100 dentro de cada RA
+    estado: >
+      RESUELTO 2026-08-27. Sustituye al promedio simple que decían las páginas de entregables.
+      Las cifras por actividad viven en moodle/spec/CALIFICABLE.md (repo privado MIA_IA), que es su
+      fuente; las páginas de Entregas de cada unidad las publican. Robocode se lleva el 60 % del
+      RA2 porque son dos semanas con bot y memoria y porque las técnicas de sus otros dos
+      entregables se vuelven a evaluar en el RA5.
   - asunto: sitio maestro de la fusión
     estado: RESUELTO 2026-08-20 — ModelosIA (URL en producción, CI, historial y .mbz real)
   - asunto: numeración de las unidades

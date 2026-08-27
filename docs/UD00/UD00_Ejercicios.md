@@ -1,4 +1,4 @@
-# UD00 — Ejercicios
+# UD00 · Ejercicios de autoevaluación
 
 !!! note "Cómo se trabajan"
     Resuélvelos en tu cuaderno o en un documento Markdown, a tu ritmo. Si te atascas en alguno,
