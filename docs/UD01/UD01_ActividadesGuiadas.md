@@ -2,10 +2,10 @@
 
 <!-- AUTO:notebooks inicio -->
 !!! info "Práctica: se hace, no se entrega"
-    1 notebook que se trabaja **en clase**, con el profesor. **No se entrega ni puntúa**: prepara las
-    [entregas de la unidad](UD01_Entregas.md) y la prueba escrita del RA1.
+    1 actividad que se trabaja **en clase**, con el profesor. **No se
+    entrega ni puntúa**: prepara las [entregas de la unidad](UD01_Entregas.md) y la prueba escrita del RA1.
 
-| Notebook | Qué es | Descargar | Abrir en Colab |
+| Actividad | Qué es | Descargar | Abrir en Colab |
 |---|---|---|---|
 | [`N01` · Técnicas de IA en acción](notebooks/UD01_N01_tecnicas_ia.ipynb) | Demo del profesor · aprendizaje supervisado y no supervisado | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD01/notebooks/UD01_N01_tecnicas_ia.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD01/notebooks/UD01_N01_tecnicas_ia.ipynb){:target="_blank"} |
 

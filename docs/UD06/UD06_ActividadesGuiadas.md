@@ -2,14 +2,14 @@
 
 <!-- AUTO:notebooks inicio -->
 !!! info "Práctica: se hace, no se entrega"
-    2 notebooks que se trabajan **en clase**, con el profesor. **No se entregan ni puntúan**: preparan las
-    [entregas de la unidad](UD06_Entregas.md) y la prueba escrita del RA6.
+    2 actividades que se trabajan **en clase**, con el profesor. **No se
+    entregas ni puntúas**: preparas las [entregas de la unidad](UD06_Entregas.md) y la prueba escrita del RA6.
 
     Los documentales de partida **se ven en casa**, antes de la sesión que les corresponde: la unidad
     tiene 6 horas y en clase se debate, no se proyecta. Los enlaces se comprobaron el **22 de agosto
     de 2026**.
 
-| Notebook | Qué es | Descargar | Abrir en Colab |
+| Actividad | Qué es | Descargar | Abrir en Colab |
 |---|---|---|---|
 | [`N01` · Detección y corrección de sesgos](notebooks/UD06_N01_sesgos_ia.ipynb) | Detección y corrección de sesgos · da soporte a `N03` | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD06/notebooks/UD06_N01_sesgos_ia.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD06/notebooks/UD06_N01_sesgos_ia.ipynb){:target="_blank"} |
 | [`N02` · Análisis de un caso ético](notebooks/UD06_N02_analisis_caso_etico.ipynb) | Método de análisis ético sobre un caso real | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD06/notebooks/UD06_N02_analisis_caso_etico.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD06/notebooks/UD06_N02_analisis_caso_etico.ipynb){:target="_blank"} |

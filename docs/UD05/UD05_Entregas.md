@@ -4,13 +4,13 @@
 !!! important "6 entregas en el RA5"
     Cada una se corrige con **su rúbrica**, que puedes leer antes de empezar en la propia
     tarea de Moodle. El **peso** de cada entrega está en el libro de calificaciones de
-    Moodle, no aquí. La [práctica de la unidad](UD05_ActividadesGuiadas.md) no se entrega
-    ni puntúa.
+    Moodle, no aquí. La [práctica de la unidad](UD05_ActividadesGuiadas.md) no se
+    entrega ni puntúa.
 
     Los dominios distintos son a propósito: el criterio RA5-b pide representar y simular sistemas «de
     muy diversos ámbitos».
 
-| Notebook | Qué es | Descargar | Abrir en Colab |
+| Actividad | Qué es | Descargar | Abrir en Colab |
 |---|---|---|---|
 | [`N10` · Simular un sistema experto con experta](notebooks/UD05_N10_simular_sistema_experto.ipynb) | Motor de inferencia a mano · diagnóstico frente a clasificación | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD05/notebooks/UD05_N10_simular_sistema_experto.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD05/notebooks/UD05_N10_simular_sistema_experto.ipynb){:target="_blank"} |
 | [`N11` · Detectar lesiones de rodilla](notebooks/UD05_N11_lesiones_rodilla.ipynb) | Medicina · sistema experto de diagnóstico | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD05/notebooks/UD05_N11_lesiones_rodilla.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD05/notebooks/UD05_N11_lesiones_rodilla.ipynb){:target="_blank"} |

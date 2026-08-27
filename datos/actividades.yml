@@ -1,5 +1,8 @@
 # Contenido de las páginas de Práctica y Entregas de cada unidad.
 #
+# Cubre TODAS las actividades, no solo los notebooks: los talleres y los debates son páginas y
+# también se entregan, así que también llevan su fila en la tabla y su resumen debajo.
+#
 # Fuente única de la tabla de notebooks Y del resumen de cada uno. Las páginas se regeneran con:
 #     python3 scripts/generar_tablas_notebooks.py
 #
@@ -8,6 +11,9 @@
 #   resumen     · dos o tres líneas: qué se pide (decisión del profesor, 2026-08-27)
 #   se_entrega  · solo en las entregas: qué hay que subir
 #   materiales  · filas de tabla con el material de apoyo (imágenes, CSV, audio, pistas)
+#
+# La clave es el nombre del fichero: `UDxx_Nnn_*.ipynb` para un notebook y `UDxx_Tnn_*_ES.md` o
+# `UDxx_Dnn_*_ES.md` para una página. El ORDEN de la tabla y de los resúmenes lo da el `nav`.
 #
 # El NOMBRE y el NÚMERO de cada notebook salen de su título H1; si es entrega o práctica lo decide
 # el `nav` de mkdocs.yml. Nada de eso se repite aquí.
@@ -26,6 +32,18 @@ UD00:
     resumen: Repaso rápido de `numpy`, `pandas` y `matplotlib` dentro del contenedor que has montado en
       los dos talleres de la unidad. Si este notebook se ejecuta de arriba abajo sin errores, el entorno
       está listo para todo el módulo.
+  UD00_T01_Verificacion_entorno_ES.md:
+    que_es: Puesta a punto · Docker en tu máquina y el primer contenedor
+    resumen: |-
+      Instalar Docker, verificar que funciona y levantar un primer contenedor. Es el requisito de
+      todo lo demás: sin entorno no se pueden hacer las prácticas de la UD02.
+    se_entrega: la memoria con las capturas y las justificaciones de los ejercicios.
+  UD00_T02_Contenedor_practicas_ES.md:
+    que_es: Puesta a punto · el contenedor de prácticas del curso
+    resumen: |-
+      Construir el contenedor con el que se trabaja el resto del módulo, con Python y las librerías
+      de IA dentro. Al terminar tienes el entorno del curso levantado.
+    se_entrega: el `Dockerfile` o el `docker-compose.yml` del entorno, funcionando, y la memoria.
 UD01:
   _ra: RA1
   _pagina_practica: UD01_ActividadesGuiadas.md
@@ -73,6 +91,30 @@ UD02:
     resumen: Implementar un **mini sistema experto de diagnóstico** de un PC que no arranca y comprobar
       en código el ciclo reconocer-actuar de un sistema basado en reglas (RA2-e).
     se_entrega: el notebook con el sistema resolviendo los casos de prueba.
+  UD02_T01_Preparar_entorno_ES.md:
+    que_es: Puesta a punto · el entorno del lenguaje que elijas para Robocode
+    resumen: |-
+      Dejar listo el entorno de desarrollo del lenguaje elegido —Java con IntelliJ IDEA o Python con
+      VS Code— para poder programar el bot de `T04`.
+    se_entrega: las capturas del entorno funcionando.
+  UD02_T02_GitHub_ES.md:
+    que_es: Puesta a punto · control de versiones
+    resumen: |-
+      Crear la cuenta y el repositorio donde vivirá el bot. En `T04` se entrega el código, y saber
+      moverse en un repositorio es parte de las herramientas del oficio.
+    se_entrega: el repositorio creado.
+  UD02_T03_Markdown_ES.md:
+    que_es: Puesta a punto · documentar con Markdown
+    resumen: |-
+      Aprender Markdown lo bastante como para documentar cualquier proyecto. La memoria de `T04` se
+      escribe más rápido dominándolo, y es el lenguaje en el que están escritos estos apuntes.
+    se_entrega: el documento en Markdown.
+  UD02_T04_Robocode_ES.md:
+    que_es: La práctica de cierre del RA2 · un bot que compite
+    resumen: |-
+      Programar un bot de Robocode Tank Royale y enfrentarlo a los de referencia y a los de la clase.
+      Es donde los cinco requisitos del §4.1 y la elección de modelo del §9 dejan de ser teoría.
+    se_entrega: el código del bot y su memoria.
 UD03:
   _ra: RA3
   _pagina_practica: UD03_ActividadesGuiadas.md
@@ -329,9 +371,9 @@ UD06:
     tiene 6 horas y en clase se debate, no se proyecta. Los enlaces se comprobaron el **22 de agosto
     de 2026**.
   _nota_entregas: |
-    Además de la auditoría se entregan los **dos debates por roles**, con su propia rúbrica.
-    **70 de los 100 puntos** se observan en directo, así que faltar a la sesión no se recupera
-    repitiéndola.
+    Los dos debates son en la **sesión 2** y la **sesión 4**, y la auditoría en la **sesión 3**.
+    **70 de los 100 puntos** de la rúbrica de debate se observan en directo, así que faltar a la
+    sesión no se recupera repitiéndola.
   _pagina_practica: UD06_ActividadesGuiadas.md
   _pagina_entregas: UD06_Entregas.md
   UD06_N01_sesgos_ia.ipynb:
@@ -353,3 +395,15 @@ UD06:
     resumen: Medir el sesgo de un modelo real con **Fairlearn**, mitigarlo y **comprobar el precio que
       se paga** por hacerlo (RA6-f, con conexión a RA6-b y RA6-e).
     se_entrega: el informe con las métricas antes y después de mitigar, y las seis respuestas.
+  UD06_D01_Debate_limites_eticos_ES.md:
+    que_es: Debate por roles · ¿debe usarse la IA en medicina, en la guerra o en política?
+    resumen: |-
+      Debate por roles a partir de un documental que se ve en casa. Cada alumno defiende un personaje
+      asignado, no su propia opinión.
+    se_entrega: la participación en el aula **más** una reflexión escrita de máx. **300 palabras** en Moodle.
+  UD06_D02_Debate_algoritmo_crimen_ES.md:
+    que_es: Debate por roles · el algoritmo contra el crimen
+    resumen: |-
+      Segundo debate, sobre justicia algorítmica y predicción del delito. Misma mecánica y misma
+      rúbrica que el primero.
+    se_entrega: la participación en el aula **más** una reflexión escrita de máx. **300 palabras** en Moodle.

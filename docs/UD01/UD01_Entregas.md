@@ -4,10 +4,10 @@
 !!! important "4 entregas en el RA1"
     Cada una se corrige con **su rúbrica**, que puedes leer antes de empezar en la propia
     tarea de Moodle. El **peso** de cada entrega está en el libro de calificaciones de
-    Moodle, no aquí. La [práctica de la unidad](UD01_ActividadesGuiadas.md) no se entrega
-    ni puntúa.
+    Moodle, no aquí. La [práctica de la unidad](UD01_ActividadesGuiadas.md) no se
+    entrega ni puntúa.
 
-| Notebook | Qué es | Descargar | Abrir en Colab |
+| Actividad | Qué es | Descargar | Abrir en Colab |
 |---|---|---|---|
 | [`N02` · Mapa de sistemas inteligentes](notebooks/UD01_N02_mapa_sistemas.ipynb) | Análisis · inventario de sistemas con IA de una organización real | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD01/notebooks/UD01_N02_mapa_sistemas.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD01/notebooks/UD01_N02_mapa_sistemas.ipynb){:target="_blank"} |
 | [`N03` · Técnicas de IA en casos reales](notebooks/UD01_N03_tecnicas_casos.ipynb) | Análisis · clasificar técnicas y justificarlas con documentación oficial | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD01/notebooks/UD01_N03_tecnicas_casos.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD01/notebooks/UD01_N03_tecnicas_casos.ipynb){:target="_blank"} |

@@ -2,10 +2,10 @@
 
 <!-- AUTO:notebooks inicio -->
 !!! info "Práctica: se hace, no se entrega"
-    3 notebooks que se trabajan **en clase**, con el profesor. **No se entregan ni puntúan**: preparan las
-    [entregas de la unidad](UD04_Entregas.md) y la prueba escrita del RA4.
+    3 actividades que se trabajan **en clase**, con el profesor. **No se
+    entregas ni puntúas**: preparas las [entregas de la unidad](UD04_Entregas.md) y la prueba escrita del RA4.
 
-| Notebook | Qué es | Descargar | Abrir en Colab |
+| Actividad | Qué es | Descargar | Abrir en Colab |
 |---|---|---|---|
 | [`N01` · Introducción a OpenCV](notebooks/UD04_N01_introduccion_opencv.ipynb) | Introducción a OpenCV | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/UD04_N01_introduccion_opencv.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/UD04_N01_introduccion_opencv.ipynb){:target="_blank"} |
 | [`N02` · Vehículos de Braitenberg](notebooks/UD04_N02_vehiculos_braitenberg.ipynb) | Vehículos de Braitenberg · comportamiento sin planificación | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/UD04_N02_vehiculos_braitenberg.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/UD04_N02_vehiculos_braitenberg.ipynb){:target="_blank"} |

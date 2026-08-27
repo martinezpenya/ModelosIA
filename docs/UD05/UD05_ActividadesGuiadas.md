@@ -2,10 +2,10 @@
 
 <!-- AUTO:notebooks inicio -->
 !!! info "Práctica: se hace, no se entrega"
-    9 notebooks que se trabajan **en clase**, con el profesor. **No se entregan ni puntúan**: preparan las
-    [entregas de la unidad](UD05_Entregas.md) y la prueba escrita del RA5.
+    9 actividades que se trabajan **en clase**, con el profesor. **No se
+    entregas ni puntúas**: preparas las [entregas de la unidad](UD05_Entregas.md) y la prueba escrita del RA5.
 
-| Notebook | Qué es | Descargar | Abrir en Colab |
+| Actividad | Qué es | Descargar | Abrir en Colab |
 |---|---|---|---|
 | [`N01` · Sistema experto con Python y Experta](notebooks/UD05_N01_experta_primeros_pasos.ipynb) | Introducción a `experta` · hechos, reglas y `DefFacts` | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD05/notebooks/UD05_N01_experta_primeros_pasos.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD05/notebooks/UD05_N01_experta_primeros_pasos.ipynb){:target="_blank"} |
 | [`N02` · Piedra, papel o tijera](notebooks/UD05_N02_piedra_papel_tijera.ipynb) | Juego decidido por reglas | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD05/notebooks/UD05_N02_piedra_papel_tijera.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD05/notebooks/UD05_N02_piedra_papel_tijera.ipynb){:target="_blank"} |

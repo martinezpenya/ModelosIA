@@ -2,10 +2,10 @@
 
 <!-- AUTO:notebooks inicio -->
 !!! info "Práctica: se hace, no se entrega"
-    7 notebooks que se trabajan **en clase**, con el profesor. **No se entregan ni puntúan**: preparan las
-    [entregas de la unidad](UD03_Entregas.md) y la prueba escrita del RA3.
+    7 actividades que se trabajan **en clase**, con el profesor. **No se
+    entregas ni puntúas**: preparas las [entregas de la unidad](UD03_Entregas.md) y la prueba escrita del RA3.
 
-| Notebook | Qué es | Descargar | Abrir en Colab |
+| Actividad | Qué es | Descargar | Abrir en Colab |
 |---|---|---|---|
 | [`N01` · Introducción al procesamiento del lenguaje natural](notebooks/UD03_N01_introduccion_pln.ipynb) | Introducción · el pipeline de PLN de punta a punta | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD03/notebooks/UD03_N01_introduccion_pln.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD03/notebooks/UD03_N01_introduccion_pln.ipynb){:target="_blank"} |
 | [`N02` · Clasificador de noticias](notebooks/UD03_N02_clasificacion_texto_torch.ipynb) | Clasificación de texto con PyTorch | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD03/notebooks/UD03_N02_clasificacion_texto_torch.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD03/notebooks/UD03_N02_clasificacion_texto_torch.ipynb){:target="_blank"} |

@@ -4,20 +4,20 @@
 !!! important "8 entregas en el RA4"
     Cada una se corrige con **su rúbrica**, que puedes leer antes de empezar en la propia
     tarea de Moodle. El **peso** de cada entrega está en el libro de calificaciones de
-    Moodle, no aquí. La [práctica de la unidad](UD04_ActividadesGuiadas.md) no se entrega
-    ni puntúa.
+    Moodle, no aquí. La [práctica de la unidad](UD04_ActividadesGuiadas.md) no se
+    entrega ni puntúa.
 
     Tres de las ocho son de **apto / no apto** —`N08`, `N10` y `N11`—: se entregan, pero no se corrigen
     con rúbrica y pesan poco.
 
-| Notebook | Qué es | Descargar | Abrir en Colab |
+| Actividad | Qué es | Descargar | Abrir en Colab |
 |---|---|---|---|
 | [`N04` · Cinemática de un manipulador](notebooks/UD04_N04_cinematica_manipulador.ipynb) | Cinemática directa e inversa de un robot real (Panda, Puma 560) | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/UD04_N04_cinematica_manipulador.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/UD04_N04_cinematica_manipulador.ipynb){:target="_blank"} |
 | [`N05` · Ejercicios de OpenCV](notebooks/UD04_N05_ejercicios_opencv.ipynb) | Visión · ejercicios de OpenCV sobre imagen y vídeo | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/UD04_N05_ejercicios_opencv.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/UD04_N05_ejercicios_opencv.ipynb){:target="_blank"} |
 | [`N06` · Navegar con cámara](notebooks/UD04_N06_navegar_camara.ipynb) | Navegación por reglas con la cámara | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/UD04_N06_navegar_camara.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/UD04_N06_navegar_camara.ipynb){:target="_blank"} |
 | [`N07` · Navegar con cámara difusa](notebooks/UD04_N07_navegar_camara_difusa.ipynb) | La misma navegación, con lógica difusa | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/UD04_N07_navegar_camara_difusa.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/UD04_N07_navegar_camara_difusa.ipynb){:target="_blank"} |
-| [`N08` · Generar datos de entrenamiento](notebooks/UD04_N08_generar_datos_entrenamiento.ipynb) | Insumo de `N09` · genera el conjunto de entrenamiento | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/UD04_N08_generar_datos_entrenamiento.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/UD04_N08_generar_datos_entrenamiento.ipynb){:target="_blank"} |
 | [`N09` · Controlar el robot con una red neuronal](notebooks/UD04_N09_red_neuronal.ipynb) | Navegación con una red neuronal entrenada | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/UD04_N09_red_neuronal.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/UD04_N09_red_neuronal.ipynb){:target="_blank"} |
+| [`N08` · Generar datos de entrenamiento](notebooks/UD04_N08_generar_datos_entrenamiento.ipynb) | Insumo de `N09` · genera el conjunto de entrenamiento | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/UD04_N08_generar_datos_entrenamiento.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/UD04_N08_generar_datos_entrenamiento.ipynb){:target="_blank"} |
 | [`N10` · Aprendizaje por refuerzo con NEAT](notebooks/UD04_N10_neat.ipynb) | Aprendizaje por refuerzo · evolucionar la red con NEAT | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/UD04_N10_neat.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/UD04_N10_neat.ipynb){:target="_blank"} |
 | [`N11` · Diseño de un sistema robotizado](notebooks/UD04_N11_diseno_sistema_robotizado.ipynb) | Diseño · evaluar alternativas para un problema real (CE d) | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/UD04_N11_diseno_sistema_robotizado.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/UD04_N11_diseno_sistema_robotizado.ipynb){:target="_blank"} |
 
@@ -58,17 +58,17 @@ El **mismo problema** que `N06`, resuelto con lógica difusa: variables lingüí
 
 **Se entrega**: el notebook con el sistema difuso completo y el robot navegando en los dos escenarios.
 
-## `N08` · Generar datos de entrenamiento
-
-Aquí no se entrena nada todavía: **conduces tú el robot** y el notebook graba lo que ve la cámara junto con lo que tú decidiste hacer. El resultado es un conjunto de ejemplos etiquetados.
-
-**Se entrega**: el notebook **y el fichero `training_data.txt` con tu nombre**. Guárdatelo: es la entrada de `N09`.
-
 ## `N09` · Controlar el robot con una red neuronal
 
 Lees el `training_data.txt` de `N08`, **construyes y entrenas** una red neuronal con esos ejemplos y la usas para conducir el robot. Tres celdas están vacías a propósito: la arquitectura de la red, el entrenamiento y la función de control.
 
 **Se entrega**: el notebook **y el fichero `.keras` con tu nombre**, con la red ya entrenada. Con ese fichero, la celda de carga permite **probar cómo se comporta tu red sin repetir el entrenamiento** —que es largo—, y es así como se corrige.
+
+## `N08` · Generar datos de entrenamiento
+
+Aquí no se entrena nada todavía: **conduces tú el robot** y el notebook graba lo que ve la cámara junto con lo que tú decidiste hacer. El resultado es un conjunto de ejemplos etiquetados.
+
+**Se entrega**: el notebook **y el fichero `training_data.txt` con tu nombre**. Guárdatelo: es la entrada de `N09`.
 
 ## `N10` · Aprendizaje por refuerzo con NEAT
 

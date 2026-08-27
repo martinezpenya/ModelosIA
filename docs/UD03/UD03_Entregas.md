@@ -4,10 +4,10 @@
 !!! important "5 entregas en el RA3"
     Cada una se corrige con **su rúbrica**, que puedes leer antes de empezar en la propia
     tarea de Moodle. El **peso** de cada entrega está en el libro de calificaciones de
-    Moodle, no aquí. La [práctica de la unidad](UD03_ActividadesGuiadas.md) no se entrega
-    ni puntúa.
+    Moodle, no aquí. La [práctica de la unidad](UD03_ActividadesGuiadas.md) no se
+    entrega ni puntúa.
 
-| Notebook | Qué es | Descargar | Abrir en Colab |
+| Actividad | Qué es | Descargar | Abrir en Colab |
 |---|---|---|---|
 | [`N08` · Del texto al vector](notebooks/UD03_N08_del_texto_al_vector.ipynb) | Clasificador de reseñas desde cero · del texto al vector | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD03/notebooks/UD03_N08_del_texto_al_vector.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD03/notebooks/UD03_N08_del_texto_al_vector.ipynb){:target="_blank"} |
 | [`N09` · Clasificador de preguntas](notebooks/UD03_N09_clasificador_preguntas.ipynb) | Clasificador de preguntas entrenado y medido | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD03/notebooks/UD03_N09_clasificador_preguntas.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD03/notebooks/UD03_N09_clasificador_preguntas.ipynb){:target="_blank"} |
