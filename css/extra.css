@@ -115,6 +115,21 @@ img {
     .tabbed-print-label {
         margin-bottom: 0.3em;
     }
+    /* Mismo patron que las pestañas de arriba, tercera aparicion del mismo fallo (2026-08-27):
+       las galerias de miniaturas (`<div class="grid" markdown>` con varias `<figure>`) usan el
+       `display: grid` de Material, y WeasyPrint 62.3 corrompe la paginacion de todo el documento
+       a partir de ahi: el libro se cortaba en la galeria de las seis pistas de la UD04 (215
+       paginas en vez de 303) y todo lo posterior -UD06, "Sobre mi" y "Fuentes"- desaparecia,
+       dejando 97 errores "No anchor ... for internal URI reference" que reventaban la CI. Las
+       figuras se apilan en bloque, una por linea, que en papel es lo que se quiere de todos
+       modos. */
+    .md-typeset .grid {
+        display: block !important;
+    }
+    .md-typeset .grid > figure {
+        display: block !important;
+        page-break-inside: avoid;
+    }
     /* Los mazos Marp se embeben con <iframe> (WeasyPrint no ejecuta HTML/JS: no los renderiza).
        El convert_iframe del plugin with-pdf nunca coincidia porque compara el src ya resuelto a
        ruta local file:// contra la URL de produccion configurada en mkdocs.yml -no hay forma de
