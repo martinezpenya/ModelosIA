@@ -2,7 +2,7 @@
 
 !!! important "Entrega · hecho / no hecho"
     Se entrega en Moodle y se califica como **hecho / no hecho**: no lleva nota ni ítem en el
-    libro de calificaciones, pero **es requisito**. En [Robocode](UD02_ActividadesEntregables.md) entregarás el código
+    libro de calificaciones, pero **es requisito**. En [Robocode](UD02_Robocode_Entrega_ES.md) entregarás el código
     de tu bot, y saber moverte en un repositorio es parte de las herramientas del oficio.
 
 **Objetivo**: crear una cuenta en GitHub y completar un ciclo real de colaboración — *fork*, edición,

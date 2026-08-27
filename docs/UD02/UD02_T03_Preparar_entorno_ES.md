@@ -3,7 +3,7 @@
 !!! important "Entrega · hecho / no hecho"
     Se entrega en Moodle y se califica como **hecho / no hecho**: no lleva nota ni ítem en el
     libro de calificaciones, pero **es requisito**. Sin el entorno del lenguaje elegido no se puede hacer
-    [Robocode](UD02_ActividadesEntregables.md).
+    [Robocode](UD02_Robocode_Entrega_ES.md).
 
 **Objetivo**: dejar listo el entorno de desarrollo del lenguaje elegido — Java con IntelliJ IDEA o
 Python con VS Code — y comprobarlo con un programa mínimo, antes de instalar la API de Robocode.

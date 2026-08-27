@@ -68,8 +68,6 @@ Prepara una **ficha técnica** de tu sistema (1 página) con: tarea, robot elegi
 sensores/herramienta, layout, comunicaciones, seguridad y un **KPI** de mejora (p. ej. cadencia,
 coste por pieza, tiempo de ciclo).
 
-
-
 ### Entrega del Taller 2
 
 Sube el **notebook ejecutado**. Aquí no hay respuestas correctas, hay **decisiones justificadas**:

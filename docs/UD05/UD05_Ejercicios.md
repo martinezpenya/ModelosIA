@@ -3,7 +3,7 @@
 !!! note "Cómo se trabajan"
     Resuélvelos en tu cuaderno o en un documento Markdown. **No se publican las soluciones**: se
     corrigen y comentan en clase. Los cinco entregables (`EX0`-`EX4`) son la evaluación práctica de
-    la unidad y se describen en las [entregas](UD05_ActividadesEntregables.md).
+    la unidad y se describen en las [entregas](UD05_Entregas.md).
 
 ## A. Del conocimiento a la arquitectura (RA5-a)
 

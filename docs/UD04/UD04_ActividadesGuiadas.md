@@ -2,7 +2,7 @@
 
 !!! info "Cómo se trabajan"
     Estos tres notebooks **no se entregan**: se hacen en clase, con el profesor, y son la
-    preparación de los [seis entregables](UD04_ActividadesEntregables.md). Están ejecutados: puedes
+    preparación de las [entregas de la unidad](UD04_Entregas.md). Están ejecutados: puedes
     leerlos antes de tocar nada para ver qué hace cada celda.
 
 !!! warning "Entorno"
@@ -51,4 +51,4 @@ mientras se hacen `EX2` a `EX6`.
 | Notebook | [`UD04_N03_ejemplos_robots.ipynb`](notebooks/UD04_N03_ejemplos_robots.ipynb) |
 
 ---
-[Volver a la UD04](UD04_ES.md) · [Entregables](UD04_ActividadesEntregables.md)
+[Volver a la UD04](UD04_ES.md) · [Entregas](UD04_Entregas.md)

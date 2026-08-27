@@ -19,11 +19,6 @@
 | — | [**Notebook N01** · Detección de sesgos](notebooks/UD06_N01_sesgos_ia.ipynb) | Sesión 3 | **Práctica**: da soporte a la auditoría, no se entrega | Se revisa en clase |
 | — | [Tertulia de ciencia-ficción](#tertulia-de-ciencia-ficcion) | Libre | Voluntaria, de ampliación | Sin nota |
 
-!!! warning "Fuera de plazo, la nota máxima es 5"
-    El plazo se cierra en la fecha indicada en Moodle. Si necesitas entregar después, **avisa al
-    profesor** y se reabre la tarea un tiempo limitado; en ese caso la nota máxima del trabajo es
-    **5 sobre 10**. La rúbrica lo recoge de forma explícita.
-
 !!! warning "Los debates no se recuperan repitiéndolos"
     **70 de los 100 puntos** de la rúbrica se observan **en directo**: dominio del rol,
     argumentación, participación y empatía. Si faltas a la sesión, esa parte no se puede reproducir
@@ -33,9 +28,6 @@
     La rúbrica de los debates y la auditoría se ve **en la propia tarea de Moodle**, y puedes leerla **antes** de
     empezar: ahí tienes los criterios, los niveles y lo que puntúa cada uno. No se duplica aquí para
     que no haya dos versiones del mismo dato.
-
-    Recuerda que incluye el criterio de **entrega en plazo**: fuera de plazo, la nota máxima del
-    trabajo es 5 sobre 10.
 
 ## Tertulia de ciencia-ficción
 

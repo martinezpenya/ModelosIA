@@ -20,12 +20,6 @@
     **No se promedian a partes iguales**: cada entrega tiene su propio peso, y lo tienes en el libro
     de calificaciones de Moodle.
 
-!!! warning "Fuera de plazo, la nota máxima es 5"
-    El plazo se cierra en la fecha indicada en Moodle. Si necesitas entregar después, **avisa al
-    profesor** y se reabre la tarea un tiempo limitado; en ese caso la nota máxima del trabajo es
-    **5 sobre 10**. La rúbrica lo recoge de forma explícita.
-
-
 | Notebook | Dominio | Descargar | Ejecutar |
 |---|---|---|---|
 | [EX0 · Sistema experto de libre elección](notebooks/UD05_EX0_sistema_experto_libre.ipynb) | El que tú elijas | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD05/notebooks/UD05_EX0_sistema_experto_libre.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD05/notebooks/UD05_EX0_sistema_experto_libre.ipynb){:target="_blank"} |
@@ -43,9 +37,6 @@
     La rúbrica de cada entrega se ve **en la propia tarea de Moodle**, y puedes leerla **antes** de
     empezar: ahí tienes los criterios, los niveles y lo que puntúa cada uno. No se duplica aquí para
     que no haya dos versiones del mismo dato.
-
-    Recuerda que incluye el criterio de **entrega en plazo**: fuera de plazo, la nota máxima del
-    trabajo es 5 sobre 10.
 
 ---
 [Volver a la UD05](UD05_ES.md) · [Ejercicios](UD05_Ejercicios.md) · [Taller 1](UD05_T01_Simular_sistema_experto_ES.md) · [Taller 2](UD05_T02_Logica_difusa_ES.md) · [Taller 3](UD05_T03_Controlador_experto_ES.md) ·

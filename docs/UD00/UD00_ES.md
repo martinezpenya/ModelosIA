@@ -5,7 +5,6 @@
     de trabajo es **requisito** para el resto del módulo, y el entregable del Taller 1 se marca como
     **hecho / no hecho**.
 
-
 ## 1. Introducción
 
 Esta primera unidad tiene un doble objetivo. Por una parte, **situar el curso**: qué es el curso

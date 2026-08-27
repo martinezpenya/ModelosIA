@@ -3,7 +3,7 @@
 !!! note "Cómo se trabajan"
     Resuélvelos en tu cuaderno o en un documento Markdown. No se entregan por separado: son la
     preparación de la **prueba escrita del RA3** y de los talleres. Los entregables evaluables son
-    los [cuatro notebooks](UD03_ActividadesEntregables.md).
+    los [cuatro notebooks](UD03_Entregas.md).
 
 ## A. Qué es el PLN (RA3-a)
 
@@ -183,4 +183,4 @@
     Las soluciones no se publican: se corrigen y comentan en clase.
 
 ---
-[Volver a la UD03](UD03_ES.md) · Talleres: [T01](UD03_T01_Del_texto_al_vector_ES.md) · [T02](UD03_T02_Sistema_PLN_ES.md) · [Entregables](UD03_ActividadesEntregables.md)
+[Volver a la UD03](UD03_ES.md) · Talleres: [T01](UD03_T01_Del_texto_al_vector_ES.md) · [T02](UD03_T02_Sistema_PLN_ES.md) · [Entregables](UD03_Entregas.md)

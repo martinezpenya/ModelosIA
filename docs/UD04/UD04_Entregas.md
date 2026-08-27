@@ -1,8 +1,8 @@
 # UD04 · Entregas
 
 !!! important "Qué se entrega, y con qué se corrige cada cosa"
-    En esta unidad hay tres regímenes. Las **entregas evaluables** se corrigen con su
-    rúbrica de su tarea en Moodle, que puedes leer antes de empezar. Las de **apto / no apto** hay que
+    En esta unidad hay tres regímenes. Las **entregas evaluables** se corrigen con la rúbrica
+    de su tarea en Moodle, que puedes leer antes de empezar. Las de **apto / no apto** hay que
     hacerlas y entregarlas, pero no se puntúan con rúbrica: cuentan como hechas o no hechas.
 
     | Actividad | Régimen |
@@ -17,12 +17,6 @@
     | `EX6` Aprendizaje por refuerzo con NEAT | Apto / no apto |
 
     El **peso** de cada entrega está en el libro de calificaciones de Moodle, no aquí.
-
-!!! warning "Fuera de plazo, la nota máxima es 5"
-    El plazo se cierra en la fecha indicada en Moodle. Si necesitas entregar después, **avisa al
-    profesor** y se reabre la tarea un tiempo limitado; en ese caso la nota máxima del trabajo es
-    **5 sobre 10**. La rúbrica lo recoge de forma explícita.
-
 
 !!! warning "No son independientes: son una secuencia"
     `EX4` genera el fichero de datos que necesita `EX5`. Si te saltas el orden o pierdes ese
@@ -140,9 +134,6 @@ por refuerzo. Es de **apto / no apto**: sin la memoria no cuenta como entregado.
     La rúbrica de cada entrega se ve **en la propia tarea de Moodle**, y puedes leerla **antes** de
     empezar: ahí tienes los criterios, los niveles y lo que puntúa cada uno. No se duplica aquí para
     que no haya dos versiones del mismo dato.
-
-    Recuerda que incluye el criterio de **entrega en plazo**: fuera de plazo, la nota máxima del
-    trabajo es 5 sobre 10.
 
 ---
 [Volver a la UD04](UD04_ES.md) · [Notebooks guiados](UD04_ActividadesGuiadas.md) · [Taller 1](UD04_T01_Cinematica_manipulador_ES.md) · [Taller 2](UD04_T02_Diseno_sistema_robotizado_ES.md)

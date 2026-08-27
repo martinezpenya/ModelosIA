@@ -3,7 +3,6 @@
 !!! important "Entrega evaluable"
     Se entrega en Moodle y se corrige con su **rúbrica**, que puedes leer en la propia tarea
     antes de empezar. El **peso** de esta entrega está en el libro de calificaciones de Moodle.
-    Fuera de plazo, la nota máxima del trabajo es **5 sobre 10**.
 
 **Pregunta del debate**: ¿un sistema judicial en el que un algoritmo decida penas sería **más justo o
 más peligroso**?

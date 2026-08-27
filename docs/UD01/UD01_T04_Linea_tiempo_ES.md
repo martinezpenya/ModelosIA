@@ -3,7 +3,6 @@
 !!! important "Entrega evaluable"
     Se entrega en Moodle y se corrige con su **rúbrica**, que puedes leer en la propia tarea
     antes de empezar. El **peso** de esta entrega está en el libro de calificaciones de Moodle.
-    Fuera de plazo, la nota máxima del trabajo es **5 sobre 10**.
 
 **Objetivo**: afianzar los hitos históricos y conectarlos con la tecnología que se usa hoy.
 
@@ -57,9 +56,6 @@ empresa cualquiera, y por qué?*
     La rúbrica de los cuatro talleres del RA1 se ve **en la propia tarea de Moodle**, y puedes leerla **antes** de
     empezar: ahí tienes los criterios, los niveles y lo que puntúa cada uno. No se duplica aquí para
     que no haya dos versiones del mismo dato.
-
-    Recuerda que incluye el criterio de **entrega en plazo**: fuera de plazo, la nota máxima del
-    trabajo es 5 sobre 10.
 
 ---
 [Volver a la UD01](UD01_ES.md) · [Taller 3](UD01_T03_Nuevas_interacciones_ES.md) · [Ejercicios](UD01_Ejercicios.md)

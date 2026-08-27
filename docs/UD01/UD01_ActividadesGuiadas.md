@@ -1,5 +1,5 @@
 # UD01 · Notebooks guiados
-Notebook que se trabaja **en clase**, con el profesor. No es un entregable calificable: es la
+Notebook que se trabaja **en clase**, con el profesor. Es **práctica**: no se entrega ni puntúa. Es la
 demostración en código de las técnicas de IA vistas en la teoría.
 
 ## Notebook 1 · Técnicas de IA en acción

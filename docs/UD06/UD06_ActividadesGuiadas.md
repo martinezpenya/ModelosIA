@@ -77,4 +77,4 @@ unidad con hechos de los últimos cuatro años, la mitad de ellos del último cu
 ---
 [Volver a la UD06](UD06_ES.md) · [Debate 1](UD06_D01_Debate_limites_eticos_ES.md) ·
 [Debate 2](UD06_D02_Debate_algoritmo_crimen_ES.md) ·
-[Entregas](UD06_ActividadesEntregables.md)
+[Entregas](UD06_Entregas.md)

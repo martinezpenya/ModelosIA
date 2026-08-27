@@ -2,7 +2,7 @@
 
 !!! info "Cómo se trabajan"
     Estos cinco notebooks **no se entregan**: se hacen en clase, con el profesor, y son la
-    preparación de los [cinco entregables](UD03_ActividadesEntregables.md). Están ejecutados: puedes
+    preparación de las [entregas de la unidad](UD03_Entregas.md). Están ejecutados: puedes
     leerlos antes de tocar nada para ver qué hace cada celda.
 
 !!! warning "Dos entornos"
@@ -65,4 +65,4 @@ queda como material de ampliación para quien quiera ir más allá de `EX5`.
 | Notebook | [`UD03_N05_ampliacion_clasificador_generos_musicales.ipynb`](notebooks/UD03_N05_ampliacion_clasificador_generos_musicales.ipynb) |
 
 ---
-[Volver a la UD03](UD03_ES.md) · [Entregables](UD03_ActividadesEntregables.md)
+[Volver a la UD03](UD03_ES.md) · [Entregas](UD03_Entregas.md)

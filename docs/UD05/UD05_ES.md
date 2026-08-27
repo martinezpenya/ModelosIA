@@ -313,7 +313,7 @@ DIAGNÓSTICO: Fallo de memoria RAM.
 
 El CE b exige simular comportamientos en **dominios distintos**, no repetir el mismo ejemplo. Esta
 unidad trae varios notebooks ejecutados de verdad, en dominios reales (la lista completa está en
-las [notebooks guiados](UD05_ActividadesGuiadas.md) y las [entregas](UD05_ActividadesEntregables.md)):
+las [notebooks guiados](UD05_ActividadesGuiadas.md) y las [entregas](UD05_Entregas.md)):
 
 | Notebook | Dominio | Qué simula |
 |---|---|---|
@@ -796,7 +796,7 @@ es **explicable**: se puede consultar qué regla se disparó y por qué.
     - [Ejercicios de autoevaluación](UD05_Ejercicios.md)
     - [Notebooks guiados](UD05_ActividadesGuiadas.md) — 6 notebooks de introducción y práctica
     - [T02 · lógica difusa](UD05_T02_Logica_difusa_ES.md) · [T03 · controlador experto](UD05_T03_Controlador_experto_ES.md)
-- **Entregas** — seis, cada una con su rúbrica; [qué se entrega y cuándo](UD05_ActividadesEntregables.md):
+- **Entregas** — seis, cada una con su rúbrica; [qué se entrega y cuándo](UD05_Entregas.md):
     - [T01 · simular un sistema experto](UD05_T01_Simular_sistema_experto_ES.md)
     - y los cinco sistemas `EX0` a `EX4`, en dominios distintos a propósito
 - Los notebooks se abren desde **Práctica** y **Entregas**, con descarga y apertura en Colab.

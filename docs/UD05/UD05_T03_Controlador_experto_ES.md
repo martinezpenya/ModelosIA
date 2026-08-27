@@ -22,8 +22,8 @@ del sistema (CE e).
 
 !!! tip "Hazlo en el notebook"
     Tienes este taller como **notebook con las celdas a rellenar**:
-    [`UD05_T03_controlador_experto.ipynb`](notebooks/UD05_T03_controlador_experto.ipynb). Esta página es la referencia; lo que se
-    entrega es el notebook completado.
+    [`UD05_T03_controlador_experto.ipynb`](notebooks/UD05_T03_controlador_experto.ipynb). Esta página es la referencia; el trabajo se
+    hace sobre el notebook.
 
 ### Fase 1 — La planta (modelo simple)
 
@@ -119,9 +119,7 @@ sobreimpulso? ¿Y con el tiempo de asentamiento? Registra los valores en una tab
 Dibuja (o describe) cómo respondería un PID sintonizado frente al controlador experto y explica
 qué ventaja tiene cada uno. ¿Cuándo usarías cada uno?
 
-
-
-### Entrega del Taller 3
+### Qué tienes que tener al terminar
 
 Recopila la simulación y las explicaciones de las seis fases en **una memoria en PDF**.
 

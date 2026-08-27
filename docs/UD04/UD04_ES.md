@@ -1022,7 +1022,7 @@ world.seconds(30, [mi_controlador], real_time=True)
 - **Práctica** — se hace, no se entrega ni puntúa:
     - [Ejercicios de autoevaluación](UD04_Ejercicios.md)
     - [Notebooks guiados](UD04_ActividadesGuiadas.md) — `N01` a `N03`
-- **Entregas** — [qué se entrega y cuándo](UD04_ActividadesEntregables.md):
+- **Entregas** — [qué se entrega y cuándo](UD04_Entregas.md):
     - con rúbrica: [T01 · cinemática de un manipulador](UD04_T01_Cinematica_manipulador_ES.md) y los notebooks `EX1`, `EX2`, `EX3` y `EX5`
     - de **apto / no apto**: [T02 · diseño de un sistema robotizado](UD04_T02_Diseno_sistema_robotizado_ES.md), `EX4` y `EX6`
 - Los notebooks se abren desde **Práctica** y **Entregas**, con descarga y apertura en Colab.

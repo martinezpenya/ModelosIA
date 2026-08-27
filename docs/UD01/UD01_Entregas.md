@@ -15,10 +15,6 @@
 | `T03` | [Nuevas interacciones](UD01_T03_Nuevas_interacciones_ES.md) | La propuesta y su análisis de eficiencia | Tarea de Moodle |
 | `T04` | [Línea del tiempo de la IA](UD01_T04_Linea_tiempo_ES.md) | La cronología documentada con fuentes | Tarea de Moodle |
 
-!!! warning "Fuera de plazo, la nota máxima es 5"
-    El plazo se cierra en la fecha indicada en Moodle. Si necesitas entregar después, **avisa al
-    profesor** y se reabre la tarea un tiempo limitado; en ese caso la nota máxima del trabajo es
-    **5 sobre 10**. La rúbrica lo recoge de forma explícita.
 
 ---
 [Volver a la UD01](UD01_ES.md) · [Ejercicios de autoevaluación](UD01_Ejercicios.md) · [Notebooks guiados](UD01_ActividadesGuiadas.md)

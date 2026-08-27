@@ -562,7 +562,7 @@ CAUSA PROBABLE: Batería descargada
 ## 10. Caso de estudio: Robocode como sistema de resolución de problemas completo
 
 Los cinco requisitos del §4.1 y la elección de modelo del §9 dejan de ser teoría en cuanto se
-programa un bot de **Robocode Tank Royale** (la [entrega de Robocode](UD02_ActividadesEntregables.md)
+programa un bot de **Robocode Tank Royale** (la [entrega de Robocode](UD02_Robocode_Entrega_ES.md)
 de la unidad):
 
 - **Representación**: el estado del bot (posición, energía, rumbo del radar) y del campo de
@@ -686,7 +686,7 @@ de la unidad):
 - **Práctica** — se hace, no se entrega ni puntúa:
     - [Ejercicios de autoevaluación](UD02_Ejercicios.md)
 - **Entregas**:
-    - con rúbrica: [T01 · control difuso](UD02_T01_Control_difuso_ES.md) · [T02 · sistema de reglas](UD02_T02_Sistema_reglas_ES.md) · [Robocode Tank Royale](UD02_ActividadesEntregables.md), la práctica de cierre del RA2
+    - con rúbrica: [T01 · control difuso](UD02_T01_Control_difuso_ES.md) · [T02 · sistema de reglas](UD02_T02_Sistema_reglas_ES.md) · [Robocode Tank Royale](UD02_Robocode_Entrega_ES.md), la práctica de cierre del RA2
     - de **hecho / no hecho**, requisito sin nota: [T03 · preparar el entorno](UD02_T03_Preparar_entorno_ES.md) · [T04 · GitHub](UD02_T04_GitHub_ES.md) · [T05 · Markdown](UD02_T05_Markdown_ES.md)
 - **Documentación de Robocode**: [comparativa Java/Python](UD02_Robocode_Comparativa_ES.md) · [tutorial Java](UD02_Robocode_Java_ES.md) · [tutorial Python](UD02_Robocode_Python_ES.md)
 - Los notebooks se abren desde **Práctica** y **Entregas**, con descarga y apertura en Colab.

@@ -94,8 +94,5 @@ detallada de los métodos definidos o usados, conclusiones y webgrafía/bibliogr
     empezar: ahí tienes los criterios, los niveles y lo que puntúa cada uno. No se duplica aquí para
     que no haya dos versiones del mismo dato.
 
-    Recuerda que incluye el criterio de **entrega en plazo**: fuera de plazo, la nota máxima del
-    trabajo es 5 sobre 10.
-
 ---
 [Volver a la UD02](UD02_ES.md) · [Comparativa Java/Python](UD02_Robocode_Comparativa_ES.md)

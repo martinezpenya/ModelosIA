@@ -2,7 +2,7 @@
 
 !!! info "Se trabajan en clase: es práctica, no se entrega"
     Seis notebooks de introducción y práctica guiada, en dominios distintos (§6.1 de la teoría).
-    **No se entregan ni puntúan**: preparan las [entregas de la unidad](UD05_ActividadesEntregables.md)
+    **No se entregan ni puntúan**: preparan las [entregas de la unidad](UD05_Entregas.md)
     y la prueba escrita del RA5.
 
 | Notebook | Dominio | Descargar | Ejecutar |
@@ -25,10 +25,10 @@
 ([descargar](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD05/notebooks/UD05_EX0_referencia_tasacion_vehiculos.ipynb){:target="_blank"} ·
 [Colab](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD05/notebooks/UD05_EX0_referencia_tasacion_vehiculos.ipynb){:target="_blank"})
 es un ejemplo **extenso ya resuelto**, portado de una práctica original en CLIPS: no es un
-enunciado que se te pida entregar, es una referencia para ver cómo se estructura un sistema
+enunciado que tengas que entregar: es una referencia para ver cómo se estructura un sistema
 experto grande de principio a fin, con más reglas y más profundidad que los ejemplos guiados de
 arriba.
 
 ---
 [Volver a la UD05](UD05_ES.md) · [Ejercicios](UD05_Ejercicios.md) · [Taller 1](UD05_T01_Simular_sistema_experto_ES.md) · [Taller 2](UD05_T02_Logica_difusa_ES.md) · [Taller 3](UD05_T03_Controlador_experto_ES.md) ·
-[Entregas](UD05_ActividadesEntregables.md)
+[Entregas](UD05_Entregas.md)

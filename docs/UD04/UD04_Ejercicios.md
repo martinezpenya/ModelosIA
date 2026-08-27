@@ -3,7 +3,7 @@
 !!! note "Cómo se trabajan"
     Resuélvelos en tu cuaderno o en un documento Markdown. No se entregan por separado: son la
     preparación de la **prueba escrita del RA4** y de los talleres ([Taller 1](UD04_T01_Cinematica_manipulador_ES.md) · [Taller 2](UD04_T02_Diseno_sistema_robotizado_ES.md)). Los
-    entregables evaluables son los [seis notebooks](UD04_ActividadesEntregables.md).
+    entregables evaluables son los [seis notebooks](UD04_Entregas.md).
 
 ## A. Métodos y aplicaciones de la robótica (RA4-a)
 
@@ -197,4 +197,4 @@
     Las soluciones no se publican: se corrigen y comentan en clase.
 
 ---
-[Volver a la UD04](UD04_ES.md) · [Taller 1](UD04_T01_Cinematica_manipulador_ES.md) · [Taller 2](UD04_T02_Diseno_sistema_robotizado_ES.md) · [Entregables](UD04_ActividadesEntregables.md)
+[Volver a la UD04](UD04_ES.md) · [Taller 1](UD04_T01_Cinematica_manipulador_ES.md) · [Taller 2](UD04_T02_Diseno_sistema_robotizado_ES.md) · [Entregables](UD04_Entregas.md)

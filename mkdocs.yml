@@ -28,6 +28,7 @@ nav:
       - Ejercicios de autoevaluación: UD00/UD00_Ejercicios.md
       - Notebooks guiados: UD00/UD00_ActividadesGuiadas.md
     - Entregas:
+      - Qué se entrega: UD00/UD00_Entregas.md
       - T01 Verificación del entorno y primer contenedor (hecho / no hecho): UD00/UD00_T01_Verificacion_entorno_ES.md
       - T02 Contenedor de prácticas de IA (hecho / no hecho): UD00/UD00_T02_Contenedor_practicas_ES.md
   - UD01:
@@ -37,7 +38,7 @@ nav:
       - Ejercicios de autoevaluación: UD01/UD01_Ejercicios.md
       - Notebooks guiados: UD01/UD01_ActividadesGuiadas.md
     - Entregas:
-      - Qué se entrega y cuándo: UD01/UD01_ActividadesEntregables.md
+      - Qué se entrega: UD01/UD01_Entregas.md
       - T01 Mapa de sistemas inteligentes: UD01/UD01_T01_Mapa_sistemas_ES.md
       - T02 Técnicas en casos reales: UD01/UD01_T02_Tecnicas_casos_ES.md
       - T03 Nuevas interacciones: UD01/UD01_T03_Nuevas_interacciones_ES.md
@@ -48,9 +49,10 @@ nav:
     - Práctica:
       - Ejercicios de autoevaluación: UD02/UD02_Ejercicios.md
     - Entregas:
+      - Qué se entrega: UD02/UD02_Entregas.md
       - T01 Control difuso con scikit-fuzzy: UD02/UD02_T01_Control_difuso_ES.md
       - T02 Sistema basado en reglas con experta: UD02/UD02_T02_Sistema_reglas_ES.md
-      - Robocode Tank Royale: UD02/UD02_ActividadesEntregables.md
+      - Robocode Tank Royale: UD02/UD02_Robocode_Entrega_ES.md
       - T03 Preparar el entorno para Robocode (hecho / no hecho): UD02/UD02_T03_Preparar_entorno_ES.md
       - T04 Control de versiones con GitHub (hecho / no hecho): UD02/UD02_T04_GitHub_ES.md
       - T05 Documentar con Markdown (hecho / no hecho): UD02/UD02_T05_Markdown_ES.md
@@ -67,7 +69,7 @@ nav:
       - T02 Lógica difusa, las propinas: UD05/UD05_T02_Logica_difusa_ES.md
       - T03 Controlador experto de un proceso: UD05/UD05_T03_Controlador_experto_ES.md
     - Entregas:
-      - Qué se entrega y cuándo: UD05/UD05_ActividadesEntregables.md
+      - Qué se entrega: UD05/UD05_Entregas.md
       - T01 Simular un sistema experto: UD05/UD05_T01_Simular_sistema_experto_ES.md
       - EX0 Sistema experto de libre elección: UD05/notebooks/UD05_EX0_sistema_experto_libre.ipynb
       - EX1 Detectar lesiones de rodilla: UD05/notebooks/UD05_EX1_lesiones_rodilla.ipynb
@@ -81,7 +83,7 @@ nav:
       - Ejercicios de autoevaluación: UD03/UD03_Ejercicios.md
       - Notebooks guiados: UD03/UD03_ActividadesGuiadas.md
     - Entregas:
-      - Qué se entrega y cuándo: UD03/UD03_ActividadesEntregables.md
+      - Qué se entrega: UD03/UD03_Entregas.md
       - T01 Del texto al vector: UD03/UD03_T01_Del_texto_al_vector_ES.md
       - T02 Un sistema de PLN de punta a punta: UD03/UD03_T02_Sistema_PLN_ES.md
       - EX2 Clasificador de preguntas: UD03/notebooks/UD03_EX2_clasificador_preguntas.ipynb
@@ -94,7 +96,7 @@ nav:
       - Ejercicios de autoevaluación: UD04/UD04_Ejercicios.md
       - Notebooks guiados: UD04/UD04_ActividadesGuiadas.md
     - Entregas:
-      - Qué se entrega y cuándo: UD04/UD04_ActividadesEntregables.md
+      - Qué se entrega: UD04/UD04_Entregas.md
       - T01 Cinemática de un manipulador: UD04/UD04_T01_Cinematica_manipulador_ES.md
       - EX1 Ejercicios de OpenCV: UD04/notebooks/UD04_EX1_ejercicios_opencv.ipynb
       - EX2 Navegar con cámara, por reglas: UD04/notebooks/UD04_EX2_navegar_camara.ipynb
@@ -111,7 +113,7 @@ nav:
       - Notebooks guiados: UD06/UD06_ActividadesGuiadas.md
       - T01 Análisis de un caso ético: UD06/UD06_T01_Analisis_caso_etico_ES.md
     - Entregas:
-      - Qué se entrega y cuándo: UD06/UD06_ActividadesEntregables.md
+      - Qué se entrega: UD06/UD06_Entregas.md
       - T02 Auditoría de sesgos con Fairlearn: UD06/UD06_T02_Auditoria_sesgos_ES.md
       - D01 Límites éticos de la IA: UD06/UD06_D01_Debate_limites_eticos_ES.md
       - D02 El algoritmo contra el crimen: UD06/UD06_D02_Debate_algoritmo_crimen_ES.md

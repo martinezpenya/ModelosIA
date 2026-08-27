@@ -1,8 +1,8 @@
 # UD03 · Entregas
 
 !!! important "Qué se entrega y qué es práctica"
-    No todo lo de esta página se entrega. Las **entregas** se corrigen con su
-    rúbrica de su tarea en Moodle, que puedes leer antes de empezar; la **práctica** se hace para preparar la
+    No todo lo de esta página se entrega. Las **entregas** se corrigen con la rúbrica de su
+    tarea en Moodle, que puedes leer antes de empezar; la **práctica** se hace para preparar la
     prueba escrita y no se entrega ni puntúa.
 
     | Actividad | Régimen |
@@ -20,12 +20,6 @@
     antes de empezar, porque cuenta en la rúbrica.
 
     El **peso** de cada entrega está en el libro de calificaciones de Moodle, no aquí.
-
-!!! warning "Fuera de plazo, la nota máxima es 5"
-    El plazo se cierra en la fecha indicada en Moodle. Si necesitas entregar después, **avisa al
-    profesor** y se reabre la tarea un tiempo limitado; en ese caso la nota máxima del trabajo es
-    **5 sobre 10**. La rúbrica lo recoge de forma explícita.
-
 
 !!! warning "Dos entornos"
     `EX1` y `EX3` van en el **contenedor** de la unidad. `EX2`, `EX4` y `EX5` usan
@@ -110,9 +104,6 @@ idiomas?
     La rúbrica de cada entrega se ve **en la propia tarea de Moodle**, y puedes leerla **antes** de
     empezar: ahí tienes los criterios, los niveles y lo que puntúa cada uno. No se duplica aquí para
     que no haya dos versiones del mismo dato.
-
-    Recuerda que incluye el criterio de **entrega en plazo**: fuera de plazo, la nota máxima del
-    trabajo es 5 sobre 10.
 
 ---
 [Volver a la UD03](UD03_ES.md) · [Notebooks guiados](UD03_ActividadesGuiadas.md) · Talleres: [T01](UD03_T01_Del_texto_al_vector_ES.md) · [T02](UD03_T02_Sistema_PLN_ES.md)

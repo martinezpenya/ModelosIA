@@ -7,12 +7,13 @@
 **Objetivo**: aplicar un método de análisis ético reproducible a un caso real de sesgo o riesgo de la
 IA (RA6-a, RA6-c, RA6-f), argumentando con principios deontológicos, métricas y normativa.
 
-**Entrega**: informe en PDF o Markdown con las cinco tablas rellenas y las respuestas de la Fase 6.
+**Resultado**: un informe con las cinco tablas rellenas y las respuestas de la Fase 6. No se
+entrega: es la preparación del debate y de la auditoría de sesgos, que sí se entregan.
 
 !!! tip "Hazlo en el notebook"
     Tienes este taller como **notebook con las celdas a rellenar**:
-    [`UD06_T01_analisis_caso_etico.ipynb`](notebooks/UD06_T01_analisis_caso_etico.ipynb). Esta página es la referencia; lo que se
-    entrega es el notebook completado.
+    [`UD06_T01_analisis_caso_etico.ipynb`](notebooks/UD06_T01_analisis_caso_etico.ipynb). Esta página es la referencia; el trabajo se
+    hace sobre el notebook.
 
 ### Fase 1 — Elige el caso
 
@@ -98,10 +99,11 @@ Como equipo de auditoría, redactad:
    card* del modelo.
 4. Quién asume la **responsabilidad** si el sistema vuelve a fallar, y con qué norma lo justificáis.
 
-### Entrega
+### Qué tienes que tener al terminar
 
-Sube a Moodle un documento con las cinco tablas rellenas, las cuatro respuestas de la Fase 4 y los
-cuatro puntos de la Fase 6. Extensión orientativa: **dos o tres páginas**.
+Un documento con las cinco tablas rellenas, las cuatro respuestas de la Fase 4 y los cuatro puntos
+de la Fase 6. Extensión orientativa: **dos o tres páginas**. **No se sube a Moodle**: se comenta en
+clase y te sirve de base para el debate.
 
 !!! note "Corrección"
     Las soluciones no se publican: se corrigen y comentan en clase.

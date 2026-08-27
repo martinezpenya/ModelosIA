@@ -35,8 +35,8 @@ y desfuzzificación (CE b).
 
 !!! tip "Hazlo en el notebook"
     Tienes este taller como **notebook con las celdas a rellenar**:
-    [`UD05_T02_logica_difusa.ipynb`](notebooks/UD05_T02_logica_difusa.ipynb). Esta página es la referencia; lo que se
-    entrega es el notebook completado.
+    [`UD05_T02_logica_difusa.ipynb`](notebooks/UD05_T02_logica_difusa.ipynb). Esta página es la referencia; el trabajo se
+    hace sobre el notebook.
 
 ### Fase 1 — Instalación y variables de entrada
 
@@ -119,10 +119,10 @@ p. ej. `servicio >= 8 → propina alta`). Ejecuta los mismos dos escenarios de l
 compara los resultados. ¿En qué casos da lo mismo la versión difusa y la de reglas duras? ¿En
 cuáles no?
 
+### Qué tienes que tener al terminar
 
-### Entrega del Taller 2
-
-Recopila las figuras y las explicaciones de las seis fases en **una memoria en PDF**.
+Las figuras y las explicaciones de las seis fases, recogidas en el notebook. **No se entrega**:
+es tu material para preparar las entregas de la unidad y la prueba escrita del RA5.
 
 | Fase | Evidencia mínima |
 |---|---|
