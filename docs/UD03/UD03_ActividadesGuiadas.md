@@ -56,5 +56,20 @@ Un sistema de PLN aplicado a **audio**: clasificar el género de una canción co
 `transformers`. Es el notebook más largo del módulo (240 celdas) y **no cuenta horas de la unidad**:
 queda como material de ampliación para quien quiera ir más allá de `N11`.
 
+## N06 · Representación de texto, por dos caminos
+
+Tokenizar, quitar *stopwords* y construir una bolsa de palabras y un vector tf-idf, resuelto **con
+NLTK y con TextBlob** — el mismo ejercicio, dos librerías.
+
+**Qué tienes que tener al terminar**: los cuatro ejercicios resueltos por **uno** de los dos caminos
+—tú eliges— y una comparación breve con el otro. **No se entrega**: es práctica.
+
+## N07 · NLTK y Python: etiquetado con `cess_esp`
+
+Procesa el corpus español anotado `cess_esp`: separa entrenamiento y prueba, reduce el conjunto de
+etiquetas morfosintácticas de 289 a un conjunto manejable, y valida con validación cruzada.
+
+**Qué tienes que tener al terminar**: los seis apartados resueltos. **No se entrega**: es práctica.
+
 ---
 [Volver a la UD03](UD03_ES.md) · [Entregas](UD03_Entregas.md)

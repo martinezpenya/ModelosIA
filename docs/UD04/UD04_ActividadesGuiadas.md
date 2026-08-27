@@ -33,6 +33,7 @@ que viene después, porque la cámara es el único sensor del robot en esta unid
 |---|---|
 | Imágenes de apoyo | [`1.-line.png`](notebooks/1.-line.png) · [`1.-line_left.png`](notebooks/1.-line_left.png) · [`1.-line_right.png`](notebooks/1.-line_right.png) |
 | Vídeo de apoyo | [`1.-motionvideo.mp4`](notebooks/1.-motionvideo.mp4) |
+
 ## N02 · Vehículos de Braitenberg
 
 El control más simple que existe: conectar un sensor directamente a un motor, sin representación

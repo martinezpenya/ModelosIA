@@ -64,6 +64,12 @@ la teoría se corresponde y si lo que describe ya es posible hoy.
     puntuación social, que el AI Act **prohíbe** (§6.1). *Years and Years* es reconocimiento facial
     masivo, también prohibido. La ficción envejeció; el temario, no.
 
+## N03 · Auditoría de sesgos con Fairlearn
+
+Medir el sesgo de un modelo real con **Fairlearn**, mitigarlo y **comprobar el precio que se paga**
+por hacerlo (RA6-f, con conexión a RA6-b y RA6-e).
+
+**Se entrega**: el informe con las métricas antes y después de mitigar, y las seis respuestas.
 ---
 [Volver a la UD06](UD06_ES.md) · [Notebooks guiados](UD06_ActividadesGuiadas.md) ·
 [Ejercicios](UD06_Ejercicios.md)

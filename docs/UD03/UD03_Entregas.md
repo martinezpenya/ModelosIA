@@ -45,14 +45,12 @@
 | [`N12` · Un sistema de PLN de punta a punta](notebooks/UD03_N12_sistema_pln.ipynb) | Sistema completo · extractor de entidades con spaCy | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD03/notebooks/UD03_N12_sistema_pln.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD03/notebooks/UD03_N12_sistema_pln.ipynb){:target="_blank"} |
 <!-- AUTO:notebooks fin -->
 
-## N06 · Representación de texto, por dos caminos
+## N08 · Del texto al vector
 
-Tokenizar, quitar *stopwords* y construir una bolsa de palabras y un vector tf-idf, resuelto **con
-NLTK y con TextBlob** — el mismo ejercicio, dos librerías.
+Construir un clasificador que determine si una reseña es positiva o negativa, con un conjunto de
+datos anotado por vosotros y `scikit-learn`.
 
-**Se entrega**: el notebook con los cuatro ejercicios resueltos por **uno** de los dos caminos —tú
-eliges— y una comparación breve con el otro.
-
+**Se entrega**: el notebook con el clasificador entrenado y evaluado, y las decisiones de anotación justificadas.
 ## N09 · Clasificador de preguntas
 
 Repite el proceso de `N02` —de la bolsa de palabras a un clasificador entrenado— sobre un conjunto
@@ -62,13 +60,6 @@ de **preguntas**, en vez de noticias.
 conclusiones** que responda: ¿qué decisiones de anotación tomaría un lingüista con este conjunto de
 preguntas? ¿Qué perfiles harían falta si el proyecto creciera? ¿Qué formación necesitarías tú para
 mejorar este sistema?
-
-## N07 · NLTK y Python: etiquetado con `cess_esp`
-
-Procesa el corpus español anotado `cess_esp`: separa entrenamiento y prueba, reduce el conjunto de
-etiquetas morfosintácticas de 289 a un conjunto manejable, y valida con validación cruzada.
-
-**Se entrega**: el notebook con los seis apartados resueltos.
 
 ## N10 · Análisis de sentimiento en reseñas de cine
 
@@ -96,5 +87,12 @@ idiomas?
     empezar: ahí tienes los criterios, los niveles y lo que puntúa cada uno. No se duplica aquí para
     que no haya dos versiones del mismo dato.
 
+## N12 · Un sistema de PLN de punta a punta
+
+Construir un **extractor de entidades** (NER) para textos de un dominio concreto con `spaCy`,
+siguiendo la metodología del CE g: tarea → datos → herramienta → implementar → evaluar →
+documentar.
+
+**Se entrega**: el notebook con el extractor funcionando y evaluado, y la documentación de cada paso.
 ---
 [Volver a la UD03](UD03_ES.md) · [Notebooks guiados](UD03_ActividadesGuiadas.md) · Talleres: [N08](notebooks/UD03_N08_del_texto_al_vector.ipynb) · [N12](notebooks/UD03_N12_sistema_pln.ipynb)

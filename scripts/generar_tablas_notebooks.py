@@ -96,6 +96,76 @@ def etiquetas_descuadradas() -> list[tuple[str, str, str]]:
     return mal
 
 
+def apartados_mal_colocados(datos: dict, entregas: set[str]) -> list[str]:
+    """Apartados `## Nnn ...` que estan en la pagina del regimen equivocado.
+
+    Al reclasificar, el apartado con el enunciado de una actividad se queda donde estaba aunque la
+    actividad haya cambiado de regimen: la pagina de Entregas acaba describiendo notebooks que son
+    practica. No lo detecta el build, porque la pagina es valida.
+    """
+    mal = []
+    for ud, d in datos.items():
+        for clave, grupo in (("_pagina_practica", "practica"), ("_pagina_entregas", "entregas")):
+            pagina = d.get(clave)
+            if not pagina:
+                continue
+            texto = (DOCS / ud / pagina).read_text(encoding="utf-8")
+            for m in re.finditer(r"(?m)^## `?(N\d+)`?([^\n]*)$", texto):
+                cod = m.group(1)
+                es_entrega = any(n.startswith(f"{ud}_{cod}_") for n in entregas)
+                deberia = "entregas" if es_entrega else "practica"
+                if deberia != grupo:
+                    mal.append(f"{ud}/{pagina}: «{cod}{m.group(2)[:40]}» es {deberia}, está en {grupo}")
+    return mal
+
+
+def lineas_absorbidas() -> list[str]:
+    """Lineas pegadas a una fila de tabla, que Markdown se traga como si fueran otra fila.
+
+    Paso dos veces al mover tablas con un script: un `## Titulo` o un `**Se entrega**` justo debajo
+    de la ultima fila, sin linea en blanco, y la pagina lo pinta DENTRO de la tabla. El build no
+    avisa, porque el markdown es valido. Los comentarios `<!-- ... -->` no cuentan: Markdown los
+    descarta y el bloque AUTO los usa a proposito.
+    """
+    mal = []
+    for f in sorted(DOCS.rglob("*.md")):
+        if "Presentacion" in str(f):
+            continue
+        lineas = f.read_text(encoding="utf-8").split("\n")
+        dentro = False
+        for i in range(len(lineas) - 1):
+            if lineas[i].strip().startswith("```"):
+                dentro = not dentro
+            if dentro:
+                continue
+            a, b = lineas[i].strip(), lineas[i + 1].strip()
+            if a.startswith("|") and a.endswith("|") and b and not b.startswith(("|", "<!--")):
+                mal.append(f"{f.relative_to(RAIZ)}:{i + 2} → «{b[:55]}»")
+    return mal
+
+
+def entregas_sin_apartado(datos: dict, entregas: set[str]) -> list[str]:
+    """Entregas que no tienen su resumen en la pagina.
+
+    Decision del profesor (2026-08-27): cada entrega lleva en la pagina dos o tres lineas —que se
+    pide y que se entrega— y el enunciado completo por fases vive en el notebook. Los notebooks que
+    venian de talleres convertidos se quedaron sin ese resumen, y la pagina describia unas entregas
+    y no otras.
+    """
+    faltan = []
+    for ud, d in datos.items():
+        pagina = d.get("_pagina_entregas")
+        if not pagina:
+            continue
+        texto = (DOCS / ud / pagina).read_text(encoding="utf-8")
+        tiene = {m.group(1) for m in re.finditer(r"(?m)^## `?(N\d+)`?", texto)}
+        for nb in sorted(n for n in entregas if n.startswith(ud)):
+            m = re.match(rf"{ud}_(N\d+)_", nb)
+            if m and m.group(1) not in tiene:
+                faltan.append(f"{ud}/{pagina}: falta el resumen de {m.group(1)}")
+    return faltan
+
+
 def main() -> int:
     check = "--check" in sys.argv
     datos = yaml.safe_load((RAIZ / "datos" / "notebooks.yml").read_text(encoding="utf-8"))
@@ -138,13 +208,31 @@ def main() -> int:
         print("\n  AVISO · notebooks sin descripción en datos/notebooks.yml:")
         for s in sin_ficha:
             print(f"    {s}")
+    fuera = apartados_mal_colocados(datos, entregas)
+    if fuera:
+        print("\n  APARTADOS EN LA PÁGINA EQUIVOCADA:")
+        for x in fuera:
+            print(f"    {x}")
+
+    faltan = entregas_sin_apartado(datos, entregas)
+    if faltan:
+        print("\n  ENTREGAS SIN RESUMEN EN LA PÁGINA:")
+        for x in faltan:
+            print(f"    {x}")
+
+    absorbidas = lineas_absorbidas()
+    if absorbidas:
+        print("\n  LÍNEAS ABSORBIDAS POR UNA TABLA · falta la línea en blanco:")
+        for x in absorbidas:
+            print(f"    {x}")
+
     mal = etiquetas_descuadradas()
     if mal:
         print("\n  ETIQUETAS DESCUADRADAS · la etiqueta cita un código distinto del destino:")
         for ruta, etiqueta, cod in mal:
             print(f"    {ruta}: «{etiqueta}» apunta al {cod}")
 
-    if check and (desfasados or mal):
+    if check and (desfasados or mal or fuera or absorbidas or faltan):
         if desfasados:
             print("\n  DESFASADAS: " + ", ".join(desfasados))
         return 1

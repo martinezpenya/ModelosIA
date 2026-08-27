@@ -32,5 +32,19 @@
 | [`N02` · Sistema basado en reglas con experta](notebooks/UD02_N02_sistema_reglas.ipynb) | Sistema experto con `experta` · diagnóstico de un PC (§8) | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD02/notebooks/UD02_N02_sistema_reglas.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD02/notebooks/UD02_N02_sistema_reglas.ipynb){:target="_blank"} |
 <!-- AUTO:notebooks fin -->
 
+## N01 · Control difuso con scikit-fuzzy
+
+Construir un sistema de control difuso tipo Mamdani que decida la **velocidad de un ventilador**
+según la temperatura y la humedad de una sala, recorriendo las tres fases del razonamiento
+impreciso.
+
+**Se entrega**: el notebook con el controlador funcionando y las figuras de las funciones de pertenencia.
+
+## N02 · Sistema basado en reglas con `experta`
+
+Implementar un **mini sistema experto de diagnóstico** de un PC que no arranca y comprobar en
+código el ciclo reconocer-actuar de un sistema basado en reglas (RA2-e).
+
+**Se entrega**: el notebook con el sistema resolviendo los casos de prueba.
 ---
 [Volver a la UD02](UD02_ES.md) · [Ejercicios de autoevaluación](UD02_Ejercicios.md)

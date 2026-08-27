@@ -53,6 +53,12 @@
 | [`N11` · Diseño de un sistema robotizado](notebooks/UD04_N11_diseno_sistema_robotizado.ipynb) | Diseño · evaluar alternativas para un problema real (CE d) | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD04/notebooks/UD04_N11_diseno_sistema_robotizado.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD04/notebooks/UD04_N11_diseno_sistema_robotizado.ipynb){:target="_blank"} |
 <!-- AUTO:notebooks fin -->
 
+## N04 · Cinemática de un manipulador
+
+Cargar un robot real —el Panda de Franka o el Puma 560—, calcular su cinemática directa e inversa,
+generar una trayectoria y detectar singularidades.
+
+**Se entrega**: el notebook con los cálculos, la trayectoria generada y las singularidades encontradas.
 ## N05 · Ejercicios de OpenCV
 
 Tres ejercicios de visión sobre imagen y vídeo: detectar **bordes** y enmarcarlos, detectar
@@ -62,6 +68,7 @@ Tres ejercicios de visión sobre imagen y vídeo: detectar **bordes** y enmarcar
 |---|---|
 | Imagen | [`EX1.-camp.png`](notebooks/EX1.-camp.png) |
 | Vídeo | [`EX1.-vtest.mp4`](notebooks/EX1.-vtest.mp4) |
+
 **Se entrega**: el notebook con los tres ejercicios resueltos y sus salidas.
 
 ## N06 · Navegar con cámara, por reglas
@@ -132,5 +139,11 @@ por refuerzo. Es de **apto / no apto**: sin la memoria no cuenta como entregado.
     empezar: ahí tienes los criterios, los niveles y lo que puntúa cada uno. No se duplica aquí para
     que no haya dos versiones del mismo dato.
 
+## N11 · Diseño de un sistema robotizado
+
+Aplicar los criterios de diseño e implementación (CE d) para proponer un sistema robotizado que
+resuelva un caso real, justificando la selección y la seguridad.
+
+**Se entrega**: el notebook con las alternativas evaluadas y la propuesta justificada. Es de **apto / no apto**.
 ---
 [Volver a la UD04](UD04_ES.md) · [Notebooks guiados](UD04_ActividadesGuiadas.md) · [Notebook 4](notebooks/UD04_N04_cinematica_manipulador.ipynb) · [Notebook 11](notebooks/UD04_N11_diseno_sistema_robotizado.ipynb)
