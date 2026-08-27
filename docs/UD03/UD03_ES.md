@@ -803,11 +803,13 @@ Y los cuatro entregables aplican cada nivel a un problema propio:
 ## 17. Recursos
 
 - [Diapositivas](UD03_Diapositivas.md)
-- [Ejercicios de la unidad](UD03_Ejercicios.md)
-- Talleres: [T01 · del texto al vector](UD03_T01_Del_texto_al_vector_ES.md) · [T02 · un sistema de PLN de punta a punta](UD03_T02_Sistema_PLN_ES.md)
-- [Actividades guiadas](UD03_ActividadesGuiadas.md) — 5 notebooks
-- [Actividades entregables](UD03_ActividadesEntregables.md) — 5 notebooks evaluables, con sus rúbricas
-- **Notebooks** — todos los de la unidad, con descarga y apertura en Colab, en el menú «Notebooks»
+- **Práctica** — se hace, no se entrega ni puntúa:
+    - [Ejercicios de autoevaluación](UD03_Ejercicios.md)
+    - [Notebooks guiados](UD03_ActividadesGuiadas.md) — 5 notebooks, más los `EX1` y `EX3`
+- **Entregas** — [qué se entrega y cuándo](UD03_ActividadesEntregables.md):
+    - [T01 · del texto al vector](UD03_T01_Del_texto_al_vector_ES.md) · [T02 · un sistema de PLN de punta a punta](UD03_T02_Sistema_PLN_ES.md)
+    - y los notebooks `EX2`, `EX4` y `EX5`, cada uno con su rúbrica
+- Los notebooks se abren desde **Práctica** y **Entregas**, con descarga y apertura en Colab.
 
 ??? note "Referencias de la unidad"
     - [*Speech and Language Processing*](https://web.stanford.edu/~jurafsky/slp3/) — Jurafsky y Martin (acceso libre)
@@ -822,7 +824,7 @@ Y los cuatro entregables aplican cada nivel a un problema propio:
 
 | Peso | Instrumento |
 |---|---|
-| **40 %** actividades | Media de los **cinco entregables** (`EX1`-`EX5`); cada uno con su [rúbrica](UD03_ActividadesEntregables.md#rubricas) sobre 10 |
+| **40 %** actividades | Los talleres **T01** y **T02** y los notebooks **`EX2`**, **`EX4`** y **`EX5`**, cada uno con su [rúbrica](UD03_ActividadesEntregables.md#rubricas). **`EX1`** y **`EX3`** son práctica y no puntúan |
 | **60 %** prueba escrita | Prueba del RA3 en Moodle: preguntas de test y de desarrollo sobre el contenido de la unidad |
 
 - **La normativa exige alcanzar todos los RA** del módulo para superarlo (art. 5.1 de la Orden

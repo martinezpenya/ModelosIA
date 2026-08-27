@@ -1,4 +1,4 @@
-# UD00 — Notebooks guiados
+# UD00 · Notebooks guiados
 
 Notebook que se trabaja **en clase**, con el profesor. Es **práctica**: no se entrega ni puntúa.
 Sirve para comprobar que el entorno de la asignatura funciona antes de empezar con el RA1.

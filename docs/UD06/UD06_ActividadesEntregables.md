@@ -1,5 +1,4 @@
-# UD06 · Actividades entregables
-
+# UD06 · Entregas
 !!! important "Qué cuenta y qué es práctica"
     El RA6 se califica con **40 % de entregas + 60 % de prueba escrita**, y hay que superar el RA
     con **≥ 5**. Se entregan **tres cosas**: los dos debates y la auditoría de sesgos. El taller 1 y
@@ -124,5 +123,5 @@ la teoría se corresponde y si lo que describe ya es posible hoy.
     masivo, también prohibido. La ficción envejeció; el temario, no.
 
 ---
-[Volver a la UD06](UD06_ES.md) · [Actividades guiadas](UD06_ActividadesGuiadas.md) ·
+[Volver a la UD06](UD06_ES.md) · [Notebooks guiados](UD06_ActividadesGuiadas.md) ·
 [Ejercicios](UD06_Ejercicios.md)

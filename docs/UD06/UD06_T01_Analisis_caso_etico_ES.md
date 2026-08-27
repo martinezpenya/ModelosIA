@@ -1,9 +1,8 @@
 # UD06 · Taller 1 — Análisis de un caso ético
 
-!!! important "Entregable · cuenta en el 40 % de actividades del RA6"
-    Se trabaja **en parejas** (salvo indicación del profesor) durante la sesión 3, y se entrega en
-    Moodle un informe breve. Este taller es además la **preparación técnica de los dos debates**: el
-    caso que analices aquí te sirve de munición allí.
+!!! important "Práctica: no se entrega"
+    Este taller es **práctica**: se trabaja en clase y **no se entrega ni puntúa**. Sirve para
+    preparar las entregas de la unidad y la prueba escrita del RA.
 
 **Objetivo**: aplicar un método de análisis ético reproducible a un caso real de sesgo o riesgo de la
 IA (RA6-a, RA6-c, RA6-f), argumentando con principios deontológicos, métricas y normativa.

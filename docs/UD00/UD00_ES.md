@@ -882,8 +882,8 @@ docker load -i fichero.tar
   en **90 horas** en la Comunitat Valenciana.
 - El módulo 5071 desarrolla **6 RA** más el **RA7 de proyecto integrador transversal** (común a todo
   el curso, semanas 25-29, nota consensuada).
-- **La normativa** exige alcanzar **todos los RA** del módulo; el centro lo concreta en **cada RA ≥ 5**. La nota de cada RA combina **40 % tareas +
-  60 % prueba escrita**; se pierde la evaluación continua superando el **15 % de inasistencia**.
+- **La normativa** exige alcanzar **todos los RA** del módulo; el centro lo concreta en **cada RA ≥ 5**. La nota de cada RA combina **40 % las entregas +
+  60 % la prueba escrita**; se pierde la evaluación continua superando el **15 % de inasistencia**.
 - El entorno de trabajo usa **Aules** (Moodle), la web del curso, **Python + Jupyter** y **Docker**.
 - Un **contenedor** es una instancia ejecutable de una **imagen**; Docker aporta aislamiento por
   procesos, ligereza y reproducibilidad frente a las máquinas virtuales.
@@ -1111,14 +1111,13 @@ CONTAINER ID   IMAGE            COMMAND          CREATED          STATUS        
 ## 16. Recursos
 
 - [Diapositivas](UD00_Diapositivas.md)
-- [Ejercicios de la unidad](UD00_Ejercicios.md)
-- Talleres:
+- **Práctica** — se hace, no se entrega ni puntúa:
+    - [Ejercicios de autoevaluación](UD00_Ejercicios.md)
+    - [Notebooks guiados](UD00_ActividadesGuiadas.md) — `N01`, entorno Python para IA
+- **Puesta a punto** — hay que hacerla, pero no puntúa:
     - [T01 · Verificación del entorno y primer contenedor](UD00_T01_Verificacion_entorno_ES.md)
-      — entregable, se marca **hecho / no hecho**
     - [T02 · Contenedor de prácticas de IA](UD00_T02_Contenedor_practicas_ES.md)
-      — entregable, se marca **hecho / no hecho**
-- **Notebooks** — el N01 de la unidad, entregable que se marca **hecho / no hecho**; descarga y
-  apertura en Colab desde el propio notebook, en el menú «Notebooks»
+- Los notebooks se abren desde **Práctica** y **Entregas**, con descarga y apertura en Colab.
 
 ??? note "Referencias de la unidad"
     Documentación oficial de Docker:
@@ -1137,8 +1136,9 @@ CONTAINER ID   IMAGE            COMMAND          CREATED          STATUS        
 
 ## 17. Evaluación
 
-- **Tarea de la unidad** (40 % de la nota del RA al que se asocia): entregar el informe de los
-  talleres 1 y 2 en Moodle.
+- **Puesta a punto**: entregar el informe de los talleres 1 y 2 en Moodle. Se marca **hecho / no
+  hecho**; es requisito para las prácticas de la UD02, pero **no puntúa** ni tiene ítem en el
+  libro de calificaciones.
 - **Evaluación inicial**: diagnóstica, sin nota, antes del segundo mes lectivo.
 - **La normativa exige alcanzar todos los RA** del módulo para superarlo (art. 5.1 de la Orden
   8/2025: la calificación del módulo está *«en función de la consecución de los RA»*; y las

@@ -1,9 +1,9 @@
 # UD06 · Debate 1 — Límites éticos de la Inteligencia Artificial
 
-!!! important "Actividad evaluable · sesión 2"
-    Es una de las **dos actividades evaluables** de la unidad, y las dos usan la **misma rúbrica**
-    (§Cómo se califica). La reflexión escrita posterior se entrega en Moodle con un límite de
-    **300 palabras** y vale **30 de los 100 puntos**.
+!!! important "Entrega evaluable"
+    Se entrega en Moodle y se corrige con su **rúbrica**, que puedes leer en la propia tarea
+    antes de empezar. El **peso** de esta entrega está en el libro de calificaciones de Moodle.
+    Fuera de plazo, la nota máxima del trabajo es **5 sobre 10**.
 
 **Pregunta del debate**: ¿debe usarse la IA en medicina, en la guerra o en política? ¿Y quién decide
 esos límites?
@@ -11,7 +11,7 @@ esos límites?
 ## Antes de clase: el documental
 
 Hay que verlo **antes** de la sesión, porque en clase no hay tiempo. Está en las
-[actividades guiadas](UD06_ActividadesGuiadas.md), junto con material complementario y una lista de
+[notebooks guiados](UD06_ActividadesGuiadas.md), junto con material complementario y una lista de
 noticias de actualidad.
 
 Mientras lo ves, anota:
@@ -80,7 +80,7 @@ Ejes por los que va a ir el debate, para que llegues preparado:
 
 La rúbrica es la misma en los dos debates y **suma 100 puntos**, que se escalan sobre 10. Está
 completa, con todos sus niveles, en las
-[actividades entregables](UD06_ActividadesEntregables.md#rubrica-de-los-debates).
+[entregas](UD06_ActividadesEntregables.md#rubrica-de-los-debates).
 
 | Criterio | Puntos | Qué se observa |
 |---|---|---|
@@ -110,4 +110,4 @@ aprendido al defender una postura ajena. Para guiarlo, responde:
 
 ---
 [Volver a la UD06](UD06_ES.md) · [Debate 2](UD06_D02_Debate_algoritmo_crimen_ES.md) ·
-[Actividades guiadas](UD06_ActividadesGuiadas.md)
+[Notebooks guiados](UD06_ActividadesGuiadas.md)

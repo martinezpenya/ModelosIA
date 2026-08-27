@@ -1,5 +1,4 @@
-# UD06 · Ejercicios
-
+# UD06 · Ejercicios de autoevaluación
 !!! note "Cómo se trabajan"
     Resuélvelos en tu cuaderno o en un documento Markdown. **No se publican las soluciones**: se
     corrigen y comentan en clase. Los ejercicios marcados con 🗣️ son material directo para los

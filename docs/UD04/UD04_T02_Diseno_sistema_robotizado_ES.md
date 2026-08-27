@@ -1,7 +1,9 @@
 # UD04 · Taller 2 — Diseño de un sistema robotizado
 
-!!! important "Entregable de la unidad"
-    Cuenta en el 40 % de actividades del RA4. Trabaja en parejas si lo indica el profesor.
+!!! important "Entrega de apto / no apto"
+    Se entrega en Moodle, pero **no se corrige con rúbrica**: cuenta como hecha o no hecha.
+    Tiene un peso pequeño dentro del RA, y lo tienes en el libro de calificaciones de Moodle.
+    Trabaja en parejas si lo indica el profesor.
 
 !!! tip "Hazlo en el notebook"
     Tienes este taller como **notebook con las celdas a rellenar**:

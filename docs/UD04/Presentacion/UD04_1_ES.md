@@ -39,7 +39,7 @@ section {
 ![h:260 center](../assets/cover.png)
 # UD04: Análisis de sistemas robotizados
 #### Modelos de Inteligencia Artificial
-###### version: 2026-08-26
+###### version: 2026-08-27
 
 ---
 <!-- footer: d.martinezpena@edu.gva.es -->

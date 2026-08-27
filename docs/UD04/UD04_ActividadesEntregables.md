@@ -1,5 +1,4 @@
-# UD04 · Actividades entregables
-
+# UD04 · Entregas
 !!! important "Qué se entrega, y con qué se corrige cada cosa"
     En esta unidad hay tres regímenes. Las **entregas evaluables** se corrigen con su
     [rúbrica](#rubricas), que puedes leer antes de empezar. Las de **apto / no apto** hay que
@@ -210,4 +209,4 @@ La reflexión y el formato son **6 de 12**: la mitad. Es el entregable más abie
 único cuya rúbrica puntúa explícitamente cómo comunicas el trabajo.
 
 ---
-[Volver a la UD04](UD04_ES.md) · [Actividades guiadas](UD04_ActividadesGuiadas.md) · [Taller 1](UD04_T01_Cinematica_manipulador_ES.md) · [Taller 2](UD04_T02_Diseno_sistema_robotizado_ES.md)
+[Volver a la UD04](UD04_ES.md) · [Notebooks guiados](UD04_ActividadesGuiadas.md) · [Taller 1](UD04_T01_Cinematica_manipulador_ES.md) · [Taller 2](UD04_T02_Diseno_sistema_robotizado_ES.md)

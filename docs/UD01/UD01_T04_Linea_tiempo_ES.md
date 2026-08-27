@@ -1,7 +1,9 @@
 # UD01 · Taller 4 — Línea del tiempo de la IA
 
-!!! important "Entregable de la unidad"
-    Cuenta en el 40 % de actividades del RA1, junto con los otros 3 talleres.
+!!! important "Entrega evaluable"
+    Se entrega en Moodle y se corrige con su **rúbrica**, que puedes leer en la propia tarea
+    antes de empezar. El **peso** de esta entrega está en el libro de calificaciones de Moodle.
+    Fuera de plazo, la nota máxima del trabajo es **5 sobre 10**.
 
 **Objetivo**: afianzar los hitos históricos y conectarlos con la tecnología que se usa hoy.
 

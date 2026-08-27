@@ -1,9 +1,8 @@
 # UD05 · Taller 3 — Sistema experto como controlador de un proceso
 
-!!! important "Entregable de la unidad"
-    Cuenta en el 40 % de actividades del RA5, junto con los
-    [notebooks entregables](UD05_ActividadesEntregables.md). Trabaja en parejas si lo indica el
-    profesor.
+!!! important "Práctica: no se entrega"
+    Este taller es **práctica**: se trabaja en clase y **no se entrega ni puntúa**. Sirve para
+    preparar las entregas de la unidad y la prueba escrita del RA.
 
 !!! warning "Requisitos"
     Python 3.10+ con `experta`. Recuerda el **parche de compatibilidad**

@@ -1,5 +1,4 @@
-# UD06 · Actividades guiadas
-
+# UD06 · Notebooks guiados
 !!! info "Se ven fuera de clase"
     La unidad tiene 6 horas y **dos debates evaluables**, así que los documentales de partida **se
     ven en casa**, antes de la sesión que les corresponde. En clase se debate, no se proyecta.
@@ -77,4 +76,4 @@ unidad con hechos de los últimos cuatro años, la mitad de ellos del último cu
 ---
 [Volver a la UD06](UD06_ES.md) · [Debate 1](UD06_D01_Debate_limites_eticos_ES.md) ·
 [Debate 2](UD06_D02_Debate_algoritmo_crimen_ES.md) ·
-[Actividades entregables](UD06_ActividadesEntregables.md)
+[Entregas](UD06_ActividadesEntregables.md)

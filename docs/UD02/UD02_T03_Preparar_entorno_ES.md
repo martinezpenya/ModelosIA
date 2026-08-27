@@ -1,8 +1,9 @@
 # UD02 · Taller 3 — Preparar el entorno para Robocode (Java o Python)
 
-!!! important "Entregable de la unidad"
-    Cuenta en el 40 % de actividades del RA2, como preparación imprescindible de la
-    [actividad entregable](UD02_ActividadesEntregables.md) (Robocode Tank Royale).
+!!! important "Puesta a punto: requisito, no puntúa"
+    Se entrega en Moodle y se marca **hecho / no hecho**. No lleva nota, pero es
+    **requisito**: sin el entorno del lenguaje elegido no se puede hacer
+    [Robocode](UD02_ActividadesEntregables.md).
 
 **Objetivo**: dejar listo el entorno de desarrollo del lenguaje elegido — Java con IntelliJ IDEA o
 Python con VS Code — y comprobarlo con un programa mínimo, antes de instalar la API de Robocode.

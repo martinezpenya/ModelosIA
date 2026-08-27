@@ -674,10 +674,12 @@ señala los riesgos (correos ambiguos, privacidad de los datos de los clientes s
 ## 13. Recursos
 
 - [Diapositivas](UD01_Diapositivas.md)
-- [Ejercicios de la unidad](UD01_Ejercicios.md)
-- Talleres: [T01 · mapa de sistemas inteligentes](UD01_T01_Mapa_sistemas_ES.md) · [T02 · técnicas en casos reales](UD01_T02_Tecnicas_casos_ES.md) · [T03 · nuevas interacciones](UD01_T03_Nuevas_interacciones_ES.md) · [T04 · línea del tiempo](UD01_T04_Linea_tiempo_ES.md)
-- [Actividades guiadas](UD01_ActividadesGuiadas.md) — notebook demo del profesor
-- **Notebooks** — el notebook guiado, con descarga y apertura en Colab, en el menú «Notebooks»
+- **Práctica** — se hace, no se entrega ni puntúa:
+    - [Ejercicios de autoevaluación](UD01_Ejercicios.md)
+    - [Notebooks guiados](UD01_ActividadesGuiadas.md) — el notebook demo del profesor
+- **Entregas** — las cuatro se corrigen con rúbrica; [qué se entrega y cuándo](UD01_ActividadesEntregables.md):
+    - [T01 · mapa de sistemas inteligentes](UD01_T01_Mapa_sistemas_ES.md) · [T02 · técnicas en casos reales](UD01_T02_Tecnicas_casos_ES.md) · [T03 · nuevas interacciones](UD01_T03_Nuevas_interacciones_ES.md) · [T04 · línea del tiempo](UD01_T04_Linea_tiempo_ES.md)
+- Los notebooks se abren desde **Práctica** y **Entregas**, con descarga y apertura en Colab.
 
 ??? note "Referencias de la unidad"
     - [IBM · ¿Qué es la IA?](https://www.ibm.com/topics/artificial-intelligence)
@@ -694,7 +696,7 @@ señala los riesgos (correos ambiguos, privacidad de los datos de los clientes s
 
 | Peso | Instrumento |
 |---|---|
-| **40 %** actividades | Media de los 4 talleres, con su [rúbrica](UD01_T04_Linea_tiempo_ES.md#rubrica-de-los-talleres-tarea-ra1) |
+| **40 %** actividades | Los **4 talleres**, cada uno con su rúbrica en la tarea de Moodle. Pesan lo mismo, así que es su media |
 | **60 %** prueba escrita | Prueba del RA1 en Moodle: preguntas de test y de desarrollo sobre el contenido de la unidad |
 
 - **La normativa exige alcanzar todos los RA** del módulo para superarlo (art. 5.1 de la Orden

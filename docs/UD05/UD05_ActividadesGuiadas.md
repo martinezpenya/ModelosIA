@@ -1,5 +1,4 @@
-# UD05 · Actividades guiadas
-
+# UD05 · Notebooks guiados
 !!! info "Se trabajan en clase"
     Seis notebooks de introducción y práctica guiada, en dominios distintos (§6.1 de la teoría).
     No son evaluables por sí solos, pero preparan los cinco entregables de la
@@ -31,4 +30,4 @@ arriba.
 
 ---
 [Volver a la UD05](UD05_ES.md) · [Ejercicios](UD05_Ejercicios.md) · [Taller 1](UD05_T01_Simular_sistema_experto_ES.md) · [Taller 2](UD05_T02_Logica_difusa_ES.md) · [Taller 3](UD05_T03_Controlador_experto_ES.md) ·
-[Actividades entregables](UD05_ActividadesEntregables.md)
+[Entregas](UD05_ActividadesEntregables.md)

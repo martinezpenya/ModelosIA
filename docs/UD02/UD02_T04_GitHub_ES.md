@@ -1,8 +1,8 @@
 # UD02 · Taller 4 — Control de versiones con GitHub
 
-!!! important "Entregable de la unidad"
-    Cuenta en el 40 % de actividades del RA2, como preparación de la
-    [actividad entregable](UD02_ActividadesEntregables.md): en Robocode entregarás el código de tu
+!!! important "Puesta a punto: requisito, no puntúa"
+    Se entrega en Moodle y se marca **hecho / no hecho**. No lleva nota, pero es
+    **requisito**: en [Robocode](UD02_ActividadesEntregables.md) entregarás el código de tu
     bot, y saber moverte en un repositorio es parte de las herramientas del oficio.
 
 **Objetivo**: crear una cuenta en GitHub y completar un ciclo real de colaboración — *fork*, edición,

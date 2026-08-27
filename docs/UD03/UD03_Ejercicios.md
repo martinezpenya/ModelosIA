@@ -1,5 +1,4 @@
-# UD03 · Ejercicios
-
+# UD03 · Ejercicios de autoevaluación
 !!! note "Cómo se trabajan"
     Resuélvelos en tu cuaderno o en un documento Markdown. No se entregan por separado: son la
     preparación de la **prueba escrita del RA3** y de los talleres. Los entregables evaluables son

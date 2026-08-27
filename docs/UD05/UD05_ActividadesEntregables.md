@@ -1,5 +1,4 @@
-# UD05 · Actividades entregables
-
+# UD05 · Entregas
 !!! important "Seis entregas en el RA5"
     A los cinco sistemas de esta página se suma el **taller `T01`**, que también se entrega. Cuatro
     tienen dominio fijo (`EX1`-`EX4`) y `EX0` es de **libre elección**: los tres dominios distintos
@@ -99,4 +98,4 @@ tabla, y esa suma se escala a la nota final de la tarea sobre 10.
 
 ---
 [Volver a la UD05](UD05_ES.md) · [Ejercicios](UD05_Ejercicios.md) · [Taller 1](UD05_T01_Simular_sistema_experto_ES.md) · [Taller 2](UD05_T02_Logica_difusa_ES.md) · [Taller 3](UD05_T03_Controlador_experto_ES.md) ·
-[Actividades guiadas](UD05_ActividadesGuiadas.md)
+[Notebooks guiados](UD05_ActividadesGuiadas.md)

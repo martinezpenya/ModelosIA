@@ -1,10 +1,10 @@
 # UD02 · Taller 5 — Documentar con Markdown
 
-!!! important "Entregable de la unidad"
-    Cuenta en el 40 % de actividades del RA2, como preparación de la
-    [actividad entregable](UD02_ActividadesEntregables.md): la memoria de Robocode se escribe y
-    documenta más rápido si dominas Markdown, y es el lenguaje en el que están escritos estos
-    mismos apuntes.
+!!! important "Puesta a punto: requisito, no puntúa"
+    Se entrega en Moodle y se marca **hecho / no hecho**. No lleva nota, pero es
+    **requisito**: la memoria de [Robocode](UD02_ActividadesEntregables.md) se escribe y
+    documenta más rápido si dominas Markdown, y es el lenguaje en el que están escritos estos mismos
+    apuntes.
 
 **Objetivo**: aprender la sintaxis de Markdown lo bastante a fondo como para documentar cualquier
 proyecto — texto, listas, tablas, enlaces, imágenes y código — y escribir un documento propio de

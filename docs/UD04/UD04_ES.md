@@ -1019,11 +1019,13 @@ world.seconds(30, [mi_controlador], real_time=True)
 ## 18. Recursos
 
 - [Diapositivas](UD04_Diapositivas.md)
-- [Ejercicios de la unidad](UD04_Ejercicios.md)
-- Talleres: [T01 · cinemática de un manipulador](UD04_T01_Cinematica_manipulador_ES.md) · [T02 · diseño de un sistema robotizado](UD04_T02_Diseno_sistema_robotizado_ES.md)
-- [Actividades guiadas](UD04_ActividadesGuiadas.md) — 3 notebooks de introducción
-- [Actividades entregables](UD04_ActividadesEntregables.md) — 6 notebooks evaluables (`EX1`-`EX6`), con sus rúbricas
-- **Notebooks** — todos los de la unidad, con descarga y apertura en Colab, en el menú «Notebooks»
+- **Práctica** — se hace, no se entrega ni puntúa:
+    - [Ejercicios de autoevaluación](UD04_Ejercicios.md)
+    - [Notebooks guiados](UD04_ActividadesGuiadas.md) — `N01` a `N03`
+- **Entregas** — [qué se entrega y cuándo](UD04_ActividadesEntregables.md):
+    - con rúbrica: [T01 · cinemática de un manipulador](UD04_T01_Cinematica_manipulador_ES.md) y los notebooks `EX1`, `EX2`, `EX3` y `EX5`
+    - de **apto / no apto**: [T02 · diseño de un sistema robotizado](UD04_T02_Diseno_sistema_robotizado_ES.md), `EX4` y `EX6`
+- Los notebooks se abren desde **Práctica** y **Entregas**, con descarga y apertura en Colab.
 
 ??? note "Referencias de la unidad"
     - [*Artificial Intelligence: A Modern Approach*, 4.ª ed.](https://aima.cs.berkeley.edu/), cap. 26 — Stuart Russell y Peter Norvig
@@ -1038,7 +1040,7 @@ world.seconds(30, [mi_controlador], real_time=True)
 
 | Peso | Instrumento |
 |---|---|
-| **40 %** actividades | Media de los **seis entregables** (`EX1`-`EX6`); cada uno con su [rúbrica](UD04_ActividadesEntregables.md#rubricas) sobre 10 |
+| **40 %** actividades | Con [rúbrica](UD04_ActividadesEntregables.md#rubricas): el taller **T01** y los notebooks **`EX1`**, **`EX2`**, **`EX3`** y **`EX5`**. De **apto / no apto**: el taller **T02** y los notebooks **`EX4`** y **`EX6`** |
 | **60 %** prueba escrita | Prueba del RA4 en Moodle: preguntas de test y de desarrollo sobre el contenido de la unidad |
 
 - **La normativa exige alcanzar todos los RA** del módulo para superarlo (art. 5.1 de la Orden

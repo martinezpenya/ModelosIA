@@ -562,7 +562,7 @@ CAUSA PROBABLE: Batería descargada
 ## 10. Caso de estudio: Robocode como sistema de resolución de problemas completo
 
 Los cinco requisitos del §4.1 y la elección de modelo del §9 dejan de ser teoría en cuanto se
-programa un bot de **Robocode Tank Royale** (la [actividad entregable](UD02_ActividadesEntregables.md)
+programa un bot de **Robocode Tank Royale** (la [entrega de Robocode](UD02_ActividadesEntregables.md)
 de la unidad):
 
 - **Representación**: el estado del bot (posición, energía, rumbo del radar) y del campo de
@@ -667,7 +667,7 @@ de la unidad):
 | 9 | 3 | Lógica difusa (teoría + Taller 1 scikit-fuzzy) | RA2-d | Taller 1 |
 | 9-10 | 3 | Sistemas basados en reglas (teoría + Taller 2 experta); CE f | RA2-e, RA2-f | Taller 2 |
 | 9-10 | — | Talleres 3-5: preparar el entorno, GitHub y Markdown para Robocode | — | Talleres 3-5 |
-| 10 | 3 | Robocode Tank Royale: entrega y evaluación | RA2-a, RA2-f | Actividad entregable |
+| 10 | 3 | Robocode Tank Royale: entrega y evaluación | RA2-a, RA2-f | Entrega: Robocode |
 
 ## 15. Tabla final RA/CE
 
@@ -683,10 +683,15 @@ de la unidad):
 ## 16. Recursos
 
 - [Diapositivas](UD02_Diapositivas.md)
-- [Ejercicios de la unidad](UD02_Ejercicios.md)
-- Talleres: [T01 · control difuso](UD02_T01_Control_difuso_ES.md) · [T02 · sistema de reglas](UD02_T02_Sistema_reglas_ES.md) · [T03 · preparar el entorno](UD02_T03_Preparar_entorno_ES.md) · [T04 · GitHub](UD02_T04_GitHub_ES.md) · [T05 · Markdown](UD02_T05_Markdown_ES.md)
-- Actividad entregable: [Robocode Tank Royale](UD02_ActividadesEntregables.md) · [comparativa Java/Python](UD02_Robocode_Comparativa_ES.md) · [tutorial Java](UD02_Robocode_Java_ES.md) · [tutorial Python](UD02_Robocode_Python_ES.md)
-- **Notebooks** — Talleres 1 y 2, con descarga y apertura en Colab, en el menú «Notebooks»
+- **Práctica** — se hace, no se entrega ni puntúa:
+    - [Ejercicios de autoevaluación](UD02_Ejercicios.md)
+- **Entregas** — tres, cada una con su rúbrica:
+    - [T01 · control difuso](UD02_T01_Control_difuso_ES.md) · [T02 · sistema de reglas](UD02_T02_Sistema_reglas_ES.md)
+    - [Robocode Tank Royale](UD02_ActividadesEntregables.md), la práctica de cierre del RA2
+- **Puesta a punto** — hay que hacerla, pero no puntúa:
+    - [T03 · preparar el entorno](UD02_T03_Preparar_entorno_ES.md) · [T04 · GitHub](UD02_T04_GitHub_ES.md) · [T05 · Markdown](UD02_T05_Markdown_ES.md)
+- **Documentación de Robocode**: [comparativa Java/Python](UD02_Robocode_Comparativa_ES.md) · [tutorial Java](UD02_Robocode_Java_ES.md) · [tutorial Python](UD02_Robocode_Python_ES.md)
+- Los notebooks se abren desde **Práctica** y **Entregas**, con descarga y apertura en Colab.
 
 ??? note "Referencias de la unidad"
     - [Red Blob Games · A*](https://www.redblobgames.com/pathfinding/a-star/introduction.html)
@@ -704,7 +709,7 @@ de la unidad):
 
 | Peso | Instrumento |
 |---|---|
-| **40 %** actividades | Media de los 5 talleres y la actividad entregable (Robocode), con su [rúbrica](UD02_ActividadesEntregables.md#rubrica) |
+| **40 %** actividades | **Robocode** y los talleres **T01** y **T02**, cada uno con su rúbrica. Robocode es el de más peso, con diferencia. Los talleres **T03**-**T05** son puesta a punto y no puntúan |
 | **60 %** prueba escrita | Prueba del RA2 en Moodle: preguntas de test y de desarrollo sobre el contenido de la unidad |
 
 - **La normativa exige alcanzar todos los RA** del módulo para superarlo (art. 5.1 de la Orden

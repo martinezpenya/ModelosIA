@@ -1,5 +1,4 @@
-# UD04 · Actividades guiadas
-
+# UD04 · Notebooks guiados
 !!! info "Cómo se trabajan"
     Estos tres notebooks **no se entregan**: se hacen en clase, con el profesor, y son la
     preparación de los [seis entregables](UD04_ActividadesEntregables.md). Están ejecutados: puedes
@@ -15,7 +14,7 @@
 
     Funcionan igual en **Colab** y en el contenedor de prácticas de la UD00.
 
-## 1 · Introducción a OpenCV
+## N01 · Introducción a OpenCV
 
 Visión por computador aplicada: cargar una imagen, detectar **bordes**, detectar **movimiento**
 comparando fotogramas consecutivos y calcular el **flujo óptico**. Es la base de `EX1` y de todo lo
@@ -27,7 +26,7 @@ que viene después, porque la cámara es el único sensor del robot en esta unid
 | Imágenes de apoyo | [`1.-line.png`](notebooks/1.-line.png) · [`1.-line_left.png`](notebooks/1.-line_left.png) · [`1.-line_right.png`](notebooks/1.-line_right.png) |
 | Vídeo de apoyo | [`1.-motionvideo.mp4`](notebooks/1.-motionvideo.mp4) |
 
-## 2 · Vehículos de Braitenberg
+## N02 · Vehículos de Braitenberg
 
 El control más simple que existe: conectar un sensor directamente a un motor, sin representación
 interna ni planificación. Con dos sensores y dos motores aparecen comportamientos que **parecen**
@@ -40,7 +39,7 @@ todas las demás.
 |---|---|
 | Notebook | [`UD04_N02_vehiculos_braitenberg.ipynb`](notebooks/UD04_N02_vehiculos_braitenberg.ipynb) |
 
-## 3 · Ejemplos de robots en AITK
+## N03 · Ejemplos de robots en AITK
 
 Recorrido por los robots del simulador: qué sensores puede llevar cada uno, cómo se define un mundo
 con obstáculos y cómo se le pasa una función de control. Es el notebook que hay que tener a mano

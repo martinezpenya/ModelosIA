@@ -1,5 +1,4 @@
-# UD01 — Actividades guiadas
-
+# UD01 · Notebooks guiados
 Notebook que se trabaja **en clase**, con el profesor. No es un entregable calificable: es la
 demostración en código de las técnicas de IA vistas en la teoría.
 

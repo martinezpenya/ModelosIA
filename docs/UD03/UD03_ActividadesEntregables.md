@@ -1,5 +1,4 @@
-# UD03 · Actividades entregables
-
+# UD03 · Entregas
 !!! important "Qué se entrega y qué es práctica"
     No todo lo de esta página se entrega. Las **entregas** se corrigen con su
     [rúbrica](#rubricas), que puedes leer antes de empezar; la **práctica** se hace para preparar la
@@ -157,4 +156,4 @@ El cuarto criterio es el que demuestra RA3-g: encadenar los tres modelos en un s
 por separado.
 
 ---
-[Volver a la UD03](UD03_ES.md) · [Actividades guiadas](UD03_ActividadesGuiadas.md) · Talleres: [T01](UD03_T01_Del_texto_al_vector_ES.md) · [T02](UD03_T02_Sistema_PLN_ES.md)
+[Volver a la UD03](UD03_ES.md) · [Notebooks guiados](UD03_ActividadesGuiadas.md) · Talleres: [T01](UD03_T01_Del_texto_al_vector_ES.md) · [T02](UD03_T02_Sistema_PLN_ES.md)

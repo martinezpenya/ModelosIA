@@ -1,8 +1,9 @@
 # UD06 · Taller 2 — Auditoría de sesgos con Fairlearn
 
-!!! important "Entregable · cuenta en el 40 % de actividades del RA6"
-    Se trabaja en la sesión 3, con el notebook [N01](notebooks/UD06_N01_sesgos_ia.ipynb) abierto. Se
-    entrega en Moodle un informe con las métricas obtenidas y las respuestas de la Fase 6.
+!!! important "Entrega evaluable"
+    Se entrega en Moodle y se corrige con su **rúbrica**, que puedes leer en la propia tarea
+    antes de empezar. El **peso** de esta entrega está en el libro de calificaciones de Moodle.
+    Fuera de plazo, la nota máxima del trabajo es **5 sobre 10**.
 
 **Objetivo**: medir el sesgo de un modelo real con **Fairlearn**, mitigarlo y **comprobar el precio
 que se paga** por hacerlo (RA6-f, con conexión a RA6-b y RA6-e).

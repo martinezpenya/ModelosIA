@@ -1,9 +1,9 @@
 # UD05 · Taller 1 — Simular un sistema experto con `experta`
 
-!!! important "Entregable de la unidad"
-    Cuenta en el 40 % de actividades del RA5, junto con los
-    [notebooks entregables](UD05_ActividadesEntregables.md). Trabaja en parejas si lo indica el
-    profesor.
+!!! important "Entrega evaluable"
+    Se entrega en Moodle y se corrige con su **rúbrica**, que puedes leer en la propia tarea
+    antes de empezar. El **peso** de esta entrega está en el libro de calificaciones de Moodle.
+    Fuera de plazo, la nota máxima del trabajo es **5 sobre 10**. Trabaja en parejas si lo indica el profesor.
 
 !!! warning "Requisitos"
     Python 3.10+ con `experta`. Recuerda el **parche de compatibilidad**
