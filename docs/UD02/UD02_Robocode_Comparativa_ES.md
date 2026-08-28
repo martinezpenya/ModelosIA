@@ -193,6 +193,6 @@ Para la naturaleza de este curso de especialización en **Inteligencia Artificia
 La opción Java queda disponible para alumnado con experiencia previa en Java o interés particular, pero la vía Python será la que reciba soporte preferente por parte del profesorado.
 
 !!! tip "Elegid vuestro camino"
-    - **Noveles en programación o provenientes de Python** → seguid la guía Python
-    - **Experiencia previa en Java o interés en JVM** → seguid la guía Java
+    - **Noveles en programación o provenientes de Python** → seguid la [guía Python](UD02_Robocode_Python_ES.md)
+    - **Experiencia previa en Java o interés en JVM** → seguid la [guía Java](UD02_Robocode_Java_ES.md)
     - **Dudas** → consultad al profesorado
