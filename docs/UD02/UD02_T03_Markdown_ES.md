@@ -1,8 +1,8 @@
-# UD02 · Taller 1 — Documentar con Markdown
+# UD02 · Taller 3 — Documentar con Markdown
 
 !!! important "Entrega · hecho / no hecho"
-    Se entrega en Moodle y se califica como **hecho / no hecho**: no lleva nota ni ítem en el
-    libro de calificaciones, pero **es requisito**. La memoria de [`T04` Robocode](UD02_T04_Robocode_ES.md) se
+    Se entrega en Moodle y se califica como **hecho / no hecho**: se registra en el libro de
+    calificaciones con **peso 0** —no puntúa, pero consta— y **es requisito**. La memoria de [`T04` Robocode](UD02_T04_Robocode_ES.md) se
     escribe y documenta más rápido si dominas Markdown, y es el lenguaje en el que están escritos
     estos mismos apuntes.
 

@@ -5,8 +5,9 @@
     Se entregan en Moodle y **no llevan rúbrica**: se marcan como hechas o no hechas. La [práctica de la unidad](UD00_ActividadesGuiadas.md) no se
     entrega ni puntúa.
 
-    La UD00 **no se califica**: son requisito para las prácticas de la UD02, no un resultado de
-    aprendizaje, así que no tienen ítem en el libro de calificaciones.
+    Los dos talleres se entregan como **hecho / no hecho**: son requisito para las prácticas de la
+    UD02, no un resultado de aprendizaje, así que se registran en el libro de calificaciones con
+    **peso 0** — no puntúan, pero constan.
 
 | Actividad | Qué es | Descargar | Abrir en Colab |
 |---|---|---|---|

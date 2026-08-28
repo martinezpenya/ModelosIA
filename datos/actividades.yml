@@ -24,8 +24,9 @@ UD00:
   _nota_practica: |
     La UD00 **no se califica**: el entorno es un requisito, no un resultado de aprendizaje.
   _nota_entregas: |
-    La UD00 **no se califica**: son requisito para las prácticas de la UD02, no un resultado de
-    aprendizaje, así que no tienen ítem en el libro de calificaciones.
+    Los dos talleres se entregan como **hecho / no hecho**: son requisito para las prácticas de la
+    UD02, no un resultado de aprendizaje, así que se registran en el libro de calificaciones con
+    **peso 0** — no puntúan, pero constan.
   _pagina_practica: UD00_ActividadesGuiadas.md
   UD00_N01_entorno_python_ia.ipynb:
     que_es: Comprobación del entorno · `numpy`, `pandas`, `matplotlib`

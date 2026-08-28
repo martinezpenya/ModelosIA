@@ -1,8 +1,8 @@
 # UD00 · Taller 2 — Contenedor de prácticas de IA
 
 !!! important "Entrega · hecho / no hecho"
-    Se entrega en Moodle y se califica como **hecho / no hecho**: no lleva nota ni ítem en el
-    libro de calificaciones, pero **es requisito**. Al terminar tendrás el **entorno del curso levantado**, que es
+    Se entrega en Moodle y se califica como **hecho / no hecho**: se registra en el libro de
+    calificaciones con **peso 0** —no puntúa, pero consta— y **es requisito**. Al terminar tendrás el **entorno del curso levantado**, que es
     el que usarás en el resto de las unidades. Sin él no se pueden hacer las prácticas de la UD02.
 
 **Objetivo**: levantar un entorno **Jupyter** reproducible con las bibliotecas del curso.

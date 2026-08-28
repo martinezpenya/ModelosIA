@@ -1,8 +1,8 @@
 # UD02 · Taller 2 — Control de versiones con GitHub
 
 !!! important "Entrega · hecho / no hecho"
-    Se entrega en Moodle y se califica como **hecho / no hecho**: no lleva nota ni ítem en el
-    libro de calificaciones, pero **es requisito**. En [`T04` Robocode](UD02_T04_Robocode_ES.md) entregarás el código
+    Se entrega en Moodle y se califica como **hecho / no hecho**: se registra en el libro de
+    calificaciones con **peso 0** —no puntúa, pero consta— y **es requisito**. En [`T04` Robocode](UD02_T04_Robocode_ES.md) entregarás el código
     de tu bot, y saber moverte en un repositorio es parte de las herramientas del oficio.
 
 **Objetivo**: crear una cuenta en GitHub y completar un ciclo real de colaboración — *fork*, edición,
@@ -84,4 +84,4 @@ esta actividad, lo que se evalúa es el proceso, no que te lo acepten. Si se ace
     correcta que corregir en clase.
 
 ---
-[Volver a la UD02](UD02_ES.md) · [Taller 1](UD02_T01_Preparar_entorno_ES.md) · [Taller 1](UD02_T03_Markdown_ES.md)
+[Volver a la UD02](UD02_ES.md) · [Taller 1](UD02_T01_Preparar_entorno_ES.md) · [Taller 3](UD02_T03_Markdown_ES.md)

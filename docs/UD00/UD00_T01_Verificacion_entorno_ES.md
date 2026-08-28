@@ -1,8 +1,8 @@
 # UD00 · Taller 1 — Verificación del entorno y primer contenedor
 
 !!! important "Entrega · hecho / no hecho"
-    Se entrega en Moodle y se califica como **hecho / no hecho**: no lleva nota ni ítem en el
-    libro de calificaciones, pero **es requisito**. Sin el entorno funcionando no se pueden hacer las
+    Se entrega en Moodle y se califica como **hecho / no hecho**: se registra en el libro de
+    calificaciones con **peso 0** —no puntúa, pero consta— y **es requisito**. Sin el entorno funcionando no se pueden hacer las
     prácticas de la UD02. Los viernes no hay clase: son el momento de recopilar capturas y redactar
     la memoria.
 
