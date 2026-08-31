@@ -1,6 +1,6 @@
 # 🚀 Información importante
 
-![](assets/portada.png)
+![](assets/portada.svg)
 
 ## 📛 Denominación del curso
 
@@ -15,11 +15,11 @@
 
     **Vacaciones**: Navidad del 22 de diciembre al 6 de enero · Pascua del 25 de marzo al 5 de
     abril.
-
+    
     **Festivos que caen en día de clase**: 12 de octubre, 7 y 8 de diciembre, y **Fallas, 17 y 18 de
     marzo**. El 9 de octubre (Día de la Comunitat Valenciana) y el 19 de marzo caen en viernes, así
     que no afectan.
-
+    
     Entre Fallas y Pascua, **marzo es el mes más interrumpido del curso**: tenlo en cuenta para
     planificar entregas.
 

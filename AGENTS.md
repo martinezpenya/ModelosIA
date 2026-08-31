@@ -65,7 +65,7 @@ Or just run `./serve.sh` which does all the above then `mkdocs serve`.
 ```
 docs/          → markdown source files, one per nav entry
   UD01..UD05/  → units, each with theory, slides, guided activities, deliverables
-  assets/      → images, portada.png
+  assets/      → images, portada.svg
   css/         → extra.css
 mkdocs.yml     → site config
 ```
