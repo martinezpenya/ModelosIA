@@ -1,9 +1,10 @@
-# UD02 · Taller 2 — Control de versiones con GitHub
+# UD00 · Taller 1 — Control de versiones con GitHub
 
 !!! important "Entrega · hecho / no hecho"
     Se entrega en Moodle y se califica como **hecho / no hecho**: se registra en el libro de
-    calificaciones con **peso 0** —no puntúa, pero consta— y **es requisito**. En [`T04` Robocode](UD02_T04_Robocode_ES.md) entregarás el código
-    de tu bot, y saber moverte en un repositorio es parte de las herramientas del oficio.
+    calificaciones con **peso 0** —no puntúa, pero consta— y **es requisito**. Más adelante, en la
+    UD02, programarás un bot de [Robocode Tank Royale](../UD02/UD02_T02_Robocode_ES.md) y
+    entregarás su código: saber moverte en un repositorio es parte de las herramientas del oficio.
 
 **Objetivo**: crear una cuenta en GitHub y completar un ciclo real de colaboración — *fork*, edición,
 *commit* y *pull request* — proponiendo una mejora a un repositorio ajeno.
@@ -32,7 +33,7 @@ tocar el original.
 ![Crear un fork](assets/GH_02.png)
 
 Pulsa **Fork this repository**. Verás el código fuente de la página, escrito en **Markdown** (lo
-trabajarás a fondo en el Taller 1):
+trabajarás a fondo en el Taller 2):
 
 ![Código fuente en Markdown](assets/GH_03.png)
 
@@ -71,7 +72,7 @@ esta actividad, lo que se evalúa es el proceso, no que te lo acepten. Si se ace
 
 ![Pull request aceptado](assets/GH_09.png)
 
-### Entrega del Taller 2
+### Entrega del Taller 1
 
 | Fase | Evidencia mínima |
 |---|---|
@@ -84,4 +85,4 @@ esta actividad, lo que se evalúa es el proceso, no que te lo acepten. Si se ace
     correcta que corregir en clase.
 
 ---
-[Volver a la UD02](UD02_ES.md) · [Taller 1](UD02_T01_Preparar_entorno_ES.md) · [Taller 3](UD02_T03_Markdown_ES.md)
+[Volver a la UD00](UD00_ES.md) · [Ejercicios](UD00_Ejercicios.md) · [Taller 2](UD00_T02_Markdown_ES.md)

@@ -29,8 +29,10 @@ nav:
       - Notebooks guiados: UD00/UD00_ActividadesGuiadas.md
     - Entregas:
       - Qué se entrega: UD00/UD00_Entregas.md
-      - T01 Verificación del entorno y primer contenedor: UD00/UD00_T01_Verificacion_entorno_ES.md
-      - T02 Contenedor de prácticas de IA: UD00/UD00_T02_Contenedor_practicas_ES.md
+      - T01 Control de versiones con GitHub (hecho / no hecho): UD00/UD00_T01_GitHub_ES.md
+      - T02 Documentar con Markdown (hecho / no hecho): UD00/UD00_T02_Markdown_ES.md
+      - T03 Verificación del entorno y primer contenedor: UD00/UD00_T03_Verificacion_entorno_ES.md
+      - T04 Contenedor de prácticas de IA: UD00/UD00_T04_Contenedor_practicas_ES.md
   - UD01:
     - Caracterización de sistemas de IA: UD01/UD01_ES.md
     - Diapositivas: UD01/UD01_Diapositivas.md
@@ -53,9 +55,7 @@ nav:
       - N01 Control difuso con scikit-fuzzy: UD02/notebooks/UD02_N01_control_difuso.ipynb
       - N02 Sistema basado en reglas con experta: UD02/notebooks/UD02_N02_sistema_reglas.ipynb
       - T01 Preparar el entorno para Robocode (hecho / no hecho): UD02/UD02_T01_Preparar_entorno_ES.md
-      - T02 Control de versiones con GitHub (hecho / no hecho): UD02/UD02_T02_GitHub_ES.md
-      - T03 Documentar con Markdown (hecho / no hecho): UD02/UD02_T03_Markdown_ES.md
-      - T04 Robocode Tank Royale: UD02/UD02_T04_Robocode_ES.md
+      - T02 Robocode Tank Royale: UD02/UD02_T02_Robocode_ES.md
     - Documentación de Robocode:
       - Comparativa Java vs Python, elige lenguaje: UD02/UD02_Robocode_Comparativa_ES.md
       - Tutorial Robocode (Java): UD02/UD02_Robocode_Java_ES.md

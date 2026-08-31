@@ -1,10 +1,11 @@
-# UD02 · Taller 3 — Documentar con Markdown
+# UD00 · Taller 2 — Documentar con Markdown
 
 !!! important "Entrega · hecho / no hecho"
     Se entrega en Moodle y se califica como **hecho / no hecho**: se registra en el libro de
-    calificaciones con **peso 0** —no puntúa, pero consta— y **es requisito**. La memoria de [`T04` Robocode](UD02_T04_Robocode_ES.md) se
-    escribe y documenta más rápido si dominas Markdown, y es el lenguaje en el que están escritos
-    estos mismos apuntes.
+    calificaciones con **peso 0** —no puntúa, pero consta— y **es requisito**. Más adelante, en la
+    UD02, escribirás la memoria de tu bot de
+    [Robocode Tank Royale](../UD02/UD02_T02_Robocode_ES.md): se escribe y documenta más rápido si
+    dominas Markdown, y es el lenguaje en el que están escritos estos mismos apuntes.
 
 **Objetivo**: aprender la sintaxis de Markdown lo bastante a fondo como para documentar cualquier
 proyecto — texto, listas, tablas, enlaces, imágenes y código — y escribir un documento propio de
@@ -115,7 +116,7 @@ Con tu editor favorito, crea un documento Markdown que:
 Exporta el resultado a PDF (la mayoría de editores Markdown lo hacen con un clic, o usa
 `pandoc documento.md -o documento.pdf`).
 
-### Entrega del Taller 1
+### Entrega del Taller 2
 
 | Fase | Evidencia mínima |
 |---|---|
@@ -129,4 +130,4 @@ Sube a Moodle el documento **`.md`** original y su exportación a **`.pdf`**.
     No aplica: es un documento de creación libre, se comenta en clase con ejemplos del alumnado.
 
 ---
-[Volver a la UD02](UD02_ES.md) · [Taller 2](UD02_T02_GitHub_ES.md) · [Ejercicios](UD02_Ejercicios.md)
+[Volver a la UD00](UD00_ES.md) · [Taller 1](UD00_T01_GitHub_ES.md) · [Ejercicios](UD00_Ejercicios.md)

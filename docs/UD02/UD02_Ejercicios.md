@@ -2,8 +2,8 @@
 
 !!! note "Cómo se corrigen"
     Resuélvelos en tu cuaderno o en un documento Markdown (buen momento para practicar el
-    [Taller 3](UD02_T03_Markdown_ES.md)). Las soluciones no se publican: se corrigen y comentan en
-    clase.
+    [taller de Markdown](../UD00/UD00_T02_Markdown_ES.md) de la UD00). Las soluciones no se
+    publican: se corrigen y comentan en clase.
 
 ## A. Sistema de resolución de problemas (RA2-a)
 

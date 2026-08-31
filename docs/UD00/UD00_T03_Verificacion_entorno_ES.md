@@ -1,4 +1,4 @@
-# UD00 · Taller 1 — Verificación del entorno y primer contenedor
+# UD00 · Taller 3 — Verificación del entorno y primer contenedor
 
 !!! important "Entrega · hecho / no hecho"
     Se entrega en Moodle y se califica como **hecho / no hecho**: se registra en el libro de
@@ -117,7 +117,7 @@ docker rm mi-nginx mi-python
 docker ps -a                 # ya no deben aparecer
 ```
 
-### Entrega del Taller 1
+### Entrega del Taller 3
 
 Recopila las capturas y las explicaciones de las seis fases en **una memoria en PDF**. Se valora
 que expliques lo que ocurre, no solo que pegues pantallazos: una captura sin explicación no
@@ -136,4 +136,4 @@ demuestra que hayas entendido nada.
     Las soluciones no se publican: se corrigen y comentan en clase.
 
 ---
-[Volver a la UD00](UD00_ES.md) · [Ejercicios](UD00_Ejercicios.md) · [Taller 2](UD00_T02_Contenedor_practicas_ES.md)
+[Volver a la UD00](UD00_ES.md) · [Ejercicios](UD00_Ejercicios.md) · [Taller 4](UD00_T04_Contenedor_practicas_ES.md)

@@ -2,8 +2,8 @@
 
 !!! info "Unidad 0 · 6 h · semanas 1-2 (1 al 8 de octubre)"
     Unidad transversal de presentación y arranque del curso. **No tiene prueba escrita**: el entorno
-    de trabajo es **requisito** para el resto del módulo, y el entregable del Taller 1 se marca como
-    **hecho / no hecho**.
+    de trabajo es **requisito** para el resto del módulo, y el entregable de cada taller se marca
+    como **hecho / no hecho**.
 
 ## 1. Introducción
 
@@ -152,7 +152,7 @@ Las prácticas se basan en **Python** con estas bibliotecas:
 `numpy`, `pandas`, `matplotlib`, `scikit-learn`, `scikit-fuzzy`, `nltk`, `spaCy`, `torch` y
 `experta`.
 
-Este stack se ejecutará en un **contenedor de prácticas de IA** que montaremos en el taller 2 de
+Este stack se ejecutará en un **contenedor de prácticas de IA** que montaremos en el taller 4 de
 esta unidad.
 ### 5.2 Instalar Docker
 
@@ -740,7 +740,7 @@ docker compose exec jupyter bash   # para entrar dentro
 docker compose down               # cuando termines
 ```
 
-Lo pondrás en marcha paso a paso en el **Taller 2** de esta unidad.
+Lo pondrás en marcha paso a paso en el **Taller 4** de esta unidad.
 
 ### 10.1 Construir la imagen con un Dockerfile propio
 
@@ -945,7 +945,7 @@ La unidad son **6 h en dos semanas** (1-8 de octubre), a 3 h por semana.
 | Semana | Fechas | Horas | Contenido | Evidencia |
 |---|---|---|---|---|
 | 1 | 1-2 oct | 3 | Presentación del curso, del módulo y de la evaluación · instalación de Docker · conceptos: imagen, contenedor, registro | Docker funcionando (`docker run hello-world`) |
-| 2 | 5-8 oct | 3 | `docker run` y volúmenes · Dockerfile y Compose · contenedor de prácticas de IA | **Taller 1** (hecho / no hecho) y entorno del curso levantado |
+| 2 | 5-8 oct | 3 | `docker run` y volúmenes · Dockerfile y Compose · contenedor de prácticas de IA | **Talleres 3 y 4** (hecho / no hecho) y entorno del curso levantado |
 
 !!! note "Si el horario del módulo son 2 h + 1 h"
     Cada semana se parte en dos sesiones. El **bloque de 2 h** es el único que admite trabajo con
@@ -1104,7 +1104,7 @@ CONTAINER ID   IMAGE            COMMAND          CREATED          STATUS        
 - **[Watchtower](https://containrrr.dev/watchtower/)** - Servicio que actualiza automáticamente los contenedores Docker cuando hay nuevas versiones disponibles
 
 !!! note "Uso de este catálogo"
-    Sirve para elegir imagen en la fase 4 del Taller 1. Antes de proponer una, comprueba en
+    Sirve para elegir imagen en la fase 4 del Taller 3. Antes de proponer una, comprueba en
     Docker Hub que sigue mantenida: hay imágenes populares con años sin actualizar.
 
 ## 16. Recursos
@@ -1115,8 +1115,10 @@ CONTAINER ID   IMAGE            COMMAND          CREATED          STATUS        
     - [Notebooks guiados](UD00_ActividadesGuiadas.md) — `N01`, entorno Python para IA
 - **Entregas** — se entregan en Moodle y se califican **hecho / no hecho**: no llevan nota, pero son
   requisito para las prácticas de la UD02:
-    - [T01 · Verificación del entorno y primer contenedor](UD00_T01_Verificacion_entorno_ES.md)
-    - [T02 · Contenedor de prácticas de IA](UD00_T02_Contenedor_practicas_ES.md)
+    - [T01 · Control de versiones con GitHub](UD00_T01_GitHub_ES.md)
+    - [T02 · Documentar con Markdown](UD00_T02_Markdown_ES.md)
+    - [T03 · Verificación del entorno y primer contenedor](UD00_T03_Verificacion_entorno_ES.md)
+    - [T04 · Contenedor de prácticas de IA](UD00_T04_Contenedor_practicas_ES.md)
 - Los notebooks se abren desde **Práctica** y **Entregas**, con descarga y apertura en Colab.
 
 ??? note "Referencias de la unidad"

@@ -1,4 +1,4 @@
-# UD00 · Taller 2 — Contenedor de prácticas de IA
+# UD00 · Taller 4 — Contenedor de prácticas de IA
 
 !!! important "Entrega · hecho / no hecho"
     Se entrega en Moodle y se califica como **hecho / no hecho**: se registra en el libro de
@@ -114,4 +114,4 @@ Sube a Moodle un **informe breve**, que se marca como **hecho / no hecho**, con:
     Las soluciones no se publican: se corrigen y comentan en clase.
 
 ---
-[Volver a la UD00](UD00_ES.md) · [Ejercicios](UD00_Ejercicios.md) · [Taller 1](UD00_T01_Verificacion_entorno_ES.md)
+[Volver a la UD00](UD00_ES.md) · [Ejercicios](UD00_Ejercicios.md) · [Taller 3](UD00_T03_Verificacion_entorno_ES.md)

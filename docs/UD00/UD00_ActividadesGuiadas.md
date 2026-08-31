@@ -13,7 +13,7 @@
 
 ## `N01` · Bienvenida al entorno Python para IA
 
-Repaso rápido de `numpy`, `pandas` y `matplotlib` dentro del contenedor que has montado en los dos talleres de la unidad. Si este notebook se ejecuta de arriba abajo sin errores, el entorno está listo para todo el módulo.
+Repaso rápido de `numpy`, `pandas` y `matplotlib` dentro del contenedor que has montado en los talleres de Docker de la unidad. Si este notebook se ejecuta de arriba abajo sin errores, el entorno está listo para todo el módulo.
 <!-- AUTO:notebooks fin -->
 
 ---
