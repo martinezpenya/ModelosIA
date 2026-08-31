@@ -292,7 +292,7 @@ plugins:
         #
         cover: true
         #cover_logo: docs/assets/images/aws_cast.png
-        cover_logo: https://martinezpenya.es/ModelosIA/assets/portada.svg
+        cover_logo: https://martinezpenya.es/ModelosIA/assets/portada.png
         back_cover: true
         #cover_title: TITLE TEXT
         cover_subtitle: IES Eduardo Primo Marques (Carlet)
