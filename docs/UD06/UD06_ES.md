@@ -1144,12 +1144,12 @@ La unidad tiene **6 horas** repartidas en un tramo fragmentado por Fallas y Pasc
 de partida de los dos debates se ven **fuera de clase**, y la reflexión escrita de cada debate es
 trabajo personal.
 
-| Sesión | Horas | Contenido | CE |
+| Semana | Horas | Contenido | CE |
 |---|---|---|---|
-| 1 | 1,5 | Riesgos, deontología y principios éticos (§4). El futuro del trabajo. **Preparación del debate 1** y sorteo de roles | RA6-a |
-| 2 | 1,5 | **Debate 1 · Límites éticos de la IA** (10 roles + observadores críticos) | RA6-a, RA6-c |
-| 3 | 1,5 | Normativa como lectura guiada con checklist: RGPD y LOPDGDD (§5), AI Act y responsabilidad (§6), *security* y *privacy by design* (§7-§8). Taller de auditoría de sesgos | RA6-b, RA6-c, RA6-d, RA6-e |
-| 4 | 1,5 | **Debate 2 · El algoritmo contra el crimen** (9 roles + observadores críticos), con COMPAS y la paradoja de Simpson. Cierre de la unidad | RA6-f |
+| 24 | 1,5 | Riesgos, deontología y principios éticos (§4). El futuro del trabajo. **Preparación del debate 1** y sorteo de roles | RA6-a |
+| 25 | 1,5 | **Debate 1 · Límites éticos de la IA** (10 roles + observadores críticos) | RA6-a, RA6-c |
+| 27 | 1,5 | Normativa como lectura guiada con checklist: RGPD y LOPDGDD (§5), AI Act y responsabilidad (§6), *security* y *privacy by design* (§7-§8). Taller de auditoría de sesgos | RA6-b, RA6-c, RA6-d, RA6-e |
+| 28 | 1,5 | **Debate 2 · El algoritmo contra el crimen** (9 roles + observadores críticos), con COMPAS y la paradoja de Simpson. Cierre de la unidad | RA6-f |
 
 !!! warning "Aviso de planificación"
     Con **dos debates evaluables**, los cuatro criterios normativos (RA6-b, c, d, e) comparten una

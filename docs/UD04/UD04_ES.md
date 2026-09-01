@@ -1011,10 +1011,10 @@ world.seconds(30, [mi_controlador], real_time=True)
 
 | Semana | Horas | Contenido | CE |
 |---|---|---|---|
-| 15 | 3 | Métodos y aplicaciones; hardware, sensores y actuadores; qué problema resuelve la robótica | RA4-a |
-| 16 | 3 | Cinemática directa e inversa, singularidades; Notebook 4 y notebook de cinemática | RA4-a, RA4-b |
-| 17 | 3 | Espacio de configuración y planificación; percepción y SLAM; OpenCV y `N05`; `N06` y `N07` | RA4-b, RA4-c |
-| 18 | 3 | Técnicas de programación comparadas (`N08`-`N10`); diseño de la célula, seguridad y normativa; Notebook 11; evaluación | RA4-c, RA4-d |
+| 20 | 3 | Métodos y aplicaciones; hardware, sensores y actuadores; qué problema resuelve la robótica | RA4-a |
+| 21 | 3 | Cinemática directa e inversa, singularidades; Notebook 4 y notebook de cinemática | RA4-a, RA4-b |
+| 22 | 3 | Espacio de configuración y planificación; percepción y SLAM; OpenCV y `N05`; `N06` y `N07` | RA4-b, RA4-c |
+| 23 | 3 | Técnicas de programación comparadas (`N08`-`N10`); diseño de la célula, seguridad y normativa; Notebook 11; evaluación | RA4-c, RA4-d |
 
 ## 18. Recursos
 

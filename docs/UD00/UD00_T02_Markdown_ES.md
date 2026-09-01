@@ -116,7 +116,7 @@ Con tu editor favorito, crea un documento Markdown que:
 Exporta el resultado a PDF (la mayoría de editores Markdown lo hacen con un clic, o usa
 `pandoc documento.md -o documento.pdf`).
 
-### Entrega del Taller 2
+### Entrega
 
 | Fase | Evidencia mínima |
 |---|---|

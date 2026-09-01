@@ -78,6 +78,11 @@ Normativa y plataforma:
 - [Reglamento (UE) 2024/1689 · AI Act](https://www.boe.es/doue/2024/1689/L00001-00144.pdf) — considerando 53 y art. 5
 - [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/) · [Penn Treebank POS tags](https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html)
 
+**Notebooks**:
+
+- [spaCy · Modelos](https://spacy.io/models/)
+- [Analytics Lane · Análisis de sentimientos en español con spaCy](https://www.analyticslane.com/2023/05/29/analisis-de-sentimientos-en-espanol-con-spacy-en-python/)
+
 ## UD04 — Robótica
 
 - [*Artificial Intelligence: A Modern Approach*, 4.ª ed.](https://aima.cs.berkeley.edu/), cap. 26 — Stuart Russell y Peter Norvig
@@ -103,6 +108,12 @@ Normativa y plataforma:
 - [Wikipedia · Fuzzy control system](https://en.wikipedia.org/wiki/Fuzzy_control_system)
 - [Wikipedia · PID controller](https://en.wikipedia.org/wiki/PID_controller)
 - [Modus Ponens](https://es.wikipedia.org/wiki/Modus_ponendo_ponens) · [Modus Tollens](https://es.wikipedia.org/wiki/Modus_tollendo_tollens)
+
+**Notebooks**:
+
+- [experta · Introduction](https://experta.readthedocs.io/en/latest/introduction.html)
+- [CLIPS · User's Guide (v6.24)](https://clipsrules.net/documentation/v624/ug624.pdf)
+- [Cayetano Guerra · Tutorial CLIPS I](https://cayetanoguerra.github.io/ia/sbr/CLIPS_I-Tutorial.pdf)
 
 ## UD06 — Riesgos, ética y legalidad de la IA
 

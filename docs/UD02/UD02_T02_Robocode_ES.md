@@ -68,19 +68,6 @@ todo el alumnado.
    conocidos y los de tus compañeros) y aplicar las técnicas que consideres más útiles para subir
    en la clasificación.
 
-## Qué debes entregar
-
-A través de Moodle, un archivo **ZIP** que contenga el código fuente de tu bot (nombre: tu nombre
-más los 4 últimos dígitos de tu DNI/NIE, sin letras) y la memoria justificativa en PDF.
-
-- `TuNombreNNNN.java` (Java) o `TuNombreNNNN.py` (Python) — clase del bot
-- `TuNombreNNNN.json` — información del autor
-- `TuNombreNNNN.cmd` y `TuNombreNNNN.sh` — arranque en Windows y Linux
-
-**La memoria en PDF** debe incluir, al menos: datos del alumnado, descripción del funcionamiento
-(estructura, sistema basado en reglas/casos, análisis y evolución de la solución...), descripción
-detallada de los métodos definidos o usados, conclusiones y webgrafía/bibliografía.
-
 ## Requisitos mínimos de la competición
 
 - **Versión 0.34.0 de la API** (multi-idioma y con escalado)
@@ -94,6 +81,19 @@ detallada de los métodos definidos o usados, conclusiones y webgrafía/bibliogr
     La rúbrica de Robocode se ve **en la propia tarea de Moodle**, y puedes leerla **antes** de
     empezar: ahí tienes los criterios, los niveles y lo que puntúa cada uno. No se duplica aquí para
     que no haya dos versiones del mismo dato.
+
+## Entrega
+
+A través de Moodle, un archivo **ZIP** que contenga el código fuente de tu bot (nombre: tu nombre
+más los 4 últimos dígitos de tu DNI/NIE, sin letras) y la memoria justificativa en PDF.
+
+- `TuNombreNNNN.java` (Java) o `TuNombreNNNN.py` (Python) — clase del bot
+- `TuNombreNNNN.json` — información del autor
+- `TuNombreNNNN.cmd` y `TuNombreNNNN.sh` — arranque en Windows y Linux
+
+**La memoria en PDF** debe incluir, al menos: datos del alumnado, descripción del funcionamiento
+(estructura, sistema basado en reglas/casos, análisis y evolución de la solución...), descripción
+detallada de los métodos definidos o usados, conclusiones y webgrafía/bibliografía.
 
 ---
 [Volver a la UD02](UD02_ES.md) · [Comparativa Java/Python](UD02_Robocode_Comparativa_ES.md)

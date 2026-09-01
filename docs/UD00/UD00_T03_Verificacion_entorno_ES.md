@@ -117,7 +117,7 @@ docker rm mi-nginx mi-python
 docker ps -a                 # ya no deben aparecer
 ```
 
-### Entrega del Taller 3
+### Entrega
 
 Recopila las capturas y las explicaciones de las seis fases en **una memoria en PDF**. Se valora
 que expliques lo que ocurre, no solo que pegues pantallazos: una captura sin explicación no

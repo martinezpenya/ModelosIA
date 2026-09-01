@@ -72,7 +72,7 @@ esta actividad, lo que se evalúa es el proceso, no que te lo acepten. Si se ace
 
 ![Pull request aceptado](assets/GH_09.png)
 
-### Entrega del Taller 1
+### Entrega
 
 | Fase | Evidencia mínima |
 |---|---|

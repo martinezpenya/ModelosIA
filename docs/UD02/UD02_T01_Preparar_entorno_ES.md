@@ -117,7 +117,7 @@ pip install robocode-tank-royale
 
 ![Instalación de la API con pip](assets/terminal_pip_install.png)
 
-## Entrega del Taller 1
+## Entrega
 
 Un documento PDF con:
 
