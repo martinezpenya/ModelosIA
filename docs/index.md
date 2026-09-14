@@ -9,24 +9,17 @@
 🤖 Modelos de Inteligencia Artificial (MIA) · Código **5071** · **90 h** · 4 ECTS
 
 !!! info "Curso 2026-2027"
-    La docencia empieza el **1 de octubre de 2026** y el módulo termina el **28 de mayo de 2027**;
-    junio se reserva a la **convocatoria ordinaria**. Las clases son de **lunes a jueves**: los
-    viernes no hay clase y se aprovechan para las tareas y los talleres en casa.
+    La docencia empieza el **1 de octubre de 2026** y el módulo termina el **28 de mayo de 2027**; junio se reserva a la **convocatoria ordinaria**. Las clases son de **lunes a jueves**: los viernes no hay clase y se aprovechan para las tareas y los talleres en casa.
 
-    **Vacaciones**: Navidad del 22 de diciembre al 6 de enero · Pascua del 25 de marzo al 5 de
-    abril.
+    **Vacaciones**: Navidad del 22 de diciembre al 6 de enero · Pascua del 25 de marzo al 5 de abril.
     
-    **Festivos que caen en día de clase**: 12 de octubre, 7 y 8 de diciembre, y **Fallas, 17 y 18 de
-    marzo**. El 9 de octubre (Día de la Comunitat Valenciana) y el 19 de marzo caen en viernes, así
-    que no afectan.
+    **Festivos que caen en día de clase**: 12 de octubre, 7 y 8 de diciembre, y **Fallas, 17 y 18 de marzo**. El 9 de octubre (Día de la Comunitat Valenciana) y el 19 de marzo caen en viernes, así que no afectan.
     
-    Entre Fallas y Pascua, **marzo es el mes más interrumpido del curso**: tenlo en cuenta para
-    planificar entregas.
+    Entre Fallas y Pascua, **marzo es el mes más interrumpido del curso**: tenlo en cuenta para planificar entregas.
 
 ## 📋 Contenidos y temporalización
 
-Las unidades se imparten en este orden. El identificador `UDxx` va ligado a su resultado de
-aprendizaje (UD05 es siempre RA5), no al orden en que se imparte.
+Las unidades se imparten en este orden. El identificador `UDxx` va ligado a su resultado de aprendizaje (UD05 es siempre RA5), no al orden en que se imparte.
 
 <!-- AUTO:unidades inicio -->
 | UD | Título | RA | Horas | Semanas | Fechas |
@@ -44,13 +37,9 @@ aprendizaje (UD05 es siempre RA5), no al orden en que se imparte.
 <!-- AUTO:unidades fin -->
 
 !!! note "Por qué este orden"
-    La UD05 (sistemas expertos) se imparte justo después de la UD02 porque se construye sobre las
-    reglas y la lógica difusa que se ven allí. Y la UD06 (ética) ocupa el tramo de Fallas y Pascua,
-    el más fragmentado del curso, porque es la unidad con menos carga de laboratorio.
+    La UD05 (sistemas expertos) se imparte justo después de la UD02 porque se construye sobre las reglas y la lógica difusa que se ven allí. Y la UD06 (ética) ocupa el tramo de Fallas y Pascua, el más fragmentado del curso, porque es la unidad con menos carga de laboratorio.
 
-    El **contenido del módulo acaba a finales de abril**. Después viene el **proyecto intermodular
-    (RA7)**, común a todo el curso de especialización: durante unas cinco semanas tu equipo trabaja
-    el proyecto en las horas de todos los módulos.
+    El **contenido del módulo acaba a finales de abril**. Después viene el **proyecto intermodular (RA7)**, común a todo el curso de especialización: durante unas cinco semanas tu equipo trabaja el proyecto en las horas de todos los módulos.
 
 ## 🎯 Resultados de aprendizaje, pesos y calificación
 
@@ -71,41 +60,25 @@ Cada RA se califica **1 a 10, sin decimales** (Orden 8/2025, art. 5.1): **40 %**
 
 ## 📝 Evaluación
 
-- 🔍 La evaluación del módulo se realiza sobre los **Resultados de Aprendizaje (RA)** del currículo.
-  Cada RA tiene asociados sus **criterios de evaluación (CE)**, que son los que determinan el grado
-  de adquisición de las competencias del módulo.
-
-- 📊 La nota final del módulo sale de la ponderación de los RA. Cada RA se evalúa de forma
-  independiente, con **calificación de 1 a 10, sin decimales** (Orden 8/2025, art. 5.1).
-
-- 📝 Cada RA tiene **una prueba escrita en Moodle** al cerrar su unidad, con preguntas de test y de
-  desarrollo sobre el contenido de la unidad.
-
+- 🔍 La evaluación del módulo se realiza sobre los **Resultados de Aprendizaje (RA)** del currículo. Cada RA tiene asociados sus **criterios de evaluación (CE)**, que son los que determinan el grado de adquisición de las competencias del módulo.
+  
+- 📊 La nota final del módulo sale de la ponderación de los RA. Cada RA se evalúa de forma independiente, con **calificación de 1 a 10, sin decimales** (Orden 8/2025, art. 5.1).
+  
+- 📝 Cada RA tiene **una prueba escrita en Moodle** al cerrar su unidad, con preguntas de test y de desarrollo sobre el contenido de la unidad.
+  
 - ✅ Hay que obtener al menos un **5 en cada RA** para aprobar el módulo.
 
-- 🔄 Si un RA queda por debajo de 5, se recupera con las actividades y pruebas diseñadas para **ese**
-  resultado de aprendizaje. La convocatoria ordinaria de junio se dirige **solo a los RA no
-  superados**: no hay prueba global del módulo.
-
-- 🐳 La **UD00** (presentación y Docker) **no se califica**: el entorno de trabajo es un requisito.
-  Sus **dos entregas** —los dos talleres— se marcan como **hecho / no hecho**, sin nota pero
-  **obligatorias**: son la prueba de que tienes el entorno operativo, y sin ellos no se pueden hacer
-  las prácticas de la UD02.
-
-- ⏰ **Las entregas fuera de plazo tienen un máximo de 5.** El plazo de cada entrega se cierra en la
-  fecha que indica Moodle. Si necesitas entregar después, **avísame** y te reabro esa tarea concreta
-  un tiempo limitado; en ese caso la nota máxima del trabajo es **5 sobre 10**, y la rúbrica lo
-  recoge de forma explícita. Vale para **todo el curso**, así que no se repite en cada unidad.
-
-- 📁 En cada unidad, **«Práctica» es lo que no se entrega** —ejercicios de autoevaluación y notebooks
-  guiados— y **«Entregas» es lo que sí**. Cada entrega dice en su página con qué se corrige:
-  **rúbrica**, **apto / no apto** o **hecho / no hecho**. El **peso** de cada una está en el libro
-  de calificaciones de Moodle, no en estas páginas.
+- 🔄 Si un RA queda por debajo de 5, se recupera con las actividades y pruebas diseñadas para **ese** resultado de aprendizaje. La convocatoria ordinaria de junio se dirige **solo a los RA no superados**: no hay prueba global del módulo.
+  
+- 🐳 La **UD00** (presentación y Docker) **no se califica**: el entorno de trabajo es un requisito. Sus **dos entregas** —los dos talleres— se marcan como **hecho / no hecho**, sin nota pero **obligatorias**: son la prueba de que tienes el entorno operativo, y sin ellos no se pueden hacer las prácticas de la UD02.
+  
+- ⏰ **Las entregas fuera de plazo tienen un máximo de 5.** El plazo de cada entrega se cierra en la fecha que indica Moodle. Si necesitas entregar después, **avísame** y te reabro esa tarea concreta un tiempo limitado; en ese caso la nota máxima del trabajo es **5 sobre 10**, y la rúbrica lo recoge de forma explícita. Vale para **todo el curso**, así que no se repite en cada unidad.
+  
+- 📁 En cada unidad, **«Práctica» es lo que no se entrega** —ejercicios de autoevaluación y notebooks guiados— y **«Entregas» es lo que sí**. Cada entrega dice en su página con qué se corrige: **rúbrica**, **apto / no apto** o **hecho / no hecho**. El **peso** de cada una está en el libro de calificaciones de Moodle, no en estas páginas. 
 
 !!! warning "Importante"
     - ❗ Aprobar las evaluaciones parciales **no garantiza** aprobar el módulo.
-    - 📌 Puedes aprobar las dos evaluaciones con buena nota, tener **un solo RA suspendido** y
-      suspender el módulo.
+   - 📌 Puedes aprobar las dos evaluaciones con buena nota, tener **un solo RA suspendido** y suspender el módulo.
 
 ## 📜 Legislación vigente
 
