@@ -78,7 +78,7 @@ Cada RA se califica **1 a 10, sin decimales** (Orden 8/2025, art. 5.1): **40 %**
 
 !!! warning "Importante"
     - ❗ Aprobar las evaluaciones parciales **no garantiza** aprobar el módulo.
-   - 📌 Puedes aprobar las dos evaluaciones con buena nota, tener **un solo RA suspendido** y suspender el módulo.
+    - 📌 Puedes aprobar las dos evaluaciones con buena nota, tener **un solo RA suspendido** y suspender el módulo.
 
 ## 📜 Legislación vigente
 
