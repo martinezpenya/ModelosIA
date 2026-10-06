@@ -44,7 +44,7 @@ section {
 ![h:260 center](../assets/cover.png)
 # UD06: Principios legales y éticos de la IA
 #### Modelos de Inteligencia Artificial
-###### version: 2026-08-27
+###### version: 2026-10-06
 ___
 <!-- footer: d.martinezpena@edu.gva.es -->
 <!-- header: Modelos de Inteligencia Artificial 26-27 (UD06_1)-->
@@ -177,11 +177,11 @@ ___
 ___
 ## Los principios comunes
 
-* Beneficencia y no maleficencia
-* Autonomía
-* Justicia
-* Transparencia
-* Rendición de cuentas
+- Beneficencia y no maleficencia
+- Autonomía
+- Justicia
+- Transparencia
+- Rendición de cuentas
 
 > Y «robusta» **también en sentido social**: se puede dañar a terceros con buenas intenciones.
 ___
@@ -190,8 +190,8 @@ ___
 
 Los listados repiten: seguridad, responsabilidad, equidad, privacidad, transparencia, empleo…
 
-* Muchos valen para **cualquier** software
-* Varios son **imposibles de medir**
+- Muchos valen para **cualquier** software
+- Varios son **imposibles de medir**
 
 > **Mittelstadt (2019)**: hacen falta pautas aplicables **por subcampo**. Úsalo en el debate contra la autorregulación.
 ___
@@ -254,10 +254,10 @@ ___
 ___
 ## LOPDGDD: derechos laborales y digitales
 
-* **Desconexión digital**, también en **teletrabajo**
-* **Prohibido** grabar en vestuarios, aseos y comedores
-* Geolocalizadores: hay que **informar antes**
-* **Derecho al olvido** en buscadores y redes
+- **Desconexión digital**, también en **teletrabajo**
+- **Prohibido** grabar en vestuarios, aseos y comedores
+- Geolocalizadores: hay que **informar antes**
+- **Derecho al olvido** en buscadores y redes
 
 > Son derechos con nombre y plazo, no principios genéricos.
 ___
@@ -266,8 +266,8 @@ ___
 
 **Art. 22 RGPD**: derecho a **no ser objeto de decisiones automatizadas** sin intervención humana significativa.
 
-* **ARSULIPO**: acceso, rectificación, supresión, limitación, portabilidad, oposición
-* Sanciones: **20 M €** o el **4 %** de la facturación
+- **ARSULIPO**: acceso, rectificación, supresión, limitación, portabilidad, oposición
+- Sanciones: **20 M €** o el **4 %** de la facturación
 ___
 ## Vigilancia: cambió el coste
 <!-- Varios países han empezado además a exportar esta tecnología de vigilancia a países con menos capacidad técnica propia, algunos con antecedentes de maltrato a sus ciudadanos y de señalamiento de comunidades marginadas. (§5.5 de los apuntes) -->
@@ -299,10 +299,10 @@ ___
 ___
 ## Qué obliga cada nivel
 
-* **Inasumible** → prohibido (art. 5)
-* **Alto riesgo** → gestión de riesgos, datos de calidad, documentación, **supervisión humana**, robustez
-* **Limitado** → **transparencia** (art. 50): decir que es una IA y marcar lo generado
-* **Mínimo** → nada específico
+- **Inasumible** → prohibido (art. 5)
+- **Alto riesgo** → gestión de riesgos, datos de calidad, documentación, **supervisión humana**, robustez
+- **Limitado** → **transparencia** (art. 50): decir que es una IA y marcar lo generado
+- **Mínimo** → nada específico
 ___
 ## El calendario del AI Act
 <!-- Los sistemas de alto riesgo del anexo III entran en vigor el 2 de diciembre de 2027, y los del anexo I el 2 de agosto de 2028. (§6.1 de los apuntes) -->
@@ -318,16 +318,16 @@ ___
 ## ¿Y si el sistema causa un daño?
 <!-- PLD son las siglas de Directiva de Responsabilidad por Productos Defectuosos (2024/2853). AILD son las siglas de Artificial Intelligence Liability Directive, la propuesta específica de responsabilidad civil de la IA que se retiró. El AI Act obliga además a los proveedores de modelos de uso general a publicar resúmenes de los contenidos protegidos usados en el entrenamiento. (§6.2 de los apuntes) -->
 
-* La **PLD revisada (2024/2853)** trata el software de IA como **«producto»**, con responsabilidad **objetiva** del fabricante
-* La **AILD**, específica de IA, **se retiró en 2025**
+- La **PLD revisada (2024/2853)** trata el software de IA como **«producto»**, con responsabilidad **objetiva** del fabricante
+- La **AILD**, específica de IA, **se retiró en 2025**
 
 > La obra generada por IA solo se protege con **control creativo humano**.
 ___
 ## Confianza: verificar y validar
 <!-- (§6.3 de los apuntes) -->
 
-* **Verificar** = cumple la especificación
-* **Validar** = **la especificación es la correcta**
+- **Verificar** = cumple la especificación
+- **Validar** = **la especificación es la correcta**
 
 En IA hay que verificar además los **datos**, la **equidad** y que nadie **influya** en el modelo.
 
@@ -413,10 +413,10 @@ Tenía razón.
 ___
 ## Armas de destrucción masiva escalables
 
-* La escala del ataque depende del **hardware**, no de los operadores
-* Un millón de cuadricópteros caben en un contenedor
-* **Por ser autónomos**, no necesitan un millón de supervisores
-* Dejan la propiedad intacta y pueden usarse **selectivamente**
+- La escala del ataque depende del **hardware**, no de los operadores
+- Un millón de cuadricópteros caben en un contenedor
+- **Por ser autónomos**, no necesitan un millón de supervisores
+- Dejan la propiedad intacta y pueden usarse **selectivamente**
 ___
 ## Y se decide **durante este curso**
 <!-- Los tres votos en contra en la ONU fueron de Bielorrusia, Corea del Norte y Rusia; hubo además 15 abstenciones. (§6.4 de los apuntes) -->
@@ -436,9 +436,9 @@ La seguridad **no se añade al final**: diseño, desarrollo, despliegue y operac
 
 Marcos de referencia:
 
-* **NCSC/CISA** (2023)
-* **NIST AI 100-2e2023**
-* **OWASP ML Top 10** y **GenAI LLM Top 10**
+- **NCSC/CISA** (2023)
+- **NIST AI 100-2e2023**
+- **OWASP ML Top 10** y **GenAI LLM Top 10**
 ___
 ## Los cinco ataques
 <!-- El ejemplo clásico de adversarial example es el panda de Goodfellow (2014), clasificado como gibón con una perturbación imperceptible. El chatbot Tay de Microsoft aprendió lenguaje ofensivo en un solo día por envenenamiento de datos, y la lógica de ChatGPT-3.5-Turbo se llegó a clonar por unos 50 USD mediante extracción por consultas. (§7.2 de los apuntes) -->
@@ -474,9 +474,9 @@ ___
 
 Agentes que maximizan la métrica **sin resolver el problema** (Krakovna, 2018):
 
-* **Pausan la partida** cuando van a perder
-* Al penalizarlo, **agotan la memoria en el turno del rival**
-* Criaturas «rápidas» que salieron **altísimas y se caen**
+- **Pausan la partida** cuando van a perder
+- Al penalizarlo, **agotan la memoria en el turno del rival**
+- Criaturas «rápidas» que salieron **altísimas y se caen**
 ___
 ## El problema del rey Midas
 
@@ -502,16 +502,16 @@ ___
 
 Estrategias de la AEPD:
 
-* **Minimizar** · recoger solo lo necesario
-* **Abstraer** · resumir y agregar
-* **Separar** · datos e identificadores aparte
-* **Ocultar** · seudonimizar y cifrar
+- **Minimizar** · recoger solo lo necesario
+- **Abstraer** · resumir y agregar
+- **Separar** · datos e identificadores aparte
+- **Ocultar** · seudonimizar y cifrar
 ___
 ## Desidentificar no basta
 <!-- El cruce que reidentificó a los usuarios del Premio Netflix lo hicieron los investigadores Narayanan y Shmatikov, en 2006. (§8.2 de los apuntes) -->
 
-* **Sweeney (2000)**: con fecha de nacimiento, sexo y código postal se reidentifica al **87 %** de la población de EE. UU.
-* **Premio Netflix**: reidentificado cruzando **fechas** de valoraciones con IMDb
+- **Sweeney (2000)**: con fecha de nacimiento, sexo y código postal se reidentifica al **87 %** de la población de EE. UU.
+- **Premio Netflix**: reidentificado cruzando **fechas** de valoraciones con IMDb
 
 > Sweeney reidentificó el historial médico **del gobernador de su estado**.
 ___
@@ -537,11 +537,11 @@ ___
 ## De dónde vienen los sesgos
 <!-- Bolukbasi (2016) mostró que los embeddings de lenguaje aprenden asociaciones como hombre:programador :: mujer:ama de casa: el aprendizaje automático no solo refleja los estereotipos de los datos, los amplifica. (§9.1 de los apuntes) -->
 
-* **Datos históricos**: el ML está diseñado **para replicarlos**
-* **Sesgo de selección** y datos faltantes
-* **Objetivos** que minimizan el error **agregado**
-* **Variables proxy**: código postal, ocupación, nombre
-* **El propio equipo**: ves antes lo que te afecta
+- **Datos históricos**: el ML está diseñado **para replicarlos**
+- **Sesgo de selección** y datos faltantes
+- **Objetivos** que minimizan el error **agregado**
+- **Variables proxy**: código postal, ocupación, nombre
+- **El propio equipo**: ves antes lo que te afecta
 ___
 ## Y basta el tamaño de la muestra
 <!-- Las técnicas de sobremuestreo SMOTE y ADASYN mitigan precisamente esta disparidad de tamaño de muestra entre clases minoritarias y mayoritarias. (§9.1 de los apuntes) -->
@@ -669,8 +669,8 @@ ___
 
 Con **`race`** en vez de `sex`, el mismo modelo:
 
-* Igualdad de oportunidades **0,2337** — más del **triple**
-* Tras mitigar, solo baja a **0,0973**, no a 0,0014
+- Igualdad de oportunidades **0,2337** — más del **triple**
+- Tras mitigar, solo baja a **0,0973**, no a 0,0014
 
 > Cinco grupos en vez de dos. **Auditar un solo atributo protegido no es auditar.**
 ___
@@ -700,10 +700,10 @@ ___
 ___
 ## Cómo se juega un debate
 
-* El documental **se ve antes**, en casa
-* Se argumenta **desde el rol**, aunque no lo compartas
-* **2 minutos** por intervención inicial
-* Se atacan **posturas**, nunca personas
+- El documental **se ve antes**, en casa
+- Se argumenta **desde el rol**, aunque no lo compartas
+- **2 minutos** por intervención inicial
+- Se atacan **posturas**, nunca personas
 
 > El objetivo no es ganar: es entender **cómo los intereses condicionan la postura**.
 ___

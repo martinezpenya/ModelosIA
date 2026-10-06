@@ -44,7 +44,7 @@ section {
 ![h:260 center](../assets/cover.png)
 # UD00: Presentación y curso rápido de Docker
 #### Modelos de Inteligencia Artificial
-###### version: 2026-08-27
+###### version: 2026-10-06
 ___
 <!-- footer: d.martinezpena@edu.gva.es -->
 <!-- header: Modelos de Inteligencia Artificial 26-27 (UD00_1)-->
@@ -98,10 +98,10 @@ ___
 
 <!-- Estas reglas proceden de la Orden 8/2025 de la Comunitat Valenciana, modificada por la Orden 5/2026. (§4 de los apuntes) -->
 
-* Cada **RA** se califica de **1 a 10, sin decimales**
-* Nota de cada RA = **40 %** tareas, talleres y ejercicios + **60 %** prueba escrita
-* **Una prueba por RA** en Moodle, al cerrar cada unidad
-* Hace falta **5 o más en CADA RA** para aprobar el módulo
+- Cada **RA** se califica de **1 a 10, sin decimales**
+- Nota de cada RA = **40 %** tareas, talleres y ejercicios + **60 %** prueba escrita
+- **Una prueba por RA** en Moodle, al cerrar cada unidad
+- Hace falta **5 o más en CADA RA** para aprobar el módulo
 
 > Puedes aprobar las dos evaluaciones y suspender el módulo por **un solo RA**.
 ___
@@ -161,19 +161,19 @@ ___
 
 Para **Windows y macOS** es la vía normal; en Linux es opcional.
 
-* Incluye el motor, la interfaz gráfica y Compose
-* En Windows se apoya en **WSL 2**
-* En Linux se instala con el `.deb` oficial
+- Incluye el motor, la interfaz gráfica y Compose
+- En Windows se apoya en **WSL 2**
+- En Linux se instala con el `.deb` oficial
 
 > Comprueba siempre la instalación con `docker run hello-world` antes de seguir.
 ___
 
 ## El problema: «en mi máquina funciona»
 
-* Cada equipo tiene un Python distinto, con versiones distintas de cada biblioteca
-* Un notebook que va en clase **falla en casa**, y al revés
-* Reproducir un resultado ajeno se vuelve imposible
-* En IA esto es más grave: los resultados **no son comparables**
+- Cada equipo tiene un Python distinto, con versiones distintas de cada biblioteca
+- Un notebook que va en clase **falla en casa**, y al revés
+- Reproducir un resultado ajeno se vuelve imposible
+- En IA esto es más grave: los resultados **no son comparables**
 
 > La IA se hace con **entornos reproducibles**.
 ___
@@ -197,9 +197,9 @@ ___
 
 ## Imagen y contenedor
 
-* **Imagen**: la plantilla, inmutable, hecha de **capas**
-* **Contenedor**: una **instancia en ejecución** de esa imagen
-* **Registro** (Docker Hub): donde viven las imágenes
+- **Imagen**: la plantilla, inmutable, hecha de **capas**
+- **Contenedor**: una **instancia en ejecución** de esa imagen
+- **Registro** (Docker Hub): donde viven las imágenes
 
 > Una imagen, muchos contenedores. Como una clase y sus objetos.
 ___
@@ -207,9 +207,9 @@ ___
 ## Las tres piezas de Docker
 <!-- El daemon escucha por defecto en el socket Unix /var/run/docker.sock; pertenecer al grupo docker da permiso de lectura y escritura sobre él, que es justo lo que falta si aparece «permission denied» al ejecutar docker run. -->
 
-* **Cliente** (`docker`): el comando que escribes tú. Solo manda órdenes
-* **Daemon** (`dockerd`): el servicio que las ejecuta — descarga imágenes, crea contenedores
-* **Registro** (Docker Hub): el almacén público de imágenes
+- **Cliente** (`docker`): el comando que escribes tú. Solo manda órdenes
+- **Daemon** (`dockerd`): el servicio que las ejecuta — descarga imágenes, crea contenedores
+- **Registro** (Docker Hub): el almacén público de imágenes
 
 > Tú nunca hablas con el contenedor: hablas con el **daemon**. Sin permiso sobre su *socket*, nada funciona.
 ___
@@ -232,8 +232,8 @@ docker run --rm python:3.9-slim  bash -c "$PRUEBA"   # funciona
 docker run --rm python:3.12-slim bash -c "$PRUEBA"   # falla
 ```
 
-* `collections.Mapping` **desapareció en Python 3.10**
-* Se arregla con **tres líneas** antes del import
+- `collections.Mapping` **desapareció en Python 3.10**
+- Se arregla con **tres líneas** antes del import
 ___
 
 ## Tres lecciones
@@ -269,8 +269,8 @@ Un contenedor es **desechable**: lo que escribes dentro desaparece al borrarlo.
 docker run --rm -v "$PWD":/app -w /app python:3.12 python app.py
 ```
 
-* **bind mount**: una carpeta tuya se ve dentro del contenedor
-* **volumen nombrado**: Docker gestiona el almacenamiento
+- **bind mount**: una carpeta tuya se ve dentro del contenedor
+- **volumen nombrado**: Docker gestiona el almacenamiento
 
 > Tus notebooks viven **en tu equipo**, no dentro del contenedor.
 ___
@@ -328,9 +328,9 @@ ___
 
 <!-- El token JUPYTER_TOKEN se fija para que la URL de acceso sea siempre la misma, en vez de un token aleatorio distinto cada vez que arranca el contenedor. (§10 de los apuntes) -->
 
-* Un `Dockerfile` con **Python 3.12** y las bibliotecas del curso
-* Un `docker-compose.yml` que publica **Jupyter** en el puerto 8888
-* Un volumen para que **tus notebooks** queden en tu equipo
+- Un `Dockerfile` con **Python 3.12** y las bibliotecas del curso
+- Un `docker-compose.yml` que publica **Jupyter** en el puerto 8888
+- Un volumen para que **tus notebooks** queden en tu equipo
 
 ```bash
 docker compose up -d      # y Jupyter en http://localhost:8888
