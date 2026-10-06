@@ -105,6 +105,7 @@ ___
 
 > Puedes aprobar las dos evaluaciones y suspender el módulo por **un solo RA**.
 ___
+<style scoped>section { font-size: 24px; }</style>
 
 ## Obligatoria y no calificable: los cuatro talleres
 
