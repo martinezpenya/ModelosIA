@@ -39,7 +39,7 @@ section {
 ![h:260 center](../assets/cover.png)
 # UD05: Sistemas expertos y controladores inteligentes
 #### Modelos de Inteligencia Artificial
-###### version: 2026-08-27
+###### version: 2026-10-06
 
 ---
 <!-- footer: d.martinezpena@edu.gva.es -->
@@ -400,17 +400,17 @@ class Animales(KnowledgeEngine):
 
 ## «Muy diversos ámbitos»: los notebooks
 
-<!-- Los notebooks N01 a N06 son actividades guiadas que se trabajan en clase y no son evaluables por sí solos: preparan los cinco entregables EX0 a EX4, que sí cuentan en el 40 % de la nota de la unidad. (§6.1 de los apuntes) -->
+<!-- Los notebooks N01 a N06 son actividades guiadas que se trabajan en clase y no son evaluables por sí solos: preparan las entregas N10 a N15, que sí cuentan en el 40 % de la nota de la unidad. (§6.1 de los apuntes) -->
 
 | Notebook | Dominio | Qué simula |
 |---|---|---|
 | `UD05_N01_experta_primeros_pasos` | Introducción | Hechos, reglas, `DefFacts` |
 | `UD05_N02_piedra_papel_tijera` | Juego | Piedra, papel o tijera por reglas |
 | `UD05_N03_clasificacion_animales` | Zoología | El ejemplo anterior, ejecutado |
-| **`EX1` · rodilla** | Medicina | Diagnóstico de una lesión por síntomas |
+| **`N11` · rodilla** | Medicina | Diagnóstico de una lesión por síntomas |
 | `UD05_N04_reglas_desde_datos_titanic` | Datos históricos | Reglas **extraídas** de datos (§4) |
-| **`EX2` · valor de mercado** | Deporte | Híbrido reglas + aprendizaje (§4) |
-| **`EX3` · `EX4`** | Deporte · industria | Lógica difusa y control real (§5, §8) |
+| **`N12` · valor de mercado** | Deporte | Híbrido reglas + aprendizaje (§4) |
+| **`N13` · `N14`** | Deporte · industria | Lógica difusa y control real (§5, §8) |
 
 ---
 
@@ -467,7 +467,7 @@ Un sistema experto puro necesita que **alguien las escriba a mano**. Dos salidas
 
 ---
 
-## `EX2`: los dos enfoques sobre los mismos datos
+## `N12`: los dos enfoques sobre los mismos datos
 <!-- (§7.1 de los apuntes) -->
 
 - Datos de **FIFA 22**, dos caminos a la vez:
@@ -561,7 +561,7 @@ Un sistema basado en reglas que usa lógica difusa:
 
 ## Ejemplo: la propina del restaurante
 
-<!-- Este es el ejemplo canónico de la documentación oficial de scikit-fuzzy, el mismo que resolverás paso a paso con código en el Taller 2. (§8.4 de los apuntes) -->
+<!-- Este es el ejemplo canónico de la documentación oficial de scikit-fuzzy, el mismo que resolverás paso a paso con código en el notebook N05. (§8.4 de los apuntes) -->
 
 Las **entradas**, con funciones triangulares:
 
@@ -607,7 +607,7 @@ Al ejecutarlo con `np.arange(0, 26, 1)` sale **19,85 €**: la diferencia es la 
 
 ## De la propina al quemador de gas
 
-- La estructura es **idéntica** en el Taller 3 y en el entregable `EX4`: entradas difusas, reglas lingüísticas, una salida desfuzzificada.
+- La estructura es **idéntica** en el `N07` (riego) y en la entrega `N14`: entradas difusas, reglas lingüísticas, una salida desfuzzificada.
 - La diferencia: ahí la salida no es una propina, es la **potencia de un actuador real**.
 - Ese es el salto de este bloque al de controladores.
 
@@ -719,7 +719,7 @@ Las especificaciones se escriben **antes** de elegir el controlador.
 
 Es **definir el objetivo** (precisión), **acotar el tiempo**, **limitar el sobreimpulso** y **elegir el controlador** que lo cumpla, verificándolo con una simulación.
 
-Ese es el sentido de los criterios **d** y **e** — y exactamente lo que se pide en `EX4`, con un quemador de gas real en vez de una sala.
+Ese es el sentido de los criterios **d** y **e** — y exactamente lo que se pide en `N14`, con un quemador de gas real en vez de una sala.
 
 ---
 <!-- _class: lead -->
@@ -797,7 +797,7 @@ Es eficaz en sistemas lineales bien modelados — y ahí sigue siendo la opción
 - El PID es **simple, barato y fiable** en sistemas bien modelados.
 - El controlador inteligente aporta cuando hay **no linealidad, retraso o ruido fuerte**.
 - La regla: **empezar simple** y añadir inteligencia solo si se justifica.
-- Es lo que comprobarás en `EX4`, que pide **dos enfoques distintos** para el mismo quemador.
+- Es lo que comprobarás en `N14`, que pide **dos enfoques distintos** para el mismo quemador.
 
 ---
 <style scoped>section { font-size: 25px; }</style>
@@ -916,21 +916,21 @@ Captura la heurística de un operador humano y es **fácil de auditar** — algo
 | Semana | Contenido | CE |
 |---|---|---|
 | 11 | DIKW, arquitectura y dinámica; representación | a |
-| 12 | Taller 1 (`experta`), `EX1`; híbridos y `EX2` | b |
-| 13 | Lógica difusa: Taller 2; variación y dinámica | b, c |
-| 14 | Estrategias de control; controladores; Taller 3 | d |
-| 15 | `EX3`, `EX4`; aplicaciones y tendencias; evaluación | d, e |
+| 12 | `N10` (`experta`); `N11`; híbridos y `N12` | b |
+| 13 | Lógica difusa: `N05` (propinas); variación y dinámica | b, c |
+| 14 | Estrategias de control; controladores; `N08` | d |
+| 15 | `N13`, `N14`; aplicaciones y tendencias; evaluación | d, e |
 
 ---
 <style scoped>section { font-size: 26px; }</style>
 
 ## Cómo se evalúa
 
-<!-- La base legal concreta de esa exigencia es el artículo 5.1 de la Orden 8/2025, que liga la calificación del módulo a la consecución de los RA, junto con las Instrucciones 26-27, que impiden calificar positivamente un módulo con algún RA no superado. De los cinco entregables, EX0 es de libre elección del alumno y premia la originalidad, mientras que EX1 a EX4 tienen un dominio fijo. (§18 de los apuntes) -->
+<!-- La base legal concreta de esa exigencia es el artículo 5.1 de la Orden 8/2025, que liga la calificación del módulo a la consecución de los RA, junto con las Instrucciones 26-27, que impiden calificar positivamente un módulo con algún RA no superado. De las entregas, N15 es de libre elección del alumno y premia la originalidad, mientras que N11 a N14 tienen un dominio fijo; N10 es el taller de experta. (§18 de los apuntes) -->
 
 | Peso | Instrumento |
 |---|---|
-| **40 %** | Media de los **cinco entregables** (`EX0`-`EX4`), cada uno con su rúbrica sobre 10 |
+| **40 %** | Media de las **seis entregas** (`N10`-`N15`), cada una con su rúbrica sobre 10 |
 | **60 %** | Prueba del RA5: test y desarrollo sobre el contenido de la unidad |
 
 La **normativa exige alcanzar todos los RA** del módulo para superarlo; el centro lo concreta en **≥ 5 en cada RA**.

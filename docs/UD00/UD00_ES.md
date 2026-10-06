@@ -461,16 +461,15 @@ verdad en este módulo: `experta`, el motor de reglas de la UD02 y la UD05.
 | Mantenimiento | **abandonado**; fallo abierto como *issue* #34 desde julio de 2023 |
 | Causa | su dependencia `frozendict==1.2` usa `collections.Mapping`, que **desapareció en Python 3.10** |
 
-Monta dos contenedores con **el mismo código** y compara:
+Monta dos contenedores con **el mismo código** y compara. Guardar la prueba en una variable deja
+claro que lo único que cambia entre los dos es la imagen:
 
 ```bash
-# Contenedor A: Python 3.9, experta funciona tal cual
-docker run --rm python:3.9-slim bash -c \
-  "pip install -q experta && python -c 'from experta import KnowledgeEngine; print(1)'"
+# La prueba: instalar experta e importarla
+PRUEBA="pip install -q experta && python -c 'import experta'"
 
-# Contenedor B: Python 3.12, el mismo codigo revienta
-docker run --rm python:3.12-slim bash -c \
-  "pip install -q experta && python -c 'from experta import KnowledgeEngine; print(1)'"
+docker run --rm python:3.9-slim  bash -c "$PRUEBA"   # Contenedor A: funciona tal cual
+docker run --rm python:3.12-slim bash -c "$PRUEBA"   # Contenedor B: el mismo código revienta
 ```
 
 El contenedor B falla con `AttributeError: module 'collections' has no attribute 'Mapping'`, y se
@@ -948,7 +947,7 @@ La unidad son **6 h en dos semanas** (1-8 de octubre), a 3 h por semana.
 | Semana | Fechas | Horas | Contenido | Evidencia |
 |---|---|---|---|---|
 | 1 | 1-2 oct | 3 | Presentación del curso, del módulo y de la evaluación · instalación de Docker · conceptos: imagen, contenedor, registro | Docker funcionando (`docker run hello-world`) |
-| 2 | 5-8 oct | 3 | `docker run` y volúmenes · Dockerfile y Compose · contenedor de prácticas de IA | **Talleres 3 y 4** (hecho / no hecho) y entorno del curso levantado |
+| 2 | 5-8 oct | 3 | `docker run` y volúmenes · Dockerfile y Compose · contenedor de prácticas de IA | **`T03` y `T04`** (hecho / no hecho) y entorno del curso levantado |
 
 !!! note "Si el horario del módulo son 2 h + 1 h"
     Cada semana se parte en dos sesiones. El **bloque de 2 h** es el único que admite trabajo con

@@ -39,7 +39,7 @@ section {
 ![h:260 center](../assets/cover.png)
 # UD04: Análisis de sistemas robotizados
 #### Modelos de Inteligencia Artificial
-###### version: 2026-08-27
+###### version: 2026-10-06
 
 ---
 <!-- footer: d.martinezpena@edu.gva.es -->
@@ -303,7 +303,7 @@ No se elige el robot más caro. Se define **primero la tarea**:
 
 Y **después** se busca el modelo que cumple payload, alcance, repetibilidad y seguridad.
 
-Es el criterio del bloque 9 y del Taller 2.
+Es el criterio del bloque 9 y de `N11`.
 
 ---
 <!-- _class: lead -->
@@ -702,7 +702,7 @@ La tendencia va hacia representaciones con **semántica** —no «aquí hay algo
 
 Aun así, a veces son **demasiado engorrosas** y una solución simple es igual de efectiva.
 
-`EX2` y `EX3` navegan sobre los píxeles de una cámara **sin ningún filtro probabilístico**, y funcionan.
+`N06` y `N07` navegan sobre los píxeles de una cámara **sin ningún filtro probabilístico**, y funcionan.
 
 ---
 
@@ -762,13 +762,13 @@ Falla justo en el paso 2 de Monte Carlo: cuando hay **varias hipótesis igual de
 
 ## De ahí el problema *sim-to-real*
 
-<!-- En ese recorrido, EX4 genera los datos conduciendo el robot, EX5 entrena la red con esos datos y EX6 evoluciona la solución con NEAT sin ejemplos etiquetados. (§9.2 de los apuntes) -->
+<!-- En ese recorrido, N08 genera los datos conduciendo el robot, N09 entrena la red con esos datos y N10 evoluciona la solución con NEAT sin ejemplos etiquetados. (§9.2 de los apuntes) -->
 
 Transferir a un robot real lo aprendido en simulación es un **área de investigación activa**.
 
 Y por eso los sistemas prácticos incorporan **conocimiento previo** del robot, del entorno y de la tarea: es la única forma de aprender rápido **y** comportarse con seguridad mientras aprende.
 
-`EX4`, `EX5` y `EX6` hacen este recorrido en pequeño **y en simulación**, que es donde se puede.
+`N08`, `N09` y `N10` hacen este recorrido en pequeño **y en simulación**, que es donde se puede.
 
 ---
 <!-- _class: lead -->
@@ -827,7 +827,7 @@ Es un matiz legal, y es el que decide si hace falta vallado.
 Un robot con cámara tiene que **seguir una línea** en el suelo. Y el problema se resuelve cuatro veces.
 
 ```text
-EX2 reglas  →  EX3 difusa  →  EX4 datos  →  EX5 red neuronal  →  EX6 NEAT
+N06 reglas  →  N07 difusa  →  N08 datos  →  N09 red neuronal  →  N10 NEAT
 ```
 
 Eso es lo que pide el CE c: **valorar características diferenciadoras**.
@@ -840,10 +840,10 @@ Eso es lo que pide el CE c: **valorar características diferenciadoras**.
 
 | Entregable | Técnica | Qué escribes tú | Qué sale del programa |
 |---|---|---|---|
-| `EX2` | **Reglas** | Todas las condiciones, a mano | Nada: el comportamiento es el que programaste |
-| `EX3` | **Lógica difusa** | Variables lingüísticas y reglas | La transición **suave** entre ellas |
-| `EX5` | **Red neuronal** | Arquitectura y entrenamiento | El comportamiento, aprendido de **tus** ejemplos |
-| `EX6` | **NEAT** | Solo la función de aptitud | La red **y su topología**, sin ejemplos |
+| `N06` | **Reglas** | Todas las condiciones, a mano | Nada: el comportamiento es el que programaste |
+| `N07` | **Lógica difusa** | Variables lingüísticas y reglas | La transición **suave** entre ellas |
+| `N09` | **Red neuronal** | Arquitectura y entrenamiento | El comportamiento, aprendido de **tus** ejemplos |
+| `N10` | **NEAT** | Solo la función de aptitud | La red **y su topología**, sin ejemplos |
 
 ---
 <style scoped>section { font-size: 25px; }</style>
@@ -857,7 +857,7 @@ No es cuál «funciona mejor». Es **qué se gana y qué se pierde**:
 - cuántos datos necesitas,
 - y, lo más importante, **si puedes explicar por qué el robot hizo lo que hizo**.
 
-Las reglas de `EX2` **se leen**. Los pesos de la red de `EX5`, **no**.
+Las reglas de `N06` **se leen**. Los pesos de la red de `N09`, **no**.
 
 Es la tensión entre interpretabilidad y potencia de la UD05 — y en la UD06 se vuelve un problema legal.
 
@@ -1070,10 +1070,10 @@ robot.add_device(bots.Camera(64, 32))
 
 | Semana | Contenido | CE |
 |---|---|---|
-| 15 | Métodos y aplicaciones; hardware; qué problema resuelve la robótica | a |
-| 16 | Cinemática directa e inversa, singularidades; Taller 1 | a, b |
-| 17 | Espacio de configuración y planificación; percepción y SLAM; OpenCV, `EX1`-`EX3` | b, c |
-| 18 | Técnicas comparadas (`EX4`-`EX6`); célula, seguridad y normativa; Taller 2 | c, d |
+| 20 | Métodos y aplicaciones; hardware; qué problema resuelve la robótica | a |
+| 21 | Cinemática directa e inversa, singularidades; `N04` | a, b |
+| 22 | Espacio de configuración y planificación; percepción y SLAM; OpenCV, `N05`-`N07` | b, c |
+| 23 | Técnicas comparadas (`N08`-`N10`); célula, seguridad y normativa; `N11` | c, d |
 
 ---
 <style scoped>section { font-size: 25px; }</style>
@@ -1084,10 +1084,10 @@ robot.add_device(bots.Camera(64, 32))
 
 | Peso | Instrumento |
 |---|---|
-| **40 %** | Media de los **seis entregables** (`EX1`-`EX6`), cada uno con su rúbrica sobre 10 |
+| **40 %** | Media de las **ocho entregas** (`N04`-`N11`): cinco con rúbrica; `N08`, `N10` y `N11`, **apto / no apto** |
 | **60 %** | Prueba del RA4: test y desarrollo sobre el contenido de la unidad |
 
-Los entregables son una **secuencia**: `EX4` genera los datos de `EX5`. No conviene dejarlos para el final ni saltarse el orden.
+Las entregas son una **secuencia**: `N08` genera los datos de `N09`. No conviene dejarlos para el final ni saltarse el orden.
 
 La **normativa exige alcanzar todos los RA**; el centro lo concreta en **≥ 5 en cada uno**.
 

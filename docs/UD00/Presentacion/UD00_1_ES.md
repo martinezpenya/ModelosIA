@@ -106,15 +106,16 @@ ___
 > Puedes aprobar las dos evaluaciones y suspender el módulo por **un solo RA**.
 ___
 
-## Obligatoria y no calificable: los tres entregables
+## Obligatoria y no calificable: los cuatro talleres
 
-Tres entregables, marcados **hecho / no hecho**:
+Cuatro talleres, marcados **hecho / no hecho** (peso 0 en el libro de calificaciones):
 
-1. **Taller 1** · verificación del entorno → memoria en PDF
-2. **Taller 2** · contenedor de prácticas → informe breve
-3. **Notebook** de la unidad → con las respuestas de la actividad
+1. **`T01`** · control de versiones con GitHub → el repositorio
+2. **`T02`** · documentar con Markdown → el documento
+3. **`T03`** · verificación del entorno y primer contenedor → memoria con capturas
+4. **`T04`** · contenedor de prácticas de IA → `Dockerfile` o `docker-compose.yml` y memoria
 
-> Son la prueba de que tu entorno funciona. Sin ellos no se pueden hacer las prácticas de la UD02.
+> Son requisito para las prácticas de la UD02: GitHub y Markdown para Robocode, Docker para el entorno del curso.
 ___
 
 ## El calendario, en un vistazo
@@ -162,7 +163,7 @@ ___
 Para **Windows y macOS** es la vía normal; en Linux es opcional.
 
 - Incluye el motor, la interfaz gráfica y Compose
-- En Windows se apoya en **WSL 2**
+- En Windows se apoya en **WSL 2** · [vídeo de instalación](https://www.youtube.com/watch?v=wMioaU5yk_w)
 - En Linux se instala con el `.deb` oficial
 
 > Comprueba siempre la instalación con `docker run hello-world` antes de seguir.
@@ -369,15 +370,15 @@ ___
 | Semana | Contenido | Evidencia |
 |---|---|---|
 | 1 | Presentación del curso, del módulo y de la evaluación · instalar Docker · imagen, contenedor, registro | Docker funcionando (`docker run hello-world`) |
-| 2 | `docker run` y volúmenes · Dockerfile y Compose · contenedor de prácticas de IA | **Taller 1** y el entorno levantado |
+| 2 | `docker run` y volúmenes · Dockerfile y Compose · contenedor de prácticas de IA | `T01`-`T04` y el entorno levantado |
 
 > Si el horario es 2 h + 1 h, el bloque de **2 h** es el único que admite trabajo con contenedores.
 ___
 
 ## ¿Y ahora?
 
-1. Instala Docker y haz el **Taller 1**
-2. Levanta el entorno con el **Taller 2**
-3. Ejecuta el **notebook** de la unidad y entrégalo
+1. Crea tu repositorio y tu documento Markdown: **`T01`** y **`T02`**
+2. Instala Docker y verifícalo: **`T03`**
+3. Levanta el entorno del curso: **`T04`**
 
 > En la **UD01**: sistemas de IA, dónde se aplican y qué técnicas usan.

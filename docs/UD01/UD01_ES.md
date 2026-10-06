@@ -657,19 +657,19 @@ señala los riesgos (correos ambiguos, privacidad de los datos de los clientes s
 
 | Semana | Horas | Contenido | CE | Evidencia / actividad |
 |---|---|---|---|---|
-| 3 | 3 | Fundamentos; escuelas de pensamiento y clasificaciones (débil/fuerte, Russell-Norvig, Hintze) | RA1-a | Ejercicios bloque A, Notebook 2 |
+| 3 | 3 | Fundamentos; escuelas de pensamiento y clasificaciones (débil/fuerte, Russell-Norvig, Hintze) | RA1-a | Ejercicios bloque A, `N02` |
 | 4 | 3 | Campos de aplicación de la IA | RA1-b | Ejercicios bloque C |
-| 5 | 3 | Técnicas de la IA (ML, PLN, visión, robótica, sistemas expertos) | RA1-c | Ejercicios bloques B y D, Notebook 3 |
-| 6 | 3 | Nuevas interacciones, eficiencia operativa y KPIs; entrega | RA1-d | Ejercicios bloques E y F, Talleres 3 y 4, notebook demo |
+| 5 | 3 | Técnicas de la IA (ML, PLN, visión, robótica, sistemas expertos) | RA1-c | Ejercicios bloques B y D, `N03` |
+| 6 | 3 | Nuevas interacciones, eficiencia operativa y KPIs; entrega | RA1-d | Ejercicios bloques E y F, `N04` y `N05`, notebook demo |
 
 ## 12. Tabla final RA/CE
 
 | CE | Dónde se trabaja | Con qué se evalúa |
 |---|---|---|
-| RA1-a | §3 | Ejercicios bloque A, Notebook 2, Notebook 5, prueba del RA1 |
-| RA1-b | §5 | Ejercicios bloque C, Notebook 2, prueba del RA1 |
-| RA1-c | §4, §6.1 | Ejercicios bloques B y D, Notebook 3, prueba del RA1 |
-| RA1-d | §6 | Ejercicios bloques E y F, Notebook 4, prueba del RA1 |
+| RA1-a | §3 | Ejercicios bloque A, `N02`, `N05`, prueba del RA1 |
+| RA1-b | §5 | Ejercicios bloque C, `N02`, prueba del RA1 |
+| RA1-c | §4, §6.1 | Ejercicios bloques B y D, `N03`, prueba del RA1 |
+| RA1-d | §6 | Ejercicios bloques E y F, `N04`, prueba del RA1 |
 
 ## 13. Recursos
 

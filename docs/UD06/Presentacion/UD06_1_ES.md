@@ -103,7 +103,7 @@ ___
 
 | Peso | Instrumento |
 |---|---|
-| **40 %** | 2 debates, 2 talleres, 1 notebook |
+| **40 %** | 2 debates (`D01`, `D02`) y la auditoría de sesgos (`N03`) |
 | **60 %** | Prueba del RA6 |
 
 Prueba: test y desarrollo sobre el contenido de la unidad.
@@ -638,7 +638,7 @@ Las mujeres solicitaban más los departamentos **más competitivos**.
 > El sesgo estaba **antes del comité**. Si solo mides la métrica global, **no ves nada**.
 ___
 ## Lo que sale al ejecutarlo
-<!-- El conjunto UCI Adult tiene 48.842 filas y predice si una persona gana más de 50.000 dólares al año a partir de datos demográficos y laborales; el ejercicio completo está en el notebook N01 y en el Taller 2, no en los apuntes. -->
+<!-- El conjunto UCI Adult tiene 48.842 filas y predice si una persona gana más de 50.000 dólares al año a partir de datos demográficos y laborales; el ejercicio completo está en los notebooks N01 y N03, no en los apuntes. -->
 
 UCI Adult. Tasas base: **0,1093** mujeres vs **0,3038** hombres.
 
@@ -727,7 +727,7 @@ ___
 |---|---|---|
 | 1 | Riesgos, deontología y principios; el futuro del trabajo. Preparación del debate 1 y **sorteo de roles** | a |
 | 2 | **Debate 1 · Límites éticos de la IA** | a, c |
-| 3 | Normativa como lectura guiada: RGPD, LOPDGDD, AI Act, *security* y *privacy by design*. Taller de sesgos | b, c, d, e |
+| 3 | Normativa como lectura guiada: RGPD, LOPDGDD, AI Act, *security* y *privacy by design*. Auditoría de sesgos (`N03`) | b, c, d, e |
 | 4 | **Debate 2 · El algoritmo contra el crimen**, con COMPAS y Simpson. Cierre | f |
 
 Los documentales se ven **fuera de clase**; la reflexión escrita es trabajo personal.
@@ -735,7 +735,7 @@ ___
 ## ¿Y ahora?
 
 1. Ve el documental del **Debate 1**
-2. Haz los **talleres** y el **notebook**
+2. Haz la **auditoría de sesgos** (`N03`)
 3. Prepara los ejercicios marcados 🗣️
 4. Cambia la restricción en Fairlearn y **mira qué se rompe**
 

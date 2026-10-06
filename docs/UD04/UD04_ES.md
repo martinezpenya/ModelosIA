@@ -1,6 +1,6 @@
 # UD04 — Análisis de sistemas robotizados
 
-!!! info "Unidad 4 · 12 h · semanas 15-18"
+!!! info "Unidad 4 · 12 h · semanas 20-23"
     Cierra el bloque de aplicaciones de la IA. Se evalúa con **seis entregables prácticos** y la
     prueba escrita del RA4.
 
@@ -226,7 +226,7 @@ Para agarrar, el robot usa **pinzas**, y aquí hay un compromiso claro:
 !!! tip "Pensar en «robot + tarea», no en «robot»"
     No se elige el robot más caro: se define primero **la tarea** —qué pieza, qué peso, qué ritmo,
     qué precisión, qué entorno— y después se busca el modelo que cumple payload, alcance,
-    repetibilidad y seguridad. Es el enfoque del §12 y del Notebook 11.
+    repetibilidad y seguridad. Es el enfoque del §12 y de `N11`.
 
 ## 5. Qué clase de problema resuelve la robótica
 
@@ -736,7 +736,7 @@ notebook de OpenCV y en `N05`.
 
 ### 12.3 Ejemplo guiado: elegir el robot y evitar la singularidad
 
-Recorremos el razonamiento que repetirás en el Notebook 11.
+Recorremos el razonamiento que repetirás en `N11`.
 
 **Problema**: una línea de ensamblaje tiene que coger una pieza de 1,5 kg de un transportador y
 colocarla en una estación a 700 mm, con repetibilidad de ±0,1 mm.
@@ -1012,9 +1012,9 @@ world.seconds(30, [mi_controlador], real_time=True)
 | Semana | Horas | Contenido | CE |
 |---|---|---|---|
 | 20 | 3 | Métodos y aplicaciones; hardware, sensores y actuadores; qué problema resuelve la robótica | RA4-a |
-| 21 | 3 | Cinemática directa e inversa, singularidades; Notebook 4 y notebook de cinemática | RA4-a, RA4-b |
+| 21 | 3 | Cinemática directa e inversa, singularidades; `N04` (cinemática de un manipulador) | RA4-a, RA4-b |
 | 22 | 3 | Espacio de configuración y planificación; percepción y SLAM; OpenCV y `N05`; `N06` y `N07` | RA4-b, RA4-c |
-| 23 | 3 | Técnicas de programación comparadas (`N08`-`N10`); diseño de la célula, seguridad y normativa; Notebook 11; evaluación | RA4-c, RA4-d |
+| 23 | 3 | Técnicas de programación comparadas (`N08`-`N10`); diseño de la célula, seguridad y normativa; `N11`; evaluación | RA4-c, RA4-d |
 
 ## 18. Recursos
 
@@ -1052,10 +1052,10 @@ world.seconds(30, [mi_controlador], real_time=True)
 
 | CE | Dónde se trabaja | Con qué se evalúa |
 |---|---|---|
-| RA4-a | §4-6 | Notebook 4, notebook de cinemática, prueba del RA4 |
+| RA4-a | §4-6 | `N04`, prueba del RA4 |
 | RA4-b | §7-9 | `N05`, `N06`, `N07`, prueba del RA4 |
 | RA4-c | §10-11 | `N06` a `N10` comparados, prueba del RA4 |
-| RA4-d | §12 | Notebook 11, `N09`, `N10`, prueba del RA4 |
+| RA4-d | §12 | `N11`, `N09`, `N10`, prueba del RA4 |
 
 ## 20. Recuperación
 

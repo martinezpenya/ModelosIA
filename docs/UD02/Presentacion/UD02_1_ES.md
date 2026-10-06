@@ -39,7 +39,7 @@ section {
 ![h:260 center](../assets/cover.png)
 # UD02: Modelos de IA y resolución de problemas
 #### Modelos de Inteligencia Artificial
-###### version: 2026-08-27
+###### version: 2026-10-06
 
 ---
 <!-- footer: d.martinezpena@edu.gva.es -->
@@ -424,9 +424,9 @@ RPA hace, la IA piensa; la difusa modela vaguedad, las reglas ejecutan reconocer
 
 ## La unidad en la práctica
 
-**5 talleres**: control difuso (`scikit-fuzzy`) · sistema de reglas (`experta`) · preparar el entorno · GitHub · Markdown.
+**4 entregas**: `N01` control difuso (`scikit-fuzzy`) · `N02` sistema de reglas (`experta`) · `T01` preparar el entorno · `T02` Robocode Tank Royale.
 
-**Actividad entregable**: Robocode Tank Royale, del 23 de noviembre al 3 de diciembre.
+**`T02` · Robocode** es la de más peso, del 23 de noviembre al 3 de diciembre. `T01` es **hecho / no hecho**, como los talleres de GitHub y Markdown de la UD00.
 
 ---
 
@@ -436,7 +436,7 @@ RPA hace, la IA piensa; la difusa modela vaguedad, las reglas ejecutan reconocer
 
 | Peso | Instrumento |
 |---|---|
-| 40 % | Talleres + Robocode |
+| 40 % | `T02` Robocode + `N01` y `N02` |
 | 60 % | Prueba escrita del RA2 |
 
 Hace falta un **5 o más** en el RA para superarlo.

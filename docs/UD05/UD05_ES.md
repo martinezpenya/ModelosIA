@@ -2,7 +2,7 @@
 
 !!! info "Unidad 5 · 12 h · semanas 11-15 (7 de diciembre al 14 de enero)"
     Continúa las reglas y la lógica difusa de RA2, justo antes de que la fragmentación de Navidad
-    parta el curso. Se evalúa con **cinco entregables prácticos** y la prueba escrita del RA5.
+    parta el curso. Se evalúa con **seis entregas prácticas** y la prueba escrita del RA5.
 
 ## 1. Introducción
 
@@ -427,7 +427,7 @@ sirven para representar periodos, y las sigmoidales, probabilidades.
 ### 8.4 Ejemplo trabajado: la propina del restaurante
 
 Es el ejemplo canónico de `scikit-fuzzy`, y el que verás resuelto paso a paso en el
-[Notebook 5](notebooks/UD05_N05_logica_difusa_propinas.ipynb).
+[`N05`](notebooks/UD05_N05_logica_difusa_propinas.ipynb).
 
 **Variables de entrada** (funciones triangulares):
 
@@ -455,8 +455,8 @@ notable.
 <img src="assets/plot_tipping_problem_newapi_5.png" alt="Resultado de la inferencia difusa" style="zoom: 45%;" />
 
 !!! tip "De la propina al quemador de gas"
-    Este ejemplo es idéntico en estructura al **Notebook 8** (control de un quemador de gas) y al
-    entregable **N14**: variables de entrada difusas, reglas lingüísticas, una salida
+    Este ejemplo es idéntico en estructura a **`N07`** (control difuso del riego) y a la
+    entrega **`N14`** (quemador de gas): variables de entrada difusas, reglas lingüísticas, una salida
     desfuzzificada. La diferencia es que ahí la salida no es una propina, es la **potencia de un
     actuador real** — es el paso del §8 al §11.
 
@@ -514,7 +514,7 @@ de la variable controlada:
 
 ### 10.3 Ejemplo guiado: definir las especificaciones de un controlador de climatización
 
-Recorremos juntos el razonamiento que repetirás en el Notebook 8, antes de aplicarlo al quemador de
+Recorremos juntos el razonamiento que repetirás en `N08`, antes de aplicarlo al quemador de
 gas real de `N14`.
 
 **Problema**: queremos controlar la temperatura de una sala para que llegue a 21 ºC.
@@ -784,9 +784,9 @@ es **explicable**: se puede consultar qué regla se disparó y por qué.
 | Semana | Horas | Contenido | CE |
 |---|---|---|---|
 | 11 | 3 | DIKW, arquitectura y dinámica; estructuras de representación | RA5-a |
-| 12 | 3 | Notebook 10 (`experta`) + guiadas; `N11`; sistemas híbridos reglas/datos (`N12`) | RA5-b |
-| 13 | 3 | Lógica difusa: Notebook 5 (propinas); variación y dinámica | RA5-b, RA5-c |
-| 14 | 3 | Estrategias de control; controladores inteligentes; Notebook 8 | RA5-d |
+| 12 | 3 | `N10` (`experta`) + guiadas; `N11`; sistemas híbridos reglas/datos (`N12`) | RA5-b |
+| 13 | 3 | Lógica difusa: `N05` (propinas); variación y dinámica | RA5-b, RA5-c |
+| 14 | 3 | Estrategias de control; controladores inteligentes; `N08` | RA5-d |
 | 15 | 3 | `N13`, `N14`; aplicaciones y tendencias; evaluación | RA5-d, RA5-e |
 
 ## 17. Recursos
@@ -798,7 +798,7 @@ es **explicable**: se puede consultar qué regla se disparó y por qué.
       dificultad: `N01`-`N04` reglas, `N05`-`N07` lógica difusa y `N08` control
 - **Entregas** — seis, cada una con su rúbrica; [qué se entrega](UD05_Entregas.md):
     - [N10 · simular un sistema experto](notebooks/UD05_N10_simular_sistema_experto.ipynb)
-    - y los cinco sistemas `N15` a `N14`, en dominios distintos a propósito
+    - y los cinco sistemas `N11` a `N15`, en dominios distintos a propósito
 - Los notebooks se abren desde **Práctica** y **Entregas**, con descarga y apertura en Colab.
 
 ??? note "Referencias de la unidad"
@@ -820,7 +820,7 @@ es **explicable**: se puede consultar qué regla se disparó y por qué.
 
 | Peso | Instrumento |
 |---|---|
-| **40 %** actividades | El taller **N10** y los cinco sistemas **`N15`**-**`N14`**, cada uno con su rúbrica en la tarea de Moodle. Los ocho notebooks guiados son práctica y no puntúan |
+| **40 %** actividades | El taller **N10** y los cinco sistemas **`N11`**-**`N15`**, cada uno con su rúbrica en la tarea de Moodle. Los ocho notebooks guiados son práctica y no puntúan |
 | **60 %** prueba escrita | Prueba del RA5 en Moodle: preguntas de test y de desarrollo sobre el contenido de la unidad |
 
 - **La normativa exige alcanzar todos los RA** del módulo para superarlo (art. 5.1 de la Orden

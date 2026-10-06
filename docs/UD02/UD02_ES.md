@@ -664,8 +664,8 @@ unidad):
 |---|---|---|---|---|
 | 7 | 3 | Requisitos de un SRP; espacio de estados y representación; BFS/DFS/A* | RA2-a | Ejercicios bloque A |
 | 8 | 3 | Clasificación de modelos; automatización de tareas | RA2-b, RA2-c | Ejercicios bloques B y C |
-| 9 | 3 | Lógica difusa (teoría + Notebook 1 scikit-fuzzy) | RA2-d | Notebook 1 |
-| 9-10 | 3 | Sistemas basados en reglas (teoría + Notebook 2 experta); CE f | RA2-e, RA2-f | Notebook 2 |
+| 9 | 3 | Lógica difusa (teoría + `N01` scikit-fuzzy) | RA2-d | `N01` |
+| 9-10 | 3 | Sistemas basados en reglas (teoría + `N02` experta); CE f | RA2-e, RA2-f | `N02` |
 | 9-10 | — | Taller `T01`: preparar el entorno para Robocode (GitHub y Markdown ya se hicieron en la UD00) | — | Taller `T01` |
 | 10 | 3 | Robocode Tank Royale: entrega y evaluación | RA2-a, RA2-f | `T02` Robocode |
 
@@ -676,8 +676,8 @@ unidad):
 | RA2-a | §4 | Ejercicios bloque A, Robocode |
 | RA2-b | §5 | Ejercicios bloque B |
 | RA2-c | §6 | Ejercicios bloque C |
-| RA2-d | §7 | Ejercicios bloque D, Notebook 1 |
-| RA2-e | §8 | Ejercicios bloque E, Notebook 2 |
+| RA2-d | §7 | Ejercicios bloque D, `N01` |
+| RA2-e | §8 | Ejercicios bloque E, `N02` |
 | RA2-f | §9, §10 | Ejercicios bloque F, Robocode |
 
 ## 16. Recursos

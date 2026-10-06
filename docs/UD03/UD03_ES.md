@@ -631,17 +631,20 @@ escalera, no como piezas suextas:
 | `N02` · clasificación con PyTorch | Un clasificador de texto entrenado desde cero | De BoW a *word embeddings* |
 | `N03` · modelos de lenguaje | **Afinar DistilBERT** para sentimiento | *Embeddings* contextuales |
 | `N04` · spaCy | El *pipeline* completo: POS, dependencias, entidades | Modelo preentrenado |
-| `N05` · `nltk` y Python | POS *tagging* con el corpus `cess_esp` y validación cruzada | Etiquetado estadístico |
+| `N06` · representación de texto | Tokenizar, *stopwords*, BoW y tf-idf, **por dos caminos** (NLTK y TextBlob) | Cuenta de palabras |
+| `N07` · `nltk` y Python | POS *tagging* con el corpus `cess_esp` y validación cruzada | Etiquetado estadístico |
 
-Y los cuatro entregables aplican cada nivel a un problema propio:
+`N05`, el clasificador de géneros musicales, es ampliación y no cuenta horas de la unidad.
 
-| Entregable | Tarea | Qué demuestra |
+Y las cinco entregas aplican cada nivel a un problema propio:
+
+| Entrega | Tarea | Qué demuestra |
 |---|---|---|
-| `N06` | Representación de texto: tokenizar, *stopwords*, BoW y tf-idf | Los fundamentos, **por dos caminos** (NLTK y TextBlob) |
+| `N08` | **Del texto al vector**: un clasificador de reseñas con datos anotados por vosotros | Los fundamentos, aplicados a datos propios |
 | `N09` | **Clasificar preguntas** repitiendo el proceso de `N02` | Construir un clasificador propio |
-| `N07` | **Etiquetado morfosintáctico** del corpus `cess_esp` con NLTK | Trabajar con anotación real en español |
 | `N10` | **Afinar DistilBERT** para reseñas de cine | *Transfer learning* a una tarea nueva |
 | `N11` | **Asistente virtual por voz** | Un sistema de punta a punta, con audio |
+| `N12` | **Extractor de entidades** con spaCy, de la tarea a la documentación | La metodología completa del CE g |
 
 !!! example "Ejemplo guiado: un clasificador de reseñas en seis pasos"
     **1 · Tarea**: clasificar una reseña de restaurante como positiva o negativa. **2 · Datos**: 60
@@ -791,8 +794,8 @@ Y los cuatro entregables aplican cada nivel a un problema propio:
 | Semana | Horas | Contenido | CE |
 |---|---|---|---|
 | 16 | 3 | Qué es el PLN, tareas y *pipeline*; el potencial con cifras. `N01` (`nltk`) y `N06` | RA3-a, RA3-c |
-| 17 | 3 | **La ambigüedad en sus seis formas**; desambiguación y POS *tagging*. `N04` (spaCy) y `N05` (`cess_esp`); Notebook 8 | RA3-a, RA3-c |
-| 18 | 3 | Las demás limitaciones; cuándo es factible con la lupa del AI Act. `N02` y `N09`; Notebook 12 | RA3-c, RA3-d, RA3-g |
+| 17 | 3 | **La ambigüedad en sus seis formas**; desambiguación y POS *tagging*. `N04` (spaCy) y `N07` (`cess_esp`); `N08` | RA3-a, RA3-c |
+| 18 | 3 | Las demás limitaciones; cuándo es factible con la lupa del AI Act. `N02` y `N09`; `N12` | RA3-c, RA3-d, RA3-g |
 | 19 | 3 | El lingüista, la cooperación y la formación; sistemas orientados a tarea. `N03`, `N10` y `N11`; evaluación | RA3-b, RA3-e, RA3-f, RA3-g |
 
 !!! note "Sobre el reparto"
@@ -836,13 +839,13 @@ Y los cuatro entregables aplican cada nivel a un problema propio:
 
 | CE | Dónde se trabaja | Con qué se evalúa |
 |---|---|---|
-| RA3-a | §4, §7 | Notebook 8, `N06`, prueba del RA3 |
+| RA3-a | §4, §7 | `N08`, `N06`, prueba del RA3 |
 | RA3-b | §10.1 | **Parte escrita de `N09` y `N11`**, prueba del RA3 |
-| RA3-c | §5-8 | `N06`, `N10`, Talleres 1 y 2, prueba del RA3 |
-| RA3-d | §9 | Notebook 12, prueba del RA3 |
+| RA3-c | §5-8 | `N06`, `N10`, `N08` y `N12`, prueba del RA3 |
+| RA3-d | §9 | `N12`, prueba del RA3 |
 | RA3-e | §10.2 | **Parte escrita de `N09` y `N11`**, prueba del RA3 |
 | RA3-f | §10.3 | **Parte escrita de `N09` y `N11`**, prueba del RA3 |
-| RA3-g | §11-12 | `N09`, `N10`, `N11`, Notebook 12 |
+| RA3-g | §11-12 | `N09`, `N10`, `N11`, `N12` |
 
 ## 19. Recuperación
 
