@@ -201,6 +201,9 @@ su - ${USER}
 # Confirmamos los grupos de nuestro usuario
 id -nG
 ```
+#### Instalación en Windows
+
+https://www.youtube.com/watch?v=wMioaU5yk_w
 
 #### Docker Desktop
 
