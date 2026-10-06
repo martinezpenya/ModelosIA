@@ -356,7 +356,7 @@ systemctl --user start docker-desktop
     `permission denied while trying to connect to the Docker daemon socket`, te falta el paso de
     añadir tu usuario al grupo `docker` **y cerrar y abrir sesión**.
 
-## 6. Curso rápido de Docker: conceptos (RA7-i)
+## 6. Curso rápido de Docker (RA7-i)
 
 ### 6.1 El problema: entornos que no se reproducen
 
@@ -492,9 +492,7 @@ from experta import KnowledgeEngine   # ahora sí
     3. **Se puede convivir con ello**: un parche documentado y versionado, y sigues adelante. Lo que
        no vale es descubrirlo el día de la entrega.
 
-## 7. Curso rápido de Docker: uso básico (RA7-i)
-
-### 7.1 El ciclo de vida de un contenedor
+### 6.6 El ciclo de vida de un contenedor
 
 | Comando | Qué hace |
 |---|---|
@@ -511,7 +509,7 @@ from experta import KnowledgeEngine   # ahora sí
     `docker run` crea un contenedor nuevo; por eso conviene usar `--rm` en los contenedores
     desechables y limpiar con `docker rm` los que ya no se usen.
 
-### 7.2 Flags clave de `docker run`
+### 6.7 Flags clave de `docker run`
 
 | Flag | Significado | Ejemplo |
 |---|---|---|
@@ -522,7 +520,7 @@ from experta import KnowledgeEngine   # ahora sí
 | `--rm` | Elimina el contenedor al terminar | `docker run --rm hello-world` |
 | `--name` | Asigna un nombre al contenedor | `docker run --name mi-python ...` |
 
-### 7.3 Qué ocurre dentro de `docker run`
+### 6.8 Qué ocurre dentro de `docker run`
 
 Cuando ejecutas `docker run`, el demonio hace lo siguiente:
 
@@ -534,7 +532,7 @@ Cuando ejecutas `docker run`, el demonio hace lo siguiente:
 
 <!-- IMAGEN: secuencia visual de `docker run -p 8080:80 nginx`: pull → crear → red → arrancar → navegador -->
 
-### 7.4 Volúmenes y persistencia
+### 6.9 Volúmenes y persistencia
 
 Los contenedores son **efímeros**: al eliminarlos se pierden sus datos. Para conservarlos:
 
@@ -554,9 +552,9 @@ docker run --rm -v "$PWD/practicas":/app -w /app python:3.12 python app.py
     son ficheros reales de tu equipo. Los **volúmenes nombrados** quedan para datos que no necesitas
     tocar desde el host.
 
-## 8. El Dockerfile: construir imágenes reproducibles (RA7-i)
+## 7. El Dockerfile: construir imágenes reproducibles (RA7-i)
 
-### 8.1 Instrucciones esenciales
+### 7.1 Instrucciones esenciales
 
 Un `Dockerfile` es un **guion** que describe cómo construir la imagen. Siempre empieza por `FROM`
 (la imagen base).
@@ -581,7 +579,7 @@ COPY app.py .
 CMD ["python", "app.py"]
 ```
 
-### 8.2 La caché de capas
+### 7.2 La caché de capas
 
 Cada instrucción crea una capa. Docker **reutiliza las capas en caché** mientras las instrucciones
 y su contenido no cambien. Por eso se copia `requirements.txt` **antes** que el código: así las
@@ -593,14 +591,14 @@ dependencias se instalan una vez y se cachean.
     - Unir `apt-get update && apt-get install` en un solo `RUN`.
     - Un **proceso por contenedor** y contenedores **efímeros**.
 
-### 8.3 Construir y ejecutar
+### 7.3 Construir y ejecutar
 
 ```bash
 docker build -t mi-app .       # construye la imagen desde el Dockerfile del directorio actual
 docker run -p 8000:8000 mi-app # ejecuta la imagen publicando el puerto 8000
 ```
 
-### 8.4 Gestionar las imágenes que acumulas
+### 7.4 Gestionar las imágenes que acumulas
 
 Es un instalador donde podemos incorporar nuestra aplicación. Es el punto de inicio para crear contenedores.
 Hay imágenes oficiales de por ejemplo Ubuntu, Apache, etc, que fueron creadas por sus creadores oficiales.
@@ -684,7 +682,7 @@ ubuntu/apache2                   Apache, a secure & extensible open-source HT…
 ...
 ```
 
-## 9. Docker Compose: varios servicios a la vez (RA7-i)
+## 8. Docker Compose: varios servicios a la vez (RA7-i)
 
 Compose orquesta **múltiples contenedores** (p. ej. la aplicación + una base de datos) mediante un
 fichero `compose.yaml`.
@@ -717,7 +715,7 @@ para esperar a que un servicio esté listo).
     `docker compose down -v` elimina también los **volúmenes nombrados**. Úsalo solo cuando quieras
     empezar de cero; tus notebooks se perderían.
 
-## 10. El contenedor de prácticas de IA (RA7-i)
+## 9. El contenedor de prácticas de IA (RA7-i)
 
 El entorno del curso se levantará con la imagen **`jupyter/scipy-notebook`**, que ya incluye
 numpy, scipy, scikit-learn, pandas, matplotlib y otras bibliotecas científicas.
@@ -744,7 +742,7 @@ docker compose down               # cuando termines
 
 Lo pondrás en marcha paso a paso en el **Taller 4** de esta unidad.
 
-### 10.1 Construir la imagen con un Dockerfile propio
+### 9.1 Construir la imagen con un Dockerfile propio
 
 Otra forma de levantar un contenedor con docker-compose es utilizar un Dockerfile para generar la imagen (en lugar de usar una de DockerHub)
 
@@ -832,7 +830,7 @@ Para detener el contenedor que hemos lanzado con `docker-compose`, solo hemos de
     Los ficheros listos para usar están en `entorno/`, junto a esta unidad. Con Python 3.12,
     `experta` necesita el parche del apartado 6.5.
 
-## 11. Copias de seguridad de imágenes y contenedores (RA7-i)
+## 10. Copias de seguridad de imágenes y contenedores (RA7-i)
 
 ### Copias de contenedores
 
@@ -877,7 +875,7 @@ Con el parámetro ‘load’, podemos restaurar copias de seguridad en formato �
 ```bash
 docker load -i fichero.tar
 ```
-## 12. Puntos clave de la unidad
+## 11. Puntos clave de la unidad
 
 - El curso de especialización IA y Big Data dura **600 horas / 36 ECTS** y el módulo 5071 se imparte
   en **90 horas** en la Comunitat Valenciana.
@@ -892,7 +890,7 @@ docker load -i fichero.tar
 - Un `Dockerfile` define la imagen por capas; el **orden de las instrucciones** aprovecha la caché.
 - **Compose** orquesta varios servicios con un solo fichero.
 
-## 13. Glosario
+## 12. Glosario
 
 | Término | Definición |
 |---|---|
@@ -912,7 +910,7 @@ docker load -i fichero.tar
 | **CE (criterio de evaluación)** | Evidencia observable que permite comprobar un RA |
 | **FE (formación en empresa)** | Fase en empresa del alumnado (opcional en este curso, según centro) |
 
-## 14. FAQ
+## 13. FAQ
 
 ??? question "¿Docker es una máquina virtual?"
     No. Las VMs virtualizan **hardware** (cada una con su kernel); los contenedores virtualizan el
@@ -940,7 +938,7 @@ docker load -i fichero.tar
     Docker funciona en Linux, Windows y macOS. En este curso lo usaremos en el aula y para los
     talleres; si tu equipo no lo soporta, el entorno gestionado del aula será el plan B.
 
-## 15. Sesiones
+## 14. Sesiones
 
 La unidad son **6 h en dos semanas** (1-8 de octubre), a 3 h por semana.
 
@@ -1109,7 +1107,7 @@ CONTAINER ID   IMAGE            COMMAND          CREATED          STATUS        
     Sirve para elegir imagen en la fase 4 del Taller 3. Antes de proponer una, comprueba en
     Docker Hub que sigue mantenida: hay imágenes populares con años sin actualizar.
 
-## 16. Recursos
+## 15. Recursos
 
 - [Diapositivas](UD00_Diapositivas.md)
 - **Práctica** — se hace, no se entrega ni puntúa:
@@ -1138,7 +1136,7 @@ CONTAINER ID   IMAGE            COMMAND          CREATED          STATUS        
     - [Orden 8/2025 de la Comunitat Valenciana](https://dogv.gva.es/datos/2025/04/30/pdf/2025_13083_es.pdf) — evaluación
     - [Aules GVA](https://portal.edu.gva.es/aules/) — plataforma del centro
 
-## 17. Evaluación
+## 16. Evaluación
 
 - **Entregas de la unidad**: el informe de los talleres 1 y 2, en Moodle. Se califican **hecho / no
   hecho**; son requisito para las prácticas de la UD02, pero **no puntúan** ni tienen ítem en el
@@ -1149,7 +1147,7 @@ CONTAINER ID   IMAGE            COMMAND          CREATED          STATUS        
   Instrucciones 26-27, que impiden calificar positivamente un módulo con RA no superados). El
   centro concreta ese mandato exigiendo **≥ 5 en cada RA**.
 
-## 18. Recuperación
+## 17. Recuperación
 
 Si no superas la tarea de esta unidad, se activará un **programa de recuperación individual**
 (art. 14.4 Orden 8/2025) con actividades y criterios de evaluación específicos para el RA

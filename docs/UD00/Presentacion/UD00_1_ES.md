@@ -247,7 +247,7 @@ ___
 ___
 
 ## Los comandos que usarás el 90 % del tiempo
-<!-- (§7.1 y §7.2 de los apuntes) -->
+<!-- (§6.6 y §6.7 de los apuntes) -->
 
 ```bash
 docker run -it --name mi-python python:3.12 bash   # crear y entrar
@@ -262,7 +262,7 @@ ___
 
 ## Volúmenes: que los datos sobrevivan
 
-<!-- Los volúmenes nombrados los gestiona Docker en /var/lib/docker/volumes; son la opción recomendada para datos que no necesitas ver desde el host, como cachés o bases de datos. (§7.4 de los apuntes) -->
+<!-- Los volúmenes nombrados los gestiona Docker en /var/lib/docker/volumes; son la opción recomendada para datos que no necesitas ver desde el host, como cachés o bases de datos. (§6.9 de los apuntes) -->
 
 Un contenedor es **desechable**: lo que escribes dentro desaparece al borrarlo.
 
@@ -278,7 +278,7 @@ ___
 
 ## Dockerfile: la receta
 
-<!-- EXPOSE solo documenta el puerto y no lo publica; hace falta -p en docker run o ports en Compose. ENTRYPOINT fija el ejecutable y se puede combinar con CMD para pasarle los argumentos. (§8.1 de los apuntes) -->
+<!-- EXPOSE solo documenta el puerto y no lo publica; hace falta -p en docker run o ports en Compose. ENTRYPOINT fija el ejecutable y se puede combinar con CMD para pasarle los argumentos. (§7.1 de los apuntes) -->
 
 ```dockerfile
 FROM python:3.12-slim
@@ -293,7 +293,7 @@ CMD ["jupyter", "notebook", "--ip=0.0.0.0"]
 ___
 
 ## Lo que se acumula sin darte cuenta
-<!-- (§8.4 de los apuntes) -->
+<!-- (§7.4 de los apuntes) -->
 
 ```bash
 docker images              # ¿cuánto ocupan?
@@ -307,7 +307,7 @@ ___
 
 ## Compose: describir en vez de recordar
 
-<!-- Para ordenar el arranque entre servicios se usa depends_on, normalmente junto con un healthcheck que espera a que el servicio esté realmente listo, mediante la condición service_healthy. (§9 de los apuntes) -->
+<!-- Para ordenar el arranque entre servicios se usa depends_on, normalmente junto con un healthcheck que espera a que el servicio esté realmente listo, mediante la condición service_healthy. (§8 de los apuntes) -->
 
 ```yaml
 services:
@@ -327,7 +327,7 @@ ___
 
 ## Nuestro entorno de prácticas
 
-<!-- El token JUPYTER_TOKEN se fija para que la URL de acceso sea siempre la misma, en vez de un token aleatorio distinto cada vez que arranca el contenedor. (§10 de los apuntes) -->
+<!-- El token JUPYTER_TOKEN se fija para que la URL de acceso sea siempre la misma, en vez de un token aleatorio distinto cada vez que arranca el contenedor. (§9 de los apuntes) -->
 
 - Un `Dockerfile` con **Python 3.12** y las bibliotecas del curso
 - Un `docker-compose.yml` que publica **Jupyter** en el puerto 8888
@@ -339,7 +339,7 @@ docker compose up -d      # y Jupyter en http://localhost:8888
 ___
 
 ## Copias de seguridad
-<!-- (§11 de los apuntes) -->
+<!-- (§10 de los apuntes) -->
 
 | Qué copias | Comandos | Conserva |
 |---|---|---|
@@ -363,7 +363,7 @@ ___
 <style scoped>section { font-size: 26px; }</style>
 
 ## Las dos sesiones
-<!-- (§15 de los apuntes) -->
+<!-- (§14 de los apuntes) -->
 
 **6 h en dos semanas** (1-8 de octubre), a 3 h por semana.
 
