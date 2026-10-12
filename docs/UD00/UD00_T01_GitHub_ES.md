@@ -86,3 +86,5 @@ esta actividad, lo que se evalúa es el proceso, no que te lo acepten. Si se ace
 
 ---
 [Volver a la UD00](UD00_ES.md) · [Ejercicios](UD00_Ejercicios.md) · [Taller 2](UD00_T02_Markdown_ES.md)
+
+Texto agregado para la actividad
