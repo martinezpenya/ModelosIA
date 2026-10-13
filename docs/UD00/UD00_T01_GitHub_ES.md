@@ -76,9 +76,9 @@ esta actividad, lo que se evalúa es el proceso, no que te lo acepten. Si se ace
 
 | Fase | Evidencia mínima |
 |---|---|
-| 1 | Captura de tu perfil de GitHub |
-| 2-4 | Captura del *pull request* creado, con los 4 campos señalados y explicados |
-| 5 | Estado final del *pull request* (aceptado o pendiente; ambos son válidos) |
+| **1** | Captura de tu perfil de GitHub |
+| **2-4** | Captura del *pull request* creado, con los 4 campos señalados y explicados |
+| **5** | Estado final del *pull request* (aceptado o pendiente; ambos son válidos) |
 
 !!! note "Soluciones"
     No aplica: este taller se evalúa por el proceso completado, no hay una única respuesta
