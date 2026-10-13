@@ -22,8 +22,8 @@ después en tu página de perfil (`github.com/tu-usuario`) y haz una captura.
 
 ### Fase 2 — Haz un fork del repositorio
 
-Busca un repositorio con documentación que quieras mejorar (por ejemplo, unos apuntes en los que
-hayas detectado un error) y pulsa el icono de edición:
+Busca un repositorio ajeno con documentación que quieras mejorar
+(por ejemplo, unos apuntes en los que hayas detectado un error) y pulsa el icono de edición:
 
 ![Botón editar](assets/GH_01.png)
 
