@@ -23,7 +23,8 @@ class _SkipWithPdfDisabledWarning(logging.Filter):
     # el build web (sin la variable) avisa de que no genera PDF, y --strict lo convertiría
     # en fallo aunque sea el comportamiento esperado.
     def filter(self, record):
-        return 'without generate PDF' not in record.getMessage()
+        msg = record.getMessage()
+        return 'without generate PDF' not in msg and 'without generating PDF' not in msg
 
 
 logging.getLogger('mkdocs.with-pdf').addFilter(_SkipWithPdfDisabledWarning())
@@ -67,7 +68,7 @@ _PNG_MAX_DIMENSION = 2000  # px; una imagen mas alta o ancha que esto rompe la p
 def _valid_png(data: bytes) -> bool:
     """Descarta PNG corruptos, vacios o desproporcionados antes de insertarlos en el HTML.
 
-    Anadido el 2026-08-24 como defensa general: "returncode == 0" de mmdc no garantiza "imagen
+    Añadido el 2026-08-24 como defensa general: "returncode == 0" de mmdc no garantiza "imagen
     valida", asi que si el PNG esta corrupto, vacio o tiene un tamano fuera de lo razonable para
     un diagrama, se descarta aqui y el diagrama cae al texto plano de respaldo (siempre seguro).
 
@@ -205,6 +206,7 @@ TABLE_ADMONITION_SPACER = '<p class="pdf-spacer">Nota sobre la tabla anterior.</
 # antes de que el plugin los procese: los trata entonces como externos (los deja intactos) y en
 # el PDF quedan clicables hacia la web en vez de ser un ancla muerta.
 ANCHOR_HREF_RE = re.compile(r'(<a\s[^>]*\bhref=")(?!\w+:|#)([^"#]+)(")')
+NOTEBOOK_HREF_RE = re.compile(r'(<a\s[^>]*\bhref=")(?!\w+:|#)([^"]*/notebooks/[^"]*)(")')
 
 
 def _pdf_exclude_patterns(config):

@@ -218,7 +218,6 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
-  - pymdownx.arithmatex
 extra_javascript:
   - js/mathjax-config.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg-full.js
@@ -251,7 +250,7 @@ extra:
 #      y averiguar si encuentras aquello que buscas o cómo has llegado a estos apuntes.
 #      Con tu consentimiento, me ayudas a mejorar estos materiales.
 
-copyright: "© 2025 David Martínez licensed under CC BY-NC-SA 4.0"
+copyright: "© 2025 David Martínez Peña licensed under CC BY-NC-SA 4.0"
 
 plugins:
     - mkdocs-video
@@ -296,7 +295,7 @@ plugins:
         cover_logo: https://martinezpenya.es/ModelosIA/assets/portada.png
         back_cover: true
         #cover_title: TITLE TEXT
-        cover_subtitle: IES Eduardo Primo Marques (Carlet)
+        cover_subtitle: IES Eduardo Primo Marqués (Carlet)
         #custom_template_path: templates
         #
         toc_title: Indice de contenidos

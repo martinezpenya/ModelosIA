@@ -3,6 +3,9 @@ Apuntes para el módulo de Modelos de Inteligencia Artificial del curso de Espec
 
 🏫 [IES Eduardo Primo Marqués](http://www.ieseduardoprimo.es) de Carlet
 
-[🤖 Modelos de Inteligencia Artificial](https://martinezpenya.es/ModelosIA/) © 2025 by  [David Martínez](https://github.com/martinezpenya) is licensed under [CC BY-NC-SA 4.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="img" style="zoom:25%;" /><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="img" style="zoom:25%;" /><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="img" style="zoom:25%;" /><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="img" style="zoom:25%;" />](https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1)
+[🤖 Modelos de Inteligencia Artificial](https://martinezpenya.es/ModelosIA/) © 2025 by [David Martínez](https://github.com/martinezpenya) is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+[![CC BY-NC-SA 4.0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 https://martinezpenya.es/ModelosIA/
+SSS
