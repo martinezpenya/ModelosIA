@@ -43,7 +43,7 @@ Localiza el texto a modificar. En cuanto cambies algo se activa el botón **Comm
 
 ![Botón Commit changes activo](assets/GH_04.png)
 
-Describe brevemente qué has cambiado y pulsa **Propose changes**:
+Describe brevemente qué has cambiado y pulsa **Propose file change**:
 
 ![Propose changes](assets/GH_05.png)
 
