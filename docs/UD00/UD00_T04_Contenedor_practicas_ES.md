@@ -1,9 +1,9 @@
 # UD00 · Taller 4 — Contenedor de prácticas de IA
 
 !!! important "Entrega · hecho / no hecho"
-    Se entrega en Moodle y se califica como **hecho / no hecho**: se registra en el libro de
-    calificaciones con **peso 0** —no puntúa, pero consta— y **es requisito**. Al terminar tendrás el **entorno del curso levantado**, que es
-    el que usarás en el resto de las unidades. Sin él no se pueden hacer las prácticas de la UD02.
+    Se entrega en Aules y se califica como **hecho / no hecho**: se registra en el libro de
+    calificaciones con **peso 0** —no puntúa, pero consta— y **es requisito**. Al terminar
+    tendrás el **entorno del curso levantado**, que es el que usarás en el resto de las unidades. Sin él no se pueden hacer las prácticas de la UD02.
 
 **Objetivo**: levantar un entorno **Jupyter** reproducible con las bibliotecas del curso.
 
@@ -101,9 +101,17 @@ volumes:
   jupyter-work:
 ```
 
-### Entrega
+<!-- AUTO:entrega inicio -->
+## Entrega
 
-Sube a Moodle un **informe breve**, que se marca como **hecho / no hecho**, con:
+Sube a la tarea **T04 · Contenedor de prácticas de IA** de Aules un único fichero **PDF** con:
+
+- la memoria con las evidencias pedidas en el apartado «Entrega» (capturas de las fases 5 y 7, salida de `docker compose ps` y la respuesta razonada).
+
+Aules **solo acepta un PDF** en esta tarea. El plazo acaba a las **23:59** del día que marca la tarea; después la tarea se cierra y ya no admite entregas.
+<!-- AUTO:entrega fin -->
+
+**Qué tiene que verse en la memoria**
 
 1. Captura de la **fase 5 de este taller** (Jupyter abierto con el import correcto).
 2. Salida de `docker compose ps` mostrando el servicio activo.

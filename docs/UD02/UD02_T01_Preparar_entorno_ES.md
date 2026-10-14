@@ -1,9 +1,9 @@
 # UD02 · Taller 1 — Preparar el entorno para Robocode (Java o Python)
 
 !!! important "Entrega · hecho / no hecho"
-    Se entrega en Moodle y se califica como **hecho / no hecho**: se registra en el libro de
-    calificaciones con **peso 0** —no puntúa, pero consta— y **es requisito**. Sin el entorno del lenguaje elegido no se puede hacer
-    [`T02` Robocode](UD02_T02_Robocode_ES.md).
+    Se entrega en Aules y se califica como **hecho / no hecho**: se registra en el libro de
+    calificaciones con **peso 0** —no puntúa, pero consta— y **es requisito**. Sin el entorno
+    del lenguaje elegido no se puede hacer [`T02` Robocode](UD02_T02_Robocode_ES.md).
 
 **Objetivo**: dejar listo el entorno de desarrollo del lenguaje elegido — Java con IntelliJ IDEA o
 Python con VS Code — y comprobarlo con un programa mínimo, antes de instalar la API de Robocode.
@@ -117,9 +117,17 @@ pip install robocode-tank-royale
 
 ![Instalación de la API con pip](assets/terminal_pip_install.png)
 
+<!-- AUTO:entrega inicio -->
 ## Entrega
 
-Un documento PDF con:
+Sube a la tarea **T01 · Preparar el entorno para Robocode** de Aules un único fichero **PDF** con:
+
+- las capturas del entorno funcionando (versión de Java o Python, el editor y la ejecución).
+
+Aules **solo acepta un PDF** en esta tarea. El plazo acaba a las **23:59** del día que marca la tarea; después la tarea se cierra y ya no admite entregas.
+<!-- AUTO:entrega fin -->
+
+**Qué tiene que verse en el PDF**
 
 | Si elegiste | Evidencia mínima |
 |---|---|

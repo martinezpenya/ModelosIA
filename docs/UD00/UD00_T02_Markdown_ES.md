@@ -1,7 +1,7 @@
 # UD00 · Taller 2 — Documentar con Markdown
 
 !!! important "Entrega · hecho / no hecho"
-    Se entrega en Moodle y se califica como **hecho / no hecho**: se registra en el libro de
+    Se entrega en Aules y se califica como **hecho / no hecho**: se registra en el libro de
     calificaciones con **peso 0** —no puntúa, pero consta— y **es requisito**. Más adelante, en la
     UD02, escribirás la memoria de tu bot de
     [Robocode Tank Royale](../UD02/UD02_T02_Robocode_ES.md): se escribe y documenta más rápido si
@@ -116,15 +116,24 @@ Con tu editor favorito, crea un documento Markdown que:
 Exporta el resultado a PDF (la mayoría de editores Markdown lo hacen con un clic, o usa
 `pandoc documento.md -o documento.pdf`).
 
-### Entrega
+<!-- AUTO:entrega inicio -->
+## Entrega
+
+Sube a la tarea **T02 · Documentar con Markdown** de Aules un único fichero **`.zip`** con:
+
+- el documento en Markdown (`.md`);
+- el PDF exportado a partir de ese `.md`.
+
+Aules **solo acepta un `.zip`** en esta tarea: no subas los ficheros sueltos, comprímelos juntos. El plazo acaba a las **23:59** del día que marca la tarea; después la tarea se cierra y ya no admite entregas.
+<!-- AUTO:entrega fin -->
+
+**Qué tiene que verse en los ficheros**
 
 | Fase | Evidencia mínima |
 |---|---|
 | 1-3 | El documento `.md` usa correctamente encabezados, énfasis, listas, tabla, enlace, imagen, cita y bloque de código |
 | 4 | El documento tiene 4 encabezados principales con contenido propio |
 | Extra | Diagrama Mermaid incluido (no obligatorio) |
-
-Sube a Moodle el documento **`.md`** original y su exportación a **`.pdf`**.
 
 !!! note "Soluciones"
     No aplica: es un documento de creación libre, se comenta en clase con ejemplos del alumnado.

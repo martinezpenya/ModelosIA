@@ -1,7 +1,7 @@
 # UD00 · Taller 1 — Control de versiones con GitHub
 
 !!! important "Entrega · hecho / no hecho"
-    Se entrega en Moodle y se califica como **hecho / no hecho**: se registra en el libro de
+    Se entrega en Aules y se califica como **hecho / no hecho**: se registra en el libro de
     calificaciones con **peso 0** —no puntúa, pero consta— y **es requisito**. Más adelante, en la
     UD02, programarás un bot de [Robocode Tank Royale](../UD02/UD02_T02_Robocode_ES.md) y
     entregarás su código: saber moverte en un repositorio es parte de las herramientas del oficio.
@@ -72,7 +72,19 @@ esta actividad, lo que se evalúa es el proceso, no que te lo acepten. Si se ace
 
 ![Pull request aceptado](assets/GH_09.png)
 
-### Entrega
+<!-- AUTO:entrega inicio -->
+## Entrega
+
+Sube a la tarea **T01 · Control de versiones con GitHub** de Aules un único fichero **PDF** con:
+
+- la captura de tu perfil de GitHub;
+- la captura del *pull request* con sus cuatro campos explicados;
+- la captura del estado final del *pull request*.
+
+Aules **solo acepta un PDF** en esta tarea. El plazo acaba a las **23:59** del día que marca la tarea; después la tarea se cierra y ya no admite entregas.
+<!-- AUTO:entrega fin -->
+
+**Qué tiene que verse en el PDF**
 
 | Fase | Evidencia mínima |
 |---|---|

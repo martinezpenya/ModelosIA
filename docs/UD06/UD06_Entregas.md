@@ -3,8 +3,8 @@
 <!-- AUTO:notebooks inicio -->
 !!! important "3 entregas en el RA6"
     Cada una se corrige con **su rúbrica**, que puedes leer antes de empezar en la propia
-    tarea de Moodle. El **peso** de cada entrega está en el libro de calificaciones de
-    Moodle, no aquí. La [práctica de la unidad](UD06_ActividadesGuiadas.md) no se
+    tarea de Aules. El **peso** de cada entrega está en el libro de calificaciones de
+    Aules, no aquí. La [práctica de la unidad](UD06_ActividadesGuiadas.md) no se
     entrega ni puntúa.
 
     Los dos debates son en la **sesión 2** y la **sesión 4**, y la auditoría en la **sesión 3**.
@@ -21,21 +21,28 @@
 
 Medir el sesgo de un modelo real con **Fairlearn**, mitigarlo y **comprobar el precio que se paga** por hacerlo (RA6-f, con conexión a RA6-b y RA6-e).
 
-**Se entrega**: el informe con las métricas antes y después de mitigar, y las seis respuestas.
+**Se entrega** en Aules un único fichero **`.zip`** con:
+
+- el notebook `.ipynb` ejecutado, con la auditoría completa;
+- el informe en PDF (dos o tres páginas) con la tabla de métricas antes y después de mitigar, la salida por grupo y las seis respuestas.
 
 ## `D01` · Límites éticos de la Inteligencia Artificial
 
 Debate por roles a partir de un documental que se ve en casa. Cada alumno defiende un personaje
 asignado, no su propia opinión.
 
-**Se entrega**: la participación en el aula **más** una reflexión escrita de máx. **300 palabras** en Moodle.
+**Se entrega** en Aules un único fichero **PDF** con:
+
+- tu reflexión escrita individual, de **300 palabras como máximo**.
 
 ## `D02` · El algoritmo contra el crimen
 
 Segundo debate, sobre justicia algorítmica y predicción del delito. Misma mecánica y misma
 rúbrica que el primero.
 
-**Se entrega**: la participación en el aula **más** una reflexión escrita de máx. **300 palabras** en Moodle.
+**Se entrega** en Aules un único fichero **PDF** con:
+
+- tu reflexión escrita individual, de **300 palabras como máximo**.
 <!-- AUTO:notebooks fin -->
 
 !!! warning "Los debates no se recuperan repitiéndolos"
@@ -43,8 +50,8 @@ rúbrica que el primero.
     argumentación, participación y empatía. Si faltas a la sesión, esa parte no se puede reproducir
     después. Los otros 30 son la reflexión escrita, que sí se entrega fuera de clase.
 
-!!! info "La rúbrica está en Moodle"
-    La rúbrica de los debates y la auditoría se ve **en la propia tarea de Moodle**, y puedes leerla **antes** de
+!!! info "La rúbrica está en Aules"
+    La rúbrica de los debates y la auditoría se ve **en la propia tarea de Aules**, y puedes leerla **antes** de
     empezar: ahí tienes los criterios, los niveles y lo que puntúa cada uno. No se duplica aquí para
     que no haya dos versiones del mismo dato.
 

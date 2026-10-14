@@ -3,8 +3,8 @@
 <!-- AUTO:notebooks inicio -->
 !!! important "8 entregas en el RA4"
     Cada una se corrige con **su rúbrica**, que puedes leer antes de empezar en la propia
-    tarea de Moodle. El **peso** de cada entrega está en el libro de calificaciones de
-    Moodle, no aquí. La [práctica de la unidad](UD04_ActividadesGuiadas.md) no se
+    tarea de Aules. El **peso** de cada entrega está en el libro de calificaciones de
+    Aules, no aquí. La [práctica de la unidad](UD04_ActividadesGuiadas.md) no se
     entrega ni puntúa.
 
     Tres de las ocho son de **apto / no apto** —`N08`, `N10` y `N11`—: se entregan, pero no se corrigen
@@ -25,7 +25,9 @@
 
 Cargar un robot real —el Panda de Franka o el Puma 560—, calcular su cinemática directa e inversa, generar una trayectoria y detectar singularidades.
 
-**Se entrega**: el notebook con los cálculos, la trayectoria generada y las singularidades encontradas.
+**Se entrega** en Aules un único fichero **`.zip`** con:
+
+- el notebook `.ipynb` ejecutado, con los cálculos, la trayectoria generada y las singularidades encontradas.
 
 ## `N05` · Ejercicios de OpenCV
 
@@ -44,7 +46,9 @@ Tres ejercicios de visión sobre imagen y vídeo: detectar **bordes** y enmarcar
 </figure>
 </div>
 
-**Se entrega**: el notebook con los tres ejercicios resueltos y sus salidas.
+**Se entrega** en Aules un único fichero **`.zip`** con:
+
+- el notebook `.ipynb` ejecutado, con los tres ejercicios resueltos y sus salidas.
 
 ## `N06` · Navegar con cámara
 
@@ -79,7 +83,9 @@ El robot tiene que **seguir una línea** en el suelo usando solo lo que ve su c�
 </figure>
 </div>
 
-**Se entrega**: el notebook con el controlador funcionando en los dos escenarios.
+**Se entrega** en Aules un único fichero **`.zip`** con:
+
+- el notebook `.ipynb` ejecutado, con el controlador funcionando en los dos escenarios.
 
 ## `N07` · Navegar con cámara difusa
 
@@ -89,31 +95,44 @@ El **mismo problema** que `N06`, resuelto con lógica difusa: variables lingüí
 |---|---|
 | Pistas | Las mismas seis de `N06` |
 
-**Se entrega**: el notebook con el sistema difuso completo y el robot navegando en los dos escenarios.
+**Se entrega** en Aules un único fichero **`.zip`** con:
+
+- el notebook `.ipynb` ejecutado, con el sistema difuso completo y el robot navegando en los dos escenarios.
 
 ## `N09` · Controlar el robot con una red neuronal
 
 Lees el `training_data.txt` de `N08`, **construyes y entrenas** una red neuronal con esos ejemplos y la usas para conducir el robot. Tres celdas están vacías a propósito: la arquitectura de la red, el entrenamiento y la función de control.
 
-**Se entrega**: el notebook **y el fichero `.keras` con tu nombre**, con la red ya entrenada. Con ese fichero, la celda de carga permite **probar cómo se comporta tu red sin repetir el entrenamiento** —que es largo—, y es así como se corrige.
+**Se entrega** en Aules un único fichero **`.zip`** con:
+
+- el notebook `.ipynb` ejecutado;
+- el fichero `.keras` con la red ya entrenada, renombrado con tu nombre (por ejemplo `robot_AnaGarcia.keras`).
 
 ## `N08` · Generar datos de entrenamiento
 
 Aquí no se entrena nada todavía: **conduces tú el robot** y el notebook graba lo que ve la cámara junto con lo que tú decidiste hacer. El resultado es un conjunto de ejemplos etiquetados.
 
-**Se entrega**: el notebook **y el fichero `training_data.txt` con tu nombre**. Guárdatelo: es la entrada de `N09`.
+**Se entrega** en Aules un único fichero **`.zip`** con:
+
+- el notebook `.ipynb` ejecutado;
+- el fichero `training_data.txt` que genera, renombrado con tu nombre (por ejemplo `training_data_AnaGarcia.txt`).
 
 ## `N10` · Aprendizaje por refuerzo con NEAT
 
 El mismo control, sin ejemplos. **NEAT** evoluciona a la vez los pesos **y la topología** de la red: tú solo defines qué entra, qué sale y cómo se mide si lo está haciendo bien.
 
-**Se entrega**: el notebook y una **memoria en PDF** con tus pruebas variando `fitness_threshold` y `pop_size`, la justificación de `num_inputs` y `num_outputs`, y una reflexión sobre el aprendizaje por refuerzo. Es de **apto / no apto**: sin la memoria no cuenta como entregado.
+**Se entrega** en Aules un único fichero **`.zip`** con:
+
+- el notebook `.ipynb` ejecutado;
+- la memoria en PDF con tus pruebas variando `fitness_threshold` y `pop_size`, la justificación de `num_inputs` y `num_outputs`, y tu reflexión.
 
 ## `N11` · Diseño de un sistema robotizado
 
 Aplicar los criterios de diseño e implementación (CE d) para proponer un sistema robotizado que resuelva un caso real, justificando la selección y la seguridad.
 
-**Se entrega**: el notebook con las alternativas evaluadas y la propuesta justificada. Es de **apto / no apto**.
+**Se entrega** en Aules un único fichero **`.zip`** con:
+
+- el notebook `.ipynb` ejecutado, con las alternativas evaluadas y la propuesta justificada.
 <!-- AUTO:notebooks fin -->
 
 ---

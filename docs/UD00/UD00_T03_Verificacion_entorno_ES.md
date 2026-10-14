@@ -1,15 +1,12 @@
 # UD00 · Taller 3 — Verificación del entorno y primer contenedor
 
 !!! important "Entrega · hecho / no hecho"
-    Se entrega en Moodle y se califica como **hecho / no hecho**: se registra en el libro de
-    calificaciones con **peso 0** —no puntúa, pero consta— y **es requisito**. Sin el entorno funcionando no se pueden hacer las
-    prácticas de la UD02. Los viernes no hay clase: son el momento de recopilar capturas y redactar
-    la memoria.
+    Se entrega en Aules y se califica como **hecho / no hecho**: se registra en el libro de
+    calificaciones con **peso 0** —no puntúa, pero consta— y **es requisito**. Sin el entorno
+    funcionando no se pueden hacer las prácticas de la UD02. Los viernes no hay clase: son el
+    momento de recopilar capturas y redactar la memoria.
 
 **Objetivo**: dejar Docker funcionando en **tu** máquina y demostrarlo con evidencias.
-
-**Entrega**: una memoria en PDF con las capturas y las explicaciones de las seis fases. Se marca
-como **hecho / no hecho**.
 
 ### Fase 1 — Instala Docker y demuéstralo
 
@@ -117,10 +114,19 @@ docker rm mi-nginx mi-python
 docker ps -a                 # ya no deben aparecer
 ```
 
-### Entrega
+<!-- AUTO:entrega inicio -->
+## Entrega
 
-Recopila las capturas y las explicaciones de las seis fases en **una memoria en PDF**. Se valora
-que expliques lo que ocurre, no solo que pegues pantallazos: una captura sin explicación no
+Sube a la tarea **T03 · Verificación del entorno y primer contenedor** de Aules un único fichero **PDF** con:
+
+- la memoria con las capturas y las justificaciones de las seis fases.
+
+Aules **solo acepta un PDF** en esta tarea. El plazo acaba a las **23:59** del día que marca la tarea; después la tarea se cierra y ya no admite entregas.
+<!-- AUTO:entrega fin -->
+
+**Qué tiene que verse en la memoria**
+
+Se valora que expliques lo que ocurre, no solo que pegues pantallazos: una captura sin explicación no
 demuestra que hayas entendido nada.
 
 | Fase | Evidencia mínima |

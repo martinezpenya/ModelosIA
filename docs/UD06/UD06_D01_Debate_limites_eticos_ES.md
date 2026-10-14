@@ -1,8 +1,8 @@
 # UD06 · Debate 1 — Límites éticos de la Inteligencia Artificial
 
 !!! important "Entrega evaluable"
-    Se entrega en Moodle y se corrige con su **rúbrica**, que puedes leer en la propia tarea
-    antes de empezar. El **peso** de esta entrega está en el libro de calificaciones de Moodle.
+    Se entrega en Aules y se corrige con su **rúbrica**, que puedes leer en la propia tarea
+    antes de empezar. El **peso** de esta entrega está en el libro de calificaciones de Aules.
 
 **Pregunta del debate**: ¿debe usarse la IA en medicina, en la guerra o en política? ¿Y quién decide
 esos límites?
@@ -77,8 +77,8 @@ Ejes por los que va a ir el debate, para que llegues preparado:
 
 ## Cómo se califica
 
-!!! info "La rúbrica está en Moodle"
-    Los criterios con los que se te califica están en la **rúbrica de la tarea de Moodle**, y puedes
+!!! info "La rúbrica está en Aules"
+    Los criterios con los que se te califica están en la **rúbrica de la tarea de Aules**, y puedes
     leerlos antes del debate. No se duplican aquí para que no haya dos versiones del mismo dato.
 
 !!! important "70 de los 100 puntos se juegan en el aula"
@@ -87,7 +87,7 @@ Ejes por los que va a ir el debate, para que llegues preparado:
 
 ## La reflexión escrita
 
-Después del debate, entrega en Moodle un escrito individual de **máximo 300 palabras** sobre qué has
+Después del debate, escribe una reflexión individual de **máximo 300 palabras** sobre qué has
 aprendido al defender una postura ajena. Para guiarlo, responde:
 
 1. ¿Qué te sorprendió de la postura que defendiste?
@@ -98,6 +98,18 @@ aprendido al defender una postura ajena. Para guiarlo, responde:
     Un escrito de 20 puntos es claro pero se queda en describir. Uno de 30 **analiza
     contradicciones**: la del propio rol, la de otro rol que se desdijo, o la tuya al descubrir que
     un argumento que rechazabas tenía más fuerza de la que esperabas.
+
+<!-- AUTO:entrega inicio -->
+## Entrega
+
+Sube a la tarea **D01 · Límites éticos de la IA** de Aules un único fichero **PDF** con:
+
+- tu reflexión escrita individual, de **300 palabras como máximo**.
+
+La participación en el debate de clase también se evalúa.
+
+Aules **solo acepta un PDF** en esta tarea. El plazo acaba a las **23:59** del día que marca la tarea; después la tarea se cierra y ya no admite entregas.
+<!-- AUTO:entrega fin -->
 
 ---
 [Volver a la UD06](UD06_ES.md) · [Debate 2](UD06_D02_Debate_algoritmo_crimen_ES.md) ·
