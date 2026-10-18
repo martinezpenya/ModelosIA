@@ -61,7 +61,7 @@ docker compose ps
 
 Abre en el navegador `http://localhost:8888` y usa el token `cursoia`.
 
-Dentro de Jupyter, crea un notebook en la carpeta `work` y verifica las bibliotecas:
+Dentro de **Jupyter**, crea un notebook en la carpeta `work` y verifica las bibliotecas:
 
 ```python
 import numpy, pandas, matplotlib, sklearn, skfuzzy
@@ -83,7 +83,7 @@ docker compose down                # detiene y elimina
 
 ### Fase 7 — Persistencia (volúmenes nombrados)
 
-Modifica el `docker-compose.yml` para que la carpeta de Jupyter use un **volumen nombrado** y
+Modifica el `docker-compose.yml` para que la carpeta de **Jupyter** use un **volumen nombrado** y
 comprueba que tus notebooks sobreviven a un `down` + `up`:
 
 ```yaml
