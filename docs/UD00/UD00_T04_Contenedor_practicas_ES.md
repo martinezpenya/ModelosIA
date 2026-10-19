@@ -13,12 +13,15 @@
 practicas/
 └── docker/
     ├── docker-compose.yml
-    └── requirements-ia.txt
+    ├── requirements-ia.txt
+    └── notebooks/          ← tus notebooks: créala tú antes de arrancar
 ```
 
 ### Fase 2 — `requirements-ia.txt`
 
 ```text
+# torch en su versión solo CPU: sin las librerías de CUDA, varios GB menos de descarga
+--extra-index-url https://download.pytorch.org/whl/cpu
 numpy
 pandas
 matplotlib
@@ -27,22 +30,31 @@ scikit-fuzzy
 nltk
 spacy
 torch
-experta
 ```
+
+!!! note "¿Y `experta`?"
+    No va en este fichero: exige `frozendict==1.2`, y en esta imagen esa versión rompe el propio
+    `conda`, que necesita la 2.x. Se instala aparte, sin dependencias, en la fase 5 (lo explicamos
+    en el apartado 6.5 de los apuntes).
 
 ### Fase 3 — `docker-compose.yml`
 
 ```yaml
 services:
   jupyter:
-    image: jupyter/scipy-notebook
+    image: quay.io/jupyter/scipy-notebook
     ports:
       - "8888:8888"
     volumes:
-      - ./practicas:/home/jovyan/work
+      - ./notebooks:/home/jovyan/work
+      - ./requirements-ia.txt:/home/jovyan/requirements-ia.txt:ro
     environment:
       - JUPYTER_TOKEN=cursoia
 ```
+
+!!! warning "La imagen está en `quay.io`, no en Docker Hub"
+    Las imágenes `jupyter/*` de Docker Hub dejaron de actualizarse en 2023: el proyecto Jupyter
+    publica ahora en `quay.io/jupyter/…`. Escribe el nombre completo, con el prefijo `quay.io/`.
 
 ### Fase 4 — Verifica la configuración antes de arrancar
 
@@ -61,13 +73,44 @@ docker compose ps
 
 Abre en el navegador `http://localhost:8888` y usa el token `cursoia`.
 
+??? failure "El contenedor se para nada más arrancar (`Exited (1)`)"
+    Mira el motivo con `docker compose logs jupyter`. Si aparece un `tarfile.ReadError: empty file`
+    o cualquier error al leer un fichero de `/opt/conda`, la imagen se descargó mal (descarga
+    interrumpida o disco lleno). El fallo está en la imagen, no en tu `docker-compose.yml`: bórrala
+    y descárgala de nuevo.
+
+    ```bash
+    docker compose down
+    docker image rm quay.io/jupyter/scipy-notebook
+    docker compose pull
+    docker compose up -d
+    ```
+
+La imagen ya trae numpy, pandas, matplotlib y scikit-learn. El resto de bibliotecas del curso se
+instala **dentro del contenedor en marcha**, a partir del `requirements-ia.txt` que el compose
+monta en `/home/jovyan`:
+
+```bash
+docker compose exec jupyter pip install -r requirements-ia.txt
+docker compose exec jupyter pip install --no-deps experta schema
+```
+
+La primera orden tarda unos minutos (torch y spacy pesan). La segunda instala `experta` sin dejar
+que baje `frozendict` a la 1.2.
+
 Dentro de Jupyter, crea un notebook en la carpeta `work` y verifica las bibliotecas:
 
 ```python
 import numpy, pandas, matplotlib, sklearn, skfuzzy
-import nltk, spacy, torch
+import nltk, spacy, torch, experta
 print("Entorno de IA listo:", numpy.__version__)
 ```
+
+!!! warning "Los paquetes viven en el contenedor, no en la imagen"
+    Lo que instalas con `pip install` desaparece con `docker compose down`, porque el siguiente
+    `up` crea un contenedor nuevo a partir de la imagen. Tus notebooks no se pierden (están en
+    `notebooks/`), pero tras cada `down` hay que repetir las dos órdenes de `pip install`. `stop` y
+    `start` no borran el contenedor y conservan lo instalado.
 
 !!! tip "Nota para spacy"
     Algunos modelos de `spacy` se descargan aparte (`python -m spacy download es_core_news_sm`).
@@ -78,7 +121,9 @@ print("Entorno de IA listo:", numpy.__version__)
 ```bash
 docker compose logs -f jupyter     # sigue los logs (Ctrl+C para salir)
 docker compose exec jupyter bash   # entra dentro del contenedor en marcha
-docker compose down                # detiene y elimina
+docker compose stop                # lo detiene sin borrarlo (conserva lo instalado)
+docker compose start               # lo vuelve a arrancar
+docker compose down                # detiene y elimina (hay que reinstalar los paquetes)
 ```
 
 ### Fase 7 — Persistencia (volúmenes nombrados)
@@ -89,11 +134,12 @@ comprueba que tus notebooks sobreviven a un `down` + `up`:
 ```yaml
 services:
   jupyter:
-    image: jupyter/scipy-notebook
+    image: quay.io/jupyter/scipy-notebook
     ports:
       - "8888:8888"
     volumes:
       - jupyter-work:/home/jovyan/work
+      - ./requirements-ia.txt:/home/jovyan/requirements-ia.txt:ro
     environment:
       - JUPYTER_TOKEN=cursoia
 

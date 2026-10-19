@@ -548,7 +548,7 @@ docker run --rm -v "$PWD/practicas":/app -w /app python:3.12 python app.py
 ```
 
 !!! tip "Bind mount vs volumen"
-    Para **notebooks y código** del curso usa un **bind mount** (`-v ./practicas:/home/jovyan/work`):
+    Para **notebooks y código** del curso usa un **bind mount** (`-v ./notebooks:/home/jovyan/work`):
     son ficheros reales de tu equipo. Los **volúmenes nombrados** quedan para datos que no necesitas
     tocar desde el host.
 
@@ -690,11 +690,11 @@ fichero `compose.yaml`.
 ```yaml
 services:
   jupyter:
-    image: jupyter/scipy-notebook
+    image: quay.io/jupyter/scipy-notebook
     ports:
       - "8888:8888"
     volumes:
-      - ./practicas:/home/jovyan/work
+      - ./notebooks:/home/jovyan/work
     environment:
       - JUPYTER_TOKEN=cursoia
 ```
@@ -717,8 +717,10 @@ para esperar a que un servicio esté listo).
 
 ## 9. El contenedor de prácticas de IA (RA7-i)
 
-El entorno del curso se levantará con la imagen **`jupyter/scipy-notebook`**, que ya incluye
-numpy, scipy, scikit-learn, pandas, matplotlib y otras bibliotecas científicas.
+El entorno del curso se levantará con la imagen **`quay.io/jupyter/scipy-notebook`**, que ya
+incluye numpy, scipy, scikit-learn, pandas, matplotlib y otras bibliotecas científicas. Se descarga
+de `quay.io`, el registro actual del proyecto Jupyter: las imágenes `jupyter/*` de Docker Hub están
+congeladas desde 2023.
 
 !!! tip "¿Por qué `python:3.12-slim` y no Alpine?"
     La variante `-slim` usa **Debian (glibc)**; la `-alpine` usa **musl libc**. Bibliotecas como
