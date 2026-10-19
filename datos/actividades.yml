@@ -38,10 +38,11 @@ UD00:
     **peso 0** — no puntúan, pero constan.
   _pagina_practica: UD00_ActividadesGuiadas.md
   UD00_N01_entorno_python_ia.ipynb:
-    que_es: Comprobación del entorno · `numpy`, `pandas`, `matplotlib`
-    resumen: Repaso rápido de `numpy`, `pandas` y `matplotlib` dentro del contenedor que has montado en
-      los talleres de Docker de la unidad. Si este notebook se ejecuta de arriba abajo sin errores, el
-      entorno está listo para todo el módulo.
+    que_es: Comprobación del entorno del taller 4 · instala y prueba las bibliotecas
+    resumen: El notebook con el que se comprueba el contenedor del taller 4. Su primera celda instala
+      las bibliotecas del curso que no trae la imagen, y después hace un repaso rápido de `numpy`,
+      `pandas` y `matplotlib`. Si se ejecuta de arriba abajo sin errores, el entorno está listo para
+      todo el módulo.
   UD00_T01_GitHub_ES.md:
     que_es: Puesta a punto · control de versiones
     resumen: |-

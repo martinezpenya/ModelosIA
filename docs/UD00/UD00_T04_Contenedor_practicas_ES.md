@@ -34,8 +34,8 @@ torch
 
 !!! note "¿Y `experta`?"
     No va en este fichero: exige `frozendict==1.2`, y en esta imagen esa versión rompe el propio
-    `conda`, que necesita la 2.x. Se instala aparte, sin dependencias, en la primera celda del notebook (fase 5) (lo explicamos
-    en el apartado 6.5 de los apuntes).
+    `conda`, que necesita la 2.x. Se instala aparte, sin dependencias, en la primera celda de código
+    del notebook `N01` (fase 5). El porqué está en el apartado 6.5 de los apuntes.
 
 ### Fase 3 — `docker-compose.yml`
 
@@ -86,33 +86,37 @@ Abre en el navegador `http://localhost:8888` y usa el token `cursoia`.
     docker compose up -d
     ```
 
-Dentro de Jupyter, crea un notebook en la carpeta `work`. La imagen ya trae numpy, pandas,
-matplotlib y scikit-learn; el resto de bibliotecas del curso las instala la **primera celda**, a
-partir del `requirements-ia.txt` que el compose monta en `/home/jovyan` (un nivel por encima de
-`work`):
+Para comprobar el entorno usa el notebook
+[`N01` · Bienvenida al entorno Python para IA](notebooks/UD00_N01_entorno_python_ia.ipynb):
+descárgalo en tu carpeta `notebooks/` y ábrelo desde la carpeta `work` de Jupyter. No se entrega,
+pero es el que demuestra que el entorno funciona.
+
+La imagen ya trae numpy, pandas, matplotlib y scikit-learn; el resto de bibliotecas del curso las
+instala su **primera celda de código**, a partir del `requirements-ia.txt` que el compose monta en
+`/home/jovyan` (un nivel por encima de `work`):
 
 ```python
-%pip install -q -r ../requirements-ia.txt
-%pip install -q --no-deps experta schema
+import os
+
+if os.path.exists("../requirements-ia.txt"):   # contenedor del taller 4
+    %pip install -q -r ../requirements-ia.txt
+else:                                          # Colab u otro entorno
+    %pip install -q scikit-fuzzy nltk spacy torch
+%pip install -q --no-deps experta schema frozendict
 ```
 
 La primera vez tarda unos minutos (torch y spacy pesan); si ya están instaladas, pip lo comprueba
-en unos segundos. La segunda línea instala `experta` sin dejar que baje `frozendict` a la 1.2.
+en unos segundos. La última línea instala `experta` sin dejar que baje `frozendict` a la 1.2.
 El aviso *«you may need to restart the kernel»* solo importa si alguna biblioteca ya estaba
 importada antes de instalarla; en ese caso, *Kernel → Restart Kernel* y sigue.
 
-En la siguiente celda, verifica las bibliotecas:
-
-```python
-import numpy, pandas, matplotlib, sklearn, skfuzzy
-import nltk, spacy, torch, experta
-print("Entorno de IA listo:", numpy.__version__)
-```
+La celda siguiente importa todas las bibliotecas y muestra sus versiones: si no da ningún error,
+el entorno está listo.
 
 !!! warning "Los paquetes viven en el contenedor, no en la imagen"
     Lo que instala `%pip` desaparece con `docker compose down`, porque el siguiente `up` crea un
     contenedor nuevo a partir de la imagen. Tus notebooks no se pierden (están en `notebooks/`):
-    basta con volver a ejecutar la primera celda. `stop` y `start` no borran el contenedor y
+    basta con volver a ejecutar la celda de instalación del `N01`. `stop` y `start` no borran el contenedor y
     conservan lo instalado.
 
 !!! tip "Nota para spacy"
