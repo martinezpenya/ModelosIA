@@ -3,8 +3,8 @@
 <!-- AUTO:notebooks inicio -->
 !!! important "4 entregas en el RA2"
     Cada una se corrige con **su rúbrica**, que puedes leer antes de empezar en la propia
-    tarea de Moodle. El **peso** de cada entrega está en el libro de calificaciones de
-    Moodle, no aquí. Los [ejercicios de autoevaluación](UD02_Ejercicios.md) son
+    tarea de Aules. El **peso** de cada entrega está en el libro de calificaciones de
+    Aules, no aquí. Los [ejercicios de autoevaluación](UD02_Ejercicios.md) son
     práctica y no se entregan.
 
     **Robocode (`T02`) pesa mucho más que las otras dos**: son dos semanas con bot y memoria, mientras
@@ -23,27 +23,36 @@
 
 Construir un sistema de control difuso tipo Mamdani que decida la **velocidad de un ventilador** según la temperatura y la humedad de una sala, recorriendo las tres fases del razonamiento impreciso.
 
-**Se entrega**: el notebook con el controlador funcionando y las figuras de las funciones de pertenencia.
+**Se entrega** en Aules un único fichero **`.zip`** con:
+
+- el notebook `.ipynb` ejecutado, con el controlador funcionando y las figuras de las funciones de pertenencia.
 
 ## `N02` · Sistema basado en reglas con experta
 
 Implementar un **mini sistema experto de diagnóstico** de un PC que no arranca y comprobar en código el ciclo reconocer-actuar de un sistema basado en reglas (RA2-e).
 
-**Se entrega**: el notebook con el sistema resolviendo los casos de prueba.
+**Se entrega** en Aules un único fichero **`.zip`** con:
+
+- el notebook `.ipynb` ejecutado, con el sistema resolviendo los casos de prueba y las respuestas escritas dentro.
 
 ## `T01` · Preparar el entorno para Robocode (Java o Python)
 
 Dejar listo el entorno de desarrollo del lenguaje elegido —Java con IntelliJ IDEA o Python con
 VS Code— para poder programar el bot de `T02`.
 
-**Se entrega**: las capturas del entorno funcionando.
+**Se entrega** en Aules un único fichero **PDF** con:
+
+- las capturas del entorno funcionando (versión de Java o Python, el editor y la ejecución).
 
 ## `T02` · Robocode Tank Royale
 
 Programar un bot de Robocode Tank Royale y enfrentarlo a los de referencia y a los de la clase.
 Es donde los cinco requisitos del §4.1 y la elección de modelo del §9 dejan de ser teoría.
 
-**Se entrega**: el código del bot y su memoria.
+**Se entrega** en Aules un único fichero **`.zip`** con:
+
+- el código fuente del bot con los ficheros que pide el enunciado (`.java` o `.py`, `.json`, `.cmd` y `.sh`);
+- la memoria justificativa en PDF.
 <!-- AUTO:notebooks fin -->
 
 ---

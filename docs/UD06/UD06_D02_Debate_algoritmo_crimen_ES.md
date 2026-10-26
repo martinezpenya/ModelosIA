@@ -1,8 +1,8 @@
 # UD06 · Debate 2 — El algoritmo contra el crimen
 
 !!! important "Entrega evaluable"
-    Se entrega en Moodle y se corrige con su **rúbrica**, que puedes leer en la propia tarea
-    antes de empezar. El **peso** de esta entrega está en el libro de calificaciones de Moodle.
+    Se entrega en Aules y se corrige con su **rúbrica**, que puedes leer en la propia tarea
+    antes de empezar. El **peso** de esta entrega está en el libro de calificaciones de Aules.
 
 **Pregunta del debate**: ¿un sistema judicial en el que un algoritmo decida penas sería **más justo o
 más peligroso**?
@@ -82,8 +82,8 @@ las preguntas incómodas en la fase 6. Se califica con la misma rúbrica.
 
 ## Cómo se califica
 
-!!! info "La rúbrica está en Moodle"
-    Los criterios con los que se te califica están en la **rúbrica de la tarea de Moodle**, y puedes
+!!! info "La rúbrica está en Aules"
+    Los criterios con los que se te califica están en la **rúbrica de la tarea de Aules**, y puedes
     leerlos antes del debate. No se duplican aquí para que no haya dos versiones del mismo dato.
 
 !!! important "70 de los 100 puntos se juegan en el aula"
@@ -91,12 +91,24 @@ las preguntas incómodas en la fase 6. Se califica con la misma rúbrica.
 
 ## La reflexión escrita
 
-Escrito individual en Moodle, **máximo 300 palabras**, sobre qué has aprendido al defender una
+Reflexión individual de **máximo 300 palabras** sobre qué has aprendido al defender una
 postura ajena:
 
 1. ¿Qué te sorprendió de la postura que defendiste?
 2. ¿Cómo influyen los intereses del rol en la percepción de la IA?
 3. ¿Cambiaste tu opinión sobre la justicia algorítmica?
+
+<!-- AUTO:entrega inicio -->
+## Entrega
+
+Sube a la tarea **D02 · El algoritmo contra el crimen** de Aules un único fichero **PDF** con:
+
+- tu reflexión escrita individual, de **300 palabras como máximo**.
+
+La participación en el debate de clase también se evalúa.
+
+Aules **solo acepta un PDF** en esta tarea. El plazo acaba a las **23:59** del día que marca la tarea; después la tarea se cierra y ya no admite entregas.
+<!-- AUTO:entrega fin -->
 
 ---
 [Volver a la UD06](UD06_ES.md) · [Debate 1](UD06_D01_Debate_limites_eticos_ES.md) ·

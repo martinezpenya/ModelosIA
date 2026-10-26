@@ -9,11 +9,11 @@
 
 | Actividad | Qué es | Descargar | Abrir en Colab |
 |---|---|---|---|
-| [`N01` · Bienvenida al entorno Python para IA](notebooks/UD00_N01_entorno_python_ia.ipynb) | Comprobación del entorno · `numpy`, `pandas`, `matplotlib` | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD00/notebooks/UD00_N01_entorno_python_ia.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD00/notebooks/UD00_N01_entorno_python_ia.ipynb){:target="_blank"} |
+| [`N01` · Bienvenida al entorno Python para IA](notebooks/UD00_N01_entorno_python_ia.ipynb) | Comprobación del entorno del taller 4 · instala y prueba las bibliotecas | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD00/notebooks/UD00_N01_entorno_python_ia.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD00/notebooks/UD00_N01_entorno_python_ia.ipynb){:target="_blank"} |
 
 ## `N01` · Bienvenida al entorno Python para IA
 
-Repaso rápido de `numpy`, `pandas` y `matplotlib` dentro del contenedor que has montado en los talleres de Docker de la unidad. Si este notebook se ejecuta de arriba abajo sin errores, el entorno está listo para todo el módulo.
+El notebook con el que se comprueba el contenedor del taller 4. Su primera celda instala las bibliotecas del curso que no trae la imagen, y después hace un repaso rápido de `numpy`, `pandas` y `matplotlib`. Si se ejecuta de arriba abajo sin errores, el entorno está listo para todo el módulo.
 <!-- AUTO:notebooks fin -->
 
 ---

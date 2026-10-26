@@ -1,13 +1,13 @@
 # UD02 · Taller 2 — Robocode Tank Royale
 
 !!! important "Cierre de la unidad"
-    Robocode es la práctica de cierre del RA2, del **23 de noviembre al 3 de diciembre**. Cuenta
+    Robocode es la práctica de cierre del RA2, y se entrega **hasta el 14 de diciembre**. Cuenta
     dentro de las entregas de la unidad, y es **la más importante de las tres**: `N01` y `N02` son
     talleres cortos y sus técnicas se vuelven a evaluar en el RA5, mientras que aquí construyes un
     bot que compite y escribes su memoria. Los talleres `UD02 T01` (preparar el entorno) y
     `UD00 T01`-`T02` (GitHub y Markdown) se entregan y se califican **hecho / no hecho**: son
     requisito, pero no puntúan. El peso exacto de cada entrega está en el libro de calificaciones de
-    Moodle.
+    Aules.
 
 ## Introducción
 
@@ -77,15 +77,24 @@ todo el alumnado.
 - No se permite llamar a métodos prohibidos ni ganar por azar: **hay que demostrar IA**
 - Los combates se graban y se devuelven como feedback
 
-!!! info "La rúbrica está en Moodle"
-    La rúbrica de Robocode se ve **en la propia tarea de Moodle**, y puedes leerla **antes** de
+!!! info "La rúbrica está en Aules"
+    La rúbrica de Robocode se ve **en la propia tarea de Aules**, y puedes leerla **antes** de
     empezar: ahí tienes los criterios, los niveles y lo que puntúa cada uno. No se duplica aquí para
     que no haya dos versiones del mismo dato.
 
+<!-- AUTO:entrega inicio -->
 ## Entrega
 
-A través de Moodle, un archivo **ZIP** que contenga el código fuente de tu bot (nombre: tu nombre
-más los 4 últimos dígitos de tu DNI/NIE, sin letras) y la memoria justificativa en PDF.
+Sube a la tarea **T02 · Robocode Tank Royale** de Aules un único fichero **`.zip`** con:
+
+- el código fuente del bot con los ficheros que pide el enunciado (`.java` o `.py`, `.json`, `.cmd` y `.sh`);
+- la memoria justificativa en PDF.
+
+Aules **solo acepta un `.zip`** en esta tarea: no subas los ficheros sueltos, comprímelos juntos. El plazo acaba a las **23:59** del día que marca la tarea; después la tarea se cierra y ya no admite entregas.
+<!-- AUTO:entrega fin -->
+
+**Los ficheros del bot** se llaman con tu nombre más los 4 últimos dígitos de tu DNI/NIE, sin
+letras:
 
 - `TuNombreNNNN.java` (Java) o `TuNombreNNNN.py` (Python) — clase del bot
 - `TuNombreNNNN.json` — información del autor

@@ -3,8 +3,8 @@
 <!-- AUTO:notebooks inicio -->
 !!! important "6 entregas en el RA5"
     Cada una se corrige con **su rúbrica**, que puedes leer antes de empezar en la propia
-    tarea de Moodle. El **peso** de cada entrega está en el libro de calificaciones de
-    Moodle, no aquí. La [práctica de la unidad](UD05_ActividadesGuiadas.md) no se
+    tarea de Aules. El **peso** de cada entrega está en el libro de calificaciones de
+    Aules, no aquí. La [práctica de la unidad](UD05_ActividadesGuiadas.md) no se
     entrega ni puntúa.
 
     Los dominios distintos son a propósito: el criterio RA5-b pide representar y simular sistemas «de
@@ -23,37 +23,50 @@
 
 Construir un sistema experto que **diagnostique** un problema y compararlo con uno de **clasificación**, para ver que un mismo motor simula comportamientos de ámbitos distintos (CE b).
 
-**Se entrega**: el notebook con los dos sistemas funcionando y la comparación entre ambos.
+**Se entrega** en Aules un único fichero **`.zip`** con:
+
+- el notebook `.ipynb` ejecutado, con los dos sistemas funcionando y la comparación entre ambos.
 
 ## `N11` · Detectar lesiones de rodilla
 
 Sistema experto de **diagnóstico médico**: a partir de los síntomas, distinguir entre las lesiones de rodilla más comunes —ligamento cruzado, menisco, esguince—.
 
-**Se entrega**: el notebook con el sistema resolviendo los casos de prueba y las reglas justificadas.
+**Se entrega** en Aules un único fichero **`.zip`** con:
+
+- el notebook `.ipynb` ejecutado, con el sistema resolviendo los casos de prueba y las reglas justificadas.
 
 ## `N12` · Previsión del valor de mercado de jugadores
 
 Sistema **híbrido**: reglas escritas a mano sobre la salida de un modelo de aprendizaje automático, para prever el valor de mercado de jugadores emergentes (§7).
 
-**Se entrega**: el notebook con el sistema híbrido funcionando sobre los datos del FIFA 22.
+**Se entrega** en Aules un único fichero **`.zip`** con:
+
+- el notebook `.ipynb` ejecutado, con el sistema híbrido funcionando sobre los datos del FIFA 22.
 
 ## `N13` · Centrocampistas jóvenes con potencial
 
 Sistema experto con **lógica difusa** para detectar centrocampistas jóvenes con buen potencial, partiendo del trabajo publicado de Luka Radovanović (§8).
 
-**Se entrega**: el notebook con las variables difusas, las reglas y los jugadores detectados.
+**Se entrega** en Aules un único fichero **`.zip`** con:
+
+- el notebook `.ipynb` ejecutado, con las variables difusas, las reglas, los jugadores detectados y las mejoras añadidas.
 
 ## `N14` · Simulador de quemador de gas
 
 **Control de un proceso industrial**: un quemador con sensor de temperatura y un actuador que regula el gas, con el objetivo de mantener la consigna (§10-11).
 
-**Se entrega**: el notebook con el controlador y la respuesta del sistema medida.
+**Se entrega** en Aules un único fichero **`.zip`** con:
+
+- el notebook `.ipynb` ejecutado, con el controlador y la respuesta del sistema medida.
 
 ## `N15` · Sistema experto de libre elección
 
 Un sistema basado en reglas del **dominio que tú elijas**. Es la entrega que cubre el «muy diversos ámbitos» del CE b: cada alumno trae un dominio distinto.
 
-**Se entrega**: el notebook y una memoria con la descripción del sistema, el esquema del conocimiento integrado y los casos de prueba.
+**Se entrega** en Aules un único fichero **`.zip`** con:
+
+- el notebook `.ipynb` ejecutado, con el sistema experto funcionando;
+- la memoria en PDF con la descripción del sistema, el esquema del conocimiento integrado, las reglas y los casos de prueba.
 <!-- AUTO:notebooks fin -->
 
 ---

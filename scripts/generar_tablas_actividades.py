@@ -10,6 +10,11 @@ Rellena los bloques  <!-- AUTO:notebooks inicio --> ... <!-- AUTO:notebooks fin 
   2. una tabla de cuatro columnas: la actividad, que es, la descarga y el badge de Colab;
   3. un apartado por actividad con su resumen, sus materiales de apoyo y que se entrega.
 
+Y en cada pagina o notebook de ENTREGA rellena  <!-- AUTO:entrega inicio --> ... fin -->  con el
+apartado «Entrega»: que fichero se sube a Aules (un unico PDF o un unico .zip), que lleva dentro y
+el plazo. Sale de `formato`, `contenido` y `notas` de actividades.yml, los mismos campos con los
+que MIA_IA/moodle escribe la descripcion de la tarea de Aules: asi las dos dicen siempre lo mismo.
+
 Cubre TODAS las actividades, no solo los notebooks: los talleres y los debates son paginas y
 tambien se entregan. Para ellos no hay `.ipynb` que descargar ni Colab que abrir.
 
@@ -34,6 +39,8 @@ DOCS = RAIZ / "docs"
 RAW = "https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs"
 COLAB = "https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs"
 INICIO, FIN = "<!-- AUTO:notebooks inicio -->", "<!-- AUTO:notebooks fin -->"
+E_INICIO, E_FIN = "<!-- AUTO:entrega inicio -->", "<!-- AUTO:entrega fin -->"
+FORMATOS = {"pdf": "PDF", "zip": "`.zip`"}
 CODIGO = re.compile(r"UD0\d_([NTD]\d+)_")
 
 
@@ -80,6 +87,18 @@ def actividades_del_nav() -> dict[tuple[str, str], list[str]]:
         if m and CODIGO.match(m.group(2)):
             fuera.setdefault((m.group(1), grupo), []).append(m.group(2))
     return fuera
+
+
+def nombres_de_tarea() -> dict[str, str]:
+    """Nombre de la tarea de Aules de cada entrega, por fichero.
+
+    Es la etiqueta del nav sin el codigo ni el «(hecho / no hecho)», exactamente como lo calcula
+    MIA_IA/moodle/scripts/generar_spec_prototipo.py al crear la tarea: asi el alumnado busca en Aules
+    el mismo nombre que lee aqui.
+    """
+    texto = (RAIZ / "mkdocs.yml").read_text(encoding="utf-8")
+    return {m.group(2): m.group(1).split(" (")[0]
+            for m in re.finditer(r"(?m)^\s+- [NTD]\d\d (.+?): UD0\d/(?:notebooks/)?(\S+)\s*$", texto)}
 
 
 def practica_de(ud: str, entregas: set[str], nav: dict) -> list[str]:
@@ -134,6 +153,35 @@ def galeria(g: dict) -> str:
     return "\n".join(fuera)
 
 
+def que_se_sube(f: dict) -> str:
+    """«un único fichero `.zip` con:» + la lista. Lo comparten el resumen y el bloque Entrega."""
+    lineas = [f"un único fichero **{FORMATOS[f['formato']]}** con:", ""]
+    lineas += [f"- {c}" for c in f["contenido"]]
+    return "\n".join(lineas)
+
+
+def bloque_entrega(f: dict) -> str:
+    """El apartado «Entrega» de la pagina o del notebook de una entrega."""
+    if f["formato"] == "zip":
+        solo = ("Aules **solo acepta un `.zip`** en esta tarea: no subas los ficheros sueltos, "
+                "comprímelos juntos.")
+    else:
+        solo = "Aules **solo acepta un PDF** en esta tarea."
+    partes = [
+        "## Entrega",
+        "",
+        f"Sube a la tarea **{f['codigo']} · {f['tarea']}** de Aules " + que_se_sube(f),
+        "",
+    ]
+    if f.get("notas"):
+        partes += [f["notas"], ""]
+    if f["es_notebook"]:
+        partes += ["Antes de comprimirlo, ejecuta el notebook entero, de arriba abajo y sin errores.", ""]
+    partes += [solo + " El plazo acaba a las **23:59** del día que marca la tarea; después la tarea "
+               "se cierra y ya no admite entregas.", ""]
+    return "\n".join(partes)
+
+
 def apartados(fichas: list[dict], grupo: str) -> str:
     """Un apartado por actividad: titulo, resumen, materiales y que se entrega."""
     fuera = []
@@ -144,7 +192,9 @@ def apartados(fichas: list[dict], grupo: str) -> str:
             fuera.append("\n| Recurso | Enlace |\n|---|---|\n" + "\n".join(f["materiales"]))
         if f.get("galeria"):
             fuera.append(galeria(f["galeria"]))
-        if f.get("se_entrega"):
+        if grupo == "entregas" and f.get("formato"):
+            fuera.append("\n**Se entrega** en Aules " + que_se_sube(f))
+        elif f.get("se_entrega"):
             etiqueta = "Se entrega" if grupo == "entregas" else "Qué tienes que tener al terminar"
             fuera.append(f"\n**{etiqueta}**: {f['se_entrega']}")
         fuera.append("")
@@ -167,17 +217,51 @@ def admonicion(grupo: str, n: int, ra: str | None, ud: str, extra: str | None,
                 if hay_practica else
                 f" Los [ejercicios de autoevaluación]({ud}_Ejercicios.md) son\n    práctica y no se entregan.")
         if sin_rubrica:
-            medio = ("    Se entregan en Moodle y **no llevan rúbrica**: se marcan como hechas o no "
+            medio = ("    Se entregan en Aules y **no llevan rúbrica**: se marcan como hechas o no "
                      "hechas." + cola)
         else:
             medio = ("    Cada una se corrige con **su rúbrica**, que puedes leer antes de empezar en la "
-                     "propia\n    tarea de Moodle. El **peso** de cada entrega está en el libro de "
-                     "calificaciones de\n    Moodle, no aquí." + cola)
+                     "propia\n    tarea de Aules. El **peso** de cada entrega está en el libro de "
+                     "calificaciones de\n    Aules, no aquí." + cola)
         titulo_adm = f"{n} entrega{'s' if n != 1 else ''}" + (f" en el {ra}" if ra else "")
         cuerpo = f'!!! important "{titulo_adm}"\n{medio}'
     if extra:
         cuerpo += "\n\n" + "\n".join(f"    {l}" if l.strip() else "" for l in extra.strip().split("\n"))
     return cuerpo
+
+
+def escribe_entrega(f: dict, check: bool) -> str:
+    """Rellena el bloque AUTO:entrega de la pagina o del notebook. Devuelve el estado."""
+    if f.get("formato") not in FORMATOS or not f.get("contenido"):
+        return "sin `formato` (pdf | zip) o sin `contenido` en datos/actividades.yml"
+    nuevo = "\n" + bloque_entrega(f)
+    ruta: Path = f["ruta"]
+    if not f["es_notebook"]:
+        texto = ruta.read_text(encoding="utf-8")
+        if E_INICIO not in texto:
+            return "sin marcas AUTO:entrega"
+        i, j = texto.index(E_INICIO) + len(E_INICIO), texto.index(E_FIN)
+        if texto[i:j] == nuevo:
+            return "al día"
+        if not check:
+            ruta.write_text(texto[:i] + nuevo + texto[j:], encoding="utf-8")
+        return "desfasado"
+    # Notebook: el bloque vive dentro de una celda markdown, que se guarda como lista de lineas.
+    # Se reescribe con indent=1 y ensure_ascii=False, el formato de Jupyter: el diff queda limpio.
+    nb = json.loads(ruta.read_text(encoding="utf-8"))
+    for celda in nb["cells"]:
+        texto = "".join(celda.get("source", []))
+        if celda.get("cell_type") != "markdown" or E_INICIO not in texto:
+            continue
+        i, j = texto.index(E_INICIO) + len(E_INICIO), texto.index(E_FIN)
+        if texto[i:j] == nuevo:
+            return "al día"
+        if not check:
+            texto = texto[:i] + nuevo + texto[j:]
+            celda["source"] = texto.splitlines(keepends=True)
+            ruta.write_text(json.dumps(nb, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+        return "desfasado"
+    return "sin marcas AUTO:entrega"
 
 
 # ---------------------------------------------------------------- comprobaciones
@@ -273,7 +357,8 @@ def main() -> int:
     check = "--check" in sys.argv
     datos = yaml.safe_load((RAIZ / "datos" / "actividades.yml").read_text(encoding="utf-8"))
     nav = actividades_del_nav()
-    desfasados = []
+    tareas = nombres_de_tarea()
+    desfasados, sin_bloque = [], []
 
     for ud in sorted(datos):
         fichas = {"practica": [], "entregas": []}
@@ -291,6 +376,9 @@ def main() -> int:
                     "es_notebook": es_nb, "titulo": titulo(ruta),
                     "que_es": ficha.get("que_es", "—"), "resumen": ficha.get("resumen", ""),
                     "se_entrega": ficha.get("se_entrega", ""),
+                    "formato": ficha.get("formato"), "contenido": ficha.get("contenido", []),
+                    "notas": ficha.get("notas"), "ruta": ruta,
+                    "tarea": tareas.get(nombre, titulo(ruta)),
                     "materiales": ficha.get("materiales", []),
                     "galeria": (dict(ficha["galeria"], ud=ud) if ficha.get("galeria") else None),
                 })
@@ -320,7 +408,15 @@ def main() -> int:
                 p.write_text(texto[:i] + nuevo + texto[j:], encoding="utf-8")
                 print(f"  actualizado: {ud}/{pagina} [{grupo}] · {len(fichas[grupo])} actividades")
 
+        for f in fichas["entregas"]:
+            estado = escribe_entrega(f, check)
+            if estado == "desfasado":
+                desfasados.append(f"{ud}/{f['fichero']} [entrega]")
+            elif estado != "al día":
+                sin_bloque.append(f"{ud}/{f['fichero']}: {estado}")
+
     problemas = {
+        "ENTREGAS SIN BLOQUE «Entrega»": sin_bloque,
         "ACTIVIDADES SIN RESUMEN": actividades_sin_resumen(datos, nav),
         "APARTADOS EN LA PÁGINA EQUIVOCADA": apartados_mal_colocados(datos, nav),
         "ETIQUETAS DESCUADRADAS": etiquetas_descuadradas(),

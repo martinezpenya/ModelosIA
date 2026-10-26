@@ -3,8 +3,8 @@
 <!-- AUTO:notebooks inicio -->
 !!! important "4 entregas en el RA1"
     Cada una se corrige con **su rúbrica**, que puedes leer antes de empezar en la propia
-    tarea de Moodle. El **peso** de cada entrega está en el libro de calificaciones de
-    Moodle, no aquí. La [práctica de la unidad](UD01_ActividadesGuiadas.md) no se
+    tarea de Aules. El **peso** de cada entrega está en el libro de calificaciones de
+    Aules, no aquí. La [práctica de la unidad](UD01_ActividadesGuiadas.md) no se
     entrega ni puntúa.
 
 | Actividad | Qué es | Descargar | Abrir en Colab |
@@ -18,25 +18,33 @@
 
 Identificar sistemas inteligentes en un entorno real y decidir, con criterio normativo, cuáles son de verdad sistemas de IA.
 
-**Se entrega**: un mapa de 3 sistemas con su ficha, su clasificación y una conclusión.
+**Se entrega** en Aules un único fichero **`.zip`** con:
+
+- el notebook `.ipynb` con el mapa de 3 sistemas rellenado dentro, con su ficha, su clasificación y una conclusión.
 
 ## `N03` · Técnicas de IA en casos reales
 
 Clasificar técnicas de IA, justificar la elección y comprobarla contra la documentación oficial.
 
-**Se entrega**: una tabla de decisión técnica de 6 casos, contrastada con fuentes.
+**Se entrega** en Aules un único fichero **`.zip`** con:
+
+- el notebook `.ipynb` con la tabla de decisión técnica de 6 casos rellenada dentro y contrastada con fuentes.
 
 ## `N04` · Nuevas formas de interacción
 
 Diseñar una mejora operativa basada en nuevas formas de interacción, estimar su impacto y anticipar sus fricciones reales.
 
-**Se entrega**: una propuesta con línea base, indicadores, fricciones y riesgos.
+**Se entrega** en Aules un único fichero **`.zip`** con:
+
+- el notebook `.ipynb` con la propuesta rellenada dentro, con su línea base, sus indicadores, las fricciones y los riesgos.
 
 ## `N05` · Línea del tiempo de la IA
 
 Afianzar los hitos históricos y conectarlos con la tecnología que se usa hoy.
 
-**Se entrega**: una línea del tiempo documentada de 10 hitos con su herencia actual.
+**Se entrega** en Aules un único fichero **`.zip`** con:
+
+- el notebook `.ipynb` con la línea del tiempo de 10 hitos documentada dentro, con su herencia actual.
 <!-- AUTO:notebooks fin -->
 
 ---

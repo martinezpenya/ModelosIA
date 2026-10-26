@@ -217,7 +217,7 @@ Es la aplicación oficial de Docker que te da una **interfaz gráfica (GUI)** pa
 
 - **Gestión visual**: Ver contenedores, imágenes y volúmenes de forma gráfica
 - **Configuración fácil**: Ajustar recursos (CPU, RAM) con sliders
-- **Monitorización**: Ver en tiempo tiempo real qué está pasando
+- **Monitorización**: Ver en tiempo real qué está pasando
 
 ![docker desktop GUI](assets/dockerDesktop.png){width="700"}
 
@@ -297,7 +297,7 @@ systemctl --user start docker-desktop
         sudo chmod 644 /home/ubuntu/docker-desktop-4.27.2-amd64.deb
         ```
     
-    2. Lanzas Docker-desktop, aparece el icono, pero desaparece y la aplicación no incia:
+    2. Lanzas Docker-desktop, aparece el icono, pero desaparece y la aplicación no inicia:
         Parece un problema con un cambio en Ubuntu 24.04 que he resuelto con la información de este [post](https://askubuntu.com/questions/1511725/ubuntu-24-04-docker-desktop-is-not-starting/1519662#1519662): 
         ```bash
         sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
@@ -548,7 +548,7 @@ docker run --rm -v "$PWD/practicas":/app -w /app python:3.12 python app.py
 ```
 
 !!! tip "Bind mount vs volumen"
-    Para **notebooks y código** del curso usa un **bind mount** (`-v ./practicas:/home/jovyan/work`):
+    Para **notebooks y código** del curso usa un **bind mount** (`-v ./notebooks:/home/jovyan/work`):
     son ficheros reales de tu equipo. Los **volúmenes nombrados** quedan para datos que no necesitas
     tocar desde el host.
 
@@ -690,11 +690,11 @@ fichero `compose.yaml`.
 ```yaml
 services:
   jupyter:
-    image: jupyter/scipy-notebook
+    image: quay.io/jupyter/scipy-notebook
     ports:
       - "8888:8888"
     volumes:
-      - ./practicas:/home/jovyan/work
+      - ./notebooks:/home/jovyan/work
     environment:
       - JUPYTER_TOKEN=cursoia
 ```
@@ -717,8 +717,10 @@ para esperar a que un servicio esté listo).
 
 ## 9. El contenedor de prácticas de IA (RA7-i)
 
-El entorno del curso se levantará con la imagen **`jupyter/scipy-notebook`**, que ya incluye
-numpy, scipy, scikit-learn, pandas, matplotlib y otras bibliotecas científicas.
+El entorno del curso se levantará con la imagen **`quay.io/jupyter/scipy-notebook`**, que ya
+incluye numpy, scipy, scikit-learn, pandas, matplotlib y otras bibliotecas científicas. Se descarga
+de `quay.io`, el registro actual del proyecto Jupyter: las imágenes `jupyter/*` de Docker Hub están
+congeladas desde 2023.
 
 !!! tip "¿Por qué `python:3.12-slim` y no Alpine?"
     La variante `-slim` usa **Debian (glibc)**; la `-alpine` usa **musl libc**. Bibliotecas como
@@ -777,7 +779,7 @@ Ahora, para el `docker-compose.yml` tendremos:
 services:
   experta:
     container_name: experta #bautizamos a nuestro contenedor
-    build: . #con esta linea le indicamos que busque el Dockerfile, en lugar de buscar una imágen en un repositorio
+    build: . #con esta linea le indicamos que busque el Dockerfile, en lugar de buscar una imagen en un repositorio
     ports:
       - "8888:8888" #publicamos el puerto para que sea accesible desde fuera
     volumes:
@@ -788,7 +790,7 @@ Y por último necesitamos el notebook para hacer pruebas, en nuestro caso es un 
 
 [rockpaperscissors.ipynb](assets/rockpaperscissors.ipynb) este fichero debemos guardarlo en la carpeta `notebooks`
 
-Ahora con toda la estructura lista y desde la raiz de la carpeta (donde estan el docker-compose.yml y el Dockerfile) ejecutamos:
+Ahora con toda la estructura lista y desde la raíz de la carpeta (donde estan el docker-compose.yml y el Dockerfile) ejecutamos:
 
 ```bash
 $ docker-compose up
@@ -957,7 +959,7 @@ La unidad son **6 h en dos semanas** (1-8 de octubre), a 3 h por semana.
 
 Referencia rápida para consultar en clase, no para memorizar.
 
-#### Gestión de imagenes
+#### Gestión de imágenes
 
 ```bash
 docker image
@@ -1025,7 +1027,7 @@ Para que docker no se invente un nombre como “pensive_wozniak” (comando ante
 Utilizaremos una de las imágenes de: [https://hub.docker.com/_/debian/tags](https://hub.docker.com/_/debian/tags)
 
 ```bash
-# Obtenemos la imagen, en el apartado aterior la hemos ejecutado directamente con "run", esto
+# Obtenemos la imagen, en el apartado anterior la hemos ejecutado directamente con "run", esto
 # la obtiene implícitamente. En este caso la vamos a descargar.
 $ docker pull debian:13-slim
 

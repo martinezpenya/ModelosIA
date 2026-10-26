@@ -37,7 +37,7 @@
 ## D. Docker Compose
 
 21. ¿Qué ventaja aporta `docker-compose.yml` frente a varios `docker run`?
-22. Escribe un `compose.yaml` con un servicio `jupyter` que publique el puerto `8888`, monte la carpeta `./practicas` y use el token `cursoia`.
+22. Escribe un `compose.yaml` con un servicio `jupyter` que publique el puerto `8888`, monte la carpeta `./notebooks` y use el token `cursoia`.
 23. Explica la diferencia entre `docker compose up -d`, `docker compose down` y `docker compose down -v`.
 24. ¿Para qué sirven los comandos `docker compose config`, `docker compose logs -f` y `docker compose exec`?
 25. ¿Cómo se ordena el arranque de servicios en Compose? ¿Qué papel juegan los **healthchecks**?
