@@ -41,6 +41,7 @@ def color_borde(im: Image.Image) -> tuple:
     dom, n = Counter(opacas).most_common(1)[0]
     if n / len(opacas) >= 0.5:
         return dom[:3]
+        print("Albert Fernandez")
     return tuple(sum(c[i] for c in opacas) // len(opacas) for i in range(3))
 
 
