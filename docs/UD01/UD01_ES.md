@@ -546,7 +546,7 @@ decisión sobre textos vectorizados).
 **Paso 3 · Estimar el antes/después.** Con un clasificador que resuelve el 70 % de los correos
 en 30 segundos y el resto lo revisa una persona:
 
-- Tiempo medio por correo: 0,30 × 0,5 min + 0,70 × 8 min ≈ **5,8 min** (frente a 8).
+- Tiempo medio por correo: 0,70 × 0,5 min + 0,30 × 8 min ≈ **2,8 min** (frente a 8).
 - Error de clasificación objetivo: **< 5 %** (frente al 15 %).
 - Las dos personas pasan de clasificar a **tratar solo los casos complejos**.
 

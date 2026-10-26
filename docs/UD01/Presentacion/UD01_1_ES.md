@@ -39,7 +39,7 @@ section {
 ![h:260 center](../assets/cover.png)
 # UD01: Caracterización de sistemas de IA
 #### Modelos de Inteligencia Artificial
-###### version: 2026-08-27
+###### version: 2026-10-26
 
 ---
 <!-- footer: d.martinezpena@edu.gva.es -->
@@ -332,6 +332,26 @@ KPIs por ámbito: **FCR** y **AHT** (atención al cliente), **OEE** y **MTBF** (
 Coste antes: 1.000 × 3 € = **3.000 €**. Coste después: 600 × 0,10 € + 400 × 3 € = **1.260 €**.
 
 **Reducción de coste ≈ 58 %**, y el tiempo medio baja de 5 a ~2 minutos.
+
+---
+
+## Ejemplo guiado: el problema
+<!-- Es el esquema que se repite en el taller 3: problema, KPI, técnica, antes/después y decisión. Caracterizar un sistema de IA (RA1) es exactamente esto; todavía no hace falta entrenar el modelo. Las categorías son devolución, cambio, defecto y consulta; la técnica puede ser naive Bayes o un árbol de decisión sobre textos vectorizados. (§6.5 de los apuntes) -->
+
+Tienda online: **200 reclamaciones/día** por email. Dos personas las clasifican a mano: **8 min** cada una, **15 % de error**.
+
+1. **KPI**: tiempo de ciclo, tasa de error y coste (2 personas).
+2. **Técnica**: clasificar texto en categorías → **PLN + clasificación supervisada**.
+
+---
+
+## Ejemplo guiado: antes/después
+<!-- RGPD es el Reglamento General de Protección de Datos: los correos contienen datos personales de los clientes. (§6.5 de los apuntes) -->
+
+3. **Antes/después**: la IA resuelve el 70 % en 30 s; el resto lo revisa una persona.
+   - Tiempo: 0,70 × 0,5 + 0,30 × 8 ≈ **2,8 min** (frente a 8).
+   - Error: **< 5 %** (frente al 15 %).
+4. **Decisión**: presentar los KPIs y los riesgos (correos ambiguos, **RGPD**).
 
 ---
 <!-- _class: lead -->
