@@ -45,6 +45,7 @@ nav:
       - N03 Técnicas de IA en casos reales: UD01/notebooks/UD01_N03_tecnicas_casos.ipynb
       - N04 Nuevas formas de interacción: UD01/notebooks/UD01_N04_nuevas_interacciones.ipynb
       - N05 Línea del tiempo de la IA: UD01/notebooks/UD01_N05_linea_tiempo.ipynb
+      - T01 Configurar OBS para grabar los exámenes (hecho / no hecho): UD01/UD01_T01_OBS_ES.md
   - UD02:
     - Modelos de IA y resolución de problemas: UD02/UD02_ES.md
     - Diapositivas: UD02/UD02_Diapositivas.md
@@ -312,6 +313,7 @@ plugins:
             - 'UD00/Presentacion/'
             - 'UD00/entorno/'
             - 'UD01/Presentacion/'
+            - 'UD01/assets/EXAMEN_OBS.zip'
             - 'UD02/assets/IABDBotMaven.zip'
             - 'UD02/Presentacion/'
             - 'UD05/Presentacion/'

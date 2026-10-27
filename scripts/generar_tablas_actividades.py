@@ -40,7 +40,7 @@ RAW = "https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs"
 COLAB = "https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs"
 INICIO, FIN = "<!-- AUTO:notebooks inicio -->", "<!-- AUTO:notebooks fin -->"
 E_INICIO, E_FIN = "<!-- AUTO:entrega inicio -->", "<!-- AUTO:entrega fin -->"
-FORMATOS = {"pdf": "PDF", "zip": "`.zip`"}
+FORMATOS = {"pdf": "PDF", "zip": "`.zip`", "mp4": "`.mp4`"}
 CODIGO = re.compile(r"UD0\d_([NTD]\d+)_")
 
 
@@ -165,6 +165,8 @@ def bloque_entrega(f: dict) -> str:
     if f["formato"] == "zip":
         solo = ("Aules **solo acepta un `.zip`** en esta tarea: no subas los ficheros sueltos, "
                 "comprímelos juntos.")
+    elif f["formato"] == "mp4":
+        solo = "Aules **solo acepta un vídeo `.mp4`** en esta tarea."
     else:
         solo = "Aules **solo acepta un PDF** en esta tarea."
     partes = [
@@ -233,7 +235,7 @@ def admonicion(grupo: str, n: int, ra: str | None, ud: str, extra: str | None,
 def escribe_entrega(f: dict, check: bool) -> str:
     """Rellena el bloque AUTO:entrega de la pagina o del notebook. Devuelve el estado."""
     if f.get("formato") not in FORMATOS or not f.get("contenido"):
-        return "sin `formato` (pdf | zip) o sin `contenido` en datos/actividades.yml"
+        return "sin `formato` (pdf | zip | mp4) o sin `contenido` en datos/actividades.yml"
     nuevo = "\n" + bloque_entrega(f)
     ruta: Path = f["ruta"]
     if not f["es_notebook"]:

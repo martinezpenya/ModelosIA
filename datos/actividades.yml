@@ -13,6 +13,8 @@
 #   formato     · solo en las entregas: `pdf` o `zip`. Aules solo deja filtrar por tipos que
 #                 conoce, así que una memoria va en PDF y todo lo que lleve `.ipynb`, `.md` o
 #                 código va dentro de un único `.zip` (decisión del profesor, 2026-10-14)
+#                 La grabación de OBS del taller de exámenes va como `mp4`, tal cual sale
+#                 de OBS (2026-10-27).
 #   contenido   · solo en las entregas: lista de lo que va en el PDF o dentro del zip
 #   notas       · opcional: una línea más bajo la lista (defensa oral, participación…)
 #   materiales  · filas de tabla con el material de apoyo (imágenes, CSV, audio, pistas)
@@ -81,6 +83,10 @@ UD00:
       - la memoria con las evidencias pedidas en el apartado «Entrega» (capturas de las fases 5 y 7, salida de `docker compose ps` y la respuesta razonada).
 UD01:
   _ra: RA1
+  _nota_entregas: |
+    El taller `T01` (OBS) se entrega como **hecho / no hecho**: es requisito para grabar las pruebas
+    prácticas, no un resultado de aprendizaje, así que se registra en el libro de calificaciones con
+    **peso 0** — no puntúa, pero consta.
   _pagina_practica: UD01_ActividadesGuiadas.md
   _pagina_entregas: UD01_Entregas.md
   UD01_N01_tecnicas_ia.ipynb:
@@ -118,6 +124,15 @@ UD01:
     contenido:
       - el notebook `.ipynb` con la línea del tiempo de 10 hitos documentada dentro, con su herencia actual.
     notas: Se puede preparar en grupo, pero la entrega es **individual**.
+  UD01_T01_OBS_ES.md:
+    que_es: Puesta a punto · OBS con la plantilla de los exámenes
+    resumen: |-
+      Dejar OBS configurado con la plantilla del módulo y comprobarlo con una grabación corta en la
+      que se vean siempre el reloj con segundos y tu nombre. Con esta configuración se graban las
+      pruebas prácticas.
+    formato: mp4
+    contenido:
+      - la grabación de al menos 10 segundos que genera OBS, sin editar, con el reloj, tu nombre y tu escritorio a pantalla completa.
 UD02:
   _entregas_extra: 2
   _ra: RA2

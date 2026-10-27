@@ -1,11 +1,15 @@
 # UD01 · Entregas
 
 <!-- AUTO:notebooks inicio -->
-!!! important "4 entregas en el RA1"
+!!! important "5 entregas en el RA1"
     Cada una se corrige con **su rúbrica**, que puedes leer antes de empezar en la propia
     tarea de Aules. El **peso** de cada entrega está en el libro de calificaciones de
     Aules, no aquí. La [práctica de la unidad](UD01_ActividadesGuiadas.md) no se
     entrega ni puntúa.
+
+    El taller `T01` (OBS) se entrega como **hecho / no hecho**: es requisito para grabar las pruebas
+    prácticas, no un resultado de aprendizaje, así que se registra en el libro de calificaciones con
+    **peso 0** — no puntúa, pero consta.
 
 | Actividad | Qué es | Descargar | Abrir en Colab |
 |---|---|---|---|
@@ -13,6 +17,7 @@
 | [`N03` · Técnicas de IA en casos reales](notebooks/UD01_N03_tecnicas_casos.ipynb) | Análisis · clasificar técnicas y justificarlas con documentación oficial | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD01/notebooks/UD01_N03_tecnicas_casos.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD01/notebooks/UD01_N03_tecnicas_casos.ipynb){:target="_blank"} |
 | [`N04` · Nuevas formas de interacción](notebooks/UD01_N04_nuevas_interacciones.ipynb) | Análisis · propuesta de mejora operativa con su impacto estimado | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD01/notebooks/UD01_N04_nuevas_interacciones.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD01/notebooks/UD01_N04_nuevas_interacciones.ipynb){:target="_blank"} |
 | [`N05` · Línea del tiempo de la IA](notebooks/UD01_N05_linea_tiempo.ipynb) | Investigación · hitos históricos conectados con la técnica de hoy | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD01/notebooks/UD01_N05_linea_tiempo.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD01/notebooks/UD01_N05_linea_tiempo.ipynb){:target="_blank"} |
+| [`T01` · Configurar OBS para grabar los exámenes](UD01_T01_OBS_ES.md) | Puesta a punto · OBS con la plantilla de los exámenes | — | — |
 
 ## `N02` · Mapa de sistemas inteligentes
 
@@ -45,6 +50,16 @@ Afianzar los hitos históricos y conectarlos con la tecnología que se usa hoy.
 **Se entrega** en Aules un único fichero **`.zip`** con:
 
 - el notebook `.ipynb` con la línea del tiempo de 10 hitos documentada dentro, con su herencia actual.
+
+## `T01` · Configurar OBS para grabar los exámenes
+
+Dejar OBS configurado con la plantilla del módulo y comprobarlo con una grabación corta en la
+que se vean siempre el reloj con segundos y tu nombre. Con esta configuración se graban las
+pruebas prácticas.
+
+**Se entrega** en Aules un único fichero **`.mp4`** con:
+
+- la grabación de al menos 10 segundos que genera OBS, sin editar, con el reloj, tu nombre y tu escritorio a pantalla completa.
 <!-- AUTO:notebooks fin -->
 
 ---
