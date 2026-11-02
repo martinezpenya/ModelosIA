@@ -465,6 +465,8 @@ Un **conjunto difuso** asigna a cada valor un **grado de pertenencia** µ(x) ∈
 | **Gaussiana** (`gaussmf`) | Campana suave | Variables continuas suaves |
 | **Sigmoidal** (`sigmf`) | Escalón suave | Extremos ("frío", "caliente") |
 
+![Las cuatro funciones de pertenencia más usadas en scikit-fuzzy: triangular, trapezoidal, gaussiana y sigmoidal, cada una con su llamada y la forma de la curva µ(x)](assets/UD02_funciones_pertenencia.svg)
+
 !!! tip "Diseño de variables"
     No importa tanto la forma exacta como el **número y la posición** de las funciones: se
     recomiendan entre **3 y 7 curvas** por variable, solapadas para que no existan "huecos".

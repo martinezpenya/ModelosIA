@@ -320,14 +320,9 @@ Ejemplo: "18 ºC es frío con 0,7" en vez de "18 ºC es frío: sí/no".
 
 ## Funciones de pertenencia
 
-<!-- En scikit-fuzzy cada función tiene su propia llamada: trimf para la triangular, trapmf para la trapezoidal, gaussmf para la gaussiana y sigmf para la sigmoidal. (§7.2 de los apuntes) -->
+<!-- En scikit-fuzzy cada función tiene su propia llamada: trimf para la triangular, trapmf para la trapezoidal, gaussmf para la gaussiana y sigmf para la sigmoidal. Uso típico: triangular para variables simples, trapezoidal para intervalos, gaussiana para variables continuas suaves, sigmoidal para extremos. (§7.2 de los apuntes) -->
 
-| Función | Forma | Uso típico |
-|---|---|---|
-| Triangular | Pico en un punto | Variables simples |
-| Trapezoidal | Meseta central | Intervalos |
-| Gaussiana | Campana suave | Variables continuas |
-| Sigmoidal | Escalón suave | Extremos |
+![w:920 center](../assets/UD02_funciones_pertenencia.svg)
 
 Se recomiendan entre 3 y 7 curvas por variable, solapadas para que no existan huecos.
 
