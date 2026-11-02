@@ -226,6 +226,9 @@ hueco hasta llegar al orden objetivo.
 
 ### 4.4 Algoritmos de búsqueda: BFS, DFS y A*
 
+**BFS** son las siglas de *breadth-first search* (búsqueda en anchura) y **DFS** las de
+*depth-first search* (búsqueda en profundidad).
+
 | Criterio | Búsqueda en anchura (BFS) | Búsqueda en profundidad (DFS) | A* |
 |---|---|---|---|
 | Estructura | Cola (FIFO) | Pila (LIFO) | Cola de prioridad por `f = g + h` |
