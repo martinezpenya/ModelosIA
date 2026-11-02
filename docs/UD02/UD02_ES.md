@@ -234,19 +234,96 @@ hueco hasta llegar al orden objetivo.
 | Memoria | O(b^d) | O(b·d) | O(b^d) |
 | Cuándo usar | Camino más corto en número de pasos | Exploración exhaustiva, backtracking | Ruta óptima con costes variados y buena heurística |
 
-- **BFS** explora por niveles: encuentra el camino más corto en pasos, pero consume mucha memoria
-  (guarda todos los estados del nivel).
-- **DFS** baja hasta el fondo: usa poca memoria, pero puede no encontrar la solución óptima (o no
-  terminar en espacios infinitos). Es la base del *backtracking* (8-reinas).
-- **A\*** combina el coste acumulado `g(n)` con una **heurística** `h(n)` (una estimación de lo que
-  falta): `f(n) = g(n) + h(n)`. Con una heurística admisible (que no sobreestime), A* es completo y
-  óptimo. Se usa mucho en videojuegos, mapas y planificación de rutas.
+#### 4.4.1 BFS paso a paso
 
-!!! example "Ejemplo de heurística"
-    En un puzzle 8-puzzle (3×3), la heurística "número de fichas mal colocadas" o la "distancia de
-    Manhattan" (suma de pasos horizontales+verticales de cada ficha hasta su posición correcta)
-    estiman cuánto queda. Con esa `h`, A* guía la búsqueda hacia el objetivo en lugar de explorar
-    a ciegas.
+**BFS** explora por niveles: primero todos los estados a 1 acción del inicio, luego todos los que
+están a 2 acciones, etc. Encuentra el camino más corto en pasos, pero consume mucha memoria (guarda
+todos los estados del nivel actual en la cola).
+
+```text
+BFS(inicio, es_objetivo):
+    frontera ← Cola([inicio])        # FIFO
+    visitados ← {inicio}
+    mientras frontera no vacía:
+        estado ← frontera.sacar_primero()
+        si es_objetivo(estado): devolver camino_hasta(estado)
+        para cada accion aplicable a estado:
+            siguiente ← transicion(estado, accion)
+            si siguiente ∉ visitados:
+                visitados.añadir(siguiente)
+                frontera.meter(siguiente)
+    devolver fracaso
+```
+
+!!! example "Traza sobre las jarras (§4.3.1)"
+    - **Nivel 0**: `[8,0,0]` (inicio).
+    - **Nivel 1**: todos los estados alcanzables con **una** acción, p. ej. `[3,5,0]` (verter la
+      jarra8 en la jarra5), `[8,0,3]` (llenar la jarra3), `[5,0,3]`...
+    - **Nivel 2**: todos los alcanzables con una acción más desde el nivel 1, y así sucesivamente.
+    - BFS no se detiene hasta **vaciar un nivel entero** antes de pasar al siguiente: por eso
+      garantiza que `[4,4,0]` se encuentra en el **menor número de pasos** posible (7, en este
+      caso), pero también por eso necesita guardar en memoria todos los estados de cada nivel.
+
+#### 4.4.2 DFS y backtracking paso a paso
+
+**DFS** baja hasta el fondo de una rama antes de probar otra: usa poca memoria (solo el camino
+actual), pero puede no encontrar la solución óptima, o no terminar en espacios infinitos sin
+control de visitados. Es la base del ***backtracking***.
+
+```text
+DFS(estado, es_objetivo, es_valido):
+    si es_objetivo(estado): devolver [estado]
+    para cada accion aplicable a estado:
+        siguiente ← transicion(estado, accion)
+        si es_valido(siguiente):                 # no visitado / no viola restricciones
+            camino ← DFS(siguiente, es_objetivo, es_valido)
+            si camino ≠ fracaso: devolver [estado] + camino
+            # si no, se retrocede (backtrack) y se prueba la siguiente acción
+    devolver fracaso
+```
+
+!!! example "Traza sobre las 8-reinas (§4.3.3)"
+    1. Columna 1: coloca la reina en fila 1. Válido (no hay más reinas aún) → avanza.
+    2. Columna 2: prueba fila 1 (misma fila que la reina 1 → inválido), prueba fila 2 (misma
+       diagonal → inválido), prueba fila 3 (válido) → avanza.
+    3. Columna 3: ninguna fila es válida con las dos reinas ya puestas → **retrocede** (backtrack)
+       a la columna 2 y prueba la siguiente fila disponible.
+    4. El proceso continúa probando-avanzando-retrocediendo hasta colocar las 8 reinas (una de las
+       92 soluciones) o agotar las posibilidades de la columna 1.
+
+    Es exactamente la poda que describía §4.3.2 para misioneros y caníbales: un estado inválido se
+    descarta **sin expandirlo**, y el algoritmo retrocede al último punto con alternativas.
+
+#### 4.4.3 A* paso a paso
+
+**A\*** combina el coste acumulado `g(n)` con una **heurística** `h(n)` (una estimación de lo que
+falta): `f(n) = g(n) + h(n)`. En vez de una cola FIFO o una pila, usa una **cola de prioridad** que
+siempre extrae el estado con menor `f`. Con una heurística admisible (que no sobreestime), A* es
+completo y óptimo. Se usa mucho en videojuegos, mapas y planificación de rutas.
+
+```text
+A*(inicio, es_objetivo, h):
+    frontera ← ColaPrioridad([(h(inicio), inicio)])  # ordenada por f = g + h
+    g ← {inicio: 0}
+    mientras frontera no vacía:
+        estado ← frontera.sacar_minimo_f()
+        si es_objetivo(estado): devolver camino_hasta(estado)
+        para cada accion aplicable a estado:
+            siguiente ← transicion(estado, accion)
+            g_tentativo ← g[estado] + coste(accion)
+            si siguiente ∉ g o g_tentativo < g[siguiente]:
+                g[siguiente] ← g_tentativo
+                f ← g_tentativo + h(siguiente)
+                frontera.meter((f, siguiente))
+    devolver fracaso
+```
+
+!!! example "Traza sobre el 15-puzzle (§4.3.4)"
+    Con `h` = distancia de Manhattan: desde el estado inicial se calculan `g=0` (sin moverse aún) y
+    `h` (suma de las distancias de cada ficha a su casilla objetivo). En cada paso, A* expande el
+    estado de la frontera con **menor `f = g+h`**, no necesariamente el más reciente ni el más
+    antiguo: eso es lo que le permite ignorar ramas que claramente se alejan del objetivo (h alto)
+    aunque BFS las habría explorado igual que las demás.
 
 !!! tip "Regla práctica (Red Blob Games)"
     *"Usa el algoritmo más simple que puedas"*: si todos los costes son iguales y solo quieres el
