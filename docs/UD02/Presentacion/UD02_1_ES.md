@@ -183,7 +183,7 @@ Un espacio real (rutas de reparto, planificación) es enorme: hace falta una est
 
 ## BFS, DFS y A*
 
-<!-- En memoria, BFS y A* son O(b elevado a d) en el peor caso porque guardan todos los estados de un nivel; DFS es mucho más ligera, O(b por d), porque solo mantiene el camino actual. (§4.4 de los apuntes) -->
+<!-- BFS son las siglas de breadth-first search (búsqueda en anchura) y DFS las de depth-first search (búsqueda en profundidad). En memoria, BFS y A* son O(b elevado a d) en el peor caso porque guardan todos los estados de un nivel; DFS es mucho más ligera, O(b por d), porque solo mantiene el camino actual. (§4.4 de los apuntes) -->
 
 | Criterio | BFS | DFS | A* |
 |---|---|---|---|
@@ -218,14 +218,12 @@ Baja hasta el fondo de una rama antes de probar otra, usando una pila (o recursi
 
 ## A*: cómo funciona
 
-<!-- f(n) = g(n) + h(n): coste acumulado más una estimación admisible de lo que falta. Expande siempre el estado con menor f de la frontera, no el más reciente ni el más antiguo, por eso ignora ramas que se alejan del objetivo aunque BFS las exploraría igual. Heurísticas admisibles habituales en rejillas: número de fichas mal colocadas, o distancia de Manhattan. (§4.4.3 de los apuntes) -->
+<!-- f(n) = g(n) + h(n): coste acumulado más una estimación admisible de lo que falta. Expande siempre el estado con menor f de la frontera, no el más reciente ni el más antiguo, por eso ignora ramas que se alejan del objetivo aunque BFS las exploraría igual. Heurísticas admisibles habituales en rejillas: número de fichas mal colocadas, o distancia de Manhattan. Regla práctica (Red Blob Games): usa el algoritmo más simple que puedas — BFS si todos los costes son iguales, A* con la heurística más simple si buscas un único objetivo. (§4.4.3 de los apuntes) -->
 
 Combina el coste ya recorrido `g(n)` con una **heurística** `h(n)` que estima lo que falta (`f(n) = g(n) + h(n)`) y expande siempre el estado de menor `f`.
 
 **Pros**: completo y óptimo con una heurística admisible; evita explorar ramas que se alejan del objetivo.
 **Contras**: necesita diseñar una buena heurística; sin ella, degenera en un BFS más costoso.
-
-**Regla práctica** (Red Blob Games): usa el algoritmo más simple que puedas — BFS si todos los costes son iguales, A* con la heurística más simple si buscas un único objetivo.
 
 ---
 <!-- _class: lead -->
