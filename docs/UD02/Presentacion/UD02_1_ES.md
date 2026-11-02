@@ -39,7 +39,7 @@ section {
 ![h:260 center](../assets/cover.png)
 # UD02: Modelos de IA y resolución de problemas
 #### Modelos de Inteligencia Artificial
-###### version: 2026-10-06
+###### version: 2026-11-02
 
 ---
 <!-- footer: d.martinezpena@edu.gva.es -->
@@ -114,16 +114,63 @@ Un problema bien planteado responde a: ¿estado inicial?, ¿acciones aplicables?
 
 ---
 
-## Ejemplos clásicos de representación
+## Jarras 8-5-3
 
-<!-- En las 8 reinas, sin restricciones (cualquier casilla del tablero) hay 4.426.165.368 arreglos posibles; limitando a una reina por columna se reduce a 8!=40.320. En el 15-puzzle, las soluciones óptimas pueden necesitar hasta 80 movimientos. (§4.3 de los apuntes) -->
+<!-- Acciones: llenar una jarra hasta el tope, vaciarla por completo, o verter de una en otra hasta que la que recibe se llene o la que vierte se vacíe. El espacio de estados es pequeño: como mucho (8+1)×(5+1)×(3+1) combinaciones. (§4.3.1 de los apuntes) -->
 
-| Problema | Representación | Detalle |
+Medir una cantidad exacta con jarras sin marcas: llenar, vaciar o verter entre jarras.
+
+Estado `[jarra8, jarra5, jarra3]`: de `[8,0,0]` a `[4,4,0]` en 7 pasos.
+
+**Interesa el camino más corto** (menos trasvases) → encaja con **BFS**.
+
+---
+
+## Misioneros y caníbales
+
+<!-- Movimientos posibles con 1 o 2 personas en la barca; se descarta cualquier estado donde los caníbales superen a los misioneros en una orilla con misioneros presentes. Solución óptima: 11 cruces. (§4.3.2 de los apuntes) -->
+
+3 misioneros y 3 caníbales cruzan un río en una barca de 1-2 plazas, sin que los caníbales superen
+nunca a los misioneros en ninguna orilla.
+
+Estado `⟨m,c,barca⟩`: de `⟨3,3,1⟩` a `⟨0,0,0⟩`.
+
+**Hay estados prohibidos que podar** → backtracking (DFS), o BFS si importa el número de cruces.
+
+---
+
+## 8-reinas
+
+<!-- Sin restricciones (cualquier casilla de las 64), hay 4.426.165.368 arreglos posibles; exigir una reina por columna lo reduce a 8!=40.320 permutaciones; de esas, solo 92 cumplen también filas y diagonales. (§4.3.3 de los apuntes) -->
+
+Colocar 8 reinas en un tablero 8×8 sin que ninguna ataque a otra (fila, columna, diagonal).
+
+Representación: una columna por reina → 40.320 permutaciones, **92 soluciones**.
+
+**No hay camino más corto que buscar**: es satisfacción de restricciones (CSP) → **backtracking**.
+
+---
+
+## 15-puzzle
+
+<!-- 16!/2 porque solo la mitad de las permutaciones son alcanzables moviendo fichas; las soluciones óptimas pueden necesitar hasta 80 movimientos. (§4.3.4 de los apuntes) -->
+
+Mover fichas en una matriz 4×4 hasta el orden objetivo.
+
+≈10,46·10¹² estados: BFS y DFS son **inviables** por tamaño.
+
+**Aquí la heurística no es opcional**: A\* con Manhattan distance es la única opción realista.
+
+---
+
+## ¿Qué algoritmo para qué problema?
+
+| Problema | Qué busca | Algoritmo |
 |---|---|---|
-| Jarras 8-5-3 | `[jarra8, jarra5, jarra3]` | De `[8,0,0]` a `[4,4,0]` |
-| Misioneros y caníbales | `⟨m,c,barca⟩` | De `⟨3,3,1⟩` a `⟨0,0,0⟩` |
-| 8-reinas | Permutación de 1..8 | 40.320 arreglos, **92 soluciones** |
-| 15-puzzle | Matriz 4×4 | ≈10,46·10¹² estados |
+| Jarras | Camino más corto | **BFS** |
+| Misioneros y caníbales | Camino sin estados prohibidos | **BFS / DFS con poda** |
+| 8-reinas | Una solución válida (CSP) | **Backtracking (DFS)** |
+| 15-puzzle | Camino óptimo en espacio enorme | **A\* con heurística** |
 
 ---
 

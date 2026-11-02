@@ -133,12 +133,90 @@ búsqueda** (completa, óptima, memoria).
 
 ### 4.3 Ejemplos clásicos de representación
 
-| Problema | Representación | Detalle |
-|---|---|---|
-| **Jarras 8-5-3** | Triple `[jarra8, jarra5, jarra3]` | De `[8,0,0]` a `[4,4,0]` en 7 pasos; las acciones son "verter hasta vaciar o llenar" |
-| **Misioneros y caníbales** | Vector `⟨m,c,barca⟩` | De `⟨3,3,1⟩` a `⟨0,0,0⟩`; se descartan los estados donde los caníbales superan a los misioneros |
-| **8-reinas** | Una columna por reina (permutación de 1..8) | Sin restricciones hay 4.426.165.368 arreglos; con restricciones 8!=40.320; solo **92 soluciones** |
-| **15-puzzle** | Matriz 4×4 con las fichas | 16!/2 ≈ 10,46·10¹² estados (la mitad alcanzable); soluciones óptimas de hasta 80 movimientos |
+Antes de comparar algoritmos de búsqueda (§4.4) hay que entender **qué pide resolver** cada
+problema clásico: no todos buscan lo mismo, y por eso no todos se resuelven igual de bien con el
+mismo algoritmo.
+
+#### 4.3.1 El problema de las jarras (8-5-3)
+
+**Enunciado**: tienes jarras sin marcas de capacidad 8, 5 y 3 litros, una fuente de agua
+ilimitada, y quieres medir una cantidad exacta (p. ej. 4 litros) usando solo tres acciones:
+**llenar** una jarra hasta el tope, **vaciar** una jarra por completo, o **verter** el contenido de
+una jarra en otra hasta que la que recibe se llene o la que vierte se vacíe.
+
+- **Estado**: triple `[jarra8, jarra5, jarra3]` con el contenido actual de cada jarra.
+- **Acciones**: todas las combinaciones de llenar/vaciar/verter entre pares de jarras.
+- **Objetivo**: de `[8,0,0]` a `[4,4,0]` en 7 pasos (el ejemplo del diagrama de §4.2).
+
+!!! tip "Por qué encaja con BFS"
+    El espacio de estados es pequeño (como mucho `(8+1)×(5+1)×(3+1)` combinaciones) y lo que
+    interesa es el **camino más corto** en número de trasvases, con coste unitario por acción:
+    justo lo que **BFS** garantiza. No hay estados "prohibidos" que podar, así que no hace falta
+    backtracking.
+
+#### 4.3.2 Misioneros y caníbales
+
+**Enunciado**: 3 misioneros y 3 caníbales deben cruzar un río en una barca que como máximo lleva 2
+personas. En **ninguna** orilla, en ningún momento, puede haber más caníbales que misioneros si
+hay al menos un misionero presente (o los misioneros son devorados).
+
+- **Estado**: vector `⟨m,c,barca⟩` — misioneros y caníbales en la orilla de partida, y en qué
+  orilla está la barca.
+- **Acciones**: mover la barca con 1 o 2 personas de una orilla a otra.
+- **Restricción**: se descartan los estados donde los caníbales superan a los misioneros en
+  cualquier orilla con misioneros.
+- **Objetivo**: de `⟨3,3,1⟩` a `⟨0,0,0⟩` (solución óptima: 11 cruces).
+
+!!! tip "Por qué aparece el backtracking"
+    Muchos movimientos posibles llevan a un estado que **viola la restricción**: ese estado se
+    descarta antes de expandirlo, sin seguir explorando esa rama. Esa poda inmediata de ramas
+    inválidas es la esencia del **backtracking**, propio de DFS. BFS también puede resolverlo (el
+    espacio es pequeño), pero aquí la restricción es el elemento pedagógico clave, no la memoria.
+
+#### 4.3.3 El problema de las 8 reinas
+
+**Enunciado**: colocar 8 reinas en un tablero de ajedrez 8×8 de modo que ninguna ataque a otra (ni
+misma fila, ni misma columna, ni misma diagonal).
+
+- **Representación**: un vector de 8 posiciones donde el índice es la columna y el valor es la
+  fila de la reina en esa columna — así ya queda garantizado "una reina por columna" sin tener que
+  comprobarlo en cada paso.
+- **Tamaño del espacio**: elegir 8 casillas cualesquiera de las 64 sin ninguna restricción da
+  4.426.165.368 combinaciones; exigir una reina por columna lo reduce a las `8! = 40.320`
+  permutaciones de filas; de esas, solo **92** cumplen además la restricción de filas y diagonales.
+
+!!! important "No es un problema de «camino más corto»"
+    Aquí no hay un camino que se recorra paso a paso con un coste que minimizar: **cualquier**
+    configuración válida es una solución igual de buena que otra. Es un problema de
+    **satisfacción de restricciones (CSP)**, no de búsqueda de ruta óptima. Por eso el algoritmo
+    natural es **backtracking** puro: coloca una reina en cada columna, comprueba las restricciones
+    con las reinas ya puestas y retrocede en cuanto ninguna fila es válida para la siguiente
+    columna. BFS o A* no aportan nada aquí porque no hay "coste de camino" que optimizar.
+
+#### 4.3.4 El 15-puzzle
+
+**Enunciado**: una caja 4×4 con 15 fichas numeradas y un hueco; se mueve la ficha adyacente al
+hueco hasta llegar al orden objetivo.
+
+- **Representación**: matriz 4×4 con las fichas (o el hueco) en cada casilla.
+- **Tamaño**: `16!/2 ≈ 10,46·10¹²` estados (solo la mitad son alcanzables); las soluciones óptimas
+  pueden necesitar hasta 80 movimientos.
+
+!!! important "Por qué aquí la heurística es imprescindible, no opcional"
+    Con un espacio de **10 billones** de estados, BFS y DFS son inviables: BFS se queda sin memoria
+    guardando un nivel entero y DFS puede perderse en ramas sin fondo. **A\*** con una heurística
+    admisible (número de fichas mal colocadas, o distancia de Manhattan, §4.4) es la única opción
+    realista: guía la búsqueda hacia el objetivo en lugar de explorar a ciegas, y sigue garantizando
+    la solución óptima.
+
+#### 4.3.5 ¿Qué algoritmo conviene a cada problema?
+
+| Problema | Qué hay que encontrar | Algoritmo recomendado | Por qué |
+|---|---|---|---|
+| **Jarras** | Camino más corto (coste unitario) | **BFS** | Espacio pequeño; importa el número de pasos |
+| **Misioneros y caníbales** | Camino evitando estados prohibidos | **BFS** (o DFS con poda) | Hay que descartar estados inválidos antes de expandirlos |
+| **8-reinas** | Cualquier configuración válida (CSP) | **Backtracking (DFS)** | No hay coste de camino que optimizar; basta una solución |
+| **15-puzzle** | Camino óptimo en un espacio enorme | **A\*** con heurística | BFS/DFS inviables por tamaño; hace falta una estimación que guíe la búsqueda |
 
 !!! note "La explosión combinatoria"
     Estos problemas "de juguete" sirven para medir algo esencial: el número de estados crece
