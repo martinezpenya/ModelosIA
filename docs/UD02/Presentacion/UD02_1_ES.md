@@ -195,50 +195,40 @@ Un espacio real (rutas de reparto, planificación) es enorme: hace falta una est
 
 ---
 
-## BFS paso a paso
+## BFS: cómo funciona
 
-<!-- Explora por niveles: primero todos los estados a 1 acción del inicio, luego a 2 acciones, etc. Por eso garantiza el camino más corto en pasos, pero guarda en memoria todos los estados del nivel actual. (§4.4.1 de los apuntes) -->
+<!-- Explora por niveles: primero todos los estados a 1 acción del inicio, luego a 2 acciones, etc. Por eso garantiza el camino más corto en pasos, pero guarda en memoria todos los estados del nivel actual. Traza sobre las jarras: nivel 0 [8,0,0] → nivel 1 [3,5,0], [8,0,3], [5,0,3]... → nivel 2 → ... hasta [4,4,0]. (§4.4.1 de los apuntes) -->
 
-```text
-frontera ← Cola([inicio]); visitados ← {inicio}
-mientras frontera no vacía:
-    estado ← frontera.sacar_primero()
-    si es_objetivo(estado): devolver camino
-    para cada accion: si siguiente ∉ visitados → meter en frontera
-```
+Explora el espacio de estados **por niveles**, nivel a nivel completo, usando una cola FIFO.
 
-**Traza (jarras)**: nivel 0 `[8,0,0]` → nivel 1 `[3,5,0]`, `[8,0,3]`, `[5,0,3]`... → nivel 2 → ...
-hasta `[4,4,0]` en el menor número de pasos.
+**Pros**: encuentra siempre el camino más corto en número de pasos; es completa.
+**Contras**: guarda en memoria todos los estados del nivel actual — puede agotar la memoria en
+espacios grandes.
 
 ---
 
-## DFS y backtracking paso a paso
+## DFS y backtracking: cómo funciona
 
-<!-- DFS baja hasta el fondo de una rama antes de probar otra: usa poca memoria (solo el camino actual) pero puede no ser óptima. El backtracking descarta un estado inválido sin expandirlo y retrocede al último punto con alternativas. (§4.4.2 de los apuntes) -->
+<!-- DFS baja hasta el fondo de una rama antes de probar otra: usa poca memoria (solo el camino actual) pero puede no ser óptima. El backtracking descarta un estado inválido sin expandirlo y retrocede al último punto con alternativas. Traza sobre las 8-reinas: columna 1 fila 1 (válido) → columna 2 fila 1 (inválido), fila 2 (inválido), fila 3 (válido) → columna 3 sin fila válida → retrocede a columna 2 y prueba otra fila. (§4.4.2 de los apuntes) -->
 
-```text
-DFS(estado):
-    si es_objetivo(estado): devolver [estado]
-    para cada accion: si es_valido(siguiente) → camino ← DFS(siguiente)
-    si ninguna accion funciona: devolver fracaso  # retrocede (backtrack)
-```
+Baja hasta el fondo de una rama antes de probar otra, usando una pila (o recursión).
 
-**Traza (8-reinas)**: columna 1 fila 1 (válido) → columna 2 fila 1 (inválido), fila 2 (inválido),
-fila 3 (válido) → columna 3 sin fila válida → **retrocede** a columna 2 y prueba otra fila.
+**Pros**: usa muy poca memoria (solo el camino actual); el **backtracking** descarta de inmediato
+una rama inválida y retrocede, sin explorarla entera.
+**Contras**: no garantiza la solución óptima; puede no terminar en espacios infinitos sin control.
 
 ---
 
-## A* paso a paso
+## A*: cómo funciona
 
-<!-- La distancia de Manhattan suma, para cada ficha, los pasos horizontales y verticales que le faltan hasta llegar a su posición correcta en el objetivo. (§4.4.3 de los apuntes) -->
+<!-- f(n) = g(n) + h(n): coste acumulado más una estimación admisible de lo que falta. Expande siempre el estado con menor f de la frontera, no el más reciente ni el más antiguo, por eso ignora ramas que se alejan del objetivo aunque BFS las exploraría igual. Heurísticas admisibles habituales en rejillas: número de fichas mal colocadas, o distancia de Manhattan. (§4.4.3 de los apuntes) -->
 
-`f(n) = g(n) + h(n)`: coste acumulado más una estimación de lo que falta. Cola de **prioridad**
-por `f`, no FIFO ni LIFO.
+Combina el coste ya recorrido `g(n)` con una **heurística** `h(n)` que estima lo que falta
+(`f(n) = g(n) + h(n)`) y expande siempre el estado de menor `f`.
 
-Heurísticas admisibles habituales: número de fichas mal colocadas, o distancia de Manhattan.
-
-**Traza (15-puzzle)**: en cada paso se expande el estado con **menor `f`** de la frontera, no el
-más reciente ni el más antiguo — así se ignoran ramas que se alejan del objetivo.
+**Pros**: completo y óptimo con una heurística admisible; evita explorar ramas que se alejan del
+objetivo.
+**Contras**: necesita diseñar una buena heurística; sin ella, degenera en un BFS más costoso.
 
 **Regla práctica** (Red Blob Games): usa el algoritmo más simple que puedas — BFS si todos los costes son iguales, A* con la heurística más simple si buscas un único objetivo.
 
