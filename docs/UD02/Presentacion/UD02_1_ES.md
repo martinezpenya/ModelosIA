@@ -130,8 +130,7 @@ Estado `[jarra8, jarra5, jarra3]`: de `[8,0,0]` a `[4,4,0]` en 7 pasos.
 
 <!-- Movimientos posibles con 1 o 2 personas en la barca; se descarta cualquier estado donde los caníbales superen a los misioneros en una orilla con misioneros presentes. Solución óptima: 11 cruces. (§4.3.2 de los apuntes) -->
 
-3 misioneros y 3 caníbales cruzan un río en una barca de 1-2 plazas, sin que los caníbales superen
-nunca a los misioneros en ninguna orilla.
+3 misioneros y 3 caníbales cruzan un río en una barca de 1-2 plazas, sin que los caníbales superen nunca a los misioneros en ninguna orilla.
 
 Estado `⟨m,c,barca⟩`: de `⟨3,3,1⟩` a `⟨0,0,0⟩`.
 
@@ -202,8 +201,7 @@ Un espacio real (rutas de reparto, planificación) es enorme: hace falta una est
 Explora el espacio de estados **por niveles**, nivel a nivel completo, usando una cola FIFO.
 
 **Pros**: encuentra siempre el camino más corto en número de pasos; es completa.
-**Contras**: guarda en memoria todos los estados del nivel actual — puede agotar la memoria en
-espacios grandes.
+**Contras**: guarda en memoria todos los estados del nivel actual — puede agotar la memoria en espacios grandes.
 
 ---
 
@@ -213,8 +211,7 @@ espacios grandes.
 
 Baja hasta el fondo de una rama antes de probar otra, usando una pila (o recursión).
 
-**Pros**: usa muy poca memoria (solo el camino actual); el **backtracking** descarta de inmediato
-una rama inválida y retrocede, sin explorarla entera.
+**Pros**: usa muy poca memoria (solo el camino actual); el **backtracking** descarta de inmediato una rama inválida y retrocede, sin explorarla entera.
 **Contras**: no garantiza la solución óptima; puede no terminar en espacios infinitos sin control.
 
 ---
@@ -223,11 +220,9 @@ una rama inválida y retrocede, sin explorarla entera.
 
 <!-- f(n) = g(n) + h(n): coste acumulado más una estimación admisible de lo que falta. Expande siempre el estado con menor f de la frontera, no el más reciente ni el más antiguo, por eso ignora ramas que se alejan del objetivo aunque BFS las exploraría igual. Heurísticas admisibles habituales en rejillas: número de fichas mal colocadas, o distancia de Manhattan. (§4.4.3 de los apuntes) -->
 
-Combina el coste ya recorrido `g(n)` con una **heurística** `h(n)` que estima lo que falta
-(`f(n) = g(n) + h(n)`) y expande siempre el estado de menor `f`.
+Combina el coste ya recorrido `g(n)` con una **heurística** `h(n)` que estima lo que falta (`f(n) = g(n) + h(n)`) y expande siempre el estado de menor `f`.
 
-**Pros**: completo y óptimo con una heurística admisible; evita explorar ramas que se alejan del
-objetivo.
+**Pros**: completo y óptimo con una heurística admisible; evita explorar ramas que se alejan del objetivo.
 **Contras**: necesita diseñar una buena heurística; sin ella, degenera en un BFS más costoso.
 
 **Regla práctica** (Red Blob Games): usa el algoritmo más simple que puedas — BFS si todos los costes son iguales, A* con la heurística más simple si buscas un único objetivo.
