@@ -393,6 +393,12 @@ flowchart TD
 
 ### 6.1 RPA frente a IA
 
+**RPA** son las siglas de *robotic process automation* (automatización robótica de procesos): un
+**software robot** que repite, en la interfaz de un programa, los mismos clics, pulsaciones y
+copia-pega que haría una persona —rellenar un formulario, mover datos entre dos aplicaciones—,
+siguiendo siempre el mismo flujo predefinido. No "entiende" lo que hace ni aprende de ello: por
+eso no es IA, aunque muchas veces se las confunda.
+
 | Criterio | RPA | IA |
 |---|---|---|
 | Qué hace | **Hace**: replica tareas humanas repetitivas en la interfaz (GUI, formularios) | **Piensa/aprende**: reconoce patrones, decide, mejora con los datos |
