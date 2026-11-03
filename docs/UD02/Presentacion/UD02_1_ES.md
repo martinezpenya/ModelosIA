@@ -39,7 +39,7 @@ section {
 ![h:260 center](../assets/cover.png)
 # UD02: Modelos de IA y resolución de problemas
 #### Modelos de Inteligencia Artificial
-###### version: 2026-11-02
+###### version: 2026-11-03
 
 ---
 <!-- footer: d.martinezpena@edu.gva.es -->
@@ -232,6 +232,7 @@ Combina el coste ya recorrido `g(n)` con una **heurística** `h(n)` que estima l
 ---
 
 ## Por paradigma de aprendizaje
+<style scoped>section { font-size: 20px; }</style>
 
 <!-- En scikit-learn, el supervisado se implementa con regresión logística, SVM o árboles; el no supervisado con k-means, DBSCAN o PCA; el de refuerzo queda fuera del stack estándar del curso. (§5.1 de los apuntes) -->
 
@@ -239,7 +240,9 @@ Combina el coste ya recorrido `g(n)` con una **heurística** `h(n)` que estima l
 |---|---|---|---|
 | Datos | Etiquetados | Sin etiquetas | Recompensas |
 | Objetivo | Predecir la salida | Descubrir patrones | Maximizar recompensa |
+| Tareas | Clasificación, regresión | Clustering, reducción de dim. | Control, juegos, robótica |
 | Ejemplos | Spam, precio de coche | Segmentar clientes | AlphaGo, robots |
+| Algoritmos | Regresión logística, SVM, árboles | k-means, DBSCAN, PCA | (fuera del stack del curso) |
 
 **Todo ML es IA, pero no toda IA es ML**: reglas y lógica difusa son IA sin aprender de datos.
 
@@ -261,16 +264,20 @@ Basados en **conocimiento** (reglas explícitas, interpretable) frente a basados
 
 ## Mapa de los modelos de IA
 
-<!-- El diagrama se simplifica para la diapositiva: dentro de «basados en conocimiento» también entran los sistemas expertos (MYCIN, XCON), y dentro de Machine Learning se distinguen supervisado, no supervisado y refuerzo. (§5.3 de los apuntes) -->
+<!-- Dentro de «basados en conocimiento» entran también los sistemas expertos (MYCIN, XCON), y dentro de Machine Learning se distinguen supervisado, no supervisado y refuerzo. (§5.3 de los apuntes) -->
 
 ```mermaid
 flowchart TD
     IA[Modelos de IA] --> CONOC[Basados en conocimiento]
     IA --> DATOS[Basados en datos]
-    CONOC --> REGLAS[Reglas]
+    CONOC --> REGLAS[Sistemas basados en reglas]
     CONOC --> DIFUSA[Lógica difusa]
+    CONOC --> EXPERT[Sistemas expertos]
     DATOS --> ML[Machine Learning]
     DATOS --> DL[Deep Learning]
+    ML --> SUP[Supervisado]
+    ML --> NOSUP[No supervisado]
+    ML --> REF[Refuerzo]
 ```
 
 ---
@@ -280,6 +287,7 @@ flowchart TD
 ---
 
 ## RPA frente a IA
+<style scoped>section { font-size: 22px; }</style>
 
 <!-- RPA son las siglas de robotic process automation, automatización robótica de procesos: replica tareas humanas repetitivas en la interfaz, sin razonar sobre datos. BPM son las siglas de business process management (gestión de procesos de negocio): la capa que orquesta los flujos y conecta la decisión de la IA con la ejecución del RPA. (§6.1 de los apuntes) -->
 
@@ -288,18 +296,36 @@ flowchart TD
 | Qué hace | **Hace**: replica tareas en la interfaz | **Piensa**: reconoce patrones y decide |
 | Base | Reglas predefinidas | Datos y modelos |
 | Se adapta | No | Sí, con la experiencia |
+| Ejemplo | Copiar datos de un email a un ERP | Clasificar si un email es urgente |
 
 **RPA no es IA**: se complementan — la IA decide, el RPA ejecuta. IA + BPM + RPA = automatización inteligente.
 
 ---
 
-## Agentes software y tareas cognitivas
+## Agentes software
+<style scoped>section { font-size: 22px; }</style>
 
-<!-- OCR es el reconocimiento óptico de caracteres y NER el reconocimiento de entidades nombradas (named entity recognition); son las dos técnicas típicas de extracción. Google Speech-to-Text y Microsoft Azure Speech Service son ejemplos de sistemas de reconocimiento de voz que automatizan la transcripción. -->
+<!-- Un agente de IA es un programa que percibe su entorno y actúa para lograr un objetivo; se ordenan de más simple a más avanzado. (§6.2 de los apuntes) -->
 
-De más simple a más avanzado: reflejo simple → reflejo con modelo → basado en objetivos → basado en utilidad → con aprendizaje.
+| Tipo de agente | Cómo decide | Ejemplo |
+|---|---|---|
+| Reflejo simple | Reglas `si... entonces...` directas | Termostato |
+| Reflejo con modelo | Mantiene un estado interno del mundo | Robot aspiradora que "recuerda" la habitación |
+| Basado en objetivos | Busca y planifica para alcanzar una meta | Navegador que elige una ruta |
+| Basado en utilidad | Maximiza una utilidad (coste, tiempo, riesgo) | Ruta que minimiza peajes y tiempo |
+| Con aprendizaje | Aprende de la experiencia | Motor de recomendación |
 
-Tareas cognitivas automatizables: **extracción** (OCR, NER), **clasificación** (spam, prioridades, reconocimiento de voz) y **generación** (IA generativa).
+---
+
+## Tareas cognitivas automatizables
+
+<!-- OCR es el reconocimiento óptico de caracteres y NER el reconocimiento de entidades nombradas (named entity recognition); son las dos técnicas típicas de extracción. Google Speech-to-Text y Microsoft Azure Speech Service son ejemplos de sistemas de reconocimiento de voz que automatizan la transcripción. (§6.3 de los apuntes) -->
+
+La IA automatiza tareas cognitivas que antes requerían juicio humano:
+
+- **Extracción**: leer documentos (OCR), extraer entidades (NER), capturar datos de facturas.
+- **Clasificación**: spam, incidencias, prioridades, y reconocimiento de voz (habla a texto).
+- **Generación**: redactar respuestas, resúmenes o informes (IA generativa).
 
 ---
 <!-- _class: lead -->
