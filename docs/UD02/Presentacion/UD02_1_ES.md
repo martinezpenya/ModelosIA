@@ -384,7 +384,7 @@ Metro de Sendai (frenado y aceleración) · autofocus de Canon (13 reglas, 1,1 K
 ---
 
 ## Práctica: el problema de la propina
-<!-- (§7.6 de los apuntes) -->
+<!-- Resuelto y explicado paso a paso en el notebook guiado N01, que no se entrega ni puntúa. (§7.6 de los apuntes) -->
 
 ```python
 calidad = ctrl.Antecedent(np.arange(0, 11, 1), 'calidad')
@@ -397,6 +397,8 @@ sim.compute()
 ```
 
 `scikit-fuzzy==0.5.0`: fija la versión, es una librería semi-mantenida.
+
+Resuelto y explicado paso a paso en el notebook guiado [`N01`](../notebooks/UD02_N01_logica_difusa_propinas.ipynb).
 
 ---
 <!-- _class: lead -->
@@ -512,7 +514,7 @@ RPA hace, la IA piensa; la difusa modela vaguedad, las reglas ejecutan reconocer
 
 ## La unidad en la práctica
 
-**4 entregas**: `N01` control difuso (`scikit-fuzzy`) · `N02` sistema de reglas (`experta`) · `T01` preparar el entorno · `T02` Robocode Tank Royale.
+**4 entregas**: `N02` control difuso (`scikit-fuzzy`) · `N03` sistema de reglas (`experta`) · `T01` preparar el entorno · `T02` Robocode Tank Royale. El notebook guiado `N01` (propina) no se entrega.
 
 **`T02` · Robocode** es la de más peso, del 23 de noviembre al 3 de diciembre. `T01` es **hecho / no hecho**, como los talleres de GitHub y Markdown de la UD00.
 
@@ -524,7 +526,7 @@ RPA hace, la IA piensa; la difusa modela vaguedad, las reglas ejecutan reconocer
 
 | Peso | Instrumento |
 |---|---|
-| 40 % | `T02` Robocode + `N01` y `N02` |
+| 40 % | `T02` Robocode + `N02` y `N03` |
 | 60 % | Prueba escrita del RA2 |
 
 Hace falta un **5 o más** en el RA para superarlo.

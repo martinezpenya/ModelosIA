@@ -559,6 +559,12 @@ print(f"Propina sugerida: {sim.output['propina']:.2f}%")
     del curso funciona sin problemas, pero conviene fijar la versión (`scikit-fuzzy==0.5.0`) en
     el entorno reproducible del contenedor.
 
+!!! tip "Este ejemplo, ya resuelto y explicado paso a paso"
+    El notebook guiado [`N01` · Lógica difusa: el problema de la
+    propina](notebooks/UD02_N01_logica_difusa_propinas.ipynb) recorre este mismo ejemplo con las
+    tres fases comentadas y las figuras de cada variable. No se entrega ni puntúa: ábrelo para
+    repasarlo antes de `N02` y `N03`.
+
 ## 8. Sistemas basados en reglas (RA2-e)
 
 ### 8.1 El ciclo reconocer-actuar
@@ -824,8 +830,8 @@ unidad):
 |---|---|---|---|---|
 | 7 | 3 | Requisitos de un SRP; espacio de estados y representación; BFS/DFS/A* | RA2-a | Ejercicios bloque A |
 | 8 | 3 | Clasificación de modelos; automatización de tareas | RA2-b, RA2-c | Ejercicios bloques B y C |
-| 9 | 3 | Lógica difusa (teoría + `N01` scikit-fuzzy) | RA2-d | `N01` |
-| 9-10 | 3 | Sistemas basados en reglas (teoría + `N02` experta); CE f | RA2-e, RA2-f | `N02` |
+| 9 | 3 | Lógica difusa (teoría + `N01` guiado y `N02` scikit-fuzzy) | RA2-d | `N01`, `N02` |
+| 9-10 | 3 | Sistemas basados en reglas (teoría + `N03` experta); CE f | RA2-e, RA2-f | `N03` |
 | 9-10 | — | Taller `T01`: preparar el entorno para Robocode (GitHub y Markdown ya se hicieron en la UD00) | — | Taller `T01` |
 | 10 | 3 | Robocode Tank Royale: entrega y evaluación | RA2-a, RA2-f | `T02` Robocode |
 
@@ -836,8 +842,8 @@ unidad):
 | RA2-a | §4 | Ejercicios bloque A, Robocode |
 | RA2-b | §5 | Ejercicios bloque B |
 | RA2-c | §6 | Ejercicios bloque C |
-| RA2-d | §7 | Ejercicios bloque D, `N01` |
-| RA2-e | §8 | Ejercicios bloque E, `N02` |
+| RA2-d | §7 | Ejercicios bloque D, `N02` |
+| RA2-e | §8 | Ejercicios bloque E, `N03` |
 | RA2-f | §9, §10 | Ejercicios bloque F, Robocode |
 
 ## 16. Recursos
@@ -845,8 +851,9 @@ unidad):
 - [Diapositivas](UD02_Diapositivas.md)
 - **Práctica** — se hace, no se entrega ni puntúa:
     - [Ejercicios de autoevaluación](UD02_Ejercicios.md)
+    - [Notebooks guiados](UD02_ActividadesGuiadas.md): [`N01` · lógica difusa de la propina](notebooks/UD02_N01_logica_difusa_propinas.ipynb)
 - **Entregas**:
-    - con rúbrica: [`N01` · control difuso](notebooks/UD02_N01_control_difuso.ipynb) · [`N02` · sistema de reglas](notebooks/UD02_N02_sistema_reglas.ipynb) · [`T02` · Robocode Tank Royale](UD02_T02_Robocode_ES.md), la práctica de cierre del RA2
+    - con rúbrica: [`N02` · control difuso](notebooks/UD02_N02_control_difuso.ipynb) · [`N03` · sistema de reglas](notebooks/UD02_N03_sistema_reglas.ipynb) · [`T02` · Robocode Tank Royale](UD02_T02_Robocode_ES.md), la práctica de cierre del RA2
     - de **hecho / no hecho**, requisito sin nota: [T01 · preparar el entorno](UD02_T01_Preparar_entorno_ES.md) (GitHub y Markdown se entregan en la UD00)
 - **Documentación de Robocode**: [comparativa Java/Python](UD02_Robocode_Comparativa_ES.md) · [tutorial Java](UD02_Robocode_Java_ES.md) · [tutorial Python](UD02_Robocode_Python_ES.md)
 - Los notebooks se abren desde **Práctica** y **Entregas**, con descarga y apertura en Colab.
@@ -867,7 +874,7 @@ unidad):
 
 | Peso | Instrumento |
 |---|---|
-| **40 %** actividades | **`T02` Robocode** y los notebooks **`N01`** y **`N02`**, cada uno con su rúbrica. Robocode es el de más peso, con diferencia. El taller **`T01`** (y los de GitHub/Markdown de la UD00) se entregan como **hecho / no hecho** y no puntúan |
+| **40 %** actividades | **`T02` Robocode** y los notebooks **`N02`** y **`N03`**, cada uno con su rúbrica. Robocode es el de más peso, con diferencia. El taller **`T01`** (y los de GitHub/Markdown de la UD00) se entregan como **hecho / no hecho** y no puntúan |
 | **60 %** prueba escrita | Prueba del RA2 en Moodle: preguntas de test y de desarrollo sobre el contenido de la unidad |
 
 - **La normativa exige alcanzar todos los RA** del módulo para superarlo (art. 5.1 de la Orden

@@ -51,10 +51,11 @@ nav:
     - Diapositivas: UD02/UD02_Diapositivas.md
     - Práctica:
       - Ejercicios de autoevaluación: UD02/UD02_Ejercicios.md
+      - Notebooks guiados: UD02/UD02_ActividadesGuiadas.md
     - Entregas:
       - Qué se entrega: UD02/UD02_Entregas.md
-      - N01 Control difuso con scikit-fuzzy: UD02/notebooks/UD02_N01_control_difuso.ipynb
-      - N02 Sistema basado en reglas con experta: UD02/notebooks/UD02_N02_sistema_reglas.ipynb
+      - N02 Control difuso con scikit-fuzzy: UD02/notebooks/UD02_N02_control_difuso.ipynb
+      - N03 Sistema basado en reglas con experta: UD02/notebooks/UD02_N03_sistema_reglas.ipynb
       - T01 Preparar el entorno para Robocode (hecho / no hecho): UD02/UD02_T01_Preparar_entorno_ES.md
       - T02 Robocode Tank Royale: UD02/UD02_T02_Robocode_ES.md
     - Documentación de Robocode:
