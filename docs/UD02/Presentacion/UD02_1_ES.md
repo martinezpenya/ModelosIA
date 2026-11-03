@@ -291,6 +291,8 @@ flowchart TD
 
 <!-- RPA son las siglas de robotic process automation, automatización robótica de procesos: replica tareas humanas repetitivas en la interfaz, sin razonar sobre datos. BPM son las siglas de business process management (gestión de procesos de negocio): la capa que orquesta los flujos y conecta la decisión de la IA con la ejecución del RPA. (§6.1 de los apuntes) -->
 
+**RPA** (*robotic process automation*): un robot software que repite en la interfaz los mismos clics y copia-pega que una persona, siguiendo siempre el mismo flujo. No entiende ni aprende.
+
 | | RPA | IA |
 |---|---|---|
 | Qué hace | **Hace**: replica tareas en la interfaz | **Piensa**: reconoce patrones y decide |
