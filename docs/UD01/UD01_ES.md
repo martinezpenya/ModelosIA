@@ -46,6 +46,17 @@ humanas. Las aplicaciones dotadas de IA pueden ver e identificar objetos, entend
 lenguaje, aprender de la experiencia, recomendar decisiones e incluso **actuar de forma
 autónoma** (p. ej. un coche autónomo).
 
+!!! note "La definición legal: el artículo 3.1 del Reglamento de IA"
+    El **Reglamento (UE) 2024/1689** define un sistema de IA como un sistema basado en una máquina,
+    diseñado para funcionar con **distintos niveles de autonomía**, que **puede** mostrar capacidad
+    de adaptación tras el despliegue y que **infiere** de la información de entrada la manera de
+    generar resultados de salida (predicciones, contenidos, recomendaciones o decisiones).
+
+    La adaptación es posible, no obligatoria; la **inferencia** es la frontera. El considerando 12
+    excluye expresamente el software basado en reglas definidas solo por personas: una hoja de
+    cálculo con fórmulas no es IA por mucho que se anuncie como «inteligente». Lo aplicarás en el
+    taller N02.
+
 ### 3.2 El ciclo percepción → razonamiento → acción
 
 Un **sistema inteligente** percibe su entorno, razona sobre esa información y actúa para
@@ -69,13 +80,15 @@ flowchart LR
 |---|---|
 | **Autonomía** | Opera sin supervisión humana constante |
 | **Adaptación** | Aprende de los datos y mejora con la experiencia |
-| **Toma de decisiones** | Recomienda o actúa basándose en datos, no solo en reglas fijas |
+| **Toma de decisiones** | Elige qué hacer a partir de lo que percibe, sea con reglas o con un modelo aprendido |
 
 !!! note "IA basada en reglas vs. IA que aprende"
     La IA **más elemental** puede ser un conjunto de reglas `si... entonces...` programadas a
     mano (un termostato que enciende la calefacción si baja de 18 ºC es, formalmente, un sistema
     de IA basado en reglas). Pero cuando la tarea se complica, definir todas las reglas es
     imposible: ahí entra el **aprendizaje automático**, que deduce los patrones de los datos.
+    Ojo: aunque académicamente ese termostato es IA basada en reglas, la definición legal europea
+    (recuadro del §3.1) lo deja fuera, porque no infiere nada.
 
 ### 3.4 IA débil frente a IA fuerte
 
@@ -182,7 +195,9 @@ flowchart LR
   ningún concepto de lo ocurrido antes.
 - **Memoria limitada**: usan observaciones recientes para decidir, sin guardarlas a largo plazo.
   Los **vehículos autónomos** actuales encajan aquí: memorizan velocidad y trayectoria de otros
-  coches para decidir un cambio de carril, pero esa información es transitoria.
+  coches para decidir un cambio de carril, pero esa información es transitoria. Prever hacia
+  dónde irá otro coche **no** es teoría de la mente: el sistema extrapola una trayectoria
+  observada, no se representa qué pretende o piensa su conductor.
 - **Teoría de la mente** *(teórica)*: formaría representaciones sobre lo que piensan y sienten
   otros agentes — la base de la interacción social. Ningún sistema actual llega a esto.
 - **Autoconciencia** *(teórica)*: el sistema se representaría a sí mismo, conocería sus propios
@@ -284,6 +299,11 @@ flowchart LR
 - **Supervisado** → clasificación (categorías) y regresión (valores continuos). Algoritmos típicos:
   árboles de decisión, k-vecinos (KNN), naive Bayes, SVM, regresión logística, random forest.
 - **No supervisado** → clustering (k-means, DBSCAN), detección de anomalías, PCA.
+
+!!! warning "Los números de grupo no significan nada"
+    k-means devuelve grupos `0`, `1`, `2`…, pero esos números son **identificadores arbitrarios**:
+    no expresan orden ni calidad, y pueden salir intercambiados con otra inicialización o con otra
+    versión de la biblioteca. Qué significa cada grupo lo decide el analista mirando sus miembros.
 
 #### 4.2.1 ¿Qué algoritmo elegir?
 
@@ -435,6 +455,15 @@ TAC pulmonar.
 | **Interacción por visión** | Lee e interpreta imágenes/vídeo | Lectura de documentos, control de accesos, inspección visual |
 | **Agentes autónomos** | Ejecutan tareas y usan herramientas por sí solos | Reservar vuelo, tramitar una incidencia |
 
+!!! warning "Conversar no es automáticamente fácil"
+    Un estudio de usabilidad del Nielsen Norman Group (2023) documentó tres fricciones recurrentes
+    al usar un asistente conversacional: ***accordion editing*** (pedir una y otra vez que amplíe o
+    resuma), ***apple picking*** (copiar o describir trozos de respuestas anteriores porque no se
+    pueden seleccionar) y ***response outlining*** (especificar en el *prompt* la estructura de la
+    respuesta, algo que el usuario solo hace tras una respuesta insatisfactoria). La interacción
+    real es **multipaso**: al estimar la mejora de un chatbot hay que suponer un número de intentos
+    por consulta, no que el usuario acierte a la primera. Lo trabajarás en el taller N04.
+
 #### El PLN detrás de las interacciones por texto y voz
 
 El **procesamiento del lenguaje natural (PLN)** es la técnica de IA que permite entender y
@@ -455,6 +484,10 @@ palabras vacías, lematización) → **extracción de características** (bolsa 
 embeddings) → **modelo** (ML o redes profundas, p. ej. *transformers* como BERT) → **salida**
 (clasificación, traducción, respuesta). En el notebook de la unidad verás un ejemplo de
 sentimiento con `scikit-learn`.
+
+El vocabulario de la bolsa de palabras queda **fijado al entrenar**: al transformar una frase
+nueva, las palabras que no estaban en el corpus de entrenamiento se ignoran. Por eso importa la
+lematización: sin ella, «llega» y «llegó» son palabras distintas.
 
 ### 6.2 Eficiencia operativa
 
@@ -697,7 +730,7 @@ señala los riesgos (correos ambiguos, privacidad de los datos de los clientes s
 | Peso | Instrumento |
 |---|---|
 | **40 %** actividades | Los **4 talleres**, cada uno con su rúbrica en la tarea de Moodle. Pesan lo mismo, así que es su media |
-| **60 %** prueba escrita | Prueba del RA1 en Moodle: preguntas de test y de desarrollo sobre el contenido de la unidad |
+| **60 %** prueba escrita | Prueba del RA1 en Moodle: preguntas de test y de desarrollo sobre el contenido de la unidad, que incluye los apuntes y lo trabajado en los notebooks (N01 y los cuatro talleres) |
 
 - **La normativa exige alcanzar todos los RA** del módulo para superarlo (art. 5.1 de la Orden
   8/2025: la calificación del módulo está *«en función de la consecución de los RA»*; y las

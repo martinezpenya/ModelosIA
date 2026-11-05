@@ -39,7 +39,7 @@ section {
 ![h:260 center](../assets/cover.png)
 # UD01: Caracterización de sistemas de IA
 #### Modelos de Inteligencia Artificial
-###### version: 2026-10-26
+###### version: 2026-11-05
 
 ---
 <!-- footer: d.martinezpena@edu.gva.es -->
@@ -118,7 +118,7 @@ flowchart LR
 |---|---|
 | **Autonomía** | Opera sin supervisión humana constante |
 | **Adaptación** | Aprende de los datos y mejora con la experiencia |
-| **Toma de decisiones** | Recomienda o actúa a partir de datos, no solo de reglas fijas |
+| **Toma de decisiones** | Elige qué hacer a partir de lo que percibe, con reglas o con un modelo aprendido |
 
 Un termostato con reglas `si...entonces...` ya es, formalmente, IA basada en reglas.
 
