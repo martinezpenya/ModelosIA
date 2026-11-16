@@ -504,7 +504,8 @@ proceso. Indicadores que suelen mejorar:
 #### 6.3 Cómo medir la mejora (KPIs)
 
 Para saber si una solución de IA merece la pena, se compara el proceso **antes y después** con
-indicadores objetivos:
+indicadores objetivos, los **KPI** (*key performance indicators*, indicadores clave de rendimiento):
+las métricas que se eligen para saber si un objetivo se está cumpliendo.
 
 | Indicador | Qué mide |
 |---|---|
