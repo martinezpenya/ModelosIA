@@ -169,7 +169,7 @@ class MiBot(Bot):
         super().__init__(BotInfo.from_file(config_path))
 
     def run(self):
-        while self.is_running:  # type: ignore[attr-defined]  # pylint: disable=no-member
+        while self.running:
             self.forward(100)
             self.turn_gun_left(360)
             self.back(100)
