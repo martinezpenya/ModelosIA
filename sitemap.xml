@@ -98,7 +98,7 @@
     </url>
     <url>
          <loc>https://martinezpenya.es/ModelosIA/UD02/UD02_ActividadesGuiadas.html</loc>
-         <lastmod>2026-11-03</lastmod>
+         <lastmod>2026-11-24</lastmod>
     </url>
     <url>
          <loc>https://martinezpenya.es/ModelosIA/UD02/UD02_Diapositivas.html</loc>
@@ -106,15 +106,15 @@
     </url>
     <url>
          <loc>https://martinezpenya.es/ModelosIA/UD02/UD02_ES.html</loc>
-         <lastmod>2026-11-03</lastmod>
+         <lastmod>2026-11-24</lastmod>
     </url>
     <url>
          <loc>https://martinezpenya.es/ModelosIA/UD02/UD02_Ejercicios.html</loc>
-         <lastmod>2026-11-03</lastmod>
+         <lastmod>2026-11-24</lastmod>
     </url>
     <url>
          <loc>https://martinezpenya.es/ModelosIA/UD02/UD02_Entregas.html</loc>
-         <lastmod>2026-11-03</lastmod>
+         <lastmod>2026-11-24</lastmod>
     </url>
     <url>
          <loc>https://martinezpenya.es/ModelosIA/UD02/UD02_Robocode_Comparativa_ES.html</loc>
@@ -138,19 +138,23 @@
     </url>
     <url>
          <loc>https://martinezpenya.es/ModelosIA/UD02/notebooks/UD02_N01_logica_difusa_propinas.html</loc>
-         <lastmod>2026-11-03</lastmod>
+         <lastmod>2026-11-24</lastmod>
     </url>
     <url>
-         <loc>https://martinezpenya.es/ModelosIA/UD02/notebooks/UD02_N02_control_difuso.html</loc>
-         <lastmod>2026-11-03</lastmod>
+         <loc>https://martinezpenya.es/ModelosIA/UD02/notebooks/UD02_N02_reglas_diagnostico_vehiculo.html</loc>
+         <lastmod>2026-11-24</lastmod>
     </url>
     <url>
-         <loc>https://martinezpenya.es/ModelosIA/UD02/notebooks/UD02_N03_sistema_reglas.html</loc>
-         <lastmod>2026-11-03</lastmod>
+         <loc>https://martinezpenya.es/ModelosIA/UD02/notebooks/UD02_N03_control_difuso.html</loc>
+         <lastmod>2026-11-24</lastmod>
+    </url>
+    <url>
+         <loc>https://martinezpenya.es/ModelosIA/UD02/notebooks/UD02_N04_sistema_reglas.html</loc>
+         <lastmod>2026-11-24</lastmod>
     </url>
     <url>
          <loc>https://martinezpenya.es/ModelosIA/UD03/UD03_ActividadesGuiadas.html</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-11-24</lastmod>
     </url>
     <url>
          <loc>https://martinezpenya.es/ModelosIA/UD03/UD03_Diapositivas.html</loc>
@@ -218,7 +222,7 @@
     </url>
     <url>
          <loc>https://martinezpenya.es/ModelosIA/UD04/UD04_ActividadesGuiadas.html</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-11-24</lastmod>
     </url>
     <url>
          <loc>https://martinezpenya.es/ModelosIA/UD04/UD04_Diapositivas.html</loc>
@@ -282,7 +286,7 @@
     </url>
     <url>
          <loc>https://martinezpenya.es/ModelosIA/UD05/UD05_ActividadesGuiadas.html</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-11-24</lastmod>
     </url>
     <url>
          <loc>https://martinezpenya.es/ModelosIA/UD05/UD05_Diapositivas.html</loc>
@@ -362,7 +366,7 @@
     </url>
     <url>
          <loc>https://martinezpenya.es/ModelosIA/UD06/UD06_ActividadesGuiadas.html</loc>
-         <lastmod>2026-08-27</lastmod>
+         <lastmod>2026-11-24</lastmod>
     </url>
     <url>
          <loc>https://martinezpenya.es/ModelosIA/UD06/UD06_D01_Debate_limites_eticos_ES.html</loc>
