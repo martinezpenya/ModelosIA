@@ -8,18 +8,18 @@
     entrega ni puntúa.
 
     **Robocode (`T02`) pesa mucho más que las otras dos**: son dos semanas con bot y memoria, mientras
-    que `N02` y `N03` son cortos y sus técnicas se vuelven a evaluar en el RA5. El taller `T01` y los
+    que `N03` y `N04` son cortos y sus técnicas se vuelven a evaluar en el RA5. El taller `T01` y los
     talleres de GitHub y Markdown de la UD00 se entregan como **hecho / no hecho**: son requisito,
     pero no puntúan.
 
 | Actividad | Qué es | Descargar | Abrir en Colab |
 |---|---|---|---|
-| [`N02` · Control difuso con scikit-fuzzy](notebooks/UD02_N02_control_difuso.ipynb) | Control difuso Mamdani · la velocidad de un ventilador (§7) | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD02/notebooks/UD02_N02_control_difuso.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD02/notebooks/UD02_N02_control_difuso.ipynb){:target="_blank"} |
-| [`N03` · Sistema basado en reglas con experta](notebooks/UD02_N03_sistema_reglas.ipynb) | Sistema experto con `experta` · diagnóstico de un PC (§8) | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD02/notebooks/UD02_N03_sistema_reglas.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD02/notebooks/UD02_N03_sistema_reglas.ipynb){:target="_blank"} |
+| [`N03` · Control difuso con scikit-fuzzy](notebooks/UD02_N03_control_difuso.ipynb) | Control difuso Mamdani · la velocidad de un ventilador (§7) | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD02/notebooks/UD02_N03_control_difuso.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD02/notebooks/UD02_N03_control_difuso.ipynb){:target="_blank"} |
+| [`N04` · Sistema basado en reglas con experta](notebooks/UD02_N04_sistema_reglas.ipynb) | Sistema experto con `experta` · diagnóstico de un PC (§8) | [![Descargar](https://img.shields.io/badge/Descargar-.ipynb-blue?logo=jupyter)](https://raw.githubusercontent.com/martinezpenya/ModelosIA/main/docs/UD02/notebooks/UD02_N04_sistema_reglas.ipynb){:target="_blank"} | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/martinezpenya/ModelosIA/blob/main/docs/UD02/notebooks/UD02_N04_sistema_reglas.ipynb){:target="_blank"} |
 | [`T01` · Preparar el entorno para Robocode (Java o Python)](UD02_T01_Preparar_entorno_ES.md) | Puesta a punto · el entorno del lenguaje que elijas para Robocode | — | — |
 | [`T02` · Robocode Tank Royale](UD02_T02_Robocode_ES.md) | La práctica de cierre del RA2 · un bot que compite | — | — |
 
-## `N02` · Control difuso con scikit-fuzzy
+## `N03` · Control difuso con scikit-fuzzy
 
 Construir un sistema de control difuso tipo Mamdani que decida la **velocidad de un ventilador** según la temperatura y la humedad de una sala, recorriendo las tres fases del razonamiento impreciso.
 
@@ -27,9 +27,9 @@ Construir un sistema de control difuso tipo Mamdani que decida la **velocidad de
 
 - el notebook `.ipynb` ejecutado, con el controlador funcionando y las figuras de las funciones de pertenencia.
 
-## `N03` · Sistema basado en reglas con experta
+## `N04` · Sistema basado en reglas con experta
 
-Implementar un **mini sistema experto de diagnóstico** de un PC que no arranca y comprobar en código el ciclo reconocer-actuar de un sistema basado en reglas (RA2-e).
+Implementar un **mini sistema experto de diagnóstico** de un PC que no arranca y comprobar en código el ciclo reconocer-actuar de un sistema basado en reglas (RA2-e). Antes de empezar, repasa el notebook guiado `N02` con el mismo tipo de motor de conocimiento ya resuelto.
 
 **Se entrega** en Aules un único fichero **`.zip`** con:
 

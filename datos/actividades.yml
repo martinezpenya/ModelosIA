@@ -138,7 +138,7 @@ UD02:
   _ra: RA2
   _nota_entregas: |
     **Robocode (`T02`) pesa mucho más que las otras dos**: son dos semanas con bot y memoria, mientras
-    que `N02` y `N03` son cortos y sus técnicas se vuelven a evaluar en el RA5. El taller `T01` y los
+    que `N03` y `N04` son cortos y sus técnicas se vuelven a evaluar en el RA5. El taller `T01` y los
     talleres de GitHub y Markdown de la UD00 se entregan como **hecho / no hecho**: son requisito,
     pero no puntúan.
   _pagina_practica: UD02_ActividadesGuiadas.md
@@ -147,19 +147,26 @@ UD02:
     que_es: El ejemplo difuso de la teoría (§7.6), ya resuelto
     resumen: 'El ejemplo difuso de la teoría (§7.6) de principio a fin, **ya resuelto y explicado**:
       **fuzzificación**, **evaluación de reglas** y **desfuzzificación** sobre el caso de la propina
-      según la calidad de la comida y el servicio. Es la introducción a `scikit-fuzzy` antes de `N02`
-      (control difuso de un ventilador) y `N03` (sistema basado en reglas).'
-  UD02_N02_control_difuso.ipynb:
+      según la calidad de la comida y el servicio. Es la introducción a `scikit-fuzzy` antes de `N03`
+      (control difuso de un ventilador) y `N04` (sistema basado en reglas).'
+  UD02_N02_reglas_diagnostico_vehiculo.ipynb:
+    que_es: Sistema basado en reglas con `experta`, ya resuelto · diagnóstico de un vehículo (§8.5)
+    resumen: 'El ejemplo de diagnóstico de la teoría (§8.5) de principio a fin, **ya resuelto y
+      explicado**: motor de conocimiento, ciclo reconocer-actuar y una regla añadida, con el mismo
+      caso que ya has leído. Es deliberadamente pequeño — la UD05 retoma los sistemas expertos en
+      profundidad. Ábrelo antes de `N04` (sistema de diagnóstico de un PC).'
+  UD02_N03_control_difuso.ipynb:
     que_es: Control difuso Mamdani · la velocidad de un ventilador (§7)
     resumen: Construir un sistema de control difuso tipo Mamdani que decida la **velocidad de un ventilador**
       según la temperatura y la humedad de una sala, recorriendo las tres fases del razonamiento impreciso.
     formato: zip
     contenido:
       - el notebook `.ipynb` ejecutado, con el controlador funcionando y las figuras de las funciones de pertenencia.
-  UD02_N03_sistema_reglas.ipynb:
+  UD02_N04_sistema_reglas.ipynb:
     que_es: Sistema experto con `experta` · diagnóstico de un PC (§8)
     resumen: Implementar un **mini sistema experto de diagnóstico** de un PC que no arranca y comprobar
-      en código el ciclo reconocer-actuar de un sistema basado en reglas (RA2-e).
+      en código el ciclo reconocer-actuar de un sistema basado en reglas (RA2-e). Antes de empezar,
+      repasa el notebook guiado `N02` con el mismo tipo de motor de conocimiento ya resuelto.
     formato: zip
     contenido:
       - el notebook `.ipynb` ejecutado, con el sistema resolviendo los casos de prueba y las respuestas escritas dentro.

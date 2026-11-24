@@ -3,7 +3,7 @@
 <!-- AUTO:notebooks inicio -->
 !!! info "Práctica: se hace, no se entrega"
     7 actividades que se trabajan **en clase**, con el profesor. **No se
-    entregas ni puntúas**: preparas las [entregas de la unidad](UD03_Entregas.md) y la prueba escrita del RA3.
+    entregan ni puntúan**: preparan las [entregas de la unidad](UD03_Entregas.md) y la prueba escrita del RA3.
 
 | Actividad | Qué es | Descargar | Abrir en Colab |
 |---|---|---|---|

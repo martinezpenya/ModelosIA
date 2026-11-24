@@ -207,7 +207,7 @@ def admonicion(grupo: str, n: int, ra: str | None, ud: str, extra: str | None,
                sin_rubrica: bool, hay_practica: bool) -> str:
     """La misma cabecera en las trece paginas, con lo que cambia entre unidades parametrizado."""
     if grupo == "practica":
-        plural = "s" if n != 1 else ""
+        plural = "n" if n != 1 else ""
         cuerpo = (f'!!! info "Práctica: se hace, no se entrega"\n'
                   f"    {n} actividad{'es' if n != 1 else ''} que se trabaja{'n' if n != 1 else ''} "
                   f"**en clase**, con el profesor. **No se\n"

@@ -3,7 +3,7 @@
 <!-- AUTO:notebooks inicio -->
 !!! info "Práctica: se hace, no se entrega"
     2 actividades que se trabajan **en clase**, con el profesor. **No se
-    entregas ni puntúas**: preparas las [entregas de la unidad](UD06_Entregas.md) y la prueba escrita del RA6.
+    entregan ni puntúan**: preparan las [entregas de la unidad](UD06_Entregas.md) y la prueba escrita del RA6.
 
     Los documentales de partida **se ven en casa**, antes de la sesión que les corresponde: la unidad
     tiene 6 horas y en clase se debate, no se proyecta. Los enlaces se comprobaron el **22 de agosto
