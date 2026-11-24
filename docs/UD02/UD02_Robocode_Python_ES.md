@@ -195,7 +195,7 @@ if __name__ == "__main__":
     Si después de seleccionar el intérprete del venv (`Ctrl+Shift+P` → "Python: Select Interpreter" → `./.venv/bin/python`) los errores persisten, es porque Pylint usa su propio intérprete y Pylance necesita el fichero `.vscode/settings.json`.
 
     Cread la carpeta `.vscode/` dentro de la carpeta de vuestro bot (`/home/ubuntu/robocode/MiBot/`) y añadid el siguiente fichero:
-
+    
     ```json title=".vscode/settings.json"
     {
         "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
@@ -204,11 +204,13 @@ if __name__ == "__main__":
         "python.analysis.autoImportCompletions": true
     }
     ```
-
+    
     !!! note ""
         Si no tenéis Pylint instalado en el venv (solo lo tiene el sistema), VS Code puede ejecutar el Pylint del sistema que no ve los paquetes instalados en el venv. Opciones: (1) desactivar Pylint (`"python.linting.enabled": false`) y confiar solo en Pylance, o (2) instalar Pylint en el venv: `pip install pylint`.
-
+    
     Los subrayados rojos desaparecerán al recargar la ventana (`Ctrl+Shift+P` → "Developer: Reload Window").
+    
+    ![Estructura del proyecto en VS Code](assets/vscode_project_structure.png)
 
 ### Scripts de inicio
 
@@ -232,13 +234,11 @@ Hacedlo ejecutable:
 chmod 755 MiBot.sh
 ```
 
-![Estructura del proyecto en VS Code](assets/vscode_project_structure.png)
-
 ### Prueba del bot
 
-1. Iniciad la GUI de Robocode (`java -jar robocode-tankroyale-gui-x.y.z.jar`)
+1. Iniciad la GUI de Robocode (`java -jar robocode-tankroyale-gui-x.y.z.jar`) e iniciad el servidor local
 2. Abrid un terminal en el directorio de vuestro bot
-3. Ejecutad:
+3. Ejecutad o darle a Run en VsCode (:arrow_forward:):  
 
 ```sh
 python3 MiBot.py
@@ -267,8 +267,11 @@ Para habilitar los secrets:
 
 ```properties
 server-secrets-enabled=true
-bots-secrets=CEIABDEPM2025
+bots-secrets=CEIABDEPM202
 ```
+
+!!! warning "Ubicación ficheros de configuración"
+    En las nuevas versiones de RoboCode los archivos no se crean en la carpeta donde ejecutas el GUI sino en la carpeta de usuario, por ejemplo en Debian en `~/.config/robocode-tank-royale`
 
 ### Conectar el bot con secret
 
@@ -276,17 +279,17 @@ Estableced la variable de entorno `SERVER_SECRET` antes de ejecutar el bot:
 
 === "Linux/macOS"
     ```sh
-    export SERVER_SECRET=CEIABDEPM2025
+    export SERVER_SECRET=CEIABDEPM2026
     python3 MiBot.py
     ```
 === "Windows CMD"
     ```cmd
-    set SERVER_SECRET=CEIABDEPM2025
+    set SERVER_SECRET=CEIABDEPM2026
     python MiBot.py
     ```
 === "Windows PowerShell"
     ```powershell
-    $Env:SERVER_SECRET = "CEIABDEPM2025"
+    $Env:SERVER_SECRET = "CEIABDEPM2026"
     python MiBot.py
     ```
 
