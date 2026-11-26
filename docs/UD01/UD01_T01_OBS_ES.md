@@ -160,6 +160,22 @@ Lo único que debes revisar es la carpeta donde se guardará la grabación:
 
 ![Elegir la ruta de grabación](assets/OBS_05.png)
 
+!!! warning "¿Ya tenías el perfil de antes? Actualízalo"
+    Si importaste el perfil antes del 26 de noviembre de 2026, tiene la configuración antigua: el
+    vídeo ocupa más y los archivos se cortan a 45 MB, que a veces no caben en Aules. Cámbialo a mano
+    en **Ajustes → Salida**, pestaña **Grabación**, y deja estos valores:
+
+    - **Control de la frecuencia**: `CRF`
+    - **CRF**: `23`
+    - **Opciones x264 (separadas por espacio)**: `vbv-maxrate=250 vbv-bufsize=250`
+    - **Dividir archivo automáticamente**: activado, con **Dividir por tamaño**
+    - **Tamaño de división**: `40` MB
+
+    Pulsa **OK**. No cambies nada más.
+
+    También puedes borrar el perfil viejo (**Perfil → Eliminar**, después de activar otro) e importar
+    el nuevo `EXAMEN_OBS.zip` como en la fase 1. En ese caso vuelve a elegir la carpeta de grabación.
+
 ### Fase 5 — Graba
 
 1. Comprueba en la vista previa de OBS que se ven **tu nombre** y **el reloj con los segundos** en
@@ -172,10 +188,11 @@ Lo único que debes revisar es la carpeta donde se guardará la grabación:
    archivo. Ábrelo y comprueba que se reproduce bien.
 
 !!! info "Grabaciones largas"
-    OBS divide automáticamente la grabación en varios archivos de unos 45 MB (unos 40 minutos de
-    grabación cada uno), porque Aules no admite ficheros de más de 50 MB. En un examen de más de 40
-    minutos tendrás varios vídeos con la fecha y hora en el nombre: **hay que entregarlos todos**, no
-    solo el último.
+    OBS divide automáticamente la grabación en varios archivos de 40 MB como máximo, porque Aules no
+    admite ficheros de más de 50 MB. Cuánto dura cada archivo depende de lo que se mueva tu pantalla:
+    si cambia poco, un solo archivo dura varias horas, y con mucho movimiento (por ejemplo, un vídeo a
+    pantalla completa) puede durar unos 20 minutos. Si te salen varios vídeos con la fecha y hora en el
+    nombre, **hay que entregarlos todos**, no solo el último.
 
 !!! info "Resumen"
     Importas y **activas** el perfil `Perf_EXAMEN_EPM` y la colección `Escen_EXAMEN_EPM`, cambias la
