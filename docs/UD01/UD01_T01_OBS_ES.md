@@ -162,14 +162,15 @@ Lo único que debes revisar es la carpeta donde se guardará la grabación:
 
 !!! warning "¿Ya tenías el perfil de antes? Actualízalo"
     Si importaste el perfil antes del 26 de noviembre de 2026, tiene la configuración antigua: el
-    vídeo ocupa más y los archivos se cortan a 45 MB, que a veces no caben en Aules. Cámbialo a mano
+    vídeo ocupa más y a veces los archivos pasan de 50 MB y no caben en Aules. Cámbialo a mano
     en **Ajustes → Salida**, pestaña **Grabación**, y deja estos valores:
 
     - **Control de la frecuencia**: `CRF`
     - **CRF**: `23`
     - **Opciones x264 (separadas por espacio)**: `vbv-maxrate=250 vbv-bufsize=250`
+    - **Intervalo de fotogramas clave (0=auto)**: `60`
     - **Dividir archivo automáticamente**: activado, con **Dividir por tamaño**
-    - **Tamaño de división**: `40` MB
+    - **Tamaño de división**: `45` MB
 
     Pulsa **OK**. No cambies nada más.
 
@@ -188,7 +189,7 @@ Lo único que debes revisar es la carpeta donde se guardará la grabación:
    archivo. Ábrelo y comprueba que se reproduce bien.
 
 !!! info "Grabaciones largas"
-    OBS divide automáticamente la grabación en varios archivos de 40 MB como máximo, porque Aules no
+    OBS divide automáticamente la grabación en varios archivos de unos 45 MB, porque Aules no
     admite ficheros de más de 50 MB. Cuánto dura cada archivo depende de lo que se mueva tu pantalla:
     si cambia poco, un solo archivo dura varias horas, y con mucho movimiento (por ejemplo, un vídeo a
     pantalla completa) puede durar unos 20 minutos. Si te salen varios vídeos con la fecha y hora en el
